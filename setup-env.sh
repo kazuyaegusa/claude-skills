@@ -12,6 +12,7 @@
 #   3. ~/.claude/settings.json をコピー
 #   4. ~/.claude/commands/ をコピー
 #   5. MCP 設定のテンプレートを配置
+#   6. 自動同期 launchd エージェントを登録（5分おき）
 
 set -e
 
@@ -87,6 +88,47 @@ else
     echo "  手動で設定する場合: $SCRIPT_DIR/_config/mcp.json.template を編集して"
     echo "  ~/.claude/.mcp.json にコピーしてください"
 fi
+
+# 6. 自動同期 launchd エージェント登録
+echo "[6/6] 自動同期デーモンをセットアップ..."
+PLIST_DIR="$HOME/Library/LaunchAgents"
+PLIST_FILE="$PLIST_DIR/com.claude-skills-sync.plist"
+mkdir -p "$PLIST_DIR"
+
+# HOME パスをこのデバイスに合わせて plist を生成
+cat > "$PLIST_FILE" << PLIST_EOF
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.claude-skills-sync</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>-c</string>
+        <string>\$HOME/.claude/skills/_config/sync.sh</string>
+    </array>
+    <key>StartInterval</key>
+    <integer>300</integer>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>StandardErrorPath</key>
+    <string>/tmp/claude-skills-sync.err</string>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/usr/local/bin:/usr/bin:/bin:/opt/homebrew/bin</string>
+        <key>HOME</key>
+        <string>$HOME</string>
+    </dict>
+</dict>
+</plist>
+PLIST_EOF
+
+launchctl unload "$PLIST_FILE" 2>/dev/null
+launchctl load "$PLIST_FILE"
+echo "  完了: 5分おきに自動同期（ログイン時にも実行）"
 
 echo
 echo "=== セットアップ完了 ==="
