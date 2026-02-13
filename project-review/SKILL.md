@@ -1,7 +1,7 @@
 ---
 name: project-review
 description: プロジェクトのドキュメント・コードを多角的にレビューし、実現性・正確性・改善点を検証して修正するスキル
-command: /review
+command: /project-review
 arguments: "[対象パス（省略時はカレントディレクトリ）]"
 ---
 

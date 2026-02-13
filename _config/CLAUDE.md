@@ -164,12 +164,12 @@ Discordエクスポートデータからキーワード検索し、関連する�
 - `git push` まで自動で完了する
 - レポート内容の確認もユーザーに求めない
 
-### Project Review (`/review`)
+### Project Review (`/project-review`)
 
 プロジェクトのドキュメント・コードを多角的にレビューし、実現性・正確性・改善点を検証して修正するスキル。
 
 - スキル定義: `~/.claude/skills/project-review/SKILL.md`
-- コマンド: `/review [対象パス]`（省略時はカレントディレクトリ）
+- コマンド: `/project-review [対象パス]`（省略時はカレントディレクトリ）
 - 機能: ファイル分類 → Agent Team 編成 → 多角的レビュー → 問題修正 → 検証
 - レビュー観点: 技術的正確性、実現性、ドキュメント品質、コード品質、カバレッジ
 - 出力: `docs/review_report.md` にレビューレポートを生成
