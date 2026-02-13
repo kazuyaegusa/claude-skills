@@ -140,6 +140,17 @@ PDFの全ページからロゴ/ウォーターマークを自動検出・一括�
 - 既存ファイルがある場合は上書きせず不足分のみ追加
 - grader 4種同梱: ExactMatch（完全一致）、Contains（部分一致）、KeyExists（キー存在）、Schema（型構造）
 
+### Discord Context Search (`/discord-context-search`)
+
+Discordエクスポートデータからキーワード検索し、関連する会話の文脈を抽出・分析・要約してファイル保存するスキル。
+
+- スキル定義: `~/.claude/skills/discord-context-search/SKILL.md`
+- スクリプト: `~/.claude/skills/discord-context-search/extract_context.py`
+- コマンド: `/discord-context-search <キーワード>`
+- 機能: CSV検索 → 文脈抽出 → 分析・要約生成 → ファイル保存（conversation.csv + metadata.json + summary.md）
+- 表記ゆれ対応: ひらがな/カタカナ/ローマ字のフォールバック検索あり
+- 出力先: `<exports_dir>/keyword_search/<キーワード>/`
+
 ### Phase Report (`/phase-report`)
 
 フェーズ完了レポートを自動生成してコミット・プッシュするスキル。
