@@ -187,3 +187,15 @@ Discordエクスポートデータからキーワード検索し、関連する�
 - 機能: ファイル分類 → Agent Team 編成 → 多角的レビュー → 問題修正 → 検証
 - レビュー観点: 技術的正確性、実現性、ドキュメント品質、コード品質、カバレッジ
 - 出力: `docs/review_report.md` にレビューレポートを生成
+
+### Repo Tracker (`/repo-tracker`)
+
+GitHub リポジトリの変更を定期監視し、差分レポート生成 + Discord 通知を行う汎用スキル。
+
+- スキル定義: `~/.claude/skills/repo-tracker/SKILL.md`
+- スクリプト: `~/.claude/skills/repo-tracker/repo_tracker.py`
+- コマンド: `/repo-tracker <GitHub URL>` または `/repo-tracker list`
+- 機能: clone → 定期 fetch → 差分検出 → Markdown レポート生成 → Discord 通知
+- 作業ディレクトリ: `~/.repo-tracker/{repo-name}/`
+- 複数リポジトリ対応、完全読み取り専用（push 一切なし）
+- 定期実行: macOS launchd（`install-schedule` サブコマンド）
