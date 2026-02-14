@@ -1,4 +1,4 @@
-The user wants to review the current repo's uncommitted diff using OpenAI Codex.
+OpenAI Codex を使ってカレントリポジトリのコード・ドキュメント全体をレビューし、改善点を洗い出す。
 
 **Model selection:**
 - If the user provided a model name as argument: "$ARGUMENTS", use that model.
@@ -11,18 +11,24 @@ Available models for reference:
 
 **Steps:**
 
-1) First check `git diff` has content. If empty, say "No changes detected." and stop.
-
-2) Run this command, replacing MODEL with the selected model:
+1) Run the following command, replacing MODEL with the selected model:
 ```sh
-codex exec -m MODEL -s read-only "Review the following code changes for bugs, security issues, and maintainability. Be concise and actionable. CHANGES: $(git diff)" -o /tmp/codex-review.txt
+codex exec -m MODEL -s read-only "You are a senior code reviewer. Thoroughly review ALL code and documentation files in this repository. For each file, check for:
+1. Bugs and correctness risks (logic errors, edge cases, race conditions)
+2. Security issues (hardcoded secrets, injection risks, missing input validation, OWASP top 10)
+3. Maintainability concerns (code duplication, unclear naming, missing error handling, dead code)
+4. Documentation quality (factual accuracy, outdated information, missing context, inconsistencies between docs)
+5. Improvement opportunities (better patterns, performance, readability)
+
+Be concise and actionable. Prioritize issues by severity (Critical > High > Medium > Low).
+Output in Japanese." -o /tmp/codex-review.txt
 ```
 
-3) Read `/tmp/codex-review.txt` and summarize:
+2) Read `/tmp/codex-review.txt` and summarize in Japanese:
 - Which model was used
-- Key bugs / correctness risks
-- Security issues (if any)
-- Maintainability concerns
-- Concrete next steps
+- Critical / High severity issues (bugs, security)
+- Medium severity issues (maintainability, documentation quality)
+- Low severity / improvement suggestions
+- Concrete next steps (prioritized action items)
 
 If `codex exec` fails and the file is empty, include the error output and suggest rerunning.
