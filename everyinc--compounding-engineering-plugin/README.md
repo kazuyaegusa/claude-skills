@@ -1,0 +1,95 @@
+# Compound Marketplace
+
+[![Build Status](https://github.com/EveryInc/compound-engineering-plugin/actions/workflows/ci.yml/badge.svg)](https://github.com/EveryInc/compound-engineering-plugin/actions/workflows/ci.yml)
+[![npm](https://img.shields.io/npm/v/@every-env/compound-plugin)](https://www.npmjs.com/package/@every-env/compound-plugin)
+
+A Claude Code plugin marketplace featuring the **Compound Engineering Plugin** — tools that make each unit of engineering work easier than the last.
+
+## Claude Code Install
+
+```bash
+/plugin marketplace add https://github.com/EveryInc/compound-engineering-plugin
+/plugin install compound-engineering
+```
+
+## OpenCode, Codex, Droid & Cursor (experimental) Install
+
+This repo includes a Bun/TypeScript CLI that converts Claude Code plugins to OpenCode, Codex, Factory Droid, and Cursor.
+
+```bash
+# convert the compound-engineering plugin into OpenCode format
+bunx @every-env/compound-plugin install compound-engineering --to opencode
+
+# convert to Codex format
+bunx @every-env/compound-plugin install compound-engineering --to codex
+
+# convert to Factory Droid format
+bunx @every-env/compound-plugin install compound-engineering --to droid
+
+# convert to Cursor format
+bunx @every-env/compound-plugin install compound-engineering --to cursor
+```
+
+Local dev:
+
+```bash
+bun run src/index.ts install ./plugins/compound-engineering --to opencode
+```
+
+OpenCode output is written to `~/.config/opencode` by default, with `opencode.json` at the root and `agents/`, `skills/`, and `plugins/` alongside it.
+Codex output is written to `~/.codex/prompts` and `~/.codex/skills`, with each Claude command converted into both a prompt and a skill (the prompt instructs Codex to load the corresponding skill). Generated Codex skill descriptions are truncated to 1024 characters (Codex limit).
+Droid output is written to `~/.factory/` with commands, droids (agents), and skills. Claude tool names are mapped to Factory equivalents (`Bash` → `Execute`, `Write` → `Create`, etc.) and namespace prefixes are stripped from commands.
+Cursor output is written to `.cursor/` with rules (`.mdc`), commands, skills, and `mcp.json`. Agents become "Agent Requested" rules (`alwaysApply: false`) so Cursor's AI activates them on demand. Works with both the Cursor IDE and Cursor CLI (`cursor-agent`) — they share the same `.cursor/` config directory.
+
+All provider targets are experimental and may change as the formats evolve.
+
+## Sync Personal Config
+
+Sync your personal Claude Code config (`~/.claude/`) to OpenCode or Codex:
+
+```bash
+# Sync skills and MCP servers to OpenCode
+bunx @every-env/compound-plugin sync --target opencode
+
+# Sync to Codex
+bunx @every-env/compound-plugin sync --target codex
+```
+
+This syncs:
+- Personal skills from `~/.claude/skills/` (as symlinks)
+- MCP servers from `~/.claude/settings.json`
+
+Skills are symlinked (not copied) so changes in Claude Code are reflected immediately.
+
+## Workflow
+
+```
+Plan → Work → Review → Compound → Repeat
+```
+
+| Command | Purpose |
+|---------|---------|
+| `/workflows:plan` | Turn feature ideas into detailed implementation plans |
+| `/workflows:work` | Execute plans with worktrees and task tracking |
+| `/workflows:review` | Multi-agent code review before merging |
+| `/workflows:compound` | Document learnings to make future work easier |
+
+Each cycle compounds: plans inform future plans, reviews catch more issues, patterns get documented.
+
+## Philosophy
+
+**Each unit of engineering work should make subsequent units easier—not harder.**
+
+Traditional development accumulates technical debt. Every feature adds complexity. The codebase becomes harder to work with over time.
+
+Compound engineering inverts this. 80% is in planning and review, 20% is in execution:
+- Plan thoroughly before writing code
+- Review to catch issues and capture learnings
+- Codify knowledge so it's reusable
+- Keep quality high so future changes are easy
+
+## Learn More
+
+- [Full component reference](plugins/compound-engineering/README.md) - all agents, commands, skills
+- [Compound engineering: how Every codes with agents](https://every.to/chain-of-thought/compound-engineering-how-every-codes-with-agents)
+- [The story behind compounding engineering](https://every.to/source-code/my-ai-had-already-fixed-the-code-before-i-saw-it)
