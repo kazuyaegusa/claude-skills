@@ -1,11 +1,15 @@
-# インストール済みスキル索引（201件）
-<!-- 自動生成: 2026-02-15 11:07 UTC -->
+# インストール済みスキル索引（219件）
+<!-- 自動生成: 2026-02-16 04:05 UTC -->
 
 | slug | 名前 | 説明 |
 |------|------|------|
+| 0xbreadguy--megaeth-ai-developer-skills | megaeth-developer | End-to-end MegaETH development playbook (Feb 2026). Covers Foundry project setup with MegaETH-specific config, wallet operations, token swaps (Kyber N |
+| abracadabra50--claude-code-voice-skill | call | Voice conversations with Claude about your projects. Call a phone number to brainstorm, or have Claude call you with updates. |
 | adenhq--hive | hive-concepts | Core concepts for goal-driven agents - architecture, node types (event_loop, function), tool discovery, and workflow overview. Use when starting agent |
 | affaan-m--everything-claude-code | backend-patterns | Backend architecture patterns, API design, database optimization, and server-side best practices for Node.js, Express, and Next.js API routes. |
 | agentset-ai--agentset | baseline-ui | Enforces an opinionated UI baseline to prevent AI-generated interface slop. |
+| albedo-tabai--lets-go-rss | lets-go-rss | 轻量级全平台 RSS 订阅管理器。一键聚合 YouTube、Vimeo、Behance、B站、微博、抖音、小红书的内容更新，支持增量去重和 AI 智能分类。 |
+| alexknowshtml--drawbridge | drawbridge | \| |
 | alirezarezvani--claude-skills | customer-success-manager | Monitors customer health, predicts churn risk, and identifies expansion opportunities using weighted scoring models for SaaS customer success |
 | anomalyco--opencode | bun-file-io | Use this when you are working on file operations like reading, writing, scanning, or deleting files. It summarizes the preferred file APIs and pattern |
 | antfu--skills | antfu | Anthony Fu's opinionated tooling and conventions for JavaScript/TypeScript projects. Use when setting up new projects, configuring ESLint/Prettier alt |
@@ -14,6 +18,7 @@
 | anthropics--claude-plugins-official | stripe-best-practices | Best practices for building Stripe integrations. Use when implementing payment processing, checkout flows, subscriptions, webhooks, Connect platforms, |
 | anthropics--skills | algorithmic-art | Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code |
 | antonbabenko--terraform-skill | terraform-skill | Use when working with Terraform or OpenTofu - creating modules, writing tests (native test framework, Terratest), setting up CI/CD pipelines, reviewin |
+| aplaceforallmystuff--the-antislop | antislop | Detect and fix AI-generated writing patterns (slop). Comprehensive detection with 45+ patterns, tiered severity scoring, and editor mode. |
 | appleboy--codegpt | commit-message | Automatically generates, formats, organizes, and improves git commit messages by analyzing your staged changes using AI. Use this skill when you want  |
 | arize-ai--phoenix | agent-browser | Browser automation CLI for AI agents. Use when the user needs to interact with websites, including navigating pages, filling forms, clicking buttons,  |
 | assafelovic--gpt-researcher | gpt-researcher | GPT Researcher is an autonomous deep research agent that conducts web and local research, producing detailed reports with citations. Use this skill wh |
@@ -26,6 +31,9 @@
 | blader--claude-code-continuous-learning-skill | claudeception | \| |
 | blader--claudeception | claudeception | \| |
 | blader--humanizer | humanizer | \| |
+| blader--razor | razor | Minimize local diff size against merge base for uncommitted branch work. Use when asked to tighten or shrink a local diff while keeping core behavior, |
+| blader--schematic | schematic | \| |
+| bowenliang123--md_exporter | markdown-exporter | Markdown exporter for export Markdown text to DOCX, PPTX, XLSX, PDF, PNG, HTML, MD, CSV, JSON, JSONL, XML files, and extract code blocks in Markdown t |
 | brainblend-ai--atomic-agents | release | Release a new version of atomic-agents to PyPI and GitHub. Use when the user asks to "release", "publish", "deploy", or "bump version" for atomic-agen |
 | breaking-brake--cc-wf-studio | code-review-large | In-depth code review for large PRs (>500 lines). Full analysis including architecture, performance, security, and maintainability. |
 | browser-use--browser-use | browser-use | Automates browser interactions for web testing, form filling, screenshots, and data extraction. Use when the user needs to navigate websites, interact |
@@ -62,6 +70,7 @@
 | disler--claude-code-hooks-multi-agent-observability | create-worktree-skill | Use when the user explicitly asks for a SKILL to create a worktree. If the user does not mention "skill" or explicitly request skill invocation, do NO |
 | dotnet--core | libraries-release-notes | Generate .NET Libraries release notes by evaluating the release's API diff, fetching merged PRs from a GitHub repository, categorizing by area or them |
 | dvdsgl--claude-canvas | calendar | \| |
+| everyinc--charlie-cfo-skill | charlie | Your AI CFO for bootstrapped startups, named after Charlie Munger who embodied the principle that capital discipline is a competitive advantage. Provi |
 | everyinc--compound-engineering-plugin | coding-tutor | Personalized coding tutorials that build on your existing knowledge and use your actual codebase for examples. Creates a persistent learning trail tha |
 | everyinc--compounding-engineering-plugin | coding-tutor | Personalized coding tutorials that build on your existing knowledge and use your actual codebase for examples. Creates a persistent learning trail tha |
 | everyinc--every-marketplace | coding-tutor | Personalized coding tutorials that build on your existing knowledge and use your actual codebase for examples. Creates a persistent learning trail tha |
@@ -73,6 +82,7 @@
 | facebook--react | extract-errors | Use when adding new error messages to React, or seeing "unknown error code" warnings. |
 | feiskyer--claude-code-settings | autonomous-skill | Use when user wants to execute long-running tasks that require multiple sessions to complete. This skill manages task decomposition, progress tracking |
 | folder-digest | folder-digest | カレントフォルダの全ファイルを読み込み、内容を的確かつ網羅的に把握して構造化レポートを出力するスキル。 |
+| forayconsulting--gemini_cli_skill | gemini-cli | Wield Google's Gemini CLI as a powerful auxiliary tool for code generation, review, analysis, and web research. Use when tasks benefit from a second A |
 | getsentry--sentry | design-system | Guide for using Sentry's layout and text primitives. Use when implementing UI components, layouts, or typography. Enforces use of core components over |
 | getsentry--xcodebuildmcp | xcodebuildmcp-cli | Official skill for the XcodeBuildMCP CLI. Use when doing iOS/macOS/watchOS/tvOS/visionOS work (build, test, run, debug, log, UI automation). |
 | github--awesome-copilot | agentic-eval | \| |
@@ -100,6 +110,7 @@
 | khazp--vibe-coding-prompt-template | vibe-agents | Generate AGENTS.md and AI configuration files for your project. Use when the user wants to create agent instructions, set up AI configs, or says "crea |
 | kilo-org--kilocode | translation | Guidelines for translating and localizing the Kilo Code extension, including language-specific rules for German, Simplified Chinese, and Traditional C |
 | kingkongshot--pensieve | pensieve | Load this skill immediately when the user expresses any intent. System capabilities (tools/knowledge/scripts) live inside the plugin and are maintaine |
+| komal-skynet--claude-skill-homeassistant | home-assistant-manager | Expert-level Home Assistant configuration management with efficient deployment workflows (git and rapid scp iteration), remote CLI access via SSH and  |
 | kreuzberg-dev--kreuzberg | api-server-mcp | **Axum server design for document extraction endpoints, middleware, async processing, and Model Context Protocol integration for AI agents** |
 | kridaydave--file-organizer-mcp | file-organizer-dev | Development guide for the File Organizer MCP server codebase. Use when (1) adding new MCP tools, (2) adding new services, (3) modifying existing tools |
 | labring--fastgpt | api-development | FastGPT API 开发规范。重点强调使用 zod schema 定义入参和出参,在 API 文档中声明路由信息,编写对应的 OpenAPI 文档,以及在 API 路由中使用 schema.parse 进行验证。 |
@@ -146,6 +157,7 @@
 | pdf-logo-remover | pdf-logo-remover | PDFの全ページからロゴやウォーターマークを自動検出・除去するスキル。NotebookLM等のツールが付与するブランディングロゴの一括除去に対応。 |
 | phase-report | フェーズ完了レポート自動生成 | **このスキルは完全自動実行である。ユーザーへの確認・承認・質問を一切行わず、全ステップを自動で完了させること。** |
 | piebald-ai--tweakcc | patch-creation | Create and register new patches for tweakcc. Use when adding new customizations to Claude Code. |
+| pleaseprompto--google-ai-mode-skill | google-ai-mode-skill | Use this skill when the user requests current information, documentation, coding examples, or web research beyond the knowledge cutoff. Queries Google |
 | pleaseprompto--notebooklm-skill | notebooklm | Use this skill to query your Google NotebookLM notebooks directly from Claude Code for source-grounded, citation-backed answers from Gemini. Browser a |
 | prefecthq--prefect | write-docs | Comprehensive guide for writing and updating Prefect documentation. Use when creating new doc pages, updating existing docs, or working with Mintlify  |
 | project-review | project-review | プロジェクトのドキュメント・コードを多角的にレビューし、実現性・正確性・改善点を検証して修正するスキル |
@@ -153,6 +165,7 @@
 | qdhenry--claude-command-suite | Cloudflare Manager | Comprehensive Cloudflare account management for deploying Workers, KV Storage, R2, Pages, DNS, and Routes. Use when deploying cloudflare services, man |
 | quality-harness | quality-harness | 任意のPythonプロジェクトに品質ハーネス（eval評価・実行隔離・CI/CD・Git hooks）を一括セットアップするスキル。 |
 | qwenlm--qwen-code | synonyms | Generate synonyms for words or phrases. Use this skill when the user needs alternative words with similar meanings, wants to expand vocabulary, or see |
+| ramsbaby--openclaw-self-healing | openclaw-self-healing | 4-tier autonomous self-healing system for OpenClaw Gateway with persistent learning, reasoning logs, and multi-channel alerts. Features Claude Code as |
 | redpanda-data--connect | bloblang-authoring | This skill should be used when users need to create or debug Bloblang transformation scripts. Trigger when users ask about transforming data, mapping  |
 | refly-ai--refly | refly | Base skill for Refly ecosystem: creates, discovers, and runs domain-specific skills bound to workflows. Routes user intent to matching domain skills v |
 | remotion-dev--skills | remotion-best-practices | Best practices for Remotion - Video creation in React |
@@ -164,11 +177,13 @@
 | ryoppippi--ccusage | byethrow | Reference the byethrow documentation to understand and use the Result type library for error handling in JavaScript/TypeScript. Access detailed API re |
 | sawyerhood--dev-browser | dev-browser | Browser automation with persistent page state. Use when users ask to navigate websites, fill forms, take screenshots, extract web data, test web apps, |
 | severity1--claude-code-prompt-improver | prompt-improver | This skill enriches vague prompts with targeted research and clarification before execution. Should be used when a prompt is determined to be vague an |
+| sgl-project--sglang | add-jit-kernel | Step-by-step tutorial for adding a lightweight JIT CUDA/C++ kernel to python/sglang/jit_kernel (including tests & benchmarks) |
 | shareai-lab--analysis_claude_code | agent-builder | \| |
 | shareai-lab--learn-claude-code | agent-builder | \| |
 | sickn33--antigravity-awesome-skills | 3d-web-experience | Expert in building 3D experiences for the web - Three.js, React Three Fiber, Spline, WebGL, and interactive 3D scenes. Covers product configurators, 3 |
 | skillcreatorai--ai-agent-skills | algorithmic-art | Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use when users request creating art using code, gen |
 | snarktank--ralph | prd | Generate a Product Requirements Document (PRD) for a new feature. Use when planning a feature, starting a new project, or when asked to create a PRD.  |
+| sstklen--claude-api-cost-optimization | claude-api-cost-optimization | Save 50-90% on Claude API costs with Batch API, Prompt Caching & Extended Thinking. Official techniques, verified. |
 | stacklok--toolhive | commit-message | Generates clear commit messages from git diffs. Use when writing commit messages or reviewing staged changes. |
 | steveyegge--beads | handoff | > |
 | storybookjs--react-native | setup-react-native-storybook | Set up Storybook for React Native in Expo, React Native CLI, or Re.Pack projects. Use when adding Storybook to a project, configuring metro.config.js  |
@@ -184,6 +199,7 @@
 | thedotmack--claude-mem | Claude-Mem OpenClaw Plugin — Setup Guide | This guide walks through setting up the claude-mem plugin on an OpenClaw gateway. By the end, your agents will have persistent memory across sessions, |
 | timescale--pg-aiguide | design-postgres-tables | \| |
 | tobi--qmd | qmd | Search personal markdown knowledge bases, notes, meeting transcripts, and documentation using QMD - a local hybrid search engine. Combines BM25 keywor |
+| tripleyak--skillforge | skillforge | Intelligent skill router and creator. Analyzes ANY input to recommend existing skills, improve them, or create new ones. Uses deep iterative analysis  |
 | udecode--dotai | debug | Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes - four-phase framework (root cause investigation, pattern  |
 | upstash--context7 | documentation-lookup | This skill should be used when the user asks about libraries, frameworks, API references, or needs code examples. Activates for setup questions, code  |
 | vercel--ai | add-provider-package | Guide for adding new AI provider packages to the AI SDK. Use when creating a new @ai-sdk/<provider> package to integrate an AI service into the SDK. |
@@ -195,7 +211,9 @@
 | volcengine--openviking | openviking | RAG and semantic search via OpenViking Context Database MCP server. Query documents, search knowledge base, add files/URLs to vector memory. Use for d |
 | voltagent--voltagent | Workspace Data Analyst | Analyze CSV files in the workspace and summarize insights. |
 | vuejs-ai--skills | create-adaptable-composable | Create a library-grade Vue composable that accepts maybe-reactive inputs (MaybeRef / MaybeRefOrGetter) so callers can pass a plain value, ref, or gett |
+| webzler--agentmemory | agentMemory | A hybrid memory system that provides persistent, searchable knowledge management for AI agents. |
 | wirasm--prps-agentic-eng | prp-core-runner | Orchestrate complete PRP workflow from feature request to pull request. Run create branch, create PRP, execute implementation, commit changes, and cre |
+| wrsmith108--linear-claude-skill | Linear | Managing Linear issues, projects, and teams. Use when working with Linear tasks, creating issues, updating status, querying projects, or managing team |
 | wshobson--agents | screen-reader-testing | Test web applications with screen readers including VoiceOver, NVDA, and JAWS. Use when validating screen reader compatibility, debugging accessibilit |
 | yamadashy--repomix | agent-memory | Use this skill when the user asks to save, remember, recall, or organize memories. Triggers on: 'remember this', 'save this', 'note this', 'what did w |
 | yeachan-heo--oh-my-claudecode | analyze | Deep analysis and investigation |
