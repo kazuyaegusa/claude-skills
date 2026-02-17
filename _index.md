@@ -1,5 +1,5 @@
-# インストール済みスキル索引（219件）
-<!-- 自動生成: 2026-02-16 07:33 UTC -->
+# インストール済みスキル索引（222件）
+<!-- 自動生成: 2026-02-17 03:19 UTC -->
 
 | slug | 名前 | 説明 |
 |------|------|------|
@@ -21,6 +21,7 @@
 | aplaceforallmystuff--the-antislop | antislop | Detect and fix AI-generated writing patterns (slop). Comprehensive detection with 45+ patterns, tiered severity scoring, and editor mode. |
 | appleboy--codegpt | commit-message | Automatically generates, formats, organizes, and improves git commit messages by analyzing your staged changes using AI. Use this skill when you want  |
 | arize-ai--phoenix | agent-browser | Browser automation CLI for AI agents. Use when the user needs to interact with websites, including navigating pages, filling forms, clicking buttons,  |
+| arunjrk--audit-flow | audit-flow | Interactive system flow tracing across CODE, API, AUTH, DATA, NETWORK layers with SQLite persistence and Mermaid export. Use for security audits, comp |
 | assafelovic--gpt-researcher | gpt-researcher | GPT Researcher is an autonomous deep research agent that conducts web and local research, producing detailed reports with citations. Use this skill wh |
 | autogluon--autogluon | autogluon-conda-upgrade | Automate AutoGluon conda-forge feedstock version upgrades. Use when the user wants to upgrade AutoGluon to a new version in conda-forge, create PRs fo |
 | avdlee--swiftui-agent-skill | swiftui-expert-skill | Write, review, or improve SwiftUI code following best practices for state management, view composition, performance, modern APIs, Swift concurrency, a |
@@ -92,6 +93,7 @@
 | homeassistant-ai--ha-mcp | bat | Run bot acceptance tests to validate MCP tools work correctly from a real AI agent's perspective. Use when testing PRs, detecting regressions, or veri |
 | htmlstreamofficial--preline | preline-theme-generator | Generates beautiful, consistent Preline Theme CSS files. Agent interprets user request, runs build script, delivers complete CSS. |
 | huggingface--skills | hf-mcp | Use Hugging Face Hub via MCP server tools. Search models, datasets, Spaces, papers. Get repo details, fetch documentation, run compute jobs, and use G |
+| huggingface--trl | trl-training | Train and fine-tune transformer language models using TRL (Transformers Reinforcement Learning). Supports SFT, DPO, GRPO, KTO, RLOO and Reward Model t |
 | hugoduncan--criterium | criterium | Use this skill when users ask about benchmarking Clojure code, measuring performance, profiling execution time, or using the criterium library. Covers |
 | hyf0--vue-skills | create-adaptable-composable | Create a library-grade Vue composable that accepts maybe-reactive inputs (MaybeRef / MaybeRefOrGetter) so callers can pass a plain value, ref, or gett |
 | iannuttall--ralph | commit | Write conventional commit messages with type, scope, and subject when the user wants to commit changes or save work. |
@@ -140,6 +142,7 @@
 | muratcankoylan--agent-skills-for-context-engineering | context-engineering-collection | A comprehensive collection of Agent Skills for context engineering, multi-agent architectures, and production agent systems. Use when building, optimi |
 | mvanhorn--last30days-skill | last30days | Research a topic from the last 30 days on Reddit + X + Web, become an expert, and write copy-paste-ready prompts for the user's target tool. |
 | n8n-io--n8n | content-design | > |
+| ndpvt-web--latex-document-skill | latex-document | > |
 | nextlevelbuilder--ui-ux-pro-max-skill | ui-ux-pro-max | UI/UX design intelligence. 50 styles, 21 palettes, 50 font pairings, 20 charts, 9 stacks (React, Next.js, Vue, Svelte, SwiftUI, React Native, Flutter, |
 | nomenak--superclaude | Confidence Check | Pre-implementation confidence assessment (≥90% required). Use before starting any implementation to verify readiness with duplicate check, architectur |
 | nspady--google-calendar-mcp | gcal-api-research | Expert research tool for Google Calendar API implementations. PROACTIVELY use when (1) reviewing PRs adding calendar features, (2) planning new event/ |
