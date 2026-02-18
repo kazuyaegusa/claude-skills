@@ -1,5 +1,5 @@
-# インストール済みスキル索引（222件）
-<!-- 自動生成: 2026-02-17 03:19 UTC -->
+# インストール済みスキル索引（226件）
+<!-- 自動生成: 2026-02-18 02:16 UTC -->
 
 | slug | 名前 | 説明 |
 |------|------|------|
@@ -25,6 +25,7 @@
 | assafelovic--gpt-researcher | gpt-researcher | GPT Researcher is an autonomous deep research agent that conducts web and local research, producing detailed reports with citations. Use this skill wh |
 | autogluon--autogluon | autogluon-conda-upgrade | Automate AutoGluon conda-forge feedstock version upgrades. Use when the user wants to upgrade AutoGluon to a new version in conda-forge, create PRs fo |
 | avdlee--swiftui-agent-skill | swiftui-expert-skill | Write, review, or improve SwiftUI code following best practices for state management, view composition, performance, modern APIs, Swift concurrency, a |
+| axiaoge2--apple-hig-designer | apple-hig-designer | Design Apple-style iOS/macOS interfaces following Human Interface Guidelines. Creates HIG-compliant components with SF Symbols, San Francisco typograp |
 | axtonliu--axton-obsidian-visual-skills | excalidraw-diagram | Generate Excalidraw diagrams from text content. Supports three output modes - Obsidian (.md), Standard (.excalidraw), and Animated (.excalidraw with a |
 | axtonliu--smart-illustrator | smart-illustrator | 智能配图与 PPT 信息图生成器。支持三种模式：(1) 文章配图模式 - 分析文章内容，生成插图；(2) PPT/Slides 模式 - 生成批量信息图；(3) Cover 模式 - 生成封面图。所有模式默认生成图片，`--prompt-only` 只输出 prompt。触发词：配图、插图、PPT、 |
 | berriai--litellm | test-skill | A minimal test skill for API testing |
@@ -57,6 +58,7 @@
 | composiohq--awesome-claude-skills | -21risk-automation | Automate 21risk tasks via Rube MCP (Composio). Always search tools first for current schemas. |
 | coplaydev--unity-mcp | unity-mcp-orchestrator | Orchestrate Unity Editor via MCP (Model Context Protocol) tools and resources. Use when working with Unity projects through MCP for Unity - creating/m |
 | coreyhaines31--marketingskills | ab-test-setup | When the user wants to plan, design, or implement an A/B test or experiment. Also use when the user mentions "A/B test," "split test," "experiment," " |
+| cosmoblk--email-marketing-bible | email-marketing-bible | > |
 | czlonkowski--n8n-skills | n8n-code-javascript | Write JavaScript code in n8n Code nodes. Use when writing JavaScript in n8n, using $input/$json/$node syntax, making HTTP requests with $helpers, work |
 | d-kimuson--claude-code-viewer | i18n | Use when updating Lingui catalogs or fixing translations |
 | daaain--claude-code-log | tool-renderer | Implement specialized rendering for Claude Code tools. Use when adding a new tool type (WebSearch, WebFetch, etc.) to the transcript viewer, or when a |
@@ -66,6 +68,7 @@
 | dammyjay93--interface-design | interface-design | This skill is for interface design — dashboards, admin panels, apps, tools, and interactive products. NOT for marketing design (landing pages, marketi |
 | davepoon--buildwithclaude | artifacts-builder | Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui |
 | davepoon--claude-code-subagents-collection | artifacts-builder | Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui |
+| dgallitelli--aws-hyperpod-skill | sagemaker-hyperpod | \| |
 | diet103--claude-code-infrastructure-showcase | backend-dev-guidelines | Comprehensive backend development guide for Node.js/Express/TypeScript microservices. Use when creating routes, controllers, services, repositories, m |
 | discord-context-search | discord-context-search | Discordエクスポートデータからキーワード検索し、文脈を抽出・分析・要約してファイル保存するスキル。 |
 | disler--claude-code-hooks-multi-agent-observability | create-worktree-skill | Use when the user explicitly asks for a SKILL to create a worktree. If the user does not mention "skill" or explicitly request skill invocation, do NO |
@@ -169,6 +172,7 @@
 | quality-harness | quality-harness | 任意のPythonプロジェクトに品質ハーネス（eval評価・実行隔離・CI/CD・Git hooks）を一括セットアップするスキル。 |
 | qwenlm--qwen-code | synonyms | Generate synonyms for words or phrases. Use this skill when the user needs alternative words with similar meanings, wants to expand vocabulary, or see |
 | ramsbaby--openclaw-self-healing | openclaw-self-healing | 4-tier autonomous self-healing system for OpenClaw Gateway with persistent learning, reasoning logs, and multi-channel alerts. Features Claude Code as |
+| rebelytics--one-skill-to-rule-them-all | task-observer | > |
 | redpanda-data--connect | bloblang-authoring | This skill should be used when users need to create or debug Bloblang transformation scripts. Trigger when users ask about transforming data, mapping  |
 | refly-ai--refly | refly | Base skill for Refly ecosystem: creates, discovers, and runs domain-specific skills bound to workflows. Routes user intent to matching domain skills v |
 | remotion-dev--skills | remotion-best-practices | Best practices for Remotion - Video creation in React |
