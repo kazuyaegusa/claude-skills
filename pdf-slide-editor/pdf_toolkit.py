@@ -207,18 +207,19 @@ def analyze_page(doc, page_idx: int, dpi: int = 200):
     print(f"P{page_idx+1}: {w}x{h} bg=RGB({bg[0]:.0f},{bg[1]:.0f},{bg[2]:.0f}) "
           f"text_layer={'YES' if has_text_layer else 'NO'}")
 
-    # 下部の白領域チェック
-    white_start = detect_white_boundary(arr, bg)
-    if white_start < h - 10:
-        white_pct = (h - white_start) / h * 100
-        print(f"  → 白領域: y={white_start} ({white_start/h*100:.0f}%) "
-              f"残り{white_pct:.0f}%が白")
-
     # 右下ロゴチェック
     logo_region = arr[h-70:h-2, w-340:w-2, :]
     logo_dark = (logo_region.mean(axis=2) < 150).mean()
     if logo_dark > 0.005:
         print(f"  → 右下ロゴ検出: dark_ratio={logo_dark:.3f}")
+
+    # 下部の白領域チェック（ロゴ除去後にスキャン）
+    arr_tmp = remove_logo_pixels(arr.copy())
+    white_start = detect_white_boundary(arr_tmp, bg)
+    if white_start < h - 10:
+        white_pct = (h - white_start) / h * 100
+        print(f"  → 白領域: y={white_start} ({white_start/h*100:.0f}%) "
+              f"残り{white_pct:.0f}%が白")
 
     return arr
 
