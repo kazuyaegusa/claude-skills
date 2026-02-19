@@ -1,5 +1,5 @@
-# インストール済みスキル索引（226件）
-<!-- 自動生成: 2026-02-18 02:16 UTC -->
+# インストール済みスキル索引（232件）
+<!-- 自動生成: 2026-02-19 02:19 UTC -->
 
 | slug | 名前 | 説明 |
 |------|------|------|
@@ -45,6 +45,7 @@
 | cameroncooke--xcodebuildmcp | xcodebuildmcp-cli | Official skill for the XcodeBuildMCP CLI. Use when doing iOS/macOS/watchOS/tvOS/visionOS work (build, test, run, debug, log, UI automation). |
 | centminmod--my-claude-code-setup | claude-docs-consultant | Consult official Claude Code documentation from docs.claude.com using selective fetching. Use this skill when working on Claude Code hooks, skills, su |
 | cexll--myclaude | browser | This skill should be used for browser automation tasks using Chrome DevTools Protocol (CDP). Triggers when users need to launch Chrome with remote deb |
+| checkra1neth--xbird-skill | xbird | Use when the user asks to tweet, post threads, read tweets, search Twitter/X, check mentions, manage engagement (like/retweet/bookmark), update profil |
 | chriswiles--claude-code-showcase | core-components | Core component library and design system patterns. Use when building UI, using design tokens, or working with the component library. |
 | chromedevtools--chrome-devtools-mcp | chrome-devtools | Uses Chrome DevTools via MCP for efficient debugging, troubleshooting and browser automation. Use when debugging web pages, automating browser interac |
 | clickhouse--clickhouse | build | Build ClickHouse with various configurations (Release, Debug, ASAN, TSAN, etc.). Use when the user wants to compile ClickHouse. |
@@ -108,6 +109,7 @@
 | jeremylongshore--claude-code-plugins | Auditing Access Control | \| |
 | jeremylongshore--claude-code-plugins-plus | Auditing Access Control | \| |
 | jeremylongshore--claude-code-plugins-plus-skills | Auditing Access Control | \| |
+| jftuga--transcript-critic | transcribe | Transcribe and critically analyze audio/video content. Accepts a .vtt file, an audio file (.m4a, .mp3, .wav, etc.), or a URL (YouTube or other yt-dlp- |
 | jimliu--baoyu-skills | release-skills | Universal release workflow. Auto-detects version files and changelogs. Supports Node.js, Python, Rust, Claude Plugin, and generic projects. Use when u |
 | jlowin--fastmcp | reviewing-code | Review code for quality, maintainability, and correctness. Use when reviewing pull requests, evaluating code changes, or providing feedback on impleme |
 | k-dense-ai--claude-scientific-skills | adaptyv | Cloud laboratory platform for automated protein testing and validation. Use when designing proteins and needing experimental validation including bind |
@@ -152,6 +154,7 @@
 | numman-ali--n-skills | dev-browser | Browser automation with persistent page state. Use when users ask to navigate websites, fill forms, take screenshots, extract web data, test web apps, |
 | numman-ali--openskills | my-first-skill | Example skill demonstrating Anthropic SKILL.md format. Load when learning to create skills or testing the OpenSkills loader. |
 | obra--superpowers | brainstorming | You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent |
+| op7418--humanizer-zh | humanizer-zh | \| |
 | op7418--nanobanana-ppt-skills | PPT Generator Pro - Claude Code Skill | - **Skill 名称**: ppt-generator-pro |
 | op7418--youtube-clipper-skill | youtube-clipper | > |
 | openai--codex | test-tui | Guide for testing Codex TUI interactively |
@@ -161,6 +164,7 @@
 | parcadei--continuous-claude-v3 | trace-claude-code | \| |
 | payloadcms--payload | generate-translations | Use when new translation keys are added to packages to generate new translations strings |
 | pdf-logo-remover | pdf-logo-remover | PDFの全ページからロゴやウォーターマークを自動検出・除去するスキル。NotebookLM等のツールが付与するブランディングロゴの一括除去に対応。 |
+| pdf-slide-editor | pdf-slide-editor | PDFスライドの修正指示（ロゴ除去・白領域修正・テキスト除去・背景色調整など）を受けて、分析→スクリプト生成→実行→検証のサイクルで的確に反映するスキル。 |
 | phase-report | フェーズ完了レポート自動生成 | **このスキルは完全自動実行である。ユーザーへの確認・承認・質問を一切行わず、全ステップを自動で完了させること。** |
 | piebald-ai--tweakcc | patch-creation | Create and register new patches for tweakcc. Use when adding new customizations to Claude Code. |
 | pleaseprompto--google-ai-mode-skill | google-ai-mode-skill | Use this skill when the user requests current information, documentation, coding examples, or web research beyond the knowledge cutoff. Queries Google |
@@ -179,6 +183,7 @@
 | repo-phuocdt--prompt-engineer-skill | prompt-engineer | Transform rough prompts/ideas into production-ready LLM prompts. Use when crafting, refining, or optimizing prompts for any AI model (Claude, GPT, Lla |
 | repo-tracker | repo-tracker | GitHub リポジトリの変更を定期監視し、差分レポート生成 + Discord 通知を行う汎用スキル。 |
 | risingwavelabs--risingwave | fix-buildkite-ci | Triage and fix failing Buildkite CI checks for RisingWave pull requests by extracting concrete failing tests, diffs, and error messages from Buildkite |
+| rohunvora--x-research-skill | x-research | > |
 | ruvnet--claude-code-flow | agent-adaptive-coordinator | Agent skill for adaptive-coordinator - invoke with $agent-adaptive-coordinator |
 | ruvnet--claude-flow | agent-adaptive-coordinator | Agent skill for adaptive-coordinator - invoke with $agent-adaptive-coordinator |
 | ryoppippi--ccusage | byethrow | Reference the byethrow documentation to understand and use the Result type library for error handling in JavaScript/TypeScript. Access detailed API re |
@@ -188,6 +193,7 @@
 | shareai-lab--analysis_claude_code | agent-builder | \| |
 | shareai-lab--learn-claude-code | agent-builder | \| |
 | sickn33--antigravity-awesome-skills | 3d-web-experience | Expert in building 3D experiences for the web - Three.js, React Three Fiber, Spline, WebGL, and interactive 3D scenes. Covers product configurators, 3 |
+| silverov--yandex-direct-skill | direct | > |
 | skillcreatorai--ai-agent-skills | algorithmic-art | Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use when users request creating art using code, gen |
 | snarktank--ralph | prd | Generate a Product Requirements Document (PRD) for a new feature. Use when planning a feature, starting a new project, or when asked to create a PRD.  |
 | sstklen--claude-api-cost-optimization | claude-api-cost-optimization | Save 50-90% on Claude API costs with Batch API, Prompt Caching & Extended Thinking. Official techniques, verified. |
