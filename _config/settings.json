@@ -4,5 +4,8 @@
   },
   "model": "claude-opus-4-6",
   "autoUpdatesChannel": "latest",
-  "skipDangerousModePermissionPrompt": true
+  "skipDangerousModePermissionPrompt": true,
+  "enabledPlugins": {
+    "github@claude-plugins-official": true
+  }
 }
