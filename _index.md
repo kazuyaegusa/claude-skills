@@ -1,5 +1,5 @@
-# インストール済みスキル索引（232件）
-<!-- 自動生成: 2026-02-19 02:19 UTC -->
+# インストール済みスキル索引（236件）
+<!-- 自動生成: 2026-02-21 01:40 UTC -->
 
 | slug | 名前 | 説明 |
 |------|------|------|
@@ -18,6 +18,7 @@
 | anthropics--claude-plugins-official | stripe-best-practices | Best practices for building Stripe integrations. Use when implementing payment processing, checkout flows, subscriptions, webhooks, Connect platforms, |
 | anthropics--skills | algorithmic-art | Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code |
 | antonbabenko--terraform-skill | terraform-skill | Use when working with Terraform or OpenTofu - creating modules, writing tests (native test framework, Terratest), setting up CI/CD pipelines, reviewin |
+| apache--airflow | airflow-translations | > |
 | aplaceforallmystuff--the-antislop | antislop | Detect and fix AI-generated writing patterns (slop). Comprehensive detection with 45+ patterns, tiered severity scoring, and editor mode. |
 | appleboy--codegpt | commit-message | Automatically generates, formats, organizes, and improves git commit messages by analyzing your staged changes using AI. Use this skill when you want  |
 | arize-ai--phoenix | agent-browser | Browser automation CLI for AI agents. Use when the user needs to interact with websites, including navigating pages, filling forms, clicking buttons,  |
@@ -29,6 +30,7 @@
 | axtonliu--axton-obsidian-visual-skills | excalidraw-diagram | Generate Excalidraw diagrams from text content. Supports three output modes - Obsidian (.md), Standard (.excalidraw), and Animated (.excalidraw with a |
 | axtonliu--smart-illustrator | smart-illustrator | 智能配图与 PPT 信息图生成器。支持三种模式：(1) 文章配图模式 - 分析文章内容，生成插图；(2) PPT/Slides 模式 - 生成批量信息图；(3) Cover 模式 - 生成封面图。所有模式默认生成图片，`--prompt-only` 只输出 prompt。触发词：配图、插图、PPT、 |
 | berriai--litellm | test-skill | A minimal test skill for API testing |
+| better-auth--better-icons | better-icons | Use when working with icons in any project. Provides CLI for searching 200+ icon libraries (Iconify) and retrieving SVGs. Commands: `better-icons sear |
 | bgauryy--octocode-mcp | octocode-implement | Implement features from spec documents (context/doc required) |
 | blader--claude-code-continuous-learning-skill | claudeception | \| |
 | blader--claudeception | claudeception | \| |
@@ -94,6 +96,7 @@
 | glittercowboy--taches-cc-resources | create-agent-skills | Expert guidance for creating, writing, building, and refining Claude Code Skills. Use when working with SKILL.md files, authoring new skills, improvin |
 | google-gemini--gemini-cli | code-reviewer | This skill guides the agent in conducting professional and thorough code reviews for both local development and remote Pull Requests. |
 | google-labs-code--stitch-skills | design-md | Analyze Stitch projects and synthesize a semantic design system into DESIGN.md files |
+| gradio-app--gradio | gradio | Build Gradio web UIs and demos in Python. Use when creating or editing Gradio apps, components, event listeners, layouts, or chatbots. |
 | homeassistant-ai--ha-mcp | bat | Run bot acceptance tests to validate MCP tools work correctly from a real AI agent's perspective. Use when testing PRs, detecting regressions, or veri |
 | htmlstreamofficial--preline | preline-theme-generator | Generates beautiful, consistent Preline Theme CSS files. Agent interprets user request, runs build script, delivers complete CSS. |
 | huggingface--skills | hf-mcp | Use Hugging Face Hub via MCP server tools. Search models, datasets, Spaces, papers. Get repo details, fetch documentation, run compute jobs, and use G |
@@ -190,6 +193,7 @@
 | sawyerhood--dev-browser | dev-browser | Browser automation with persistent page state. Use when users ask to navigate websites, fill forms, take screenshots, extract web data, test web apps, |
 | severity1--claude-code-prompt-improver | prompt-improver | This skill enriches vague prompts with targeted research and clarification before execution. Should be used when a prompt is determined to be vague an |
 | sgl-project--sglang | add-jit-kernel | Step-by-step tutorial for adding a lightweight JIT CUDA/C++ kernel to python/sglang/jit_kernel (including tests & benchmarks) |
+| shap--shap | ai-disclosure | Track and document Claude's contributions during coding sessions for PR transparency. Use when working on feature branches, PRs, or when the user want |
 | shareai-lab--analysis_claude_code | agent-builder | \| |
 | shareai-lab--learn-claude-code | agent-builder | \| |
 | sickn33--antigravity-awesome-skills | 3d-web-experience | Expert in building 3D experiences for the web - Three.js, React Three Fiber, Spline, WebGL, and interactive 3D scenes. Covers product configurators, 3 |
