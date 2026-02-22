@@ -1,5 +1,5 @@
-# インストール済みスキル索引（236件）
-<!-- 自動生成: 2026-02-21 01:40 UTC -->
+# インストール済みスキル索引（238件）
+<!-- 自動生成: 2026-02-22 01:43 UTC -->
 
 | slug | 名前 | 説明 |
 |------|------|------|
@@ -191,6 +191,7 @@
 | ruvnet--claude-flow | agent-adaptive-coordinator | Agent skill for adaptive-coordinator - invoke with $agent-adaptive-coordinator |
 | ryoppippi--ccusage | byethrow | Reference the byethrow documentation to understand and use the Result type library for error handling in JavaScript/TypeScript. Access detailed API re |
 | sawyerhood--dev-browser | dev-browser | Browser automation with persistent page state. Use when users ask to navigate websites, fill forms, take screenshots, extract web data, test web apps, |
+| scottcjn--grazer-skill | Grazer | Multi-Platform Content Discovery for AI Agents |
 | severity1--claude-code-prompt-improver | prompt-improver | This skill enriches vague prompts with targeted research and clarification before execution. Should be used when a prompt is determined to be vague an |
 | sgl-project--sglang | add-jit-kernel | Step-by-step tutorial for adding a lightweight JIT CUDA/C++ kernel to python/sglang/jit_kernel (including tests & benchmarks) |
 | shap--shap | ai-disclosure | Track and document Claude's contributions during coding sessions for PR transparency. Use when working on feature branches, PRs, or when the user want |
@@ -199,6 +200,7 @@
 | sickn33--antigravity-awesome-skills | 3d-web-experience | Expert in building 3D experiences for the web - Three.js, React Three Fiber, Spline, WebGL, and interactive 3D scenes. Covers product configurators, 3 |
 | silverov--yandex-direct-skill | direct | > |
 | skillcreatorai--ai-agent-skills | algorithmic-art | Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use when users request creating art using code, gen |
+| smithery-ai--cli | smithery | Discover, install, and use MCP tools and agent skills. Use when you need to find MCP servers, securely connect to them, call their tools, or search/in |
 | snarktank--ralph | prd | Generate a Product Requirements Document (PRD) for a new feature. Use when planning a feature, starting a new project, or when asked to create a PRD.  |
 | sstklen--claude-api-cost-optimization | claude-api-cost-optimization | Save 50-90% on Claude API costs with Batch API, Prompt Caching & Extended Thinking. Official techniques, verified. |
 | stacklok--toolhive | commit-message | Generates clear commit messages from git diffs. Use when writing commit messages or reviewing staged changes. |
