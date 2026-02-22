@@ -2,9 +2,10 @@
 
 ## MTGトランスクリプト共有データ
 
-全MTG履歴は ~/KEWORK/shared/mtg_transcripts/ に490件保存されている。
+全MTG履歴は ~/KEWORK/shared/mtg_transcripts/ に490件+保存されている（毎日9:00に自動追加）。
 MTGの内容を参照する必要がある場合はこのディレクトリを参照すること。
-データ元: CircleBack（自動取得スケジューラーは ~/KEWORK/7025_circle_back_all/02_claude/ で管理）
+データ元: CircleBack API（自動取得スケジューラーは ~/KEWORK/7025_circle_back_all/02_claude/ で管理）
+**重要**: このディレクトリとスケジューラー設定は業務基盤。削除・変更厳禁。
 
 ## 基本方針
 
