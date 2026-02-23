@@ -1,5 +1,5 @@
-# インストール済みスキル索引（238件）
-<!-- 自動生成: 2026-02-22 01:43 UTC -->
+# インストール済みスキル索引（241件）
+<!-- 自動生成: 2026-02-23 01:43 UTC -->
 
 | slug | 名前 | 説明 |
 |------|------|------|
@@ -62,6 +62,7 @@
 | coplaydev--unity-mcp | unity-mcp-orchestrator | Orchestrate Unity Editor via MCP (Model Context Protocol) tools and resources. Use when working with Unity projects through MCP for Unity - creating/m |
 | coreyhaines31--marketingskills | ab-test-setup | When the user wants to plan, design, or implement an A/B test or experiment. Also use when the user mentions "A/B test," "split test," "experiment," " |
 | cosmoblk--email-marketing-bible | email-marketing-bible | > |
+| cyrus-cai--claude-cobrain | claude-cobrain | Manage claude-cobrain daemon - captures the active window and summarizes it using local VLM (Ollama + qwen3-vl:2b), writing entries to daily markdown  |
 | czlonkowski--n8n-skills | n8n-code-javascript | Write JavaScript code in n8n Code nodes. Use when writing JavaScript in n8n, using $input/$json/$node syntax, making HTTP requests with $helpers, work |
 | d-kimuson--claude-code-viewer | i18n | Use when updating Lingui catalogs or fixing translations |
 | daaain--claude-code-log | tool-renderer | Implement specialized rendering for Claude Code tools. Use when adding a new tool type (WebSearch, WebFetch, etc.) to the transcript viewer, or when a |
@@ -109,6 +110,7 @@
 | iofficeai--aionui | i18n | \| |
 | itsmostafa--aws-agent-skills | api-gateway | AWS API Gateway for REST and HTTP API management. Use when creating APIs, configuring integrations, setting up authorization, managing stages, impleme |
 | jasonxudeveloper--jengine | editor-ui | JEngine Editor UI component library with theming. Triggers on: custom inspector, editor window, Unity editor UI, UIElements, VisualElement, JButton, J |
+| jcfischer--supertag-cli | Supertag CLI Skill | Supertag CLI provides complete Tana workspace integration through: |
 | jeremylongshore--claude-code-plugins | Auditing Access Control | \| |
 | jeremylongshore--claude-code-plugins-plus | Auditing Access Control | \| |
 | jeremylongshore--claude-code-plugins-plus-skills | Auditing Access Control | \| |
@@ -220,6 +222,7 @@
 | tobi--qmd | qmd | Search personal markdown knowledge bases, notes, meeting transcripts, and documentation using QMD - a local hybrid search engine. Combines BM25 keywor |
 | tripleyak--skillforge | skillforge | Intelligent skill router and creator. Analyzes ANY input to recommend existing skills, improve them, or create new ones. Uses deep iterative analysis  |
 | udecode--dotai | debug | Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes - four-phase framework (root cause investigation, pattern  |
+| update-dashboards | update-dashboards | MTGトランスクリプトの新規ファイルを検知し、分析・ナレッジベース・HTMLダッシュボード2種を自動更新するスキル。 |
 | upstash--context7 | documentation-lookup | This skill should be used when the user asks about libraries, frameworks, API references, or needs code examples. Activates for setup questions, code  |
 | vercel--ai | add-provider-package | Guide for adding new AI provider packages to the AI SDK. Use when creating a new @ai-sdk/<provider> package to integrate an AI service into the SDK. |
 | vercel--next.js | cache-components | \| |
