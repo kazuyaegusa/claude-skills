@@ -1,20 +1,21 @@
 ---
 name: skillforge
-description: "Intelligent skill router and creator. Analyzes ANY input to recommend existing skills, improve them, or create new ones. Uses deep iterative analysis with 11 thinking models, regression questioning, evolution lens, and multi-agent synthesis panel. Phase 0 triage ensures you never duplicate existing functionality."
+description: "Intelligent skill router and creator. Analyzes ANY input to recommend existing skills, improve them, or create new ones. Uses deep iterative analysis with 11 thinking models, regression questioning, evolution lens, multi-agent synthesis panel, and Master Supervisor final review. Phase 0 triage ensures you never duplicate existing functionality."
 license: MIT
 metadata:
-  version: 4.0.0
-  model: claude-opus-4-5-20251101
-  subagent_model: claude-opus-4-5-20251101
+  version: 5.0.0
+  model: claude-sonnet-4-6
+  subagent_model: claude-sonnet-4-6
   domains: [meta-skill, automation, skill-creation, orchestration, agentic, routing]
   type: orchestrator
   inputs: [any-input, user-goal, domain-hints]
   outputs: [SKILL.md, references/, scripts/, SKILL_SPEC.md, recommendations]
 ---
 
-# SkillForge 4.0 - Intelligent Skill Router & Creator
+# SkillForge 5.0 - Intelligent Skill Router & Creator
 
 Analyzes ANY input to find, improve, or create the right skill.
+v5.0 adds a **Master Supervisor Agent** for final quality control and a **6-dimensional Quality Scorecard** for rigorous evaluation.
 
 ---
 
@@ -23,8 +24,6 @@ Analyzes ANY input to find, improve, or create the right skill.
 **Any input works.** SkillForge will intelligently route to the right action:
 
 ```
-# These all work - SkillForge figures out what you need:
-
 SkillForge: create a skill for automated code review
 → Creates new skill (after checking no duplicates exist)
 
@@ -36,9 +35,6 @@ improve the testgen skill to handle React components better
 
 do I have a skill for database migrations?
 → Recommends DBSchema, database-migration skills
-
-TypeError: Cannot read property 'map' of undefined
-→ Routes to debugging skills (error detected)
 ```
 
 ---
@@ -52,7 +48,7 @@ TypeError: Cannot read property 'map' of undefined
 - `ultimate skill` - Emphasize maximum quality
 - `skillforge --plan-only` - Generate specification without execution
 
-### Routing Triggers (NEW in v4.0)
+### Routing Triggers
 - `{any input}` - Analyzes and routes automatically
 - `do I have a skill for` - Searches existing skills
 - `which skill` / `what skill` - Recommends matching skills
@@ -62,7 +58,7 @@ TypeError: Cannot read property 'map' of undefined
 | Input | Output | Quality Gate |
 |-------|--------|--------------|
 | Any input | Triage → Route → Action | Phase 0 analysis |
-| Explicit create | New skill | Unanimous panel approval |
+| Explicit create | New skill | Master Supervisor approval |
 | Task/question | Skill recommendation | Match confidence ≥60% |
 
 ---
@@ -75,7 +71,7 @@ ANY USER INPUT
     │
     ▼
 ┌─────────────────────────────────────────────────────┐
-│ Phase 0: SKILL TRIAGE (NEW)                         │
+│ Phase 0: SKILL TRIAGE                               │
 │ • Classify input type (create/improve/question/task)│
 │ • Scan 250+ skills in ecosystem                     │
 │ • Match against existing skills with confidence %   │
@@ -97,16 +93,24 @@ ANY USER INPUT
 │ • Generate XML spec with all decisions + WHY        │
 │ • Include scripts section (if applicable)           │
 │ • Validate timelessness score ≥ 7                   │
+│ ★ QUALITY GATE: Spec must pass before Phase 3      │
 ├─────────────────────────────────────────────────────┤
 │ Phase 3: GENERATION                                 │
 │ • Write SKILL.md with fresh context                 │
 │ • Generate references/, assets/, and scripts/       │
 ├─────────────────────────────────────────────────────┤
 │ Phase 4: SYNTHESIS PANEL                            │
-│ • 3-4 Opus agents review independently              │
-│ • Script Agent added when scripts present           │
+│ • 3-4 agents review independently                   │
 │ • All agents must approve (unanimous)               │
 │ • If rejected → loop back with feedback             │
+│ ★ QUALITY GATE: Unanimity required before Phase 5  │
+├─────────────────────────────────────────────────────┤
+│ Phase 5: MASTER SUPERVISOR REVIEW [NEW in v5.0]    │
+│ • Single independent supervisor agent               │
+│ • 6-dimensional Quality Scorecard (100 points)      │
+│ • Final APPROVE / REVISE / REJECT decision          │
+│ • Overrides panel if critical issues found          │
+│ ★ QUALITY GATE: Score ≥75 + all dimension gates    │
 └─────────────────────────────────────────────────────┘
     │
     ▼
@@ -115,10 +119,10 @@ Production-Ready Agentic Skill
 
 **Key principles:**
 - **Phase 0 prevents duplicates** - Always checks existing skills first
+- **Phase 5 ensures final quality** - Master Supervisor has ultimate authority
 - Evolution/timelessness is the core lens (score ≥ 7 required)
 - Every decision includes WHY
-- Zero tolerance for errors
-- Autonomous execution at maximum depth
+- Quality gates enforce standards between phases
 - Scripts enable self-verification and agentic operation
 
 ---
@@ -132,116 +136,215 @@ Production-Ready Agentic Skill
 | `SkillForge --quick {goal}` | Reduced depth (not recommended) |
 | `SkillForge --triage {input}` | Run Phase 0 triage only |
 | `SkillForge --improve {skill}` | Enter improvement mode for existing skill |
+| `SkillForge --evaluate {path}` | Run Quality Scorecard on existing skill |
 
 ---
 
-## Phase 0: Skill Triage (NEW in v4.0)
+## Phase 5: Master Supervisor Review [NEW in v5.0]
+
+The Master Supervisor is an independent agent with authority over the entire creation pipeline.
+
+### Role
+
+| Dimension | Responsibility |
+|-----------|----------------|
+| **Independence** | No prior involvement in Phases 1-4 |
+| **Authority** | Can APPROVE, REVISE, or REJECT regardless of panel result |
+| **Scope** | Reviews all phases, not just the final output |
+| **Focus** | Quality gaps the panel may have normalized over iterations |
+
+### 6-Dimensional Quality Scorecard
+
+| Dimension | Weight | Description | Minimum |
+|-----------|--------|-------------|---------|
+| **Structural Quality** | 15 pts | Frontmatter validity, naming, format compliance | 10/15 |
+| **Functional Completeness** | 20 pts | Triggers, phases, verification, commands | 14/20 |
+| **Agentic Capability** | 15 pts | Automation, self-verification, autonomous operation | 10/15 |
+| **Timelessness** | 20 pts | Evolution score, extension points, obsolescence resistance | 14/20 |
+| **Documentation Quality** | 15 pts | Clarity, examples, anti-patterns, WHY documented | 10/15 |
+| **Ecosystem Fit** | 15 pts | Uniqueness, integration, discoverability | 10/15 |
+| **Total** | **100 pts** | | **≥75** |
+
+### Scoring Details
+
+**Structural Quality (15 pts)**
+
+| Criteria | Points |
+|----------|--------|
+| Frontmatter uses only allowed properties | 3 |
+| Name is hyphen-case, ≤64 chars | 2 |
+| Description ≤1024 chars, no `<>` | 2 |
+| Directory structure follows convention | 4 |
+| Sections complete, no placeholder text | 4 |
+
+**Functional Completeness (20 pts)**
+
+| Criteria | Points |
+|----------|--------|
+| 3-5 distinct trigger phrases | 4 |
+| All phases clearly defined | 4 |
+| Verification criteria are measurable | 4 |
+| Commands section present | 4 |
+| Anti-patterns documented | 4 |
+
+**Agentic Capability (15 pts)**
+
+| Criteria | Points |
+|----------|--------|
+| Scripts present when artifact-producing | 5 |
+| Scripts include self-verification | 5 |
+| Can run autonomously (overnight test) | 5 |
+
+**Timelessness (20 pts)**
+
+| Criteria | Points |
+|----------|--------|
+| Phase 1 timelessness score ≥7 | 8 |
+| ≥2 extension points documented | 4 |
+| Obsolescence triggers identified | 4 |
+| Principles-based, not implementation-locked | 4 |
+
+**Documentation Quality (15 pts)**
+
+| Criteria | Points |
+|----------|--------|
+| Quick Start section present and useful | 3 |
+| Concrete examples for all triggers | 3 |
+| Anti-patterns with WHY | 3 |
+| Deep Dive sections for complex topics | 3 |
+| Changelog maintained | 3 |
+
+**Ecosystem Fit (15 pts)**
+
+| Criteria | Points |
+|----------|--------|
+| Confirmed unique (no >80% overlap) | 5 |
+| Related skills listed | 5 |
+| Discoverability (index-ready description) | 5 |
+
+### Supervisor Decision Protocol
+
+```
+STEP 1: Run automated evaluation
+  python scripts/evaluate_skill_quality.py ~/.claude/skills/{name}/
+  → JSON report with per-dimension scores
+
+STEP 2: Manual inspection of high-risk areas
+  • Read Phase 1 spec: were 11 lenses applied?
+  • Read Phase 4 panel: were all rejections addressed?
+  • Scan scripts: do they include self-verification?
+  • Test: does Quick Start make sense to a first-time user?
+
+STEP 3: Decision matrix
+
+  Score ≥75 AND all dimension minimums met
+    → APPROVED: Finalize and register
+
+  Score 60-74 OR 1 dimension below minimum
+    → REVISE: Return to Phase 3 with targeted feedback
+    → Supervisor writes specific improvement tasks
+    → Panel re-review is skipped (supervisor handles)
+
+  Score <60 OR multiple critical failures
+    → REJECT: Return to Phase 1 with full reset
+    → Supervisor documents root cause
+    → Flag iteration count for human review if >3
+
+STEP 4: Approval record
+  → Write supervisor verdict to SKILL.md Changelog
+  → Include score breakdown
+  → Note any accepted exceptions
+```
+
+### Supervisor vs Panel Relationship
+
+```
+Panel (Phase 4):          Supervisor (Phase 5):
+─────────────────         ────────────────────────
+3-4 specialist agents     1 generalist agent
+Domain-focused review     Cross-domain final check
+Unanimous required        Single authority
+Iterative feedback        One-shot with priority list
+Can miss forest for trees Catches what panel normalizes
+```
+
+---
+
+## Quality Gates Summary
+
+| Gate | Location | Requirement | Failure Action |
+|------|----------|-------------|----------------|
+| Spec Gate | Phase 2 → Phase 3 | Timelessness ≥7, no placeholders | Revise spec |
+| Panel Gate | Phase 4 → Phase 5 | Unanimous approval | Loop Phase 1-4 |
+| Supervisor Gate | Phase 5 → Final | Score ≥75, all mins met | REVISE or REJECT |
+
+---
+
+## Automated Evaluation
+
+Run the quality scorecard on any skill:
+
+```bash
+# Full evaluation with JSON output
+python scripts/evaluate_skill_quality.py ~/.claude/skills/my-skill/
+
+# Evaluate and display summary
+python scripts/evaluate_skill_quality.py ~/.claude/skills/my-skill/ --summary
+
+# Compare two versions of a skill
+python scripts/evaluate_skill_quality.py ~/.claude/skills/my-skill/ \
+  --compare ~/.claude/skills/my-skill-v2/
+
+# Batch evaluate all skills
+python scripts/evaluate_skill_quality.py --batch ~/.claude/skills/ \
+  --output report.json
+```
+
+Output format:
+```json
+{
+  "skill": "my-skill",
+  "total_score": 82,
+  "dimensions": {
+    "structural_quality": {"score": 13, "max": 15, "issues": []},
+    "functional_completeness": {"score": 17, "max": 20, "issues": ["Missing anti-patterns"]},
+    "agentic_capability": {"score": 10, "max": 15, "issues": ["No self-verification in scripts"]},
+    "timelessness": {"score": 16, "max": 20, "issues": ["Only 1 extension point documented"]},
+    "documentation_quality": {"score": 13, "max": 15, "issues": []},
+    "ecosystem_fit": {"score": 13, "max": 15, "issues": []}
+  },
+  "verdict": "APPROVED",
+  "gates_passed": true,
+  "recommendations": ["Add scripts/verify.py with self-verification"]
+}
+```
+
+---
+
+## Phase 0: Skill Triage
 
 Before creating anything, SkillForge intelligently analyzes your input to determine the best action.
 
-### How It Works
+### Decision Matrix
 
-```
-┌────────────────────────────────────────────────────────────────────┐
-│                        ANY USER INPUT                               │
-│  (prompt, error, code, URL, question, task request, anything)      │
-└────────────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-┌────────────────────────────────────────────────────────────────────┐
-│  Step 1: INPUT CLASSIFICATION                                       │
-│  ┌─────────────────┐ ┌─────────────────┐ ┌─────────────────┐       │
-│  │ explicit_create │ │ explicit_improve│ │ skill_question  │       │
-│  │ "create skill"  │ │ "improve skill" │ │ "do I have..."  │       │
-│  └─────────────────┘ └─────────────────┘ └─────────────────┘       │
-│  ┌─────────────────┐ ┌─────────────────┐ ┌─────────────────┐       │
-│  │  task_request   │ │  error_message  │ │  code_snippet   │       │
-│  │ "help me with"  │ │ "TypeError..."  │ │ [pasted code]   │       │
-│  └─────────────────┘ └─────────────────┘ └─────────────────┘       │
-└────────────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-┌────────────────────────────────────────────────────────────────────┐
-│  Step 2: SKILL ECOSYSTEM SCAN                                       │
-│  • Load index of 250+ skills (discover_skills.py)                  │
-│  • Match input against all skills with confidence scoring          │
-│  • Identify top matches with reasons                               │
-└────────────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-┌────────────────────────────────────────────────────────────────────┐
-│  Step 3: DECISION MATRIX                                            │
-│                                                                     │
-│  Match ≥80%  + explicit create → CLARIFY (duplicate warning)       │
-│  Match ≥80%  + other input     → USE_EXISTING (recommend skill)    │
-│  Match 50-79%                  → IMPROVE_EXISTING (enhance match)  │
-│  Match <50%  + explicit create → CREATE_NEW (proceed to Phase 1)   │
-│  Multi-domain detected         → COMPOSE (suggest skill chain)     │
-│  Ambiguous input               → CLARIFY (ask for more info)       │
-└────────────────────────────────────────────────────────────────────┘
-```
-
-### Decision Actions
-
-| Action | When | Result |
-|--------|------|--------|
-| **USE_EXISTING** | Match ≥80% | Recommends existing skill(s) to invoke |
-| **IMPROVE_EXISTING** | Match 50-79% | Loads skill and enters enhancement mode |
-| **CREATE_NEW** | Match <50% | Proceeds to Phase 1 (Deep Analysis) |
-| **COMPOSE** | Multi-domain | Suggests skill chain via SkillComposer |
-| **CLARIFY** | Ambiguous or duplicate | Asks user to clarify intent |
-
-### Triage Script
-
-```bash
-# Run triage on any input
-python scripts/triage_skill_request.py "help me debug this error"
-
-# JSON output for automation
-python scripts/triage_skill_request.py "create a skill for payments" --json
-
-# Examples:
-python scripts/triage_skill_request.py "TypeError: Cannot read property 'map'"
-# → USE_EXISTING: Recommends ErrorExplainer (92%)
-
-python scripts/triage_skill_request.py "create a skill for code review"
-# → CLARIFY: CodeReview skill exists (85%), create anyway?
-
-python scripts/triage_skill_request.py "help me with API and auth and testing"
-# → COMPOSE: Multi-domain, suggests APIDesign + AuthSystem + TestGen chain
-```
-
-### Ecosystem Index
-
-Phase 0 uses a pre-built index of all skills:
-
-```bash
-# Rebuild skill index (run periodically or after installing new skills)
-python scripts/discover_skills.py
-
-# Index location: ~/.cache/skillrecommender/skill_index.json
-# Scans: ~/.claude/skills/, plugins/marketplaces/*, plugins/cache/*
-```
-
-### Integration with Phases 1-4
-
-- **USE_EXISTING**: Exits early, no creation needed
-- **IMPROVE_EXISTING**: Loads existing skill → Phase 1 analyzes gaps → Phase 2-4 enhance
-- **CREATE_NEW**: Full pipeline (Phase 1 → 2 → 3 → 4)
-- **COMPOSE**: Suggests using SkillComposer instead
-- **CLARIFY**: Pauses for user input before proceeding
+| Match | Intent | Action |
+|-------|--------|--------|
+| ≥80% | explicit create | CLARIFY (duplicate warning) |
+| ≥80% | other | USE_EXISTING |
+| 50-79% | any | IMPROVE_EXISTING |
+| <50% | explicit create | CREATE_NEW |
+| Multi-domain | any | COMPOSE |
+| Ambiguous | any | CLARIFY |
 
 ---
 
 ## Validation & Packaging
 
-Before distribution, validate your skill:
-
 ```bash
-# Quick validation (required for packaging)
-python scripts/quick_validate.py ~/.claude/skills/my-skill/
+# Automated quality evaluation (v5.0)
+python scripts/evaluate_skill_quality.py ~/.claude/skills/my-skill/
 
-# Full structural validation
+# Structural validation
 python scripts/validate-skill.py ~/.claude/skills/my-skill/
 
 # Package for distribution
@@ -250,26 +353,13 @@ python scripts/package_skill.py ~/.claude/skills/my-skill/ ./dist
 
 ### Frontmatter Requirements
 
-Skills must use only these allowed frontmatter properties:
-
 | Property | Required | Description |
 |----------|----------|-------------|
 | `name` | Yes | Hyphen-case, max 64 chars |
 | `description` | Yes | Max 1024 chars, no angle brackets |
 | `license` | No | MIT, Apache-2.0, etc. |
 | `allowed-tools` | No | Restrict tool access |
-| `metadata` | No | Custom fields (version, model, etc.) |
-
-```yaml
----
-name: my-skill
-description: What this skill does
-license: MIT
-metadata:
-  version: 1.0.0
-  model: claude-opus-4-5-20251101
----
-```
+| `metadata` | No | Custom fields |
 
 ---
 
@@ -277,38 +367,18 @@ metadata:
 
 ```
 ~/.claude/skills/{skill-name}/
-├── SKILL.md                    # Main entry point (required)
-├── references/                 # Deep documentation (optional)
+├── SKILL.md                       # Main entry point (required)
+├── references/                    # Deep documentation (optional)
 │   ├── patterns.md
 │   └── examples.md
-├── assets/                     # Templates (optional)
+├── assets/                        # Templates (optional)
 │   └── templates/
-└── scripts/                    # Automation scripts (optional)
-    ├── validate.py             # Validation/verification
-    ├── generate.py             # Artifact generation
-    └── state.py                # State management
+└── scripts/                       # Automation scripts (optional)
+    ├── evaluate_skill_quality.py  # Quality scorecard [NEW v5.0]
+    ├── validate.py                # Validation/verification
+    ├── generate.py                # Artifact generation
+    └── state.py                   # State management
 ```
-
-### Scripts Directory
-
-Scripts enable skills to be **agentic** - capable of autonomous operation with self-verification.
-
-| Category | Purpose | When to Include |
-|----------|---------|-----------------|
-| **Validation** | Verify outputs meet standards | Skill produces artifacts |
-| **Generation** | Create artifacts from templates | Repeatable artifact creation |
-| **State Management** | Track progress across sessions | Long-running operations |
-| **Transformation** | Convert/process data | Data processing tasks |
-| **Calculation** | Compute metrics/scores | Scoring or analysis |
-
-**Script Requirements:**
-- Python 3.x with standard library only (graceful fallbacks for extras)
-- `Result` dataclass pattern for structured returns
-- Exit codes: 0=success, 1=failure, 10=validation failure, 11=verification failure
-- Self-verification where applicable
-- Documented in SKILL.md with usage examples
-
-See: [references/script-integration-framework.md](references/script-integration-framework.md)
 
 ---
 
@@ -316,12 +386,13 @@ See: [references/script-integration-framework.md](references/script-integration-
 
 | Avoid | Why | Instead |
 |-------|-----|---------|
-| Duplicate skills | Bloats registry | Check existing first |
+| Skipping Phase 5 | No final quality check | Always run Supervisor Review |
+| Panel approving too easily | Groupthink over iterations | Supervisor provides fresh eyes |
+| Score gaming | Passes gates but unusable | Supervisor checks real usability |
+| Duplicate skills | Bloats registry | Phase 0 triage first |
 | Single trigger | Hard to discover | 3-5 varied phrases |
 | No verification | Can't confirm success | Measurable outcomes |
-| Over-engineering | Complexity without value | Start simple |
 | Missing WHY | Can't evolve | Document rationale |
-| Invalid frontmatter | Can't package | Use allowed properties only |
 
 ---
 
@@ -329,12 +400,13 @@ See: [references/script-integration-framework.md](references/script-integration-
 
 After creation:
 
+- [ ] Phase 0 triage confirmed no duplicates
+- [ ] Phase 2 spec validated (timelessness ≥7)
+- [ ] Phase 4 panel unanimous approval
+- [ ] Phase 5 supervisor score ≥75, all gates pass
+- [ ] `python scripts/evaluate_skill_quality.py` passes
 - [ ] Frontmatter valid (only allowed properties)
-- [ ] Name is hyphen-case, ≤64 chars
-- [ ] Description ≤1024 chars, no `<` or `>`
-- [ ] 3-5 trigger phrases defined
-- [ ] Timelessness score ≥ 7
-- [ ] `python scripts/quick_validate.py` passes
+- [ ] Changelog updated with supervisor verdict
 
 ---
 
@@ -343,150 +415,48 @@ After creation:
 
 ### 1A: Input Expansion
 
-Transform user's goal into comprehensive requirements:
-
 ```
 USER INPUT: "Create a skill for X"
-                │
-                ▼
+        │
+        ▼
 ┌─────────────────────────────────────────────────────────┐
 │ EXPLICIT REQUIREMENTS                                    │
-│ • What the user literally asked for                      │
-│ • Direct functionality stated                            │
-├─────────────────────────────────────────────────────────┤
 │ IMPLICIT REQUIREMENTS                                    │
-│ • What they probably expect but didn't say               │
-│ • Standard quality expectations                          │
-│ • Integration with existing patterns                     │
-├─────────────────────────────────────────────────────────┤
 │ UNKNOWN UNKNOWNS                                         │
-│ • What they don't know they need                         │
-│ • Expert-level considerations they'd miss                │
-│ • Future needs they haven't anticipated                  │
-├─────────────────────────────────────────────────────────┤
-│ DOMAIN CONTEXT                                           │
-│ • Related skills that exist                              │
-│ • Patterns from similar skills                           │
-│ • Lessons from skill failures                            │
+│ DOMAIN CONTEXT                                          │
 └─────────────────────────────────────────────────────────┘
 ```
 
-**Check for overlap with existing skills:**
-```bash
-ls ~/.claude/skills/
-# Grep for similar triggers in existing SKILL.md files
-```
+### 1B: Multi-Lens Analysis (11 models)
 
-| Match Score | Action |
-|-------------|--------|
-| >7/10 | Use existing skill instead |
-| 5-7/10 | Clarify distinction before proceeding |
-| <5/10 | Proceed with new skill |
-
-### 1B: Multi-Lens Analysis
-
-Apply all 11 thinking models systematically:
-
-| Lens | Core Question | Application |
-|------|---------------|-------------|
-| **First Principles** | What's fundamentally needed? | Strip convention, find core |
-| **Inversion** | What guarantees failure? | Build anti-patterns |
-| **Second-Order** | What happens after the obvious? | Map downstream effects |
-| **Pre-Mortem** | Why did this fail? | Proactive risk mitigation |
-| **Systems Thinking** | How do parts interact? | Integration mapping |
-| **Devil's Advocate** | Strongest counter-argument? | Challenge every decision |
-| **Constraints** | What's truly fixed? | Separate real from assumed |
-| **Pareto** | Which 20% delivers 80%? | Focus on high-value features |
-| **Root Cause** | Why is this needed? (5 Whys) | Address cause not symptom |
-| **Comparative** | How do options compare? | Weighted decision matrix |
-| **Opportunity Cost** | What are we giving up? | Explicit trade-offs |
+| Lens | Core Question |
+|------|---------------|
+| First Principles | What's fundamentally needed? |
+| Inversion | What guarantees failure? |
+| Second-Order | What happens after the obvious? |
+| Pre-Mortem | Why did this fail? |
+| Systems Thinking | How do parts interact? |
+| Devil's Advocate | Strongest counter-argument? |
+| Constraints | What's truly fixed? |
+| Pareto | Which 20% delivers 80%? |
+| Root Cause | Why is this needed? (5 Whys) |
+| Comparative | How do options compare? |
+| Opportunity Cost | What are we giving up? |
 
 **Minimum requirement:** All 11 lenses scanned, at least 5 applied in depth.
 
-See: [references/multi-lens-framework.md](references/multi-lens-framework.md)
-
 ### 1C: Regression Questioning
 
-Iterative self-questioning until no new insights emerge:
-
-```
-ROUND N:
-│
-├── "What am I missing?"
-├── "What would an expert in {domain} add?"
-├── "What would make this fail?"
-├── "What will this look like in 2 years?"
-├── "What's the weakest part of this design?"
-└── "Which thinking model haven't I applied?"
-    │
-    └── New insights > 0?
-        │
-        ├── YES → Incorporate and loop
-        └── NO → Check termination criteria
-```
-
-**Termination Criteria:**
-- Three consecutive rounds produce no new insights
-- All 11 thinking models have been applied
-- At least 3 simulated expert perspectives considered
-- Evolution/timelessness explicitly evaluated
-- Automation opportunities identified
-
-See: [references/regression-questions.md](references/regression-questions.md)
+Iterative until 3 consecutive rounds produce no new insights.
 
 ### 1D: Automation Analysis
 
-Identify opportunities for scripts that enable agentic operation:
-
-```
-FOR EACH operation in the skill:
-│
-├── Is this operation repeatable?
-│   └── YES → Consider generation script
-│
-├── Does this produce verifiable output?
-│   └── YES → Consider validation script
-│
-├── Does this need state across sessions?
-│   └── YES → Consider state management script
-│
-├── Does this involve external tools?
-│   └── YES → Consider integration script
-│
-└── Can Claude verify success autonomously?
-    └── NO → Add self-verification script
-```
-
-**Automation Lens Questions:**
-
-| Question | Script Category if YES |
-|----------|----------------------|
-| What operations will be repeated identically? | Generation |
-| What outputs require validation? | Validation |
-| What state needs to persist? | State Management |
-| Can the skill run overnight autonomously? | All categories |
-| How will Claude verify correct execution? | Verification |
-
-**Decision: Script vs No Script**
-
-| Create Script When | Skip Script When |
-|-------------------|------------------|
-| Operation is deterministic | Requires human judgment |
-| Output can be validated | One-time setup |
-| Will be reused across invocations | Simple text output |
-| Enables autonomous operation | No verification needed |
-| External tool integration | Pure Claude reasoning |
-
-See: [references/script-integration-framework.md](references/script-integration-framework.md)
+Identify script opportunities for each operation in the skill.
 
 </details>
 
 <details>
 <summary><strong>Deep Dive: Phase 2 - Specification</strong></summary>
-
-### Specification Structure
-
-The specification captures all analysis insights in XML format:
 
 ```xml
 <skill_specification>
@@ -495,276 +465,113 @@ The specification captures all analysis insights in XML format:
     <analysis_iterations>N</analysis_iterations>
     <timelessness_score>X/10</timelessness_score>
   </metadata>
-
-  <context>
-    <problem_statement>What + Why + Who</problem_statement>
-    <existing_landscape>Related skills, distinctiveness</existing_landscape>
-  </context>
-
+  <context>...</context>
   <requirements>
-    <explicit>What user asked for</explicit>
-    <implicit>Expected but unstated</implicit>
-    <discovered>Found through analysis</discovered>
+    <explicit>...</explicit>
+    <implicit>...</implicit>
+    <discovered>...</discovered>
   </requirements>
-
-  <architecture>
-    <pattern>Selected pattern with WHY</pattern>
-    <phases>Ordered phases with verification</phases>
-    <decision_points>Branches and defaults</decision_points>
-  </architecture>
-
-  <scripts>
-    <decision_summary>needs_scripts + rationale</decision_summary>
-    <script_inventory>name, category, purpose, patterns</script_inventory>
-    <agentic_capabilities>autonomous, self-verify, recovery</agentic_capabilities>
-  </scripts>
-
-  <evolution_analysis>
-    <timelessness_score>X/10</timelessness_score>
-    <extension_points>Where skill can grow</extension_points>
-    <obsolescence_triggers>What would break it</obsolescence_triggers>
-  </evolution_analysis>
-
-  <anti_patterns>
-    <pattern>What to avoid + WHY + alternative</pattern>
-  </anti_patterns>
-
-  <success_criteria>
-    <criterion>Measurable + verification method</criterion>
-  </success_criteria>
+  <architecture>...</architecture>
+  <scripts>...</scripts>
+  <evolution_analysis>...</evolution_analysis>
+  <anti_patterns>...</anti_patterns>
+  <success_criteria>...</success_criteria>
 </skill_specification>
 ```
 
-See: [references/specification-template.md](references/specification-template.md)
+### Spec Gate (before Phase 3)
 
-### Specification Validation
-
-Before proceeding to Phase 3:
-
-- [ ] All sections present with no placeholders
+- [ ] All sections present, no placeholders
 - [ ] Every decision includes WHY
-- [ ] Timelessness score ≥ 7 with justification
-- [ ] At least 2 extension points documented
-- [ ] All requirements traceable to source
-- [ ] Scripts section complete (if applicable)
-- [ ] Agentic capabilities documented (if scripts present)
+- [ ] Timelessness score ≥ 7
+- [ ] ≥2 extension points documented
+- [ ] Scripts section complete
 
 </details>
 
 <details>
-<summary><strong>Deep Dive: Phase 3 - Generation</strong></summary>
-
-**Context:** Fresh, clean (no analysis artifacts polluting)
-**Standard:** Zero errors—every section verified before proceeding
-
-### Generation Order
-
-```
-1. Create directory structure
-   mkdir -p ~/.claude/skills/{skill-name}/references
-   mkdir -p ~/.claude/skills/{skill-name}/assets/templates
-   mkdir -p ~/.claude/skills/{skill-name}/scripts  # if scripts needed
-
-2. Write SKILL.md
-   • Frontmatter (YAML - allowed properties only)
-   • Title and brief intro
-   • Quick Start section
-   • Triggers (3-5 varied phrases)
-   • Quick Reference table
-   • How It Works overview
-   • Commands
-   • Scripts section (if applicable)
-   • Validation section
-   • Anti-Patterns
-   • Verification criteria
-   • Deep Dive sections (in <details> tags)
-
-3. Generate reference documents (if needed)
-   • Deep documentation for complex topics
-   • Templates for generated artifacts
-   • Checklists for validation
-
-4. Create assets (if needed)
-   • Templates for skill outputs
-
-5. Create scripts (if needed)
-   • Use script-template.py as base
-   • Include Result dataclass pattern
-   • Add self-verification
-   • Document exit codes
-   • Test before finalizing
-```
-
-### Quality Checks During Generation
-
-| Check | Requirement |
-|-------|-------------|
-| Frontmatter | Only allowed properties (name, description, license, allowed-tools, metadata) |
-| Name | Hyphen-case, ≤64 chars |
-| Description | ≤1024 chars, no angle brackets |
-| Triggers | 3-5 distinct, natural language |
-| Phases | 1-3 max, not over-engineered |
-| Verification | Concrete, measurable |
-| Tables over prose | Structured information in tables |
-| No placeholder text | Every section fully written |
-| Scripts (if present) | Shebang, docstring, argparse, exit codes, Result pattern |
-| Script docs | Scripts section in SKILL.md with usage examples |
-
-</details>
-
-<details>
-<summary><strong>Deep Dive: Phase 4 - Multi-Agent Synthesis</strong></summary>
-
-**Panel:** 3-4 Opus agents with distinct evaluative lenses
-**Requirement:** Unanimous approval (all agents)
-**Fallback:** Return to Phase 1 with feedback (max 5 iterations)
+<summary><strong>Deep Dive: Phase 4 - Synthesis Panel</strong></summary>
 
 ### Panel Composition
 
-| Agent | Focus | Key Criteria | When Active |
-|-------|-------|--------------|-------------|
-| **Design/Architecture** | Structure, patterns, correctness | Pattern appropriate, phases logical, no circular deps | Always |
-| **Audience/Usability** | Clarity, discoverability, completeness | Triggers natural, steps unambiguous, no assumed knowledge | Always |
-| **Evolution/Timelessness** | Future-proofing, extension, ecosystem | Score ≥7, extension points clear, ecosystem fit | Always |
-| **Script/Automation** | Agentic capability, verification, quality | Scripts follow patterns, self-verify, documented | When scripts present |
-
-### Script Agent (Conditional)
-
-The Script Agent is activated when the skill includes a `scripts/` directory. Focus areas:
-
-| Criterion | Checks |
-|-----------|--------|
-| **Pattern Compliance** | Result dataclass, argparse, exit codes |
-| **Self-Verification** | Scripts can verify their own output |
-| **Error Handling** | Graceful failures, actionable messages |
-| **Documentation** | Usage examples in SKILL.md |
-| **Agentic Capability** | Can run autonomously without human intervention |
-
-**Script Agent Scoring:**
-
-| Score | Meaning |
-|-------|---------|
-| 8-10 | Fully agentic, self-verifying, production-ready |
-| 6-7 | Functional but missing some agentic capabilities |
-| <6 | Requires revision - insufficient automation quality |
-
-### Agent Evaluation
-
-Each agent produces:
-
-```markdown
-## [Agent] Review
-
-### Verdict: APPROVED / CHANGES_REQUIRED
-
-### Scores
-| Criterion | Score (1-10) | Notes |
-|-----------|--------------|-------|
-
-### Strengths
-1. [Specific with evidence]
-
-### Issues (if CHANGES_REQUIRED)
-| Issue | Severity | Required Change |
-|-------|----------|-----------------|
-
-### Recommendations
-1. [Even if approved]
-```
+| Agent | Focus | When Active |
+|-------|-------|-------------|
+| Design/Architecture | Structure, patterns | Always |
+| Audience/Usability | Clarity, discoverability | Always |
+| Evolution/Timelessness | Future-proofing, extension | Always |
+| Script/Automation | Agentic capability | When scripts present |
 
 ### Consensus Protocol
 
 ```
-IF all agents APPROVED (3/3 or 4/4):
-    → Finalize skill
-    → Run validate-skill.py
-    → Update registry
-    → Complete
+IF all agents APPROVED:
+    → Pass to Phase 5 (Master Supervisor)
 
 ELSE:
-    → Collect all issues (including script issues)
-    → Return to Phase 1 with issues as input
-    → Re-apply targeted questioning
-    → Regenerate skill and scripts
-    → Re-submit to panel
+    → Collect all issues
+    → Return to Phase 1 with feedback
+    → Max 5 iterations
 
 IF 5 iterations without consensus:
     → Flag for human review
-    → Present all agent perspectives
-    → User makes final decision
 ```
 
-See: [references/synthesis-protocol.md](references/synthesis-protocol.md)
+**Note:** Panel approval is necessary but NOT sufficient. Phase 5 Supervisor may still REVISE or REJECT.
 
 </details>
 
 <details>
-<summary><strong>Deep Dive: Evolution/Timelessness</strong></summary>
+<summary><strong>Deep Dive: Phase 5 - Master Supervisor</strong></summary>
 
-Every skill is evaluated through the evolution lens:
+### Why a Supervisor?
 
-### Temporal Projection
+After multiple panel iterations, agents may normalize issues — each small compromise seems reasonable, but the cumulative effect degrades quality. The Supervisor provides fresh-eyes review with no prior context.
 
-| Timeframe | Key Question |
-|-----------|--------------|
-| 6 months | How will usage patterns evolve? |
-| 1 year | What ecosystem changes are likely? |
-| 2 years | What new capabilities might obsolete this? |
-| 5 years | Is the core problem still relevant? |
+### Supervisor Evaluation Workflow
 
-### Timelessness Scoring
+```
+1. Run evaluate_skill_quality.py for automated baseline
+2. Read SKILL.md as a first-time user (no prior context)
+3. Check: does Quick Start make sense immediately?
+4. Check: are triggers discoverable from natural language?
+5. Check: is verification concrete and measurable?
+6. Audit scripts for self-verification
+7. Score each dimension
+8. Write verdict with evidence-backed reasoning
+```
 
-| Score | Description | Verdict |
-|-------|-------------|---------|
-| 1-3 | Transient, will be obsolete in months | Reject |
-| 4-6 | Moderate, depends on current tooling | Revise |
-| **7-8** | **Solid, principle-based, extensible** | **Approve** |
-| 9-10 | Timeless, addresses fundamental problem | Exemplary |
+### Priority Classification for Feedback
 
-**Requirement:** All skills must score ≥7.
+| Priority | Description | Required Action |
+|----------|-------------|-----------------|
+| P0 Critical | Blocks usability or correctness | Must fix before approval |
+| P1 Major | Significantly degrades quality | Must fix in current iteration |
+| P2 Minor | Small improvement opportunity | Fix if ≤30min effort |
+| P3 Nice-to-have | Optional enhancement | Log for future version |
 
-### Anti-Obsolescence Patterns
+### Iteration Limits
 
-| Do | Don't |
-|----|-------|
-| Design around principles | Hardcode implementations |
-| Document the WHY | Only document the WHAT |
-| Include extension points | Create closed systems |
-| Abstract volatile dependencies | Direct coupling |
-| Version-agnostic patterns | Pin specific versions |
-
-See: [references/evolution-scoring.md](references/evolution-scoring.md)
+```
+Iteration 1: Full pipeline
+Iteration 2: REVISE path (Phase 3+ only)
+Iteration 3: REVISE path (Phase 3+ only)
+Iteration 4+: Escalate to human review
+```
 
 </details>
 
 <details>
 <summary><strong>Architecture Pattern Selection</strong></summary>
 
-Select based on task complexity:
-
-| Pattern | Use When | Structure |
-|---------|----------|-----------|
-| **Single-Phase** | Simple linear tasks | Steps 1-2-3 |
-| **Checklist** | Quality/compliance audits | ☐ Item verification |
-| **Generator** | Creating artifacts | Input → Transform → Output |
-| **Multi-Phase** | Complex ordered workflows | Phase 1 → Phase 2 → Phase 3 |
-| **Multi-Agent Parallel** | Independent subtasks | Launch agents concurrently |
-| **Multi-Agent Sequential** | Dependent subtasks | Agent 1 → Agent 2 → Agent 3 |
-| **Orchestrator** | Coordinating multiple skills | Meta-skill chains |
-
-### Selection Decision Tree
-
-```
-Is it a simple procedure?
-├── Yes → Single-Phase
-└── No → Does it produce artifacts?
-    ├── Yes → Generator
-    └── No → Does it verify/audit?
-        ├── Yes → Checklist
-        └── No → Are subtasks independent?
-            ├── Yes → Multi-Agent Parallel
-            └── No → Multi-Agent Sequential or Multi-Phase
-```
+| Pattern | Use When |
+|---------|----------|
+| Single-Phase | Simple linear tasks |
+| Checklist | Quality/compliance audits |
+| Generator | Creating artifacts |
+| Multi-Phase | Complex ordered workflows |
+| Multi-Agent Parallel | Independent subtasks |
+| Multi-Agent Sequential | Dependent subtasks |
+| Orchestrator | Coordinating multiple skills |
 
 </details>
 
@@ -774,8 +581,7 @@ Is it a simple procedure?
 ```yaml
 SKILLCREATOR_CONFIG:
   mode: autonomous
-  depth: maximum  # always
-  core_lens: evolution_timelessness
+  depth: maximum
 
   analysis:
     min_lens_depth: 5
@@ -788,14 +594,23 @@ SKILLCREATOR_CONFIG:
     max_iterations: 5
     escalate_to_human: true
 
+  supervisor:                     # NEW in v5.0
+    enabled: true
+    min_score: 75
+    dimension_minimums:
+      structural_quality: 10
+      functional_completeness: 14
+      agentic_capability: 10
+      timelessness: 14
+      documentation_quality: 10
+      ecosystem_fit: 10
+    max_revise_iterations: 2
+    escalate_after_iterations: 3
+
   evolution:
     min_timelessness_score: 7
     min_extension_points: 2
     require_temporal_projection: true
-
-  model:
-    primary: claude-opus-4-5-20251101
-    subagents: claude-opus-4-5-20251101
 ```
 
 </details>
@@ -804,11 +619,12 @@ SKILLCREATOR_CONFIG:
 
 ## References
 
-- [Regression Questions](references/regression-questions.md) - Complete question bank (7 categories)
+- [Regression Questions](references/regression-questions.md) - Complete question bank
 - [Multi-Lens Framework](references/multi-lens-framework.md) - 11 thinking models guide
 - [Specification Template](references/specification-template.md) - XML spec structure
 - [Evolution Scoring](references/evolution-scoring.md) - Timelessness evaluation
 - [Synthesis Protocol](references/synthesis-protocol.md) - Multi-agent panel details
+- [Supervisor Protocol](references/supervisor-protocol.md) - Master Supervisor guide (NEW v5.0)
 - [Script Integration Framework](references/script-integration-framework.md) - When and how to create scripts
 - [Script Patterns Catalog](references/script-patterns-catalog.md) - Standard Python patterns
 
@@ -819,7 +635,6 @@ SKILLCREATOR_CONFIG:
 | Skill | Relationship |
 |-------|--------------|
 | skill-composer | Can orchestrate created skills |
-| claude-authoring-guide | Deeper patterns reference |
 | codereview | Pattern for multi-agent panels |
 | maker-framework | Zero error standard source |
 
@@ -827,45 +642,39 @@ SKILLCREATOR_CONFIG:
 
 ## Extension Points
 
-1. **Additional Lenses:** Add new thinking models to `references/multi-lens-framework.md`
-2. **New Synthesis Agents:** Extend panel beyond 4 agents for specific domains
-3. **Custom Patterns:** Add architecture patterns to selection guide
-4. **Domain Templates:** Add domain-specific templates to `assets/templates/`
-5. **Script Patterns:** Add new patterns to `references/script-patterns-catalog.md`
-6. **Script Categories:** Extend the 7 script categories for new use cases
+1. **Additional Supervisor Dimensions:** Add new quality dimensions to scorecard
+2. **Domain-Specific Gates:** Create gates for specific skill categories (agentic, data, UI)
+3. **Regression Testing:** Compare new skill versions against baseline scores
+4. **Community Benchmarks:** Use aggregate scores to set minimum bar dynamically
+5. **Additional Lenses:** Add thinking models to Phase 1
+6. **Custom Synthesis Agents:** Extend panel for specific domains
 
 ---
 
 ## Changelog
 
-### v3.2.0 (Current)
-- Added Script Integration Framework for agentic skills
-- Added 4th Script Agent to synthesis panel (conditional)
-- Added Phase 1D: Automation Analysis
-- Added Automation Lens questions to regression questioning
-- Created `references/script-integration-framework.md`
-- Created `references/script-patterns-catalog.md`
-- Created `assets/templates/script-template.py`
-- Updated skill-spec-template.xml with `<scripts>` section
-- Updated validate-skill.py with script validation
-- Skills can now include self-verifying Python scripts
+### v5.0.0 (2026-02-23)
+- **Added Phase 5: Master Supervisor Review** — independent final quality control
+- **Added 6-dimensional Quality Scorecard** (100-point system with minimum thresholds)
+- **Added Quality Gates** between Phase 2→3, Phase 4→5, Phase 5→Final
+- **Added `evaluate_skill_quality.py`** — automated scoring script
+- **Added `--evaluate` command** for evaluating existing skills
+- **Added Supervisor Protocol reference** document
+- **Updated configuration** with supervisor settings block
+- Model updated to claude-sonnet-4-6
 
-### v3.1.0
-- Added progressive disclosure structure
-- Fixed frontmatter for packaging compatibility
-- Added validation & packaging section
-- Deep dive sections now collapsible
+### v4.0.0
+- Added Phase 0: Skill Triage
+- Routing for existing skills
+- Improved decision matrix
+
+### v3.2.0
+- Added Script Integration Framework
+- Added Script Agent to synthesis panel
+- Phase 1D: Automation Analysis
 
 ### v3.0.0
 - Complete redesign as ultimate meta-skill
-- Added regression questioning loop
-- Added multi-lens analysis framework (11 models)
-- Added evolution/timelessness core lens
-- Added multi-agent synthesis panel
-
-### v2.0.0
-- Pattern selection guide
-- Quality standards checklist
-
-### v1.0.0
-- Basic skill structure
+- 11 thinking models
+- Multi-agent synthesis panel
+- Evolution/timelessness core lens

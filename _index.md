@@ -220,7 +220,7 @@
 | thedotmack--claude-mem | Claude-Mem OpenClaw Plugin — Setup Guide | This guide walks through setting up the claude-mem plugin on an OpenClaw gateway. By the end, your agents will have persistent memory across sessions, |
 | timescale--pg-aiguide | design-postgres-tables | \| |
 | tobi--qmd | qmd | Search personal markdown knowledge bases, notes, meeting transcripts, and documentation using QMD - a local hybrid search engine. Combines BM25 keywor |
-| tripleyak--skillforge | skillforge | Intelligent skill router and creator. Analyzes ANY input to recommend existing skills, improve them, or create new ones. Uses deep iterative analysis  |
+| tripleyak--skillforge | skillforge | Intelligent skill router and creator. Analyzes ANY input to recommend existing skills, improve them, or create new ones. Uses deep iterative analysis with 11 thinking models, regression questioning, evolution lens, multi-agent synthesis panel, and Master Supervisor final review (v5.0). |
 | udecode--dotai | debug | Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes - four-phase framework (root cause investigation, pattern  |
 | update-dashboards | update-dashboards | MTGトランスクリプトの新規ファイルを検知し、分析・ナレッジベース・HTMLダッシュボード2種を自動更新するスキル。 |
 | upstash--context7 | documentation-lookup | This skill should be used when the user asks about libraries, frameworks, API references, or needs code examples. Activates for setup questions, code  |
