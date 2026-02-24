@@ -4,11 +4,11 @@
     "ENABLE_TOOL_SEARCH": "auto:5",
     "CLAUDE_CODE_AUTOCOMPACT_PCT_OVERRIDE": "50"
   },
-  "model": "claude-opus-4-6",
-  "language": "japanese",
-  "autoUpdatesChannel": "latest",
-  "skipDangerousModePermissionPrompt": true,
+  "model": "haiku",
   "enabledPlugins": {
     "github@claude-plugins-official": true
-  }
+  },
+  "language": "japanese",
+  "autoUpdatesChannel": "latest",
+  "skipDangerousModePermissionPrompt": true
 }
