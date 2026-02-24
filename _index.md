@@ -1,11 +1,12 @@
-# インストール済みスキル索引（241件）
-<!-- 自動生成: 2026-02-23 01:43 UTC -->
+# インストール済みスキル索引（246件）
+<!-- 自動生成: 2026-02-24 01:41 UTC -->
 
 | slug | 名前 | 説明 |
 |------|------|------|
 | 0xbreadguy--megaeth-ai-developer-skills | megaeth-developer | End-to-end MegaETH development playbook (Feb 2026). Covers Foundry project setup with MegaETH-specific config, wallet operations, token swaps (Kyber N |
 | abracadabra50--claude-code-voice-skill | call | Voice conversations with Claude about your projects. Call a phone number to brainstorm, or have Claude call you with updates. |
 | adenhq--hive | hive-concepts | Core concepts for goal-driven agents - architecture, node types (event_loop, function), tool discovery, and workflow overview. Use when starting agent |
+| adityasugandhi--skillsync-mcp | SkillSync MCP — Security-Gated Skill Manager | Search, scan, install, and manage Claude Code skills with built-in security scanning. Every installation is gated behind a 60+ pattern threat scan. |
 | affaan-m--everything-claude-code | backend-patterns | Backend architecture patterns, API design, database optimization, and server-side best practices for Node.js, Express, and Next.js API routes. |
 | agentset-ai--agentset | baseline-ui | Enforces an opinionated UI baseline to prevent AI-generated interface slop. |
 | albedo-tabai--lets-go-rss | lets-go-rss | 轻量级全平台 RSS 订阅管理器。一键聚合 YouTube、Vimeo、Behance、B站、微博、抖音、小红书的内容更新，支持增量去重和 AI 智能分类。 |
@@ -56,7 +57,9 @@
 | code-yeongyu--oh-my-opencode | github-issue-triage | Triage GitHub issues with streaming analysis. CRITICAL: 1 issue = 1 background task. Processes each issue as independent background task with immediat |
 | coder--coder | code-review | Reviews code changes for bugs, security issues, and quality problems |
 | coleam00--context-engineering-intro | build-with-agent-team | Build a project using Claude Code Agent Teams with tmux split panes. Takes a plan document path and optional team size. Use when you want multiple age |
+| comet-ml--comet-llm | documentation | Feature documentation and release notes patterns. Use when documenting changes, writing PR descriptions, or preparing releases. |
 | comet-ml--opik | documentation | Feature documentation and release notes patterns. Use when documenting changes, writing PR descriptions, or preparing releases. |
+| commonpaper--claude-skill | commonpaper | Query and manage contracts via the Common Paper REST API. Use when the user asks about their contracts, agreements, signers, NDAs, CSAs, renewals, dea |
 | composiohq--awesome-claude-plugins | artifacts-builder | Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui |
 | composiohq--awesome-claude-skills | -21risk-automation | Automate 21risk tasks via Rube MCP (Composio). Always search tools first for current schemas. |
 | coplaydev--unity-mcp | unity-mcp-orchestrator | Orchestrate Unity Editor via MCP (Model Context Protocol) tools and resources. Use when working with Unity projects through MCP for Unity - creating/m |
@@ -201,6 +204,7 @@
 | shareai-lab--learn-claude-code | agent-builder | \| |
 | sickn33--antigravity-awesome-skills | 3d-web-experience | Expert in building 3D experiences for the web - Three.js, React Three Fiber, Spline, WebGL, and interactive 3D scenes. Covers product configurators, 3 |
 | silverov--yandex-direct-skill | direct | > |
+| sinzin91--search-sessions | search-sessions | Search across Claude Code and OpenClaw session history. Use when you need to find past conversations, decisions, code snippets, or resume previous ses |
 | skillcreatorai--ai-agent-skills | algorithmic-art | Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use when users request creating art using code, gen |
 | smithery-ai--cli | smithery | Discover, install, and use MCP tools and agent skills. Use when you need to find MCP servers, securely connect to them, call their tools, or search/in |
 | snarktank--ralph | prd | Generate a Product Requirements Document (PRD) for a new feature. Use when planning a feature, starting a new project, or when asked to create a PRD.  |
@@ -220,10 +224,11 @@
 | thedotmack--claude-mem | Claude-Mem OpenClaw Plugin — Setup Guide | This guide walks through setting up the claude-mem plugin on an OpenClaw gateway. By the end, your agents will have persistent memory across sessions, |
 | timescale--pg-aiguide | design-postgres-tables | \| |
 | tobi--qmd | qmd | Search personal markdown knowledge bases, notes, meeting transcripts, and documentation using QMD - a local hybrid search engine. Combines BM25 keywor |
-| tripleyak--skillforge | skillforge | Intelligent skill router and creator. Analyzes ANY input to recommend existing skills, improve them, or create new ones. Uses deep iterative analysis with 11 thinking models, regression questioning, evolution lens, multi-agent synthesis panel, and Master Supervisor final review (v5.0). |
+| tripleyak--skillforge | skillforge | Intelligent skill router and creator. Analyzes ANY input to recommend existing skills, improve them, or create new ones. Uses deep iterative analysis  |
 | udecode--dotai | debug | Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes - four-phase framework (root cause investigation, pattern  |
 | update-dashboards | update-dashboards | MTGトランスクリプトの新規ファイルを検知し、分析・ナレッジベース・HTMLダッシュボード2種を自動更新するスキル。 |
 | upstash--context7 | documentation-lookup | This skill should be used when the user asks about libraries, frameworks, API references, or needs code examples. Activates for setup questions, code  |
+| uriva--find-scene-skill | find-scene | Search movie and TV show scenes by dialog, time, or visual description. Download video clips, extract frames, find quotes, identify movies from quotes |
 | vercel--ai | add-provider-package | Guide for adding new AI provider packages to the AI SDK. Use when creating a new @ai-sdk/<provider> package to integrate an AI service into the SDK. |
 | vercel--next.js | cache-components | \| |
 | vercel-labs--add-skill | find-skills | Helps users discover and install agent skills when they ask questions like "how do I do X", "find a skill for X", "is there a skill that can...", or e |
