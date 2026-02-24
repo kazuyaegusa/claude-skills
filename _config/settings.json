@@ -7,6 +7,7 @@
   "enabledPlugins": {
     "github@claude-plugins-official": true
   },
+  "model": "claude-opus-4-6",
   "language": "japanese",
   "autoUpdatesChannel": "latest",
   "skipDangerousModePermissionPrompt": true
