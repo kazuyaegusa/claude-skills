@@ -4,7 +4,6 @@
     "ENABLE_TOOL_SEARCH": "auto:5",
     "CLAUDE_CODE_AUTOCOMPACT_PCT_OVERRIDE": "50"
   },
-  "model": "haiku",
   "enabledPlugins": {
     "github@claude-plugins-official": true
   },
