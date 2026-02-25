@@ -1,6 +1,7 @@
 ---
 name: html-arch-visualizer
 description: プロジェクトのアーキテクチャをSVGベースのインタラクティブなHTMLダイアグラムとして可視化するスキル。
+user_invocable: true
 ---
 
 # HTML Architecture Visualizer

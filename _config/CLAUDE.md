@@ -248,3 +248,12 @@ GitHub リポジトリの変更を定期監視し、差分レポート生成 + D
 - 作業ディレクトリ: `~/.repo-tracker/{repo-name}/`
 - 複数リポジトリ対応、完全読み取り専用（push 一切なし）
 - 定期実行: macOS launchd（`install-schedule` サブコマンド）
+
+### HTML Architecture Visualizer (`/visualize-arch`)
+
+プロジェクトのアーキテクチャをSVGベースのHTMLダイアグラムとして可視化するスキル。
+
+- スキル定義: `~/.claude/skills/html-arch-visualizer/SKILL.md`
+- コマンド: `/visualize-arch [出力パス]`
+- 機能: プロジェクト分析 → ダイアグラム設計 → HTML生成 → 検証の4フェーズ
+- ダーク/ライトテーマ対応、レスポンシブ、外部依存なし
