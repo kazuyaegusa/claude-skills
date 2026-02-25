@@ -5,7 +5,8 @@
     "CLAUDE_CODE_AUTOCOMPACT_PCT_OVERRIDE": "50"
   },
   "enabledPlugins": {
-    "github@claude-plugins-official": true
+    "github@claude-plugins-official": true,
+    "slack@claude-plugins-official": true
   },
   "model": "claude-opus-4-6",
   "language": "japanese",
