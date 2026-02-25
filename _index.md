@@ -1,5 +1,5 @@
-# インストール済みスキル索引（246件）
-<!-- 自動生成: 2026-02-24 01:41 UTC -->
+# インストール済みスキル索引（249件）
+<!-- 自動生成: 2026-02-25 01:45 UTC -->
 
 | slug | 名前 | 説明 |
 |------|------|------|
@@ -94,6 +94,7 @@
 | feiskyer--claude-code-settings | autonomous-skill | Use when user wants to execute long-running tasks that require multiple sessions to complete. This skill manages task decomposition, progress tracking |
 | folder-digest | folder-digest | カレントフォルダの全ファイルを読み込み、内容を的確かつ網羅的に把握して構造化レポートを出力するスキル。 |
 | forayconsulting--gemini_cli_skill | gemini-cli | Wield Google's Gemini CLI as a powerful auxiliary tool for code generation, review, analysis, and web research. Use when tasks benefit from a second A |
+| frdel--agent-zero | create-skill | Wizard for creating new Agent Zero skills. Guides users through creating well-structured SKILL.md files. Use when users want to create custom skills. |
 | getsentry--sentry | design-system | Guide for using Sentry's layout and text primitives. Use when implementing UI components, layouts, or typography. Enforces use of core components over |
 | getsentry--xcodebuildmcp | xcodebuildmcp-cli | Official skill for the XcodeBuildMCP CLI. Use when doing iOS/macOS/watchOS/tvOS/visionOS work (build, test, run, debug, log, UI automation). |
 | github--awesome-copilot | agentic-eval | \| |
@@ -175,6 +176,7 @@
 | pdf-slide-editor | pdf-slide-editor | PDFスライドの修正指示（ロゴ除去・白領域修正・テキスト除去・背景色調整など）を受けて、分析→スクリプト生成→実行→検証のサイクルで的確に反映するスキル。 |
 | phase-report | フェーズ完了レポート自動生成 | **このスキルは完全自動実行である。ユーザーへの確認・承認・質問を一切行わず、全ステップを自動で完了させること。** |
 | piebald-ai--tweakcc | patch-creation | Create and register new patches for tweakcc. Use when adding new customizations to Claude Code. |
+| pixelml--agenticflow-skill | agenticflow-skills | Comprehensive guide for building AI workflows, agents, and workforce systems with AgenticFlow. Use when designing workflows with various node types, c |
 | pleaseprompto--google-ai-mode-skill | google-ai-mode-skill | Use this skill when the user requests current information, documentation, coding examples, or web research beyond the knowledge cutoff. Queries Google |
 | pleaseprompto--notebooklm-skill | notebooklm | Use this skill to query your Google NotebookLM notebooks directly from Claude Code for source-grounded, citation-backed answers from Gemini. Browser a |
 | prefecthq--prefect | write-docs | Comprehensive guide for writing and updating Prefect documentation. Use when creating new doc pages, updating existing docs, or working with Mintlify  |
@@ -203,6 +205,7 @@
 | shareai-lab--analysis_claude_code | agent-builder | \| |
 | shareai-lab--learn-claude-code | agent-builder | \| |
 | sickn33--antigravity-awesome-skills | 3d-web-experience | Expert in building 3D experiences for the web - Three.js, React Three Fiber, Spline, WebGL, and interactive 3D scenes. Covers product configurators, 3 |
+| significant-gravitas--autogpt | vercel-react-best-practices | React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React |
 | silverov--yandex-direct-skill | direct | > |
 | sinzin91--search-sessions | search-sessions | Search across Claude Code and OpenClaw session history. Use when you need to find past conversations, decisions, code snippets, or resume previous ses |
 | skillcreatorai--ai-agent-skills | algorithmic-art | Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use when users request creating art using code, gen |
