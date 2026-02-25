@@ -252,3 +252,4 @@
 | zebbern--claude-code-guide | Active Directory Attacks | This skill should be used when the user asks to "attack Active Directory", "exploit AD", "Kerberoasting", "DCSync", "pass-the-hash", "BloodHound enume |
 | zeframlou--call-me | Phone Call Input Skill | Call the user on the phone for real-time voice conversations. Use this when you need input, want to report on completed work, or need to discuss next  |
 | zhayujie--chatgpt-on-wechat | linkai-agent | Call LinkAI applications and workflows. Use bash command to execute like 'bash <base_dir>/scripts/call.sh <app_code> <question>'. |
+| html-arch-visualizer | html-arch-visualizer | プロジェクトのアーキテクチャをSVGベースのHTMLダイアグラムとして可視化するスキル。 |
