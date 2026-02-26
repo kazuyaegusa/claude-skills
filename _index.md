@@ -1,5 +1,5 @@
-# インストール済みスキル索引（249件）
-<!-- 自動生成: 2026-02-25 01:45 UTC -->
+# インストール済みスキル索引（252件）
+<!-- 自動生成: 2026-02-26 01:44 UTC -->
 
 | slug | 名前 | 説明 |
 |------|------|------|
@@ -103,6 +103,7 @@
 | google-labs-code--stitch-skills | design-md | Analyze Stitch projects and synthesize a semantic design system into DESIGN.md files |
 | gradio-app--gradio | gradio | Build Gradio web UIs and demos in Python. Use when creating or editing Gradio apps, components, event listeners, layouts, or chatbots. |
 | homeassistant-ai--ha-mcp | bat | Run bot acceptance tests to validate MCP tools work correctly from a real AI agent's perspective. Use when testing PRs, detecting regressions, or veri |
+| html-arch-visualizer | html-arch-visualizer | プロジェクトのアーキテクチャをSVGベースのインタラクティブなHTMLダイアグラムとして可視化するスキル。 |
 | htmlstreamofficial--preline | preline-theme-generator | Generates beautiful, consistent Preline Theme CSS files. Agent interprets user request, runs build script, delivers complete CSS. |
 | huggingface--skills | hf-mcp | Use Hugging Face Hub via MCP server tools. Search models, datasets, Spaces, papers. Get repo details, fetch documentation, run compute jobs, and use G |
 | huggingface--trl | trl-training | Train and fine-tune transformer language models using TRL (Transformers Reinforcement Learning). Supports SFT, DPO, GRPO, KTO, RLOO and Reward Model t |
@@ -228,6 +229,7 @@
 | timescale--pg-aiguide | design-postgres-tables | \| |
 | tobi--qmd | qmd | Search personal markdown knowledge bases, notes, meeting transcripts, and documentation using QMD - a local hybrid search engine. Combines BM25 keywor |
 | tripleyak--skillforge | skillforge | Intelligent skill router and creator. Analyzes ANY input to recommend existing skills, improve them, or create new ones. Uses deep iterative analysis  |
+| trycua--cua | cua-do-cli | Automates interactions with remote VMs, local Docker containers, cloud sandboxes, and the host PC via cua do. Use when navigating GUIs, taking snapsho |
 | udecode--dotai | debug | Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes - four-phase framework (root cause investigation, pattern  |
 | update-dashboards | update-dashboards | MTGトランスクリプトの新規ファイルを検知し、分析・ナレッジベース・HTMLダッシュボード2種を自動更新するスキル。 |
 | upstash--context7 | documentation-lookup | This skill should be used when the user asks about libraries, frameworks, API references, or needs code examples. Activates for setup questions, code  |
@@ -238,6 +240,7 @@
 | vercel-labs--agent-browser | skill-creator | Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude |
 | vercel-labs--agent-skills | vercel-deploy | Deploy applications and websites to Vercel. Use this skill when the user requests deployment actions such as "Deploy my app", "Deploy this to producti |
 | vercel-labs--skills | find-skills | Helps users discover and install agent skills when they ask questions like "how do I do X", "find a skill for X", "is there a skill that can...", or e |
+| voidborne-d--claude-code-pro | claude-code-pro | > |
 | volcengine--openviking | openviking | RAG and semantic search via OpenViking Context Database MCP server. Query documents, search knowledge base, add files/URLs to vector memory. Use for d |
 | voltagent--voltagent | Workspace Data Analyst | Analyze CSV files in the workspace and summarize insights. |
 | vuejs-ai--skills | create-adaptable-composable | Create a library-grade Vue composable that accepts maybe-reactive inputs (MaybeRef / MaybeRefOrGetter) so callers can pass a plain value, ref, or gett |
@@ -252,4 +255,3 @@
 | zebbern--claude-code-guide | Active Directory Attacks | This skill should be used when the user asks to "attack Active Directory", "exploit AD", "Kerberoasting", "DCSync", "pass-the-hash", "BloodHound enume |
 | zeframlou--call-me | Phone Call Input Skill | Call the user on the phone for real-time voice conversations. Use this when you need input, want to report on completed work, or need to discuss next  |
 | zhayujie--chatgpt-on-wechat | linkai-agent | Call LinkAI applications and workflows. Use bash command to execute like 'bash <base_dir>/scripts/call.sh <app_code> <question>'. |
-| html-arch-visualizer | html-arch-visualizer | プロジェクトのアーキテクチャをSVGベースのHTMLダイアグラムとして可視化するスキル。 |
