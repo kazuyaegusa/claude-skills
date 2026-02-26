@@ -34,23 +34,27 @@ PLIST_DIR = Path.home() / "Library" / "LaunchAgents"
 USER_AGENT = "repo-tracker/1.0"
 
 AI_SUMMARY_PROMPT = """\
-以下の GitHub リポジトリの更新情報（コミットログと変更ファイル）を読んで、
-**日本語5行以内**で要約してください。
+あなたはリポジトリの進捗を把握するアナリストです。
+以下の情報を読み、**日本語5行**で状況レポートを書いてください。
 
-要約のフォーマット:
-- 1行目: 更新の全体像（何がどう変わったか）
-- 2-3行目: 主要な変更内容
-- 4行目: 現状の課題や注意点（あれば）
-- 5行目: 次にやるべきこと（推測できれば）
+フォーマット（各行1文、箇条書き禁止）:
+1行目【目的】: このプロジェクトが何を作ろうとしているか（README やコミット全体から推測）
+2行目【今回】: 今回の更新で何が進んだか（具体的な機能・修正を端的に）
+3行目【進捗】: 全体の完成度や到達地点（コードの成熟度、テスト有無、デプロイ状態など）
+4行目【課題】: 現状の課題・ブロッカー・不足しているもの（なければ「特になし」）
+5行目【次】: 次にやるべきこと・期待される展開
 
-技術者がパッと読んで状況を把握できる簡潔さを重視。
-コミットメッセージが英語でも要約は日本語で。
+技術者がDiscordでパッと読んで「このリポジトリ今どうなってるの？」に答えられる内容にする。
+コミットメッセージが英語でも出力は必ず日本語。推測は「〜と思われる」等で明示。
 
 ---
 リポジトリ: {repo_name}
 コミット数: {commit_count}
 
-【コミットログ】
+【プロジェクト概要（README 冒頭）】
+{readme_excerpt}
+
+【コミットログ（今回の更新）】
 {commit_log}
 
 【変更ファイル】
@@ -287,6 +291,20 @@ def generate_report(name: str, old: str, new: str) -> Path:
 # ============================================================
 
 
+def _get_readme_excerpt(name: str, max_lines: int = 30) -> str:
+    """リポジトリの README 冒頭を取得"""
+    cd = clone_dir(name)
+    for readme_name in ["README.md", "README.rst", "README.txt", "README"]:
+        readme_path = cd / readme_name
+        if readme_path.exists():
+            try:
+                lines = readme_path.read_text(errors="replace").splitlines()
+                return "\n".join(lines[:max_lines])
+            except Exception:
+                pass
+    return "(README なし)"
+
+
 def generate_ai_summary(name: str, old: str, new: str) -> str:
     """claude -p で差分を5行の日本語サマリーにまとめる"""
     config = load_config(name)
@@ -295,21 +313,33 @@ def generate_ai_summary(name: str, old: str, new: str) -> str:
     changed_files = get_changed_files(name, old, new)
     diff_stat = get_diff_stat(name, old, new)
     commit_count = len(commit_log.splitlines()) if commit_log else 0
+    readme_excerpt = _get_readme_excerpt(name)
 
     prompt = AI_SUMMARY_PROMPT.format(
         repo_name=repo_name,
         commit_count=commit_count,
+        readme_excerpt=readme_excerpt,
         commit_log=commit_log or "(なし)",
         changed_files=changed_files or "(なし)",
         diff_stat=diff_stat or "(なし)",
     )
 
+    # claude CLI のパスを解決（~/.local/bin を優先）
+    claude_cmd = str(Path.home() / ".local" / "bin" / "claude")
+    if not Path(claude_cmd).exists():
+        import shutil
+        claude_cmd = shutil.which("claude") or "claude"
+
+    # CLAUDECODE 環境変数を除去（ネストセッション制限を回避）
+    env = {k: v for k, v in __import__("os").environ.items() if k != "CLAUDECODE"}
+
     try:
         result = subprocess.run(
-            ["claude", "-p", prompt],
+            [claude_cmd, "-p", prompt],
             capture_output=True,
             text=True,
             timeout=60,
+            env=env,
         )
         if result.returncode == 0 and result.stdout.strip():
             summary = result.stdout.strip()
