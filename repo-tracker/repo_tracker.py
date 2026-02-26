@@ -324,32 +324,35 @@ def generate_ai_summary(name: str, old: str, new: str) -> str:
         diff_stat=diff_stat or "(なし)",
     )
 
-    # claude CLI のパスを解決（~/.local/bin を優先）
-    claude_cmd = str(Path.home() / ".local" / "bin" / "claude")
-    if not Path(claude_cmd).exists():
-        import shutil
-        claude_cmd = shutil.which("claude") or "claude"
-
-    # CLAUDECODE 環境変数を除去（ネストセッション制限を回避）
-    env = {k: v for k, v in __import__("os").environ.items() if k != "CLAUDECODE"}
+    import os
+    api_key = os.environ.get("ANTHROPIC_API_KEY", "")
+    if not api_key:
+        print("[summary] ANTHROPIC_API_KEY 未設定。サマリーをスキップします")
+        return ""
 
     try:
-        result = subprocess.run(
-            [claude_cmd, "-p", prompt],
-            capture_output=True,
-            text=True,
-            timeout=60,
-            env=env,
+        payload = json.dumps({
+            "model": "claude-sonnet-4-20250514",
+            "stream": False,
+            "max_tokens": 400,
+            "messages": [{"role": "user", "content": prompt}],
+        }).encode()
+        req = urllib.request.Request(
+            "https://api.anthropic.com/v1/messages",
+            data=payload,
+            headers={
+                "Content-Type": "application/json",
+                "x-api-key": api_key,
+                "anthropic-version": "2023-06-01",
+            },
+            method="POST",
         )
-        if result.returncode == 0 and result.stdout.strip():
-            summary = result.stdout.strip()
-            # 5行に制限
-            lines = summary.splitlines()
-            return "\n".join(lines[:5])
-    except FileNotFoundError:
-        print("[summary] claude CLI が見つかりません。サマリーをスキップします")
-    except subprocess.TimeoutExpired:
-        print("[summary] claude -p がタイムアウトしました")
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            body = json.loads(resp.read().decode())
+            text = body.get("content", [{}])[0].get("text", "")
+            if text:
+                lines = text.strip().splitlines()
+                return "\n".join(lines[:5])
     except Exception as e:
         print(f"[summary] AI サマリー生成失敗: {e}")
 
