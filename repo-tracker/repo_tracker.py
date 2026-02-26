@@ -25,6 +25,7 @@ import json
 import re
 import subprocess
 import sys
+import urllib.error
 import urllib.request
 from collections import defaultdict
 from pathlib import Path
@@ -325,34 +326,49 @@ def generate_ai_summary(name: str, old: str, new: str) -> str:
     )
 
     import os
-    api_key = os.environ.get("ANTHROPIC_API_KEY", "")
-    if not api_key:
-        print("[summary] ANTHROPIC_API_KEY 未設定。サマリーをスキップします")
+    import shutil
+
+    # claude CLI を探す
+    claude_bin = shutil.which("claude")
+    if not claude_bin:
+        for p in [
+            Path.home() / ".local" / "bin" / "claude",
+            Path("/usr/local/bin/claude"),
+            Path("/opt/homebrew/bin/claude"),
+        ]:
+            if p.exists():
+                claude_bin = str(p)
+                break
+    if not claude_bin:
+        print("[summary] claude CLI が見つかりません。サマリーをスキップします")
         return ""
 
+    # CLAUDECODE を除去（ネストセッション制限回避）
+    env = dict(os.environ)
+    env.pop("CLAUDECODE", None)
+    env.pop("CLAUDE_CODE_ENTRYPOINT", None)
+
+    print(f"[summary] claude CLI: {claude_bin}")
     try:
-        payload = json.dumps({
-            "model": "claude-sonnet-4-20250514",
-            "stream": False,
-            "max_tokens": 400,
-            "messages": [{"role": "user", "content": prompt}],
-        }).encode()
-        req = urllib.request.Request(
-            "https://api.anthropic.com/v1/messages",
-            data=payload,
-            headers={
-                "Content-Type": "application/json",
-                "x-api-key": api_key,
-                "anthropic-version": "2023-06-01",
-            },
-            method="POST",
+        result = subprocess.run(
+            [claude_bin, "-p", prompt],
+            capture_output=True,
+            text=True,
+            timeout=60,
+            env=env,
         )
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            body = json.loads(resp.read().decode())
-            text = body.get("content", [{}])[0].get("text", "")
-            if text:
-                lines = text.strip().splitlines()
-                return "\n".join(lines[:5])
+        print(f"[summary] returncode={result.returncode}, stdout={len(result.stdout)}bytes")
+        if result.returncode == 0 and result.stdout.strip():
+            lines = result.stdout.strip().splitlines()
+            summary = "\n".join(lines[:5])
+            print(f"[summary] サマリー生成成功（{len(summary)}文字）")
+            return summary
+        if result.stderr.strip():
+            print(f"[summary] claude stderr: {result.stderr.strip()[:300]}")
+        if not result.stdout.strip():
+            print("[summary] claude -p が空出力を返しました")
+    except subprocess.TimeoutExpired:
+        print("[summary] claude -p タイムアウト（60秒）")
     except Exception as e:
         print(f"[summary] AI サマリー生成失敗: {e}")
 
