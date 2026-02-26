@@ -33,6 +33,33 @@ BASE_DIR = Path.home() / ".repo-tracker"
 PLIST_DIR = Path.home() / "Library" / "LaunchAgents"
 USER_AGENT = "repo-tracker/1.0"
 
+AI_SUMMARY_PROMPT = """\
+以下の GitHub リポジトリの更新情報（コミットログと変更ファイル）を読んで、
+**日本語5行以内**で要約してください。
+
+要約のフォーマット:
+- 1行目: 更新の全体像（何がどう変わったか）
+- 2-3行目: 主要な変更内容
+- 4行目: 現状の課題や注意点（あれば）
+- 5行目: 次にやるべきこと（推測できれば）
+
+技術者がパッと読んで状況を把握できる簡潔さを重視。
+コミットメッセージが英語でも要約は日本語で。
+
+---
+リポジトリ: {repo_name}
+コミット数: {commit_count}
+
+【コミットログ】
+{commit_log}
+
+【変更ファイル】
+{changed_files}
+
+【統計】
+{diff_stat}
+"""
+
 
 # ============================================================
 # ユーティリティ
@@ -256,6 +283,50 @@ def generate_report(name: str, old: str, new: str) -> Path:
 
 
 # ============================================================
+# AI サマリー生成
+# ============================================================
+
+
+def generate_ai_summary(name: str, old: str, new: str) -> str:
+    """claude -p で差分を5行の日本語サマリーにまとめる"""
+    config = load_config(name)
+    repo_name = config.get("repo_url", name).split("/")[-1]
+    commit_log = get_commit_log_detail(name, old, new)
+    changed_files = get_changed_files(name, old, new)
+    diff_stat = get_diff_stat(name, old, new)
+    commit_count = len(commit_log.splitlines()) if commit_log else 0
+
+    prompt = AI_SUMMARY_PROMPT.format(
+        repo_name=repo_name,
+        commit_count=commit_count,
+        commit_log=commit_log or "(なし)",
+        changed_files=changed_files or "(なし)",
+        diff_stat=diff_stat or "(なし)",
+    )
+
+    try:
+        result = subprocess.run(
+            ["claude", "-p", prompt],
+            capture_output=True,
+            text=True,
+            timeout=60,
+        )
+        if result.returncode == 0 and result.stdout.strip():
+            summary = result.stdout.strip()
+            # 5行に制限
+            lines = summary.splitlines()
+            return "\n".join(lines[:5])
+    except FileNotFoundError:
+        print("[summary] claude CLI が見つかりません。サマリーをスキップします")
+    except subprocess.TimeoutExpired:
+        print("[summary] claude -p がタイムアウトしました")
+    except Exception as e:
+        print(f"[summary] AI サマリー生成失敗: {e}")
+
+    return ""
+
+
+# ============================================================
 # Discord 通知
 # ============================================================
 
@@ -343,24 +414,40 @@ def notify_discord(
     config = load_config(name)
     repo_url = config.get("repo_url", "")
 
+    # AI サマリー生成（claude -p 利用可能時）
+    ai_summary = generate_ai_summary(name, old, new)
+
     commits = get_commits_with_body(name, old, new)
     classified = classify_files(name, old, new)
     added_lines, deleted_lines, file_count = get_numstat_total(name, old, new)
 
-    content_summary = _truncate(_build_content_summary(commits), 2000)
+    # サマリーがあればそれをメインに、なければ従来のコミット一覧
+    if ai_summary:
+        description = f"📋 **AI サマリー**\n{ai_summary}"
+        # コミット詳細はフィールドに移動
+        content_summary = _truncate(_build_content_summary(commits), 900)
+    else:
+        description = _truncate(_build_content_summary(commits), 2000)
+        content_summary = ""
+
     file_section = _truncate(_build_file_section(classified), 900)
     scale = f"+{added_lines:,} / -{deleted_lines:,} 行 ({file_count} files)"
+
+    fields = []
+    if content_summary:
+        fields.append({"name": "コミット詳細", "value": content_summary, "inline": False})
+    fields.extend([
+        {"name": "ファイル変更", "value": f"```diff\n{file_section}\n```", "inline": False},
+        {"name": "範囲", "value": f"`{old[:8]}` → `{new[:8]}`", "inline": True},
+        {"name": "規模", "value": scale, "inline": True},
+    ])
 
     embed = {
         "title": f"{name} 更新 ({commit_count} commits)",
         "url": repo_url,
         "color": 0x5865F2,
-        "description": content_summary,
-        "fields": [
-            {"name": "ファイル変更", "value": f"```diff\n{file_section}\n```", "inline": False},
-            {"name": "範囲", "value": f"`{old[:8]}` → `{new[:8]}`", "inline": True},
-            {"name": "規模", "value": scale, "inline": True},
-        ],
+        "description": _truncate(description, 2000),
+        "fields": fields,
         "footer": {"text": f"レポート: {report_path.name}"},
         "timestamp": datetime.datetime.now(datetime.timezone.utc).isoformat(),
     }
