@@ -6,7 +6,7 @@ user_invocable: true
 
 # Update Dashboards — MTG分析・ダッシュボード自動更新スキル
 
-サークルバック経由で蓄積されるMTGトランスクリプトの新規ファイルを検知し、分析レポートとHTMLダッシュボード2種（aiseed_overview.html, sennin_system.html）を更新する。
+サークルバック経由で蓄積されるMTGトランスクリプトの新規ファイルを検知し、分析レポートとHTMLダッシュボード3種（aiseed_overview.html, sennin_system.html, relationship_graph.html）を更新する。
 
 ## 対象プロジェクト
 
@@ -81,6 +81,18 @@ user_invocable: true
    - **課題トラッカー**: 新課題の追加、既存課題の解決
    - **開発体制**: 体制変更があれば更新
 3. `Edit` ツールで該当箇所を更新する
+
+#### relationship_graph.html（人間関係図）
+
+1. `relationship_graph.html` を `Read` で読み込む
+2. 新規MTGで判明した人物関係の変更を反映する:
+   - **新規人物の追加**: `nodes` 配列に新ノードを追加（id, name, sub, type, role, desc, size, involvement）
+   - **新規関係の追加**: `edges` 配列に新エッジを追加（source, target, type, label）
+   - **既存人物の更新**: 役職変更、関与領域の追加
+   - **type分類**: core / engineer / advisor / partner / external / client
+   - **edge type分類**: management / tech / business / customer / other
+3. `Edit` ツールで `nodes` または `edges` の配列に要素を追加/更新する
+4. `nodeCount` / `edgeCount` の表示は自動計算されるため変更不要
 
 ### Phase 6: 処理済みファイル追跡の更新
 
