@@ -1,5 +1,5 @@
-# インストール済みスキル索引（252件）
-<!-- 自動生成: 2026-02-26 01:44 UTC -->
+# インストール済みスキル索引（255件）
+<!-- 自動生成: 2026-02-27 01:46 UTC -->
 
 | slug | 名前 | 説明 |
 |------|------|------|
@@ -75,6 +75,7 @@
 | dammyjay93--interface-design | interface-design | This skill is for interface design — dashboards, admin panels, apps, tools, and interactive products. NOT for marketing design (landing pages, marketi |
 | davepoon--buildwithclaude | artifacts-builder | Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui |
 | davepoon--claude-code-subagents-collection | artifacts-builder | Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui |
+| davidgeorgehope--elasticsearch-skill | elasticsearch | > |
 | dgallitelli--aws-hyperpod-skill | sagemaker-hyperpod | \| |
 | diet103--claude-code-infrastructure-showcase | backend-dev-guidelines | Comprehensive backend development guide for Node.js/Express/TypeScript microservices. Use when creating routes, controllers, services, repositories, m |
 | discord-context-search | discord-context-search | Discordエクスポートデータからキーワード検索し、文脈を抽出・分析・要約してファイル保存するスキル。 |
@@ -102,6 +103,7 @@
 | google-gemini--gemini-cli | code-reviewer | This skill guides the agent in conducting professional and thorough code reviews for both local development and remote Pull Requests. |
 | google-labs-code--stitch-skills | design-md | Analyze Stitch projects and synthesize a semantic design system into DESIGN.md files |
 | gradio-app--gradio | gradio | Build Gradio web UIs and demos in Python. Use when creating or editing Gradio apps, components, event listeners, layouts, or chatbots. |
+| happycastle114--oh-my-openclaw | oh-my-openclaw | Agent orchestration framework for OpenClaw - ports oh-my-opencode patterns (Prometheus planner, Atlas orchestrator, Sisyphus executor) into OpenClaw-n |
 | homeassistant-ai--ha-mcp | bat | Run bot acceptance tests to validate MCP tools work correctly from a real AI agent's perspective. Use when testing PRs, detecting regressions, or veri |
 | html-arch-visualizer | html-arch-visualizer | プロジェクトのアーキテクチャをSVGベースのインタラクティブなHTMLダイアグラムとして可視化するスキル。 |
 | htmlstreamofficial--preline | preline-theme-generator | Generates beautiful, consistent Preline Theme CSS files. Agent interprets user request, runs build script, delivers complete CSS. |
@@ -180,6 +182,7 @@
 | pixelml--agenticflow-skill | agenticflow-skills | Comprehensive guide for building AI workflows, agents, and workforce systems with AgenticFlow. Use when designing workflows with various node types, c |
 | pleaseprompto--google-ai-mode-skill | google-ai-mode-skill | Use this skill when the user requests current information, documentation, coding examples, or web research beyond the knowledge cutoff. Queries Google |
 | pleaseprompto--notebooklm-skill | notebooklm | Use this skill to query your Google NotebookLM notebooks directly from Claude Code for source-grounded, citation-backed answers from Gemini. Browser a |
+| polaroteam--moltdj-skill | moltdj | SoundCloud for AI bots. Generate tracks and podcasts, share on Moltbook, and earn from tips + royalties. |
 | prefecthq--prefect | write-docs | Comprehensive guide for writing and updating Prefect documentation. Use when creating new doc pages, updating existing docs, or working with Mintlify  |
 | project-review | project-review | プロジェクトのドキュメント・コードを多角的にレビューし、実現性・正確性・改善点を検証して修正するスキル |
 | pytorch--pytorch | add-uint-support | Add unsigned integer (uint) type support to PyTorch operators by updating AT_DISPATCH macros. Use when adding support for uint16, uint32, uint64 types |
