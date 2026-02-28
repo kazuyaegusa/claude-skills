@@ -1,5 +1,5 @@
-# インストール済みスキル索引（255件）
-<!-- 自動生成: 2026-02-27 01:46 UTC -->
+# インストール済みスキル索引（257件）
+<!-- 自動生成: 2026-02-28 01:45 UTC -->
 
 | slug | 名前 | 説明 |
 |------|------|------|
@@ -158,6 +158,7 @@
 | mrgoonie--claudekit-skills | aesthetic | Create aesthetically beautiful interfaces following proven design principles. Use when building UI/UX, analyzing designs from inspiration sites, gener |
 | muratcankoylan--agent-skills-for-context-engineering | context-engineering-collection | A comprehensive collection of Agent Skills for context engineering, multi-agent architectures, and production agent systems. Use when building, optimi |
 | mvanhorn--last30days-skill | last30days | Research a topic from the last 30 days on Reddit + X + Web, become an expert, and write copy-paste-ready prompts for the user's target tool. |
+| n1byn1kt--apitap | ApiTap — The MCP Server That Turns Any Website Into an API | > No docs, no SDK, no browser. Just data. |
 | n8n-io--n8n | content-design | > |
 | ndpvt-web--latex-document-skill | latex-document | > |
 | nextlevelbuilder--ui-ux-pro-max-skill | ui-ux-pro-max | UI/UX design intelligence. 50 styles, 21 palettes, 50 font pairings, 20 charts, 9 stacks (React, Next.js, Vue, Svelte, SwiftUI, React Native, Flutter, |
@@ -231,6 +232,7 @@
 | thedotmack--claude-mem | Claude-Mem OpenClaw Plugin — Setup Guide | This guide walks through setting up the claude-mem plugin on an OpenClaw gateway. By the end, your agents will have persistent memory across sessions, |
 | timescale--pg-aiguide | design-postgres-tables | \| |
 | tobi--qmd | qmd | Search personal markdown knowledge bases, notes, meeting transcripts, and documentation using QMD - a local hybrid search engine. Combines BM25 keywor |
+| topologyhealth--claudefhirskill | fhir-software | Comprehensive FHIR (Fast Healthcare Interoperability Resources) software development assistant. Use when working with FHIR APIs, implementations, or h |
 | tripleyak--skillforge | skillforge | Intelligent skill router and creator. Analyzes ANY input to recommend existing skills, improve them, or create new ones. Uses deep iterative analysis  |
 | trycua--cua | cua-do-cli | Automates interactions with remote VMs, local Docker containers, cloud sandboxes, and the host PC via cua do. Use when navigating GUIs, taking snapsho |
 | udecode--dotai | debug | Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes - four-phase framework (root cause investigation, pattern  |
