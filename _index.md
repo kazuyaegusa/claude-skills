@@ -1,5 +1,5 @@
-# インストール済みスキル索引（257件）
-<!-- 自動生成: 2026-02-28 01:45 UTC -->
+# インストール済みスキル索引（259件）
+<!-- 自動生成: 2026-03-01 01:46 UTC -->
 
 | slug | 名前 | 説明 |
 |------|------|------|
@@ -38,6 +38,7 @@
 | blader--humanizer | humanizer | \| |
 | blader--razor | razor | Minimize local diff size against merge base for uncommitted branch work. Use when asked to tighten or shrink a local diff while keeping core behavior, |
 | blader--schematic | schematic | \| |
+| blader--theorist | theorist | \| |
 | bowenliang123--md_exporter | markdown-exporter | Markdown exporter for export Markdown text to DOCX, PPTX, XLSX, PDF, PNG, HTML, MD, CSV, JSON, JSONL, XML files, and extract code blocks in Markdown t |
 | brainblend-ai--atomic-agents | release | Release a new version of atomic-agents to PyPI and GitHub. Use when the user asks to "release", "publish", "deploy", or "bump version" for atomic-agen |
 | breaking-brake--cc-wf-studio | code-review-large | In-depth code review for large PRs (>500 lines). Full analysis including architecture, performance, security, and maintainability. |
@@ -96,6 +97,7 @@
 | folder-digest | folder-digest | カレントフォルダの全ファイルを読み込み、内容を的確かつ網羅的に把握して構造化レポートを出力するスキル。 |
 | forayconsulting--gemini_cli_skill | gemini-cli | Wield Google's Gemini CLI as a powerful auxiliary tool for code generation, review, analysis, and web research. Use when tasks benefit from a second A |
 | frdel--agent-zero | create-skill | Wizard for creating new Agent Zero skills. Guides users through creating well-structured SKILL.md files. Use when users want to create custom skills. |
+| genielabsopensource--spine-animation-ai | spine-animation | > |
 | getsentry--sentry | design-system | Guide for using Sentry's layout and text primitives. Use when implementing UI components, layouts, or typography. Enforces use of core components over |
 | getsentry--xcodebuildmcp | xcodebuildmcp-cli | Official skill for the XcodeBuildMCP CLI. Use when doing iOS/macOS/watchOS/tvOS/visionOS work (build, test, run, debug, log, UI automation). |
 | github--awesome-copilot | agentic-eval | \| |
