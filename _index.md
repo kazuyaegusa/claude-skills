@@ -1,5 +1,5 @@
-# インストール済みスキル索引（259件）
-<!-- 自動生成: 2026-03-01 01:46 UTC -->
+# インストール済みスキル索引（263件）
+<!-- 自動生成: 2026-03-02 01:47 UTC -->
 
 | slug | 名前 | 説明 |
 |------|------|------|
@@ -119,6 +119,7 @@
 | iofficeai--aionui | i18n | \| |
 | itsmostafa--aws-agent-skills | api-gateway | AWS API Gateway for REST and HTTP API management. Use when creating APIs, configuring integrations, setting up authorization, managing stages, impleme |
 | jasonxudeveloper--jengine | editor-ui | JEngine Editor UI component library with theming. Triggers on: custom inspector, editor window, Unity editor UI, UIElements, VisualElement, JButton, J |
+| jax-transformer-ranker | JAX Transformer Ranker | JAX/FlaxによるTransformerスコアリングモデルの実装テンプレート |
 | jcfischer--supertag-cli | Supertag CLI Skill | Supertag CLI provides complete Tana workspace integration through: |
 | jeremylongshore--claude-code-plugins | Auditing Access Control | \| |
 | jeremylongshore--claude-code-plugins-plus | Auditing Access Control | \| |
@@ -168,6 +169,7 @@
 | nspady--google-calendar-mcp | gcal-api-research | Expert research tool for Google Calendar API implementations. PROACTIVELY use when (1) reviewing PRs adding calendar features, (2) planning new event/ |
 | numman-ali--n-skills | dev-browser | Browser automation with persistent page state. Use when users ask to navigate websites, fill forms, take screenshots, extract web data, test web apps, |
 | numman-ali--openskills | my-first-skill | Example skill demonstrating Anthropic SKILL.md format. Load when learning to create skills or testing the OpenSkills loader. |
+| numpy-ann-search | NumPy ANN Search | LSH(Locality-Sensitive Hashing)ベースの近似最近傍探索をNumPyのみで実装するスキル |
 | obra--superpowers | brainstorming | You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent |
 | op7418--humanizer-zh | humanizer-zh | \| |
 | op7418--nanobanana-ppt-skills | PPT Generator Pro - Claude Code Skill | - **Skill 名称**: ppt-generator-pro |
@@ -193,6 +195,7 @@
 | quality-harness | quality-harness | 任意のPythonプロジェクトに品質ハーネス（eval評価・実行隔離・CI/CD・Git hooks）を一括セットアップするスキル。 |
 | qwenlm--qwen-code | synonyms | Generate synonyms for words or phrases. Use this skill when the user needs alternative words with similar meanings, wants to expand vocabulary, or see |
 | ramsbaby--openclaw-self-healing | openclaw-self-healing | 4-tier autonomous self-healing system for OpenClaw Gateway with persistent learning, reasoning logs, and multi-channel alerts. Features Claude Code as |
+| realtime-feature-engine | Realtime Feature Engine | イベントストリームから時間減衰付き特徴量をリアルタイム集計するエンジン |
 | rebelytics--one-skill-to-rule-them-all | task-observer | > |
 | redpanda-data--connect | bloblang-authoring | This skill should be used when users need to create or debug Bloblang transformation scripts. Trigger when users ask about transforming data, mapping  |
 | refly-ai--refly | refly | Base skill for Refly ecosystem: creates, discovers, and runs domain-specific skills bound to workflows. Routes user intent to matching domain skills v |
@@ -231,6 +234,7 @@
 | supermemoryai--claude-supermemory | super-save | Save important project knowledge to memory. Use when user wants to preserve architectural decisions, significant bug fixes, design patterns, or import |
 | synthetic-lab--octofriend | pr-review | Review Github pull requests |
 | tambo-ai--tambo | ai-sdk-model-manager | Manages AI SDK model configurations - updates packages, identifies missing models, adds new models with research, and updates documentation |
+| textgrad-optimizer | TextGrad テキスト最適化スキル | LLMのフィードバックを「テキスト勾配」として扱い、プロンプト・コード・文章を反復的に自動最適化する。 |
 | thedotmack--claude-mem | Claude-Mem OpenClaw Plugin — Setup Guide | This guide walks through setting up the claude-mem plugin on an OpenClaw gateway. By the end, your agents will have persistent memory across sessions, |
 | timescale--pg-aiguide | design-postgres-tables | \| |
 | tobi--qmd | qmd | Search personal markdown knowledge bases, notes, meeting transcripts, and documentation using QMD - a local hybrid search engine. Combines BM25 keywor |
