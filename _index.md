@@ -1,5 +1,5 @@
-# インストール済みスキル索引（263件）
-<!-- 自動生成: 2026-03-02 01:47 UTC -->
+# インストール済みスキル索引（266件）
+<!-- 自動生成: 2026-03-03 01:50 UTC -->
 
 | slug | 名前 | 説明 |
 |------|------|------|
@@ -97,6 +97,7 @@
 | folder-digest | folder-digest | カレントフォルダの全ファイルを読み込み、内容を的確かつ網羅的に把握して構造化レポートを出力するスキル。 |
 | forayconsulting--gemini_cli_skill | gemini-cli | Wield Google's Gemini CLI as a powerful auxiliary tool for code generation, review, analysis, and web research. Use when tasks benefit from a second A |
 | frdel--agent-zero | create-skill | Wizard for creating new Agent Zero skills. Guides users through creating well-structured SKILL.md files. Use when users want to create custom skills. |
+| gabberflast--academic-pptx-skill | academic-pptx | Use this skill whenever the user wants to create or improve a presentation for an academic context — conference papers, seminar talks, thesis defenses |
 | genielabsopensource--spine-animation-ai | spine-animation | > |
 | getsentry--sentry | design-system | Guide for using Sentry's layout and text primitives. Use when implementing UI components, layouts, or typography. Enforces use of core components over |
 | getsentry--xcodebuildmcp | xcodebuildmcp-cli | Official skill for the XcodeBuildMCP CLI. Use when doing iOS/macOS/watchOS/tvOS/visionOS work (build, test, run, debug, log, UI automation). |
@@ -190,6 +191,7 @@
 | polaroteam--moltdj-skill | moltdj | SoundCloud for AI bots. Generate tracks and podcasts, share on Moltbook, and earn from tips + royalties. |
 | prefecthq--prefect | write-docs | Comprehensive guide for writing and updating Prefect documentation. Use when creating new doc pages, updating existing docs, or working with Mintlify  |
 | project-review | project-review | プロジェクトのドキュメント・コードを多角的にレビューし、実現性・正確性・改善点を検証して修正するスキル |
+| projectopensea--opensea-skill | opensea | Query NFT data, trade on the Seaport marketplace, and swap ERC20 tokens across Ethereum, Base, Arbitrum, Optimism, Polygon, and more. |
 | pytorch--pytorch | add-uint-support | Add unsigned integer (uint) type support to PyTorch operators by updating AT_DISPATCH macros. Use when adding support for uint16, uint32, uint64 types |
 | qdhenry--claude-command-suite | Cloudflare Manager | Comprehensive Cloudflare account management for deploying Workers, KV Storage, R2, Pages, DNS, and Routes. Use when deploying cloudflare services, man |
 | quality-harness | quality-harness | 任意のPythonプロジェクトに品質ハーネス（eval評価・実行隔離・CI/CD・Git hooks）を一括セットアップするスキル。 |
@@ -219,6 +221,7 @@
 | silverov--yandex-direct-skill | direct | > |
 | sinzin91--search-sessions | search-sessions | Search across Claude Code and OpenClaw session history. Use when you need to find past conversations, decisions, code snippets, or resume previous ses |
 | skillcreatorai--ai-agent-skills | algorithmic-art | Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use when users request creating art using code, gen |
+| slundberg--shap | ai-disclosure | Track and document Claude's contributions during coding sessions for PR transparency. Use when working on feature branches, PRs, or when the user want |
 | smithery-ai--cli | smithery | Discover, install, and use MCP tools and agent skills. Use when you need to find MCP servers, securely connect to them, call their tools, or search/in |
 | snarktank--ralph | prd | Generate a Product Requirements Document (PRD) for a new feature. Use when planning a feature, starting a new project, or when asked to create a PRD.  |
 | sstklen--claude-api-cost-optimization | claude-api-cost-optimization | Save 50-90% on Claude API costs with Batch API, Prompt Caching & Extended Thinking. Official techniques, verified. |
