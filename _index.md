@@ -1,5 +1,5 @@
-# インストール済みスキル索引（266件）
-<!-- 自動生成: 2026-03-03 01:50 UTC -->
+# インストール済みスキル索引（267件）
+<!-- 自動生成: 2026-03-04 01:54 UTC -->
 
 | slug | 名前 | 説明 |
 |------|------|------|
@@ -74,6 +74,7 @@
 | dailydotdev--daily | dailydotdev--daily | ../../../skills/daily.dev/SKILL.md |
 | dammyjay93--claude-design-engineer | interface-design | This skill is for interface design — dashboards, admin panels, apps, tools, and interactive products. NOT for marketing design (landing pages, marketi |
 | dammyjay93--interface-design | interface-design | This skill is for interface design — dashboards, admin panels, apps, tools, and interactive products. NOT for marketing design (landing pages, marketi |
+| danielcanton--webxr-dev-skill | webxr-dev | WebXR/VR development guide for Three.js on Meta Quest — camera rig, controllers, teleport, postprocessing limitations, and hard-won pitfalls from ship |
 | davepoon--buildwithclaude | artifacts-builder | Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui |
 | davepoon--claude-code-subagents-collection | artifacts-builder | Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui |
 | davidgeorgehope--elasticsearch-skill | elasticsearch | > |
