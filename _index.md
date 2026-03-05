@@ -1,5 +1,5 @@
-# インストール済みスキル索引（267件）
-<!-- 自動生成: 2026-03-04 01:54 UTC -->
+# インストール済みスキル索引（268件）
+<!-- 自動生成: 2026-03-05 01:55 UTC -->
 
 | slug | 名前 | 説明 |
 |------|------|------|
@@ -206,6 +206,7 @@
 | repo-phuocdt--prompt-engineer-skill | prompt-engineer | Transform rough prompts/ideas into production-ready LLM prompts. Use when crafting, refining, or optimizing prompts for any AI model (Claude, GPT, Lla |
 | repo-tracker | repo-tracker | GitHub リポジトリの変更を定期監視し、差分レポート生成 + Discord 通知を行う汎用スキル。 |
 | risingwavelabs--risingwave | fix-buildkite-ci | Triage and fix failing Buildkite CI checks for RisingWave pull requests by extracting concrete failing tests, diffs, and error messages from Buildkite |
+| rivradev--recite-agent-skill | Recite 🦞🤵 | name: recite |
 | rohunvora--x-research-skill | x-research | > |
 | ruvnet--claude-code-flow | agent-adaptive-coordinator | Agent skill for adaptive-coordinator - invoke with $agent-adaptive-coordinator |
 | ruvnet--claude-flow | agent-adaptive-coordinator | Agent skill for adaptive-coordinator - invoke with $agent-adaptive-coordinator |
