@@ -271,3 +271,7 @@
 | zebbern--claude-code-guide | Active Directory Attacks | This skill should be used when the user asks to "attack Active Directory", "exploit AD", "Kerberoasting", "DCSync", "pass-the-hash", "BloodHound enume |
 | zeframlou--call-me | Phone Call Input Skill | Call the user on the phone for real-time voice conversations. Use this when you need input, want to report on completed work, or need to discuss next  |
 | zhayujie--chatgpt-on-wechat | linkai-agent | Call LinkAI applications and workflows. Use bash command to execute like 'bash <base_dir>/scripts/call.sh <app_code> <question>'. |
+
+| linear-api-client | Linear API Client | Linear GraphQL APIを使ってIssueの取得・更新・コメント追加を行う汎用クライアント |
+| github-pr-automation | GitHub PR Automation | GitHub APIでブランチ作成・ファイルコミット・PR作成を自動化する汎用クライアント |
+| ticket-to-pr-pipeline | Ticket-to-PR Pipeline | プロジェクト管理チケットからAIコード生成→GitHub PR作成を自動化するオーケストレーションパターン |
