@@ -5,6 +5,10 @@
     "CLAUDE_CODE_AUTOCOMPACT_PCT_OVERRIDE": "50"
   },
   "model": "claude-opus-4-6",
+  "statusLine": {
+    "type": "command",
+    "command": "~/.claude/statusline.sh"
+  },
   "enabledPlugins": {
     "github@claude-plugins-official": true,
     "slack@claude-plugins-official": true
@@ -12,9 +16,5 @@
   "language": "japanese",
   "autoUpdatesChannel": "latest",
   "skipDangerousModePermissionPrompt": true,
-  "effortLevel": "high",
-  "statusLine": {
-    "type": "command",
-    "command": "~/.claude/statusline.sh"
-  }
+  "effortLevel": "high"
 }
