@@ -4,7 +4,7 @@
     "ENABLE_TOOL_SEARCH": "auto:5",
     "CLAUDE_CODE_AUTOCOMPACT_PCT_OVERRIDE": "50"
   },
-  "model": "claude-opus-4-6",
+  "model": "opus[1m]",
   "statusLine": {
     "type": "command",
     "command": "~/.claude/statusline.sh"
