@@ -284,3 +284,5 @@
 | ui-automation-agent | UI Automation Agent | 画面UIを解析して自動操作するエージェント |
 
 | multi-agent-systems | Multi-Agent Systems | 複数AIエージェントを並列実行してタスクを分散処理するスター型・分散型の2パターン実装 |
+
+| multi-agent-patterns | マルチエージェントパターン解説 | Claude Code/Codexのマルチエージェント機能の3パターンを実装例付きで理解する |
