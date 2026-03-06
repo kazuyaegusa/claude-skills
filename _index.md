@@ -282,3 +282,5 @@
 | zhayujie--chatgpt-on-wechat | linkai-agent | Call LinkAI applications and workflows. Use bash command to execute like 'bash <base_dir>/scripts/call.sh <app_code> <question>'. |
 
 | ui-automation-agent | UI Automation Agent | 画面UIを解析して自動操作するエージェント |
+
+| multi-agent-systems | Multi-Agent Systems | 複数AIエージェントを並列実行してタスクを分散処理するスター型・分散型の2パターン実装 |
