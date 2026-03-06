@@ -1,5 +1,5 @@
-# インストール済みスキル索引（268件）
-<!-- 自動生成: 2026-03-05 01:55 UTC -->
+# インストール済みスキル索引（277件）
+<!-- 自動生成: 2026-03-06 02:05 UTC -->
 
 | slug | 名前 | 説明 |
 |------|------|------|
@@ -20,6 +20,7 @@
 | anthropics--skills | algorithmic-art | Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code |
 | antonbabenko--terraform-skill | terraform-skill | Use when working with Terraform or OpenTofu - creating modules, writing tests (native test framework, Terratest), setting up CI/CD pipelines, reviewin |
 | apache--airflow | airflow-translations | > |
+| apache--incubator-airflow | airflow-translations | > |
 | aplaceforallmystuff--the-antislop | antislop | Detect and fix AI-generated writing patterns (slop). Comprehensive detection with 45+ patterns, tiered severity scoring, and editor mode. |
 | appleboy--codegpt | commit-message | Automatically generates, formats, organizes, and improves git commit messages by analyzing your staged changes using AI. Use this skill when you want  |
 | arize-ai--phoenix | agent-browser | Browser automation CLI for AI agents. Use when the user needs to interact with websites, including navigating pages, filling forms, clicking buttons,  |
@@ -55,6 +56,7 @@
 | clickhouse--clickhouse | build | Build ClickHouse with various configurations (Release, Debug, ASAN, TSAN, etc.). Use when the user wants to compile ClickHouse. |
 | cloudai-x--claude-workflow-v2 | analyzing-projects | Analyzes codebases to understand structure, tech stack, patterns, and conventions. Use when onboarding to a new project, exploring unfamiliar code, or |
 | cloudai-x--threejs-skills | threejs-animation | Three.js animation - keyframe animation, skeletal animation, morph targets, animation mixing. Use when animating objects, playing GLTF animations, cre |
+| cockroachdb--cockroach | backport-pr-assistant | Help backport PRs to release branches using the backport CLI tool. Use when backporting changes that have merge conflicts requiring manual resolution. |
 | code-yeongyu--oh-my-opencode | github-issue-triage | Triage GitHub issues with streaming analysis. CRITICAL: 1 issue = 1 background task. Processes each issue as independent background task with immediat |
 | coder--coder | code-review | Reviews code changes for bugs, security issues, and quality problems |
 | coleam00--context-engineering-intro | build-with-agent-team | Build a project using Claude Code Agent Teams with tmux split panes. Takes a plan document path and optional team size. Use when you want multiple age |
@@ -75,6 +77,7 @@
 | dammyjay93--claude-design-engineer | interface-design | This skill is for interface design — dashboards, admin panels, apps, tools, and interactive products. NOT for marketing design (landing pages, marketi |
 | dammyjay93--interface-design | interface-design | This skill is for interface design — dashboards, admin panels, apps, tools, and interactive products. NOT for marketing design (landing pages, marketi |
 | danielcanton--webxr-dev-skill | webxr-dev | WebXR/VR development guide for Three.js on Meta Quest — camera rig, controllers, teleport, postprocessing limitations, and hard-won pitfalls from ship |
+| danpeg--bug-hunt | bug-hunt | Run adversarial bug hunting on your codebase. Uses 3 isolated agents (Hunter, Skeptic, Referee) to find and verify real bugs with high fidelity. Invok |
 | davepoon--buildwithclaude | artifacts-builder | Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui |
 | davepoon--claude-code-subagents-collection | artifacts-builder | Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui |
 | davidgeorgehope--elasticsearch-skill | elasticsearch | > |
@@ -103,6 +106,7 @@
 | getsentry--sentry | design-system | Guide for using Sentry's layout and text primitives. Use when implementing UI components, layouts, or typography. Enforces use of core components over |
 | getsentry--xcodebuildmcp | xcodebuildmcp-cli | Official skill for the XcodeBuildMCP CLI. Use when doing iOS/macOS/watchOS/tvOS/visionOS work (build, test, run, debug, log, UI automation). |
 | github--awesome-copilot | agentic-eval | \| |
+| github-pr-automation | GitHub PR Automation | GitHub APIでブランチ作成・ファイルコミット・PR作成を自動化する汎用クライアント |
 | glittercowboy--taches-cc-resources | create-agent-skills | Expert guidance for creating, writing, building, and refining Claude Code Skills. Use when working with SKILL.md files, authoring new skills, improvin |
 | google-gemini--gemini-cli | code-reviewer | This skill guides the agent in conducting professional and thorough code reviews for both local development and remote Pull Requests. |
 | google-labs-code--stitch-skills | design-md | Analyze Stitch projects and synthesize a semantic design system into DESIGN.md files |
@@ -129,6 +133,7 @@
 | jftuga--transcript-critic | transcribe | Transcribe and critically analyze audio/video content. Accepts a .vtt file, an audio file (.m4a, .mp3, .wav, etc.), or a URL (YouTube or other yt-dlp- |
 | jimliu--baoyu-skills | release-skills | Universal release workflow. Auto-detects version files and changelogs. Supports Node.js, Python, Rust, Claude Plugin, and generic projects. Use when u |
 | jlowin--fastmcp | reviewing-code | Review code for quality, maintainability, and correctness. Use when reviewing pull requests, evaluating code changes, or providing feedback on impleme |
+| jnemargut--better-plan-mode | better-plan-mode | Enhanced planning mode that presents decision points as rich HTML documents with visual previews, comparison tables, and recommendations. Tracks all d |
 | k-dense-ai--claude-scientific-skills | adaptyv | Cloud laboratory platform for automated protein testing and validation. Use when designing proteins and needing experimental validation including bind |
 | kepano--obsidian-skills | defuddle | Extract clean markdown content from web pages using Defuddle CLI, removing clutter and navigation to save tokens. Use instead of WebFetch when the use |
 | khazp--vibe-coding-prompt-template | vibe-agents | Generate AGENTS.md and AI configuration files for your project. Use when the user wants to create agent instructions, set up AI configs, or says "crea |
@@ -144,6 +149,7 @@
 | langroid--langroid | add-pattern | Use this skill when you learn one or more design pattern(s) in the |
 | laravel--boost | fluxui-development | Develops UIs with Flux UI Free components. Activates when creating buttons, forms, modals, inputs, dropdowns, checkboxes, or UI components; replacing  |
 | leonardomso--33-js-concepts | concept-workflow | End-to-end workflow for creating complete JavaScript concept documentation, orchestrating all skills from research to final review |
+| linear-api-client | Linear API Client | Linear GraphQL APIを使ってIssueの取得・更新・コメント追加を行う汎用クライアント |
 | ludo-technologies--pyscn | pyscn-mcp | Analyze Python code quality using MCP tools - complexity, clones, dead code, coupling. Use when user asks about code quality, refactoring, maintainabi |
 | max-sixty--worktrunk | worktrunk | Guidance for Worktrunk, a CLI tool for managing git worktrees. Covers configuration (user config at ~/.config/worktrunk/config.toml and project hooks  |
 | mckinsey--vizro | dashboard-build | A skill that should be invoked whenever a user wants to build a Dashboard or simple app. This skill is Phase 2 of an e2e process that covers the actua |
@@ -167,6 +173,7 @@
 | n8n-io--n8n | content-design | > |
 | ndpvt-web--latex-document-skill | latex-document | > |
 | nextlevelbuilder--ui-ux-pro-max-skill | ui-ux-pro-max | UI/UX design intelligence. 50 styles, 21 palettes, 50 font pairings, 20 charts, 9 stacks (React, Next.js, Vue, Svelte, SwiftUI, React Native, Flutter, |
+| nia-agent-cyber--openai-voice-skill | OpenAI Voice Skill | Real-time voice conversations using OpenAI's native SIP integration. Way more fluid than multi-hop STT→LLM→TTS solutions. |
 | nomenak--superclaude | Confidence Check | Pre-implementation confidence assessment (≥90% required). Use before starting any implementation to verify readiness with duplicate check, architectur |
 | nspady--google-calendar-mcp | gcal-api-research | Expert research tool for Google Calendar API implementations. PROACTIVELY use when (1) reviewing PRs adding calendar features, (2) planning new event/ |
 | numman-ali--n-skills | dev-browser | Browser automation with persistent page state. Use when users ask to navigate websites, fill forms, take screenshots, extract web data, test web apps, |
@@ -186,6 +193,7 @@
 | pdf-slide-editor | pdf-slide-editor | PDFスライドの修正指示（ロゴ除去・白領域修正・テキスト除去・背景色調整など）を受けて、分析→スクリプト生成→実行→検証のサイクルで的確に反映するスキル。 |
 | phase-report | フェーズ完了レポート自動生成 | **このスキルは完全自動実行である。ユーザーへの確認・承認・質問を一切行わず、全ステップを自動で完了させること。** |
 | piebald-ai--tweakcc | patch-creation | Create and register new patches for tweakcc. Use when adding new customizations to Claude Code. |
+| pingcap--tidb | tidb-test-guidelines | Decide where to place TiDB tests and how to write them (basic structure, naming, testdata usage). Use when asked about test locations, writing convent |
 | pixelml--agenticflow-skill | agenticflow-skills | Comprehensive guide for building AI workflows, agents, and workforce systems with AgenticFlow. Use when designing workflows with various node types, c |
 | pleaseprompto--google-ai-mode-skill | google-ai-mode-skill | Use this skill when the user requests current information, documentation, coding examples, or web research beyond the knowledge cutoff. Queries Google |
 | pleaseprompto--notebooklm-skill | notebooklm | Use this skill to query your Google NotebookLM notebooks directly from Claude Code for source-grounded, citation-backed answers from Gemini. Browser a |
@@ -241,6 +249,7 @@
 | tambo-ai--tambo | ai-sdk-model-manager | Manages AI SDK model configurations - updates packages, identifies missing models, adds new models with research, and updates documentation |
 | textgrad-optimizer | TextGrad テキスト最適化スキル | LLMのフィードバックを「テキスト勾配」として扱い、プロンプト・コード・文章を反復的に自動最適化する。 |
 | thedotmack--claude-mem | Claude-Mem OpenClaw Plugin — Setup Guide | This guide walks through setting up the claude-mem plugin on an OpenClaw gateway. By the end, your agents will have persistent memory across sessions, |
+| ticket-to-pr-pipeline | Ticket-to-PR Pipeline | プロジェクト管理チケットからAIコード生成→GitHub PR作成を自動化するオーケストレーションパターン |
 | timescale--pg-aiguide | design-postgres-tables | \| |
 | tobi--qmd | qmd | Search personal markdown knowledge bases, notes, meeting transcripts, and documentation using QMD - a local hybrid search engine. Combines BM25 keywor |
 | topologyhealth--claudefhirskill | fhir-software | Comprehensive FHIR (Fast Healthcare Interoperability Resources) software development assistant. Use when working with FHIR APIs, implementations, or h |
@@ -271,7 +280,3 @@
 | zebbern--claude-code-guide | Active Directory Attacks | This skill should be used when the user asks to "attack Active Directory", "exploit AD", "Kerberoasting", "DCSync", "pass-the-hash", "BloodHound enume |
 | zeframlou--call-me | Phone Call Input Skill | Call the user on the phone for real-time voice conversations. Use this when you need input, want to report on completed work, or need to discuss next  |
 | zhayujie--chatgpt-on-wechat | linkai-agent | Call LinkAI applications and workflows. Use bash command to execute like 'bash <base_dir>/scripts/call.sh <app_code> <question>'. |
-
-| linear-api-client | Linear API Client | Linear GraphQL APIを使ってIssueの取得・更新・コメント追加を行う汎用クライアント |
-| github-pr-automation | GitHub PR Automation | GitHub APIでブランチ作成・ファイルコミット・PR作成を自動化する汎用クライアント |
-| ticket-to-pr-pipeline | Ticket-to-PR Pipeline | プロジェクト管理チケットからAIコード生成→GitHub PR作成を自動化するオーケストレーションパターン |
