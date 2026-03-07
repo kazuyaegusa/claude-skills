@@ -16,5 +16,5 @@
   "language": "japanese",
   "autoUpdatesChannel": "latest",
   "skipDangerousModePermissionPrompt": true,
-  "effortLevel": "low"
+  "effortLevel": "high"
 }
