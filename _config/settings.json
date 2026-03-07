@@ -16,5 +16,26 @@
   "language": "japanese",
   "autoUpdatesChannel": "latest",
   "skipDangerousModePermissionPrompt": true,
-  "effortLevel": "high"
+  "effortLevel": "high",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "^(Edit|Write|NotebookEdit)$",
+        "command": "~/.claude/star-office-hook.sh writing 'コード編集中'"
+      },
+      {
+        "matcher": "^Bash$",
+        "command": "~/.claude/star-office-hook.sh executing 'コマンド実行中'"
+      },
+      {
+        "matcher": "^(Read|Grep|Glob|WebFetch|Agent)$",
+        "command": "~/.claude/star-office-hook.sh researching '調査中'"
+      }
+    ],
+    "Stop": [
+      {
+        "command": "~/.claude/star-office-hook.sh idle '待機中'"
+      }
+    ]
+  }
 }
