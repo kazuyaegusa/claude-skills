@@ -15,6 +15,7 @@ SKILLS_DIR="$HOME/.claude/skills"
 CLAUDE_DIR="$HOME/.claude"
 CONFIG_DIR="$SKILLS_DIR/_config"
 LOG="$HOME/.claude/sync.log"
+SKILLS_CHANGED=0
 
 # ログファイルが大きくなりすぎたら切り詰める（1MB上限）
 if [ -f "$LOG" ] && [ "$(wc -c < "$LOG" 2>/dev/null)" -gt 1048576 ]; then
@@ -82,24 +83,38 @@ sync_config_to_repo() {
 
 # ローカル変更を commit + push
 push_local() {
+    local before_head after_head
+    before_head="$(git rev-parse HEAD 2>/dev/null || true)"
+
     sync_config_to_repo > /dev/null
 
     if [ -n "$(git status --porcelain)" ]; then
         git add -A
         git commit -m "auto-sync: $(hostname) $(date '+%Y-%m-%d %H:%M')" --no-gpg-sign 2>/dev/null
         log "COMMIT: local changes committed"
+        SKILLS_CHANGED=1
     fi
 
     if ! git push origin main 2>/dev/null; then
         git pull --rebase origin main 2>/dev/null
         git push origin main 2>/dev/null
     fi
+    after_head="$(git rev-parse HEAD 2>/dev/null || true)"
+    if [ "$before_head" != "$after_head" ]; then
+        SKILLS_CHANGED=1
+    fi
     log "PUSH: done"
 }
 
 # リモート変更を pull + 設定に反映
 pull_remote() {
+    local before_head after_head
+    before_head="$(git rev-parse HEAD 2>/dev/null || true)"
     git pull --rebase origin main 2>/dev/null
+    after_head="$(git rev-parse HEAD 2>/dev/null || true)"
+    if [ "$before_head" != "$after_head" ]; then
+        SKILLS_CHANGED=1
+    fi
     log "PULL: done"
 
     # _config/ → ローカル設定
@@ -133,5 +148,9 @@ run_codex_bridge() {
 log "SYNC START"
 push_local
 pull_remote
-run_codex_bridge
+if [ "$SKILLS_CHANGED" -eq 1 ]; then
+    run_codex_bridge
+else
+    log "CODEX BRIDGE: skipped (no skill changes)"
+fi
 log "SYNC DONE"
