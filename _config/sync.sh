@@ -114,8 +114,24 @@ pull_remote() {
     done
 }
 
+run_codex_bridge() {
+    local bridge="$HOME/.codex/bin/run-claude-skills-bridge"
+
+    if [ ! -x "$bridge" ]; then
+        log "CODEX BRIDGE: missing ($bridge)"
+        return 0
+    fi
+
+    if "$bridge" >> "$LOG" 2>&1; then
+        log "CODEX BRIDGE: done"
+    else
+        log "CODEX BRIDGE: failed"
+    fi
+}
+
 # メイン
 log "SYNC START"
 push_local
 pull_remote
+run_codex_bridge
 log "SYNC DONE"
