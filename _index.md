@@ -1,5 +1,5 @@
-# インストール済みスキル索引（277件）
-<!-- 自動生成: 2026-03-06 02:05 UTC -->
+# インストール済みスキル索引（290件）
+<!-- 自動生成: 2026-03-07 01:57 UTC -->
 
 | slug | 名前 | 説明 |
 |------|------|------|
@@ -8,6 +8,7 @@
 | adenhq--hive | hive-concepts | Core concepts for goal-driven agents - architecture, node types (event_loop, function), tool discovery, and workflow overview. Use when starting agent |
 | adityasugandhi--skillsync-mcp | SkillSync MCP — Security-Gated Skill Manager | Search, scan, install, and manage Claude Code skills with built-in security scanning. Every installation is gated behind a 60+ pattern threat scan. |
 | affaan-m--everything-claude-code | backend-patterns | Backend architecture patterns, API design, database optimization, and server-side best practices for Node.js, Express, and Next.js API routes. |
+| agent-cards--skill | agent-card | Manage prepaid virtual Visa cards for AI agents. Create cards, check balances, view credentials, close cards, and get support — all through MCP tools. |
 | agentset-ai--agentset | baseline-ui | Enforces an opinionated UI baseline to prevent AI-generated interface slop. |
 | albedo-tabai--lets-go-rss | lets-go-rss | 轻量级全平台 RSS 订阅管理器。一键聚合 YouTube、Vimeo、Behance、B站、微博、抖音、小红书的内容更新，支持增量去重和 AI 智能分类。 |
 | alexknowshtml--drawbridge | drawbridge | \| |
@@ -25,6 +26,7 @@
 | appleboy--codegpt | commit-message | Automatically generates, formats, organizes, and improves git commit messages by analyzing your staged changes using AI. Use this skill when you want  |
 | arize-ai--phoenix | agent-browser | Browser automation CLI for AI agents. Use when the user needs to interact with websites, including navigating pages, filling forms, clicking buttons,  |
 | arunjrk--audit-flow | audit-flow | Interactive system flow tracing across CODE, API, AUTH, DATA, NETWORK layers with SQLite persistence and Mermaid export. Use for security audits, comp |
+| ashutos1997--claude-design-auditor-skill | design-auditor | Audit and check designs against fundamental design rules and principles. Use this skill whenever the user wants to review, audit, validate, or improve |
 | assafelovic--gpt-researcher | gpt-researcher | GPT Researcher is an autonomous deep research agent that conducts web and local research, producing detailed reports with citations. Use this skill wh |
 | autogluon--autogluon | autogluon-conda-upgrade | Automate AutoGluon conda-forge feedstock version upgrades. Use when the user wants to upgrade AutoGluon to a new version in conda-forge, create PRs fo |
 | avdlee--swiftui-agent-skill | swiftui-expert-skill | Write, review, or improve SwiftUI code following best practices for state management, view composition, performance, modern APIs, Swift concurrency, a |
@@ -65,6 +67,7 @@
 | commonpaper--claude-skill | commonpaper | Query and manage contracts via the Common Paper REST API. Use when the user asks about their contracts, agreements, signers, NDAs, CSAs, renewals, dea |
 | composiohq--awesome-claude-plugins | artifacts-builder | Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui |
 | composiohq--awesome-claude-skills | -21risk-automation | Automate 21risk tasks via Rube MCP (Composio). Always search tools first for current schemas. |
+| conorbronsdon--avoid-ai-writing | avoid-ai-writing | Audit and rewrite content to remove AI writing patterns ("AI-isms"). Use this skill when asked to "remove AI-isms," "clean up AI writing," "edit writi |
 | coplaydev--unity-mcp | unity-mcp-orchestrator | Orchestrate Unity Editor via MCP (Model Context Protocol) tools and resources. Use when working with Unity projects through MCP for Unity - creating/m |
 | coreyhaines31--marketingskills | ab-test-setup | When the user wants to plan, design, or implement an A/B test or experiment. Also use when the user mentions "A/B test," "split test," "experiment," " |
 | cosmoblk--email-marketing-bible | email-marketing-bible | > |
@@ -81,8 +84,10 @@
 | davepoon--buildwithclaude | artifacts-builder | Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui |
 | davepoon--claude-code-subagents-collection | artifacts-builder | Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui |
 | davidgeorgehope--elasticsearch-skill | elasticsearch | > |
+| devswha--oh-my-humanizer | humanizer | \| |
 | dgallitelli--aws-hyperpod-skill | sagemaker-hyperpod | \| |
 | diet103--claude-code-infrastructure-showcase | backend-dev-guidelines | Comprehensive backend development guide for Node.js/Express/TypeScript microservices. Use when creating routes, controllers, services, repositories, m |
+| digidai--product-manager-skills | product-manager-skills | PM skill for Claude Code, Codex, Cursor, and Windsurf. Diagnoses SaaS metrics, critiques PRDs, plans roadmaps, runs discovery, coaches PM career trans |
 | discord-context-search | discord-context-search | Discordエクスポートデータからキーワード検索し、文脈を抽出・分析・要約してファイル保存するスキル。 |
 | disler--claude-code-hooks-multi-agent-observability | create-worktree-skill | Use when the user explicitly asks for a SKILL to create a worktree. If the user does not mention "skill" or explicitly request skill invocation, do NO |
 | dotnet--core | libraries-release-notes | Generate .NET Libraries release notes by evaluating the release's API diff, fetching merged PRs from a GitHub repository, categorizing by area or them |
@@ -112,6 +117,7 @@
 | google-labs-code--stitch-skills | design-md | Analyze Stitch projects and synthesize a semantic design system into DESIGN.md files |
 | gradio-app--gradio | gradio | Build Gradio web UIs and demos in Python. Use when creating or editing Gradio apps, components, event listeners, layouts, or chatbots. |
 | happycastle114--oh-my-openclaw | oh-my-openclaw | Agent orchestration framework for OpenClaw - ports oh-my-opencode patterns (Prometheus planner, Atlas orchestrator, Sisyphus executor) into OpenClaw-n |
+| hashgraph-online--registry-broker-skills | registry-broker | Search and chat with 76,000+ AI agents across 15 registries via the Hashgraph Online Registry Broker API. Use when discovering agents, starting conver |
 | homeassistant-ai--ha-mcp | bat | Run bot acceptance tests to validate MCP tools work correctly from a real AI agent's perspective. Use when testing PRs, detecting regressions, or veri |
 | html-arch-visualizer | html-arch-visualizer | プロジェクトのアーキテクチャをSVGベースのインタラクティブなHTMLダイアグラムとして可視化するスキル。 |
 | htmlstreamofficial--preline | preline-theme-generator | Generates beautiful, consistent Preline Theme CSS files. Agent interprets user request, runs build script, delivers complete CSS. |
@@ -151,10 +157,12 @@
 | leonardomso--33-js-concepts | concept-workflow | End-to-end workflow for creating complete JavaScript concept documentation, orchestrating all skills from research to final review |
 | linear-api-client | Linear API Client | Linear GraphQL APIを使ってIssueの取得・更新・コメント追加を行う汎用クライアント |
 | ludo-technologies--pyscn | pyscn-mcp | Analyze Python code quality using MCP tools - complexity, clones, dead code, coupling. Use when user asks about code quality, refactoring, maintainabi |
+| lukasniessen--terrashark | terrashark | Prevent Terraform/OpenTofu hallucinations by diagnosing and fixing failure modes: identity churn, secret exposure, blast-radius mistakes, CI drift, an |
 | max-sixty--worktrunk | worktrunk | Guidance for Worktrunk, a CLI tool for managing git worktrees. Covers configuration (user config at ~/.config/worktrunk/config.toml and project hooks  |
 | mckinsey--vizro | dashboard-build | A skill that should be invoked whenever a user wants to build a Dashboard or simple app. This skill is Phase 2 of an e2e process that covers the actua |
 | mcp-use--mcp-use | chatgpt-app-builder | Build ChatGPT apps with interactive widgets using mcp-use and OpenAI Apps SDK. Use when creating ChatGPT apps, building MCP servers with widgets, defi |
 | memtensor--memos | ask-user-question | Ask users questions via the UI. Use when you need clarification, user preferences, or confirmation before proceeding. The user CANNOT see CLI output - |
+| metabase--metabase | add-malli-schemas | Efficiently add Malli schemas to API endpoints in the Metabase codebase with proper patterns, validation timing, and error handling |
 | microsoft--agent-skills | wiki-architect | Analyzes code repositories and generates hierarchical documentation structures with onboarding guides. Use when the user wants to create a wiki, gener |
 | microsoft--playwright | playwright-api | Explains how to add playwright API methods. |
 | microsoft--playwright-cli | How to roll skills | - Read skill file at node_modules/playwright/lib/skill/SKILL.md |
@@ -167,6 +175,8 @@
 | modelcontextprotocol--typescript-sdk | migrate-v1-to-v2 | Migrate MCP TypeScript SDK code from v1 (@modelcontextprotocol/sdk) to v2 (@modelcontextprotocol/core, /client, /server). Use when a user asks to migr |
 | mrexodia--ida-pro-mcp | idapython | IDA Pro Python scripting for reverse engineering. Use when writing IDAPython scripts, analyzing binaries, working with IDA's API for disassembly, deco |
 | mrgoonie--claudekit-skills | aesthetic | Create aesthetically beautiful interfaces following proven design principles. Use when building UI/UX, analyzing designs from inspiration sites, gener |
+| multi-agent-patterns | マルチエージェントパターン解説 | Subagent・Multi-Agents・Agent Teamsの3パターンを体系的に理解し、適切に使い分ける |
+| multi-agent-systems | Multi-Agent Systems | 複数AIエージェントを並列実行し、タスクを効率的に分散処理する2つのアーキテクチャパターン。 |
 | muratcankoylan--agent-skills-for-context-engineering | context-engineering-collection | A comprehensive collection of Agent Skills for context engineering, multi-agent architectures, and production agent systems. Use when building, optimi |
 | mvanhorn--last30days-skill | last30days | Research a topic from the last 30 days on Reddit + X + Web, become an expert, and write copy-paste-ready prompts for the user's target tool. |
 | n1byn1kt--apitap | ApiTap — The MCP Server That Turns Any Website Into an API | > No docs, no SDK, no browser. Just data. |
@@ -185,6 +195,7 @@
 | op7418--youtube-clipper-skill | youtube-clipper | > |
 | openai--codex | test-tui | Guide for testing Codex TUI interactively |
 | openclaw--openclaw | merge-pr | Merge a GitHub PR via squash after /prepare-pr. Use when asked to merge a ready PR. Do not push to main or modify code. Ensure the PR ends in MERGED s |
+| openhands--openhands | upcoming-release | This skill should be used when the user asks to "generate release notes", "list upcoming release PRs", "summarize upcoming release", "/upcoming-releas |
 | othmanadi--planning-with-files | planning-with-files | Implements Manus-style file-based planning for complex tasks. Creates task_plan.md, findings.md, and progress.md. Use when starting complex multi-step |
 | parcadei--continuous-claude-v2 | trace-claude-code | \| |
 | parcadei--continuous-claude-v3 | trace-claude-code | \| |
@@ -256,6 +267,8 @@
 | tripleyak--skillforge | skillforge | Intelligent skill router and creator. Analyzes ANY input to recommend existing skills, improve them, or create new ones. Uses deep iterative analysis  |
 | trycua--cua | cua-do-cli | Automates interactions with remote VMs, local Docker containers, cloud sandboxes, and the host PC via cua do. Use when navigating GUIs, taking snapsho |
 | udecode--dotai | debug | Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes - four-phase framework (root cause investigation, pattern  |
+| ui-automation-agent | UI Automation Agent | 画面UIを解析してクリック・入力を自動化するエージェント |
+| ui-automation-agent-2 | UI Automation Agent | 画面認識とUI要素検出による自動操作エージェント |
 | update-dashboards | update-dashboards | MTGトランスクリプトの新規ファイルを検知し、分析・ナレッジベース・HTMLダッシュボード2種を自動更新するスキル。 |
 | upstash--context7 | documentation-lookup | This skill should be used when the user asks about libraries, frameworks, API references, or needs code examples. Activates for setup questions, code  |
 | uriva--find-scene-skill | find-scene | Search movie and TV show scenes by dialog, time, or visual description. Download video clips, extract frames, find quotes, identify movies from quotes |
@@ -280,9 +293,3 @@
 | zebbern--claude-code-guide | Active Directory Attacks | This skill should be used when the user asks to "attack Active Directory", "exploit AD", "Kerberoasting", "DCSync", "pass-the-hash", "BloodHound enume |
 | zeframlou--call-me | Phone Call Input Skill | Call the user on the phone for real-time voice conversations. Use this when you need input, want to report on completed work, or need to discuss next  |
 | zhayujie--chatgpt-on-wechat | linkai-agent | Call LinkAI applications and workflows. Use bash command to execute like 'bash <base_dir>/scripts/call.sh <app_code> <question>'. |
-
-| ui-automation-agent | UI Automation Agent | 画面UIを解析して自動操作するエージェント |
-
-| multi-agent-systems | Multi-Agent Systems | 複数AIエージェントを並列実行してタスクを分散処理するスター型・分散型の2パターン実装 |
-
-| multi-agent-patterns | マルチエージェントパターン解説 | Claude Code/Codexのマルチエージェント機能の3パターンを実装例付きで理解する |
