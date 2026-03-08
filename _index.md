@@ -1,5 +1,5 @@
-# インストール済みスキル索引（290件）
-<!-- 自動生成: 2026-03-07 01:57 UTC -->
+# インストール済みスキル索引（295件）
+<!-- 自動生成: 2026-03-08 01:58 UTC -->
 
 | slug | 名前 | 説明 |
 |------|------|------|
@@ -10,6 +10,7 @@
 | affaan-m--everything-claude-code | backend-patterns | Backend architecture patterns, API design, database optimization, and server-side best practices for Node.js, Express, and Next.js API routes. |
 | agent-cards--skill | agent-card | Manage prepaid virtual Visa cards for AI agents. Create cards, check balances, view credentials, close cards, and get support — all through MCP tools. |
 | agentset-ai--agentset | baseline-ui | Enforces an opinionated UI baseline to prevent AI-generated interface slop. |
+| airbnb--airflow | airflow-translations | > |
 | albedo-tabai--lets-go-rss | lets-go-rss | 轻量级全平台 RSS 订阅管理器。一键聚合 YouTube、Vimeo、Behance、B站、微博、抖音、小红书的内容更新，支持增量去重和 AI 智能分类。 |
 | alexknowshtml--drawbridge | drawbridge | \| |
 | alirezarezvani--claude-skills | customer-success-manager | Monitors customer health, predicts churn risk, and identifies expansion opportunities using weighted scoring models for SaaS customer success |
@@ -25,6 +26,7 @@
 | aplaceforallmystuff--the-antislop | antislop | Detect and fix AI-generated writing patterns (slop). Comprehensive detection with 45+ patterns, tiered severity scoring, and editor mode. |
 | appleboy--codegpt | commit-message | Automatically generates, formats, organizes, and improves git commit messages by analyzing your staged changes using AI. Use this skill when you want  |
 | arize-ai--phoenix | agent-browser | Browser automation CLI for AI agents. Use when the user needs to interact with websites, including navigating pages, filling forms, clicking buttons,  |
+| art9mid--react-native-arc | react-native-arc | Scaffold production-ready React Native Expo projects with battle-tested architecture including navigation, theme system, API layer, storage, state man |
 | arunjrk--audit-flow | audit-flow | Interactive system flow tracing across CODE, API, AUTH, DATA, NETWORK layers with SQLite persistence and Mermaid export. Use for security audits, comp |
 | ashutos1997--claude-design-auditor-skill | design-auditor | Audit and check designs against fundamental design rules and principles. Use this skill whenever the user wants to review, audit, validate, or improve |
 | assafelovic--gpt-researcher | gpt-researcher | GPT Researcher is an autonomous deep research agent that conducts web and local research, producing detailed reports with citations. Use this skill wh |
@@ -107,6 +109,7 @@
 | forayconsulting--gemini_cli_skill | gemini-cli | Wield Google's Gemini CLI as a powerful auxiliary tool for code generation, review, analysis, and web research. Use when tasks benefit from a second A |
 | frdel--agent-zero | create-skill | Wizard for creating new Agent Zero skills. Guides users through creating well-structured SKILL.md files. Use when users want to create custom skills. |
 | gabberflast--academic-pptx-skill | academic-pptx | Use this skill whenever the user wants to create or improve a presentation for an academic context — conference papers, seminar talks, thesis defenses |
+| game-asset-generator | Game Asset Generator | RPGゲームのキャラクター、レベルマップ、NPCダイアログを自動生成 |
 | genielabsopensource--spine-animation-ai | spine-animation | > |
 | getsentry--sentry | design-system | Guide for using Sentry's layout and text primitives. Use when implementing UI components, layouts, or typography. Enforces use of core components over |
 | getsentry--xcodebuildmcp | xcodebuildmcp-cli | Official skill for the XcodeBuildMCP CLI. Use when doing iOS/macOS/watchOS/tvOS/visionOS work (build, test, run, debug, log, UI automation). |
@@ -220,6 +223,7 @@
 | realtime-feature-engine | Realtime Feature Engine | イベントストリームから時間減衰付き特徴量をリアルタイム集計するエンジン |
 | rebelytics--one-skill-to-rule-them-all | task-observer | > |
 | redpanda-data--connect | bloblang-authoring | This skill should be used when users need to create or debug Bloblang transformation scripts. Trigger when users ask about transforming data, mapping  |
+| reflectt--reflectt-node | SKILL.md — reflectt-node operator playbook | Use this skill when an agent needs to coordinate work through `reflectt-node` (chat, tasks, inbox, presence, activity, health). |
 | refly-ai--refly | refly | Base skill for Refly ecosystem: creates, discovers, and runs domain-specific skills bound to workflows. Routes user intent to matching domain skills v |
 | remotion-dev--skills | remotion-best-practices | Best practices for Remotion - Video creation in React |
 | repo-phuocdt--prompt-engineer-skill | prompt-engineer | Transform rough prompts/ideas into production-ready LLM prompts. Use when crafting, refining, or optimizing prompts for any AI model (Claude, GPT, Lla |
@@ -283,6 +287,7 @@
 | voltagent--voltagent | Workspace Data Analyst | Analyze CSV files in the workspace and summarize insights. |
 | vuejs-ai--skills | create-adaptable-composable | Create a library-grade Vue composable that accepts maybe-reactive inputs (MaybeRef / MaybeRefOrGetter) so callers can pass a plain value, ref, or gett |
 | webzler--agentmemory | agentMemory | A hybrid memory system that provides persistent, searchable knowledge management for AI agents. |
+| windmill-labs--windmill | commit | Create a git commit with conventional commit format. MUST use anytime you want to commit changes. |
 | wirasm--prps-agentic-eng | prp-core-runner | Orchestrate complete PRP workflow from feature request to pull request. Run create branch, create PRP, execute implementation, commit changes, and cre |
 | wrsmith108--linear-claude-skill | Linear | Managing Linear issues, projects, and teams. Use when working with Linear tasks, creating issues, updating status, querying projects, or managing team |
 | wshobson--agents | screen-reader-testing | Test web applications with screen readers including VoiceOver, NVDA, and JAWS. Use when validating screen reader compatibility, debugging accessibilit |
@@ -293,5 +298,3 @@
 | zebbern--claude-code-guide | Active Directory Attacks | This skill should be used when the user asks to "attack Active Directory", "exploit AD", "Kerberoasting", "DCSync", "pass-the-hash", "BloodHound enume |
 | zeframlou--call-me | Phone Call Input Skill | Call the user on the phone for real-time voice conversations. Use this when you need input, want to report on completed work, or need to discuss next  |
 | zhayujie--chatgpt-on-wechat | linkai-agent | Call LinkAI applications and workflows. Use bash command to execute like 'bash <base_dir>/scripts/call.sh <app_code> <question>'. |
-
-| game-asset-generator | Game Asset Generator | RPGゲームの要素（キャラクター、レベル、ダイアログ）を自動生成するスキル |
