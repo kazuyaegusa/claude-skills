@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{TOPIC}} - HR Template</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Noto Sans JP', 'Hiragino Sans', sans-serif;
+            background: linear-gradient(120deg, #ffd89b 0%, #19547b 100%);
+            color: #333;
+            overflow: hidden;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .template-switcher {
+            background: rgba(255, 255, 255, 0.98);
+            padding: 15px 25px;
+            display: flex;
+            gap: 15px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.15);
+        }
+        .template-btn {
+            padding: 10px 25px;
+            background: white;
+            color: #ff6b6b;
+            border: 2px solid #ff6b6b;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        .template-btn:hover {
+            background: #ff6b6b;
+            color: white;
+            transform: translateY(-2px);
+        }
+        .template-btn.active {
+            background: #ff6b6b;
+            color: white;
+        }
+        .slides-container {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+        }
+        .slide {
+            display: none;
+            background: white;
+            border-radius: 30px;
+            padding: 70px;
+            max-width: 900px;
+            width: 100%;
+            box-shadow: 0 25px 70px rgba(0,0,0,0.2);
+            position: relative;
+            overflow: hidden;
+            animation: popIn 0.5s;
+        }
+        .slide::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(45deg, #ffd89b, #ff6b6b);
+            border-radius: 50%;
+            opacity: 0.1;
+        }
+        .slide.active { display: block; }
+        .slide h2 {
+            color: #ff6b6b;
+            font-size: 3em;
+            margin-bottom: 35px;
+            font-weight: 700;
+            position: relative;
+        }
+        .slide .content {
+            font-size: 1.3em;
+            line-height: 1.9;
+            color: #555;
+            position: relative;
+        }
+        .slide .content p {
+            margin-bottom: 25px;
+            background: linear-gradient(to right, transparent 0%, rgba(255,216,155,0.1) 50%, transparent 100%);
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .controls {
+            background: rgba(255, 255, 255, 0.98);
+            padding: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 -3px 15px rgba(0,0,0,0.15);
+        }
+        .nav-btn {
+            padding: 14px 35px;
+            background: linear-gradient(135deg, #ff6b6b, #ffd89b);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(255,107,107,0.3);
+        }
+        .nav-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255,107,107,0.4);
+        }
+        .nav-btn:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+        .slide-counter {
+            color: #ff6b6b;
+            font-weight: 700;
+            font-size: 1.1em;
+        }
+        @keyframes popIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="template-switcher">
+            <button class="template-btn" data-template="engineer">Engineer</button>
+            <button class="template-btn" data-template="pm">PM</button>
+            <button class="template-btn active" data-template="hr">HR</button>
+            <span style="margin-left: auto; color: #ff6b6b; font-weight: 600;">{{DATE}} | {{TOPIC}}</span>
+        </div>
+        
+        <div class="slides-container">
+            {{SLIDES_CONTENT}}
+        </div>
+        
+        <div class="controls">
+            <button class="nav-btn" id="prevBtn">← Previous</button>
+            <span class="slide-counter" id="counter">1 / 6</span>
+            <button class="nav-btn" id="nextBtn">Next →</button>
+        </div>
+    </div>
+    
+    <script>
+        let currentSlide = 1;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+        
+        function showSlide(n) {
+            slides.forEach(s => s.classList.remove('active'));
+            if (n > totalSlides) currentSlide = totalSlides;
+            if (n < 1) currentSlide = 1;
+            slides[currentSlide - 1].classList.add('active');
+            
+            document.getElementById('counter').textContent = `${currentSlide} / ${totalSlides}`;
+            document.getElementById('prevBtn').disabled = currentSlide === 1;
+            document.getElementById('nextBtn').disabled = currentSlide === totalSlides;
+        }
+        
+        document.getElementById('prevBtn').addEventListener('click', () => {
+            currentSlide--;
+            showSlide(currentSlide);
+        });
+        
+        document.getElementById('nextBtn').addEventListener('click', () => {
+            currentSlide++;
+            showSlide(currentSlide);
+        });
+        
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft' && currentSlide > 1) {
+                currentSlide--;
+                showSlide(currentSlide);
+            } else if (e.key === 'ArrowRight' && currentSlide < totalSlides) {
+                currentSlide++;
+                showSlide(currentSlide);
+            }
+        });
+        
+        showSlide(1);
+        
+        {{SWITCHER_JS}}
+    </script>
+</body>
+</html>

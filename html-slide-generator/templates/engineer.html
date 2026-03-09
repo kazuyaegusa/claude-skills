@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{TOPIC}} - Engineer Template</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'SF Mono', Monaco, 'Cascadia Code', monospace;
+            background: #1e1e1e;
+            color: #d4d4d4;
+            overflow: hidden;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .template-switcher {
+            background: #2d2d30;
+            padding: 10px;
+            display: flex;
+            gap: 10px;
+            border-bottom: 2px solid #007acc;
+        }
+        .template-btn {
+            padding: 8px 16px;
+            background: #3c3c3c;
+            color: #cccccc;
+            border: 1px solid #555;
+            cursor: pointer;
+            font-family: inherit;
+            transition: all 0.2s;
+        }
+        .template-btn:hover { background: #4a4a4a; }
+        .template-btn.active {
+            background: #007acc;
+            color: white;
+            border-color: #007acc;
+        }
+        .slides-container {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+        }
+        .slide {
+            display: none;
+            width: 100%;
+            max-width: 900px;
+            animation: fadeIn 0.5s;
+        }
+        .slide.active { display: block; }
+        .slide h2 {
+            color: #569cd6;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #007acc;
+            padding-bottom: 15px;
+        }
+        .slide .content {
+            font-size: 1.3em;
+            line-height: 1.8;
+            color: #cccccc;
+        }
+        .slide .content p { margin-bottom: 20px; }
+        .controls {
+            background: #2d2d30;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-btn {
+            padding: 10px 20px;
+            background: #3c3c3c;
+            color: #cccccc;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 1em;
+        }
+        .nav-btn:hover { background: #4a4a4a; }
+        .nav-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        .slide-counter {
+            color: #969696;
+            font-size: 0.9em;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="template-switcher">
+            <button class="template-btn active" data-template="engineer">Engineer</button>
+            <button class="template-btn" data-template="pm">PM</button>
+            <button class="template-btn" data-template="hr">HR</button>
+            <span style="margin-left: auto; color: #969696;">{{DATE}} | {{TOPIC}}</span>
+        </div>
+        
+        <div class="slides-container">
+            {{SLIDES_CONTENT}}
+        </div>
+        
+        <div class="controls">
+            <button class="nav-btn" id="prevBtn">← Previous</button>
+            <span class="slide-counter" id="counter">1 / 6</span>
+            <button class="nav-btn" id="nextBtn">Next →</button>
+        </div>
+    </div>
+    
+    <script>
+        let currentSlide = 1;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+        
+        function showSlide(n) {
+            slides.forEach(s => s.classList.remove('active'));
+            if (n > totalSlides) currentSlide = totalSlides;
+            if (n < 1) currentSlide = 1;
+            slides[currentSlide - 1].classList.add('active');
+            
+            document.getElementById('counter').textContent = `${currentSlide} / ${totalSlides}`;
+            document.getElementById('prevBtn').disabled = currentSlide === 1;
+            document.getElementById('nextBtn').disabled = currentSlide === totalSlides;
+        }
+        
+        document.getElementById('prevBtn').addEventListener('click', () => {
+            currentSlide--;
+            showSlide(currentSlide);
+        });
+        
+        document.getElementById('nextBtn').addEventListener('click', () => {
+            currentSlide++;
+            showSlide(currentSlide);
+        });
+        
+        // キーボード操作
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft' && currentSlide > 1) {
+                currentSlide--;
+                showSlide(currentSlide);
+            } else if (e.key === 'ArrowRight' && currentSlide < totalSlides) {
+                currentSlide++;
+                showSlide(currentSlide);
+            }
+        });
+        
+        // 初期表示
+        showSlide(1);
+        
+        {{SWITCHER_JS}}
+    </script>
+</body>
+</html>

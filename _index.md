@@ -301,3 +301,5 @@
 | zeframlou--call-me | Phone Call Input Skill | Call the user on the phone for real-time voice conversations. Use this when you need input, want to report on completed work, or need to discuss next  |
 | zhayujie--chatgpt-on-wechat | linkai-agent | Call LinkAI applications and workflows. Use bash command to execute like 'bash <base_dir>/scripts/call.sh <app_code> <question>'. |
 | zooeyii--ship-page-skill | ship-page | Create stunning, interactive landing pages for products, startups, and side projects — zero dependencies, single HTML file. Use this skill whenever th |
+
+| html-slide-generator | HTML Slide Generator | トピックからHTMLスライドを自動生成し、職種別テンプレートの切り替えが可能 |
