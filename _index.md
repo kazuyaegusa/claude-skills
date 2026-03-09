@@ -1,5 +1,5 @@
-# インストール済みスキル索引（295件）
-<!-- 自動生成: 2026-03-08 01:58 UTC -->
+# インストール済みスキル索引（298件）
+<!-- 自動生成: 2026-03-09 02:02 UTC -->
 
 | slug | 名前 | 説明 |
 |------|------|------|
@@ -26,6 +26,7 @@
 | aplaceforallmystuff--the-antislop | antislop | Detect and fix AI-generated writing patterns (slop). Comprehensive detection with 45+ patterns, tiered severity scoring, and editor mode. |
 | appleboy--codegpt | commit-message | Automatically generates, formats, organizes, and improves git commit messages by analyzing your staged changes using AI. Use this skill when you want  |
 | arize-ai--phoenix | agent-browser | Browser automation CLI for AI agents. Use when the user needs to interact with websites, including navigating pages, filling forms, clicking buttons,  |
+| art9mid--arc-skill | arc-skill | Scaffold production-ready React Native Expo projects with battle-tested architecture including navigation, theme system, API layer, storage, state man |
 | art9mid--react-native-arc | react-native-arc | Scaffold production-ready React Native Expo projects with battle-tested architecture including navigation, theme system, API layer, storage, state man |
 | arunjrk--audit-flow | audit-flow | Interactive system flow tracing across CODE, API, AUTH, DATA, NETWORK layers with SQLite persistence and Mermaid export. Use for security audits, comp |
 | ashutos1997--claude-design-auditor-skill | design-auditor | Audit and check designs against fundamental design rules and principles. Use this skill whenever the user wants to review, audit, validate, or improve |
@@ -158,6 +159,7 @@
 | langroid--langroid | add-pattern | Use this skill when you learn one or more design pattern(s) in the |
 | laravel--boost | fluxui-development | Develops UIs with Flux UI Free components. Activates when creating buttons, forms, modals, inputs, dropdowns, checkboxes, or UI components; replacing  |
 | leonardomso--33-js-concepts | concept-workflow | End-to-end workflow for creating complete JavaScript concept documentation, orchestrating all skills from research to final review |
+| letta-ai--letta | DB migrations and schema changes | >- |
 | linear-api-client | Linear API Client | Linear GraphQL APIを使ってIssueの取得・更新・コメント追加を行う汎用クライアント |
 | ludo-technologies--pyscn | pyscn-mcp | Analyze Python code quality using MCP tools - complexity, clones, dead code, coupling. Use when user asks about code quality, refactoring, maintainabi |
 | lukasniessen--terrashark | terrashark | Prevent Terraform/OpenTofu hallucinations by diagnosing and fixing failure modes: identity churn, secret exposure, blast-radius mistakes, CI drift, an |
@@ -298,3 +300,4 @@
 | zebbern--claude-code-guide | Active Directory Attacks | This skill should be used when the user asks to "attack Active Directory", "exploit AD", "Kerberoasting", "DCSync", "pass-the-hash", "BloodHound enume |
 | zeframlou--call-me | Phone Call Input Skill | Call the user on the phone for real-time voice conversations. Use this when you need input, want to report on completed work, or need to discuss next  |
 | zhayujie--chatgpt-on-wechat | linkai-agent | Call LinkAI applications and workflows. Use bash command to execute like 'bash <base_dir>/scripts/call.sh <app_code> <question>'. |
+| zooeyii--ship-page-skill | ship-page | Create stunning, interactive landing pages for products, startups, and side projects — zero dependencies, single HTML file. Use this skill whenever th |
