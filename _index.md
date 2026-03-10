@@ -1,15 +1,17 @@
-# インストール済みスキル索引（298件）
-<!-- 自動生成: 2026-03-09 02:02 UTC -->
+# インストール済みスキル索引（306件）
+<!-- 自動生成: 2026-03-10 02:26 UTC -->
 
 | slug | 名前 | 説明 |
 |------|------|------|
 | 0xbreadguy--megaeth-ai-developer-skills | megaeth-developer | End-to-end MegaETH development playbook (Feb 2026). Covers Foundry project setup with MegaETH-specific config, wallet operations, token swaps (Kyber N |
 | abracadabra50--claude-code-voice-skill | call | Voice conversations with Claude about your projects. Call a phone number to brainstorm, or have Claude call you with updates. |
 | adenhq--hive | hive-concepts | Core concepts for goal-driven agents - architecture, node types (event_loop, function), tool discovery, and workflow overview. Use when starting agent |
+| adeze--raindrop-mcp | dxt-packaging | MCPB (Model Context Protocol Bundle) Packaging and Distribution |
 | adityasugandhi--skillsync-mcp | SkillSync MCP — Security-Gated Skill Manager | Search, scan, install, and manage Claude Code skills with built-in security scanning. Every installation is gated behind a 60+ pattern threat scan. |
 | affaan-m--everything-claude-code | backend-patterns | Backend architecture patterns, API design, database optimization, and server-side best practices for Node.js, Express, and Next.js API routes. |
 | agent-cards--skill | agent-card | Manage prepaid virtual Visa cards for AI agents. Create cards, check balances, view credentials, close cards, and get support — all through MCP tools. |
 | agentset-ai--agentset | baseline-ui | Enforces an opinionated UI baseline to prevent AI-generated interface slop. |
+| agno-agi--agno | code-review | Code review assistance with linting, style checking, and best practices |
 | airbnb--airflow | airflow-translations | > |
 | albedo-tabai--lets-go-rss | lets-go-rss | 轻量级全平台 RSS 订阅管理器。一键聚合 YouTube、Vimeo、Behance、B站、微博、抖音、小红书的内容更新，支持增量去重和 AI 智能分类。 |
 | alexknowshtml--drawbridge | drawbridge | \| |
@@ -39,6 +41,7 @@
 | berriai--litellm | test-skill | A minimal test skill for API testing |
 | better-auth--better-icons | better-icons | Use when working with icons in any project. Provides CLI for searching 200+ icon libraries (Iconify) and retrieving SVGs. Commands: `better-icons sear |
 | bgauryy--octocode-mcp | octocode-implement | Implement features from spec documents (context/doc required) |
+| bitbond--token-tool-mcp | token-tool-mcp | Deploy and manage compliant tokens on 10 blockchain networks via Bitbond TokenTool MCP (17 tools). Use when user asks to deploy a token, create an ERC |
 | blader--claude-code-continuous-learning-skill | claudeception | \| |
 | blader--claudeception | claudeception | \| |
 | blader--humanizer | humanizer | \| |
@@ -53,6 +56,7 @@
 | bytebase--dbhub | testing | Run and troubleshoot tests for DBHub, including unit tests, integration tests with Testcontainers, and database-specific tests. Use when asked to run  |
 | callstackincubator--agent-skills | validate-skills | Validates skills in this repo against agentskills.io spec and Claude Code best practices. Use via /validate-skills command. |
 | cameroncooke--xcodebuildmcp | xcodebuildmcp-cli | Official skill for the XcodeBuildMCP CLI. Use when doing iOS/macOS/watchOS/tvOS/visionOS work (build, test, run, debug, log, UI automation). |
+| cassmtnr--claude-code-starter | claude-code-starter | Analyze a project's tech stack and generate comprehensive Claude Code configuration files (.claude/ directory with CLAUDE.md, skills, agents, rules, a |
 | centminmod--my-claude-code-setup | claude-docs-consultant | Consult official Claude Code documentation from docs.claude.com using selective fetching. Use this skill when working on Claude Code hooks, skills, su |
 | cexll--myclaude | browser | This skill should be used for browser automation tasks using Chrome DevTools Protocol (CDP). Triggers when users need to launch Chrome with remote deb |
 | checkra1neth--xbird-skill | xbird | Use when the user asks to tweet, post threads, read tweets, search Twitter/X, check mentions, manage engagement (like/retweet/bookmark), update profil |
@@ -64,6 +68,7 @@
 | cockroachdb--cockroach | backport-pr-assistant | Help backport PRs to release branches using the backport CLI tool. Use when backporting changes that have merge conflicts requiring manual resolution. |
 | code-yeongyu--oh-my-opencode | github-issue-triage | Triage GitHub issues with streaming analysis. CRITICAL: 1 issue = 1 background task. Processes each issue as independent background task with immediat |
 | coder--coder | code-review | Reviews code changes for bugs, security issues, and quality problems |
+| codexstar69--bug-hunter | bug-hunter | Adversarial bug hunting with a sequential-first pipeline (Recon, Hunter, Skeptic, Referee) that can optionally use safe read-only parallel triage. Fin |
 | coleam00--context-engineering-intro | build-with-agent-team | Build a project using Claude Code Agent Teams with tmux split panes. Takes a plan document path and optional team size. Use when you want multiple age |
 | comet-ml--comet-llm | documentation | Feature documentation and release notes patterns. Use when documenting changes, writing PR descriptions, or preparing releases. |
 | comet-ml--opik | documentation | Feature documentation and release notes patterns. Use when documenting changes, writing PR descriptions, or preparing releases. |
@@ -101,6 +106,7 @@
 | everyinc--every-marketplace | coding-tutor | Personalized coding tutorials that build on your existing knowledge and use your actual codebase for examples. Creates a persistent learning trail tha |
 | everything-claude-code-ja | everything-claude-code-ja | Everything Claude Code の使い方を日本語で案内するガイド。初心者向けに導入・運用・注意点を体系的に説明する。 |
 | exa-labs--exa-mcp-server | get-code-context-exa | Code context using Exa. Finds real snippets and docs from GitHub, StackOverflow, and technical docs. Use when searching for code examples, API syntax, |
+| expo--expo | android-e2e-testing | Test Expo Router features on Android emulators using ADB. Use after implementing native Android features or when verifying UI behavior on Android. |
 | expo--skills | building-native-ui | Complete guide for building beautiful apps with Expo Router. Covers fundamentals, styling, components, navigation, animations, patterns, and native ta |
 | f--awesome-chatgpt-prompts | book-translation | Translate "The Interactive Book of Prompting" chapters and UI strings to a new language |
 | f--prompts.chat | book-translation | Translate "The Interactive Book of Prompting" chapters and UI strings to a new language |
@@ -123,7 +129,9 @@
 | happycastle114--oh-my-openclaw | oh-my-openclaw | Agent orchestration framework for OpenClaw - ports oh-my-opencode patterns (Prometheus planner, Atlas orchestrator, Sisyphus executor) into OpenClaw-n |
 | hashgraph-online--registry-broker-skills | registry-broker | Search and chat with 76,000+ AI agents across 15 registries via the Hashgraph Online Registry Broker API. Use when discovering agents, starting conver |
 | homeassistant-ai--ha-mcp | bat | Run bot acceptance tests to validate MCP tools work correctly from a real AI agent's perspective. Use when testing PRs, detecting regressions, or veri |
+| homenshum--nodebench-ai | Skill: Flywheel UI Dogfood | This repo uses a continuous dogfood + QA loop for frontend changes. |
 | html-arch-visualizer | html-arch-visualizer | プロジェクトのアーキテクチャをSVGベースのインタラクティブなHTMLダイアグラムとして可視化するスキル。 |
+| html-slide-generator | HTML Slide Generator | トピックからHTMLスライドを自動生成し、職種別テンプレートの切り替えが可能 |
 | htmlstreamofficial--preline | preline-theme-generator | Generates beautiful, consistent Preline Theme CSS files. Agent interprets user request, runs build script, delivers complete CSS. |
 | huggingface--skills | hf-mcp | Use Hugging Face Hub via MCP server tools. Search models, datasets, Spaces, papers. Get repo details, fetch documentation, run compute jobs, and use G |
 | huggingface--trl | trl-training | Train and fine-tune transformer language models using TRL (Transformers Reinforcement Learning). Supports SFT, DPO, GRPO, KTO, RLOO and Reward Model t |
@@ -301,5 +309,3 @@
 | zeframlou--call-me | Phone Call Input Skill | Call the user on the phone for real-time voice conversations. Use this when you need input, want to report on completed work, or need to discuss next  |
 | zhayujie--chatgpt-on-wechat | linkai-agent | Call LinkAI applications and workflows. Use bash command to execute like 'bash <base_dir>/scripts/call.sh <app_code> <question>'. |
 | zooeyii--ship-page-skill | ship-page | Create stunning, interactive landing pages for products, startups, and side projects — zero dependencies, single HTML file. Use this skill whenever th |
-
-| html-slide-generator | HTML Slide Generator | トピックからHTMLスライドを自動生成し、職種別テンプレートの切り替えが可能 |
