@@ -1,5 +1,5 @@
-# インストール済みスキル索引（306件）
-<!-- 自動生成: 2026-03-10 02:26 UTC -->
+# インストール済みスキル索引（312件）
+<!-- 自動生成: 2026-03-11 02:21 UTC -->
 
 | slug | 名前 | 説明 |
 |------|------|------|
@@ -62,6 +62,8 @@
 | checkra1neth--xbird-skill | xbird | Use when the user asks to tweet, post threads, read tweets, search Twitter/X, check mentions, manage engagement (like/retweet/bookmark), update profil |
 | chriswiles--claude-code-showcase | core-components | Core component library and design system patterns. Use when building UI, using design tokens, or working with the component library. |
 | chromedevtools--chrome-devtools-mcp | chrome-devtools | Uses Chrome DevTools via MCP for efficient debugging, troubleshooting and browser automation. Use when debugging web pages, automating browser interac |
+| cli-argparse-subcommands | CLI Argparse Subcommands Pattern | argparseでサブコマンドベースのCLIツールを構築するパターン |
+| cli-demo-runner | CLI Demo Runner Pattern | CLIツールの機能を順番に実行してデモンストレーションするパターン |
 | clickhouse--clickhouse | build | Build ClickHouse with various configurations (Release, Debug, ASAN, TSAN, etc.). Use when the user wants to compile ClickHouse. |
 | cloudai-x--claude-workflow-v2 | analyzing-projects | Analyzes codebases to understand structure, tech stack, patterns, and conventions. Use when onboarding to a new project, exploring unfamiliar code, or |
 | cloudai-x--threejs-skills | threejs-animation | Three.js animation - keyframe animation, skeletal animation, morph targets, animation mixing. Use when animating objects, playing GLTF animations, cre |
@@ -76,6 +78,7 @@
 | composiohq--awesome-claude-plugins | artifacts-builder | Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui |
 | composiohq--awesome-claude-skills | -21risk-automation | Automate 21risk tasks via Rube MCP (Composio). Always search tools first for current schemas. |
 | conorbronsdon--avoid-ai-writing | avoid-ai-writing | Audit and rewrite content to remove AI writing patterns ("AI-isms"). Use this skill when asked to "remove AI-isms," "clean up AI writing," "edit writi |
+| copilotkit--copilotkit | git-hooks | CopilotKit pre-commit hook reference. Load automatically when the user mentions git hooks failing, pre-commit errors, lefthook issues, commit blocked, |
 | coplaydev--unity-mcp | unity-mcp-orchestrator | Orchestrate Unity Editor via MCP (Model Context Protocol) tools and resources. Use when working with Unity projects through MCP for Unity - creating/m |
 | coreyhaines31--marketingskills | ab-test-setup | When the user wants to plan, design, or implement an A/B test or experiment. Also use when the user mentions "A/B test," "split test," "experiment," " |
 | cosmoblk--email-marketing-bible | email-marketing-bible | > |
@@ -89,6 +92,7 @@
 | dammyjay93--interface-design | interface-design | This skill is for interface design — dashboards, admin panels, apps, tools, and interactive products. NOT for marketing design (landing pages, marketi |
 | danielcanton--webxr-dev-skill | webxr-dev | WebXR/VR development guide for Three.js on Meta Quest — camera rig, controllers, teleport, postprocessing limitations, and hard-won pitfalls from ship |
 | danpeg--bug-hunt | bug-hunt | Run adversarial bug hunting on your codebase. Uses 3 isolated agents (Hunter, Skeptic, Referee) to find and verify real bugs with high fidelity. Invok |
+| dataclass-models | Dataclass Models Pattern | dataclassを使った型安全なデータモデル定義パターン |
 | davepoon--buildwithclaude | artifacts-builder | Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui |
 | davepoon--claude-code-subagents-collection | artifacts-builder | Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui |
 | davidgeorgehope--elasticsearch-skill | elasticsearch | > |
@@ -207,6 +211,7 @@
 | op7418--nanobanana-ppt-skills | PPT Generator Pro - Claude Code Skill | - **Skill 名称**: ppt-generator-pro |
 | op7418--youtube-clipper-skill | youtube-clipper | > |
 | openai--codex | test-tui | Guide for testing Codex TUI interactively |
+| openai--openai-cookbook | bootstrap-realtime-eval | Bootstrap a new realtime eval folder inside this cookbook repo by choosing the right harness from examples/evals/realtime_evals, scaffolding prompt/to |
 | openclaw--openclaw | merge-pr | Merge a GitHub PR via squash after /prepare-pr. Use when asked to merge a ready PR. Do not push to main or modify code. Ensure the PR ends in MERGED s |
 | openhands--openhands | upcoming-release | This skill should be used when the user asks to "generate release notes", "list upcoming release PRs", "summarize upcoming release", "/upcoming-releas |
 | othmanadi--planning-with-files | planning-with-files | Implements Manus-style file-based planning for complex tasks. Creates task_plan.md, findings.md, and progress.md. Use when starting complex multi-step |
@@ -259,6 +264,7 @@
 | slundberg--shap | ai-disclosure | Track and document Claude's contributions during coding sessions for PR transparency. Use when working on feature branches, PRs, or when the user want |
 | smithery-ai--cli | smithery | Discover, install, and use MCP tools and agent skills. Use when you need to find MCP servers, securely connect to them, call their tools, or search/in |
 | snarktank--ralph | prd | Generate a Product Requirements Document (PRD) for a new feature. Use when planning a feature, starting a new project, or when asked to create a PRD.  |
+| sqlite-storage-pattern | SQLite Storage Pattern | SQLiteを使った簡単なCRUD操作とデータ永続化パターン |
 | sstklen--claude-api-cost-optimization | claude-api-cost-optimization | Save 50-90% on Claude API costs with Batch API, Prompt Caching & Extended Thinking. Official techniques, verified. |
 | stacklok--toolhive | commit-message | Generates clear commit messages from git diffs. Use when writing commit messages or reviewing staged changes. |
 | steveyegge--beads | handoff | > |
@@ -309,8 +315,3 @@
 | zeframlou--call-me | Phone Call Input Skill | Call the user on the phone for real-time voice conversations. Use this when you need input, want to report on completed work, or need to discuss next  |
 | zhayujie--chatgpt-on-wechat | linkai-agent | Call LinkAI applications and workflows. Use bash command to execute like 'bash <base_dir>/scripts/call.sh <app_code> <question>'. |
 | zooeyii--ship-page-skill | ship-page | Create stunning, interactive landing pages for products, startups, and side projects — zero dependencies, single HTML file. Use this skill whenever th |
-
-| cli-argparse-subcommands | CLI Argparse Subcommands Pattern | argparseでサブコマンドベースのCLIツールを構築するパターン |
-| sqlite-storage-pattern | SQLite Storage Pattern | SQLiteを使った簡単なCRUD操作とデータ永続化パターン |
-| dataclass-models | Dataclass Models Pattern | dataclassを使った型安全なデータモデル定義パターン |
-| cli-demo-runner | CLI Demo Runner Pattern | CLIツールの機能を順番に実行してデモンストレーションするパターン |
