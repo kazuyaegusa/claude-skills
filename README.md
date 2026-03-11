@@ -45,6 +45,7 @@ bash ~/.claude/skills/setup-env.sh
 | `phase-report` | `/phase-report` | フェーズ完了レポートを自動生成・コミット・プッシュ |
 | `project-review` | `/project-review [パス]` | プロジェクトを多角的にレビュー・修正 |
 | `quality-harness` | `/quality-harness [パス]` | Python プロジェクトに品質ハーネスを一括セットアップ |
+| `repo-security-clone` | `/repo-security-clone <GitHub URL>` | リポをセキュリティチェック→クローン→内容説明 |
 | `repo-tracker` | `/repo-tracker <GitHub URL>` | GitHub リポジトリの変更を定期監視・Discord通知 |
 
 ## カスタムコマンド（スラッシュコマンド）
