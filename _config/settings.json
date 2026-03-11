@@ -1,41 +1,44 @@
 {
-  "env": {
-    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1",
-    "ENABLE_TOOL_SEARCH": "auto:5",
-    "CLAUDE_CODE_AUTOCOMPACT_PCT_OVERRIDE": "50"
+  "allowedTools" : [
+    "mcp__ghost-os__*"
+  ],
+  "autoUpdatesChannel" : "latest",
+  "effortLevel" : "high",
+  "enabledPlugins" : {
+    "github@claude-plugins-official" : true,
+    "slack@claude-plugins-official" : true
   },
-  "model": "opus[1m]",
-  "statusLine": {
-    "type": "command",
-    "command": "~/.claude/statusline.sh"
+  "env" : {
+    "CLAUDE_CODE_AUTOCOMPACT_PCT_OVERRIDE" : "50",
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS" : "1",
+    "ENABLE_TOOL_SEARCH" : "auto:5"
   },
-  "enabledPlugins": {
-    "github@claude-plugins-official": true,
-    "slack@claude-plugins-official": true
-  },
-  "language": "japanese",
-  "autoUpdatesChannel": "latest",
-  "skipDangerousModePermissionPrompt": true,
-  "effortLevel": "high",
-  "hooks": {
-    "PreToolUse": [
+  "hooks" : {
+    "PreToolUse" : [
       {
-        "matcher": "^(Edit|Write|NotebookEdit)$",
-        "command": "~/.claude/star-office-hook.sh writing 'コード編集中'"
+        "command" : "~\/.claude\/star-office-hook.sh writing 'コード編集中'",
+        "matcher" : "^(Edit|Write|NotebookEdit)$"
       },
       {
-        "matcher": "^Bash$",
-        "command": "~/.claude/star-office-hook.sh executing 'コマンド実行中'"
+        "command" : "~\/.claude\/star-office-hook.sh executing 'コマンド実行中'",
+        "matcher" : "^Bash$"
       },
       {
-        "matcher": "^(Read|Grep|Glob|WebFetch|Agent)$",
-        "command": "~/.claude/star-office-hook.sh researching '調査中'"
+        "command" : "~\/.claude\/star-office-hook.sh researching '調査中'",
+        "matcher" : "^(Read|Grep|Glob|WebFetch|Agent)$"
       }
     ],
-    "Stop": [
+    "Stop" : [
       {
-        "command": "~/.claude/star-office-hook.sh idle '待機中'"
+        "command" : "~\/.claude\/star-office-hook.sh idle '待機中'"
       }
     ]
+  },
+  "language" : "japanese",
+  "model" : "opus[1m]",
+  "skipDangerousModePermissionPrompt" : true,
+  "statusLine" : {
+    "command" : "~\/.claude\/statusline.sh",
+    "type" : "command"
   }
 }
