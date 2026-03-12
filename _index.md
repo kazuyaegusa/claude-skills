@@ -1,5 +1,5 @@
-# インストール済みスキル索引（312件）
-<!-- 自動生成: 2026-03-11 02:21 UTC -->
+# インストール済みスキル索引（316件）
+<!-- 自動生成: 2026-03-12 02:09 UTC -->
 
 | slug | 名前 | 説明 |
 |------|------|------|
@@ -31,6 +31,7 @@
 | art9mid--arc-skill | arc-skill | Scaffold production-ready React Native Expo projects with battle-tested architecture including navigation, theme system, API layer, storage, state man |
 | art9mid--react-native-arc | react-native-arc | Scaffold production-ready React Native Expo projects with battle-tested architecture including navigation, theme system, API layer, storage, state man |
 | arunjrk--audit-flow | audit-flow | Interactive system flow tracing across CODE, API, AUTH, DATA, NETWORK layers with SQLite persistence and Mermaid export. Use for security audits, comp |
+| ashad001--remotion-transitions | remotion-transitions | This skill should be used when the user asks to create custom Remotion transitions, asks about "cool transitions", "cinematic transitions", "striped t |
 | ashutos1997--claude-design-auditor-skill | design-auditor | Audit and check designs against fundamental design rules and principles. Use this skill whenever the user wants to review, audit, validate, or improve |
 | assafelovic--gpt-researcher | gpt-researcher | GPT Researcher is an autonomous deep research agent that conducts web and local research, producing detailed reports with citations. Use this skill wh |
 | autogluon--autogluon | autogluon-conda-upgrade | Automate AutoGluon conda-forge feedstock version upgrades. Use when the user wants to upgrade AutoGluon to a new version in conda-forge, create PRs fo |
@@ -93,6 +94,7 @@
 | danielcanton--webxr-dev-skill | webxr-dev | WebXR/VR development guide for Three.js on Meta Quest — camera rig, controllers, teleport, postprocessing limitations, and hard-won pitfalls from ship |
 | danpeg--bug-hunt | bug-hunt | Run adversarial bug hunting on your codebase. Uses 3 isolated agents (Hunter, Skeptic, Referee) to find and verify real bugs with high fidelity. Invok |
 | dataclass-models | Dataclass Models Pattern | dataclassを使った型安全なデータモデル定義パターン |
+| datadog-labs--agent-skills | agent-skills | Datadog skills for AI agents. Essential monitoring, logging, tracing and observability. |
 | davepoon--buildwithclaude | artifacts-builder | Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui |
 | davepoon--claude-code-subagents-collection | artifacts-builder | Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui |
 | davidgeorgehope--elasticsearch-skill | elasticsearch | > |
@@ -157,6 +159,7 @@
 | jlowin--fastmcp | reviewing-code | Review code for quality, maintainability, and correctness. Use when reviewing pull requests, evaluating code changes, or providing feedback on impleme |
 | jnemargut--better-plan-mode | better-plan-mode | Enhanced planning mode that presents decision points as rich HTML documents with visual previews, comparison tables, and recommendations. Tracks all d |
 | k-dense-ai--claude-scientific-skills | adaptyv | Cloud laboratory platform for automated protein testing and validation. Use when designing proteins and needing experimental validation including bind |
+| kadenzipfel--scv-scan | scv-scan | Systematically audit Solidity smart contract codebases for security vulnerabilities using a 4-phase approach - load a vulnerability cheatsheet, sweep  |
 | kepano--obsidian-skills | defuddle | Extract clean markdown content from web pages using Defuddle CLI, removing clutter and navigation to save tokens. Use instead of WebFetch when the use |
 | khazp--vibe-coding-prompt-template | vibe-agents | Generate AGENTS.md and AI configuration files for your project. Use when the user wants to create agent instructions, set up AI configs, or says "crea |
 | kilo-org--kilocode | translation | Guidelines for translating and localizing the Kilo Code extension, including language-specific rules for German, Simplified Chinese, and Traditional C |
@@ -242,6 +245,7 @@
 | refly-ai--refly | refly | Base skill for Refly ecosystem: creates, discovers, and runs domain-specific skills bound to workflows. Routes user intent to matching domain skills v |
 | remotion-dev--skills | remotion-best-practices | Best practices for Remotion - Video creation in React |
 | repo-phuocdt--prompt-engineer-skill | prompt-engineer | Transform rough prompts/ideas into production-ready LLM prompts. Use when crafting, refining, or optimizing prompts for any AI model (Claude, GPT, Lla |
+| repo-security-clone | repo-security-clone | GitHub リポジトリの URL を受け取り、セキュリティチェック → クローン → 内容説明を一連で行うスキル。 |
 | repo-tracker | repo-tracker | GitHub リポジトリの変更を定期監視し、差分レポート生成 + Discord 通知を行う汎用スキル。 |
 | risingwavelabs--risingwave | fix-buildkite-ci | Triage and fix failing Buildkite CI checks for RisingWave pull requests by extracting concrete failing tests, diffs, and error messages from Buildkite |
 | rivradev--recite-agent-skill | Recite 🦞🤵 | name: recite |
