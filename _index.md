@@ -1,5 +1,5 @@
-# インストール済みスキル索引（316件）
-<!-- 自動生成: 2026-03-12 02:09 UTC -->
+# インストール済みスキル索引（320件）
+<!-- 自動生成: 2026-03-13 02:22 UTC -->
 
 | slug | 名前 | 説明 |
 |------|------|------|
@@ -17,6 +17,7 @@
 | alexknowshtml--drawbridge | drawbridge | \| |
 | alirezarezvani--claude-skills | customer-success-manager | Monitors customer health, predicts churn risk, and identifies expansion opportunities using weighted scoring models for SaaS customer success |
 | anomalyco--opencode | bun-file-io | Use this when you are working on file operations like reading, writing, scanning, or deleting files. It summarizes the preferred file APIs and pattern |
+| ant-design--ant-design | Changelog 收集工具 | 帮助开发者收集 Ant Design 两个版本之间的 Changelog，处理临时文件并更新到官方 CHANGELOG.zh-CN.md 和 CHANGELOG.en-US.md 文件中。 |
 | antfu--skills | antfu | Anthony Fu's opinionated tooling and conventions for JavaScript/TypeScript projects. Use when setting up new projects, configuring ESLint/Prettier alt |
 | anthropics--claude-code | claude-opus-4-5-migration | Migrate prompts and code from Claude Sonnet 4.0, Sonnet 4.5, or Opus 4.1 to Opus 4.5. Use when the user wants to update their codebase, prompts, or AP |
 | anthropics--claude-cookbooks | cookbook-audit | Audit an Anthropic Cookbook notebook based on a rubric. Use whenever a notebook review or audit is requested. |
@@ -178,6 +179,7 @@
 | linear-api-client | Linear API Client | Linear GraphQL APIを使ってIssueの取得・更新・コメント追加を行う汎用クライアント |
 | ludo-technologies--pyscn | pyscn-mcp | Analyze Python code quality using MCP tools - complexity, clones, dead code, coupling. Use when user asks about code quality, refactoring, maintainabi |
 | lukasniessen--terrashark | terrashark | Prevent Terraform/OpenTofu hallucinations by diagnosing and fixing failure modes: identity churn, secret exposure, blast-radius mistakes, CI drift, an |
+| marmelab--react-admin | react-admin | This skill should be used when building, modifying, or debugging a react-admin application — including creating resources, lists, forms, data fetching |
 | max-sixty--worktrunk | worktrunk | Guidance for Worktrunk, a CLI tool for managing git worktrees. Covers configuration (user config at ~/.config/worktrunk/config.toml and project hooks  |
 | mckinsey--vizro | dashboard-build | A skill that should be invoked whenever a user wants to build a Dashboard or simple app. This skill is Phase 2 of an e2e process that covers the actua |
 | mcp-use--mcp-use | chatgpt-app-builder | Build ChatGPT apps with interactive widgets using mcp-use and OpenAI Apps SDK. Use when creating ChatGPT apps, building MCP servers with widgets, defi |
@@ -237,6 +239,7 @@
 | qdhenry--claude-command-suite | Cloudflare Manager | Comprehensive Cloudflare account management for deploying Workers, KV Storage, R2, Pages, DNS, and Routes. Use when deploying cloudflare services, man |
 | quality-harness | quality-harness | 任意のPythonプロジェクトに品質ハーネス（eval評価・実行隔離・CI/CD・Git hooks）を一括セットアップするスキル。 |
 | qwenlm--qwen-code | synonyms | Generate synonyms for words or phrases. Use this skill when the user needs alternative words with similar meanings, wants to expand vocabulary, or see |
+| rafsilva85--credit-optimizer-v5 | credit-optimizer | Automatically optimize AI agent credit usage by routing tasks to the most cost-efficient execution path. Use when you want to reduce AI API costs by 3 |
 | ramsbaby--openclaw-self-healing | openclaw-self-healing | 4-tier autonomous self-healing system for OpenClaw Gateway with persistent learning, reasoning logs, and multi-channel alerts. Features Claude Code as |
 | realtime-feature-engine | Realtime Feature Engine | イベントストリームから時間減衰付き特徴量をリアルタイム集計するエンジン |
 | rebelytics--one-skill-to-rule-them-all | task-observer | > |
@@ -257,6 +260,7 @@
 | scottcjn--grazer-skill | Grazer | Multi-Platform Content Discovery for AI Agents |
 | severity1--claude-code-prompt-improver | prompt-improver | This skill enriches vague prompts with targeted research and clarification before execution. Should be used when a prompt is determined to be vague an |
 | sgl-project--sglang | add-jit-kernel | Step-by-step tutorial for adding a lightweight JIT CUDA/C++ kernel to python/sglang/jit_kernel (including tests & benchmarks) |
+| shadcn-ui--ui | shadcn | Manages shadcn components and projects — adding, searching, fixing, debugging, styling, and composing UI. Provides project context, component docs, an |
 | shap--shap | ai-disclosure | Track and document Claude's contributions during coding sessions for PR transparency. Use when working on feature branches, PRs, or when the user want |
 | shareai-lab--analysis_claude_code | agent-builder | \| |
 | shareai-lab--learn-claude-code | agent-builder | \| |
