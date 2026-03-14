@@ -1,5 +1,5 @@
-# インストール済みスキル索引（320件）
-<!-- 自動生成: 2026-03-13 02:22 UTC -->
+# インストール済みスキル索引（325件）
+<!-- 自動生成: 2026-03-14 02:35 UTC -->
 
 | slug | 名前 | 説明 |
 |------|------|------|
@@ -235,6 +235,7 @@
 | prefecthq--prefect | write-docs | Comprehensive guide for writing and updating Prefect documentation. Use when creating new doc pages, updating existing docs, or working with Mintlify  |
 | project-review | project-review | プロジェクトのドキュメント・コードを多角的にレビューし、実現性・正確性・改善点を検証して修正するスキル |
 | projectopensea--opensea-skill | opensea | Query NFT data, trade on the Seaport marketplace, and swap ERC20 tokens across Ethereum, Base, Arbitrum, Optimism, Polygon, and more. |
+| pubkey--rxdb | verify | Verifies code changes by running tests and generation scripts |
 | pytorch--pytorch | add-uint-support | Add unsigned integer (uint) type support to PyTorch operators by updating AT_DISPATCH macros. Use when adding support for uint16, uint32, uint64 types |
 | qdhenry--claude-command-suite | Cloudflare Manager | Comprehensive Cloudflare account management for deploying Workers, KV Storage, R2, Pages, DNS, and Routes. Use when deploying cloudflare services, man |
 | quality-harness | quality-harness | 任意のPythonプロジェクトに品質ハーネス（eval評価・実行隔離・CI/CD・Git hooks）を一括セットアップするスキル。 |
@@ -246,6 +247,8 @@
 | redpanda-data--connect | bloblang-authoring | This skill should be used when users need to create or debug Bloblang transformation scripts. Trigger when users ask about transforming data, mapping  |
 | reflectt--reflectt-node | SKILL.md — reflectt-node operator playbook | Use this skill when an agent needs to coordinate work through `reflectt-node` (chat, tasks, inbox, presence, activity, health). |
 | refly-ai--refly | refly | Base skill for Refly ecosystem: creates, discovers, and runs domain-specific skills bound to workflows. Routes user intent to matching domain skills v |
+| remix-run--remix | add-package | Create or align a package in the Remix monorepo to match existing package conventions. Use when adding a brand new package under packages/, or when fi |
+| remotion-dev--remotion | Add a new CLI option | How to convert a hardcoded CLI flag into a proper `AnyRemotionOption`, or add a brand new one. |
 | remotion-dev--skills | remotion-best-practices | Best practices for Remotion - Video creation in React |
 | repo-phuocdt--prompt-engineer-skill | prompt-engineer | Transform rough prompts/ideas into production-ready LLM prompts. Use when crafting, refining, or optimizing prompts for any AI model (Claude, GPT, Lla |
 | repo-security-clone | repo-security-clone | GitHub リポジトリの URL を受け取り、セキュリティチェック → クローン → 内容説明を一連で行うスキル。 |
@@ -256,6 +259,7 @@
 | ruvnet--claude-code-flow | agent-adaptive-coordinator | Agent skill for adaptive-coordinator - invoke with $agent-adaptive-coordinator |
 | ruvnet--claude-flow | agent-adaptive-coordinator | Agent skill for adaptive-coordinator - invoke with $agent-adaptive-coordinator |
 | ryoppippi--ccusage | byethrow | Reference the byethrow documentation to understand and use the Result type library for error handling in JavaScript/TypeScript. Access detailed API re |
+| sammorrowdrums--remarkable-mcp | remarkable | > |
 | sawyerhood--dev-browser | dev-browser | Browser automation with persistent page state. Use when users ask to navigate websites, fill forms, take screenshots, extract web data, test web apps, |
 | scottcjn--grazer-skill | Grazer | Multi-Platform Content Discovery for AI Agents |
 | severity1--claude-code-prompt-improver | prompt-improver | This skill enriches vague prompts with targeted research and clarification before execution. Should be used when a prompt is determined to be vague an |
@@ -317,6 +321,7 @@
 | wshobson--agents | screen-reader-testing | Test web applications with screen readers including VoiceOver, NVDA, and JAWS. Use when validating screen reader compatibility, debugging accessibilit |
 | yamadashy--repomix | agent-memory | Use this skill when the user asks to save, remember, recall, or organize memories. Triggers on: 'remember this', 'save this', 'note this', 'what did w |
 | yeachan-heo--oh-my-claudecode | analyze | Deep analysis and investigation |
+| yoniassia--memclawz | memclawz | Long-term memory upgrade for OpenClaw agents — 3-speed architecture: QMD (<1ms working memory) + Zvec vector search (<10ms) + Causality Graph (multi-h |
 | yusufkaraaslan--skill_seekers | Bootstrap Skill - Self-Hosting (v2.7.0) | **Version:** 2.7.0 |
 | zarazhangrui--frontend-slides | frontend-slides | Create stunning, animation-rich HTML presentations from scratch or by converting PowerPoint files. Use when the user wants to build a presentation, co |
 | zebbern--claude-code-guide | Active Directory Attacks | This skill should be used when the user asks to "attack Active Directory", "exploit AD", "Kerberoasting", "DCSync", "pass-the-hash", "BloodHound enume |
