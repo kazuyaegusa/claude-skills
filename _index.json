@@ -1,0 +1,64 @@
+[
+  {
+    "slug": "managed-settings経由でotel設定を強制配布",
+    "name": "Managed Settings経由でOTel設定を強制配布",
+    "category": "claude-code-workflow",
+    "description": "Claude CodeのManaged Settings JSONファイルをMDMツール（Intune等）で全社員の端末に配置し、OTel設定を強制的に有効化する",
+    "trigger_phrases": [
+      "MDMを導入済みの組織でClaude Codeを複数名に展開しており、全員のログを漏れなく収集したいとき",
+      "Managed Settings経由でOTel設定を強制配布",
+      "Microsoft Intune（または他のMDMツール）",
+      "Claude Code Managed Settings機能"
+    ],
+    "source_url": "https://x.com/horie1024/status/2032315539008479554",
+    "source_author": "ホリエ",
+    "added_at": "2026-03-14T09:03:29.414468+00:00"
+  },
+  {
+    "slug": "otel-collectorでresource-attributeをlog-attributeにコピー",
+    "name": "OTel CollectorでResource AttributeをLog Attributeにコピー",
+    "category": "claude-code-workflow",
+    "description": "OTel CollectorのTransform Processorを使い、Resource Attributeの情報をLog Attributeにコピーした上でCloud Loggingに送信する",
+    "trigger_phrases": [
+      "OTelのResource Attributeに含まれる情報（user.email、サービスメタデータ等）がCloud Loggingに保存されないことに気づいたとき",
+      "OTel CollectorでResource AttributeをLog Attributeにコピー",
+      "OpenTelemetry Collector",
+      "otelcol-contrib",
+      "googlecloudexporter"
+    ],
+    "source_url": "https://x.com/horie1024/status/2032315539008479554",
+    "source_author": "ホリエ",
+    "added_at": "2026-03-14T09:03:29.414468+00:00"
+  },
+  {
+    "slug": "cloud-loggingにlinked-datasetを作成してbigqueryから直接クエリ",
+    "name": "Cloud LoggingにLinked Datasetを作成してBigQueryから直接クエリ",
+    "category": "claude-code-workflow",
+    "description": "Cloud LoggingのログバケットにLinked Datasetを作成し、BigQueryから直接SQL クエリでログを参照できる構成にする",
+    "trigger_phrases": [
+      "Cloud LoggingにOTelログを送信しており、BigQueryの既存分析基盤からそのログをSQLでクエリしたいとき",
+      "Cloud LoggingにLinked Datasetを作成してBigQueryから直接クエリ",
+      "Google Cloud Logging",
+      "BigQuery",
+      "Terraform"
+    ],
+    "source_url": "https://x.com/horie1024/status/2032315539008479554",
+    "source_author": "ホリエ",
+    "added_at": "2026-03-14T09:03:29.414468+00:00"
+  },
+  {
+    "slug": "api-requestイベントのcost-usdを集計して最適プランを自動判定",
+    "name": "api_requestイベントのcost_usdを集計して最適プランを自動判定",
+    "category": "claude-code-workflow",
+    "description": "OTelで収集したapi_requestイベントのcost_usdフィールドをユーザー別・日別に集計し、固定料金プランと従量課金プランのどちらが最適かを判断する",
+    "trigger_phrases": [
+      "Claude Codeを複数の課金プラン（固定/従量課金）で運用しており、コスト最適化のためにプラン振り分けを定期的に行いたいとき",
+      "api_requestイベントのcost_usdを集計して最適プランを自動判定",
+      "BigQuery",
+      "Claude Code OTel（api_requestイベント）"
+    ],
+    "source_url": "https://x.com/horie1024/status/2032315539008479554",
+    "source_author": "ホリエ",
+    "added_at": "2026-03-14T09:03:29.414468+00:00"
+  }
+]
