@@ -1,0 +1,78 @@
+[
+  {
+    "slug": "タスクキューとしてlinearを活用する",
+    "name": "タスクキューとしてLinearを活用する",
+    "category": "agent-orchestration",
+    "description": "LinearのIssueをAIエージェントへのジョブ投入口として使い、ステータス（not human / human / human review）でタスクのライフサイクルを管理する。",
+    "trigger_phrases": [
+      "Linearをすでに使っており、AIエージェントへのタスク投入に新しいUIを作りたくない場合。",
+      "タスクキューとしてLinearを活用する",
+      "Linear API",
+      "linear-sdk（Node.js）または requests（Python）"
+    ],
+    "source_url": "https://x.com/ai_agent_dev/status/2027950582804451451?s=46",
+    "source_author": "遠藤巧巳 - AIネイティブな会社の作り方",
+    "added_at": "2026-03-15T05:47:05.532787+00:00"
+  },
+  {
+    "slug": "cronで10分ポーリングループを構築する",
+    "name": "cronで10分ポーリングループを構築する",
+    "category": "agent-orchestration",
+    "description": "cronジョブまたはsystemdタイマーでポーリングスクリプトを定期実行し、常駐プロセスなしにエージェントループを維持する。",
+    "trigger_phrases": [
+      "処理時間が10分以内に収まるタスクが中心で、リアルタイム性より安定性を優先する場合。",
+      "cronで10分ポーリングループを構築する",
+      "cron",
+      "systemd timer（代替）",
+      "flock（多重起動防止）"
+    ],
+    "source_url": "https://x.com/ai_agent_dev/status/2027950582804451451?s=46",
+    "source_author": "遠藤巧巳 - AIネイティブな会社の作り方",
+    "added_at": "2026-03-15T05:47:05.532787+00:00"
+  },
+  {
+    "slug": "claude-pでタスクをノンインタラクティブ実行する",
+    "name": "claude -pでタスクをノンインタラクティブ実行する",
+    "category": "claude-code-workflow",
+    "description": "`claude -p`（print mode）を使い、タスク内容を標準入力またはプロンプト引数として渡してClaudeCodeをスクリプトから非対話実行する。",
+    "trigger_phrases": [
+      "PythonやシェルスクリプトからClaudeCodeを自動呼び出ししたいとき。",
+      "claude -pでタスクをノンインタラクティブ実行する",
+      "claude CLI",
+      "subprocess（Python標準ライブラリ）"
+    ],
+    "source_url": "https://x.com/ai_agent_dev/status/2027950582804451451?s=46",
+    "source_author": "遠藤巧巳 - AIネイティブな会社の作り方",
+    "added_at": "2026-03-15T05:47:05.532787+00:00"
+  },
+  {
+    "slug": "タスク種別でエージェント処理を分岐する",
+    "name": "タスク種別でエージェント処理を分岐する",
+    "category": "agent-orchestration",
+    "description": "タスクに『not human（AIが自律実行）』と『human（AIがリサーチのみ実行）』の2種別を設け、種別に応じて実行モードを切り替える。",
+    "trigger_phrases": [
+      "コード実行・外部API操作などリスクある操作と、情報収集・ドキュメント作成などローリスク操作を同じパイプラインで扱いたいとき。",
+      "タスク種別でエージェント処理を分岐する",
+      "Linear API（カスタムフィールド設定）"
+    ],
+    "source_url": "https://x.com/ai_agent_dev/status/2027950582804451451?s=46",
+    "source_author": "遠藤巧巳 - AIネイティブな会社の作り方",
+    "added_at": "2026-03-15T05:47:05.532787+00:00"
+  },
+  {
+    "slug": "自宅常駐pcをエージェント基盤として活用する",
+    "name": "自宅常駐PCをエージェント基盤として活用する",
+    "category": "claude-code-workflow",
+    "description": "クラウドサーバーを使わず、自宅の常時起動LinuxPCをエージェントの実行基盤として使うアーキテクチャを採用する。",
+    "trigger_phrases": [
+      "個人利用でクラウドコストを抑えたい場合、またはClaude CLIのサブスクリプション認証をそのまま使いたい場合。",
+      "自宅常駐PCをエージェント基盤として活用する",
+      "systemd",
+      "cron",
+      "claude CLI"
+    ],
+    "source_url": "https://x.com/ai_agent_dev/status/2027950582804451451?s=46",
+    "source_author": "遠藤巧巳 - AIネイティブな会社の作り方",
+    "added_at": "2026-03-15T05:47:05.532787+00:00"
+  }
+]
