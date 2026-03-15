@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 22 スキル
+合計: 24 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -26,3 +26,5 @@
 | エレガントな解法プロンプトで品質を強制する | 「エレガントな解法」プロンプトで品質を強制する | claude-code-workflow | 平凡な修正が出た後に「knowing everything you know now, scrap this and i | Kyohei - OSS, 外資IT |
 | askuserquestionツールでインタビュー形式の仕様収集をする | AskUserQuestionツールでインタビュー形式の仕様収集をする | claude-code-workflow | Claude Codeに `AskUserQuestion` ツールを使ったインタビュー形式で仕様を引き出させ、その後新 | Kyohei - OSS, 外資IT |
 | esc-escrewindで脱線を即座にアンドゥする | Esc Esc（/rewind）で脱線を即座にアンドゥする | claude-code-workflow | Claudeが間違った方向に進んだ時、同じコンテキストで修正しようとせず `Esc Esc` または `/rewind` | Kyohei - OSS, 外資IT |
+| claude-worktreeで並列エージェント起動 | claude --worktreeで並列エージェント起動 | claude-code-workflow | `claude --worktree`フラグを使い、各Claude Codeエージェントを独立したgit worktre | Boris Cherny |
+| git-worktreeで独立作業環境を作成 | git worktreeで独立作業環境を作成 | claude-code-workflow | `git worktree add`でリポジトリに紐づいた複数の作業ディレクトリを作成し、それぞれで異なるブランチを同時 | Boris Cherny |
