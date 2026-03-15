@@ -74,5 +74,19 @@
     "source_url": "https://x.com/ai_agent_dev/status/2027950582804451451?s=46",
     "source_author": "遠藤巧巳 - AIネイティブな会社の作り方",
     "added_at": "2026-03-15T05:47:05.532787+00:00"
+  },
+  {
+    "slug": "homerowで画面全体をキーボード操作する",
+    "name": "Homerowで画面全体をキーボード操作する",
+    "category": "ui-ux",
+    "description": "macOS上の全ネイティブアプリのボタン・リンク・UI要素に一時的なキーボードラベルを表示し、ラベルのキーを押すだけでクリック操作を実行する。",
+    "trigger_phrases": [
+      "ブラウザ・Finder・設定画面など、マウスクリックが必要な場面で手をキーボードから離したくないとき。",
+      "Homerowで画面全体をキーボード操作する",
+      "Homerow (https://www.homerow.app, $49.99 one-time, 50回まで無料試用可)"
+    ],
+    "source_url": "https://x.com/oikon48/status/2014717709658030202",
+    "source_author": "Oikon",
+    "added_at": "2026-03-15T08:54:43.671372+00:00"
   }
 ]
