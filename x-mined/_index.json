@@ -88,5 +88,105 @@
     "source_url": "https://x.com/oikon48/status/2014717709658030202",
     "source_author": "Oikon",
     "added_at": "2026-03-15T08:54:43.671372+00:00"
+  },
+  {
+    "slug": "commandagentskillオーケストレーション",
+    "name": "Command→Agent→Skillオーケストレーション",
+    "category": "claude-code-workflow",
+    "description": "Claude Codeの3つの拡張機能（Commands・Subagents・Skills）を役割分担して組み合わせ、複雑なワークフローを自動化するアーキテクチャパターン。",
+    "trigger_phrases": [
+      "複数の専門的タスク（計画・実装・QA・デプロイ）を含む大規模ワークフロー、またはチームで再利用するオートメーション設計時",
+      "Command→Agent→Skillオーケストレーション",
+      "Claude Code CLI",
+      ".claude/commands/",
+      ".claude/agents/",
+      ".claude/skills/"
+    ],
+    "source_url": "https://x.com/labelmake/status/2032652943250338098",
+    "source_author": "Kyohei - OSS, 外資IT",
+    "added_at": "2026-03-15T11:44:36.065753+00:00"
+  },
+  {
+    "slug": "claudemd最適化分割管理",
+    "name": "CLAUDE.md最適化・分割管理",
+    "category": "claude-code-workflow",
+    "description": "CLAUDE.mdを200行以下に保ち、大きくなった場合は`.claude/rules/`ディレクトリに分割して管理する。モノレポでは階層別に複数のCLAUDE.mdを配置する。",
+    "trigger_phrases": [
+      "CLAUDE.mdが200行を超えてきた時、またはClaudeが明示的な指示を無視し始めた時",
+      "CLAUDE.md最適化・分割管理",
+      "CLAUDE.md",
+      ".claude/rules/ディレクトリ",
+      "@pathインポート構文"
+    ],
+    "source_url": "https://x.com/labelmake/status/2032652943250338098",
+    "source_author": "Kyohei - OSS, 外資IT",
+    "added_at": "2026-03-15T11:44:36.065753+00:00"
+  },
+  {
+    "slug": "コンテキスト50compactルール",
+    "name": "コンテキスト50%compactルール",
+    "category": "claude-code-workflow",
+    "description": "コンテキスト使用率が50%に達したタイミングで手動で`/compact`を実行し、新しいタスクに切り替える際は`/clear`でコンテキストをリセットする。",
+    "trigger_phrases": [
+      "長時間セッション中にコンテキスト使用率が50%に達した時、または別の独立したタスクに切り替える時",
+      "コンテキスト50%compactルール",
+      "/compact",
+      "/clear",
+      "/context",
+      "/model",
+      "status line設定"
+    ],
+    "source_url": "https://x.com/labelmake/status/2032652943250338098",
+    "source_author": "Kyohei - OSS, 外資IT",
+    "added_at": "2026-03-15T11:44:36.065753+00:00"
+  },
+  {
+    "slug": "プランモードaskuserquestion設計フロー",
+    "name": "プランモード+AskUserQuestion設計フロー",
+    "category": "claude-code-workflow",
+    "description": "作業開始時は必ずプランモードで開始し、要件が曖昧な場合はClaudeにAskUserQuestionツールを使ったインタビューをさせてから実装セッションを別途開始する。",
+    "trigger_phrases": [
+      "新機能の実装開始時、要件が複数フェーズにまたがる複雑なタスク、チームへの作業委譲前",
+      "プランモード+AskUserQuestion設計フロー",
+      "Claude Code plan mode",
+      "AskUserQuestionツール",
+      "/plan コマンド"
+    ],
+    "source_url": "https://x.com/labelmake/status/2032652943250338098",
+    "source_author": "Kyohei - OSS, 外資IT",
+    "added_at": "2026-03-15T11:44:36.065753+00:00"
+  },
+  {
+    "slug": "git-worktrees並列エージェント開発",
+    "name": "Git Worktrees並列エージェント開発",
+    "category": "claude-code-workflow",
+    "description": "git worktreesを使って複数のエージェントが同一リポジトリの異なるブランチで同時並列に作業できる環境を構築する。tmuxと組み合わせて使う。",
+    "trigger_phrases": [
+      "独立した複数機能を同時開発する時、長時間かかるタスクをバックグラウンドで走らせながら別作業をしたい時",
+      "Git Worktrees並列エージェント開発",
+      "git worktree",
+      "tmux",
+      "Claude Code agent teams（beta）"
+    ],
+    "source_url": "https://x.com/labelmake/status/2032652943250338098",
+    "source_author": "Kyohei - OSS, 外資IT",
+    "added_at": "2026-03-15T11:44:36.065753+00:00"
+  },
+  {
+    "slug": "ベストプラクティスナレッジリポジトリ構築",
+    "name": "ベストプラクティスナレッジリポジトリ構築",
+    "category": "claude-code-workflow",
+    "description": "プログラムコードではなく、ツール活用ナレッジ・ベストプラクティス・Tips・ワークフローをマークダウンで構造化・集約したリポジトリを作成・維持する。",
+    "trigger_phrases": [
+      "特定ツール・フレームワークを組織・チームで本格活用し始める時、コミュニティへの知識貢献を考えている時",
+      "ベストプラクティスナレッジリポジトリ構築",
+      "GitHub",
+      "Markdown",
+      "シールドバッジ（shields.io）",
+      "自動更新ワークフロー"
+    ],
+    "source_url": "https://x.com/labelmake/status/2032652943250338098",
+    "source_author": "Kyohei - OSS, 外資IT",
+    "added_at": "2026-03-15T11:44:36.065753+00:00"
   }
 ]
