@@ -2161,5 +2161,52 @@
     "source_url": "",
     "source_author": "",
     "added_at": "2026-03-15T15:34:37.263447+00:00"
+  },
+  {
+    "slug": "npxで即時起動する",
+    "name": "npxで即時起動する",
+    "category": "automation-pipeline",
+    "description": "Node.jsがあれば`npx n8n`一発でローカルにn8nエディタを起動する",
+    "trigger_phrases": [
+      "ローカルで素早く動作確認したい時、チームへのデモを準備したい時",
+      "npxで即時起動する",
+      "Node.js",
+      "npx",
+      "Node.jsがあれば`npx n8n`一発でローカルにn8nエディタを起動する"
+    ],
+    "source_url": "https://github.com/n8n-io/n8n",
+    "source_author": "n8n-io",
+    "added_at": "2026-03-15T16:25:21.532762+00:00"
+  },
+  {
+    "slug": "dockerでデータ永続化デプロイする",
+    "name": "Dockerでデータ永続化デプロイする",
+    "category": "automation-pipeline",
+    "description": "Dockerボリュームを作成してn8nコンテナを起動し、ワークフロー設定を永続化する",
+    "trigger_phrases": [
+      "本番またはステージング環境にセルフホストする時、データを永続化したい時",
+      "Dockerでデータ永続化デプロイする",
+      "Docker",
+      "Dockerボリュームを作成してn8nコンテナを起動し、ワークフロー設定を永続化する"
+    ],
+    "source_url": "https://github.com/n8n-io/n8n",
+    "source_author": "n8n-io",
+    "added_at": "2026-03-15T16:25:21.532762+00:00"
+  },
+  {
+    "slug": "langchainでaiエージェントワークフローを構築する",
+    "name": "LangChainでAIエージェントワークフローを構築する",
+    "category": "agent-orchestration",
+    "description": "n8nのAI-Nativeノードを使い、LangChainベースのAIエージェントを視覚的に組み込んだワークフローを作成する",
+    "trigger_phrases": [
+      "既存の業務フローにLLMエージェントを組み込みたい時、自社データでRAGパイプラインを構築したい時",
+      "LangChainでAIエージェントワークフローを構築する",
+      "n8n",
+      "LangChain",
+      "任意のLLMプロバイダー"
+    ],
+    "source_url": "https://github.com/n8n-io/n8n",
+    "source_author": "n8n-io",
+    "added_at": "2026-03-15T16:25:21.532762+00:00"
   }
 ]
