@@ -188,5 +188,157 @@
     "source_url": "https://x.com/labelmake/status/2032652943250338098",
     "source_author": "Kyohei - OSS, 外資IT",
     "added_at": "2026-03-15T11:44:36.065753+00:00"
+  },
+  {
+    "slug": "commandagentskillオーケストレーションパターンを使う",
+    "name": "Command→Agent→Skillオーケストレーションパターンを使う",
+    "category": "claude-code-workflow",
+    "description": "スラッシュコマンド（/xxx）でワークフローを起動し、Agentが隔離コンテキストで実行し、Skillが再利用可能な知識を注入するという3層構造でClaude Codeを運用する",
+    "trigger_phrases": [
+      "複数ステップにわたる定型ワークフロー（コードレビュー、デプロイ確認、テスト実行など）を繰り返し実行する場合",
+      "Command→Agent→Skillオーケストレーションパターンを使う",
+      "Claude Code CLI",
+      ".claude/commands/",
+      ".claude/agents/",
+      ".claude/skills/"
+    ],
+    "source_url": "https://x.com/labelmake/status/2032652943250338098",
+    "source_author": "Kyohei - OSS, 外資IT",
+    "added_at": "2026-03-15T11:52:36.745058+00:00"
+  },
+  {
+    "slug": "claudemdを200行以内に管理する",
+    "name": "CLAUDE.mdを200行以内に管理する",
+    "category": "claude-code-workflow",
+    "description": "プロジェクトルートのCLAUDE.mdは200行以下に保ち、大きくなったら `.claude/rules/` 配下のファイルに分割する",
+    "trigger_phrases": [
+      "CLAUDE.mdが肥大化してClaudeが指示を無視するようになった時、またはモノレポでサブプロジェクト別の指示が必要な時",
+      "CLAUDE.mdを200行以内に管理する",
+      "Claude Code Memory機能"
+    ],
+    "source_url": "https://x.com/labelmake/status/2032652943250338098",
+    "source_author": "Kyohei - OSS, 外資IT",
+    "added_at": "2026-03-15T11:52:36.745058+00:00"
+  },
+  {
+    "slug": "コンテキスト50でmanual-compactを実行する",
+    "name": "コンテキスト50%でmanual /compactを実行する",
+    "category": "claude-code-workflow",
+    "description": "コンテキスト使用率が50%に達したタイミングで手動で `/compact` を実行し、新タスクに切り替える時は `/clear` でリセットする",
+    "trigger_phrases": [
+      "長時間のセッションで応答が鈍くなったと感じた時、または新しいタスクに切り替える時",
+      "コンテキスト50%でmanual /compactを実行する",
+      "/compact",
+      "/clear",
+      "/context",
+      "claude-code-status-line"
+    ],
+    "source_url": "https://x.com/labelmake/status/2032652943250338098",
+    "source_author": "Kyohei - OSS, 外資IT",
+    "added_at": "2026-03-15T11:52:36.745058+00:00"
+  },
+  {
+    "slug": "agent-teams-git-worktreesで並列開発する",
+    "name": "Agent Teams + Git Worktreesで並列開発する",
+    "category": "claude-code-workflow",
+    "description": "複数のClaude Codeエージェントをtmuxで並列起動し、各エージェントにgit worktreeで独立したブランチ作業環境を与えて並列開発する",
+    "trigger_phrases": [
+      "互いに依存しない複数機能を同時開発したい場合、レビューと実装を並列で進めたい場合",
+      "Agent Teams + Git Worktreesで並列開発する",
+      "git worktree",
+      "tmux",
+      "Claude Code Agent Teams（beta）"
+    ],
+    "source_url": "https://x.com/labelmake/status/2032652943250338098",
+    "source_author": "Kyohei - OSS, 外資IT",
+    "added_at": "2026-03-15T11:52:36.745058+00:00"
+  },
+  {
+    "slug": "プランモードを常に最初に使う",
+    "name": "プランモードを常に最初に使う",
+    "category": "claude-code-workflow",
+    "description": "実装に入る前に必ずPlan Mode（`Shift+Tab` またはメニューから）でClaudeに計画を立てさせ、承認してから実行に移る",
+    "trigger_phrases": [
+      "新機能開発、大きなリファクタリング、複数ファイルにまたがる変更など、影響範囲が広いタスクの開始時",
+      "プランモードを常に最初に使う",
+      "Claude Code Plan Mode",
+      "/plan"
+    ],
+    "source_url": "https://x.com/labelmake/status/2032652943250338098",
+    "source_author": "Kyohei - OSS, 外資IT",
+    "added_at": "2026-03-15T11:52:36.745058+00:00"
+  },
+  {
+    "slug": "loopで定期監視タスクをスケジュールする",
+    "name": "/loopで定期監視タスクをスケジュールする",
+    "category": "claude-code-workflow",
+    "description": "Claude Codeの `/loop` コマンドで最大3日間、定期的なプロンプト実行をスケジュールし、デプロイ監視・PR確認・ビルドチェックを自動化する",
+    "trigger_phrases": [
+      "CI/CDの完了待ち、PRのレビュー待ち、デプロイ後の動作確認など、繰り返しチェックが必要な場合",
+      "/loopで定期監視タスクをスケジュールする",
+      "/loop",
+      "Scheduled Tasks機能"
+    ],
+    "source_url": "https://x.com/labelmake/status/2032652943250338098",
+    "source_author": "Kyohei - OSS, 外資IT",
+    "added_at": "2026-03-15T11:52:36.745058+00:00"
+  },
+  {
+    "slug": "パーミッションをワイルドカード構文で細かく制御する",
+    "name": "パーミッションをワイルドカード構文で細かく制御する",
+    "category": "claude-code-workflow",
+    "description": "`dangerously-skip-permissions` の代わりに `/permissions` でワイルドカード構文を使い、必要最小限の権限だけを付与する",
+    "trigger_phrases": [
+      "自動化セッションで毎回パーミッション確認のプロンプトが出て作業が止まる場合。ただし全スキップは避けたい場合",
+      "パーミッションをワイルドカード構文で細かく制御する",
+      "/permissions",
+      "/sandbox",
+      ".claude/settings.json"
+    ],
+    "source_url": "https://x.com/labelmake/status/2032652943250338098",
+    "source_author": "Kyohei - OSS, 外資IT",
+    "added_at": "2026-03-15T11:52:36.745058+00:00"
+  },
+  {
+    "slug": "エレガントな解法プロンプトで品質を強制する",
+    "name": "「エレガントな解法」プロンプトで品質を強制する",
+    "category": "claude-code-workflow",
+    "description": "平凡な修正が出た後に「knowing everything you know now, scrap this and implement the elegant solution」と指示し、最適解を引き出す",
+    "trigger_phrases": [
+      "最初の実装が動くが品質が低い場合、技術的負債になりそうなコードが出た場合",
+      "「エレガントな解法」プロンプトで品質を強制する"
+    ],
+    "source_url": "https://x.com/labelmake/status/2032652943250338098",
+    "source_author": "Kyohei - OSS, 外資IT",
+    "added_at": "2026-03-15T11:52:36.745058+00:00"
+  },
+  {
+    "slug": "askuserquestionツールでインタビュー形式の仕様収集をする",
+    "name": "AskUserQuestionツールでインタビュー形式の仕様収集をする",
+    "category": "claude-code-workflow",
+    "description": "Claude Codeに `AskUserQuestion` ツールを使ったインタビュー形式で仕様を引き出させ、その後新セッションで実装を実行する",
+    "trigger_phrases": [
+      "何を作るかはわかっているが詳細要件が曖昧な場合、プロトタイプ前のスペック作成時",
+      "AskUserQuestionツールでインタビュー形式の仕様収集をする",
+      "AskUserQuestion（Claude Code内蔵ツール）"
+    ],
+    "source_url": "https://x.com/labelmake/status/2032652943250338098",
+    "source_author": "Kyohei - OSS, 外資IT",
+    "added_at": "2026-03-15T11:52:36.745058+00:00"
+  },
+  {
+    "slug": "esc-escrewindで脱線を即座にアンドゥする",
+    "name": "Esc Esc（/rewind）で脱線を即座にアンドゥする",
+    "category": "claude-code-workflow",
+    "description": "Claudeが間違った方向に進んだ時、同じコンテキストで修正しようとせず `Esc Esc` または `/rewind` で直前の状態にロールバックする",
+    "trigger_phrases": [
+      "Claudeが間違ったアプローチで実装を進め始めた時。「修正するより最初からやり直す方が早い」と判断した時",
+      "Esc Esc（/rewind）で脱線を即座にアンドゥする",
+      "/rewind",
+      "Checkpointing機能（git-based）"
+    ],
+    "source_url": "https://x.com/labelmake/status/2032652943250338098",
+    "source_author": "Kyohei - OSS, 外資IT",
+    "added_at": "2026-03-15T11:52:36.745058+00:00"
   }
 ]
