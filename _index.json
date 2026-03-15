@@ -60,5 +60,2106 @@
     "source_url": "https://x.com/horie1024/status/2032315539008479554",
     "source_author": "ホリエ",
     "added_at": "2026-03-14T09:03:29.414468+00:00"
+  },
+  {
+    "slug": "タスクキューとしてlinearを活用する",
+    "name": "タスクキューとしてLinearを活用する",
+    "category": "agent-orchestration",
+    "description": "LinearのIssueをAIエージェントへのジョブ投入口として使い、ステータス（not human / human / human review）でタスクのライフサイクルを管理する。",
+    "trigger_phrases": [
+      "Linearをすでに使っており、AIエージェントへのタスク投入に新しいUIを作りたくない場合。",
+      "タスクキューとしてLinearを活用する",
+      "Linear API",
+      "linear-sdk（Node.js）または requests（Python）"
+    ],
+    "source_url": "https://x.com/ai_agent_dev/status/2027950582804451451?s=46",
+    "source_author": "遠藤巧巳 - AIネイティブな会社の作り方",
+    "added_at": "2026-03-15T05:47:05.532787+00:00"
+  },
+  {
+    "slug": "cronで10分ポーリングループを構築する",
+    "name": "cronで10分ポーリングループを構築する",
+    "category": "agent-orchestration",
+    "description": "cronジョブまたはsystemdタイマーでポーリングスクリプトを定期実行し、常駐プロセスなしにエージェントループを維持する。",
+    "trigger_phrases": [
+      "処理時間が10分以内に収まるタスクが中心で、リアルタイム性より安定性を優先する場合。",
+      "cronで10分ポーリングループを構築する",
+      "cron",
+      "systemd timer（代替）",
+      "flock（多重起動防止）"
+    ],
+    "source_url": "https://x.com/ai_agent_dev/status/2027950582804451451?s=46",
+    "source_author": "遠藤巧巳 - AIネイティブな会社の作り方",
+    "added_at": "2026-03-15T05:47:05.532787+00:00"
+  },
+  {
+    "slug": "claude-pでタスクをノンインタラクティブ実行する",
+    "name": "claude -pでタスクをノンインタラクティブ実行する",
+    "category": "claude-code-workflow",
+    "description": "`claude -p`（print mode）を使い、タスク内容を標準入力またはプロンプト引数として渡してClaudeCodeをスクリプトから非対話実行する。",
+    "trigger_phrases": [
+      "PythonやシェルスクリプトからClaudeCodeを自動呼び出ししたいとき。",
+      "claude -pでタスクをノンインタラクティブ実行する",
+      "claude CLI",
+      "subprocess（Python標準ライブラリ）"
+    ],
+    "source_url": "https://x.com/ai_agent_dev/status/2027950582804451451?s=46",
+    "source_author": "遠藤巧巳 - AIネイティブな会社の作り方",
+    "added_at": "2026-03-15T05:47:05.532787+00:00"
+  },
+  {
+    "slug": "タスク種別でエージェント処理を分岐する",
+    "name": "タスク種別でエージェント処理を分岐する",
+    "category": "agent-orchestration",
+    "description": "タスクに『not human（AIが自律実行）』と『human（AIがリサーチのみ実行）』の2種別を設け、種別に応じて実行モードを切り替える。",
+    "trigger_phrases": [
+      "コード実行・外部API操作などリスクある操作と、情報収集・ドキュメント作成などローリスク操作を同じパイプラインで扱いたいとき。",
+      "タスク種別でエージェント処理を分岐する",
+      "Linear API（カスタムフィールド設定）"
+    ],
+    "source_url": "https://x.com/ai_agent_dev/status/2027950582804451451?s=46",
+    "source_author": "遠藤巧巳 - AIネイティブな会社の作り方",
+    "added_at": "2026-03-15T05:47:05.532787+00:00"
+  },
+  {
+    "slug": "自宅常駐pcをエージェント基盤として活用する",
+    "name": "自宅常駐PCをエージェント基盤として活用する",
+    "category": "claude-code-workflow",
+    "description": "クラウドサーバーを使わず、自宅の常時起動LinuxPCをエージェントの実行基盤として使うアーキテクチャを採用する。",
+    "trigger_phrases": [
+      "個人利用でクラウドコストを抑えたい場合、またはClaude CLIのサブスクリプション認証をそのまま使いたい場合。",
+      "自宅常駐PCをエージェント基盤として活用する",
+      "systemd",
+      "cron",
+      "claude CLI"
+    ],
+    "source_url": "https://x.com/ai_agent_dev/status/2027950582804451451?s=46",
+    "source_author": "遠藤巧巳 - AIネイティブな会社の作り方",
+    "added_at": "2026-03-15T05:47:05.532787+00:00"
+  },
+  {
+    "slug": "homerowで画面全体をキーボード操作する",
+    "name": "Homerowで画面全体をキーボード操作する",
+    "category": "ui-ux",
+    "description": "macOS上の全ネイティブアプリのボタン・リンク・UI要素に一時的なキーボードラベルを表示し、ラベルのキーを押すだけでクリック操作を実行する。",
+    "trigger_phrases": [
+      "ブラウザ・Finder・設定画面など、マウスクリックが必要な場面で手をキーボードから離したくないとき。",
+      "Homerowで画面全体をキーボード操作する",
+      "Homerow (https://www.homerow.app, $49.99 one-time, 50回まで無料試用可)"
+    ],
+    "source_url": "https://x.com/oikon48/status/2014717709658030202",
+    "source_author": "Oikon",
+    "added_at": "2026-03-15T08:54:43.671372+00:00"
+  },
+  {
+    "slug": "commandagentskillオーケストレーションパターンを使う",
+    "name": "Command→Agent→Skillオーケストレーションパターンを使う",
+    "category": "claude-code-workflow",
+    "description": "スラッシュコマンド（/xxx）でワークフローを起動し、Agentが隔離コンテキストで実行し、Skillが再利用可能な知識を注入するという3層構造でClaude Codeを運用する",
+    "trigger_phrases": [
+      "複数ステップにわたる定型ワークフロー（コードレビュー、デプロイ確認、テスト実行など）を繰り返し実行する場合",
+      "Command→Agent→Skillオーケストレーションパターンを使う",
+      "Claude Code CLI",
+      ".claude/commands/",
+      ".claude/agents/",
+      ".claude/skills/"
+    ],
+    "source_url": "https://x.com/labelmake/status/2032652943250338098",
+    "source_author": "Kyohei - OSS, 外資IT",
+    "added_at": "2026-03-15T11:52:36.745058+00:00"
+  },
+  {
+    "slug": "claudemdを200行以内に管理する",
+    "name": "CLAUDE.mdを200行以内に管理する",
+    "category": "claude-code-workflow",
+    "description": "プロジェクトルートのCLAUDE.mdは200行以下に保ち、大きくなったら `.claude/rules/` 配下のファイルに分割する",
+    "trigger_phrases": [
+      "CLAUDE.mdが肥大化してClaudeが指示を無視するようになった時、またはモノレポでサブプロジェクト別の指示が必要な時",
+      "CLAUDE.mdを200行以内に管理する",
+      "Claude Code Memory機能"
+    ],
+    "source_url": "https://x.com/labelmake/status/2032652943250338098",
+    "source_author": "Kyohei - OSS, 外資IT",
+    "added_at": "2026-03-15T11:52:36.745058+00:00"
+  },
+  {
+    "slug": "コンテキスト50でmanual-compactを実行する",
+    "name": "コンテキスト50%でmanual /compactを実行する",
+    "category": "claude-code-workflow",
+    "description": "コンテキスト使用率が50%に達したタイミングで手動で `/compact` を実行し、新タスクに切り替える時は `/clear` でリセットする",
+    "trigger_phrases": [
+      "長時間のセッションで応答が鈍くなったと感じた時、または新しいタスクに切り替える時",
+      "コンテキスト50%でmanual /compactを実行する",
+      "/compact",
+      "/clear",
+      "/context",
+      "claude-code-status-line"
+    ],
+    "source_url": "https://x.com/labelmake/status/2032652943250338098",
+    "source_author": "Kyohei - OSS, 外資IT",
+    "added_at": "2026-03-15T11:52:36.745058+00:00"
+  },
+  {
+    "slug": "agent-teams-git-worktreesで並列開発する",
+    "name": "Agent Teams + Git Worktreesで並列開発する",
+    "category": "claude-code-workflow",
+    "description": "複数のClaude Codeエージェントをtmuxで並列起動し、各エージェントにgit worktreeで独立したブランチ作業環境を与えて並列開発する",
+    "trigger_phrases": [
+      "互いに依存しない複数機能を同時開発したい場合、レビューと実装を並列で進めたい場合",
+      "Agent Teams + Git Worktreesで並列開発する",
+      "git worktree",
+      "tmux",
+      "Claude Code Agent Teams（beta）"
+    ],
+    "source_url": "https://x.com/labelmake/status/2032652943250338098",
+    "source_author": "Kyohei - OSS, 外資IT",
+    "added_at": "2026-03-15T11:52:36.745058+00:00"
+  },
+  {
+    "slug": "プランモードを常に最初に使う",
+    "name": "プランモードを常に最初に使う",
+    "category": "claude-code-workflow",
+    "description": "実装に入る前に必ずPlan Mode（`Shift+Tab` またはメニューから）でClaudeに計画を立てさせ、承認してから実行に移る",
+    "trigger_phrases": [
+      "新機能開発、大きなリファクタリング、複数ファイルにまたがる変更など、影響範囲が広いタスクの開始時",
+      "プランモードを常に最初に使う",
+      "Claude Code Plan Mode",
+      "/plan"
+    ],
+    "source_url": "https://x.com/labelmake/status/2032652943250338098",
+    "source_author": "Kyohei - OSS, 外資IT",
+    "added_at": "2026-03-15T11:52:36.745058+00:00"
+  },
+  {
+    "slug": "loopで定期監視タスクをスケジュールする",
+    "name": "/loopで定期監視タスクをスケジュールする",
+    "category": "claude-code-workflow",
+    "description": "Claude Codeの `/loop` コマンドで最大3日間、定期的なプロンプト実行をスケジュールし、デプロイ監視・PR確認・ビルドチェックを自動化する",
+    "trigger_phrases": [
+      "CI/CDの完了待ち、PRのレビュー待ち、デプロイ後の動作確認など、繰り返しチェックが必要な場合",
+      "/loopで定期監視タスクをスケジュールする",
+      "/loop",
+      "Scheduled Tasks機能"
+    ],
+    "source_url": "https://x.com/labelmake/status/2032652943250338098",
+    "source_author": "Kyohei - OSS, 外資IT",
+    "added_at": "2026-03-15T11:52:36.745058+00:00"
+  },
+  {
+    "slug": "パーミッションをワイルドカード構文で細かく制御する",
+    "name": "パーミッションをワイルドカード構文で細かく制御する",
+    "category": "claude-code-workflow",
+    "description": "`dangerously-skip-permissions` の代わりに `/permissions` でワイルドカード構文を使い、必要最小限の権限だけを付与する",
+    "trigger_phrases": [
+      "自動化セッションで毎回パーミッション確認のプロンプトが出て作業が止まる場合。ただし全スキップは避けたい場合",
+      "パーミッションをワイルドカード構文で細かく制御する",
+      "/permissions",
+      "/sandbox",
+      ".claude/settings.json"
+    ],
+    "source_url": "https://x.com/labelmake/status/2032652943250338098",
+    "source_author": "Kyohei - OSS, 外資IT",
+    "added_at": "2026-03-15T11:52:36.745058+00:00"
+  },
+  {
+    "slug": "エレガントな解法プロンプトで品質を強制する",
+    "name": "「エレガントな解法」プロンプトで品質を強制する",
+    "category": "claude-code-workflow",
+    "description": "平凡な修正が出た後に「knowing everything you know now, scrap this and implement the elegant solution」と指示し、最適解を引き出す",
+    "trigger_phrases": [
+      "最初の実装が動くが品質が低い場合、技術的負債になりそうなコードが出た場合",
+      "「エレガントな解法」プロンプトで品質を強制する"
+    ],
+    "source_url": "https://x.com/labelmake/status/2032652943250338098",
+    "source_author": "Kyohei - OSS, 外資IT",
+    "added_at": "2026-03-15T11:52:36.745058+00:00"
+  },
+  {
+    "slug": "askuserquestionツールでインタビュー形式の仕様収集をする",
+    "name": "AskUserQuestionツールでインタビュー形式の仕様収集をする",
+    "category": "claude-code-workflow",
+    "description": "Claude Codeに `AskUserQuestion` ツールを使ったインタビュー形式で仕様を引き出させ、その後新セッションで実装を実行する",
+    "trigger_phrases": [
+      "何を作るかはわかっているが詳細要件が曖昧な場合、プロトタイプ前のスペック作成時",
+      "AskUserQuestionツールでインタビュー形式の仕様収集をする",
+      "AskUserQuestion（Claude Code内蔵ツール）"
+    ],
+    "source_url": "https://x.com/labelmake/status/2032652943250338098",
+    "source_author": "Kyohei - OSS, 外資IT",
+    "added_at": "2026-03-15T11:52:36.745058+00:00"
+  },
+  {
+    "slug": "esc-escrewindで脱線を即座にアンドゥする",
+    "name": "Esc Esc（/rewind）で脱線を即座にアンドゥする",
+    "category": "claude-code-workflow",
+    "description": "Claudeが間違った方向に進んだ時、同じコンテキストで修正しようとせず `Esc Esc` または `/rewind` で直前の状態にロールバックする",
+    "trigger_phrases": [
+      "Claudeが間違ったアプローチで実装を進め始めた時。「修正するより最初からやり直す方が早い」と判断した時",
+      "Esc Esc（/rewind）で脱線を即座にアンドゥする",
+      "/rewind",
+      "Checkpointing機能（git-based）"
+    ],
+    "source_url": "https://x.com/labelmake/status/2032652943250338098",
+    "source_author": "Kyohei - OSS, 外資IT",
+    "added_at": "2026-03-15T11:52:36.745058+00:00"
+  },
+  {
+    "slug": "claude-worktreeで並列エージェント起動",
+    "name": "claude --worktreeで並列エージェント起動",
+    "category": "claude-code-workflow",
+    "description": "`claude --worktree`フラグを使い、各Claude Codeエージェントを独立したgit worktreeで起動する",
+    "trigger_phrases": [
+      "2つ以上のClaude Codeエージェントを同一リポジトリで同時に動かしたいとき",
+      "claude --worktreeで並列エージェント起動",
+      "claude CLI（--worktreeフラグ）",
+      "git worktree"
+    ],
+    "source_url": "https://x.com/bcherny/status/2025007393290272904",
+    "source_author": "Boris Cherny",
+    "added_at": "2026-03-15T14:57:28.108987+00:00"
+  },
+  {
+    "slug": "git-worktreeで独立作業環境を作成",
+    "name": "git worktreeで独立作業環境を作成",
+    "category": "claude-code-workflow",
+    "description": "`git worktree add`でリポジトリに紐づいた複数の作業ディレクトリを作成し、それぞれで異なるブランチを同時チェックアウトする",
+    "trigger_phrases": [
+      "現在の作業を中断せずに別ブランチで緊急対応が必要なとき、またはCI並列ビルドや複数エージェント並列実行のとき",
+      "git worktreeで独立作業環境を作成",
+      "git worktree"
+    ],
+    "source_url": "https://x.com/bcherny/status/2025007393290272904",
+    "source_author": "Boris Cherny",
+    "added_at": "2026-03-15T14:57:28.108987+00:00"
+  },
+  {
+    "slug": "0xbreadguy--megaeth-ai-developer-skills",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.222570+00:00"
+  },
+  {
+    "slug": "abracadabra50--claude-code-voice-skill",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.223111+00:00"
+  },
+  {
+    "slug": "adeze--raindrop-mcp",
+    "name": "Raindrop.io MCP Server",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.223254+00:00"
+  },
+  {
+    "slug": "adityasugandhi--skillsync-mcp",
+    "name": "SkillSync MCP — Security-Gated Skill Manager",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.223406+00:00"
+  },
+  {
+    "slug": "agent-cards--skill",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.223558+00:00"
+  },
+  {
+    "slug": "airbnb--airflow",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.223974+00:00"
+  },
+  {
+    "slug": "albedo-tabai--lets-go-rss",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.224255+00:00"
+  },
+  {
+    "slug": "alexknowshtml--drawbridge",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.224473+00:00"
+  },
+  {
+    "slug": "anomalyco--opencode",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.224634+00:00"
+  },
+  {
+    "slug": "antonbabenko--terraform-skill",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.224883+00:00"
+  },
+  {
+    "slug": "apache--airflow",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.225018+00:00"
+  },
+  {
+    "slug": "apache--incubator-airflow",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.225148+00:00"
+  },
+  {
+    "slug": "aplaceforallmystuff--the-antislop",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.225347+00:00"
+  },
+  {
+    "slug": "appleboy--codegpt",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.225531+00:00"
+  },
+  {
+    "slug": "art9mid--arc-skill",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.225753+00:00"
+  },
+  {
+    "slug": "art9mid--react-native-arc",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.226075+00:00"
+  },
+  {
+    "slug": "arunjrk--audit-flow",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.226290+00:00"
+  },
+  {
+    "slug": "ashad001--remotion-transitions",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.226497+00:00"
+  },
+  {
+    "slug": "ashutos1997--claude-design-auditor-skill",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.226780+00:00"
+  },
+  {
+    "slug": "assafelovic--gpt-researcher",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.226975+00:00"
+  },
+  {
+    "slug": "autogluon--autogluon",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.227144+00:00"
+  },
+  {
+    "slug": "avdlee--swiftui-agent-skill",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.227364+00:00"
+  },
+  {
+    "slug": "axiaoge2--apple-hig-designer",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.227576+00:00"
+  },
+  {
+    "slug": "axtonliu--smart-illustrator",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.227803+00:00"
+  },
+  {
+    "slug": "better-auth--better-icons",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.227961+00:00"
+  },
+  {
+    "slug": "bitbond--token-tool-mcp",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.228109+00:00"
+  },
+  {
+    "slug": "blader--claude-code-continuous-learning-skill",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.228250+00:00"
+  },
+  {
+    "slug": "blader--claudeception",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.228422+00:00"
+  },
+  {
+    "slug": "blader--humanizer",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.228600+00:00"
+  },
+  {
+    "slug": "blader--razor",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.228748+00:00"
+  },
+  {
+    "slug": "blader--schematic",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.228895+00:00"
+  },
+  {
+    "slug": "blader--theorist",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.229039+00:00"
+  },
+  {
+    "slug": "bowenliang123--md_exporter",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.229194+00:00"
+  },
+  {
+    "slug": "browserwing--browserwing",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.229388+00:00"
+  },
+  {
+    "slug": "bytebase--dbhub",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.229553+00:00"
+  },
+  {
+    "slug": "cassmtnr--claude-code-starter",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.229743+00:00"
+  },
+  {
+    "slug": "checkra1neth--xbird-skill",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.229917+00:00"
+  },
+  {
+    "slug": "chromedevtools--chrome-devtools-mcp",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.230080+00:00"
+  },
+  {
+    "slug": "cli-argparse-subcommands",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.230235+00:00"
+  },
+  {
+    "slug": "cli-demo-runner",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.230672+00:00"
+  },
+  {
+    "slug": "codexstar69--bug-hunter",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.230943+00:00"
+  },
+  {
+    "slug": "coleam00--context-engineering-intro",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.231114+00:00"
+  },
+  {
+    "slug": "commonpaper--claude-skill",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.231308+00:00"
+  },
+  {
+    "slug": "conorbronsdon--avoid-ai-writing",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.231540+00:00"
+  },
+  {
+    "slug": "copilotkit--copilotkit",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.231703+00:00"
+  },
+  {
+    "slug": "cosmoblk--email-marketing-bible",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.231893+00:00"
+  },
+  {
+    "slug": "cyrus-cai--claude-cobrain",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.232050+00:00"
+  },
+  {
+    "slug": "d-kimuson--claude-code-viewer",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.232202+00:00"
+  },
+  {
+    "slug": "daaain--claude-code-log",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.232351+00:00"
+  },
+  {
+    "slug": "dammyjay93--claude-design-engineer",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.232537+00:00"
+  },
+  {
+    "slug": "dammyjay93--interface-design",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.232698+00:00"
+  },
+  {
+    "slug": "danielcanton--webxr-dev-skill",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.232835+00:00"
+  },
+  {
+    "slug": "danpeg--bug-hunt",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.232945+00:00"
+  },
+  {
+    "slug": "dataclass-models",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.233054+00:00"
+  },
+  {
+    "slug": "datadog-labs--agent-skills",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.233158+00:00"
+  },
+  {
+    "slug": "davidgeorgehope--elasticsearch-skill",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.233323+00:00"
+  },
+  {
+    "slug": "devswha--oh-my-humanizer",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.233512+00:00"
+  },
+  {
+    "slug": "dgallitelli--aws-hyperpod-skill",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.233663+00:00"
+  },
+  {
+    "slug": "digidai--product-manager-skills",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.233813+00:00"
+  },
+  {
+    "slug": "discord-context-search",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.233938+00:00"
+  },
+  {
+    "slug": "dotnet--core",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.234059+00:00"
+  },
+  {
+    "slug": "everyinc--charlie-cfo-skill",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.234183+00:00"
+  },
+  {
+    "slug": "everything-claude-code-ja",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.234309+00:00"
+  },
+  {
+    "slug": "expo--expo",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.234436+00:00"
+  },
+  {
+    "slug": "folder-digest",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.234600+00:00"
+  },
+  {
+    "slug": "forayconsulting--gemini_cli_skill",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.234745+00:00"
+  },
+  {
+    "slug": "frdel--agent-zero",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.234907+00:00"
+  },
+  {
+    "slug": "gabberflast--academic-pptx-skill",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.235084+00:00"
+  },
+  {
+    "slug": "game-asset-generator",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.235190+00:00"
+  },
+  {
+    "slug": "genielabsopensource--spine-animation-ai",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.235472+00:00"
+  },
+  {
+    "slug": "github-pr-automation",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.235612+00:00"
+  },
+  {
+    "slug": "gradio-app--gradio",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.235781+00:00"
+  },
+  {
+    "slug": "happycastle114--oh-my-openclaw",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.235920+00:00"
+  },
+  {
+    "slug": "hashgraph-online--registry-broker-skills",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.236122+00:00"
+  },
+  {
+    "slug": "homenshum--nodebench-ai",
+    "name": "Skill: Flywheel UI Dogfood",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.236250+00:00"
+  },
+  {
+    "slug": "html-arch-visualizer",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.236417+00:00"
+  },
+  {
+    "slug": "html-slide-generator",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.236560+00:00"
+  },
+  {
+    "slug": "htmlstreamofficial--preline",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.236788+00:00"
+  },
+  {
+    "slug": "huggingface--trl",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.237056+00:00"
+  },
+  {
+    "slug": "hugoduncan--criterium",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.237204+00:00"
+  },
+  {
+    "slug": "jax-transformer-ranker",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.237436+00:00"
+  },
+  {
+    "slug": "jcfischer--supertag-cli",
+    "name": "Supertag CLI Skill",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.237704+00:00"
+  },
+  {
+    "slug": "jftuga--transcript-critic",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.237879+00:00"
+  },
+  {
+    "slug": "jnemargut--better-plan-mode",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.238119+00:00"
+  },
+  {
+    "slug": "kadenzipfel--scv-scan",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.238254+00:00"
+  },
+  {
+    "slug": "kework-content-writer",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.238398+00:00"
+  },
+  {
+    "slug": "kework-customer-support",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.238532+00:00"
+  },
+  {
+    "slug": "kework-event-planning",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.238682+00:00"
+  },
+  {
+    "slug": "kework-message-draft",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.240598+00:00"
+  },
+  {
+    "slug": "kework-web-research",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.240936+00:00"
+  },
+  {
+    "slug": "kilo-org--kilocode",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.241412+00:00"
+  },
+  {
+    "slug": "kingkongshot--pensieve",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.241543+00:00"
+  },
+  {
+    "slug": "komal-skynet--claude-skill-homeassistant",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.241705+00:00"
+  },
+  {
+    "slug": "kridaydave--file-organizer-mcp",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.241928+00:00"
+  },
+  {
+    "slug": "lackeyjb--playwright-skill",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.242177+00:00"
+  },
+  {
+    "slug": "linear-api-client",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.242376+00:00"
+  },
+  {
+    "slug": "ludo-technologies--pyscn",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.242552+00:00"
+  },
+  {
+    "slug": "lukasniessen--terrashark",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.242677+00:00"
+  },
+  {
+    "slug": "marmelab--react-admin",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.242819+00:00"
+  },
+  {
+    "slug": "mixedbread-ai--mgrep",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.243040+00:00"
+  },
+  {
+    "slug": "modelcontextprotocol--typescript-sdk",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.243216+00:00"
+  },
+  {
+    "slug": "mrexodia--ida-pro-mcp",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.243350+00:00"
+  },
+  {
+    "slug": "multi-agent-patterns",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.243502+00:00"
+  },
+  {
+    "slug": "multi-agent-systems",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.243629+00:00"
+  },
+  {
+    "slug": "muratcankoylan--agent-skills-for-context-engineering",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.243828+00:00"
+  },
+  {
+    "slug": "mvanhorn--last30days-skill",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.244175+00:00"
+  },
+  {
+    "slug": "n1byn1kt--apitap",
+    "name": "ApiTap — The MCP Server That Turns Any Website Into an API",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.244380+00:00"
+  },
+  {
+    "slug": "ndpvt-web--latex-document-skill",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.244662+00:00"
+  },
+  {
+    "slug": "nextlevelbuilder--ui-ux-pro-max-skill",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.248047+00:00"
+  },
+  {
+    "slug": "nia-agent-cyber--openai-voice-skill",
+    "name": "OpenAI Voice Skill",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.248275+00:00"
+  },
+  {
+    "slug": "numman-ali--openskills",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.248449+00:00"
+  },
+  {
+    "slug": "numpy-ann-search",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.248574+00:00"
+  },
+  {
+    "slug": "op7418--humanizer-zh",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.248777+00:00"
+  },
+  {
+    "slug": "op7418--nanobanana-ppt-skills",
+    "name": "PPT Generator Pro - Claude Code Skill",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.248981+00:00"
+  },
+  {
+    "slug": "op7418--youtube-clipper-skill",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.249149+00:00"
+  },
+  {
+    "slug": "openai--openai-cookbook",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.249279+00:00"
+  },
+  {
+    "slug": "openhands--openhands",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.249386+00:00"
+  },
+  {
+    "slug": "pdf-logo-remover",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.249538+00:00"
+  },
+  {
+    "slug": "pdf-slide-editor",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.249660+00:00"
+  },
+  {
+    "slug": "phase-report",
+    "name": "フェーズ完了レポート自動生成",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.249774+00:00"
+  },
+  {
+    "slug": "piebald-ai--tweakcc",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.249879+00:00"
+  },
+  {
+    "slug": "pingcap--tidb",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.249977+00:00"
+  },
+  {
+    "slug": "pixelml--agenticflow-skill",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.250073+00:00"
+  },
+  {
+    "slug": "pleaseprompto--google-ai-mode-skill",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.250243+00:00"
+  },
+  {
+    "slug": "pleaseprompto--notebooklm-skill",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.250415+00:00"
+  },
+  {
+    "slug": "polaroteam--moltdj-skill",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.250577+00:00"
+  },
+  {
+    "slug": "prefecthq--prefect",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.250718+00:00"
+  },
+  {
+    "slug": "project-review",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.250833+00:00"
+  },
+  {
+    "slug": "projectopensea--opensea-skill",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.251003+00:00"
+  },
+  {
+    "slug": "pubkey--rxdb",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.251103+00:00"
+  },
+  {
+    "slug": "quality-harness",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.251323+00:00"
+  },
+  {
+    "slug": "qwenlm--qwen-code",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.251419+00:00"
+  },
+  {
+    "slug": "rafsilva85--credit-optimizer-v5",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.251518+00:00"
+  },
+  {
+    "slug": "ramsbaby--openclaw-self-healing",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.251622+00:00"
+  },
+  {
+    "slug": "realtime-feature-engine",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.251715+00:00"
+  },
+  {
+    "slug": "rebelytics--one-skill-to-rule-them-all",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.251930+00:00"
+  },
+  {
+    "slug": "reflectt--reflectt-node",
+    "name": "SKILL.md — reflectt-node operator playbook",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.254129+00:00"
+  },
+  {
+    "slug": "refly-ai--refly",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.254737+00:00"
+  },
+  {
+    "slug": "remotion-dev--skills",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.254974+00:00"
+  },
+  {
+    "slug": "repo-phuocdt--prompt-engineer-skill",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.255304+00:00"
+  },
+  {
+    "slug": "repo-security-clone",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.255676+00:00"
+  },
+  {
+    "slug": "repo-tracker",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.255800+00:00"
+  },
+  {
+    "slug": "risingwavelabs--risingwave",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.255900+00:00"
+  },
+  {
+    "slug": "rivradev--recite-agent-skill",
+    "name": "name: recite",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.256001+00:00"
+  },
+  {
+    "slug": "rohunvora--x-research-skill",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.256107+00:00"
+  },
+  {
+    "slug": "sammorrowdrums--remarkable-mcp",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.256239+00:00"
+  },
+  {
+    "slug": "sawyerhood--dev-browser",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.256384+00:00"
+  },
+  {
+    "slug": "scottcjn--grazer-skill",
+    "name": "Grazer",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.256959+00:00"
+  },
+  {
+    "slug": "severity1--claude-code-prompt-improver",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.257104+00:00"
+  },
+  {
+    "slug": "shadcn-ui--ui",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.257241+00:00"
+  },
+  {
+    "slug": "shap--shap",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.257352+00:00"
+  },
+  {
+    "slug": "significant-gravitas--autogpt",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.257516+00:00"
+  },
+  {
+    "slug": "silverov--yandex-direct-skill",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.257656+00:00"
+  },
+  {
+    "slug": "sinzin91--search-sessions",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.257777+00:00"
+  },
+  {
+    "slug": "slundberg--shap",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.257913+00:00"
+  },
+  {
+    "slug": "smithery-ai--cli",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.258039+00:00"
+  },
+  {
+    "slug": "sqlite-storage-pattern",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.258232+00:00"
+  },
+  {
+    "slug": "sstklen--claude-api-cost-optimization",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.258354+00:00"
+  },
+  {
+    "slug": "supabase--agent-skills",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.258638+00:00"
+  },
+  {
+    "slug": "synthetic-lab--octofriend",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.258916+00:00"
+  },
+  {
+    "slug": "terminal-ui-generator",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.259122+00:00"
+  },
+  {
+    "slug": "textgrad-optimizer",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.259259+00:00"
+  },
+  {
+    "slug": "ticket-to-pr-pipeline",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.259407+00:00"
+  },
+  {
+    "slug": "tobi--qmd",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.259809+00:00"
+  },
+  {
+    "slug": "topologyhealth--claudefhirskill",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.260011+00:00"
+  },
+  {
+    "slug": "tripleyak--skillforge",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.260273+00:00"
+  },
+  {
+    "slug": "trycua--cua",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.260416+00:00"
+  },
+  {
+    "slug": "ui-automation-agent",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.260572+00:00"
+  },
+  {
+    "slug": "ui-automation-agent-2",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.260703+00:00"
+  },
+  {
+    "slug": "update-dashboards",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.260876+00:00"
+  },
+  {
+    "slug": "uriva--find-scene-skill",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.261096+00:00"
+  },
+  {
+    "slug": "vercel-labs--add-skill",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.261278+00:00"
+  },
+  {
+    "slug": "vercel-labs--skills",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.261405+00:00"
+  },
+  {
+    "slug": "voidborne-d--claude-code-pro",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.261517+00:00"
+  },
+  {
+    "slug": "volcengine--openviking",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.261662+00:00"
+  },
+  {
+    "slug": "voltagent--voltagent",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.262045+00:00"
+  },
+  {
+    "slug": "webzler--agentmemory",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.262347+00:00"
+  },
+  {
+    "slug": "wrsmith108--linear-claude-skill",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.262637+00:00"
+  },
+  {
+    "slug": "yoniassia--memclawz",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.262811+00:00"
+  },
+  {
+    "slug": "yusufkaraaslan--skill_seekers",
+    "name": "Bootstrap Skill - Self-Hosting (v2.7.0)",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.262973+00:00"
+  },
+  {
+    "slug": "zarazhangrui--frontend-slides",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.263166+00:00"
+  },
+  {
+    "slug": "zeframlou--call-me",
+    "name": "Phone Call Input Skill",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.263299+00:00"
+  },
+  {
+    "slug": "zooeyii--ship-page-skill",
+    "name": "---",
+    "category": "",
+    "description": "",
+    "trigger_phrases": [],
+    "source_url": "",
+    "source_author": "",
+    "added_at": "2026-03-15T15:34:37.263447+00:00"
   }
 ]
