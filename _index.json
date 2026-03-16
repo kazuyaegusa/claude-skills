@@ -2269,5 +2269,97 @@
     "source_url": "https://github.com/punkpeye/awesome-mcp-servers",
     "source_author": "punkpeye",
     "added_at": "2026-03-16T00:06:43.141807+00:00"
+  },
+  {
+    "slug": "役割特化エージェントによる並列オーケストレーション",
+    "name": "役割特化エージェントによる並列オーケストレーション",
+    "category": "agent-orchestration",
+    "description": "Sisyphus（メインエージェント、Opus 4.5 High）を中心に、Oracle（GPT 5.2 Medium：設計・デバッグ）、Frontend Engineer（Gemini 3 Pro：UI/UX）、Librarian（Sonnet 4.5：ドキュメント検索）、Explore（Grok Code：高速コードベース探索）など専門エージェントを並列実行する",
+    "trigger_phrases": [
+      "複雑なタスク、複数ドメインにまたがるタスク、大規模コードベースの変更、LLMが途中で止まる問題が頻発する場合",
+      "役割特化エージェントによる並列オーケストレーション",
+      "oh-my-opencode (npm package)",
+      "OpenCode",
+      "LSP (Language Server Protocol)",
+      "AST-Grep",
+      "Exa (web search MCP)"
+    ],
+    "source_url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "source_author": "code-yeongyu",
+    "added_at": "2026-03-16T00:11:08.771155+00:00"
+  },
+  {
+    "slug": "lspast統合によるリファクタリングの信頼性向上",
+    "name": "LSP/AST統合によるリファクタリングの信頼性向上",
+    "category": "agent-orchestration",
+    "description": "Language Server Protocol（LSP）とAST-Grepを使い、決定論的で安全なコード変更を実現",
+    "trigger_phrases": [
+      "リファクタリング、変数・関数・クラスのリネーム、型エラー修正、大規模コード変更",
+      "LSP/AST統合によるリファクタリングの信頼性向上",
+      "LSP (Language Server Protocol)",
+      "AST-Grep",
+      "OpenCode LSP integration"
+    ],
+    "source_url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "source_author": "code-yeongyu",
+    "added_at": "2026-03-16T00:11:08.771155+00:00"
+  },
+  {
+    "slug": "todo-enforcer-による継続強制パターン",
+    "name": "Todo Enforcer による継続強制パターン",
+    "category": "agent-orchestration",
+    "description": "LLMエージェントがタスクを途中で止めた場合、自動的に再開させて完了まで強制継続する仕組み",
+    "trigger_phrases": [
+      "複雑な多段階タスク、LLMが途中で止まる問題がある場合、完全自動化したい場合",
+      "Todo Enforcer による継続強制パターン",
+      "oh-my-opencode Todo Enforcer hook",
+      "LLMエージェントがタスクを途中で止めた場合、自動的に再開させて完了まで強制継続する仕組み"
+    ],
+    "source_url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "source_author": "code-yeongyu",
+    "added_at": "2026-03-16T00:11:08.771155+00:00"
+  },
+  {
+    "slug": "ultraworkキーワードによる全機能自動起動",
+    "name": "`ultrawork`キーワードによる全機能自動起動",
+    "category": "agent-orchestration",
+    "description": "プロンプトに`ultrawork`（または短縮形`ulw`）を含めるだけで、全ての並列エージェント・探索・継続強制が自動的に発動する「魔法のキーワード」パターン",
+    "trigger_phrases": [
+      "複雑なタスク、初めて触るコードベース、全自動でやってほしい場合",
+      "`ultrawork`キーワードによる全機能自動起動",
+      "oh-my-opencode"
+    ],
+    "source_url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "source_author": "code-yeongyu",
+    "added_at": "2026-03-16T00:11:08.771155+00:00"
+  },
+  {
+    "slug": "コンテキスト分散戦略background-agents",
+    "name": "コンテキスト分散戦略（Background Agents）",
+    "category": "agent-orchestration",
+    "description": "メインエージェントのコンテキストを軽く保つため、重い探索・検索タスクをバックグラウンドの専門エージェントに並列委譲する",
+    "trigger_phrases": [
+      "大規模コードベース、複数の情報源を並列検索したい場合、メインエージェントのコンテキストを節約したい場合",
+      "コンテキスト分散戦略（Background Agents）",
+      "oh-my-opencode Background Agents機能"
+    ],
+    "source_url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "source_author": "code-yeongyu",
+    "added_at": "2026-03-16T00:11:08.771155+00:00"
+  },
+  {
+    "slug": "comment-checkerによるコード品質保証",
+    "name": "Comment Checkerによるコード品質保証",
+    "category": "agent-orchestration",
+    "description": "LLMが過剰なコメントを追加しようとすると警告し、人間が書いたコードと区別がつかないレベルに保つ",
+    "trigger_phrases": [
+      "プロダクションコード、コードレビューでコメント過多を避けたい場合",
+      "Comment Checkerによるコード品質保証",
+      "oh-my-opencode Comment Checker hook",
+      "LLMが過剰なコメントを追加しようとすると警告し、人間が書いたコードと区別がつかないレベルに保つ"
+    ],
+    "source_url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "source_author": "code-yeongyu",
+    "added_at": "2026-03-16T00:11:08.771155+00:00"
   }
 ]

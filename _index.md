@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 212 スキル
+合計: 218 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -216,3 +216,9 @@
 | 言語プラットフォーム絞り込み | 言語・プラットフォーム絞り込み | dev-tool | アイコン（🐍 Python, 📇 TypeScript, 🏎️ Go, 🦀 Rust等）とプラットフォーム表示（☁️ C | punkpeye |
 | 公式評価済みserver優先 | 公式・評価済みServer優先 | other | 🎖️（公式実装）やGlamaスコアバッジで品質を判断し、信頼性の高いServerを選ぶ | punkpeye |
 | 既存実装からの学習 | 既存実装からの学習 | other | 類似機能を持つMCP Serverのコードを参照し、実装パターンや設定方法を学ぶ | punkpeye |
+| 役割特化エージェントによる並列オーケストレーション | 役割特化エージェントによる並列オーケストレーション | agent-orchestration | Sisyphus（メインエージェント、Opus 4.5 High）を中心に、Oracle（GPT 5.2 Medium： | code-yeongyu |
+| lspast統合によるリファクタリングの信頼性向上 | LSP/AST統合によるリファクタリングの信頼性向上 | agent-orchestration | Language Server Protocol（LSP）とAST-Grepを使い、決定論的で安全なコード変更を実現 | code-yeongyu |
+| todo-enforcer-による継続強制パターン | Todo Enforcer による継続強制パターン | agent-orchestration | LLMエージェントがタスクを途中で止めた場合、自動的に再開させて完了まで強制継続する仕組み | code-yeongyu |
+| ultraworkキーワードによる全機能自動起動 | `ultrawork`キーワードによる全機能自動起動 | agent-orchestration | プロンプトに`ultrawork`（または短縮形`ulw`）を含めるだけで、全ての並列エージェント・探索・継続強制が自動 | code-yeongyu |
+| コンテキスト分散戦略background-agents | コンテキスト分散戦略（Background Agents） | agent-orchestration | メインエージェントのコンテキストを軽く保つため、重い探索・検索タスクをバックグラウンドの専門エージェントに並列委譲する | code-yeongyu |
+| comment-checkerによるコード品質保証 | Comment Checkerによるコード品質保証 | agent-orchestration | LLMが過剰なコメントを追加しようとすると警告し、人間が書いたコードと区別がつかないレベルに保つ | code-yeongyu |
