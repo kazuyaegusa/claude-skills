@@ -2931,5 +2931,29 @@
     "source_url": "https://github.com/alirezarezvani/claude-skills",
     "source_author": "alirezarezvani",
     "added_at": "2026-03-16T00:45:08.319576+00:00"
+  },
+  {
+    "slug": "x-scout",
+    "name": "X Scout - X投稿からの技術発見・スキル化",
+    "category": "sennin-scout",
+    "description": "X投稿URLを受け取り、技術情報の抽出・スキル化・再現キット生成・検証レポート作成を自動実行するスキル",
+    "trigger_phrases": [
+      "x.com",
+      "twitter.com",
+      "/status/",
+      "この投稿",
+      "このツイート",
+      "このポスト",
+      "スキル抽出",
+      "技術調査",
+      "使えそう",
+      "良さそう",
+      "試してみたい",
+      "取り込みたい",
+      "分析して"
+    ],
+    "source_url": "",
+    "source_author": "sennin_scout",
+    "added_at": "2026-03-16T12:40:00+09:00"
   }
 ]
