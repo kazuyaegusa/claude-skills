@@ -20,6 +20,18 @@
     "OTEL_RESOURCE_ATTRIBUTES": "user.email=kazuya.egusa@aixeed.co.jp"
   },
   "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume|clear|compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "CLAUDE_PLUGIN_ROOT=\"$HOME/.claude/plugins/cache/superpowers-marketplace/superpowers/5.0.2\" bash \"$HOME/.claude/plugins/cache/superpowers-marketplace/superpowers/5.0.2/hooks/session-start\"",
+            "timeout": 30
+          }
+        ]
+      }
+    ],
     "PreToolUse": [
       {
         "command": "~/.claude/star-office-hook.sh writing 'コード編集中'",
