@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 208 スキル
+合計: 212 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -212,3 +212,7 @@
 | npxで即時起動する | npxで即時起動する | automation-pipeline | Node.jsがあれば`npx n8n`一発でローカルにn8nエディタを起動する | n8n-io |
 | dockerでデータ永続化デプロイする | Dockerでデータ永続化デプロイする | automation-pipeline | Dockerボリュームを作成してn8nコンテナを起動し、ワークフロー設定を永続化する | n8n-io |
 | langchainでaiエージェントワークフローを構築する | LangChainでAIエージェントワークフローを構築する | agent-orchestration | n8nのAI-Nativeノードを使い、LangChainベースのAIエージェントを視覚的に組み込んだワークフローを作成 | n8n-io |
+| カテゴリ別server検索 | カテゴリ別Server検索 | automation-pipeline | 機能ドメイン（ファイルシステム、データベース、コミュニケーション等）ごとに分類されたMCP Serverリストから目的の | punkpeye |
+| 言語プラットフォーム絞り込み | 言語・プラットフォーム絞り込み | dev-tool | アイコン（🐍 Python, 📇 TypeScript, 🏎️ Go, 🦀 Rust等）とプラットフォーム表示（☁️ C | punkpeye |
+| 公式評価済みserver優先 | 公式・評価済みServer優先 | other | 🎖️（公式実装）やGlamaスコアバッジで品質を判断し、信頼性の高いServerを選ぶ | punkpeye |
+| 既存実装からの学習 | 既存実装からの学習 | other | 類似機能を持つMCP Serverのコードを参照し、実装パターンや設定方法を学ぶ | punkpeye |

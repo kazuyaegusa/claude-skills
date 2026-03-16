@@ -2208,5 +2208,66 @@
     "source_url": "https://github.com/n8n-io/n8n",
     "source_author": "n8n-io",
     "added_at": "2026-03-15T16:25:21.532762+00:00"
+  },
+  {
+    "slug": "カテゴリ別server検索",
+    "name": "カテゴリ別Server検索",
+    "category": "automation-pipeline",
+    "description": "機能ドメイン（ファイルシステム、データベース、コミュニケーション等）ごとに分類されたMCP Serverリストから目的のServerを探す",
+    "trigger_phrases": [
+      "特定のドメイン（例: メール送信、データベース操作）のMCP Serverを探す時",
+      "カテゴリ別Server検索",
+      "GitHub検索",
+      "Glamaバッジ"
+    ],
+    "source_url": "https://github.com/punkpeye/awesome-mcp-servers",
+    "source_author": "punkpeye",
+    "added_at": "2026-03-16T00:06:43.141807+00:00"
+  },
+  {
+    "slug": "言語プラットフォーム絞り込み",
+    "name": "言語・プラットフォーム絞り込み",
+    "category": "dev-tool",
+    "description": "アイコン（🐍 Python, 📇 TypeScript, 🏎️ Go, 🦀 Rust等）とプラットフォーム表示（☁️ Cloud, 🏠 Local, 🍎 macOS等）で実装技術を確認する",
+    "trigger_phrases": [
+      "特定の技術スタックや実行環境でMCP Serverを構築する必要がある時",
+      "言語・プラットフォーム絞り込み",
+      "各言語のSDK（例: FastMCP for Python/TypeScript）"
+    ],
+    "source_url": "https://github.com/punkpeye/awesome-mcp-servers",
+    "source_author": "punkpeye",
+    "added_at": "2026-03-16T00:06:43.141807+00:00"
+  },
+  {
+    "slug": "公式評価済みserver優先",
+    "name": "公式・評価済みServer優先",
+    "category": "other",
+    "description": "🎖️（公式実装）やGlamaスコアバッジで品質を判断し、信頼性の高いServerを選ぶ",
+    "trigger_phrases": [
+      "本番環境や重要なプロジェクトでMCP Serverを選定する時",
+      "公式・評価済みServer優先",
+      "Glama評価システム",
+      "GitHub Stats",
+      "🎖️（公式実装）やGlamaスコアバッジで品質を判断し、信頼性の高いServerを選ぶ"
+    ],
+    "source_url": "https://github.com/punkpeye/awesome-mcp-servers",
+    "source_author": "punkpeye",
+    "added_at": "2026-03-16T00:06:43.141807+00:00"
+  },
+  {
+    "slug": "既存実装からの学習",
+    "name": "既存実装からの学習",
+    "category": "other",
+    "description": "類似機能を持つMCP Serverのコードを参照し、実装パターンや設定方法を学ぶ",
+    "trigger_phrases": [
+      "独自のMCP Serverを開発する際の実装ガイドが欲しい時",
+      "既存実装からの学習",
+      "Git clone",
+      "コードエディタ",
+      "類似機能を持つMCP Serverのコードを参照し、実装パターンや設定方法を学ぶ"
+    ],
+    "source_url": "https://github.com/punkpeye/awesome-mcp-servers",
+    "source_author": "punkpeye",
+    "added_at": "2026-03-16T00:06:43.141807+00:00"
   }
 ]
