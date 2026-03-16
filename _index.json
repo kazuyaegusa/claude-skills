@@ -2361,5 +2361,122 @@
     "source_url": "https://github.com/code-yeongyu/oh-my-openagent",
     "source_author": "code-yeongyu",
     "added_at": "2026-03-16T00:11:08.771155+00:00"
+  },
+  {
+    "slug": "agent-skillsでドメイン専門知識を注入",
+    "name": "Agent Skillsでドメイン専門知識を注入",
+    "category": "claude-code-workflow",
+    "description": "Claude Codeに特定分野（DevOps、科学計算、セキュリティ監査等）の専門的な知識と実行能力を付与する",
+    "trigger_phrases": [
+      "汎用的なClaude Codeだけでは専門性が不足する場合（例：CodeQLによる静的解析、学術論文執筆、IaCコード生成）",
+      "Agent Skillsでドメイン専門知識を注入",
+      "cc-devops-skills",
+      "Trail of Bits Security Skills",
+      "Claude Scientific Skills"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-16T00:15:38.091555+00:00"
+  },
+  {
+    "slug": "hooksで開発プロセスをガードレール化",
+    "name": "Hooksで開発プロセスをガードレール化",
+    "category": "claude-code-workflow",
+    "description": "Claude Codeのライフサイクルイベント（ファイル書き込み前、Bash実行前等）に自動チェック・承認ロジックを挿入する",
+    "trigger_phrases": [
+      "危険なコマンド（rm -rf等）の自動承認を防ぎたいとき、TDDプロセスを強制したいとき、シークレット漏洩をリアルタイム検出したいとき",
+      "Hooksで開発プロセスをガードレール化",
+      "Dippy（AST解析による安全コマンド自動承認）",
+      "parry（プロンプトインジェクションスキャナー）",
+      "TDD Guard（TDD原則違反を検出）"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-16T00:15:38.091555+00:00"
+  },
+  {
+    "slug": "slash-commandsでタスク固有プロンプトをテンプレート化",
+    "name": "Slash Commandsでタスク固有プロンプトをテンプレート化",
+    "category": "claude-code-workflow",
+    "description": "頻繁に使う複雑なプロンプト（PR作成、GitHub Issue修正、TDD実装等）を再利用可能なコマンドとして定義",
+    "trigger_phrases": [
+      "PR作成、Issue修正、コミットメッセージ生成、ドキュメント更新など定型的だが複雑な指示を繰り返す場合",
+      "Slash Commandsでタスク固有プロンプトをテンプレート化",
+      "/create-pr",
+      "/fix-github-issue",
+      "/tdd-implement",
+      "/commit"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-16T00:15:38.091555+00:00"
+  },
+  {
+    "slug": "orchestratorsで複数エージェントを並列実行",
+    "name": "Orchestratorsで複数エージェントを並列実行",
+    "category": "claude-code-workflow",
+    "description": "複数のClaude Codeインスタンスを並列・階層的に管理し、大規模タスクを分散処理",
+    "trigger_phrases": [
+      "大規模リファクタリング、複数モジュールの同時開発、並列テスト実行など、独立した複数タスクを効率的に処理したいとき",
+      "Orchestratorsで複数エージェントを並列実行",
+      "Auto-Claude",
+      "Claude Squad",
+      "Claude Swarm",
+      "Happy Coder",
+      "複数のClaude Codeインスタンスを並列・階層的に管理し、大規模タスクを分散処理"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-16T00:15:38.091555+00:00"
+  },
+  {
+    "slug": "usage-monitorsでトークン消費を可視化分析",
+    "name": "Usage Monitorsでトークン消費を可視化・分析",
+    "category": "claude-code-workflow",
+    "description": "Claude Codeのトークン使用量、コスト、バーンレート、セッション履歴を詳細に追跡・可視化",
+    "trigger_phrases": [
+      "トークン消費の予測、コスト管理、使用パターンの分析、チーム内での使用量比較を行いたいとき",
+      "Usage Monitorsでトークン消費を可視化・分析",
+      "ccflare / better-ccflare",
+      "CC Usage",
+      "Claudex",
+      "viberank",
+      "Claude Codeのトークン使用量、コスト、バーンレート、セッション履歴を詳細に追跡・可視化"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-16T00:15:38.091555+00:00"
+  },
+  {
+    "slug": "claudemdでプロジェクト固有ルールを定義",
+    "name": "CLAUDE.mdでプロジェクト固有ルールを定義",
+    "category": "claude-code-workflow",
+    "description": "リポジトリのルート、またはグローバル設定に配置するMarkdownファイルで、Claude Codeにプロジェクト固有のコーディング規約・ワークフロー・コンテキストを指示",
+    "trigger_phrases": [
+      "特定の言語（Kotlin Multiplatform、Clojure等）やフレームワーク（Next.js、Laravel TALL等）、開発手法（TDD、REPL駆動等）を使うプロジェクトで、Claude Codeに文脈を理解させたいとき",
+      "CLAUDE.mdでプロジェクト固有ルールを定義",
+      "Metabase CLAUDE.md（Clojure REPL駆動）",
+      "Giselle CLAUDE.md（pnpm + Vitest）",
+      "Laravel TALL Stack CLAUDE.md"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-16T00:15:38.091555+00:00"
+  },
+  {
+    "slug": "ide-integrationsでエディタ内でclaude-codeを操作",
+    "name": "IDE Integrationsでエディタ内でClaude Codeを操作",
+    "category": "claude-code-workflow",
+    "description": "VS Code、Neovim、Emacs等のエディタ内でClaude Codeとインタラクティブに対話",
+    "trigger_phrases": [
+      "エディタ中心のワークフローでClaude Codeを使いたいとき、リアルタイムでコード提案を受けたいとき",
+      "IDE Integrationsでエディタ内でClaude Codeを操作",
+      "claude-code.nvim",
+      "claude-code-ide.el",
+      "Claudix（VSCode拡張）"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-16T00:15:38.091555+00:00"
   }
 ]

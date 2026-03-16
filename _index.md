@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 218 スキル
+合計: 225 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -222,3 +222,10 @@
 | ultraworkキーワードによる全機能自動起動 | `ultrawork`キーワードによる全機能自動起動 | agent-orchestration | プロンプトに`ultrawork`（または短縮形`ulw`）を含めるだけで、全ての並列エージェント・探索・継続強制が自動 | code-yeongyu |
 | コンテキスト分散戦略background-agents | コンテキスト分散戦略（Background Agents） | agent-orchestration | メインエージェントのコンテキストを軽く保つため、重い探索・検索タスクをバックグラウンドの専門エージェントに並列委譲する | code-yeongyu |
 | comment-checkerによるコード品質保証 | Comment Checkerによるコード品質保証 | agent-orchestration | LLMが過剰なコメントを追加しようとすると警告し、人間が書いたコードと区別がつかないレベルに保つ | code-yeongyu |
+| agent-skillsでドメイン専門知識を注入 | Agent Skillsでドメイン専門知識を注入 | claude-code-workflow | Claude Codeに特定分野（DevOps、科学計算、セキュリティ監査等）の専門的な知識と実行能力を付与する | hesreallyhim |
+| hooksで開発プロセスをガードレール化 | Hooksで開発プロセスをガードレール化 | claude-code-workflow | Claude Codeのライフサイクルイベント（ファイル書き込み前、Bash実行前等）に自動チェック・承認ロジックを挿入 | hesreallyhim |
+| slash-commandsでタスク固有プロンプトをテンプレート化 | Slash Commandsでタスク固有プロンプトをテンプレート化 | claude-code-workflow | 頻繁に使う複雑なプロンプト（PR作成、GitHub Issue修正、TDD実装等）を再利用可能なコマンドとして定義 | hesreallyhim |
+| orchestratorsで複数エージェントを並列実行 | Orchestratorsで複数エージェントを並列実行 | claude-code-workflow | 複数のClaude Codeインスタンスを並列・階層的に管理し、大規模タスクを分散処理 | hesreallyhim |
+| usage-monitorsでトークン消費を可視化分析 | Usage Monitorsでトークン消費を可視化・分析 | claude-code-workflow | Claude Codeのトークン使用量、コスト、バーンレート、セッション履歴を詳細に追跡・可視化 | hesreallyhim |
+| claudemdでプロジェクト固有ルールを定義 | CLAUDE.mdでプロジェクト固有ルールを定義 | claude-code-workflow | リポジトリのルート、またはグローバル設定に配置するMarkdownファイルで、Claude Codeにプロジェクト固有の | hesreallyhim |
+| ide-integrationsでエディタ内でclaude-codeを操作 | IDE Integrationsでエディタ内でClaude Codeを操作 | claude-code-workflow | VS Code、Neovim、Emacs等のエディタ内でClaude Codeとインタラクティブに対話 | hesreallyhim |
