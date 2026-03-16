@@ -2625,5 +2625,165 @@
     "source_url": "https://github.com/OthmanAdi/planning-with-files",
     "source_author": "OthmanAdi",
     "added_at": "2026-03-16T00:28:19.147868+00:00"
+  },
+  {
+    "slug": "waspテンプレートで即座にsaas基盤を構築する",
+    "name": "Waspテンプレートで即座にSaaS基盤を構築する",
+    "category": "claude-code-workflow",
+    "description": "Wasp CLIの`wasp new -t saas`コマンドで、認証・決済・メール・ジョブ・UI・AI統合が事前設定されたプロジェクトを生成する",
+    "trigger_phrases": [
+      "新規SaaSプロジェクトの初期セットアップ時、または既存プロジェクトでWaspへの移行を検討する時",
+      "Waspテンプレートで即座にSaaS基盤を構築する",
+      "Wasp CLI",
+      "React",
+      "Node.js",
+      "Prisma",
+      "ShadCN UI"
+    ],
+    "source_url": "https://github.com/wasp-lang/open-saas",
+    "source_author": "wasp-lang",
+    "added_at": "2026-03-16T00:32:13.320800+00:00"
+  },
+  {
+    "slug": "waspの宣言的設定で認証を数行で実装する",
+    "name": "Waspの宣言的設定で認証を数行で実装する",
+    "category": "ui-ux",
+    "description": "Waspの設定ファイルに認証プロバイダーを宣言するだけで、フルスタック認証（Email確認・ソーシャルログイン）を自動生成する",
+    "trigger_phrases": [
+      "ユーザー登録・ログイン機能が必要な全てのSaaSアプリ開発時",
+      "Waspの宣言的設定で認証を数行で実装する",
+      "Wasp",
+      "Prisma"
+    ],
+    "source_url": "https://github.com/wasp-lang/open-saas",
+    "source_author": "wasp-lang",
+    "added_at": "2026-03-16T00:32:13.320800+00:00"
+  },
+  {
+    "slug": "waspのバックグラウンドジョブでcronキュー処理を設定する",
+    "name": "Waspのバックグラウンドジョブでcron/キュー処理を設定する",
+    "category": "automation-pipeline",
+    "description": "Waspの設定ファイルでジョブ関数を宣言し、cron式またはキューとして自動実行する仕組みを構築する",
+    "trigger_phrases": [
+      "定期実行が必要なタスク（日次レポート、サブスク更新チェック等）やバックグラウンド処理（画像変換、メール送信等）を実装する時",
+      "Waspのバックグラウンドジョブでcron/キュー処理を設定する",
+      "Wasp",
+      "Node.js",
+      "Waspの設定ファイルでジョブ関数を宣言し、cron式またはキューとして自動実行する仕組みを構築する"
+    ],
+    "source_url": "https://github.com/wasp-lang/open-saas",
+    "source_author": "wasp-lang",
+    "added_at": "2026-03-16T00:32:13.320800+00:00"
+  },
+  {
+    "slug": "型安全なエンドツーエンド通信を自動生成する",
+    "name": "型安全なエンドツーエンド通信を自動生成する",
+    "category": "dev-tool",
+    "description": "バックエンドの関数型を定義すると、Waspがフロントエンドで型推論されたRPC関数を自動生成する",
+    "trigger_phrases": [
+      "フロントエンド・バックエンド間の型安全性を保証したい全ての開発シーン",
+      "型安全なエンドツーエンド通信を自動生成する",
+      "Wasp",
+      "TypeScript",
+      "バックエンドの関数型を定義すると、Waspがフロントエンドで型推論されたRPC関数を自動生成する"
+    ],
+    "source_url": "https://github.com/wasp-lang/open-saas",
+    "source_author": "wasp-lang",
+    "added_at": "2026-03-16T00:32:13.320800+00:00"
+  },
+  {
+    "slug": "ワンコマンドでrailwayflyioへデプロイする",
+    "name": "ワンコマンドでRailway/Fly.ioへデプロイする",
+    "category": "infrastructure",
+    "description": "Wasp CLIの`wasp deploy`コマンドで、DB・サーバー・クライアントを一括でホスティングサービスにデプロイする",
+    "trigger_phrases": [
+      "開発環境から本番環境への初回デプロイ時、または更新をデプロイする時",
+      "ワンコマンドでRailway/Fly.ioへデプロイする",
+      "Wasp CLI",
+      "Railway",
+      "Fly.io"
+    ],
+    "source_url": "https://github.com/wasp-lang/open-saas",
+    "source_author": "wasp-lang",
+    "added_at": "2026-03-16T00:32:13.320800+00:00"
+  },
+  {
+    "slug": "ai開発ツール向けのagentsmdスキルを活用する",
+    "name": "AI開発ツール向けのAGENTS.md/スキルを活用する",
+    "category": "claude-code-workflow",
+    "description": "プロジェクトに同梱されたAGENTS.md、Cursorルール、llms-full.txtをAIコーディングツール（Claude Code/Cursor等）に読み込ませ、コンテキストを与える",
+    "trigger_phrases": [
+      "AIコーディングツールを使ってOpen SaaSプロジェクトを拡張する全ての場面",
+      "AI開発ツール向けのAGENTS.md/スキルを活用する",
+      "Claude Code",
+      "Cursor",
+      "その他LLMベースのコーディングツール"
+    ],
+    "source_url": "https://github.com/wasp-lang/open-saas",
+    "source_author": "wasp-lang",
+    "added_at": "2026-03-16T00:32:13.320800+00:00"
+  },
+  {
+    "slug": "awesome-listでスキルを分野別に整理して公開する",
+    "name": "Awesome Listでスキルを分野別に整理して公開する",
+    "category": "ui-ux",
+    "description": "GitHubでClaude Skillsを11カテゴリ（Document, Development, Data, Scientific, Writing, Learning, Media, Health, Collaboration, Security, Utility）に分類し、各スキルにリンク・説明・技術スタックを添えて公開する",
+    "trigger_phrases": [
+      "Claude Skillsのエコシステムが成長し、個別スキルの数が多すぎて全体像が見えなくなった時。または、自分のスキルを広く共有したい時",
+      "Awesome Listでスキルを分野別に整理して公開する",
+      "GitHub",
+      "Markdown"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-03-16T00:36:23.259446+00:00"
+  },
+  {
+    "slug": "セキュリティスキルを開発ワークフローに組み込む",
+    "name": "セキュリティスキルを開発ワークフローに組み込む",
+    "category": "claude-code-workflow",
+    "description": "VibeSec-Skill（OWASP Top 10対応）やTrail of Bits Skills（CodeQL/Semgrep）をClaude Codeに導入し、コード生成時に自動的にセキュリティチェックを実施する",
+    "trigger_phrases": [
+      "Webアプリケーション開発でユーザー入力を扱う時、API認証・認可を実装する時、LLMに初めてコードを生成させる時",
+      "セキュリティスキルを開発ワークフローに組み込む",
+      "VibeSec-Skill",
+      "Trail of Bits Skills",
+      "CodeQL",
+      "Semgrep"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-03-16T00:36:23.259446+00:00"
+  },
+  {
+    "slug": "スキル発見導入検証のワークフローを確立する",
+    "name": "スキル発見→導入→検証のワークフローを確立する",
+    "category": "claude-code-workflow",
+    "description": "Awesome Listからスキルを検索し、ローカルにクローンして試用、プロジェクトに適合するか検証してから正式採用する",
+    "trigger_phrases": [
+      "新機能実装前、データ分析タスク開始前、プロジェクトセットアップ時",
+      "スキル発見→導入→検証のワークフローを確立する",
+      "git",
+      "Claude Code"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-03-16T00:36:23.259446+00:00"
+  },
+  {
+    "slug": "mcp-serverとskillを併用して機能を拡張する",
+    "name": "MCP ServerとSkillを併用して機能を拡張する",
+    "category": "claude-code-workflow",
+    "description": "MCP（Model Context Protocol）サーバーとClaude Skillsを組み合わせ、外部API（Linear, Google Workspace, NotebookLM等）とのシームレスな統合を実現する",
+    "trigger_phrases": [
+      "外部SaaS（Linear, Jira, Google Workspace）と連携する時、API呼び出しとビジネスロジックを分離したい時",
+      "MCP ServerとSkillを併用して機能を拡張する",
+      "Model Context Protocol",
+      "linear-claude-skill",
+      "google-workspace-skills"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-03-16T00:36:23.259446+00:00"
   }
 ]

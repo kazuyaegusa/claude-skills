@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 235 スキル
+合計: 245 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -239,3 +239,13 @@
 | 2-actionルールによる発見保存 | 2-Actionルールによる発見保存 | context-management | view や browser 操作を2回実行するごとに、発見した情報を findings.md に保存する。 | OthmanAdi |
 | エラーの永続化とアプローチ変更 | エラーの永続化とアプローチ変更 | agent-orchestration | 失敗したアクションとその理由を progress.md に記録し、同じ方法を5回繰り返さず、試行回数とアプローチ変更を追 | OthmanAdi |
 | マルチプラットフォーム対応スキル配布 | マルチプラットフォーム対応スキル配布 | claude-code-workflow | Agent Skills仕様（agentskills.io）に準拠したSKILL.mdと、各IDE固有のフォーマット（h | OthmanAdi |
+| waspテンプレートで即座にsaas基盤を構築する | Waspテンプレートで即座にSaaS基盤を構築する | claude-code-workflow | Wasp CLIの`wasp new -t saas`コマンドで、認証・決済・メール・ジョブ・UI・AI統合が事前設定さ | wasp-lang |
+| waspの宣言的設定で認証を数行で実装する | Waspの宣言的設定で認証を数行で実装する | ui-ux | Waspの設定ファイルに認証プロバイダーを宣言するだけで、フルスタック認証（Email確認・ソーシャルログイン）を自動生 | wasp-lang |
+| waspのバックグラウンドジョブでcronキュー処理を設定する | Waspのバックグラウンドジョブでcron/キュー処理を設定する | automation-pipeline | Waspの設定ファイルでジョブ関数を宣言し、cron式またはキューとして自動実行する仕組みを構築する | wasp-lang |
+| 型安全なエンドツーエンド通信を自動生成する | 型安全なエンドツーエンド通信を自動生成する | dev-tool | バックエンドの関数型を定義すると、Waspがフロントエンドで型推論されたRPC関数を自動生成する | wasp-lang |
+| ワンコマンドでrailwayflyioへデプロイする | ワンコマンドでRailway/Fly.ioへデプロイする | infrastructure | Wasp CLIの`wasp deploy`コマンドで、DB・サーバー・クライアントを一括でホスティングサービスにデプロ | wasp-lang |
+| ai開発ツール向けのagentsmdスキルを活用する | AI開発ツール向けのAGENTS.md/スキルを活用する | claude-code-workflow | プロジェクトに同梱されたAGENTS.md、Cursorルール、llms-full.txtをAIコーディングツール（Cl | wasp-lang |
+| awesome-listでスキルを分野別に整理して公開する | Awesome Listでスキルを分野別に整理して公開する | ui-ux | GitHubでClaude Skillsを11カテゴリ（Document, Development, Data, Sci | BehiSecc |
+| セキュリティスキルを開発ワークフローに組み込む | セキュリティスキルを開発ワークフローに組み込む | claude-code-workflow | VibeSec-Skill（OWASP Top 10対応）やTrail of Bits Skills（CodeQL/Se | BehiSecc |
+| スキル発見導入検証のワークフローを確立する | スキル発見→導入→検証のワークフローを確立する | claude-code-workflow | Awesome Listからスキルを検索し、ローカルにクローンして試用、プロジェクトに適合するか検証してから正式採用する | BehiSecc |
+| mcp-serverとskillを併用して機能を拡張する | MCP ServerとSkillを併用して機能を拡張する | claude-code-workflow | MCP（Model Context Protocol）サーバーとClaude Skillsを組み合わせ、外部API（Li | BehiSecc |
