@@ -20,18 +20,6 @@
     "OTEL_RESOURCE_ATTRIBUTES": "user.email=kazuya.egusa@aixeed.co.jp"
   },
   "hooks": {
-    "SessionStart": [
-      {
-        "matcher": "startup|resume|clear|compact",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "CLAUDE_PLUGIN_ROOT=\"$HOME/.claude/skills/obra--superpowers\" bash \"$HOME/.claude/skills/obra--superpowers/hooks/session-start\"",
-            "timeout": 30
-          }
-        ]
-      }
-    ],
     "PreToolUse": [
       {
         "command": "~/.claude/star-office-hook.sh writing 'コード編集中'",
@@ -51,6 +39,15 @@
         "command": "~/.claude/star-office-hook.sh idle '待機中'"
       }
     ]
+  },
+  "mcpServers": {
+    "chrome-cdp": {
+      "command": "bash",
+      "args": ["/Users/apple/Documents/01_Global/sennin_scout/scripts/chrome-cdp-ensure.sh"],
+      "env": {
+        "CDP_PORT": "9222"
+      }
+    }
   },
   "language": "japanese",
   "model": "opus[1m]",

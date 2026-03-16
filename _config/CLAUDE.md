@@ -27,6 +27,15 @@
 - 理由: Claude CLI は API キーよりも Claude Code の subscription / `setup-token` 認証を優先して使わせたい
 - Anthropic API を明示的に使いたい場合のみ、CLI ではなく API クライアント側で `ANTHROPIC_API_KEY` を利用する
 
+## SuperPowers スキル（必須）
+
+コーディングタスクを受けたとき、コードを書く前に必ず以下のスキルを確認し、該当するものをSkill toolで呼び出すこと:
+
+- `obra--superpowers` — コーディングタスク開始時に必ず呼ぶ。brainstorming → 設計 → TDD → レビューの工程を強制する
+- 1%でも該当する可能性があるスキルは呼び出す。「スキルは不要」と判断してはいけない
+- スキルを呼んだら「I'm using the [skill] skill to [purpose]」とアナウンスする
+- **いきなりコードを書き始めることは禁止。** まずbrainstormingスキルで要件を明確化する
+
 ## 運用メモ
 
 - `claude -p` が `Credit balance is too low` を返したら、まず API キーが子プロセスへ漏れていないか確認する
