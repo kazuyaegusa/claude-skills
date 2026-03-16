@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 225 スキル
+合計: 235 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -229,3 +229,13 @@
 | usage-monitorsでトークン消費を可視化分析 | Usage Monitorsでトークン消費を可視化・分析 | claude-code-workflow | Claude Codeのトークン使用量、コスト、バーンレート、セッション履歴を詳細に追跡・可視化 | hesreallyhim |
 | claudemdでプロジェクト固有ルールを定義 | CLAUDE.mdでプロジェクト固有ルールを定義 | claude-code-workflow | リポジトリのルート、またはグローバル設定に配置するMarkdownファイルで、Claude Codeにプロジェクト固有の | hesreallyhim |
 | ide-integrationsでエディタ内でclaude-codeを操作 | IDE Integrationsでエディタ内でClaude Codeを操作 | claude-code-workflow | VS Code、Neovim、Emacs等のエディタ内でClaude Codeとインタラクティブに対話 | hesreallyhim |
+| mcpサーバー経由でlspベースのシンボル解析を提供する | MCPサーバー経由でLSPベースのシンボル解析を提供する | claude-code-workflow | Language Server Protocol実装をMCPサーバーでラップし、`find_symbol`/`inser | oraios |
+| jetbrainsプラグインでより強力なコード解析を利用する | JetBrainsプラグインでより強力なコード解析を利用する | agent-orchestration | IntelliJ/PyCharm等のJetBrains IDE解析エンジンを使ってSerenaツールを提供し、LSPより | oraios |
+| mcpoでmcp非対応llmchatgpt等にserenaを接続する | mcpoでMCP非対応LLM（ChatGPT等）にSerenaを接続する | agent-orchestration | mcpo（MCP to OpenAPI変換ツール）を使ってSerena MCPサーバーをOpenAPIエンドポイント化し | oraios |
+| カスタムエージェントフレームワークにserenaツールを組み込む | カスタムエージェントフレームワークにSerenaツールを組み込む | agent-orchestration | Serenaのツール実装（`serena.agent.Tool`サブクラス）を独自エージェントフレームワークに移植し、フ | oraios |
+| 3ファイルパターンによる永続化 | 3ファイルパターンによる永続化 | claude-code-workflow | 全ての複雑タスクで task_plan.md（フェーズと進捗）、findings.md（調査結果）、progress.m | OthmanAdi |
+| hookによる注意操作attention-manipulation | Hookによる注意操作（Attention Manipulation） | claude-code-workflow | PreToolUse hookでツール実行前に task_plan.md を読み直し、PostToolUse hookで | OthmanAdi |
+| セッションリカバリー機能 | セッションリカバリー機能 | claude-code-workflow | コンテキストが埋まり /clear を実行した際、~/.claude/projects/ から前回セッションデータを自動 | OthmanAdi |
+| 2-actionルールによる発見保存 | 2-Actionルールによる発見保存 | context-management | view や browser 操作を2回実行するごとに、発見した情報を findings.md に保存する。 | OthmanAdi |
+| エラーの永続化とアプローチ変更 | エラーの永続化とアプローチ変更 | agent-orchestration | 失敗したアクションとその理由を progress.md に記録し、同じ方法を5回繰り返さず、試行回数とアプローチ変更を追 | OthmanAdi |
+| マルチプラットフォーム対応スキル配布 | マルチプラットフォーム対応スキル配布 | claude-code-workflow | Agent Skills仕様（agentskills.io）に準拠したSKILL.mdと、各IDE固有のフォーマット（h | OthmanAdi |

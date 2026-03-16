@@ -2478,5 +2478,152 @@
     "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
     "source_author": "hesreallyhim",
     "added_at": "2026-03-16T00:15:38.091555+00:00"
+  },
+  {
+    "slug": "mcpサーバー経由でlspベースのシンボル解析を提供する",
+    "name": "MCPサーバー経由でLSPベースのシンボル解析を提供する",
+    "category": "claude-code-workflow",
+    "description": "Language Server Protocol実装をMCPサーバーでラップし、`find_symbol`/`insert_after_symbol`等のツールをLLMに公開する",
+    "trigger_phrases": [
+      "コーディングエージェントが大規模プロジェクトで特定のクラス/関数を探す際、ファイル全体読み込みやgrep検索では非効率・不正確な場合",
+      "MCPサーバー経由でLSPベースのシンボル解析を提供する",
+      "Serena (https://github.com/oraios/serena)",
+      "uv (Pythonパッケージマネージャー)",
+      "各言語のLSP実装（自動管理）",
+      "MCP SDK (Python)"
+    ],
+    "source_url": "https://github.com/oraios/serena",
+    "source_author": "oraios",
+    "added_at": "2026-03-16T00:23:41.831374+00:00"
+  },
+  {
+    "slug": "jetbrainsプラグインでより強力なコード解析を利用する",
+    "name": "JetBrainsプラグインでより強力なコード解析を利用する",
+    "category": "agent-orchestration",
+    "description": "IntelliJ/PyCharm等のJetBrains IDE解析エンジンを使ってSerenaツールを提供し、LSPより高度な言語・フレームワークサポートを得る",
+    "trigger_phrases": [
+      "JetBrains IDEを使っており、フレームワーク固有の解析（Spring Bean依存、Djangoモデル関係等）をLLMに提供したい場合、またはLSPで不十分な精度の時",
+      "JetBrainsプラグインでより強力なコード解析を利用する",
+      "Serena JetBrainsプラグイン",
+      "IntelliJ Platform API"
+    ],
+    "source_url": "https://github.com/oraios/serena",
+    "source_author": "oraios",
+    "added_at": "2026-03-16T00:23:41.831374+00:00"
+  },
+  {
+    "slug": "mcpoでmcp非対応llmchatgpt等にserenaを接続する",
+    "name": "mcpoでMCP非対応LLM（ChatGPT等）にSerenaを接続する",
+    "category": "agent-orchestration",
+    "description": "mcpo（MCP to OpenAPI変換ツール）を使ってSerena MCPサーバーをOpenAPIエンドポイント化し、ChatGPTや他のツール呼び出し対応LLMで利用する",
+    "trigger_phrases": [
+      "MCP非対応だがツール呼び出しは対応しているLLM（ChatGPT/Gemini等）でSerenaを使いたい場合",
+      "mcpoでMCP非対応LLM（ChatGPT等）にSerenaを接続する",
+      "mcpo",
+      "Serena"
+    ],
+    "source_url": "https://github.com/oraios/serena",
+    "source_author": "oraios",
+    "added_at": "2026-03-16T00:23:41.831374+00:00"
+  },
+  {
+    "slug": "カスタムエージェントフレームワークにserenaツールを組み込む",
+    "name": "カスタムエージェントフレームワークにSerenaツールを組み込む",
+    "category": "agent-orchestration",
+    "description": "Serenaのツール実装（`serena.agent.Tool`サブクラス）を独自エージェントフレームワークに移植し、フレームワーク固有のツール呼び出しインターフェースで利用する",
+    "trigger_phrases": [
+      "既存のエージェントフレームワーク（LangChain等）を使っており、Serenaのコード操作ツールだけを追加したい場合",
+      "カスタムエージェントフレームワークにSerenaツールを組み込む",
+      "Serena（ツール実装部分）",
+      "任意のエージェントフレームワーク"
+    ],
+    "source_url": "https://github.com/oraios/serena",
+    "source_author": "oraios",
+    "added_at": "2026-03-16T00:23:41.831374+00:00"
+  },
+  {
+    "slug": "3ファイルパターンによる永続化",
+    "name": "3ファイルパターンによる永続化",
+    "category": "claude-code-workflow",
+    "description": "全ての複雑タスクで task_plan.md（フェーズと進捗）、findings.md（調査結果）、progress.md（セッションログとテスト結果）の3ファイルを作成し、重要な情報をコンテキストではなくファイルに保存する。",
+    "trigger_phrases": [
+      "3ステップ以上のタスク、調査タスク、プロジェクト作成、多数のツール呼び出しを伴うタスクの場合。単純な質問や1ファイル編集、クイック検索には不要。",
+      "3ファイルパターンによる永続化",
+      "Claude Code Plugin",
+      "Agent Skills仕様対応エージェント（Cursor、Gemini CLI、Kiro、OpenClaw等16プラットフォーム）"
+    ],
+    "source_url": "https://github.com/OthmanAdi/planning-with-files",
+    "source_author": "OthmanAdi",
+    "added_at": "2026-03-16T00:28:19.147868+00:00"
+  },
+  {
+    "slug": "hookによる注意操作attention-manipulation",
+    "name": "Hookによる注意操作（Attention Manipulation）",
+    "category": "claude-code-workflow",
+    "description": "PreToolUse hookでツール実行前に task_plan.md を読み直し、PostToolUse hookでファイル書き込み後に進捗更新を促し、Stop hookで完了前に全フェーズ完了を検証する。",
+    "trigger_phrases": [
+      "長期タスクで目標を見失わせたくない場合、同じエラーを繰り返させたくない場合、タスク完了の抜け漏れを防ぎたい場合。",
+      "Hookによる注意操作（Attention Manipulation）",
+      "bash / PowerShell",
+      "IDE hook system (hooks.json)"
+    ],
+    "source_url": "https://github.com/OthmanAdi/planning-with-files",
+    "source_author": "OthmanAdi",
+    "added_at": "2026-03-16T00:28:19.147868+00:00"
+  },
+  {
+    "slug": "セッションリカバリー機能",
+    "name": "セッションリカバリー機能",
+    "category": "claude-code-workflow",
+    "description": "コンテキストが埋まり /clear を実行した際、~/.claude/projects/ から前回セッションデータを自動検出し、計画ファイル更新後の会話を抽出してキャッチアップレポートを生成する。",
+    "trigger_phrases": [
+      "長期プロジェクトで複数セッションにわたる作業を行う場合、コンテキストリセット後も作業を継続したい場合。",
+      "セッションリカバリー機能",
+      "Claude Code sessionデータ構造"
+    ],
+    "source_url": "https://github.com/OthmanAdi/planning-with-files",
+    "source_author": "OthmanAdi",
+    "added_at": "2026-03-16T00:28:19.147868+00:00"
+  },
+  {
+    "slug": "2-actionルールによる発見保存",
+    "name": "2-Actionルールによる発見保存",
+    "category": "context-management",
+    "description": "view や browser 操作を2回実行するごとに、発見した情報を findings.md に保存する。",
+    "trigger_phrases": [
+      "リサーチタスク、複数ソースからの情報収集、長時間の調査が必要な場合。",
+      "2-Actionルールによる発見保存"
+    ],
+    "source_url": "https://github.com/OthmanAdi/planning-with-files",
+    "source_author": "OthmanAdi",
+    "added_at": "2026-03-16T00:28:19.147868+00:00"
+  },
+  {
+    "slug": "エラーの永続化とアプローチ変更",
+    "name": "エラーの永続化とアプローチ変更",
+    "category": "agent-orchestration",
+    "description": "失敗したアクションとその理由を progress.md に記録し、同じ方法を5回繰り返さず、試行回数とアプローチ変更を追跡する。",
+    "trigger_phrases": [
+      "試行錯誤が必要なタスク、不安定なAPIやツールとのやりとり、デバッグ作業。",
+      "エラーの永続化とアプローチ変更"
+    ],
+    "source_url": "https://github.com/OthmanAdi/planning-with-files",
+    "source_author": "OthmanAdi",
+    "added_at": "2026-03-16T00:28:19.147868+00:00"
+  },
+  {
+    "slug": "マルチプラットフォーム対応スキル配布",
+    "name": "マルチプラットフォーム対応スキル配布",
+    "category": "claude-code-workflow",
+    "description": "Agent Skills仕様（agentskills.io）に準拠したSKILL.mdと、各IDE固有のフォーマット（hooks.json、.gemini/skills/等）を同一リポジトリで提供し、npx skills add コマンドで一括インストール可能にする。",
+    "trigger_phrases": [
+      "複数IDE環境で使われるスキルを配布したい場合、Agent Skills仕様に準拠したツールを開発したい場合。",
+      "マルチプラットフォーム対応スキル配布",
+      "npx skills CLI",
+      "Agent Skills仕様（agentskills.io）"
+    ],
+    "source_url": "https://github.com/OthmanAdi/planning-with-files",
+    "source_author": "OthmanAdi",
+    "added_at": "2026-03-16T00:28:19.147868+00:00"
   }
 ]
