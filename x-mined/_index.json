@@ -86,5 +86,63 @@
     "source_url": "https://x.com/voluntas/status/2033142008966226037",
     "source_author": "V",
     "added_at": "2026-03-16T04:42:03.336201+00:00"
+  },
+  {
+    "slug": "依存ゼロでx投稿をjson取得する",
+    "name": "依存ゼロでX投稿をJSON取得する",
+    "category": "agent-orchestration",
+    "description": "追加ライブラリなしで単一X投稿のテキスト・統計・メディア・引用ツイートをJSONで取得する",
+    "trigger_phrases": [
+      "AIエージェントやスクリプトにX投稿URLが渡され、内容をコンテキストとして取得したいとき。単一投稿のみ必要でCamofox不要の軽量環境",
+      "依存ゼロでX投稿をJSON取得する",
+      "x-tweet-fetcher (Python 3.7+, 標準ライブラリのみ)"
+    ],
+    "source_url": "https://x.com/liangwenhao3/status/2033170553469882799?s=20",
+    "source_author": "Noise",
+    "added_at": "2026-03-16T06:33:43.949147+00:00"
+  },
+  {
+    "slug": "camofoxでリプライツリーを丸ごと取得する",
+    "name": "Camofoxでリプライツリーを丸ごと取得する",
+    "category": "other",
+    "description": "CamofoxブラウザをバックエンドとしてX投稿へのコメント（スレッド形式）・ユーザータイムライン・Xアーティクルの全文を取得する",
+    "trigger_phrases": [
+      "投稿への反応（賛否・補足情報）や特定アカウントの発言履歴をまとめて分析したいとき。単一投稿だけでなく文脈が必要な場合",
+      "Camofoxでリプライツリーを丸ごと取得する",
+      "x-tweet-fetcher",
+      "Camofox（ブラウザバックエンド）"
+    ],
+    "source_url": "https://x.com/liangwenhao3/status/2033170553469882799?s=20",
+    "source_author": "Noise",
+    "added_at": "2026-03-16T06:33:43.949147+00:00"
+  },
+  {
+    "slug": "cronフレンドリー終了コードで定期監視を組む",
+    "name": "Cronフレンドリー終了コードで定期監視を組む",
+    "category": "automation-pipeline",
+    "description": "x-tweet-fetcherの終了コードを使ってCronジョブで「新着あり/なし」を判定し、新着時のみ後続処理を走らせる",
+    "trigger_phrases": [
+      "特定アカウントへの@mentionsや特定キーワード投稿を定期監視して、新着があったときだけDiscord通知・DB保存・LLM分析をトリガーしたいとき",
+      "Cronフレンドリー終了コードで定期監視を組む",
+      "x-tweet-fetcher",
+      "cron (launchd or systemd)"
+    ],
+    "source_url": "https://x.com/liangwenhao3/status/2033170553469882799?s=20",
+    "source_author": "Noise",
+    "added_at": "2026-03-16T06:33:43.949147+00:00"
+  },
+  {
+    "slug": "x-trackerでバースト拡散を検知する",
+    "name": "X-Trackerでバースト拡散を検知する",
+    "category": "other",
+    "description": "X-Tracker機能で投稿のフォロワー増減・エンゲージメント変化率を時系列追跡し、バースト（急拡散）を検知する",
+    "trigger_phrases": [
+      "競合アカウントや注目インフルエンサーの急成長投稿を早期発見したいとき、または自分の投稿の拡散パターンを分析したいとき",
+      "X-Trackerでバースト拡散を検知する",
+      "x-tweet-fetcher (X-Tracker機能, 追加依存なし)"
+    ],
+    "source_url": "https://x.com/liangwenhao3/status/2033170553469882799?s=20",
+    "source_author": "Noise",
+    "added_at": "2026-03-16T06:33:43.949147+00:00"
   }
 ]

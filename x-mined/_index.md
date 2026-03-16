@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 6 スキル
+合計: 10 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -12,3 +12,7 @@
 | 解析失敗 | (解析失敗) | other | WorkOS — Your app, Enterprise Ready. 
 https://
 workos.com これ | V |
+| 依存ゼロでx投稿をjson取得する | 依存ゼロでX投稿をJSON取得する | agent-orchestration | 追加ライブラリなしで単一X投稿のテキスト・統計・メディア・引用ツイートをJSONで取得する | Noise |
+| camofoxでリプライツリーを丸ごと取得する | Camofoxでリプライツリーを丸ごと取得する | other | CamofoxブラウザをバックエンドとしてX投稿へのコメント（スレッド形式）・ユーザータイムライン・Xアーティクルの全文 | Noise |
+| cronフレンドリー終了コードで定期監視を組む | Cronフレンドリー終了コードで定期監視を組む | automation-pipeline | x-tweet-fetcherの終了コードを使ってCronジョブで「新着あり/なし」を判定し、新着時のみ後続処理を走らせ | Noise |
+| x-trackerでバースト拡散を検知する | X-Trackerでバースト拡散を検知する | other | X-Tracker機能で投稿のフォロワー増減・エンゲージメント変化率を時系列追跡し、バースト（急拡散）を検知する | Noise |
