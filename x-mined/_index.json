@@ -1,0 +1,90 @@
+[
+  {
+    "slug": "superpowersスキルをエージェントにインストールする",
+    "name": "SuperPowersスキルをエージェントにインストールする",
+    "category": "claude-code-workflow",
+    "description": "Claude Code / Cursor / Codex / Gemini CLI に SuperPowers のスキルセットをインストールし、7段階パイプラインを自動有効化する",
+    "trigger_phrases": [
+      "Claude Code・Cursor・Codex・Gemini CLI でコーディングタスクを開始するとき。特に数時間以上かかる機能実装をエージェントに委任するとき",
+      "SuperPowersスキルをエージェントにインストールする",
+      "Claude Code",
+      "SuperPowers (github.com/obra/superpowers)",
+      "Cursor"
+    ],
+    "source_url": "https://x.com/btcqzy1/status/2033116943712993717",
+    "source_author": "爱丽丝呀！",
+    "added_at": "2026-03-16T04:40:14.700845+00:00"
+  },
+  {
+    "slug": "ソクラテス式追問で要件を仕様書に変換する",
+    "name": "ソクラテス式追問で要件を仕様書に変換する",
+    "category": "agent-orchestration",
+    "description": "エージェントが曖昧な要件に対して逆質問を繰り返し、読み通せるサイズのチャンクに分けた設計文書を自動生成する",
+    "trigger_phrases": [
+      "新機能の実装や大規模リファクタリングを開始するとき。要件が頭の中にあるが文書化されていない段階",
+      "ソクラテス式追問で要件を仕様書に変換する",
+      "SuperPowers",
+      "Claude Code または対応エージェント"
+    ],
+    "source_url": "https://x.com/btcqzy1/status/2033116943712993717",
+    "source_author": "爱丽丝呀！",
+    "added_at": "2026-03-16T04:40:14.700845+00:00"
+  },
+  {
+    "slug": "git-worktreeでエージェント作業を並列隔離する",
+    "name": "git worktreeでエージェント作業を並列隔離する",
+    "category": "agent-orchestration",
+    "description": "各タスクを独立した git worktree ブランチで実行し、複数サブエージェントが同時並行で作業できる環境を構築する",
+    "trigger_phrases": [
+      "実装計画が複数の独立したタスクに分割でき、並列実行が可能なとき。Claude Codeのサブエージェント機能を使うとき",
+      "git worktreeでエージェント作業を並列隔離する",
+      "git worktree",
+      "SuperPowers",
+      "Claude Code サブエージェント機能"
+    ],
+    "source_url": "https://x.com/btcqzy1/status/2033116943712993717",
+    "source_author": "爱丽丝呀！",
+    "added_at": "2026-03-16T04:40:14.700845+00:00"
+  },
+  {
+    "slug": "tddを強制してテストなしコードを拒否する",
+    "name": "TDDを強制してテストなしコードを拒否する",
+    "category": "agent-orchestration",
+    "description": "Red（失敗テスト作成）→Green（テスト通過）→Refactor のサイクルをエージェントに強制し、テストを書かずに実装コードを書いたら削除して最初からやり直させる",
+    "trigger_phrases": [
+      "各タスクの実装フェーズ。特にロジックが複雑で副作用が多い処理を実装するとき",
+      "TDDを強制してテストなしコードを拒否する",
+      "SuperPowers TDDスキル",
+      "各言語のテストフレームワーク（Jest / pytest / RSpec 等）"
+    ],
+    "source_url": "https://x.com/btcqzy1/status/2033116943712993717",
+    "source_author": "爱丽丝呀！",
+    "added_at": "2026-03-16T04:40:14.700845+00:00"
+  },
+  {
+    "slug": "双段階コードレビューで品質ゲートを設ける",
+    "name": "双段階コードレビューで品質ゲートを設ける",
+    "category": "agent-orchestration",
+    "description": "タスク完了後に「仕様適合チェック（設計文書との差異確認）」と「コード品質チェック（可読性・DRY・YAGNI違反）」の2段階レビューをエージェントに自動実行させる",
+    "trigger_phrases": [
+      "各タスクの実装・TDDサイクル完了後。次のタスクへ進む前のゲートとして",
+      "双段階コードレビューで品質ゲートを設ける",
+      "SuperPowers レビュースキル"
+    ],
+    "source_url": "https://x.com/btcqzy1/status/2033116943712993717",
+    "source_author": "爱丽丝呀！",
+    "added_at": "2026-03-16T04:40:14.700845+00:00"
+  },
+  {
+    "slug": "解析失敗",
+    "name": "(解析失敗)",
+    "category": "other",
+    "description": "WorkOS — Your app, Enterprise Ready. \nhttps://\nworkos.com これがお勧めらしい、知らなかった。",
+    "trigger_phrases": [
+      "(解析失敗)"
+    ],
+    "source_url": "https://x.com/voluntas/status/2033142008966226037",
+    "source_author": "V",
+    "added_at": "2026-03-16T04:42:03.336201+00:00"
+  }
+]
