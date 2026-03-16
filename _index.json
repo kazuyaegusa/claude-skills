@@ -2785,5 +2785,151 @@
     "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
     "source_author": "BehiSecc",
     "added_at": "2026-03-16T00:36:23.259446+00:00"
+  },
+  {
+    "slug": "git-worktreeによるエージェント隔離",
+    "name": "git worktreeによるエージェント隔離",
+    "category": "claude-code-workflow",
+    "description": "各タスクを独立したgit worktree（ブランチ＋作業ディレクトリ）に割り当て、複数エージェントが同一リポジトリで干渉せずに並列実行できるようにする",
+    "trigger_phrases": [
+      "同一リポジトリで複数の開発タスクを並列で進めたい時",
+      "git worktreeによるエージェント隔離",
+      "git worktree",
+      "Superset（Electron製UIラッパー）"
+    ],
+    "source_url": "https://github.com/superset-sh/superset",
+    "source_author": "superset-sh",
+    "added_at": "2026-03-16T00:40:26.783161+00:00"
+  },
+  {
+    "slug": "workspace-preset自動化",
+    "name": "workspace preset自動化",
+    "category": "agent-orchestration",
+    "description": "workspace作成時に環境変数コピー、依存インストール、初期セットアップスクリプトを自動実行し、エージェントが即座に動作可能な状態を構築する",
+    "trigger_phrases": [
+      "複数workspaceで同一の初期化処理が必要な時",
+      "workspace preset自動化",
+      "Superset",
+      "Bash/シェルスクリプト"
+    ],
+    "source_url": "https://github.com/superset-sh/superset",
+    "source_author": "superset-sh",
+    "added_at": "2026-03-16T00:40:26.783161+00:00"
+  },
+  {
+    "slug": "統合エージェントモニタリング",
+    "name": "統合エージェントモニタリング",
+    "category": "agent-orchestration",
+    "description": "複数稼働中のエージェントのステータスを一元UIで監視し、変更準備完了時に通知を受け取る",
+    "trigger_phrases": [
+      "複数エージェントを同時稼働させている時",
+      "統合エージェントモニタリング",
+      "Superset UI（React + Electron）",
+      "複数稼働中のエージェントのステータスを一元UIで監視し、変更準備完了時に通知を受け取る"
+    ],
+    "source_url": "https://github.com/superset-sh/superset",
+    "source_author": "superset-sh",
+    "added_at": "2026-03-16T00:40:26.783161+00:00"
+  },
+  {
+    "slug": "キーボードショートカットによる高速切り替え",
+    "name": "キーボードショートカットによる高速切り替え",
+    "category": "agent-orchestration",
+    "description": "⌘1-9でworkspace直接切り替え、⌘Nで新規作成等のショートカットでタスク間を瞬時に移動する",
+    "trigger_phrases": [
+      "複数タスクを頻繁に行き来する必要がある時",
+      "キーボードショートカットによる高速切り替え",
+      "Superset（Electron shortcut API）",
+      "⌘1-9でworkspace直接切り替え、⌘Nで新規作成等のショートカットでタスク間を瞬時に移動する"
+    ],
+    "source_url": "https://github.com/superset-sh/superset",
+    "source_author": "superset-sh",
+    "added_at": "2026-03-16T00:40:26.783161+00:00"
+  },
+  {
+    "slug": "ビルド済みバイナリによる即座導入",
+    "name": "ビルド済みバイナリによる即座導入",
+    "category": "agent-orchestration",
+    "description": "GitHubリリースページから.dmg/.appをダウンロードし、ビルド不要で即座にSupersetを利用開始する",
+    "trigger_phrases": [
+      "環境構築の手間を省いてすぐに試したい時",
+      "ビルド済みバイナリによる即座導入",
+      "GitHub Releases"
+    ],
+    "source_url": "https://github.com/superset-sh/superset",
+    "source_author": "superset-sh",
+    "added_at": "2026-03-16T00:40:26.783161+00:00"
+  },
+  {
+    "slug": "skillmd形式でエージェント用知識を構造化",
+    "name": "SKILL.md形式でエージェント用知識を構造化",
+    "category": "claude-code-workflow",
+    "description": "フロントマター + 指示・ワークフロー・意思決定フレームワークをMarkdownで定義し、AIエージェントが解釈可能な形で専門知識をパッケージ化する",
+    "trigger_phrases": [
+      "AIエージェントに新しい専門領域の知識を追加したい時、または既存の暗黙知を明示的なスキルとして定型化したい時",
+      "SKILL.md形式でエージェント用知識を構造化",
+      "Markdown",
+      "Python標準ライブラリ（スクリプト用）"
+    ],
+    "source_url": "https://github.com/alirezarezvani/claude-skills",
+    "source_author": "alirezarezvani",
+    "added_at": "2026-03-16T00:45:08.319576+00:00"
+  },
+  {
+    "slug": "マルチツール変換スクリプトによる11ツール対応",
+    "name": "マルチツール変換スクリプトによる11ツール対応",
+    "category": "claude-code-workflow",
+    "description": "./scripts/convert.sh を実行して、全スキルを Cursor (.mdc), Aider (CONVENTIONS.md), Windsurf, Kilo Code 等の各ツール固有形式に一括変換する",
+    "trigger_phrases": [
+      "複数のAIコーディングツールを併用している場合、または将来的にツールを変更する可能性がある場合",
+      "マルチツール変換スクリプトによる11ツール対応",
+      "Bash",
+      "各ツールのCLI（インストール時）"
+    ],
+    "source_url": "https://github.com/alirezarezvani/claude-skills",
+    "source_author": "alirezarezvani",
+    "added_at": "2026-03-16T00:45:08.319576+00:00"
+  },
+  {
+    "slug": "スキルセキュリティ監査による安全性担保",
+    "name": "スキルセキュリティ監査による安全性担保",
+    "category": "claude-code-workflow",
+    "description": "skill-security-auditor を使って、インストール前にスキルのコード・指示内容をスキャンし、コマンドインジェクション、コード実行、データ流出等のリスクを検出する",
+    "trigger_phrases": [
+      "外部ソースからスキルをインストールする前、または社内で作成したスキルを本番環境に展開する前",
+      "スキルセキュリティ監査による安全性担保",
+      "Python標準ライブラリ（依存なし）"
+    ],
+    "source_url": "https://github.com/alirezarezvani/claude-skills",
+    "source_author": "alirezarezvani",
+    "added_at": "2026-03-16T00:45:08.319576+00:00"
+  },
+  {
+    "slug": "スキルエージェントペルソナの3層オーケストレーション",
+    "name": "スキル・エージェント・ペルソナの3層オーケストレーション",
+    "category": "claude-code-workflow",
+    "description": "スキル（How）、エージェント（What）、ペルソナ（Who）を組み合わせて、ドメイン横断的な複雑タスクをフェーズ分けして実行する",
+    "trigger_phrases": [
+      "スタートアップの6週間プロダクトローンチ、技術スタック移行、コンプライアンス監査など、複数の専門領域を順次またはパラレルに適用する必要がある場合",
+      "スキル・エージェント・ペルソナの3層オーケストレーション",
+      "orchestration/ORCHESTRATION.md の4パターン（Solo Sprint, Domain Deep-Dive, Multi-Agent Handoff, Skill Chain）"
+    ],
+    "source_url": "https://github.com/alirezarezvani/claude-skills",
+    "source_author": "alirezarezvani",
+    "added_at": "2026-03-16T00:45:08.319576+00:00"
+  },
+  {
+    "slug": "stdlib依存のみの254-pythonツール提供",
+    "name": "stdlib依存のみの254 Pythonツール提供",
+    "category": "claude-code-workflow",
+    "description": "pip install不要、Python標準ライブラリのみで動作する254個のCLIツールを各スキルに同梱",
+    "trigger_phrases": [
+      "環境構築を最小化したい、Dockerコンテナサイズを抑えたい、外部依存を避けたい場合",
+      "stdlib依存のみの254 Pythonツール提供",
+      "Python標準ライブラリ（json, argparse, pathlib, csv, re, subprocess等）"
+    ],
+    "source_url": "https://github.com/alirezarezvani/claude-skills",
+    "source_author": "alirezarezvani",
+    "added_at": "2026-03-16T00:45:08.319576+00:00"
   }
 ]

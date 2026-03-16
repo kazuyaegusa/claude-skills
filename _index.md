@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 245 スキル
+合計: 255 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -249,3 +249,13 @@
 | セキュリティスキルを開発ワークフローに組み込む | セキュリティスキルを開発ワークフローに組み込む | claude-code-workflow | VibeSec-Skill（OWASP Top 10対応）やTrail of Bits Skills（CodeQL/Se | BehiSecc |
 | スキル発見導入検証のワークフローを確立する | スキル発見→導入→検証のワークフローを確立する | claude-code-workflow | Awesome Listからスキルを検索し、ローカルにクローンして試用、プロジェクトに適合するか検証してから正式採用する | BehiSecc |
 | mcp-serverとskillを併用して機能を拡張する | MCP ServerとSkillを併用して機能を拡張する | claude-code-workflow | MCP（Model Context Protocol）サーバーとClaude Skillsを組み合わせ、外部API（Li | BehiSecc |
+| git-worktreeによるエージェント隔離 | git worktreeによるエージェント隔離 | claude-code-workflow | 各タスクを独立したgit worktree（ブランチ＋作業ディレクトリ）に割り当て、複数エージェントが同一リポジトリで干 | superset-sh |
+| workspace-preset自動化 | workspace preset自動化 | agent-orchestration | workspace作成時に環境変数コピー、依存インストール、初期セットアップスクリプトを自動実行し、エージェントが即座に | superset-sh |
+| 統合エージェントモニタリング | 統合エージェントモニタリング | agent-orchestration | 複数稼働中のエージェントのステータスを一元UIで監視し、変更準備完了時に通知を受け取る | superset-sh |
+| キーボードショートカットによる高速切り替え | キーボードショートカットによる高速切り替え | agent-orchestration | ⌘1-9でworkspace直接切り替え、⌘Nで新規作成等のショートカットでタスク間を瞬時に移動する | superset-sh |
+| ビルド済みバイナリによる即座導入 | ビルド済みバイナリによる即座導入 | agent-orchestration | GitHubリリースページから.dmg/.appをダウンロードし、ビルド不要で即座にSupersetを利用開始する | superset-sh |
+| skillmd形式でエージェント用知識を構造化 | SKILL.md形式でエージェント用知識を構造化 | claude-code-workflow | フロントマター + 指示・ワークフロー・意思決定フレームワークをMarkdownで定義し、AIエージェントが解釈可能な形 | alirezarezvani |
+| マルチツール変換スクリプトによる11ツール対応 | マルチツール変換スクリプトによる11ツール対応 | claude-code-workflow | ./scripts/convert.sh を実行して、全スキルを Cursor (.mdc), Aider (CONVE | alirezarezvani |
+| スキルセキュリティ監査による安全性担保 | スキルセキュリティ監査による安全性担保 | claude-code-workflow | skill-security-auditor を使って、インストール前にスキルのコード・指示内容をスキャンし、コマンドイ | alirezarezvani |
+| スキルエージェントペルソナの3層オーケストレーション | スキル・エージェント・ペルソナの3層オーケストレーション | claude-code-workflow | スキル（How）、エージェント（What）、ペルソナ（Who）を組み合わせて、ドメイン横断的な複雑タスクをフェーズ分けし | alirezarezvani |
+| stdlib依存のみの254-pythonツール提供 | stdlib依存のみの254 Pythonツール提供 | claude-code-workflow | pip install不要、Python標準ライブラリのみで動作する254個のCLIツールを各スキルに同梱 | alirezarezvani |
