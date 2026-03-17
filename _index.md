@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 294 スキル
+合計: 301 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -298,3 +298,10 @@
 | workspace-presetsでエージェント環境を自動セットアップする | Workspace Presetsでエージェント環境を自動セットアップする | agent-orchestration | .superset/config.json にsetup/teardownスクリプトを定義し、ワークスペース作成時の環境 | superset-sh |
 | エージェント監視とクイックコンテキストスイッチング | エージェント監視とクイックコンテキストスイッチング | agent-orchestration | Supersetのモニタリング機能で全エージェントの状態を1画面で追跡し、変更準備完了の通知を受け取る。⌘1-9で瞬時に | superset-sh |
 | 任意のcliエージェントをsupersetで実行する | 任意のCLIエージェントをSupersetで実行する | claude-code-workflow | Claude Code, Cursor Agent, Copilot, Gemini CLI等、あらゆるCLIベースのコ | superset-sh |
+| mcpクライアントサーバーアーキテクチャでllmコンテキスト提供を標準化する | MCPクライアント・サーバーアーキテクチャでLLMコンテキスト提供を標準化する | prompt-engineering | Model Context Protocol (MCP)を使い、LLMアプリケーション（MCPホスト）とデータソース・ツ | microsoft |
+| monorepoで複数mcpサーバーを統一管理し共通toolingで品質リリースを効率化する | monorepoで複数MCPサーバーを統一管理し、共通toolingで品質・リリースを効率化する | automation-pipeline | microsoft/mcpリポジトリで、Azure MCP, Fabric MCP等のサーバー実装をまとめて管理し、co | microsoft |
+| local型とremote型mcpサーバーを用途別に使い分ける | Local型とRemote型MCPサーバーを用途別に使い分ける | infrastructure | Local型（stdio, コマンド実行）は開発者環境で直接実行、Remote型（HTTP, HTTPS URL）はクラ | microsoft |
+| ide拡張とmcpサーバーを1クリックインストール可能にする | IDE拡張とMCPサーバーを1クリックインストール可能にする | prompt-engineering | VS Code/Visual Studio/IntelliJ用のインストールリンク（vscode:mcp/install | microsoft |
+| mcpサーバーをカテゴリ別に分類し用途別検索可能なカタログで提供する | MCPサーバーをカテゴリ別に分類し、用途別検索可能なカタログで提供する | infrastructure | CLOUD AND INFRASTRUCTURE, DEVELOPER TOOLS, PRODUCTIVITY, DAT | microsoft |
+| azure-developer-cli-azd-テンプレートとmcpサーバーを連携させインフラ付きでデプロイ可能にする | Azure Developer CLI (azd) テンプレートとMCPサーバーを連携させ、インフラ付きでデプロイ可能にする | context-management | azd templates（Bicep/Terraform等のIaC含む）にMCP統合を組み込み、`azd up`一発で | microsoft |
+| github-copilot-cliプラグインとしてmcpサーバーを配布する | GitHub Copilot CLIプラグインとしてMCPサーバーを配布する | automation-pipeline | Copilot CLI (/plugin install形式) でMCPサーバーの機能を提供し、ターミナルからAzure | microsoft |

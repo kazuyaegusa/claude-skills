@@ -3542,5 +3542,117 @@
     "source_url": "https://github.com/superset-sh/superset",
     "source_author": "superset-sh",
     "added_at": "2026-03-17T01:23:47.193108+00:00"
+  },
+  {
+    "slug": "mcpクライアントサーバーアーキテクチャでllmコンテキスト提供を標準化する",
+    "name": "MCPクライアント・サーバーアーキテクチャでLLMコンテキスト提供を標準化する",
+    "category": "prompt-engineering",
+    "description": "Model Context Protocol (MCP)を使い、LLMアプリケーション（MCPホスト）とデータソース・ツール（MCPサーバー）を1:1クライアント・サーバー接続で統合する",
+    "trigger_phrases": [
+      "LLMに外部ツール・データソースへのアクセス能力を持たせたいが、個別統合コードを書きたくないとき",
+      "MCPクライアント・サーバーアーキテクチャでLLMコンテキスト提供を標準化する",
+      "Model Context Protocol (MCP) 仕様",
+      "MCP SDK (TypeScript/Python等)",
+      "各種MCPホスト（Claude Desktop, VS Code, GitHub Copilot CLI, Visual Studio）"
+    ],
+    "source_url": "https://github.com/microsoft/mcp",
+    "source_author": "microsoft",
+    "added_at": "2026-03-17T01:30:36.610732+00:00"
+  },
+  {
+    "slug": "monorepoで複数mcpサーバーを統一管理し共通toolingで品質リリースを効率化する",
+    "name": "monorepoで複数MCPサーバーを統一管理し、共通toolingで品質・リリースを効率化する",
+    "category": "automation-pipeline",
+    "description": "microsoft/mcpリポジトリで、Azure MCP, Fabric MCP等のサーバー実装をまとめて管理し、core libraries, test frameworks, pipelines, toolingを共有する",
+    "trigger_phrases": [
+      "組織が複数のMCPサーバーを提供する際、品質・メンテナンス効率を高めたいとき",
+      "monorepoで複数MCPサーバーを統一管理し、共通toolingで品質・リリースを効率化する",
+      "GitHub monorepo管理（Actions, Releases）",
+      "共通test frameworks（言語依存）",
+      "統一CI/CDパイプライン"
+    ],
+    "source_url": "https://github.com/microsoft/mcp",
+    "source_author": "microsoft",
+    "added_at": "2026-03-17T01:30:36.610732+00:00"
+  },
+  {
+    "slug": "local型とremote型mcpサーバーを用途別に使い分ける",
+    "name": "Local型とRemote型MCPサーバーを用途別に使い分ける",
+    "category": "infrastructure",
+    "description": "Local型（stdio, コマンド実行）は開発者環境で直接実行、Remote型（HTTP, HTTPS URL）はクラウドサービスとして提供し、認証・スケーラビリティを考慮する",
+    "trigger_phrases": [
+      "【Local】開発者ツール（Playwright, Azure DevOps CLI等）、オフライン必須、認証不要の場合\n【Remote】エンタープライズサービス（M365 Copilot, Foundry）、集中管理・監査必須、SaaS型提供の場合",
+      "Local型とRemote型MCPサーバーを用途別に使い分ける",
+      "Local: npx, uvx, stdio transport",
+      "Remote: HTTP transport, OAuth/AAD, Azure App Service等"
+    ],
+    "source_url": "https://github.com/microsoft/mcp",
+    "source_author": "microsoft",
+    "added_at": "2026-03-17T01:30:36.610732+00:00"
+  },
+  {
+    "slug": "ide拡張とmcpサーバーを1クリックインストール可能にする",
+    "name": "IDE拡張とMCPサーバーを1クリックインストール可能にする",
+    "category": "prompt-engineering",
+    "description": "VS Code/Visual Studio/IntelliJ用のインストールリンク（vscode:mcp/install?...形式）を提供し、ユーザーがREADMEのバッジクリックだけでMCPサーバーを導入できるようにする",
+    "trigger_phrases": [
+      "MCPサーバーを公開する際、ユーザー体験を最大化したいとき",
+      "IDE拡張とMCPサーバーを1クリックインストール可能にする",
+      "VS Code URL scheme (vscode://, vscode-insiders://)",
+      "Visual Studio URL scheme",
+      "shields.io（バッジ生成）"
+    ],
+    "source_url": "https://github.com/microsoft/mcp",
+    "source_author": "microsoft",
+    "added_at": "2026-03-17T01:30:36.610732+00:00"
+  },
+  {
+    "slug": "mcpサーバーをカテゴリ別に分類し用途別検索可能なカタログで提供する",
+    "name": "MCPサーバーをカテゴリ別に分類し、用途別検索可能なカタログで提供する",
+    "category": "infrastructure",
+    "description": "CLOUD AND INFRASTRUCTURE, DEVELOPER TOOLS, PRODUCTIVITY, DATA AND ANALYTICS, SECURITY等のカテゴリでMCPサーバーを整理し、README表形式でリポジトリ・説明・インストールリンクを一覧化する",
+    "trigger_phrases": [
+      "複数のMCPサーバーを提供し、ユーザーが適切なものを素早く選べるようにしたいとき",
+      "MCPサーバーをカテゴリ別に分類し、用途別検索可能なカタログで提供する",
+      "Markdown表形式",
+      "shields.ioバッジ",
+      "GitHub Pages等ドキュメントホスティング"
+    ],
+    "source_url": "https://github.com/microsoft/mcp",
+    "source_author": "microsoft",
+    "added_at": "2026-03-17T01:30:36.610732+00:00"
+  },
+  {
+    "slug": "azure-developer-cli-azd-テンプレートとmcpサーバーを連携させインフラ付きでデプロイ可能にする",
+    "name": "Azure Developer CLI (azd) テンプレートとMCPサーバーを連携させ、インフラ付きでデプロイ可能にする",
+    "category": "context-management",
+    "description": "azd templates（Bicep/Terraform等のIaC含む）にMCP統合を組み込み、`azd up`一発でMCPサーバー+必要なAzureリソースを一括デプロイできるようにする",
+    "trigger_phrases": [
+      "MCPサーバーをAzure上で本番運用したいが、手動インフラ構築を避けたいとき",
+      "Azure Developer CLI (azd) テンプレートとMCPサーバーを連携させ、インフラ付きでデプロイ可能にする",
+      "Azure Developer CLI (azd)",
+      "Bicep or Terraform",
+      "Azure App Service / Container Apps",
+      "Azure OpenAI / Key Vault等"
+    ],
+    "source_url": "https://github.com/microsoft/mcp",
+    "source_author": "microsoft",
+    "added_at": "2026-03-17T01:30:36.610732+00:00"
+  },
+  {
+    "slug": "github-copilot-cliプラグインとしてmcpサーバーを配布する",
+    "name": "GitHub Copilot CLIプラグインとしてMCPサーバーを配布する",
+    "category": "automation-pipeline",
+    "description": "Copilot CLI (/plugin install形式) でMCPサーバーの機能を提供し、ターミナルからAzureリソース操作・スキル参照を可能にする",
+    "trigger_phrases": [
+      "Copilot CLIユーザーにAzure操作機能を提供したいとき、またはCI/CDパイプラインで自然言語ベース自動化を実現したいとき",
+      "GitHub Copilot CLIプラグインとしてMCPサーバーを配布する",
+      "GitHub Copilot CLI",
+      "microsoft/skills marketplace",
+      "Azure MCP Server"
+    ],
+    "source_url": "https://github.com/microsoft/mcp",
+    "source_author": "microsoft",
+    "added_at": "2026-03-17T01:30:36.610732+00:00"
   }
 ]
