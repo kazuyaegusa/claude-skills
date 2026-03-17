@@ -22,27 +22,54 @@
   "hooks": {
     "SessionStart": [
       {
-        "command": "CLAUDE_PLUGIN_ROOT=/Users/kazuyaegusa/.claude/plugins/cache/superpowers-marketplace/superpowers/5.0.2 bash /Users/kazuyaegusa/.claude/plugins/cache/superpowers-marketplace/superpowers/5.0.2/hooks/session-start",
-        "timeout": 30
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "CLAUDE_PLUGIN_ROOT=/Users/kazuyaegusa/.claude/plugins/cache/superpowers-marketplace/superpowers/5.0.2 bash /Users/kazuyaegusa/.claude/plugins/cache/superpowers-marketplace/superpowers/5.0.2/hooks/session-start",
+            "timeout": 30
+          }
+        ]
       }
     ],
     "PreToolUse": [
       {
-        "command": "~/.claude/star-office-hook.sh writing 'コード編集中'",
-        "matcher": "^(Edit|Write|NotebookEdit)$"
+        "matcher": "^(Edit|Write|NotebookEdit)$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/star-office-hook.sh writing 'コード編集中'"
+          }
+        ]
       },
       {
-        "command": "~/.claude/star-office-hook.sh executing 'コマンド実行中'",
-        "matcher": "^Bash$"
+        "matcher": "^Bash$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/star-office-hook.sh executing 'コマンド実行中'"
+          }
+        ]
       },
       {
-        "command": "~/.claude/star-office-hook.sh researching '調査中'",
-        "matcher": "^(Read|Grep|Glob|WebFetch|Agent)$"
+        "matcher": "^(Read|Grep|Glob|WebFetch|Agent)$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/star-office-hook.sh researching '調査中'"
+          }
+        ]
       }
     ],
     "Stop": [
       {
-        "command": "~/.claude/star-office-hook.sh idle '待機中'"
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/star-office-hook.sh idle '待機中'"
+          }
+        ]
       }
     ]
   },
