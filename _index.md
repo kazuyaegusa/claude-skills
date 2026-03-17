@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 285 スキル
+合計: 294 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -289,3 +289,12 @@
 | frontend-design-skillでaiっぽいデザインを回避する | frontend-design Skillで「AIっぽいデザイン」を回避する | ui-ux | frontend-design Skillを使い、Claude生成のReact+Tailwindコードで平凡な美学を避け | travisvn |
 | obrasuperpowersで20バトルテスト済みskillsを一括導入する | obra/superpowersで20+バトルテスト済みSkillsを一括導入する | claude-code-workflow | Jesse Vincentによるコミュニティライブラリ obra/superpowers をマーケットプレイス経由でイン | travisvn |
 | セキュリティベストプラクティスでskillsを安全運用する | セキュリティベストプラクティスでSkillsを安全運用する | claude-code-workflow | Skillsインストール前にSKILL.mdと全スクリプトをレビューし、信頼できるソースからのみ導入、バージョン管理とコ | travisvn |
+| claude-skillsをカテゴリ別に分類して発見可能にする | Claude Skillsをカテゴリ別に分類して発見可能にする | ui-ux | 400以上のスキルを12のカテゴリ（Document、Development、Data、Scientific、Writi | BehiSecc |
+| vibesec-skillで脆弱性を防ぐ | VibeSec-Skillで脆弱性を防ぐ | claude-code-workflow | Claude Codeでセキュアなコードを書くための専用スキル（VibeSec-Skill）を導入し、一般的な脆弱性を予 | BehiSecc |
+| skill-creatorで新規スキルを開発する | skill-creatorで新規スキルを開発する | claude-code-workflow | Anthropics公式のskill-creatorテンプレートを使って、標準的な構造を持つClaude Skillを作 | BehiSecc |
+| mcp-serverでスキルを動的に拡張する | MCP Serverでスキルを動的に拡張する | claude-code-workflow | Model Context Protocol（MCP）Serverを実装して、Claude Codeの機能を動的にAPI | BehiSecc |
+| agentskillsio仕様でスキルを標準化する | agentskills.io仕様でスキルを標準化する | claude-code-workflow | agentskills.io（またはagentskill.sh）のスキル仕様に従って、Claude Code以外のAIツ | BehiSecc |
+| git-worktreeでエージェントタスクを分離する | git worktreeでエージェントタスクを分離する | claude-code-workflow | 各エージェントタスクに専用のgit worktree（独立した作業ディレクトリ+ブランチ）を割り当て、タスク間の干渉を物 | superset-sh |
+| workspace-presetsでエージェント環境を自動セットアップする | Workspace Presetsでエージェント環境を自動セットアップする | agent-orchestration | .superset/config.json にsetup/teardownスクリプトを定義し、ワークスペース作成時の環境 | superset-sh |
+| エージェント監視とクイックコンテキストスイッチング | エージェント監視とクイックコンテキストスイッチング | agent-orchestration | Supersetのモニタリング機能で全エージェントの状態を1画面で追跡し、変更準備完了の通知を受け取る。⌘1-9で瞬時に | superset-sh |
+| 任意のcliエージェントをsupersetで実行する | 任意のCLIエージェントをSupersetで実行する | claude-code-workflow | Claude Code, Cursor Agent, Copilot, Gemini CLI等、あらゆるCLIベースのコ | superset-sh |

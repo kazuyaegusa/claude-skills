@@ -3404,5 +3404,143 @@
     "source_url": "https://github.com/travisvn/awesome-claude-skills",
     "source_author": "travisvn",
     "added_at": "2026-03-17T01:12:01.329553+00:00"
+  },
+  {
+    "slug": "claude-skillsをカテゴリ別に分類して発見可能にする",
+    "name": "Claude Skillsをカテゴリ別に分類して発見可能にする",
+    "category": "ui-ux",
+    "description": "400以上のスキルを12のカテゴリ（Document、Development、Data、Scientific、Writing、Learning、Media、Health、Collaboration、Security、Utility、Collections）に整理し、各スキルに説明とGitHubリンクを付与する",
+    "trigger_phrases": [
+      "Claude Skillsのような拡張機能エコシステムが100以上に成長し、ユーザーが適切なスキルを見つけにくくなった時",
+      "Claude Skillsをカテゴリ別に分類して発見可能にする",
+      "GitHub Markdown",
+      "GitHub Flavored Markdown（GFM）のアンカーリンク"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-03-17T01:18:03.543511+00:00"
+  },
+  {
+    "slug": "vibesec-skillで脆弱性を防ぐ",
+    "name": "VibeSec-Skillで脆弱性を防ぐ",
+    "category": "claude-code-workflow",
+    "description": "Claude Codeでセキュアなコードを書くための専用スキル（VibeSec-Skill）を導入し、一般的な脆弱性を予防する",
+    "trigger_phrases": [
+      "Claude Codeで本番環境向けのWebアプリケーションを開発する時、特にユーザー入力を処理する機能を実装する時",
+      "VibeSec-Skillで脆弱性を防ぐ",
+      "VibeSec-Skill",
+      "owasp-security skill（オプション）"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-03-17T01:18:03.543511+00:00"
+  },
+  {
+    "slug": "skill-creatorで新規スキルを開発する",
+    "name": "skill-creatorで新規スキルを開発する",
+    "category": "claude-code-workflow",
+    "description": "Anthropics公式のskill-creatorテンプレートを使って、標準的な構造を持つClaude Skillを作成する",
+    "trigger_phrases": [
+      "既存のClaude Skillsで解決できない独自の要件があり、新しいスキルを開発・公開したい時",
+      "skill-creatorで新規スキルを開発する",
+      "skill-creator",
+      "template-skill（最小構成版）"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-03-17T01:18:03.543511+00:00"
+  },
+  {
+    "slug": "mcp-serverでスキルを動的に拡張する",
+    "name": "MCP Serverでスキルを動的に拡張する",
+    "category": "claude-code-workflow",
+    "description": "Model Context Protocol（MCP）Serverを実装して、Claude Codeの機能を動的にAPI経由で拡張する",
+    "trigger_phrases": [
+      "Claude Codeを外部サービス（プロジェクト管理ツール、データベース、クラウドサービス）と連携させたい時",
+      "MCP Serverでスキルを動的に拡張する",
+      "Model Context Protocol（MCP）",
+      "linear-claude-skill",
+      "google-workspace-skills",
+      "postgres / mysql / mssql skills",
+      "outline skill"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-03-17T01:18:03.543511+00:00"
+  },
+  {
+    "slug": "agentskillsio仕様でスキルを標準化する",
+    "name": "agentskills.io仕様でスキルを標準化する",
+    "category": "claude-code-workflow",
+    "description": "agentskills.io（またはagentskill.sh）のスキル仕様に従って、Claude Code以外のAIツール（Cursor, Copilot, Windsurf, Zed等）でも利用可能なスキルを作成する",
+    "trigger_phrases": [
+      "複数のAI開発ツールを使っているチームで、スキルを共通化したい時。または、より広いユーザーベースにスキルを公開したい時",
+      "agentskills.io仕様でスキルを標準化する",
+      "agentskills.io",
+      "agentskill.sh",
+      "pm-skills（参考実装）"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-03-17T01:18:03.543511+00:00"
+  },
+  {
+    "slug": "git-worktreeでエージェントタスクを分離する",
+    "name": "git worktreeでエージェントタスクを分離する",
+    "category": "claude-code-workflow",
+    "description": "各エージェントタスクに専用のgit worktree（独立した作業ディレクトリ+ブランチ）を割り当て、タスク間の干渉を物理的に防ぐ。",
+    "trigger_phrases": [
+      "2つ以上のタスクを同時に進めたいとき、エージェント実行中に別タスクへ切り替えたいとき",
+      "git worktreeでエージェントタスクを分離する",
+      "git 2.20+",
+      "Superset"
+    ],
+    "source_url": "https://github.com/superset-sh/superset",
+    "source_author": "superset-sh",
+    "added_at": "2026-03-17T01:23:47.193108+00:00"
+  },
+  {
+    "slug": "workspace-presetsでエージェント環境を自動セットアップする",
+    "name": "Workspace Presetsでエージェント環境を自動セットアップする",
+    "category": "agent-orchestration",
+    "description": ".superset/config.json にsetup/teardownスクリプトを定義し、ワークスペース作成時の環境構築・削除時のクリーンアップを自動化する。",
+    "trigger_phrases": [
+      "エージェント実行前に毎回同じセットアップが必要なとき、チームで統一された環境構築手順を共有したいとき",
+      "Workspace Presetsでエージェント環境を自動セットアップする",
+      "Superset",
+      "bash/zsh等のシェル"
+    ],
+    "source_url": "https://github.com/superset-sh/superset",
+    "source_author": "superset-sh",
+    "added_at": "2026-03-17T01:23:47.193108+00:00"
+  },
+  {
+    "slug": "エージェント監視とクイックコンテキストスイッチング",
+    "name": "エージェント監視とクイックコンテキストスイッチング",
+    "category": "agent-orchestration",
+    "description": "Supersetのモニタリング機能で全エージェントの状態を1画面で追跡し、変更準備完了の通知を受け取る。⌘1-9で瞬時にワークスペース切り替え。",
+    "trigger_phrases": [
+      "3つ以上のタスクを並列実行しているとき、エージェントの待ち時間中に別作業をしたいとき",
+      "エージェント監視とクイックコンテキストスイッチング",
+      "Superset"
+    ],
+    "source_url": "https://github.com/superset-sh/superset",
+    "source_author": "superset-sh",
+    "added_at": "2026-03-17T01:23:47.193108+00:00"
+  },
+  {
+    "slug": "任意のcliエージェントをsupersetで実行する",
+    "name": "任意のCLIエージェントをSupersetで実行する",
+    "category": "claude-code-workflow",
+    "description": "Claude Code, Cursor Agent, Copilot, Gemini CLI等、あらゆるCLIベースのコーディングエージェントをSupersetのターミナル内で実行する。",
+    "trigger_phrases": [
+      "特定のエージェントに依存したくないとき、タスクごとに最適なエージェントを使い分けたいとき",
+      "任意のCLIエージェントをSupersetで実行する",
+      "Superset",
+      "任意のCLI agent（Claude Code, Cursor, Copilot, Gemini等）"
+    ],
+    "source_url": "https://github.com/superset-sh/superset",
+    "source_author": "superset-sh",
+    "added_at": "2026-03-17T01:23:47.193108+00:00"
   }
 ]
