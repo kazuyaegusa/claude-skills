@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 301 スキル
+合計: 305 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -305,3 +305,7 @@
 | mcpサーバーをカテゴリ別に分類し用途別検索可能なカタログで提供する | MCPサーバーをカテゴリ別に分類し、用途別検索可能なカタログで提供する | infrastructure | CLOUD AND INFRASTRUCTURE, DEVELOPER TOOLS, PRODUCTIVITY, DAT | microsoft |
 | azure-developer-cli-azd-テンプレートとmcpサーバーを連携させインフラ付きでデプロイ可能にする | Azure Developer CLI (azd) テンプレートとMCPサーバーを連携させ、インフラ付きでデプロイ可能にする | context-management | azd templates（Bicep/Terraform等のIaC含む）にMCP統合を組み込み、`azd up`一発で | microsoft |
 | github-copilot-cliプラグインとしてmcpサーバーを配布する | GitHub Copilot CLIプラグインとしてMCPサーバーを配布する | automation-pipeline | Copilot CLI (/plugin install形式) でMCPサーバーの機能を提供し、ターミナルからAzure | microsoft |
+| agentgatewayを介したmcpa2a通信の透過プロキシ化 | agentgatewayを介したMCP/A2A通信の透過プロキシ化 | agent-orchestration | AIエージェントとMCPサーバー（またはAgent）間の通信をagentgatewayに中継させ、認証・監視・ポリシー適 | agentgateway |
+| openapiをmcpリソースに変換してエージェントに公開 | OpenAPIをMCPリソースに変換してエージェントに公開 | agent-orchestration | 既存のREST APIのOpenAPI定義をagentgatewayに読み込ませ、エージェントがMCPプロトコル経由で呼 | agentgateway |
+| kubernetes-gateway-apiでエージェント通信を動的管理 | Kubernetes Gateway APIでエージェント通信を動的管理 | agent-orchestration | Kubernetes上のエージェントをGateway APIのHTTPRoute/TLSRoute等で宣言的にルーティン | agentgateway |
+| mcpa2a特化rbacでエージェント権限を制御 | MCP/A2A特化RBACでエージェント権限を制御 | agent-orchestration | agentgatewayのRBACシステムを使い、どのエージェントがどのMCPリソース（ツール・プロンプト・サンプリング | agentgateway |

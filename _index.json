@@ -3654,5 +3654,67 @@
     "source_url": "https://github.com/microsoft/mcp",
     "source_author": "microsoft",
     "added_at": "2026-03-17T01:30:36.610732+00:00"
+  },
+  {
+    "slug": "agentgatewayを介したmcpa2a通信の透過プロキシ化",
+    "name": "agentgatewayを介したMCP/A2A通信の透過プロキシ化",
+    "category": "agent-orchestration",
+    "description": "AIエージェントとMCPサーバー（またはAgent）間の通信をagentgatewayに中継させ、認証・監視・ポリシー適用を透過的に挟む",
+    "trigger_phrases": [
+      "複数エージェントが共通のツールセットにアクセスし、認証・ログ・レート制限を統一したい場合",
+      "agentgatewayを介したMCP/A2A通信の透過プロキシ化",
+      "agentgateway（Rust製バイナリ）",
+      "Kubernetes Gateway API（K8s環境の場合）",
+      "xDS（動的設定更新用）"
+    ],
+    "source_url": "https://github.com/agentgateway/agentgateway",
+    "source_author": "agentgateway",
+    "added_at": "2026-03-17T01:37:10.591963+00:00"
+  },
+  {
+    "slug": "openapiをmcpリソースに変換してエージェントに公開",
+    "name": "OpenAPIをMCPリソースに変換してエージェントに公開",
+    "category": "agent-orchestration",
+    "description": "既存のREST APIのOpenAPI定義をagentgatewayに読み込ませ、エージェントがMCPプロトコル経由で呼び出せるようにする",
+    "trigger_phrases": [
+      "既存のREST APIをAgent向けに公開したいが、各エージェントにHTTPクライアントを実装したくない場合",
+      "OpenAPIをMCPリソースに変換してエージェントに公開",
+      "agentgateway（OpenAPIトランスフォーマー内蔵）",
+      "OpenAPI 3.x定義"
+    ],
+    "source_url": "https://github.com/agentgateway/agentgateway",
+    "source_author": "agentgateway",
+    "added_at": "2026-03-17T01:37:10.591963+00:00"
+  },
+  {
+    "slug": "kubernetes-gateway-apiでエージェント通信を動的管理",
+    "name": "Kubernetes Gateway APIでエージェント通信を動的管理",
+    "category": "agent-orchestration",
+    "description": "Kubernetes上のエージェントをGateway APIのHTTPRoute/TLSRoute等で宣言的にルーティングし、agentgatewayのコントローラーが自動的にポリシーを反映する",
+    "trigger_phrases": [
+      "Kubernetes上でエージェントをマイクロサービスとしてデプロイし、宣言的なインフラ管理を行いたい場合",
+      "Kubernetes Gateway APIでエージェント通信を動的管理",
+      "agentgateway Kubernetesコントローラー",
+      "Kubernetes Gateway API",
+      "xDS（Envoy互換動的設定プロトコル）"
+    ],
+    "source_url": "https://github.com/agentgateway/agentgateway",
+    "source_author": "agentgateway",
+    "added_at": "2026-03-17T01:37:10.591963+00:00"
+  },
+  {
+    "slug": "mcpa2a特化rbacでエージェント権限を制御",
+    "name": "MCP/A2A特化RBACでエージェント権限を制御",
+    "category": "agent-orchestration",
+    "description": "agentgatewayのRBACシステムを使い、どのエージェントがどのMCPリソース（ツール・プロンプト・サンプリング）にアクセスできるかを定義する",
+    "trigger_phrases": [
+      "複数エージェントが異なる権限レベルでツールにアクセスする必要がある場合",
+      "MCP/A2A特化RBACでエージェント権限を制御",
+      "agentgateway RBAC機能",
+      "認証バックエンド（OAuth2, mTLS等）"
+    ],
+    "source_url": "https://github.com/agentgateway/agentgateway",
+    "source_author": "agentgateway",
+    "added_at": "2026-03-17T01:37:10.591963+00:00"
   }
 ]
