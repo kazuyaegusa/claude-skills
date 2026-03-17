@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 271 スキル
+合計: 285 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -275,3 +275,17 @@
 | end-to-end型安全性でフロントバック連携 | End-to-End型安全性でフロント・バック連携 | dev-tool | バックエンドのクエリ/アクション関数にTypeScript型を付けると、フロントエンドで自動的に型推論されたAPIが利用 | wasp-lang |
 | ai開発ツール向けメタデータ同梱 | AI開発ツール向けメタデータ同梱 | claude-code-workflow | Claude Code・Cursor等のAIエージェントが読み取る専用ドキュメント（AGENTS.md、llms-ful | wasp-lang |
 | ワンコマンドデプロイでdbサーバークライアントを一括公開 | ワンコマンドデプロイでDB・サーバー・クライアントを一括公開 | infrastructure | Wasp CLIの `wasp deploy` コマンドでRailway/Fly.ioへDB・バックエンド・フロントエン | wasp-lang |
+| cuabotで既存エージェントをサンドボックス化 | CuaBotで既存エージェントをサンドボックス化 | claude-code-workflow | Claude CodeやOpenClaw等の任意のコーディングエージェントを、分離された仮想デスクトップ環境で動かす | trycua |
+| cua-agentでcomputer-use-agentを実装 | Cua AgentでComputer-Use Agentを実装 | agent-orchestration | Python SDKを使い、スクリーン認識・UI操作・タスク実行を行うLLMエージェントを数行で構築する | trycua |
+| cua-benchで既存ベンチマーク実行 | Cua-Benchで既存ベンチマーク実行 | agent-orchestration | OSWorld、ScreenSpot、Windows Arena等の公開データセットで自作エージェントを評価する | trycua |
+| lumeでmacos仮想環境を高速起動 | LumeでmacOS仮想環境を高速起動 | agent-orchestration | Apple Silicon Mac上でmacOS VMを数秒で起動し、エージェント開発・テストに使う | trycua |
+| cuabotの画面操作コマンドで軽量ワークフロー実行 | CuaBotの画面操作コマンドで軽量ワークフロー実行 | agent-orchestration | LLMエージェントを使わず、cuabotコマンド単体でスクリーンショット・クリック・タイプ操作を実行する | trycua |
+| 段階的開示アーキテクチャでskillsを設計する | 段階的開示アーキテクチャでSkillsを設計する | claude-code-workflow | Claude Skillsを、メタデータスキャン（~100トークン）→フル命令ロード（<5kトークン）→リソースロード（ | travisvn |
+| skill-creatorで対話的にskillを生成する | skill-creatorで対話的にSkillを生成する | claude-code-workflow | Anthropic公式のskill-creator Skillを使い、Q&A形式で新しいSkillを作成する | travisvn |
+| claude-code-cliでskillをインストール管理する | Claude Code CLIでSkillをインストール・管理する | claude-code-workflow | マーケットプレイスまたはローカルディレクトリから、/pluginコマンドでSkillをインストールする | travisvn |
+| web-uiでskillsトグルを有効化管理する | Web UIでSkillsトグルを有効化・管理する | ui-ux | Claude.ai Web インターフェースの Settings > Capabilities でSkillsを有効化し | travisvn |
+| skills-vs-promptsprojectssubagentsmcpを使い分ける | Skills vs Prompts/Projects/Subagents/MCPを使い分ける | agent-orchestration | タスクの性質に応じて、Skills、システムプロンプト、Projects、Subagents、MCPを適切に選択する | travisvn |
+| 公式skillsでoffice形式pdf操作を自動化する | 公式SkillsでOffice形式・PDF操作を自動化する | automation-pipeline | docx/pdf/pptx/xlsx公式Skillsを使い、Word/PowerPoint/Excel/PDFの作成・編 | travisvn |
+| frontend-design-skillでaiっぽいデザインを回避する | frontend-design Skillで「AIっぽいデザイン」を回避する | ui-ux | frontend-design Skillを使い、Claude生成のReact+Tailwindコードで平凡な美学を避け | travisvn |
+| obrasuperpowersで20バトルテスト済みskillsを一括導入する | obra/superpowersで20+バトルテスト済みSkillsを一括導入する | claude-code-workflow | Jesse Vincentによるコミュニティライブラリ obra/superpowers をマーケットプレイス経由でイン | travisvn |
+| セキュリティベストプラクティスでskillsを安全運用する | セキュリティベストプラクティスでSkillsを安全運用する | claude-code-workflow | Skillsインストール前にSKILL.mdと全スクリプトをレビューし、信頼できるソースからのみ導入、バージョン管理とコ | travisvn |

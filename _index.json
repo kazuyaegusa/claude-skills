@@ -3191,5 +3191,218 @@
     "source_url": "https://github.com/wasp-lang/open-saas",
     "source_author": "wasp-lang",
     "added_at": "2026-03-17T00:57:50.088771+00:00"
+  },
+  {
+    "slug": "cuabotで既存エージェントをサンドボックス化",
+    "name": "CuaBotで既存エージェントをサンドボックス化",
+    "category": "claude-code-workflow",
+    "description": "Claude CodeやOpenClaw等の任意のコーディングエージェントを、分離された仮想デスクトップ環境で動かす",
+    "trigger_phrases": [
+      "エージェントにブラウザ操作やGUIツール実行をさせたいが、ホスト環境を汚したくない場合",
+      "CuaBotで既存エージェントをサンドボックス化",
+      "cuabot（npm package）"
+    ],
+    "source_url": "https://github.com/trycua/cua",
+    "source_author": "trycua",
+    "added_at": "2026-03-17T01:04:45.018811+00:00"
+  },
+  {
+    "slug": "cua-agentでcomputer-use-agentを実装",
+    "name": "Cua AgentでComputer-Use Agentを実装",
+    "category": "agent-orchestration",
+    "description": "Python SDKを使い、スクリーン認識・UI操作・タスク実行を行うLLMエージェントを数行で構築する",
+    "trigger_phrases": [
+      "Firefoxを開いて検索する、フォームに入力する等のGUIタスクをLLMに自律実行させたい場合",
+      "Cua AgentでComputer-Use Agentを実装",
+      "cua-agent",
+      "cua-computer"
+    ],
+    "source_url": "https://github.com/trycua/cua",
+    "source_author": "trycua",
+    "added_at": "2026-03-17T01:04:45.018811+00:00"
+  },
+  {
+    "slug": "cua-benchで既存ベンチマーク実行",
+    "name": "Cua-Benchで既存ベンチマーク実行",
+    "category": "agent-orchestration",
+    "description": "OSWorld、ScreenSpot、Windows Arena等の公開データセットで自作エージェントを評価する",
+    "trigger_phrases": [
+      "自社エージェントが既存手法と比べてどれだけ優れているかを定量評価したい場合",
+      "Cua-Benchで既存ベンチマーク実行",
+      "cua-bench",
+      "uv"
+    ],
+    "source_url": "https://github.com/trycua/cua",
+    "source_author": "trycua",
+    "added_at": "2026-03-17T01:04:45.018811+00:00"
+  },
+  {
+    "slug": "lumeでmacos仮想環境を高速起動",
+    "name": "LumeでmacOS仮想環境を高速起動",
+    "category": "agent-orchestration",
+    "description": "Apple Silicon Mac上でmacOS VMを数秒で起動し、エージェント開発・テストに使う",
+    "trigger_phrases": [
+      "macOS GUIアプリケーション操作をエージェントで自動化したいが、ホストmacOSを直接触りたくない場合",
+      "LumeでmacOS仮想環境を高速起動",
+      "lume",
+      "Apple Virtualization.Framework",
+      "Apple Silicon Mac上でmacOS VMを数秒で起動し、エージェント開発・テストに使う"
+    ],
+    "source_url": "https://github.com/trycua/cua",
+    "source_author": "trycua",
+    "added_at": "2026-03-17T01:04:45.018811+00:00"
+  },
+  {
+    "slug": "cuabotの画面操作コマンドで軽量ワークフロー実行",
+    "name": "CuaBotの画面操作コマンドで軽量ワークフロー実行",
+    "category": "agent-orchestration",
+    "description": "LLMエージェントを使わず、cuabotコマンド単体でスクリーンショット・クリック・タイプ操作を実行する",
+    "trigger_phrases": [
+      "決まった手順を繰り返し実行する軽量RPA的なタスク、またはエージェント開発時のデバッグ操作",
+      "CuaBotの画面操作コマンドで軽量ワークフロー実行",
+      "cuabot CLI"
+    ],
+    "source_url": "https://github.com/trycua/cua",
+    "source_author": "trycua",
+    "added_at": "2026-03-17T01:04:45.018811+00:00"
+  },
+  {
+    "slug": "段階的開示アーキテクチャでskillsを設計する",
+    "name": "段階的開示アーキテクチャでSkillsを設計する",
+    "category": "claude-code-workflow",
+    "description": "Claude Skillsを、メタデータスキャン（~100トークン）→フル命令ロード（<5kトークン）→リソースロード（必要時のみ）の3段階で構成する",
+    "trigger_phrases": [
+      "再利用可能なタスク手順を作る時、特に複数のリソースファイルやスクリプトを含む複雑なワークフローの場合",
+      "段階的開示アーキテクチャでSkillsを設計する",
+      "Claude.ai / Claude Code / Claude API",
+      "YAML（フロントマター）",
+      "Python/JavaScript（スクリプト用）"
+    ],
+    "source_url": "https://github.com/travisvn/awesome-claude-skills",
+    "source_author": "travisvn",
+    "added_at": "2026-03-17T01:12:01.329553+00:00"
+  },
+  {
+    "slug": "skill-creatorで対話的にskillを生成する",
+    "name": "skill-creatorで対話的にSkillを生成する",
+    "category": "claude-code-workflow",
+    "description": "Anthropic公式のskill-creator Skillを使い、Q&A形式で新しいSkillを作成する",
+    "trigger_phrases": [
+      "初めてSkillを作る時、または手動作成より速く確実に作りたい時",
+      "skill-creatorで対話的にSkillを生成する",
+      "skill-creator（Anthropic公式Skill）"
+    ],
+    "source_url": "https://github.com/travisvn/awesome-claude-skills",
+    "source_author": "travisvn",
+    "added_at": "2026-03-17T01:12:01.329553+00:00"
+  },
+  {
+    "slug": "claude-code-cliでskillをインストール管理する",
+    "name": "Claude Code CLIでSkillをインストール・管理する",
+    "category": "claude-code-workflow",
+    "description": "マーケットプレイスまたはローカルディレクトリから、/pluginコマンドでSkillをインストールする",
+    "trigger_phrases": [
+      "Claude Code CLIを使っている時、チームで共有されたSkillリポジトリを導入する時",
+      "Claude Code CLIでSkillをインストール・管理する",
+      "Claude Code CLI"
+    ],
+    "source_url": "https://github.com/travisvn/awesome-claude-skills",
+    "source_author": "travisvn",
+    "added_at": "2026-03-17T01:12:01.329553+00:00"
+  },
+  {
+    "slug": "web-uiでskillsトグルを有効化管理する",
+    "name": "Web UIでSkillsトグルを有効化・管理する",
+    "category": "ui-ux",
+    "description": "Claude.ai Web インターフェースの Settings > Capabilities でSkillsを有効化し、利用可能なSkillを追加する",
+    "trigger_phrases": [
+      "Claude.ai WebでSkillsを使い始める時、組織全体で導入する時",
+      "Web UIでSkillsトグルを有効化・管理する",
+      "Claude.ai Web UI"
+    ],
+    "source_url": "https://github.com/travisvn/awesome-claude-skills",
+    "source_author": "travisvn",
+    "added_at": "2026-03-17T01:12:01.329553+00:00"
+  },
+  {
+    "slug": "skills-vs-promptsprojectssubagentsmcpを使い分ける",
+    "name": "Skills vs Prompts/Projects/Subagents/MCPを使い分ける",
+    "category": "agent-orchestration",
+    "description": "タスクの性質に応じて、Skills、システムプロンプト、Projects、Subagents、MCPを適切に選択する",
+    "trigger_phrases": [
+      "新しいワークフローを設計する時、既存のシステムプロンプトをSkills化すべきか判断する時",
+      "Skills vs Prompts/Projects/Subagents/MCPを使い分ける",
+      "Skills",
+      "System Prompts",
+      "Projects",
+      "Subagents",
+      "MCP"
+    ],
+    "source_url": "https://github.com/travisvn/awesome-claude-skills",
+    "source_author": "travisvn",
+    "added_at": "2026-03-17T01:12:01.329553+00:00"
+  },
+  {
+    "slug": "公式skillsでoffice形式pdf操作を自動化する",
+    "name": "公式SkillsでOffice形式・PDF操作を自動化する",
+    "category": "automation-pipeline",
+    "description": "docx/pdf/pptx/xlsx公式Skillsを使い、Word/PowerPoint/Excel/PDFの作成・編集・分析を実行する",
+    "trigger_phrases": [
+      "レポート生成、プレゼン資料作成、データ分析結果のExcel出力など、Office形式での成果物が必要な時",
+      "公式SkillsでOffice形式・PDF操作を自動化する",
+      "docx Skill",
+      "pdf Skill",
+      "pptx Skill",
+      "xlsx Skill"
+    ],
+    "source_url": "https://github.com/travisvn/awesome-claude-skills",
+    "source_author": "travisvn",
+    "added_at": "2026-03-17T01:12:01.329553+00:00"
+  },
+  {
+    "slug": "frontend-design-skillでaiっぽいデザインを回避する",
+    "name": "frontend-design Skillで「AIっぽいデザイン」を回避する",
+    "category": "ui-ux",
+    "description": "frontend-design Skillを使い、Claude生成のReact+Tailwindコードで平凡な美学を避け、大胆なデザイン決定を促す",
+    "trigger_phrases": [
+      "React+Tailwindでフロントエンド開発中、視覚的に魅力的なUIを短時間で作りたい時",
+      "frontend-design Skillで「AIっぽいデザイン」を回避する",
+      "frontend-design Skill",
+      "React",
+      "Tailwind CSS"
+    ],
+    "source_url": "https://github.com/travisvn/awesome-claude-skills",
+    "source_author": "travisvn",
+    "added_at": "2026-03-17T01:12:01.329553+00:00"
+  },
+  {
+    "slug": "obrasuperpowersで20バトルテスト済みskillsを一括導入する",
+    "name": "obra/superpowersで20+バトルテスト済みSkillsを一括導入する",
+    "category": "claude-code-workflow",
+    "description": "Jesse Vincentによるコミュニティライブラリ obra/superpowers をマーケットプレイス経由でインストールし、TDD・デバッグ・コラボレーション等の実践的Skillsを利用する",
+    "trigger_phrases": [
+      "Claude Code CLIで即座に実践的なSkillセットを揃えたい時、実績あるベストプラクティスを活用したい時",
+      "obra/superpowersで20+バトルテスト済みSkillsを一括導入する",
+      "obra/superpowers",
+      "Claude Code CLI Marketplace"
+    ],
+    "source_url": "https://github.com/travisvn/awesome-claude-skills",
+    "source_author": "travisvn",
+    "added_at": "2026-03-17T01:12:01.329553+00:00"
+  },
+  {
+    "slug": "セキュリティベストプラクティスでskillsを安全運用する",
+    "name": "セキュリティベストプラクティスでSkillsを安全運用する",
+    "category": "claude-code-workflow",
+    "description": "Skillsインストール前にSKILL.mdと全スクリプトをレビューし、信頼できるソースからのみ導入、バージョン管理とコードレビューを実施する",
+    "trigger_phrases": [
+      "カスタムSkillsを導入・作成・配布する全ての場面、特に企業・チーム環境",
+      "セキュリティベストプラクティスでSkillsを安全運用する",
+      "git（バージョン管理）",
+      "コードレビューツール"
+    ],
+    "source_url": "https://github.com/travisvn/awesome-claude-skills",
+    "source_author": "travisvn",
+    "added_at": "2026-03-17T01:12:01.329553+00:00"
   }
 ]
