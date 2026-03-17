@@ -2955,5 +2955,80 @@
     "source_url": "",
     "source_author": "sennin_scout",
     "added_at": "2026-03-16T12:40:00+09:00"
+  },
+  {
+    "slug": "serenaをmcpサーバーとして起動してllmクライアントに接続",
+    "name": "SerenaをMCPサーバーとして起動してLLMクライアントに接続",
+    "category": "claude-code-workflow",
+    "description": "Serenaを各種LLMクライアント（Claude Code/Desktop、VSCode、Cursor、Cline等）のMCPサーバーとして起動し、シンボルレベルのコードツールをLLMに提供する",
+    "trigger_phrases": [
+      "コードベースが数百ファイル以上で構造が複雑、またはLLMが頻繁に無関係なファイルを読む時",
+      "SerenaをMCPサーバーとして起動してLLMクライアントに接続",
+      "uv",
+      "Serena（https://github.com/oraios/serena）",
+      "MCP対応クライアント"
+    ],
+    "source_url": "https://github.com/oraios/serena",
+    "source_author": "oraios",
+    "added_at": "2026-03-17T00:43:36.812081+00:00"
+  },
+  {
+    "slug": "lspバックエンドで30以上の言語にシンボル解析を適用",
+    "name": "LSPバックエンドで30以上の言語にシンボル解析を適用",
+    "category": "agent-orchestration",
+    "description": "Language Server Protocol実装をSerena経由で利用し、多言語プロジェクト（Python、JS/TS、Rust、Go、Java等30以上）のシンボル定義・参照・編集を統一的に処理する",
+    "trigger_phrases": [
+      "無料・オープンソースの解析ツールで多言語対応したい、またはJetBrains IDEを使っていない場合",
+      "LSPバックエンドで30以上の言語にシンボル解析を適用",
+      "Solid-LSP（Serenaに内蔵、multilspyベース）",
+      "各言語のLSP実装"
+    ],
+    "source_url": "https://github.com/oraios/serena",
+    "source_author": "oraios",
+    "added_at": "2026-03-17T00:43:36.812081+00:00"
+  },
+  {
+    "slug": "jetbrainsプラグインバックエンドで最強の解析精度を実現",
+    "name": "JetBrainsプラグインバックエンドで最強の解析精度を実現",
+    "category": "agent-orchestration",
+    "description": "Serena JetBrainsプラグインをインストールし、IntelliJ/PyCharm/WebStorm等のIDE解析エンジンをバックエンドとして活用する",
+    "trigger_phrases": [
+      "既にJetBrains IDEを使用中で、最高精度のコード解析とリファクタリングが必要な商用プロジェクト",
+      "JetBrainsプラグインバックエンドで最強の解析精度を実現",
+      "Serena JetBrainsプラグイン"
+    ],
+    "source_url": "https://github.com/oraios/serena",
+    "source_author": "oraios",
+    "added_at": "2026-03-17T00:43:36.812081+00:00"
+  },
+  {
+    "slug": "mcpo経由でchatgpt等の非mcp対応クライアントに統合",
+    "name": "mcpo経由でChatGPT等の非MCP対応クライアントに統合",
+    "category": "agent-orchestration",
+    "description": "mcpo（MCP to OpenAPI変換ツール）を使い、MCPをサポートしないクライアント（ChatGPT等）でもSerenaツールを利用可能にする",
+    "trigger_phrases": [
+      "ChatGPTやMCP非対応のLLMサービスで高度なコード編集を行いたい場合",
+      "mcpo経由でChatGPT等の非MCP対応クライアントに統合",
+      "mcpo",
+      "Serena"
+    ],
+    "source_url": "https://github.com/oraios/serena",
+    "source_author": "oraios",
+    "added_at": "2026-03-17T00:43:36.812081+00:00"
+  },
+  {
+    "slug": "カスタムエージェントフレームワークへのserenaツール組み込み",
+    "name": "カスタムエージェントフレームワークへのSerenaツール組み込み",
+    "category": "agent-orchestration",
+    "description": "Serenaのツール実装（serena.agent.Tool）をサブクラス化し、独自のエージェントフレームワークに統合する",
+    "trigger_phrases": [
+      "既存の独自エージェントフレームワークにIDE風コードツールを追加したい時",
+      "カスタムエージェントフレームワークへのSerenaツール組み込み",
+      "Serena（Python SDK）",
+      "任意のエージェントフレームワーク"
+    ],
+    "source_url": "https://github.com/oraios/serena",
+    "source_author": "oraios",
+    "added_at": "2026-03-17T00:43:36.812081+00:00"
   }
 ]

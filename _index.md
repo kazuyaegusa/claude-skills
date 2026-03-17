@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 256 スキル
+合計: 261 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -259,3 +259,9 @@
 | スキルセキュリティ監査による安全性担保 | スキルセキュリティ監査による安全性担保 | claude-code-workflow | skill-security-auditor を使って、インストール前にスキルのコード・指示内容をスキャンし、コマンドイ | alirezarezvani |
 | スキルエージェントペルソナの3層オーケストレーション | スキル・エージェント・ペルソナの3層オーケストレーション | claude-code-workflow | スキル（How）、エージェント（What）、ペルソナ（Who）を組み合わせて、ドメイン横断的な複雑タスクをフェーズ分けし | alirezarezvani |
 | stdlib依存のみの254-pythonツール提供 | stdlib依存のみの254 Pythonツール提供 | claude-code-workflow | pip install不要、Python標準ライブラリのみで動作する254個のCLIツールを各スキルに同梱 | alirezarezvani |
+| x-scout | X Scout - X投稿からの技術発見・スキル化 | sennin-scout | X投稿URLを受け取り、技術情報の抽出・スキル化・再現キット生成・検証レポート作成を自動実行するスキル | sennin_scout |
+| serenaをmcpサーバーとして起動してllmクライアントに接続 | SerenaをMCPサーバーとして起動してLLMクライアントに接続 | claude-code-workflow | Serenaを各種LLMクライアント（Claude Code/Desktop、VSCode、Cursor、Cline等） | oraios |
+| lspバックエンドで30以上の言語にシンボル解析を適用 | LSPバックエンドで30以上の言語にシンボル解析を適用 | agent-orchestration | Language Server Protocol実装をSerena経由で利用し、多言語プロジェクト（Python、JS/ | oraios |
+| jetbrainsプラグインバックエンドで最強の解析精度を実現 | JetBrainsプラグインバックエンドで最強の解析精度を実現 | agent-orchestration | Serena JetBrainsプラグインをインストールし、IntelliJ/PyCharm/WebStorm等のIDE | oraios |
+| mcpo経由でchatgpt等の非mcp対応クライアントに統合 | mcpo経由でChatGPT等の非MCP対応クライアントに統合 | agent-orchestration | mcpo（MCP to OpenAPI変換ツール）を使い、MCPをサポートしないクライアント（ChatGPT等）でもSe | oraios |
+| カスタムエージェントフレームワークへのserenaツール組み込み | カスタムエージェントフレームワークへのSerenaツール組み込み | agent-orchestration | Serenaのツール実装（serena.agent.Tool）をサブクラス化し、独自のエージェントフレームワークに統合す | oraios |
