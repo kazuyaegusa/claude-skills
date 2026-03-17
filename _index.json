@@ -3030,5 +3030,166 @@
     "source_url": "https://github.com/oraios/serena",
     "source_author": "oraios",
     "added_at": "2026-03-17T00:43:36.812081+00:00"
+  },
+  {
+    "slug": "typescript-pieces-frameworkによるmcp自動公開",
+    "name": "TypeScript pieces frameworkによるMCP自動公開",
+    "category": "automation-pipeline",
+    "description": "TypeScriptでワークフロー統合（pieces）を作成すると、それが自動的にMCPサーバーとしてClaude DesktopやCursor等から利用可能になる仕組みを構築する",
+    "trigger_phrases": [
+      "LLMから呼び出せる統合パーツを大量に作成・公開したい場合、コミュニティによる統合拡張を促進したい場合",
+      "TypeScript pieces frameworkによるMCP自動公開",
+      "TypeScript",
+      "npm",
+      "Activepieces pieces framework",
+      "Model Context Protocol (MCP)"
+    ],
+    "source_url": "https://github.com/activepieces/activepieces",
+    "source_author": "activepieces",
+    "added_at": "2026-03-17T00:50:32.743163+00:00"
+  },
+  {
+    "slug": "セルフホスト可能なノーコードプロコードハイブリッドアーキテクチャ",
+    "name": "セルフホスト可能なノーコード×プロコードハイブリッドアーキテクチャ",
+    "category": "automation-pipeline",
+    "description": "ノーコードビルダーでワークフローを構築しつつ、TypeScriptによるカスタム拡張を可能にし、全体をセルフホストできるアーキテクチャを設計する",
+    "trigger_phrases": [
+      "Zapierのような自動化をオンプレミスで実現したい場合、ノーコードとプロコードの両方のユーザーをサポートする必要がある場合",
+      "セルフホスト可能なノーコード×プロコードハイブリッドアーキテクチャ",
+      "Activepieces",
+      "TypeScript",
+      "Docker（セルフホスト用）"
+    ],
+    "source_url": "https://github.com/activepieces/activepieces",
+    "source_author": "activepieces",
+    "added_at": "2026-03-17T00:50:32.743163+00:00"
+  },
+  {
+    "slug": "human-in-the-loopパターンの標準pieces化",
+    "name": "Human-in-the-loopパターンの標準pieces化",
+    "category": "automation-pipeline",
+    "description": "承認待ち、遅延実行、人間入力（チャット、フォーム）をpiecesとして標準実装し、AIワークフローに組み込めるようにする",
+    "trigger_phrases": [
+      "AIが判断できない場面で人間の介入が必要な場合、段階的な自動化を進めたい場合、コンプライアンス上の承認が必要な場合",
+      "Human-in-the-loopパターンの標準pieces化",
+      "Activepieces pieces framework",
+      "Chat Interface piece",
+      "Form Interface piece"
+    ],
+    "source_url": "https://github.com/activepieces/activepieces",
+    "source_author": "activepieces",
+    "added_at": "2026-03-17T00:50:32.743163+00:00"
+  },
+  {
+    "slug": "オープンエコシステムによる280統合の集約",
+    "name": "オープンエコシステムによる280+統合の集約",
+    "category": "automation-pipeline",
+    "description": "npmjs.comを統合パッケージのリポジトリとして使い、コミュニティが作成した統合（60%がコミュニティ貢献）を集約・バージョン管理する",
+    "trigger_phrases": [
+      "大量の外部サービス統合が必要な場合、コミュニティによる貢献を促進したい場合、統合のバージョン管理と配布を効率化したい場合",
+      "オープンエコシステムによる280+統合の集約",
+      "npm",
+      "GitHub",
+      "TypeScript"
+    ],
+    "source_url": "https://github.com/activepieces/activepieces",
+    "source_author": "activepieces",
+    "added_at": "2026-03-17T00:50:32.743163+00:00"
+  },
+  {
+    "slug": "waspテンプレートからプロジェクト初期化",
+    "name": "Waspテンプレートからプロジェクト初期化",
+    "category": "automation-pipeline",
+    "description": "Wasp CLIの公式SaaSテンプレートを使い、認証・決済・ジョブ・UI・デプロイ設定を含むプロジェクトを生成する",
+    "trigger_phrases": [
+      "SaaSのMVPを構築する初期フェーズで、認証・決済・メール送信などの定型機能を迅速に実装したいとき",
+      "Waspテンプレートからプロジェクト初期化",
+      "Wasp CLI",
+      "React",
+      "NodeJS",
+      "Prisma",
+      "Astro（Starlight）"
+    ],
+    "source_url": "https://github.com/wasp-lang/open-saas",
+    "source_author": "wasp-lang",
+    "added_at": "2026-03-17T00:57:50.088771+00:00"
+  },
+  {
+    "slug": "waspの宣言的設定でフルスタック認証を実装",
+    "name": "Waspの宣言的設定でフルスタック認証を実装",
+    "category": "dev-tool",
+    "description": "Waspの設定ファイル（wasp.config）に認証方式（email/Google/GitHub/Slack等）を記述するだけで、バックエンド・フロントエンドの認証フローを自動生成する",
+    "trigger_phrases": [
+      "複数のOAuthプロバイダとメール認証を組み合わせたい、かつ型安全なAPIを自動生成したいとき",
+      "Waspの宣言的設定でフルスタック認証を実装",
+      "Wasp",
+      "Prisma",
+      "Passport.js（内部で利用）"
+    ],
+    "source_url": "https://github.com/wasp-lang/open-saas",
+    "source_author": "wasp-lang",
+    "added_at": "2026-03-17T00:57:50.088771+00:00"
+  },
+  {
+    "slug": "waspのジョブ定義でcronとキューを実装",
+    "name": "Waspのジョブ定義でcronとキューを実装",
+    "category": "automation-pipeline",
+    "description": "設定ファイルにジョブ（cron/キュー）を宣言し、TypeScript関数を実装するだけでバックグラウンド処理を実行する",
+    "trigger_phrases": [
+      "定期的なレポート生成、メール送信、データ集計などをバックグラウンドで実行したいとき",
+      "Waspのジョブ定義でcronとキューを実装",
+      "Wasp",
+      "PgBoss"
+    ],
+    "source_url": "https://github.com/wasp-lang/open-saas",
+    "source_author": "wasp-lang",
+    "added_at": "2026-03-17T00:57:50.088771+00:00"
+  },
+  {
+    "slug": "end-to-end型安全性でフロントバック連携",
+    "name": "End-to-End型安全性でフロント・バック連携",
+    "category": "dev-tool",
+    "description": "バックエンドのクエリ/アクション関数にTypeScript型を付けると、フロントエンドで自動的に型推論されたAPIが利用できる",
+    "trigger_phrases": [
+      "API型のズレによるランタイムエラーを防ぎたい、かつ追加ライブラリなしで型安全性を確保したいとき",
+      "End-to-End型安全性でフロント・バック連携",
+      "Wasp",
+      "TypeScript"
+    ],
+    "source_url": "https://github.com/wasp-lang/open-saas",
+    "source_author": "wasp-lang",
+    "added_at": "2026-03-17T00:57:50.088771+00:00"
+  },
+  {
+    "slug": "ai開発ツール向けメタデータ同梱",
+    "name": "AI開発ツール向けメタデータ同梱",
+    "category": "claude-code-workflow",
+    "description": "Claude Code・Cursor等のAIエージェントが読み取る専用ドキュメント（AGENTS.md、llms-full.txt、スキル、プラグイン）をプロジェクトに含める",
+    "trigger_phrases": [
+      "AIアシスタントにプロジェクト特有の実装パターンを学習させ、高品質なコード生成を実現したいとき",
+      "AI開発ツール向けメタデータ同梱",
+      "Claude Code",
+      "Cursor",
+      "Markdown"
+    ],
+    "source_url": "https://github.com/wasp-lang/open-saas",
+    "source_author": "wasp-lang",
+    "added_at": "2026-03-17T00:57:50.088771+00:00"
+  },
+  {
+    "slug": "ワンコマンドデプロイでdbサーバークライアントを一括公開",
+    "name": "ワンコマンドデプロイでDB・サーバー・クライアントを一括公開",
+    "category": "infrastructure",
+    "description": "Wasp CLIの `wasp deploy` コマンドでRailway/Fly.ioへDB・バックエンド・フロントエンドを自動デプロイする",
+    "trigger_phrases": [
+      "MVPを即座に本番環境へ公開し、手動デプロイの手間を削減したいとき",
+      "ワンコマンドデプロイでDB・サーバー・クライアントを一括公開",
+      "Wasp CLI",
+      "Fly.io / Railway",
+      "PostgreSQL"
+    ],
+    "source_url": "https://github.com/wasp-lang/open-saas",
+    "source_author": "wasp-lang",
+    "added_at": "2026-03-17T00:57:50.088771+00:00"
   }
 ]

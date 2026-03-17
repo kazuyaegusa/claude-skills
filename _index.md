@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 261 スキル
+合計: 271 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -265,3 +265,13 @@
 | jetbrainsプラグインバックエンドで最強の解析精度を実現 | JetBrainsプラグインバックエンドで最強の解析精度を実現 | agent-orchestration | Serena JetBrainsプラグインをインストールし、IntelliJ/PyCharm/WebStorm等のIDE | oraios |
 | mcpo経由でchatgpt等の非mcp対応クライアントに統合 | mcpo経由でChatGPT等の非MCP対応クライアントに統合 | agent-orchestration | mcpo（MCP to OpenAPI変換ツール）を使い、MCPをサポートしないクライアント（ChatGPT等）でもSe | oraios |
 | カスタムエージェントフレームワークへのserenaツール組み込み | カスタムエージェントフレームワークへのSerenaツール組み込み | agent-orchestration | Serenaのツール実装（serena.agent.Tool）をサブクラス化し、独自のエージェントフレームワークに統合す | oraios |
+| typescript-pieces-frameworkによるmcp自動公開 | TypeScript pieces frameworkによるMCP自動公開 | automation-pipeline | TypeScriptでワークフロー統合（pieces）を作成すると、それが自動的にMCPサーバーとしてClaude De | activepieces |
+| セルフホスト可能なノーコードプロコードハイブリッドアーキテクチャ | セルフホスト可能なノーコード×プロコードハイブリッドアーキテクチャ | automation-pipeline | ノーコードビルダーでワークフローを構築しつつ、TypeScriptによるカスタム拡張を可能にし、全体をセルフホストできる | activepieces |
+| human-in-the-loopパターンの標準pieces化 | Human-in-the-loopパターンの標準pieces化 | automation-pipeline | 承認待ち、遅延実行、人間入力（チャット、フォーム）をpiecesとして標準実装し、AIワークフローに組み込めるようにする | activepieces |
+| オープンエコシステムによる280統合の集約 | オープンエコシステムによる280+統合の集約 | automation-pipeline | npmjs.comを統合パッケージのリポジトリとして使い、コミュニティが作成した統合（60%がコミュニティ貢献）を集約・ | activepieces |
+| waspテンプレートからプロジェクト初期化 | Waspテンプレートからプロジェクト初期化 | automation-pipeline | Wasp CLIの公式SaaSテンプレートを使い、認証・決済・ジョブ・UI・デプロイ設定を含むプロジェクトを生成する | wasp-lang |
+| waspの宣言的設定でフルスタック認証を実装 | Waspの宣言的設定でフルスタック認証を実装 | dev-tool | Waspの設定ファイル（wasp.config）に認証方式（email/Google/GitHub/Slack等）を記述 | wasp-lang |
+| waspのジョブ定義でcronとキューを実装 | Waspのジョブ定義でcronとキューを実装 | automation-pipeline | 設定ファイルにジョブ（cron/キュー）を宣言し、TypeScript関数を実装するだけでバックグラウンド処理を実行する | wasp-lang |
+| end-to-end型安全性でフロントバック連携 | End-to-End型安全性でフロント・バック連携 | dev-tool | バックエンドのクエリ/アクション関数にTypeScript型を付けると、フロントエンドで自動的に型推論されたAPIが利用 | wasp-lang |
+| ai開発ツール向けメタデータ同梱 | AI開発ツール向けメタデータ同梱 | claude-code-workflow | Claude Code・Cursor等のAIエージェントが読み取る専用ドキュメント（AGENTS.md、llms-ful | wasp-lang |
+| ワンコマンドデプロイでdbサーバークライアントを一括公開 | ワンコマンドデプロイでDB・サーバー・クライアントを一括公開 | infrastructure | Wasp CLIの `wasp deploy` コマンドでRailway/Fly.ioへDB・バックエンド・フロントエン | wasp-lang |
