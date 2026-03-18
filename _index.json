@@ -3999,5 +3999,184 @@
     "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
     "source_author": "hesreallyhim",
     "added_at": "2026-03-18T00:07:08.742005+00:00"
+  },
+  {
+    "slug": "プラグインのインストールと利用",
+    "name": "プラグインのインストールと利用",
+    "category": "agent-orchestration",
+    "description": "Awesome Copilotマーケットプレイスから公開されているプラグイン（agents/skills/instructionsのバンドル）をCopilot CLI経由でインストールし、即座に利用する",
+    "trigger_phrases": [
+      "特定の技術スタック、ワークフロー、コーディング規約に特化したCopilot体験が必要な時",
+      "プラグインのインストールと利用",
+      "Copilot CLI",
+      "VS Code",
+      "github/awesome-copilot リポジトリ",
+      "awesome-copilot.github.com Webサイト"
+    ],
+    "source_url": "https://github.com/github/awesome-copilot",
+    "source_author": "github",
+    "added_at": "2026-03-18T00:08:55.901923+00:00"
+  },
+  {
+    "slug": "instructionsによるファイルパターン別コーディング規約の自動適用",
+    "name": "Instructionsによるファイルパターン別コーディング規約の自動適用",
+    "category": "prompt-engineering",
+    "description": "特定のファイルパターン（例: *.ts, *.py）に対して自動適用されるコーディング規約やスタイルガイドをInstructionsとして定義・配布する",
+    "trigger_phrases": [
+      "チーム全体で統一されたコーディングスタイル、命名規則、エラーハンドリングパターンを強制したい時",
+      "Instructionsによるファイルパターン別コーディング規約の自動適用",
+      "GitHub Copilot",
+      "VS Code",
+      "Awesome Copilot Instructions collection"
+    ],
+    "source_url": "https://github.com/github/awesome-copilot",
+    "source_author": "github",
+    "added_at": "2026-03-18T00:08:55.901923+00:00"
+  },
+  {
+    "slug": "skillsによる自己完結型機能バンドルの利用",
+    "name": "Skillsによる自己完結型機能バンドルの利用",
+    "category": "infrastructure",
+    "description": "Instructions、サンプルコード、設定ファイルなどをフォルダ単位でバンドルしたSkillを導入し、特定の技術領域（例: React Testing Library, Docker, OpenAPI）の開発を加速する",
+    "trigger_phrases": [
+      "特定フレームワーク、テスト手法、DevOps toolingなど複合的な知識が必要な開発タスクに取り組む時",
+      "Skillsによる自己完結型機能バンドルの利用",
+      "GitHub Copilot",
+      "VS Code",
+      "Awesome Copilot Skills collection"
+    ],
+    "source_url": "https://github.com/github/awesome-copilot",
+    "source_author": "github",
+    "added_at": "2026-03-18T00:08:55.901923+00:00"
+  },
+  {
+    "slug": "agentsによる専門的なaiアシスタントの導入",
+    "name": "Agentsによる専門的なAIアシスタントの導入",
+    "category": "agent-orchestration",
+    "description": "MCP server（Model Context Protocol）と連携し、外部API、データベース、開発ツールにアクセスできる専門的なagentをインストールする",
+    "trigger_phrases": [
+      "セキュリティ監査、データベーススキーマ管理、Infrastructure as Code生成など高度な専門タスクをAI支援したい時",
+      "Agentsによる専門的なAIアシスタントの導入",
+      "GitHub Copilot",
+      "MCP servers",
+      "Awesome Copilot Agents collection"
+    ],
+    "source_url": "https://github.com/github/awesome-copilot",
+    "source_author": "github",
+    "added_at": "2026-03-18T00:08:55.901923+00:00"
+  },
+  {
+    "slug": "hooksによるセッション自動化",
+    "name": "Hooksによるセッション自動化",
+    "category": "agent-orchestration",
+    "description": "Copilot agentセッション中に特定イベント（例: ファイル保存、コミット前）で自動実行されるシェルコマンドやスクリプトを設定する",
+    "trigger_phrases": [
+      "コード品質チェック、自動テスト、デプロイ前検証などを開発フローに組み込みたい時",
+      "Hooksによるセッション自動化",
+      "GitHub Copilot",
+      "Awesome Copilot Hooks collection"
+    ],
+    "source_url": "https://github.com/github/awesome-copilot",
+    "source_author": "github",
+    "added_at": "2026-03-18T00:08:55.901923+00:00"
+  },
+  {
+    "slug": "agentic-workflowsによるgithub-actions統合",
+    "name": "Agentic WorkflowsによるGitHub Actions統合",
+    "category": "agent-orchestration",
+    "description": "Markdown形式で記述されたAI駆動のGitHub Actionsワークフローを導入し、PR自動レビュー、ドキュメント生成、リリースノート作成などを自動化する",
+    "trigger_phrases": [
+      "CI/CDパイプラインにAI判断を組み込みたい時、自動レビュー・ドキュメント生成を導入したい時",
+      "Agentic WorkflowsによるGitHub Actions統合",
+      "GitHub Actions",
+      "GitHub Copilot",
+      "Awesome Copilot Workflows collection"
+    ],
+    "source_url": "https://github.com/github/awesome-copilot",
+    "source_author": "github",
+    "added_at": "2026-03-18T00:08:55.901923+00:00"
+  },
+  {
+    "slug": "langfuse自動トレーシング実装",
+    "name": "Langfuse自動トレーシング実装",
+    "category": "agent-orchestration",
+    "description": "LLMアプリケーションの全実行フローを自動でトレースし、各LLM呼び出し・retrieval・embedding・agent actionを記録する",
+    "trigger_phrases": [
+      "LLMアプリを本番環境にデプロイする前、または既にデプロイ済みでデバッグ・監視基盤が必要になった時",
+      "Langfuse自動トレーシング実装",
+      "langfuse (Python SDK)",
+      "langfuse-openai (OpenAI統合)",
+      "langfuse-langchain (LangChain統合)",
+      "langfuse-llama-index (LlamaIndex統合)"
+    ],
+    "source_url": "https://github.com/langfuse/langfuse",
+    "source_author": "langfuse",
+    "added_at": "2026-03-18T00:10:52.968083+00:00"
+  },
+  {
+    "slug": "langfuseセルフホスト構築",
+    "name": "Langfuseセルフホスト構築",
+    "category": "infrastructure",
+    "description": "Langfuseをローカル/VM/Kubernetesで自前インフラ上に5分～30分でデプロイし、外部SaaS依存なしで運用する",
+    "trigger_phrases": [
+      "Langfuse Cloudの無料枠を超える規模になった時、または最初からセキュリティ要件で外部SaaS利用が許可されない時",
+      "Langfuseセルフホスト構築",
+      "Docker/Docker Compose",
+      "Kubernetes + Helm",
+      "Terraform (AWS/Azure/GCP)",
+      "ClickHouse (推奨データベース)"
+    ],
+    "source_url": "https://github.com/langfuse/langfuse",
+    "source_author": "langfuse",
+    "added_at": "2026-03-18T00:10:52.968083+00:00"
+  },
+  {
+    "slug": "prompt-management統合",
+    "name": "Prompt Management統合",
+    "category": "prompt-engineering",
+    "description": "プロンプトをコードから分離してLangfuse UIで一元管理し、バージョン管理・A/Bテスト・リアルタイム更新を可能にする",
+    "trigger_phrases": [
+      "プロンプトを頻繁に改善したい時、複数チームで共同編集したい時、A/Bテストで効果測定したい時",
+      "Prompt Management統合",
+      "langfuse SDK (get_prompt API)",
+      "Langfuse Web UI"
+    ],
+    "source_url": "https://github.com/langfuse/langfuse",
+    "source_author": "langfuse",
+    "added_at": "2026-03-18T00:10:52.968083+00:00"
+  },
+  {
+    "slug": "evaluation-dataset-run実装",
+    "name": "Evaluation & Dataset Run実装",
+    "category": "prompt-engineering",
+    "description": "テストセット（Dataset）を作成し、LLM-as-a-judge/ユーザーフィードバック/カスタム評価スクリプトで継続的に品質評価する",
+    "trigger_phrases": [
+      "プロンプト改善前にリグレッションテストしたい時、本番デプロイ前に品質保証したい時、A/Bテストで勝者を決めたい時",
+      "Evaluation & Dataset Run実装",
+      "Langfuse Datasets API",
+      "Langfuse Evaluation API",
+      "Langfuse Playground (UI)"
+    ],
+    "source_url": "https://github.com/langfuse/langfuse",
+    "source_author": "langfuse",
+    "added_at": "2026-03-18T00:10:52.968083+00:00"
+  },
+  {
+    "slug": "マルチllmプロバイダー統合",
+    "name": "マルチLLMプロバイダー統合",
+    "category": "infrastructure",
+    "description": "OpenAI、Anthropic、Ollama（ローカル）、AWS Bedrock、Azure等のLLMを統一インターフェースで切り替え・監視する",
+    "trigger_phrases": [
+      "複数LLMプロバイダーを試したい時、コスト削減のためモデルを切り替えたい時、ローカルLLMと商用APIを混在させたい時",
+      "マルチLLMプロバイダー統合",
+      "LiteLLM",
+      "Vercel AI SDK",
+      "Haystack",
+      "Mastra",
+      "Langfuse統合SDK"
+    ],
+    "source_url": "https://github.com/langfuse/langfuse",
+    "source_author": "langfuse",
+    "added_at": "2026-03-18T00:10:52.968083+00:00"
   }
 ]

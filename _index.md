@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 323 スキル
+合計: 334 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -327,3 +327,14 @@
 | マルチエージェント並列実行でタスク分散 | マルチエージェント並列実行でタスク分散 | claude-code-workflow | 複数の Claude Code インスタンスを並列に起動し、それぞれ独立したタスクを実行させることで、開発速度を向上させ | hesreallyhim |
 | 使用量監視でコストトークン消費を可視化 | 使用量監視でコスト・トークン消費を可視化 | claude-code-workflow | Claude Code のローカルログ（`.jsonl` ファイル）を解析し、トークン消費量・コスト・セッション履歴をダ | hesreallyhim |
 | claudemd-でプロジェクト文脈を注入 | CLAUDE.md でプロジェクト文脈を注入 | claude-code-workflow | プロジェクトルートまたは `~/.claude/` に配置する Markdown ファイルで、プロジェクト固有のルール・ | hesreallyhim |
+| プラグインのインストールと利用 | プラグインのインストールと利用 | agent-orchestration | Awesome Copilotマーケットプレイスから公開されているプラグイン（agents/skills/instruc | github |
+| instructionsによるファイルパターン別コーディング規約の自動適用 | Instructionsによるファイルパターン別コーディング規約の自動適用 | prompt-engineering | 特定のファイルパターン（例: *.ts, *.py）に対して自動適用されるコーディング規約やスタイルガイドをInstru | github |
+| skillsによる自己完結型機能バンドルの利用 | Skillsによる自己完結型機能バンドルの利用 | infrastructure | Instructions、サンプルコード、設定ファイルなどをフォルダ単位でバンドルしたSkillを導入し、特定の技術領域 | github |
+| agentsによる専門的なaiアシスタントの導入 | Agentsによる専門的なAIアシスタントの導入 | agent-orchestration | MCP server（Model Context Protocol）と連携し、外部API、データベース、開発ツールにアク | github |
+| hooksによるセッション自動化 | Hooksによるセッション自動化 | agent-orchestration | Copilot agentセッション中に特定イベント（例: ファイル保存、コミット前）で自動実行されるシェルコマンドやス | github |
+| agentic-workflowsによるgithub-actions統合 | Agentic WorkflowsによるGitHub Actions統合 | agent-orchestration | Markdown形式で記述されたAI駆動のGitHub Actionsワークフローを導入し、PR自動レビュー、ドキュメン | github |
+| langfuse自動トレーシング実装 | Langfuse自動トレーシング実装 | agent-orchestration | LLMアプリケーションの全実行フローを自動でトレースし、各LLM呼び出し・retrieval・embedding・age | langfuse |
+| langfuseセルフホスト構築 | Langfuseセルフホスト構築 | infrastructure | Langfuseをローカル/VM/Kubernetesで自前インフラ上に5分～30分でデプロイし、外部SaaS依存なしで | langfuse |
+| prompt-management統合 | Prompt Management統合 | prompt-engineering | プロンプトをコードから分離してLangfuse UIで一元管理し、バージョン管理・A/Bテスト・リアルタイム更新を可能に | langfuse |
+| evaluation-dataset-run実装 | Evaluation & Dataset Run実装 | prompt-engineering | テストセット（Dataset）を作成し、LLM-as-a-judge/ユーザーフィードバック/カスタム評価スクリプトで継 | langfuse |
+| マルチllmプロバイダー統合 | マルチLLMプロバイダー統合 | infrastructure | OpenAI、Anthropic、Ollama（ローカル）、AWS Bedrock、Azure等のLLMを統一インターフ | langfuse |
