@@ -3716,5 +3716,288 @@
     "source_url": "https://github.com/agentgateway/agentgateway",
     "source_author": "agentgateway",
     "added_at": "2026-03-17T01:37:10.591963+00:00"
+  },
+  {
+    "slug": "oauth認証で無料gemini-3モデルを即座に利用する",
+    "name": "OAuth認証で無料Gemini 3モデルを即座に利用する",
+    "category": "context-management",
+    "description": "Google OAuthログイン経由で、APIキー不要・日1000リクエスト枠のGemini 3モデル（1Mトークン）にアクセスする",
+    "trigger_phrases": [
+      "APIキー管理を避けたい個人開発者、または既存のGoogle Workspaceアカウントで無料LLM利用を開始したいとき",
+      "OAuth認証で無料Gemini 3モデルを即座に利用する",
+      "gemini-cli",
+      "Google OAuth 2.0"
+    ],
+    "source_url": "https://github.com/google-gemini/gemini-cli",
+    "source_author": "google-gemini",
+    "added_at": "2026-03-18T00:03:58.837435+00:00"
+  },
+  {
+    "slug": "非対話モードでjson出力を取得してcicdに統合する",
+    "name": "非対話モードでJSON出力を取得してCI/CDに統合する",
+    "category": "agent-orchestration",
+    "description": "Gemini CLIを`-p`フラグ付きで実行し、`--output-format json`または`stream-json`でAIの応答を構造化データとして取得する",
+    "trigger_phrases": [
+      "PRマージ前のコードレビュー自動化、Issue自動ラベリング、スケジュールされたコード監査レポート生成など、AIの判断結果を後続プロセスに渡したい場合",
+      "非対話モードでJSON出力を取得してCI/CDに統合する",
+      "gemini-cli",
+      "jq（JSONパース）",
+      "google-github-actions/run-gemini-cli"
+    ],
+    "source_url": "https://github.com/google-gemini/gemini-cli",
+    "source_author": "google-gemini",
+    "added_at": "2026-03-18T00:03:58.837435+00:00"
+  },
+  {
+    "slug": "mcp-serverで外部ツールを拡張しエージェントワークフローを構築する",
+    "name": "MCP Serverで外部ツールを拡張しエージェントワークフローを構築する",
+    "category": "agent-orchestration",
+    "description": "~/.gemini/settings.jsonにMCP（Model Context Protocol）サーバー定義を追加し、Gemini CLIから`@<server名>`で外部API（Slack、GitHub、DB、メディア生成等）を操作する",
+    "trigger_phrases": [
+      "コード変更をトリガーに他システムへ通知したい、AIに外部DBクエリやメディア生成を実行させたい、カスタムビジネスロジックをLLMから呼び出したい場合",
+      "MCP Serverで外部ツールを拡張しエージェントワークフローを構築する",
+      "Model Context Protocol (MCP)",
+      "任意のMCP対応サーバー（自作可能）",
+      "Vertex AI Creative Studio MCP（Imagen/Veo/Lyria）"
+    ],
+    "source_url": "https://github.com/google-gemini/gemini-cli",
+    "source_author": "google-gemini",
+    "added_at": "2026-03-18T00:03:58.837435+00:00"
+  },
+  {
+    "slug": "geminimdでプロジェクト固有のコンテキストを永続化する",
+    "name": "GEMINI.mdでプロジェクト固有のコンテキストを永続化する",
+    "category": "claude-code-workflow",
+    "description": "リポジトリルートまたはホームディレクトリに`GEMINI.md`を配置し、プロジェクトのアーキテクチャ・コーディング規約・制約条件をGemini CLIに常時認識させる",
+    "trigger_phrases": [
+      "複数人で同じリポジトリを触る、AIにプロジェクト固有のルール（認証方式、LLMバックエンド選択等）を守らせたい、オンボーディング時の説明コストを削減したい場合",
+      "GEMINI.mdでプロジェクト固有のコンテキストを永続化する",
+      "gemini-cli",
+      "Markdown"
+    ],
+    "source_url": "https://github.com/google-gemini/gemini-cli",
+    "source_author": "google-gemini",
+    "added_at": "2026-03-18T00:03:58.837435+00:00"
+  },
+  {
+    "slug": "チェックポイント機能で長時間セッションを保存再開する",
+    "name": "チェックポイント機能で長時間セッションを保存・再開する",
+    "category": "context-management",
+    "description": "Gemini CLIのチェックポイント機能で、対話履歴とコンテキストをスナップショットとして保存し、後日同じ状態から作業を再開する",
+    "trigger_phrases": [
+      "複数日のデバッグ作業、段階的な機能追加で中間状態を保存したい、チームメンバー間でセッションを引き継ぎたい場合",
+      "チェックポイント機能で長時間セッションを保存・再開する",
+      "gemini-cli",
+      "（オプション）token-cache機能"
+    ],
+    "source_url": "https://github.com/google-gemini/gemini-cli",
+    "source_author": "google-gemini",
+    "added_at": "2026-03-18T00:03:58.837435+00:00"
+  },
+  {
+    "slug": "google-search-groundingでリアルタイム情報を統合する",
+    "name": "Google Search groundingでリアルタイム情報を統合する",
+    "category": "prompt-engineering",
+    "description": "Gemini CLIの組み込みGoogle Search grounding機能を使い、LLMの応答に最新のWeb情報を根拠として含める",
+    "trigger_phrases": [
+      "最新のフレームワークバージョンに対応したコード生成、既知の脆弱性を避けた実装、現在のベストプラクティスに従ったリファクタリングをしたい場合",
+      "Google Search groundingでリアルタイム情報を統合する",
+      "gemini-cli",
+      "Google Search grounding (Gemini API標準機能)"
+    ],
+    "source_url": "https://github.com/google-gemini/gemini-cli",
+    "source_author": "google-gemini",
+    "added_at": "2026-03-18T00:03:58.837435+00:00"
+  },
+  {
+    "slug": "制限環境でanaconda経由でインストールする",
+    "name": "制限環境でAnaconda経由でインストールする",
+    "category": "dev-tool",
+    "description": "企業ネットワークやエアギャップ環境でnpm直接インストールが困難な場合、Anacondaでnode.js環境を作成してからgemini-cliをインストールする",
+    "trigger_phrases": [
+      "企業プロキシ配下、npmレジストリへのアクセスが制限されている、Node.jsの公式インストーラが使えない環境で導入したい場合",
+      "制限環境でAnaconda経由でインストールする",
+      "Anaconda/Miniconda",
+      "conda-forge",
+      "npm"
+    ],
+    "source_url": "https://github.com/google-gemini/gemini-cli",
+    "source_author": "google-gemini",
+    "added_at": "2026-03-18T00:03:58.837435+00:00"
+  },
+  {
+    "slug": "claude-codeの公式推奨インストール",
+    "name": "Claude Codeの公式推奨インストール",
+    "category": "claude-code-workflow",
+    "description": "npmではなく公式インストールスクリプトまたはパッケージマネージャーを使ってClaude Codeをインストールする",
+    "trigger_phrases": [
+      "Claude Codeを新規導入する時、または古いnpmバージョンから移行する時",
+      "Claude Codeの公式推奨インストール",
+      "curl (MacOS/Linux)",
+      "bash (MacOS/Linux)",
+      "PowerShell (Windows)",
+      "Homebrew (オプション)",
+      "WinGet (オプション)"
+    ],
+    "source_url": "https://github.com/anthropics/claude-code",
+    "source_author": "anthropics",
+    "added_at": "2026-03-18T00:05:04.652421+00:00"
+  },
+  {
+    "slug": "プロジェクトディレクトリでclaude-codeを起動する",
+    "name": "プロジェクトディレクトリでClaude Codeを起動する",
+    "category": "claude-code-workflow",
+    "description": "コードベースのルートディレクトリに移動してから `claude` コマンドを実行し、対話セッションを開始する",
+    "trigger_phrases": [
+      "特定のプロジェクトに対してコード生成・リファクタリング・説明を依頼したい時",
+      "プロジェクトディレクトリでClaude Codeを起動する",
+      "claude CLI"
+    ],
+    "source_url": "https://github.com/anthropics/claude-code",
+    "source_author": "anthropics",
+    "added_at": "2026-03-18T00:05:04.652421+00:00"
+  },
+  {
+    "slug": "bugコマンドでバグレポートを送信する",
+    "name": "/bugコマンドでバグレポートを送信する",
+    "category": "claude-code-workflow",
+    "description": "Claude Codeセッション内で `/bug` コマンドを実行し、問題を直接AnthropicのGitHub Issuesに報告する",
+    "trigger_phrases": [
+      "Claude Code使用中にバグや予期しない動作に遭遇した時",
+      "/bugコマンドでバグレポートを送信する",
+      "claude CLI",
+      "/bug コマンド"
+    ],
+    "source_url": "https://github.com/anthropics/claude-code",
+    "source_author": "anthropics",
+    "added_at": "2026-03-18T00:05:04.652421+00:00"
+  },
+  {
+    "slug": "プラグインでclaude-codeを拡張する",
+    "name": "プラグインでClaude Codeを拡張する",
+    "category": "claude-code-workflow",
+    "description": "公式リポジトリのpluginsディレクトリにあるプラグインを導入し、カスタムコマンドやエージェント機能を追加する",
+    "trigger_phrases": [
+      "標準機能では対応できない専門的なワークフローや繰り返しタスクを自動化したい時",
+      "プラグインでClaude Codeを拡張する",
+      "claude-code plugins",
+      "GitHub リポジトリ"
+    ],
+    "source_url": "https://github.com/anthropics/claude-code",
+    "source_author": "anthropics",
+    "added_at": "2026-03-18T00:05:04.652421+00:00"
+  },
+  {
+    "slug": "agent-skills-でドメイン知識を注入する",
+    "name": "Agent Skills でドメイン知識を注入する",
+    "category": "claude-code-workflow",
+    "description": "Claude Code に専門分野の知識・ワークフローを教え込み、特定タスクを自律実行させる仕組み。Skills は「モデル制御の設定ファイル群」として機能し、Claude が特定の知識や手順を必要とするタスクを実行できるようにする",
+    "trigger_phrases": [
+      "特定ドメインの専門知識を繰り返し適用する場合、複雑な多段階ワークフローを自動化したい場合、チーム全体で標準化されたベストプラクティスを共有したい場合",
+      "Agent Skills でドメイン知識を注入する",
+      "Claude Code Skills API",
+      "GitHub（Skills リポジトリ配布）"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-18T00:07:08.742005+00:00"
+  },
+  {
+    "slug": "hooks-でライフサイクルに介入する",
+    "name": "Hooks でライフサイクルに介入する",
+    "category": "claude-code-workflow",
+    "description": "Claude Code の動作ライフサイクル（ツール呼び出し前後、ファイル書き込み前後など）に独自スクリプトを挿入し、品質チェック・承認フロー・通知などを自動実行する仕組み",
+    "trigger_phrases": [
+      "危険なコマンド（rm -rf など）を自動承認せずに人間確認したい場合、コード品質基準を強制したい場合、TDD ルールを守らせたい場合、デスクトップ通知で作業完了を知りたい場合",
+      "Hooks でライフサイクルに介入する",
+      "Dippy（安全なコマンド自動承認）",
+      "parry（プロンプトインジェクション検出）",
+      "TDD Guard（TDD ルール強制）",
+      "TypeScript Quality Hooks"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-18T00:07:08.742005+00:00"
+  },
+  {
+    "slug": "slash-commands-で定型プロンプトを再利用する",
+    "name": "Slash-Commands で定型プロンプトを再利用する",
+    "category": "claude-code-workflow",
+    "description": "頻繁に使うプロンプトを `/commit`, `/tdd`, `/analyze-issue` などのコマンドとして登録し、1 行で呼び出せるようにする仕組み。各コマンドは `.claude/commands/` ディレクトリの Markdown ファイルとして定義される",
+    "trigger_phrases": [
+      "Git コミット、PR 作成、GitHub Issue 対応、TDD サイクル実行、ドキュメント生成など、繰り返し実行する定型作業がある場合",
+      "Slash-Commands で定型プロンプトを再利用する",
+      "Claude Code Slash-Commands API"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-18T00:07:08.742005+00:00"
+  },
+  {
+    "slug": "workflows-で複数ステージのプロセスを構造化する",
+    "name": "Workflows で複数ステージのプロセスを構造化する",
+    "category": "claude-code-workflow",
+    "description": "開発プロセス全体（Research → Plan → Execute → Review など）を明示的なステージに分割し、各ステージで Claude Code の振る舞いを制御する枠組み。Subagents、Commands、CLAUDE.md、Skills を組み合わせて構築する",
+    "trigger_phrases": [
+      "大規模な機能開発、複数人での協業、品質基準が厳格なプロジェクト、TDD やセキュリティ監査を組み込みたい場合",
+      "Workflows で複数ステージのプロセスを構造化する",
+      "RIPER Workflow",
+      "AB Method",
+      "ContextKit",
+      "Claude CodePro",
+      "Superpowers Skills"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-18T00:07:08.742005+00:00"
+  },
+  {
+    "slug": "マルチエージェント並列実行でタスク分散",
+    "name": "マルチエージェント並列実行でタスク分散",
+    "category": "claude-code-workflow",
+    "description": "複数の Claude Code インスタンスを並列に起動し、それぞれ独立したタスクを実行させることで、開発速度を向上させる仕組み。オーケストレーターツールが各エージェントを管理し、結果を統合する",
+    "trigger_phrases": [
+      "複数の独立した機能を同時開発したい場合、CI/CD パイプラインで並列テスト実行したい場合、大規模リファクタリングを分散処理したい場合",
+      "マルチエージェント並列実行でタスク分散",
+      "Claude Squad",
+      "Auto-Claude",
+      "TSK",
+      "sudocode",
+      "claude-tmux"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-18T00:07:08.742005+00:00"
+  },
+  {
+    "slug": "使用量監視でコストトークン消費を可視化",
+    "name": "使用量監視でコスト・トークン消費を可視化",
+    "category": "claude-code-workflow",
+    "description": "Claude Code のローカルログ（`.jsonl` ファイル）を解析し、トークン消費量・コスト・セッション履歴をダッシュボードで可視化するツール群",
+    "trigger_phrases": [
+      "複数プロジェクトで Claude Code を使い分けている場合、チームでコスト管理が必要な場合、トークン上限に達する前に警告が欲しい場合、過去のセッションを振り返りたい場合",
+      "使用量監視でコスト・トークン消費を可視化",
+      "ccflare / better-ccflare",
+      "CC Usage",
+      "Claudex",
+      "Claude Code Usage Monitor"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-18T00:07:08.742005+00:00"
+  },
+  {
+    "slug": "claudemd-でプロジェクト文脈を注入",
+    "name": "CLAUDE.md でプロジェクト文脈を注入",
+    "category": "claude-code-workflow",
+    "description": "プロジェクトルートまたは `~/.claude/` に配置する Markdown ファイルで、プロジェクト固有のルール・コーディング規約・アーキテクチャ情報を Claude Code に伝える仕組み",
+    "trigger_phrases": [
+      "新しいプロジェクトを Claude Code で開発する場合、既存プロジェクトに Claude Code を導入する場合、チーム全体で統一したルールを守らせたい場合",
+      "CLAUDE.md でプロジェクト文脈を注入",
+      "CLAUDE.md 仕様（Claude Code 公式）"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-18T00:07:08.742005+00:00"
   }
 ]

@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 305 スキル
+合計: 323 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -309,3 +309,21 @@
 | openapiをmcpリソースに変換してエージェントに公開 | OpenAPIをMCPリソースに変換してエージェントに公開 | agent-orchestration | 既存のREST APIのOpenAPI定義をagentgatewayに読み込ませ、エージェントがMCPプロトコル経由で呼 | agentgateway |
 | kubernetes-gateway-apiでエージェント通信を動的管理 | Kubernetes Gateway APIでエージェント通信を動的管理 | agent-orchestration | Kubernetes上のエージェントをGateway APIのHTTPRoute/TLSRoute等で宣言的にルーティン | agentgateway |
 | mcpa2a特化rbacでエージェント権限を制御 | MCP/A2A特化RBACでエージェント権限を制御 | agent-orchestration | agentgatewayのRBACシステムを使い、どのエージェントがどのMCPリソース（ツール・プロンプト・サンプリング | agentgateway |
+| oauth認証で無料gemini-3モデルを即座に利用する | OAuth認証で無料Gemini 3モデルを即座に利用する | context-management | Google OAuthログイン経由で、APIキー不要・日1000リクエスト枠のGemini 3モデル（1Mトークン）に | google-gemini |
+| 非対話モードでjson出力を取得してcicdに統合する | 非対話モードでJSON出力を取得してCI/CDに統合する | agent-orchestration | Gemini CLIを`-p`フラグ付きで実行し、`--output-format json`または`stream-js | google-gemini |
+| mcp-serverで外部ツールを拡張しエージェントワークフローを構築する | MCP Serverで外部ツールを拡張しエージェントワークフローを構築する | agent-orchestration | ~/.gemini/settings.jsonにMCP（Model Context Protocol）サーバー定義を追加 | google-gemini |
+| geminimdでプロジェクト固有のコンテキストを永続化する | GEMINI.mdでプロジェクト固有のコンテキストを永続化する | claude-code-workflow | リポジトリルートまたはホームディレクトリに`GEMINI.md`を配置し、プロジェクトのアーキテクチャ・コーディング規約 | google-gemini |
+| チェックポイント機能で長時間セッションを保存再開する | チェックポイント機能で長時間セッションを保存・再開する | context-management | Gemini CLIのチェックポイント機能で、対話履歴とコンテキストをスナップショットとして保存し、後日同じ状態から作業 | google-gemini |
+| google-search-groundingでリアルタイム情報を統合する | Google Search groundingでリアルタイム情報を統合する | prompt-engineering | Gemini CLIの組み込みGoogle Search grounding機能を使い、LLMの応答に最新のWeb情報を | google-gemini |
+| 制限環境でanaconda経由でインストールする | 制限環境でAnaconda経由でインストールする | dev-tool | 企業ネットワークやエアギャップ環境でnpm直接インストールが困難な場合、Anacondaでnode.js環境を作成してか | google-gemini |
+| claude-codeの公式推奨インストール | Claude Codeの公式推奨インストール | claude-code-workflow | npmではなく公式インストールスクリプトまたはパッケージマネージャーを使ってClaude Codeをインストールする | anthropics |
+| プロジェクトディレクトリでclaude-codeを起動する | プロジェクトディレクトリでClaude Codeを起動する | claude-code-workflow | コードベースのルートディレクトリに移動してから `claude` コマンドを実行し、対話セッションを開始する | anthropics |
+| bugコマンドでバグレポートを送信する | /bugコマンドでバグレポートを送信する | claude-code-workflow | Claude Codeセッション内で `/bug` コマンドを実行し、問題を直接AnthropicのGitHub Iss | anthropics |
+| プラグインでclaude-codeを拡張する | プラグインでClaude Codeを拡張する | claude-code-workflow | 公式リポジトリのpluginsディレクトリにあるプラグインを導入し、カスタムコマンドやエージェント機能を追加する | anthropics |
+| agent-skills-でドメイン知識を注入する | Agent Skills でドメイン知識を注入する | claude-code-workflow | Claude Code に専門分野の知識・ワークフローを教え込み、特定タスクを自律実行させる仕組み。Skills は「モ | hesreallyhim |
+| hooks-でライフサイクルに介入する | Hooks でライフサイクルに介入する | claude-code-workflow | Claude Code の動作ライフサイクル（ツール呼び出し前後、ファイル書き込み前後など）に独自スクリプトを挿入し、品 | hesreallyhim |
+| slash-commands-で定型プロンプトを再利用する | Slash-Commands で定型プロンプトを再利用する | claude-code-workflow | 頻繁に使うプロンプトを `/commit`, `/tdd`, `/analyze-issue` などのコマンドとして登録 | hesreallyhim |
+| workflows-で複数ステージのプロセスを構造化する | Workflows で複数ステージのプロセスを構造化する | claude-code-workflow | 開発プロセス全体（Research → Plan → Execute → Review など）を明示的なステージに分割し | hesreallyhim |
+| マルチエージェント並列実行でタスク分散 | マルチエージェント並列実行でタスク分散 | claude-code-workflow | 複数の Claude Code インスタンスを並列に起動し、それぞれ独立したタスクを実行させることで、開発速度を向上させ | hesreallyhim |
+| 使用量監視でコストトークン消費を可視化 | 使用量監視でコスト・トークン消費を可視化 | claude-code-workflow | Claude Code のローカルログ（`.jsonl` ファイル）を解析し、トークン消費量・コスト・セッション履歴をダ | hesreallyhim |
+| claudemd-でプロジェクト文脈を注入 | CLAUDE.md でプロジェクト文脈を注入 | claude-code-workflow | プロジェクトルートまたは `~/.claude/` に配置する Markdown ファイルで、プロジェクト固有のルール・ | hesreallyhim |
