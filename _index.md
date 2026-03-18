@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 348 スキル
+合計: 357 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -352,3 +352,12 @@
 | ai-first統合とask-ai-in-code-piece | AI-First統合とASK AI in Code Piece | automation-pipeline | ビルダーのCodeピース内で「ASK AI」機能を使い、非技術者がコード不要でデータクリーニング等を実行 | activepieces |
 | オープンエコシステムでのpiece共有 | オープンエコシステムでのpiece共有 | automation-pipeline | 開発したpieceをnpmjs.comに公開し、コミュニティと共有する。60%の統合がコミュニティ貢献 | activepieces |
 | セルフホストネットワークギャップ運用 | セルフホスト&ネットワークギャップ運用 | automation-pipeline | Activepiecesをオンプレミスまたはプライベートクラウドにセルフホストし、外部ネットワークと隔離した環境で運用 | activepieces |
+| wasp-cliで2コマンドsaas初期化 | Wasp CLIで2コマンドSaaS初期化 | claude-code-workflow | Waspフレームワークの公式CLIを使い、フル機能SaaSテンプレートを即座にクローンして起動する | wasp-lang |
+| wasp宣言的設定で型安全apiを自動生成 | Wasp宣言的設定で型安全APIを自動生成 | dev-tool | main.wasp ファイルにクエリ・アクション（CRUD操作）を宣言すると、バックエンド関数の型がフロントエンドに自動 | wasp-lang |
+| ai開発ツール向けagentsmdとスキルを同梱 | AI開発ツール向けAGENTS.mdとスキルを同梱 | claude-code-workflow | Claude Code/Cursor等のAIエージェントが参照する AGENTS.md（コードベース全体の構造・ルール） | wasp-lang |
+| ワンコマンドデプロイrailwayflyio | ワンコマンドデプロイ（Railway/Fly.io） | infrastructure | Wasp CLIの `wasp deploy` コマンドで、DB・サーバー・クライアントを一括で本番環境にデプロイする | wasp-lang |
+| toolsyamlによるデータベースツールの宣言的定義 | tools.yamlによるデータベースツールの宣言的定義 | agent-orchestration | データベース接続情報（sources）、実行するSQL/操作（tools）、ツールのグループ化（toolsets）をYA | googleapis |
+| mcpサーバーによるツールの中央管理と動的リロード | MCPサーバーによるツールの中央管理と動的リロード | agent-orchestration | tools.yamlの変更を検知し、サーバー再起動なしでツール定義を自動更新する | googleapis |
+| ide統合によるaiアシスタントへのデータベース操作委譲 | IDE統合によるAIアシスタントへのデータベース操作委譲 | claude-code-workflow | Claude Code、Cursor、Windsurf等のIDE内AIアシスタントをMCP Toolbox経由でデータベ | googleapis |
+| フレームワーク横断でのツール統一インターフェース | フレームワーク横断でのツール統一インターフェース | agent-orchestration | Python（LangChain/LlamaIndex）、JS/TS（LangChain/Genkit/ADK）、Go（ | googleapis |
+| gemini-cli-extensionsによるコマンドライン直接操作 | Gemini CLI Extensionsによるコマンドライン直接操作 | automation-pipeline | Gemini CLIの拡張機能として事前定義済みツール（AlloyDB/BigQuery/Cloud SQL等）またはカ | googleapis |

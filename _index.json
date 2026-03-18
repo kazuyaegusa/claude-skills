@@ -4399,5 +4399,146 @@
     "source_url": "https://github.com/activepieces/activepieces",
     "source_author": "activepieces",
     "added_at": "2026-03-18T00:15:38.439267+00:00"
+  },
+  {
+    "slug": "wasp-cliで2コマンドsaas初期化",
+    "name": "Wasp CLIで2コマンドSaaS初期化",
+    "category": "claude-code-workflow",
+    "description": "Waspフレームワークの公式CLIを使い、フル機能SaaSテンプレートを即座にクローンして起動する",
+    "trigger_phrases": [
+      "新規SaaSプロジェクトの開始時、または既存プロジェクトの参考実装として構造を学びたい時",
+      "Wasp CLIで2コマンドSaaS初期化",
+      "Wasp CLI (@wasp.sh/wasp-cli)",
+      "Open SaaS テンプレート",
+      "Waspフレームワークの公式CLIを使い、フル機能SaaSテンプレートを即座にクローンして起動する"
+    ],
+    "source_url": "https://github.com/wasp-lang/open-saas",
+    "source_author": "wasp-lang",
+    "added_at": "2026-03-18T00:19:04.196546+00:00"
+  },
+  {
+    "slug": "wasp宣言的設定で型安全apiを自動生成",
+    "name": "Wasp宣言的設定で型安全APIを自動生成",
+    "category": "dev-tool",
+    "description": "main.wasp ファイルにクエリ・アクション（CRUD操作）を宣言すると、バックエンド関数の型がフロントエンドに自動推論され、型安全なAPIクライアントが生成される",
+    "trigger_phrases": [
+      "フロントエンドとバックエンド間のAPI通信を型安全にしたい全てのケース（CRUD、認証後のデータ取得、決済処理など）",
+      "Wasp宣言的設定で型安全APIを自動生成",
+      "Wasp フレームワーク",
+      "Prisma（ORMとして内部利用）",
+      "React Query（フロントエンドのデータフェッチ基盤）"
+    ],
+    "source_url": "https://github.com/wasp-lang/open-saas",
+    "source_author": "wasp-lang",
+    "added_at": "2026-03-18T00:19:04.196546+00:00"
+  },
+  {
+    "slug": "ai開発ツール向けagentsmdとスキルを同梱",
+    "name": "AI開発ツール向けAGENTS.mdとスキルを同梱",
+    "category": "claude-code-workflow",
+    "description": "Claude Code/Cursor等のAIエージェントが参照する AGENTS.md（コードベース全体の構造・ルール）と、各機能のスキル定義を、テンプレート標準で提供する",
+    "trigger_phrases": [
+      "AIエージェントでボイラープレートをカスタマイズする際、フレームワークの作法を守りながらコード生成させたい時",
+      "AI開発ツール向けAGENTS.mdとスキルを同梱",
+      "AGENTS.md（プロジェクト構造定義）",
+      "Claude Code / Cursor / Codex（AI開発ツール）"
+    ],
+    "source_url": "https://github.com/wasp-lang/open-saas",
+    "source_author": "wasp-lang",
+    "added_at": "2026-03-18T00:19:04.196546+00:00"
+  },
+  {
+    "slug": "ワンコマンドデプロイrailwayflyio",
+    "name": "ワンコマンドデプロイ（Railway/Fly.io）",
+    "category": "infrastructure",
+    "description": "Wasp CLIの `wasp deploy` コマンドで、DB・サーバー・クライアントを一括で本番環境にデプロイする",
+    "trigger_phrases": [
+      "ローカル開発完了後、MVPを即座に本番公開したい時、またはステージング環境を素早く構築したい時",
+      "ワンコマンドデプロイ（Railway/Fly.io）",
+      "Wasp CLI",
+      "Railway CLI / Fly.io CLI",
+      "Docker（内部でWaspが生成）"
+    ],
+    "source_url": "https://github.com/wasp-lang/open-saas",
+    "source_author": "wasp-lang",
+    "added_at": "2026-03-18T00:19:04.196546+00:00"
+  },
+  {
+    "slug": "toolsyamlによるデータベースツールの宣言的定義",
+    "name": "tools.yamlによるデータベースツールの宣言的定義",
+    "category": "agent-orchestration",
+    "description": "データベース接続情報（sources）、実行するSQL/操作（tools）、ツールのグループ化（toolsets）をYAMLで定義し、MCPサーバーとして起動する",
+    "trigger_phrases": [
+      "複数のLLMフレームワークで同じデータベース操作を行う必要がある時、または複数のエージェント間でツール定義を共有したい時",
+      "tools.yamlによるデータベースツールの宣言的定義",
+      "MCP Toolbox Server（バイナリ/コンテナ/NPM）",
+      "toolbox-langchain/toolbox-llamaindex/toolbox-core（Python SDK）",
+      "@toolbox-sdk/core, @toolbox-sdk/adk（JS/TS SDK）",
+      "mcp-toolbox-sdk-go（Go SDK）"
+    ],
+    "source_url": "https://github.com/googleapis/genai-toolbox",
+    "source_author": "googleapis",
+    "added_at": "2026-03-18T00:20:47.493526+00:00"
+  },
+  {
+    "slug": "mcpサーバーによるツールの中央管理と動的リロード",
+    "name": "MCPサーバーによるツールの中央管理と動的リロード",
+    "category": "agent-orchestration",
+    "description": "tools.yamlの変更を検知し、サーバー再起動なしでツール定義を自動更新する",
+    "trigger_phrases": [
+      "開発中に頻繁にツール定義を調整する必要がある時、または本番環境でツールロジックのA/Bテストを行いたい時",
+      "MCPサーバーによるツールの中央管理と動的リロード",
+      "MCP Toolbox Server（デフォルトで動的リロード有効）",
+      "tools.yamlの変更を検知し、サーバー再起動なしでツール定義を自動更新する"
+    ],
+    "source_url": "https://github.com/googleapis/genai-toolbox",
+    "source_author": "googleapis",
+    "added_at": "2026-03-18T00:20:47.493526+00:00"
+  },
+  {
+    "slug": "ide統合によるaiアシスタントへのデータベース操作委譲",
+    "name": "IDE統合によるAIアシスタントへのデータベース操作委譲",
+    "category": "claude-code-workflow",
+    "description": "Claude Code、Cursor、Windsurf等のIDE内AIアシスタントをMCP Toolbox経由でデータベースに接続し、自然言語でのクエリ実行・スキーマ管理・コード生成を可能にする",
+    "trigger_phrases": [
+      "データベーススキーマを頻繁に参照しながらコードを書く時、または手動でSQLを書く時間を削減したい時",
+      "IDE統合によるAIアシスタントへのデータベース操作委譲",
+      "Claude Code、Cursor、Windsurf等のMCP対応IDE",
+      "MCP Toolbox Server"
+    ],
+    "source_url": "https://github.com/googleapis/genai-toolbox",
+    "source_author": "googleapis",
+    "added_at": "2026-03-18T00:20:47.493526+00:00"
+  },
+  {
+    "slug": "フレームワーク横断でのツール統一インターフェース",
+    "name": "フレームワーク横断でのツール統一インターフェース",
+    "category": "agent-orchestration",
+    "description": "Python（LangChain/LlamaIndex）、JS/TS（LangChain/Genkit/ADK）、Go（LangChain Go/Genkit/ADK/OpenAI/GenAI）で同一のMCPツールを利用する",
+    "trigger_phrases": [
+      "プロトタイピング時にフレームワークを頻繁に変更する時、または複数のプロジェクトで異なるフレームワークを使いながら同一のツール資産を共有したい時",
+      "フレームワーク横断でのツール統一インターフェース",
+      "Python: toolbox-langchain, toolbox-llamaindex, toolbox-core",
+      "JS/TS: @toolbox-sdk/core, @toolbox-sdk/adk",
+      "Go: mcp-toolbox-sdk-go（core, tbadk, tbgenkit）"
+    ],
+    "source_url": "https://github.com/googleapis/genai-toolbox",
+    "source_author": "googleapis",
+    "added_at": "2026-03-18T00:20:47.493526+00:00"
+  },
+  {
+    "slug": "gemini-cli-extensionsによるコマンドライン直接操作",
+    "name": "Gemini CLI Extensionsによるコマンドライン直接操作",
+    "category": "automation-pipeline",
+    "description": "Gemini CLIの拡張機能として事前定義済みツール（AlloyDB/BigQuery/Cloud SQL等）またはカスタムツールを導入し、ターミナルから自然言語でデータベースを操作する",
+    "trigger_phrases": [
+      "IDE外での運用作業（ログ調査、データパッチ、スキーマ確認）をAIに支援させたい時、またはCI/CDパイプライン内で自然言語によるデータベース操作を自動化したい時",
+      "Gemini CLI Extensionsによるコマンドライン直接操作",
+      "Gemini CLI",
+      "gemini-cli-extensions（MCP Toolbox, AlloyDB, BigQuery, Cloud SQL等）"
+    ],
+    "source_url": "https://github.com/googleapis/genai-toolbox",
+    "source_author": "googleapis",
+    "added_at": "2026-03-18T00:20:47.493526+00:00"
   }
 ]
