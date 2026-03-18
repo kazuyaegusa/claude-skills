@@ -4178,5 +4178,226 @@
     "source_url": "https://github.com/langfuse/langfuse",
     "source_author": "langfuse",
     "added_at": "2026-03-18T00:10:52.968083+00:00"
+  },
+  {
+    "slug": "階層的スウォームトポロジーによるマルチエージェント協調",
+    "name": "階層的スウォームトポロジーによるマルチエージェント協調",
+    "category": "agent-orchestration",
+    "description": "クイーンエージェントが戦略を決定し、ワーカーエージェント（researcher, coder, tester等）に作業を分配、Byzantine耐障害性コンセンサスで合意形成する",
+    "trigger_phrases": [
+      "6つ以上のステップが必要な複雑タスク、または複数ドメイン（セキュリティ+パフォーマンス+テスト）にまたがるタスク",
+      "階層的スウォームトポロジーによるマルチエージェント協調",
+      "@claude-flow/swarm（スウォーム管理）",
+      "@claude-flow/memory（AgentDB、共有メモリ）",
+      "Byzantine/Raft/Gossipコンセンサスプロトコル"
+    ],
+    "source_url": "https://github.com/ruvnet/ruflo",
+    "source_author": "ruvnet",
+    "added_at": "2026-03-18T00:13:43.577189+00:00"
+  },
+  {
+    "slug": "reasoningbankによるパターン学習と再利用",
+    "name": "ReasoningBankによるパターン学習と再利用",
+    "category": "agent-orchestration",
+    "description": "成功したタスク実行の軌跡（trajectory）をHNSW索引付きベクトルストアに保存し、類似タスクで過去のパターンを0.1ms未満で検索・適用する",
+    "trigger_phrases": [
+      "繰り返し発生するタスク（認証実装、API設計、セキュリティ監査等）で、過去の知見を活かしたい場合",
+      "ReasoningBankによるパターン学習と再利用",
+      "@claude-flow/hooks（ReasoningBank統合）",
+      "@claude-flow/memory（HNSW索引、AgentDB）",
+      "ONNX Runtime（ローカル埋め込み生成、75x高速）"
+    ],
+    "source_url": "https://github.com/ruvnet/ruflo",
+    "source_author": "ruvnet",
+    "added_at": "2026-03-18T00:13:43.577189+00:00"
+  },
+  {
+    "slug": "agent-boosterによるllmスキップ高速編集",
+    "name": "Agent BoosterによるLLMスキップ高速編集",
+    "category": "agent-orchestration",
+    "description": "単純なコード変換（var→const、型注釈追加等）をRust/WASM実装で<1ms処理し、LLM APIを呼ばずに352倍高速化、コスト$0",
+    "trigger_phrases": [
+      "1000ファイルの一括リネーム、全ファイルへのimport追加、型注釈の自動付与など、パターンが明確な大量編集",
+      "Agent BoosterによるLLMスキップ高速編集",
+      "agentic-flow（Agent Booster WASM）",
+      "@claude-flow/hooks（複雑度判定、ルーティング）"
+    ],
+    "source_url": "https://github.com/ruvnet/ruflo",
+    "source_author": "ruvnet",
+    "added_at": "2026-03-18T00:13:43.577189+00:00"
+  },
+  {
+    "slug": "3層モデルルーティングによるコスト最適化",
+    "name": "3層モデルルーティングによるコスト最適化",
+    "category": "agent-orchestration",
+    "description": "タスク複雑度を自動判定し、Tier 1（Agent Booster、$0）→Tier 2（Haiku、$0.0002）→Tier 3（Opus、$0.015）の最安モデルに振り分け",
+    "trigger_phrases": [
+      "日常的な開発作業（ドキュメント修正、簡単なバグ修正、リファクタリング）でコストを抑えたい場合",
+      "3層モデルルーティングによるコスト最適化",
+      "@claude-flow/router（ModelRouter）",
+      "@claude-flow/hooks（複雑度判定）"
+    ],
+    "source_url": "https://github.com/ruvnet/ruflo",
+    "source_author": "ruvnet",
+    "added_at": "2026-03-18T00:13:43.577189+00:00"
+  },
+  {
+    "slug": "hnsw索引による超高速ベクトル検索",
+    "name": "HNSW索引による超高速ベクトル検索",
+    "category": "agent-orchestration",
+    "description": "Hierarchical Navigable Small World（HNSW）アルゴリズムで384次元ベクトルを<1ms（最大12,500倍高速）で検索し、類似パターンを瞬時に取得",
+    "trigger_phrases": [
+      "大量のパターン（1万件以上）から類似例を高速に見つけたい場合、またはリアルタイム推論が必要な場合",
+      "HNSW索引による超高速ベクトル検索",
+      "@claude-flow/memory（AgentDB、HnswLite）",
+      "ONNX Runtime（ローカル埋め込み生成）",
+      "RuVector（オプション、ネイティブ高速化）"
+    ],
+    "source_url": "https://github.com/ruvnet/ruflo",
+    "source_author": "ruvnet",
+    "added_at": "2026-03-18T00:13:43.577189+00:00"
+  },
+  {
+    "slug": "ewcによる忘却防止と継続学習",
+    "name": "EWC++による忘却防止と継続学習",
+    "category": "agent-orchestration",
+    "description": "Elastic Weight Consolidation++で重要な重みを固定し、新しいパターン学習時に過去の知識を忘れないようにする",
+    "trigger_phrases": [
+      "長期運用でパターンが蓄積していくシナリオ（数ヶ月〜数年）で、初期に学習した重要パターンを保持したい場合",
+      "EWC++による忘却防止と継続学習",
+      "@ruvector/sona（SONA + EWC++実装）",
+      "@claude-flow/neural"
+    ],
+    "source_url": "https://github.com/ruvnet/ruflo",
+    "source_author": "ruvnet",
+    "added_at": "2026-03-18T00:13:43.577189+00:00"
+  },
+  {
+    "slug": "aidefenceによるプロンプトインジェクション防御",
+    "name": "AIDefenceによるプロンプトインジェクション防御",
+    "category": "agent-orchestration",
+    "description": "50+パターンで「命令上書き」「ジェイルブレイク」「PII漏洩」を0.04ms（250倍高速）で検出し、脅威入力をブロック",
+    "trigger_phrases": [
+      "外部ユーザー入力を受け付けるエージェント、または本番環境で安全性を確保したい場合",
+      "AIDefenceによるプロンプトインジェクション防御",
+      "@claude-flow/aidefence",
+      "@claude-flow/hooks（pre-agent-input統合）"
+    ],
+    "source_url": "https://github.com/ruvnet/ruflo",
+    "source_author": "ruvnet",
+    "added_at": "2026-03-18T00:13:43.577189+00:00"
+  },
+  {
+    "slug": "context-autopilotによる無限コンテキスト",
+    "name": "Context Autopilotによる無限コンテキスト",
+    "category": "claude-code-workflow",
+    "description": "Claude Codeの20万トークン上限を回避し、ターン単位でSQLiteにアーカイブ+復元することで、事実上無限のコンテキストを実現",
+    "trigger_phrases": [
+      "長期開発セッション（数時間〜数日）で、初期の設計決定や詳細なログを保持したい場合",
+      "Context Autopilotによる無限コンテキスト",
+      ".claude/helpers/context-persistence-hook.mjs",
+      "SQLite（WALモード）",
+      "RuVector PostgreSQL（オプション、スケーラブル）"
+    ],
+    "source_url": "https://github.com/ruvnet/ruflo",
+    "source_author": "ruvnet",
+    "added_at": "2026-03-18T00:13:43.577189+00:00"
+  },
+  {
+    "slug": "typescriptでpieceを実装しmcpサーバー化",
+    "name": "TypeScriptでpieceを実装しMCPサーバー化",
+    "category": "automation-pipeline",
+    "description": "Activepiecesのpiece frameworkでTypeScriptのnpmパッケージとして統合を実装すると、それがMCPサーバーとして自動公開される",
+    "trigger_phrases": [
+      "LLMから外部サービスを操作したいが、既存MCPサーバーが存在しない場合、かつノーコードビルダーでも同じ統合を使いたい場合",
+      "TypeScriptでpieceを実装しMCPサーバー化",
+      "Activepieces piece framework",
+      "TypeScript",
+      "npmjs.com",
+      "Claude Desktop/Cursor/Windsurf"
+    ],
+    "source_url": "https://github.com/activepieces/activepieces",
+    "source_author": "activepieces",
+    "added_at": "2026-03-18T00:15:38.439267+00:00"
+  },
+  {
+    "slug": "hot-reloadでローカルpiece開発",
+    "name": "hot reloadでローカルpiece開発",
+    "category": "automation-pipeline",
+    "description": "Activepiecesはローカルマシンでpieceを開発中、変更を保存すると即座にビルダーに反映されるhot reload機能を提供",
+    "trigger_phrases": [
+      "新規pieceを開発中、またはデバッグ中で、頻繁にコード変更とテストを繰り返す必要がある場合",
+      "hot reloadでローカルpiece開発",
+      "Activepieces CLI",
+      "npm/Docker",
+      "TypeScript watch mode"
+    ],
+    "source_url": "https://github.com/activepieces/activepieces",
+    "source_author": "activepieces",
+    "added_at": "2026-03-18T00:15:38.439267+00:00"
+  },
+  {
+    "slug": "human-in-the-loopパターンの実装",
+    "name": "Human-in-the-Loopパターンの実装",
+    "category": "automation-pipeline",
+    "description": "ワークフロー実行中に承認待ちや遅延を挿入し、人間の判断を介入させるpieceを実装",
+    "trigger_phrases": [
+      "金融取引、データ削除、外部公開、権限変更等、誤実行がリスクを伴う自動化を行う場合",
+      "Human-in-the-Loopパターンの実装",
+      "Activepieces approval piece",
+      "メール/Slack通知piece",
+      "ワークフロー実行中に承認待ちや遅延を挿入し、人間の判断を介入させるpieceを実装"
+    ],
+    "source_url": "https://github.com/activepieces/activepieces",
+    "source_author": "activepieces",
+    "added_at": "2026-03-18T00:15:38.439267+00:00"
+  },
+  {
+    "slug": "ai-first統合とask-ai-in-code-piece",
+    "name": "AI-First統合とASK AI in Code Piece",
+    "category": "automation-pipeline",
+    "description": "ビルダーのCodeピース内で「ASK AI」機能を使い、非技術者がコード不要でデータクリーニング等を実行",
+    "trigger_phrases": [
+      "非技術者がデータクリーニング、フォーマット変換、条件分岐等をコード不要で実現したい場合",
+      "AI-First統合とASK AI in Code Piece",
+      "Activepieces Code Piece",
+      "AI SDK(OpenAI等)"
+    ],
+    "source_url": "https://github.com/activepieces/activepieces",
+    "source_author": "activepieces",
+    "added_at": "2026-03-18T00:15:38.439267+00:00"
+  },
+  {
+    "slug": "オープンエコシステムでのpiece共有",
+    "name": "オープンエコシステムでのpiece共有",
+    "category": "automation-pipeline",
+    "description": "開発したpieceをnpmjs.comに公開し、コミュニティと共有する。60%の統合がコミュニティ貢献",
+    "trigger_phrases": [
+      "自社で開発した統合を他社・他開発者と共有し、エコシステムに貢献したい場合",
+      "オープンエコシステムでのpiece共有",
+      "npm",
+      "GitHub",
+      "Activepieces Contributor's Guide"
+    ],
+    "source_url": "https://github.com/activepieces/activepieces",
+    "source_author": "activepieces",
+    "added_at": "2026-03-18T00:15:38.439267+00:00"
+  },
+  {
+    "slug": "セルフホストネットワークギャップ運用",
+    "name": "セルフホスト&ネットワークギャップ運用",
+    "category": "automation-pipeline",
+    "description": "Activepiecesをオンプレミスまたはプライベートクラウドにセルフホストし、外部ネットワークと隔離した環境で運用",
+    "trigger_phrases": [
+      "GDPR、HIPAA等の規制対象データを扱う場合、または外部SaaSへの依存を避けたい場合",
+      "セルフホスト&ネットワークギャップ運用",
+      "Docker",
+      "docker-compose",
+      "PostgreSQL等のDB",
+      "プライベートnpmレジストリ(Verdaccio等)"
+    ],
+    "source_url": "https://github.com/activepieces/activepieces",
+    "source_author": "activepieces",
+    "added_at": "2026-03-18T00:15:38.439267+00:00"
   }
 ]

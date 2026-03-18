@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 334 スキル
+合計: 348 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -338,3 +338,17 @@
 | prompt-management統合 | Prompt Management統合 | prompt-engineering | プロンプトをコードから分離してLangfuse UIで一元管理し、バージョン管理・A/Bテスト・リアルタイム更新を可能に | langfuse |
 | evaluation-dataset-run実装 | Evaluation & Dataset Run実装 | prompt-engineering | テストセット（Dataset）を作成し、LLM-as-a-judge/ユーザーフィードバック/カスタム評価スクリプトで継 | langfuse |
 | マルチllmプロバイダー統合 | マルチLLMプロバイダー統合 | infrastructure | OpenAI、Anthropic、Ollama（ローカル）、AWS Bedrock、Azure等のLLMを統一インターフ | langfuse |
+| 階層的スウォームトポロジーによるマルチエージェント協調 | 階層的スウォームトポロジーによるマルチエージェント協調 | agent-orchestration | クイーンエージェントが戦略を決定し、ワーカーエージェント（researcher, coder, tester等）に作業を | ruvnet |
+| reasoningbankによるパターン学習と再利用 | ReasoningBankによるパターン学習と再利用 | agent-orchestration | 成功したタスク実行の軌跡（trajectory）をHNSW索引付きベクトルストアに保存し、類似タスクで過去のパターンを0 | ruvnet |
+| agent-boosterによるllmスキップ高速編集 | Agent BoosterによるLLMスキップ高速編集 | agent-orchestration | 単純なコード変換（var→const、型注釈追加等）をRust/WASM実装で<1ms処理し、LLM APIを呼ばずに3 | ruvnet |
+| 3層モデルルーティングによるコスト最適化 | 3層モデルルーティングによるコスト最適化 | agent-orchestration | タスク複雑度を自動判定し、Tier 1（Agent Booster、$0）→Tier 2（Haiku、$0.0002）→ | ruvnet |
+| hnsw索引による超高速ベクトル検索 | HNSW索引による超高速ベクトル検索 | agent-orchestration | Hierarchical Navigable Small World（HNSW）アルゴリズムで384次元ベクトルを<1m | ruvnet |
+| ewcによる忘却防止と継続学習 | EWC++による忘却防止と継続学習 | agent-orchestration | Elastic Weight Consolidation++で重要な重みを固定し、新しいパターン学習時に過去の知識を忘れ | ruvnet |
+| aidefenceによるプロンプトインジェクション防御 | AIDefenceによるプロンプトインジェクション防御 | agent-orchestration | 50+パターンで「命令上書き」「ジェイルブレイク」「PII漏洩」を0.04ms（250倍高速）で検出し、脅威入力をブロッ | ruvnet |
+| context-autopilotによる無限コンテキスト | Context Autopilotによる無限コンテキスト | claude-code-workflow | Claude Codeの20万トークン上限を回避し、ターン単位でSQLiteにアーカイブ+復元することで、事実上無限のコ | ruvnet |
+| typescriptでpieceを実装しmcpサーバー化 | TypeScriptでpieceを実装しMCPサーバー化 | automation-pipeline | Activepiecesのpiece frameworkでTypeScriptのnpmパッケージとして統合を実装すると、 | activepieces |
+| hot-reloadでローカルpiece開発 | hot reloadでローカルpiece開発 | automation-pipeline | Activepiecesはローカルマシンでpieceを開発中、変更を保存すると即座にビルダーに反映されるhot relo | activepieces |
+| human-in-the-loopパターンの実装 | Human-in-the-Loopパターンの実装 | automation-pipeline | ワークフロー実行中に承認待ちや遅延を挿入し、人間の判断を介入させるpieceを実装 | activepieces |
+| ai-first統合とask-ai-in-code-piece | AI-First統合とASK AI in Code Piece | automation-pipeline | ビルダーのCodeピース内で「ASK AI」機能を使い、非技術者がコード不要でデータクリーニング等を実行 | activepieces |
+| オープンエコシステムでのpiece共有 | オープンエコシステムでのpiece共有 | automation-pipeline | 開発したpieceをnpmjs.comに公開し、コミュニティと共有する。60%の統合がコミュニティ貢献 | activepieces |
+| セルフホストネットワークギャップ運用 | セルフホスト&ネットワークギャップ運用 | automation-pipeline | Activepiecesをオンプレミスまたはプライベートクラウドにセルフホストし、外部ネットワークと隔離した環境で運用 | activepieces |
