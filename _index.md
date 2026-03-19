@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 405 スキル
+合計: 410 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -409,3 +409,8 @@
 | ideワンクリックインストールurlの生成 | IDEワンクリックインストールURLの生成 | prompt-engineering | VS Code/Visual Studio等のIDEが直接解釈できるMCPインストールプロトコルURLを生成し、バッジボ | microsoft |
 | モノレポでの複数mcpサーバー統合管理 | モノレポでの複数MCPサーバー統合管理 | automation-pipeline | 単一リポジトリ(microsoft/mcp)内に、コアライブラリ・テストフレームワーク・エンジニアリングシステム・パイプ | microsoft |
 | microsoft-graph-api統合mcpサーバーのパターン | Microsoft Graph API統合MCPサーバーのパターン | agent-orchestration | Microsoft 365の各サービス(Calendar, Mail, Teams, Word等)をMicrosoft  | microsoft |
+| ローカルaiエージェントのwebsocketブリッジ構築 | ローカルAIエージェントのWebSocketブリッジ構築 | claude-code-workflow | ローカルマシン上のCLI型AIエージェント（Claude Code, Cursor Agent等）をメッセンジャープラッ | chenhg5 |
+| 複数aiエージェントのグループチャット内連携 | 複数AIエージェントのグループチャット内連携 | agent-orchestration | 1つのグループチャットに複数のAIボット（Claude, Gemini等）を参加させ、相互に対話・情報共有させる。 | chenhg5 |
+| aiエージェントへのファイル送信機能の実装 | AIエージェントへのファイル送信機能の実装 | agent-orchestration | AIエージェントがローカルで生成したスクリーンショット・グラフ・PDF等を、チャットアプリに自動送信させる。 | chenhg5 |
+| 自然言語でのcronジョブ設定 | 自然言語でのcronジョブ設定 | agent-orchestration | チャットから自然言語でスケジュールタスクを登録し、定時実行させる。 | chenhg5 |
+| 公開ipなしでのメッセンジャーボット運用 | 公開IPなしでのメッセンジャーボット運用 | agent-orchestration | Webhook不要のWebSocket/Long Polling接続を使い、ローカル環境から直接メッセンジャーボットを動 | chenhg5 |

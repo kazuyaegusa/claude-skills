@@ -5321,5 +5321,82 @@
     "source_url": "https://github.com/microsoft/mcp",
     "source_author": "microsoft",
     "added_at": "2026-03-19T00:20:28.107173+00:00"
+  },
+  {
+    "slug": "ローカルaiエージェントのwebsocketブリッジ構築",
+    "name": "ローカルAIエージェントのWebSocketブリッジ構築",
+    "category": "claude-code-workflow",
+    "description": "ローカルマシン上のCLI型AIエージェント（Claude Code, Cursor Agent等）をメッセンジャープラットフォーム（Feishu, Telegram, Discord等）と双方向接続し、チャットUIから操作可能にする。",
+    "trigger_phrases": [
+      "ローカルで動くAIエージェントを、スマホ・タブレット・リモート環境から操作したい時。複数人でエージェントを共有したい時。公開IPなしでボットを運用したい時。",
+      "ローカルAIエージェントのWebSocketブリッジ構築",
+      "cc-connect（Go製、npm or バイナリ配布）",
+      "対応エージェント: Claude Code, Codex, Cursor Agent, Qoder CLI, Gemini CLI, OpenCode, iFlow CLI",
+      "対応プラットフォーム: Feishu, DingTalk, Slack, Telegram, Discord, WeChat Work, LINE, QQ, QQ Bot"
+    ],
+    "source_url": "https://github.com/chenhg5/cc-connect",
+    "source_author": "chenhg5",
+    "added_at": "2026-03-19T00:22:17.229076+00:00"
+  },
+  {
+    "slug": "複数aiエージェントのグループチャット内連携",
+    "name": "複数AIエージェントのグループチャット内連携",
+    "category": "agent-orchestration",
+    "description": "1つのグループチャットに複数のAIボット（Claude, Gemini等）を参加させ、相互に対話・情報共有させる。",
+    "trigger_phrases": [
+      "複数のLLMを使い分けたい時。1つのエージェントでは解決できない複雑なタスクを複数エージェントで分担させたい時。",
+      "複数AIエージェントのグループチャット内連携",
+      "cc-connect（multi-project architecture）"
+    ],
+    "source_url": "https://github.com/chenhg5/cc-connect",
+    "source_author": "chenhg5",
+    "added_at": "2026-03-19T00:22:17.229076+00:00"
+  },
+  {
+    "slug": "aiエージェントへのファイル送信機能の実装",
+    "name": "AIエージェントへのファイル送信機能の実装",
+    "category": "agent-orchestration",
+    "description": "AIエージェントがローカルで生成したスクリーンショット・グラフ・PDF等を、チャットアプリに自動送信させる。",
+    "trigger_phrases": [
+      "エージェントが生成したグラフ・レポート・スクリーンショット等を即座に確認したい時。モバイルから成果物を受け取りたい時。",
+      "AIエージェントへのファイル送信機能の実装",
+      "cc-connect send --image/--file コマンド"
+    ],
+    "source_url": "https://github.com/chenhg5/cc-connect",
+    "source_author": "chenhg5",
+    "added_at": "2026-03-19T00:22:17.229076+00:00"
+  },
+  {
+    "slug": "自然言語でのcronジョブ設定",
+    "name": "自然言語でのcronジョブ設定",
+    "category": "agent-orchestration",
+    "description": "チャットから自然言語でスケジュールタスクを登録し、定時実行させる。",
+    "trigger_phrases": [
+      "定期的な情報収集・レポート生成・監視タスクを自動化したい時。",
+      "自然言語でのcronジョブ設定",
+      "cc-connect内蔵スケジューラ",
+      "チャットから自然言語でスケジュールタスクを登録し、定時実行させる。"
+    ],
+    "source_url": "https://github.com/chenhg5/cc-connect",
+    "source_author": "chenhg5",
+    "added_at": "2026-03-19T00:22:17.229076+00:00"
+  },
+  {
+    "slug": "公開ipなしでのメッセンジャーボット運用",
+    "name": "公開IPなしでのメッセンジャーボット運用",
+    "category": "agent-orchestration",
+    "description": "Webhook不要のWebSocket/Long Polling接続を使い、ローカル環境から直接メッセンジャーボットを動かす。",
+    "trigger_phrases": [
+      "公開IPがない環境（社内ネットワーク、自宅ローカルマシン）でボットを動かしたい時。Webhookセットアップが面倒な時。",
+      "公開IPなしでのメッセンジャーボット運用",
+      "Feishu: WebSocket",
+      "DingTalk: Stream",
+      "Telegram: Long Polling",
+      "Slack: Socket Mode",
+      "Discord: Gateway"
+    ],
+    "source_url": "https://github.com/chenhg5/cc-connect",
+    "source_author": "chenhg5",
+    "added_at": "2026-03-19T00:22:17.229076+00:00"
   }
 ]
