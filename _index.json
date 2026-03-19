@@ -4885,5 +4885,194 @@
     "source_url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
     "source_author": "Yeachan-Heo",
     "added_at": "2026-03-19T00:10:44.124105+00:00"
+  },
+  {
+    "slug": "progressive-disclosure-でスキルを軽量化する",
+    "name": "Progressive Disclosure でスキルを軽量化する",
+    "category": "claude-code-workflow",
+    "description": "スキルのメタデータ（name, description）を先にスキャンし、関連性が高い場合のみ本文とリソースをロードする3段階読み込みを実装する",
+    "trigger_phrases": [
+      "複数のスキルをインストールしており、タスクごとに必要なスキルが変わる場合",
+      "Progressive Disclosure でスキルを軽量化する",
+      "Claude.ai Web / Claude Code CLI / Claude API"
+    ],
+    "source_url": "https://github.com/travisvn/awesome-claude-skills",
+    "source_author": "travisvn",
+    "added_at": "2026-03-19T00:12:33.523739+00:00"
+  },
+  {
+    "slug": "skill-creator-で対話的にスキルを生成する",
+    "name": "skill-creator で対話的にスキルを生成する",
+    "category": "claude-code-workflow",
+    "description": "公式の skill-creator スキルを有効化し、Claudeとの対話形式で新しいスキルの構造を自動生成する",
+    "trigger_phrases": [
+      "初めてスキルを作る場合、または構造のベストプラクティスを学びたい場合",
+      "skill-creator で対話的にスキルを生成する",
+      "skill-creator（公式スキル）"
+    ],
+    "source_url": "https://github.com/travisvn/awesome-claude-skills",
+    "source_author": "travisvn",
+    "added_at": "2026-03-19T00:12:33.523739+00:00"
+  },
+  {
+    "slug": "git-リポジトリでスキルをチーム配布する",
+    "name": "git リポジトリでスキルをチーム配布する",
+    "category": "claude-code-workflow",
+    "description": "スキルフォルダをgitリポジトリに格納し、チームメンバーが `/plugin add` や git clone で共有・バージョン管理する",
+    "trigger_phrases": [
+      "チーム内で統一したワークフロー（TDD、デバッグ手順、コーディング規約）を共有したい場合",
+      "git リポジトリでスキルをチーム配布する",
+      "git",
+      "Claude Code CLI (`/plugin add`)"
+    ],
+    "source_url": "https://github.com/travisvn/awesome-claude-skills",
+    "source_author": "travisvn",
+    "added_at": "2026-03-19T00:12:33.523739+00:00"
+  },
+  {
+    "slug": "skills-と-mcp-を使い分ける",
+    "name": "Skills と MCP を使い分ける",
+    "category": "claude-code-workflow",
+    "description": "再利用可能なタスク手順は Skills、外部データ・API統合は MCP として実装し、必要に応じて組み合わせる",
+    "trigger_phrases": [
+      "外部データソース（GitHub API, Notion, PostgreSQL 等）と連携しつつ、定型ワークフローも再利用したい場合",
+      "Skills と MCP を使い分ける",
+      "Claude Skills（SKILL.md）",
+      "Model Context Protocol（MCP server）",
+      "mcp-builder スキル"
+    ],
+    "source_url": "https://github.com/travisvn/awesome-claude-skills",
+    "source_author": "travisvn",
+    "added_at": "2026-03-19T00:12:33.523739+00:00"
+  },
+  {
+    "slug": "セキュリティ監査を実施してからスキルをインストールする",
+    "name": "セキュリティ監査を実施してからスキルをインストールする",
+    "category": "claude-code-workflow",
+    "description": "スキルの SKILL.md と全スクリプトを精査し、任意コード実行のリスクがないか確認してから有効化する",
+    "trigger_phrases": [
+      "未検証のコミュニティスキルをインストールする前、または Enterprise 環境で承認プロセスを実施する場合",
+      "セキュリティ監査を実施してからスキルをインストールする",
+      "コードレビューツール",
+      "git（バージョン管理）"
+    ],
+    "source_url": "https://github.com/travisvn/awesome-claude-skills",
+    "source_author": "travisvn",
+    "added_at": "2026-03-19T00:12:33.523739+00:00"
+  },
+  {
+    "slug": "クローズドループ学習によるスキル自動生成改善",
+    "name": "クローズドループ学習によるスキル自動生成・改善",
+    "category": "agent-orchestration",
+    "description": "複雑なタスク完了後にエージェントが自律的にスキル（手続き的記憶）を生成し、使用中に改善し、定期的なナッジで知識を永続化する",
+    "trigger_phrases": [
+      "同種のタスクを繰り返し実行する運用環境や、エージェントのナレッジベースを人手なしで成長させたいとき",
+      "クローズドループ学習によるスキル自動生成・改善",
+      "Hermes Agent skill system",
+      "FTS5 (SQLite full-text search)",
+      "Honcho (plastic-labs/honcho)",
+      "agentskills.io standard"
+    ],
+    "source_url": "https://github.com/NousResearch/hermes-agent",
+    "source_author": "NousResearch",
+    "added_at": "2026-03-19T00:14:50.204899+00:00"
+  },
+  {
+    "slug": "サーバーレス永続化ターミナルバックエンドの利用",
+    "name": "サーバーレス永続化ターミナルバックエンドの利用",
+    "category": "agent-orchestration",
+    "description": "エージェントの実行環境をDaytona/Modalといったサーバーレスバックエンドで動かし、アイドル時に休止・オンデマンド起動することでコストをほぼゼロに抑えつつ、ラップトップから切り離して24/7アクセス可能にする",
+    "trigger_phrases": [
+      "$5 VPSやGPUクラスターで24/7稼働させたいが、アイドル時のコストを最小化したいとき。どこからでもアクセスしたいとき",
+      "サーバーレス永続化ターミナルバックエンドの利用",
+      "Daytona",
+      "Modal",
+      "Hermes Agent terminal backends"
+    ],
+    "source_url": "https://github.com/NousResearch/hermes-agent",
+    "source_author": "NousResearch",
+    "added_at": "2026-03-19T00:14:50.204899+00:00"
+  },
+  {
+    "slug": "マルチllmプロバイダー切り替えアーキテクチャ",
+    "name": "マルチLLMプロバイダー切り替えアーキテクチャ",
+    "category": "agent-orchestration",
+    "description": "`hermes model`コマンドで、コード変更なしに200+モデル（OpenRouter、z.ai/GLM、Kimi/Moonshot、MiniMax、OpenAI等）を瞬時に切り替え可能にする",
+    "trigger_phrases": [
+      "複数LLMプロバイダーを試したいとき、コスト最適化のためモデルを切り替えたいとき、特定APIの障害時にフォールバック先を確保したいとき",
+      "マルチLLMプロバイダー切り替えアーキテクチャ",
+      "OpenRouter",
+      "Nous Portal",
+      "z.ai/GLM",
+      "Kimi/Moonshot",
+      "MiniMax"
+    ],
+    "source_url": "https://github.com/NousResearch/hermes-agent",
+    "source_author": "NousResearch",
+    "added_at": "2026-03-19T00:14:50.204899+00:00"
+  },
+  {
+    "slug": "ワンライナーインストールスクリプトによる全依存解決",
+    "name": "ワンライナーインストールスクリプトによる全依存解決",
+    "category": "agent-orchestration",
+    "description": "Linux/macOS/WSL2でPython・Node.js・全依存関係・`hermes`コマンドまでを1コマンドで自動セットアップする",
+    "trigger_phrases": [
+      "新しい環境でHermes Agentを素早くセットアップしたいとき、手動依存管理を避けたいとき",
+      "ワンライナーインストールスクリプトによる全依存解決",
+      "curl",
+      "bash",
+      "Hermes Agent install script"
+    ],
+    "source_url": "https://github.com/NousResearch/hermes-agent",
+    "source_author": "NousResearch",
+    "added_at": "2026-03-19T00:14:50.204899+00:00"
+  },
+  {
+    "slug": "統合メッセージングゲートウェイによるクロスプラットフォーム会話継続",
+    "name": "統合メッセージングゲートウェイによるクロスプラットフォーム会話継続",
+    "category": "agent-orchestration",
+    "description": "単一のゲートウェイプロセスでTelegram、Discord、Slack、WhatsApp、Signal、CLIから同一エージェントへアクセスし、音声メモ文字起こし・会話履歴共有を実現する",
+    "trigger_phrases": [
+      "複数のメッセージングプラットフォームから同一エージェントにアクセスしたいとき、音声入力を活用したいとき、どこからでも会話を継続したいとき",
+      "統合メッセージングゲートウェイによるクロスプラットフォーム会話継続",
+      "Telegram Bot API",
+      "Discord Bot",
+      "Slack App",
+      "WhatsApp",
+      "Signal"
+    ],
+    "source_url": "https://github.com/NousResearch/hermes-agent",
+    "source_author": "NousResearch",
+    "added_at": "2026-03-19T00:14:50.204899+00:00"
+  },
+  {
+    "slug": "cron自然言語スケジューリングとプラットフォーム配信",
+    "name": "cron自然言語スケジューリングとプラットフォーム配信",
+    "category": "agent-orchestration",
+    "description": "自然言語でスケジュールタスク（日次レポート、夜間バックアップ、週次監査等）を定義し、任意のメッセージングプラットフォームへ結果を配信する",
+    "trigger_phrases": [
+      "定期的な自動化タスク（日次レポート、バックアップ、監査、通知等）を自然言語で設定したいとき",
+      "cron自然言語スケジューリングとプラットフォーム配信",
+      "Hermes cron scheduler",
+      "メッセージングゲートウェイ"
+    ],
+    "source_url": "https://github.com/NousResearch/hermes-agent",
+    "source_author": "NousResearch",
+    "added_at": "2026-03-19T00:14:50.204899+00:00"
+  },
+  {
+    "slug": "openclawからの自動マイグレーション",
+    "name": "OpenClawからの自動マイグレーション",
+    "category": "claude-code-workflow",
+    "description": "OpenClawの設定・メモリ・スキル・APIキーをHermes Agentへ自動インポートする",
+    "trigger_phrases": [
+      "OpenClawからHermes Agentへ移行するとき",
+      "OpenClawからの自動マイグレーション",
+      "hermes claw migrate",
+      "OpenClawの設定・メモリ・スキル・APIキーをHermes Agentへ自動インポートする"
+    ],
+    "source_url": "https://github.com/NousResearch/hermes-agent",
+    "source_author": "NousResearch",
+    "added_at": "2026-03-19T00:14:50.204899+00:00"
   }
 ]

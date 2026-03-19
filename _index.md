@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 378 スキル
+合計: 390 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -382,3 +382,15 @@
 | レート制限自動待機再開 | レート制限自動待機・再開 | claude-code-workflow | Claude Code APIのレート制限到達時、tmuxセッション検出でリセット時刻まで自動待機し、制限解除後にセッシ | Yeachan-Heo |
 | openclawイベントブリッジ | OpenClawイベントブリッジ | claude-code-workflow | Claude Codeのセッション開始・終了・ツール実行前後などのイベントを、設定したOpenClawゲートウェイにHT | Yeachan-Heo |
 | マジックキーワードによる実行モード切替 | マジックキーワードによる実行モード切替 | claude-code-workflow | 自然言語プロンプト内に特定キーワード（autopilot, ralph, ulw, ralplan等）を含めることで、異 | Yeachan-Heo |
+| progressive-disclosure-でスキルを軽量化する | Progressive Disclosure でスキルを軽量化する | claude-code-workflow | スキルのメタデータ（name, description）を先にスキャンし、関連性が高い場合のみ本文とリソースをロードする | travisvn |
+| skill-creator-で対話的にスキルを生成する | skill-creator で対話的にスキルを生成する | claude-code-workflow | 公式の skill-creator スキルを有効化し、Claudeとの対話形式で新しいスキルの構造を自動生成する | travisvn |
+| git-リポジトリでスキルをチーム配布する | git リポジトリでスキルをチーム配布する | claude-code-workflow | スキルフォルダをgitリポジトリに格納し、チームメンバーが `/plugin add` や git clone で共有・ | travisvn |
+| skills-と-mcp-を使い分ける | Skills と MCP を使い分ける | claude-code-workflow | 再利用可能なタスク手順は Skills、外部データ・API統合は MCP として実装し、必要に応じて組み合わせる | travisvn |
+| セキュリティ監査を実施してからスキルをインストールする | セキュリティ監査を実施してからスキルをインストールする | claude-code-workflow | スキルの SKILL.md と全スクリプトを精査し、任意コード実行のリスクがないか確認してから有効化する | travisvn |
+| クローズドループ学習によるスキル自動生成改善 | クローズドループ学習によるスキル自動生成・改善 | agent-orchestration | 複雑なタスク完了後にエージェントが自律的にスキル（手続き的記憶）を生成し、使用中に改善し、定期的なナッジで知識を永続化す | NousResearch |
+| サーバーレス永続化ターミナルバックエンドの利用 | サーバーレス永続化ターミナルバックエンドの利用 | agent-orchestration | エージェントの実行環境をDaytona/Modalといったサーバーレスバックエンドで動かし、アイドル時に休止・オンデマン | NousResearch |
+| マルチllmプロバイダー切り替えアーキテクチャ | マルチLLMプロバイダー切り替えアーキテクチャ | agent-orchestration | `hermes model`コマンドで、コード変更なしに200+モデル（OpenRouter、z.ai/GLM、Kimi | NousResearch |
+| ワンライナーインストールスクリプトによる全依存解決 | ワンライナーインストールスクリプトによる全依存解決 | agent-orchestration | Linux/macOS/WSL2でPython・Node.js・全依存関係・`hermes`コマンドまでを1コマンドで自 | NousResearch |
+| 統合メッセージングゲートウェイによるクロスプラットフォーム会話継続 | 統合メッセージングゲートウェイによるクロスプラットフォーム会話継続 | agent-orchestration | 単一のゲートウェイプロセスでTelegram、Discord、Slack、WhatsApp、Signal、CLIから同一 | NousResearch |
+| cron自然言語スケジューリングとプラットフォーム配信 | cron自然言語スケジューリングとプラットフォーム配信 | agent-orchestration | 自然言語でスケジュールタスク（日次レポート、夜間バックアップ、週次監査等）を定義し、任意のメッセージングプラットフォーム | NousResearch |
+| openclawからの自動マイグレーション | OpenClawからの自動マイグレーション | claude-code-workflow | OpenClawの設定・メモリ・スキル・APIキーをHermes Agentへ自動インポートする | NousResearch |
