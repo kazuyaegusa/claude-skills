@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 363 スキル
+合計: 378 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -367,3 +367,18 @@
 | slash-commandsでclaude-codeにプロジェクト固有ワークフローを実行させる | Slash CommandsでClaude Codeにプロジェクト固有ワークフローを実行させる | claude-code-workflow | Slash Commandsカテゴリのリソース（例: /commit、/create-pr、/tdd-implement | hesreallyhim |
 | toolingでclaude-codeの可観測性管理性を向上させる | ToolingでClaude Codeの可観測性・管理性を向上させる | claude-code-workflow | Toolingカテゴリのリソース（例: ccflare使用量ダッシュボード、claude-tmux、Claudex会話履 | hesreallyhim |
 | orchestratorでclaude-code複数インスタンスを並列実行する | OrchestratorでClaude Code複数インスタンスを並列実行する | claude-code-workflow | Orchestratorsカテゴリのリソース（例: sudocode、Claude Squad、Happy Coder） | hesreallyhim |
+| typescript型安全pieceフレームワークでの統合開発 | TypeScript型安全pieceフレームワークでの統合開発 | automation-pipeline | 自動化ワークフローの統合コンポーネント（piece）をTypeScriptのnpmパッケージとして開発し、型安全性とホッ | activepieces |
+| mcpサーバーへの自動変換による統合 | MCPサーバーへの自動変換による統合 | claude-code-workflow | Activepiecesで開発された280以上のpieceを自動的にMCP（Model Context Protocol | activepieces |
+| オープンエコシステムによるコミュニティ駆動の拡張 | オープンエコシステムによるコミュニティ駆動の拡張 | automation-pipeline | 全てのpieceをオープンソース（MIT）として公開し、npmjs.comでバージョン管理することで、コミュニティからの | activepieces |
+| ai-first設計とhuman-in-the-loop統合 | AI-First設計とHuman-in-the-Loop統合 | agent-orchestration | AIネイティブなpiece（AIプロバイダー統合、AI SDK）を提供し、かつ承認待ち・遅延実行といったHuman-in | activepieces |
+| エンタープライズ向けセルフホストカスタマイズ | エンタープライズ向けセルフホスト＋カスタマイズ | automation-pipeline | Activepiecesをセルフホスト（ネットワークギャップ環境含む）で運用し、ブランディングからアクセス制御まで完全に | activepieces |
+| waspテンプレートから新規saasプロジェクトを生成 | Waspテンプレートから新規SaaSプロジェクトを生成 | infrastructure | Wasp CLIを使ってOpen SaaSテンプレートをクローンし、認証・決済・UI・デプロイ設定が全て揃ったプロジェク | wasp-lang |
+| waspの宣言的設定で認証ジョブデプロイを実装 | Waspの宣言的設定で認証・ジョブ・デプロイを実装 | automation-pipeline | Waspの設定ファイル（.waspファイル）に認証プロバイダー、バックグラウンドジョブ、デプロイターゲットを宣言的に記述 | wasp-lang |
+| aiコーディング支援環境を標準装備 | AIコーディング支援環境を標準装備 | claude-code-workflow | Open SaaSテンプレートに同梱されたAGENTS.md、Cursorルール、llms-full.txtを使い、Cl | wasp-lang |
+| エンドツーエンド型安全性でフロントバック連携 | エンドツーエンド型安全性でフロント・バック連携 | dev-tool | バックエンド関数の型定義をフロントエンドで自動推論させることで、サードパーティライブラリなしに完全な型安全性を実現する | wasp-lang |
+| tmux-cliワーカーによるマルチai並列実行 | tmux CLIワーカーによるマルチAI並列実行 | claude-code-workflow | tmux上で複数のAI CLI（claude/codex/gemini）を独立ペインとしてオンデマンド起動し、同一タスク | Yeachan-Heo |
+| ステージドパイプラインによる協調実行 | ステージドパイプラインによる協調実行 | claude-code-workflow | Team mode実行時、team-plan（計画）→ team-prd（要件定義）→ team-exec（実装）→ t | Yeachan-Heo |
+| プロバイダーアドバイザーパターンomc-ask | プロバイダーアドバイザーパターン（omc ask） | claude-code-workflow | 単一タスクを複数AIプロバイダー（claude/codex/gemini）に同時問い合わせし、各回答をMarkdownア | Yeachan-Heo |
+| レート制限自動待機再開 | レート制限自動待機・再開 | claude-code-workflow | Claude Code APIのレート制限到達時、tmuxセッション検出でリセット時刻まで自動待機し、制限解除後にセッシ | Yeachan-Heo |
+| openclawイベントブリッジ | OpenClawイベントブリッジ | claude-code-workflow | Claude Codeのセッション開始・終了・ツール実行前後などのイベントを、設定したOpenClawゲートウェイにHT | Yeachan-Heo |
+| マジックキーワードによる実行モード切替 | マジックキーワードによる実行モード切替 | claude-code-workflow | 自然言語プロンプト内に特定キーワード（autopilot, ralph, ulw, ralplan等）を含めることで、異 | Yeachan-Heo |

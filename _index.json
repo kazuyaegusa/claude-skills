@@ -4641,5 +4641,249 @@
     "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
     "source_author": "hesreallyhim",
     "added_at": "2026-03-19T00:03:49.955426+00:00"
+  },
+  {
+    "slug": "typescript型安全pieceフレームワークでの統合開発",
+    "name": "TypeScript型安全pieceフレームワークでの統合開発",
+    "category": "automation-pipeline",
+    "description": "自動化ワークフローの統合コンポーネント（piece）をTypeScriptのnpmパッケージとして開発し、型安全性とホットリロードを活用して開発者体験を最大化する",
+    "trigger_phrases": [
+      "新しいサービス（API）との統合を追加したい時、既存の統合に新機能を追加したい時、組織独自のカスタム統合を開発したい時",
+      "TypeScript型安全pieceフレームワークでの統合開発",
+      "TypeScript",
+      "npm",
+      "Activepieces piece framework",
+      "ホットリロード対応開発環境"
+    ],
+    "source_url": "https://github.com/activepieces/activepieces",
+    "source_author": "activepieces",
+    "added_at": "2026-03-19T00:05:47.823680+00:00"
+  },
+  {
+    "slug": "mcpサーバーへの自動変換による統合",
+    "name": "MCPサーバーへの自動変換による統合",
+    "category": "claude-code-workflow",
+    "description": "Activepiecesで開発された280以上のpieceを自動的にMCP（Model Context Protocol）サーバーに変換し、Claude Desktop、Cursor、WindsurfなどのLLMツールから直接呼び出せるようにする",
+    "trigger_phrases": [
+      "Claude Code等のLLMツールから直接Google Sheets更新、Discord通知、OpenAI呼び出し等の実務タスクを実行したい時、AIエージェントに複数サービスをまたがるワークフローを実行させたい時",
+      "MCPサーバーへの自動変換による統合",
+      "Model Context Protocol (MCP)",
+      "Claude Desktop",
+      "Cursor",
+      "Windsurf",
+      "Activepieces"
+    ],
+    "source_url": "https://github.com/activepieces/activepieces",
+    "source_author": "activepieces",
+    "added_at": "2026-03-19T00:05:47.823680+00:00"
+  },
+  {
+    "slug": "オープンエコシステムによるコミュニティ駆動の拡張",
+    "name": "オープンエコシステムによるコミュニティ駆動の拡張",
+    "category": "automation-pipeline",
+    "description": "全てのpieceをオープンソース（MIT）として公開し、npmjs.comでバージョン管理することで、コミュニティからの貢献（60%）を促進し、統合の種類と品質を組織的に拡大する",
+    "trigger_phrases": [
+      "自社でカバーしきれないサービスとの統合をコミュニティの力で拡充したい時、オープンソースエコシステムとして自動化プラットフォームを成長させたい時",
+      "オープンエコシステムによるコミュニティ駆動の拡張",
+      "GitHub",
+      "npm",
+      "MIT License",
+      "Commercial License（エンタープライズ機能用）"
+    ],
+    "source_url": "https://github.com/activepieces/activepieces",
+    "source_author": "activepieces",
+    "added_at": "2026-03-19T00:05:47.823680+00:00"
+  },
+  {
+    "slug": "ai-first設計とhuman-in-the-loop統合",
+    "name": "AI-First設計とHuman-in-the-Loop統合",
+    "category": "agent-orchestration",
+    "description": "AIネイティブなpiece（AIプロバイダー統合、AI SDK）を提供し、かつ承認待ち・遅延実行といったHuman-in-the-Loopパターンもpieceとして実装することで、AI自動化と人間判断を柔軟に組み合わせる",
+    "trigger_phrases": [
+      "AIが生成したコンテンツを公開前に人間が確認したい時、高リスク操作（請求書発行、契約書送信等）にワンステップの承認を入れたい時、複数AIプロバイダーで結果を比較実験したい時",
+      "AI-First設計とHuman-in-the-Loop統合",
+      "Activepieces AI pieces",
+      "AI SDK",
+      "Human-in-the-Loop piece",
+      "Chat Interface piece",
+      "Form Interface piece"
+    ],
+    "source_url": "https://github.com/activepieces/activepieces",
+    "source_author": "activepieces",
+    "added_at": "2026-03-19T00:05:47.823680+00:00"
+  },
+  {
+    "slug": "エンタープライズ向けセルフホストカスタマイズ",
+    "name": "エンタープライズ向けセルフホスト＋カスタマイズ",
+    "category": "automation-pipeline",
+    "description": "Activepiecesをセルフホスト（ネットワークギャップ環境含む）で運用し、ブランディングからアクセス制御まで完全にカスタマイズすることで、エンタープライズ要件に対応する",
+    "trigger_phrases": [
+      "外部SaaSを利用できない規制業界（金融、医療等）で自動化プラットフォームを構築したい時、組織独自のワークフローをノーコードで展開したい時、開発者とビジネスユーザーが協働する基盤が必要な時",
+      "エンタープライズ向けセルフホスト＋カスタマイズ",
+      "Activepieces（セルフホスト版）",
+      "Docker/Kubernetes（デプロイ用）",
+      "Commercial License"
+    ],
+    "source_url": "https://github.com/activepieces/activepieces",
+    "source_author": "activepieces",
+    "added_at": "2026-03-19T00:05:47.823680+00:00"
+  },
+  {
+    "slug": "waspテンプレートから新規saasプロジェクトを生成",
+    "name": "Waspテンプレートから新規SaaSプロジェクトを生成",
+    "category": "infrastructure",
+    "description": "Wasp CLIを使ってOpen SaaSテンプレートをクローンし、認証・決済・UI・デプロイ設定が全て揃ったプロジェクトを即座に作成する",
+    "trigger_phrases": [
+      "新規SaaSプロジェクトを開始する最初のステップとして、または既存システムをモダンスタックに移行する際のスケルトンとして使う",
+      "Waspテンプレートから新規SaaSプロジェクトを生成",
+      "Wasp CLI",
+      "React",
+      "Node.js",
+      "Prisma",
+      "ShadCN UI"
+    ],
+    "source_url": "https://github.com/wasp-lang/open-saas",
+    "source_author": "wasp-lang",
+    "added_at": "2026-03-19T00:07:45.817769+00:00"
+  },
+  {
+    "slug": "waspの宣言的設定で認証ジョブデプロイを実装",
+    "name": "Waspの宣言的設定で認証・ジョブ・デプロイを実装",
+    "category": "automation-pipeline",
+    "description": "Waspの設定ファイル（.waspファイル）に認証プロバイダー、バックグラウンドジョブ、デプロイターゲットを宣言的に記述し、定型コードなしで機能を有効化する",
+    "trigger_phrases": [
+      "認証フローを追加する時、定期実行タスク（メール送信・レポート生成等）を設定する時、本番環境へデプロイする時",
+      "Waspの宣言的設定で認証・ジョブ・デプロイを実装",
+      "Wasp framework",
+      "PgBoss（ジョブキュー）",
+      "Railway or Fly.io（デプロイ先）"
+    ],
+    "source_url": "https://github.com/wasp-lang/open-saas",
+    "source_author": "wasp-lang",
+    "added_at": "2026-03-19T00:07:45.817769+00:00"
+  },
+  {
+    "slug": "aiコーディング支援環境を標準装備",
+    "name": "AIコーディング支援環境を標準装備",
+    "category": "claude-code-workflow",
+    "description": "Open SaaSテンプレートに同梱されたAGENTS.md、Cursorルール、llms-full.txtを使い、Claude Code/Cursor/Codex等のAIツールが即座にプロジェクト構造・コーディング規約を理解できる環境を提供する",
+    "trigger_phrases": [
+      "新機能開発時にAIに「認証済みユーザーのみアクセスできるAPIを作って」と依頼する時、既存コードのリファクタリングをAIに任せる時",
+      "AIコーディング支援環境を標準装備",
+      "AGENTS.md（プロジェクトコンテキスト定義）",
+      ".cursorrules（Cursor IDE設定）",
+      "llms-full.txt（LLM向けコンテキスト全文）",
+      "Claude Code/Cursor/Codex"
+    ],
+    "source_url": "https://github.com/wasp-lang/open-saas",
+    "source_author": "wasp-lang",
+    "added_at": "2026-03-19T00:07:45.817769+00:00"
+  },
+  {
+    "slug": "エンドツーエンド型安全性でフロントバック連携",
+    "name": "エンドツーエンド型安全性でフロント・バック連携",
+    "category": "dev-tool",
+    "description": "バックエンド関数の型定義をフロントエンドで自動推論させることで、サードパーティライブラリなしに完全な型安全性を実現する",
+    "trigger_phrases": [
+      "新しいAPI操作を追加する時、既存APIのレスポンス型を変更する時（フロント側の型エラーで影響範囲が即座に判明）",
+      "エンドツーエンド型安全性でフロント・バック連携",
+      "Wasp framework（型推論エンジン）",
+      "TypeScript"
+    ],
+    "source_url": "https://github.com/wasp-lang/open-saas",
+    "source_author": "wasp-lang",
+    "added_at": "2026-03-19T00:07:45.817769+00:00"
+  },
+  {
+    "slug": "tmux-cliワーカーによるマルチai並列実行",
+    "name": "tmux CLIワーカーによるマルチAI並列実行",
+    "category": "claude-code-workflow",
+    "description": "tmux上で複数のAI CLI（claude/codex/gemini）を独立ペインとしてオンデマンド起動し、同一タスクを並列処理または異なる観点（セキュリティ/UI/実装）で分業させる",
+    "trigger_phrases": [
+      "複数AIモデルの視点を並列取得したい場合（Codexでアーキテクチャ分析 + Geminiで大規模コンテキスト処理など）、またはCodex/Gemini CLIを使う必要があるタスク（OMCのClaude統合だけでは不足する場合）",
+      "tmux CLIワーカーによるマルチAI並列実行",
+      "tmux",
+      "omc CLI（oh-my-claude-sisyphus npm package）",
+      "codex CLI（オプション）",
+      "gemini CLI（オプション）"
+    ],
+    "source_url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
+    "source_author": "Yeachan-Heo",
+    "added_at": "2026-03-19T00:10:44.124105+00:00"
+  },
+  {
+    "slug": "ステージドパイプラインによる協調実行",
+    "name": "ステージドパイプラインによる協調実行",
+    "category": "claude-code-workflow",
+    "description": "Team mode実行時、team-plan（計画）→ team-prd（要件定義）→ team-exec（実装）→ team-verify（検証）→ team-fix（修正ループ）の5段階を自動実行し、各段階で専門エージェントが介入",
+    "trigger_phrases": [
+      "複雑な機能追加やリファクタリングで、計画→実装→検証の段階的進行が必要な場合。単純なバグ修正やクイックフィックスには過剰",
+      "ステージドパイプラインによる協調実行",
+      "Claude Code CLI（Team機能有効化）",
+      "OMC plugin"
+    ],
+    "source_url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
+    "source_author": "Yeachan-Heo",
+    "added_at": "2026-03-19T00:10:44.124105+00:00"
+  },
+  {
+    "slug": "プロバイダーアドバイザーパターンomc-ask",
+    "name": "プロバイダーアドバイザーパターン（omc ask）",
+    "category": "claude-code-workflow",
+    "description": "単一タスクを複数AIプロバイダー（claude/codex/gemini）に同時問い合わせし、各回答をMarkdownアーティファクトとして保存、後で比較・統合する",
+    "trigger_phrases": [
+      "アーキテクチャ決定やPRレビューなど、複数視点での検証が重要な意思決定時。単純な情報取得には過剰",
+      "プロバイダーアドバイザーパターン（omc ask）",
+      "omc CLI",
+      "対応するprovider CLI（codex/gemini）"
+    ],
+    "source_url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
+    "source_author": "Yeachan-Heo",
+    "added_at": "2026-03-19T00:10:44.124105+00:00"
+  },
+  {
+    "slug": "レート制限自動待機再開",
+    "name": "レート制限自動待機・再開",
+    "category": "claude-code-workflow",
+    "description": "Claude Code APIのレート制限到達時、tmuxセッション検出でリセット時刻まで自動待機し、制限解除後にセッション再開する",
+    "trigger_phrases": [
+      "大量のファイル処理や長時間リファクタリングなど、レート制限に確実に遭遇する作業。短時間タスクでは不要",
+      "レート制限自動待機・再開",
+      "tmux",
+      "omc CLI"
+    ],
+    "source_url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
+    "source_author": "Yeachan-Heo",
+    "added_at": "2026-03-19T00:10:44.124105+00:00"
+  },
+  {
+    "slug": "openclawイベントブリッジ",
+    "name": "OpenClawイベントブリッジ",
+    "category": "claude-code-workflow",
+    "description": "Claude Codeのセッション開始・終了・ツール実行前後などのイベントを、設定したOpenClawゲートウェイにHTTP POSTで転送し、外部自動化ワークフローをトリガー",
+    "trigger_phrases": [
+      "Claude Codeをチーム開発フロー・CI/CDパイプライン・DevOpsワークフローに組み込みたい場合。個人の単発作業では不要",
+      "OpenClawイベントブリッジ",
+      "OpenClaw（ゲートウェイ）",
+      "OMC",
+      "（オプション）Discord/Slack webhook（ゲートウェイから通知する場合）"
+    ],
+    "source_url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
+    "source_author": "Yeachan-Heo",
+    "added_at": "2026-03-19T00:10:44.124105+00:00"
+  },
+  {
+    "slug": "マジックキーワードによる実行モード切替",
+    "name": "マジックキーワードによる実行モード切替",
+    "category": "claude-code-workflow",
+    "description": "自然言語プロンプト内に特定キーワード（autopilot, ralph, ulw, ralplan等）を含めることで、異なるオーケストレーション戦略（自律実行、永続モード、最大並列、計画反復等）を自動選択",
+    "trigger_phrases": [
+      "実行戦略を細かく制御したいが、コマンドフラグは覚えたくない場合。シンプルなタスクではキーワードなしの自然言語だけでも動作する",
+      "マジックキーワードによる実行モード切替",
+      "OMC"
+    ],
+    "source_url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
+    "source_author": "Yeachan-Heo",
+    "added_at": "2026-03-19T00:10:44.124105+00:00"
   }
 ]
