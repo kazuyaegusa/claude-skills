@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 357 スキル
+合計: 363 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -361,3 +361,9 @@
 | ide統合によるaiアシスタントへのデータベース操作委譲 | IDE統合によるAIアシスタントへのデータベース操作委譲 | claude-code-workflow | Claude Code、Cursor、Windsurf等のIDE内AIアシスタントをMCP Toolbox経由でデータベ | googleapis |
 | フレームワーク横断でのツール統一インターフェース | フレームワーク横断でのツール統一インターフェース | agent-orchestration | Python（LangChain/LlamaIndex）、JS/TS（LangChain/Genkit/ADK）、Go（ | googleapis |
 | gemini-cli-extensionsによるコマンドライン直接操作 | Gemini CLI Extensionsによるコマンドライン直接操作 | automation-pipeline | Gemini CLIの拡張機能として事前定義済みツール（AlloyDB/BigQuery/Cloud SQL等）またはカ | googleapis |
+| カテゴリ別リソース検索でclaude-code拡張を発見する | カテゴリ別リソース検索でClaude Code拡張を発見する | claude-code-workflow | awesome-claude-codeリポジトリの目次から、Agent Skills、Hooks、Slash Comma | hesreallyhim |
+| agent-skillsでclaude-codeに専門知識を付与する | Agent SkillsでClaude Codeに専門知識を付与する | claude-code-workflow | Agent Skillsカテゴリのリソース（例: Claude Scientific Skills、Trail of B | hesreallyhim |
+| hooksでclaude-codeの動作をリアルタイム制御する | HooksでClaude Codeの動作をリアルタイム制御する | claude-code-workflow | Hooksカテゴリのリソース（例: TDD Guard、parry、Dippy）をインストールし、Claude Code | hesreallyhim |
+| slash-commandsでclaude-codeにプロジェクト固有ワークフローを実行させる | Slash CommandsでClaude Codeにプロジェクト固有ワークフローを実行させる | claude-code-workflow | Slash Commandsカテゴリのリソース（例: /commit、/create-pr、/tdd-implement | hesreallyhim |
+| toolingでclaude-codeの可観測性管理性を向上させる | ToolingでClaude Codeの可観測性・管理性を向上させる | claude-code-workflow | Toolingカテゴリのリソース（例: ccflare使用量ダッシュボード、claude-tmux、Claudex会話履 | hesreallyhim |
+| orchestratorでclaude-code複数インスタンスを並列実行する | OrchestratorでClaude Code複数インスタンスを並列実行する | claude-code-workflow | Orchestratorsカテゴリのリソース（例: sudocode、Claude Squad、Happy Coder） | hesreallyhim |

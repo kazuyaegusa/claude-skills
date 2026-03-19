@@ -4540,5 +4540,106 @@
     "source_url": "https://github.com/googleapis/genai-toolbox",
     "source_author": "googleapis",
     "added_at": "2026-03-18T00:20:47.493526+00:00"
+  },
+  {
+    "slug": "カテゴリ別リソース検索でclaude-code拡張を発見する",
+    "name": "カテゴリ別リソース検索でClaude Code拡張を発見する",
+    "category": "claude-code-workflow",
+    "description": "awesome-claude-codeリポジトリの目次から、Agent Skills、Hooks、Slash Commands、Status Lines、Tooling、CLAUDE.mdファイル等のカテゴリを辿り、目的に合ったリソースを見つける",
+    "trigger_phrases": [
+      "Claude Codeで特定の機能（例: TDD、プロンプトインジェクション検知、使用量ダッシュボード）を実現したいが、どのリソースが存在するか分からない時",
+      "カテゴリ別リソース検索でClaude Code拡張を発見する",
+      "awesome-claude-code リポジトリ"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-19T00:03:49.955426+00:00"
+  },
+  {
+    "slug": "agent-skillsでclaude-codeに専門知識を付与する",
+    "name": "Agent SkillsでClaude Codeに専門知識を付与する",
+    "category": "claude-code-workflow",
+    "description": "Agent Skillsカテゴリのリソース（例: Claude Scientific Skills、Trail of Bits Security Skills、claude-code-hooks-sdk）をインストールし、Claude Codeに科学研究、セキュリティ監査、DevOps等の専門タスクを実行させる",
+    "trigger_phrases": [
+      "Claude Codeで専門的なタスク（セキュリティ監査、科学データ解析、IaCコード生成）を繰り返し実行する必要がある時",
+      "Agent SkillsでClaude Codeに専門知識を付与する",
+      "Claude Scientific Skills",
+      "Trail of Bits Security Skills",
+      "cc-devops-skills",
+      "Superpowers"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-19T00:03:49.955426+00:00"
+  },
+  {
+    "slug": "hooksでclaude-codeの動作をリアルタイム制御する",
+    "name": "HooksでClaude Codeの動作をリアルタイム制御する",
+    "category": "claude-code-workflow",
+    "description": "Hooksカテゴリのリソース（例: TDD Guard、parry、Dippy）をインストールし、Claude Codeがファイルを書き込む前やBashコマンドを実行する前に検証・承認・ブロックを自動実行する",
+    "trigger_phrases": [
+      "Claude CodeがTDDを守らない、危険なコマンドを実行しようとする、プロンプトインジェクションのリスクがある時",
+      "HooksでClaude Codeの動作をリアルタイム制御する",
+      "TDD Guard",
+      "parry",
+      "Dippy",
+      "TypeScript Quality Hooks"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-19T00:03:49.955426+00:00"
+  },
+  {
+    "slug": "slash-commandsでclaude-codeにプロジェクト固有ワークフローを実行させる",
+    "name": "Slash CommandsでClaude Codeにプロジェクト固有ワークフローを実行させる",
+    "category": "claude-code-workflow",
+    "description": "Slash Commandsカテゴリのリソース（例: /commit、/create-pr、/tdd-implement）を `.claude/commands/` にインストールし、`/commit` 等のコマンドで複雑なワークフローを1ステップで実行する",
+    "trigger_phrases": [
+      "Git操作、PR作成、テスト実行、ドキュメント生成等の定型ワークフローをClaude Codeに繰り返し実行させたい時",
+      "Slash CommandsでClaude Codeにプロジェクト固有ワークフローを実行させる",
+      "/commit",
+      "/create-pr",
+      "/tdd-implement",
+      "/analyze-issue"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-19T00:03:49.955426+00:00"
+  },
+  {
+    "slug": "toolingでclaude-codeの可観測性管理性を向上させる",
+    "name": "ToolingでClaude Codeの可観測性・管理性を向上させる",
+    "category": "claude-code-workflow",
+    "description": "Toolingカテゴリのリソース（例: ccflare使用量ダッシュボード、claude-tmux、Claudex会話履歴ブラウザ）をインストールし、Claude Codeのトークン消費・セッション管理・会話履歴を可視化・操作する",
+    "trigger_phrases": [
+      "Claude Codeのトークン消費を監視したい、複数セッションを管理したい、過去の会話を検索・復元したい時",
+      "ToolingでClaude Codeの可観測性・管理性を向上させる",
+      "ccflare",
+      "better-ccflare",
+      "Claudex",
+      "claude-tmux",
+      "recall"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-19T00:03:49.955426+00:00"
+  },
+  {
+    "slug": "orchestratorでclaude-code複数インスタンスを並列実行する",
+    "name": "OrchestratorでClaude Code複数インスタンスを並列実行する",
+    "category": "claude-code-workflow",
+    "description": "Orchestratorsカテゴリのリソース（例: sudocode、Claude Squad、Happy Coder）をインストールし、複数のClaude Codeインスタンスを異なるタスク・ワークツリーで並列実行・管理する",
+    "trigger_phrases": [
+      "複数の独立したタスクをClaude Codeで並列実行したい、チームで複数のClaude Codeインスタンスを協調させたい時",
+      "OrchestratorでClaude Code複数インスタンスを並列実行する",
+      "sudocode",
+      "Claude Squad",
+      "Happy Coder",
+      "Auto-Claude",
+      "TSK"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-19T00:03:49.955426+00:00"
   }
 ]
