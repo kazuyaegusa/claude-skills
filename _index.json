@@ -5074,5 +5074,252 @@
     "source_url": "https://github.com/NousResearch/hermes-agent",
     "source_author": "NousResearch",
     "added_at": "2026-03-19T00:14:50.204899+00:00"
+  },
+  {
+    "slug": "カテゴリ別スキル分類を活用して目的のスキルを発見する",
+    "name": "カテゴリ別スキル分類を活用して目的のスキルを発見する",
+    "category": "claude-code-workflow",
+    "description": "12の機能別カテゴリ（Document Skills、Development & Code Tools、Data & Analysis、Scientific & Research Tools、Writing & Research、Learning & Knowledge、Media & Content、Health & Life Sciences、Collaboration & Project Management、Security & Web Testing、Utility & Automation、Collections）に整理されたスキルリストから必要なものを選ぶ",
+    "trigger_phrases": [
+      "Claude Codeで新しいタスクを実行する前、既存のスキルが存在するか確認したい時",
+      "カテゴリ別スキル分類を活用して目的のスキルを発見する",
+      "awesome-claude-skills リポジトリ",
+      "GitHub"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-03-19T00:16:57.162680+00:00"
+  },
+  {
+    "slug": "スキルコレクションを一括導入してclaude-codeの能力を拡張する",
+    "name": "スキルコレクションを一括導入してClaude Codeの能力を拡張する",
+    "category": "claude-code-workflow",
+    "description": "Collections カテゴリに掲載された複数スキルのバンドル（例: OpenPaw 38スキル、agentskill.sh 69,000+スキル、clawfu-skills 169マーケティングスキル）を導入し、特定ドメインの専門性を一気に獲得する",
+    "trigger_phrases": [
+      "特定領域（マーケティング、プロダクト管理、開発ワークフロー）で包括的な支援が必要な時",
+      "スキルコレクションを一括導入してClaude Codeの能力を拡張する",
+      "OpenPaw (npx pawmode)",
+      "agentskill.sh",
+      "clawfu-skills (MCP server)",
+      "npm / npx"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-03-19T00:16:57.162680+00:00"
+  },
+  {
+    "slug": "セキュリティスキルvibesec-owasp-trail-of-bitsを導入して脆弱性を予防する",
+    "name": "セキュリティスキル（VibeSec, OWASP, Trail of Bits）を導入して脆弱性を予防する",
+    "category": "claude-code-workflow",
+    "description": "Security & Web Testing カテゴリのスキル（VibeSec-Skill, owasp-security, Trail of Bits Security Skills）をClaude Codeに追加し、コード生成時に自動的にセキュリティベストプラクティスを適用させる",
+    "trigger_phrases": [
+      "Webアプリ、API、認証機能など、セキュリティリスクの高いコードをClaude Codeで生成する時",
+      "セキュリティスキル（VibeSec, OWASP, Trail of Bits）を導入して脆弱性を予防する",
+      "VibeSec-Skill",
+      "owasp-security (OWASP Top 10:2025, ASVS 5.0)",
+      "Trail of Bits Security Skills (CodeQL, Semgrep)"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-03-19T00:16:57.162680+00:00"
+  },
+  {
+    "slug": "tddスキルを適用してテスト駆動開発を自動化する",
+    "name": "TDDスキルを適用してテスト駆動開発を自動化する",
+    "category": "claude-code-workflow",
+    "description": "test-driven-development スキルをClaude Codeに導入し、機能実装前に必ずテストを書かせるワークフローを強制する",
+    "trigger_phrases": [
+      "新機能追加やバグ修正など、すべての実装タスクの開始時（スキル説明文: 'Use when implementing any feature or bugfix, before writing implementation code'）",
+      "TDDスキルを適用してテスト駆動開発を自動化する",
+      "test-driven-development skill",
+      "テストフレームワーク（Jest, pytest, JUnit等）"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-03-19T00:16:57.162680+00:00"
+  },
+  {
+    "slug": "mcpmodel-context-protocol対応スキルでツール統合を実現する",
+    "name": "MCP（Model Context Protocol）対応スキルでツール統合を実現する",
+    "category": "claude-code-workflow",
+    "description": "Linear, NotebookLM, Google Workspace, VideoDB など、MCP対応スキルを導入し、Claude CodeからSaaS APIを直接呼び出せるようにする",
+    "trigger_phrases": [
+      "Linear、NotebookLM、Gmail、Googleカレンダーなど、外部SaaSとClaude Codeを連携させたい時",
+      "MCP（Model Context Protocol）対応スキルでツール統合を実現する",
+      "Model Context Protocol (MCP)",
+      "linear-claude-skill",
+      "notebooklm skill",
+      "google-workspace-skills",
+      "npm / Docker"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-03-19T00:16:57.162680+00:00"
+  },
+  {
+    "slug": "プロジェクト管理スキルpm-skills-product-manager-skillsで製品開発を体系化する",
+    "name": "プロジェクト管理スキル（pm-skills, Product-Manager-Skills）で製品開発を体系化する",
+    "category": "claude-code-workflow",
+    "description": "Collaboration & Project Management カテゴリのスキル（pm-skills 24スキル、Product-Manager-Skills）を導入し、プロダクト発見、優先順位付け、PRD作成、ロードマップ計画、SaaSメトリクス分析などのPMワークフローをClaude Codeに実行させる",
+    "trigger_phrases": [
+      "プロダクトロードマップ作成、機能優先順位付け、PRD執筆、ユーザーインタビュー分析など、PMの定型業務を実行する時",
+      "プロジェクト管理スキル（pm-skills, Product-Manager-Skills）で製品開発を体系化する",
+      "pm-skills (24スキル、agentskills.io準拠)",
+      "Product-Manager-Skills",
+      "Jira/Linear（任意）"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-03-19T00:16:57.162680+00:00"
+  },
+  {
+    "slug": "git-worktreeでagentタスクを物理分離する",
+    "name": "git worktreeでagentタスクを物理分離する",
+    "category": "claude-code-workflow",
+    "description": "1つのgitリポジトリから複数のworking directoryを作り、それぞれ独立したブランチで作業させる",
+    "trigger_phrases": [
+      "複数のfeature開発を並行したい、かつagentに任せたい時",
+      "git worktreeでagentタスクを物理分離する",
+      "git worktree",
+      "Superset（workspace管理UI）",
+      ".superset/config.json（setup/teardown定義）"
+    ],
+    "source_url": "https://github.com/superset-sh/superset",
+    "source_author": "superset-sh",
+    "added_at": "2026-03-19T00:18:15.366011+00:00"
+  },
+  {
+    "slug": "複数agentの状態をダッシュボードで監視する",
+    "name": "複数agentの状態をダッシュボードで監視する",
+    "category": "claude-code-workflow",
+    "description": "Supersetの単一画面で全workspace（agent）のステータス・出力・差分を一覧表示する",
+    "trigger_phrases": [
+      "複数agentを並列実行し、誰が止まっているか即座に把握したい時",
+      "複数agentの状態をダッシュボードで監視する",
+      "Superset Desktop App",
+      "Electron（UI基盤）",
+      "組み込みdiff viewer",
+      "Supersetの単一画面で全workspace（agent）のステータス・出力・差分を一覧表示する"
+    ],
+    "source_url": "https://github.com/superset-sh/superset",
+    "source_author": "superset-sh",
+    "added_at": "2026-03-19T00:18:15.366011+00:00"
+  },
+  {
+    "slug": "workspace-presetで環境構築を自動化する",
+    "name": "workspace presetで環境構築を自動化する",
+    "category": "agent-orchestration",
+    "description": "新しいworkspaceを作った瞬間に、環境変数コピー・依存インストール・初期設定を自動実行する",
+    "trigger_phrases": [
+      "複数のプロジェクトや環境（dev/staging/test）を素早く切り替えたい時",
+      "workspace presetで環境構築を自動化する",
+      "bash/zsh",
+      ".superset/config.json",
+      "Superset（preset機能）",
+      "新しいworkspaceを作った瞬間に、環境変数コピー・依存インストール・初期設定を自動実行する"
+    ],
+    "source_url": "https://github.com/superset-sh/superset",
+    "source_author": "superset-sh",
+    "added_at": "2026-03-19T00:18:15.366011+00:00"
+  },
+  {
+    "slug": "任意のcli-agentをsupersetで実行する",
+    "name": "任意のCLI agentをSupersetで実行する",
+    "category": "claude-code-workflow",
+    "description": "Claude Code, Codex, Cursor Agent, Gemini CLI, Copilotなど、ターミナルで動くagentなら全てSuperset上で実行できる",
+    "trigger_phrases": [
+      "複数のagentプロバイダを併用したい、または既存のagent CLIをそのまま使いたい時",
+      "任意のCLI agentをSupersetで実行する",
+      "Superset",
+      "各種CLI agent（Claude Code, Codex, Cursor Agent等）"
+    ],
+    "source_url": "https://github.com/superset-sh/superset",
+    "source_author": "superset-sh",
+    "added_at": "2026-03-19T00:18:15.366011+00:00"
+  },
+  {
+    "slug": "mcpサーバーのカタログ化と分類",
+    "name": "MCPサーバーのカタログ化と分類",
+    "category": "infrastructure",
+    "description": "20以上のMCPサーバーをREADME・ソースコード・CHANGELOG・ドキュメント・トラブルシューティング・サポート情報の6要素で統一管理し、カテゴリ(CLOUD/DEVELOPER TOOLS/PRODUCTIVITY/DATA/SECURITY)とタイプ(Local/Remote)で分類する",
+    "trigger_phrases": [
+      "複数のMCPサーバーを提供するエコシステムを構築し、開発者が目的別に選択・導入できるようにしたい場合",
+      "MCPサーバーのカタログ化と分類",
+      "GitHub Repository (microsoft/mcp)",
+      "Markdown Table",
+      "VS Code MCP Install Protocol (vscode:mcp/install?{config})",
+      "Visual Studio MCP Install Protocol (aka.ms/vs/mcp-install?{config})"
+    ],
+    "source_url": "https://github.com/microsoft/mcp",
+    "source_author": "microsoft",
+    "added_at": "2026-03-19T00:20:28.107173+00:00"
+  },
+  {
+    "slug": "local型とremote型mcpサーバーの使い分け",
+    "name": "Local型とRemote型MCPサーバーの使い分け",
+    "category": "agent-orchestration",
+    "description": "MCPサーバーをLocal型(ローカルプロセスとして起動、stdio通信)とRemote型(HTTPSエンドポイント経由、クラウドホスト)の2種類に分け、用途に応じて選択させる",
+    "trigger_phrases": [
+      "セキュリティ要件が高く認証情報をローカル管理したい場合はLocal型、マルチテナント対応やサーバー側でのログ・監視が必要な場合はRemote型を選択",
+      "Local型とRemote型MCPサーバーの使い分け",
+      "npx (Node.js)",
+      "uvx (Python)",
+      "VS Code MCP Extension",
+      "Microsoft Graph API (Remote型で使用)",
+      "Azure Active Directory (認証)"
+    ],
+    "source_url": "https://github.com/microsoft/mcp",
+    "source_author": "microsoft",
+    "added_at": "2026-03-19T00:20:28.107173+00:00"
+  },
+  {
+    "slug": "ideワンクリックインストールurlの生成",
+    "name": "IDEワンクリックインストールURLの生成",
+    "category": "prompt-engineering",
+    "description": "VS Code/Visual Studio等のIDEが直接解釈できるMCPインストールプロトコルURLを生成し、バッジボタンとしてREADMEに埋め込む",
+    "trigger_phrases": [
+      "MCPサーバーをエンドユーザーに配布し、IDE設定の手動編集なしでインストールさせたい場合",
+      "IDEワンクリックインストールURLの生成",
+      "VS Code MCP Install Protocol",
+      "Visual Studio MCP Install Protocol",
+      "URL encoding",
+      "shields.io (badge生成)"
+    ],
+    "source_url": "https://github.com/microsoft/mcp",
+    "source_author": "microsoft",
+    "added_at": "2026-03-19T00:20:28.107173+00:00"
+  },
+  {
+    "slug": "モノレポでの複数mcpサーバー統合管理",
+    "name": "モノレポでの複数MCPサーバー統合管理",
+    "category": "automation-pipeline",
+    "description": "単一リポジトリ(microsoft/mcp)内に、コアライブラリ・テストフレームワーク・エンジニアリングシステム・パイプライン・ツールを共有し、複数のMCPサーバー(Azure, Fabric等)を統一的に管理する",
+    "trigger_phrases": [
+      "複数の関連MCPサーバーを開発・保守し、共通インフラ(認証、ロギング、エラーハンドリング等)を統一したい場合",
+      "モノレポでの複数MCPサーバー統合管理",
+      "GitHub Actions (CI/CD)",
+      "Monorepo管理ツール(Nx, Turborepoなど、投稿には明記されていないが推測可能)",
+      "Git Tags"
+    ],
+    "source_url": "https://github.com/microsoft/mcp",
+    "source_author": "microsoft",
+    "added_at": "2026-03-19T00:20:28.107173+00:00"
+  },
+  {
+    "slug": "microsoft-graph-api統合mcpサーバーのパターン",
+    "name": "Microsoft Graph API統合MCPサーバーのパターン",
+    "category": "agent-orchestration",
+    "description": "Microsoft 365の各サービス(Calendar, Mail, Teams, Word等)をMicrosoft Graph API経由で操作するMCPサーバーを、Remote型エンドポイント(https://agent365.svc.cloud.microsoft/agents/tenants/{tenant_id}/servers/mcp_*)として提供する",
+    "trigger_phrases": [
+      "M365データ(メール、カレンダー、Teams、SharePoint等)にLLMからアクセスさせたいが、認証・権限管理・監査をサーバー側で集中管理したい場合",
+      "Microsoft Graph API統合MCPサーバーのパターン",
+      "Microsoft Graph API",
+      "Microsoft Entra ID (認証)",
+      "MCP SDK",
+      "ASP.NET Core (推測、投稿に明記なし)"
+    ],
+    "source_url": "https://github.com/microsoft/mcp",
+    "source_author": "microsoft",
+    "added_at": "2026-03-19T00:20:28.107173+00:00"
   }
 ]

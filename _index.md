@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 390 スキル
+合計: 405 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -394,3 +394,18 @@
 | 統合メッセージングゲートウェイによるクロスプラットフォーム会話継続 | 統合メッセージングゲートウェイによるクロスプラットフォーム会話継続 | agent-orchestration | 単一のゲートウェイプロセスでTelegram、Discord、Slack、WhatsApp、Signal、CLIから同一 | NousResearch |
 | cron自然言語スケジューリングとプラットフォーム配信 | cron自然言語スケジューリングとプラットフォーム配信 | agent-orchestration | 自然言語でスケジュールタスク（日次レポート、夜間バックアップ、週次監査等）を定義し、任意のメッセージングプラットフォーム | NousResearch |
 | openclawからの自動マイグレーション | OpenClawからの自動マイグレーション | claude-code-workflow | OpenClawの設定・メモリ・スキル・APIキーをHermes Agentへ自動インポートする | NousResearch |
+| カテゴリ別スキル分類を活用して目的のスキルを発見する | カテゴリ別スキル分類を活用して目的のスキルを発見する | claude-code-workflow | 12の機能別カテゴリ（Document Skills、Development & Code Tools、Data & A | BehiSecc |
+| スキルコレクションを一括導入してclaude-codeの能力を拡張する | スキルコレクションを一括導入してClaude Codeの能力を拡張する | claude-code-workflow | Collections カテゴリに掲載された複数スキルのバンドル（例: OpenPaw 38スキル、agentskill | BehiSecc |
+| セキュリティスキルvibesec-owasp-trail-of-bitsを導入して脆弱性を予防する | セキュリティスキル（VibeSec, OWASP, Trail of Bits）を導入して脆弱性を予防する | claude-code-workflow | Security & Web Testing カテゴリのスキル（VibeSec-Skill, owasp-securit | BehiSecc |
+| tddスキルを適用してテスト駆動開発を自動化する | TDDスキルを適用してテスト駆動開発を自動化する | claude-code-workflow | test-driven-development スキルをClaude Codeに導入し、機能実装前に必ずテストを書かせる | BehiSecc |
+| mcpmodel-context-protocol対応スキルでツール統合を実現する | MCP（Model Context Protocol）対応スキルでツール統合を実現する | claude-code-workflow | Linear, NotebookLM, Google Workspace, VideoDB など、MCP対応スキルを導入 | BehiSecc |
+| プロジェクト管理スキルpm-skills-product-manager-skillsで製品開発を体系化する | プロジェクト管理スキル（pm-skills, Product-Manager-Skills）で製品開発を体系化する | claude-code-workflow | Collaboration & Project Management カテゴリのスキル（pm-skills 24スキル、 | BehiSecc |
+| git-worktreeでagentタスクを物理分離する | git worktreeでagentタスクを物理分離する | claude-code-workflow | 1つのgitリポジトリから複数のworking directoryを作り、それぞれ独立したブランチで作業させる | superset-sh |
+| 複数agentの状態をダッシュボードで監視する | 複数agentの状態をダッシュボードで監視する | claude-code-workflow | Supersetの単一画面で全workspace（agent）のステータス・出力・差分を一覧表示する | superset-sh |
+| workspace-presetで環境構築を自動化する | workspace presetで環境構築を自動化する | agent-orchestration | 新しいworkspaceを作った瞬間に、環境変数コピー・依存インストール・初期設定を自動実行する | superset-sh |
+| 任意のcli-agentをsupersetで実行する | 任意のCLI agentをSupersetで実行する | claude-code-workflow | Claude Code, Codex, Cursor Agent, Gemini CLI, Copilotなど、ターミナ | superset-sh |
+| mcpサーバーのカタログ化と分類 | MCPサーバーのカタログ化と分類 | infrastructure | 20以上のMCPサーバーをREADME・ソースコード・CHANGELOG・ドキュメント・トラブルシューティング・サポート | microsoft |
+| local型とremote型mcpサーバーの使い分け | Local型とRemote型MCPサーバーの使い分け | agent-orchestration | MCPサーバーをLocal型(ローカルプロセスとして起動、stdio通信)とRemote型(HTTPSエンドポイント経由 | microsoft |
+| ideワンクリックインストールurlの生成 | IDEワンクリックインストールURLの生成 | prompt-engineering | VS Code/Visual Studio等のIDEが直接解釈できるMCPインストールプロトコルURLを生成し、バッジボ | microsoft |
+| モノレポでの複数mcpサーバー統合管理 | モノレポでの複数MCPサーバー統合管理 | automation-pipeline | 単一リポジトリ(microsoft/mcp)内に、コアライブラリ・テストフレームワーク・エンジニアリングシステム・パイプ | microsoft |
+| microsoft-graph-api統合mcpサーバーのパターン | Microsoft Graph API統合MCPサーバーのパターン | agent-orchestration | Microsoft 365の各サービス(Calendar, Mail, Teams, Word等)をMicrosoft  | microsoft |
