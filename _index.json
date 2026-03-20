@@ -5398,5 +5398,264 @@
     "source_url": "https://github.com/chenhg5/cc-connect",
     "source_author": "chenhg5",
     "added_at": "2026-03-19T00:22:17.229076+00:00"
+  },
+  {
+    "slug": "機能別カテゴリによるリソース選定",
+    "name": "機能別カテゴリによるリソース選定",
+    "category": "claude-code-workflow",
+    "description": "70以上のClaude Code拡張リソースを8カテゴリ（Agent Skills/Workflows/Tooling/Status Lines/Hooks/Slash-Commands/CLAUDE.md/Alternative Clients）に分類し、目的に応じて選択可能にする",
+    "trigger_phrases": [
+      "Claude Code導入初期、または既存環境の改善時。特に「何が必要か分からない」状態で全体像を把握したい場合",
+      "機能別カテゴリによるリソース選定",
+      "awesome-claude-code repository",
+      "GitHub（各リソースの詳細確認用）"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-20T00:04:06.052286+00:00"
+  },
+  {
+    "slug": "hooksによる品質ゲート自動化",
+    "name": "Hooksによる品質ゲート自動化",
+    "category": "claude-code-workflow",
+    "description": "Claude Codeのライフサイクルイベント（ファイル書き込み前後、Bashコマンド実行前等）にスクリプトを挿入し、TDD違反・セキュリティリスク・危険コマンドを自動検出・ブロックする",
+    "trigger_phrases": [
+      "品質基準が明確で、機械的チェックで担保できる場合。特にTDD・セキュリティ・危険操作防止が重要なプロジェクト",
+      "Hooksによる品質ゲート自動化",
+      "TDD Guard（TDD違反検出）",
+      "Dippy（危険Bashコマンド自動承認/プロンプト）",
+      "parry（プロンプトインジェクション・シークレットスキャン）",
+      "TypeScript Quality Hooks（TS/ESLint/Prettier自動実行）"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-20T00:04:06.052286+00:00"
+  },
+  {
+    "slug": "agent-skillsによる専門知識の注入",
+    "name": "Agent Skillsによる専門知識の注入",
+    "category": "claude-code-workflow",
+    "description": "Claude Codeに特定ドメイン（科学研究・セキュリティ監査・DevOps IaC・フルスタック開発等）の専門知識・ワークフローを事前学習させ、高品質な実装を初回から得る",
+    "trigger_phrases": [
+      "専門性が高く、人間の指示だけでは不十分な場合。特にセキュリティ・科学計算・インフラコード等、ミスが致命的な領域",
+      "Agent Skillsによる専門知識の注入",
+      "Trail of Bits Security Skills（セキュリティ監査）",
+      "Claude Scientific Skills（科学研究・工学・分析）",
+      "cc-devops-skills（DevOps IaC）",
+      "Fullstack Dev Skills（フルスタック開発）",
+      "Superpowers（SDLC全般のベストプラクティス）"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-20T00:04:06.052286+00:00"
+  },
+  {
+    "slug": "usage-monitorsによるコスト可視化",
+    "name": "Usage Monitorsによるコスト可視化",
+    "category": "claude-code-workflow",
+    "description": "Claude Codeのトークン消費・API呼び出し・コストをリアルタイムまたは事後に可視化し、予算超過・非効率利用を検出する",
+    "trigger_phrases": [
+      "Claude Codeを本格利用し始めた段階。特にチーム利用・長時間セッション・複数プロジェクト並行時",
+      "Usage Monitorsによるコスト可視化",
+      "ccflare（Web UI、詳細メトリクス）",
+      "better-ccflare（ccflareのフォーク、Docker対応）",
+      "CC Usage（CLI、コスト分析）",
+      "Claude Code Usage Monitor（TUI、リアルタイム監視）",
+      "Claudex（セッション履歴ブラウザ、全文検索）"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-20T00:04:06.052286+00:00"
+  },
+  {
+    "slug": "orchestratorsによるマルチエージェント協調",
+    "name": "Orchestratorsによるマルチエージェント協調",
+    "category": "claude-code-workflow",
+    "description": "複数のClaude Codeインスタンスまたは異なるAIエージェントを並列・逐次実行し、大規模タスクを分割・統合する",
+    "trigger_phrases": [
+      "大規模プロジェクト・複数機能の並行開発・長時間タスク（数時間〜数日）を扱う場合",
+      "Orchestratorsによるマルチエージェント協調",
+      "Claude Squad（複数Claude Code/Codex/Aiderを並列管理）",
+      "Auto-Claude（自律SDLC、カンバンUI）",
+      "TSK（Docker sandbox内で並列エージェント実行）",
+      "sudocode（軽量オーケストレーター、仕様フレームワーク統合）"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-20T00:04:06.052286+00:00"
+  },
+  {
+    "slug": "claudemdによるプロジェクト固有ルールの標準化",
+    "name": "CLAUDE.mdによるプロジェクト固有ルールの標準化",
+    "category": "claude-code-workflow",
+    "description": "プロジェクトルート（または`.claude/`）に`CLAUDE.md`を配置し、コーディング規約・ビルドコマンド・アーキテクチャ・禁止事項等をClaude Codeに事前学習させる",
+    "trigger_phrases": [
+      "新規プロジェクト立ち上げ時、またはClaude Code導入時。特に複数人がClaude Codeを使う場合、一貫性担保のため必須",
+      "CLAUDE.mdによるプロジェクト固有ルールの標準化",
+      "CLAUDE.md examples（Giselle, Metabase, HASH, Inkline等）",
+      "GitHub（各プロジェクトのCLAUDE.mdを参照）"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-20T00:04:06.052286+00:00"
+  },
+  {
+    "slug": "activepiecesのtypescript-pieceフレームワークで統合コンポーネントを作成",
+    "name": "ActivepiecesのTypeScript pieceフレームワークで統合コンポーネントを作成",
+    "category": "automation-pipeline",
+    "description": "TypeScriptでtype-safeな統合コンポーネント(piece)を作成し、npmパッケージとして公開すると、自動的にActivepiecesのノーコードビルダーとMCPサーバーの両方で利用可能になる",
+    "trigger_phrases": [
+      "新しいSaaSやAPIをActivepiecesとLLMの両方から利用したい時、既存のMCPサーバーが存在しないサービスを統合したい時",
+      "ActivepiecesのTypeScript pieceフレームワークで統合コンポーネントを作成",
+      "TypeScript",
+      "Activepieces piece framework",
+      "npm"
+    ],
+    "source_url": "https://github.com/activepieces/activepieces",
+    "source_author": "activepieces",
+    "added_at": "2026-03-20T00:05:34.630208+00:00"
+  },
+  {
+    "slug": "activepiecesを280のmcpサーバーツールキットとして利用",
+    "name": "Activepiecesを280+のMCPサーバーツールキットとして利用",
+    "category": "agent-orchestration",
+    "description": "Activepiecesに既に存在する280以上のpiece（Google Sheets, OpenAI, Discord, RSS等）を、Claude Desktop/Cursor/Windsurf等のLLMから直接MCPサーバーとして呼び出す",
+    "trigger_phrases": [
+      "LLMエージェントに外部API統合機能を追加したいが、各サービスのMCPサーバーを個別に探す手間を省きたい時、すでにActivepiecesでメンテナンスされている統合を活用したい時",
+      "Activepiecesを280+のMCPサーバーツールキットとして利用",
+      "Activepieces",
+      "Claude Desktop / Cursor / Windsurf",
+      "MCP (Model Context Protocol)"
+    ],
+    "source_url": "https://github.com/activepieces/activepieces",
+    "source_author": "activepieces",
+    "added_at": "2026-03-20T00:05:34.630208+00:00"
+  },
+  {
+    "slug": "activepiecesのホットリロード機能でローカル開発効率化",
+    "name": "Activepiecesのホットリロード機能でローカル開発効率化",
+    "category": "automation-pipeline",
+    "description": "Activepiecesのpiece開発時に、コード変更が即座にノーコードビルダーに反映されるホットリロード機能を活用する",
+    "trigger_phrases": [
+      "pieceを新規開発または改修する時、迅速なフィードバックループが必要な時",
+      "Activepiecesのホットリロード機能でローカル開発効率化",
+      "Activepieces local development environment",
+      "TypeScript"
+    ],
+    "source_url": "https://github.com/activepieces/activepieces",
+    "source_author": "activepieces",
+    "added_at": "2026-03-20T00:05:34.630208+00:00"
+  },
+  {
+    "slug": "human-in-the-loop機能でワークフローに承認フローを組み込む",
+    "name": "Human-in-the-Loop機能でワークフローに承認フローを組み込む",
+    "category": "automation-pipeline",
+    "description": "Activepiecesの「遅延実行」「承認待ち」「チャットインターフェース」「フォームインターフェース」pieceを使って、自動化の途中で人間の判断を挟む",
+    "trigger_phrases": [
+      "高リスクな操作（決済、削除、公開等）の前に承認を挟みたい時、顧客や上司からの追加情報が必要な時",
+      "Human-in-the-Loop機能でワークフローに承認フローを組み込む",
+      "Activepieces Approval piece",
+      "Activepieces Delay piece",
+      "Activepieces Chat Interface piece",
+      "Activepieces Form Interface piece"
+    ],
+    "source_url": "https://github.com/activepieces/activepieces",
+    "source_author": "activepieces",
+    "added_at": "2026-03-20T00:05:34.630208+00:00"
+  },
+  {
+    "slug": "3ファイルパターンでタスク状態を永続化する",
+    "name": "3ファイルパターンでタスク状態を永続化する",
+    "category": "claude-code-workflow",
+    "description": "全ての複雑タスクをtask_plan.md（フェーズとチェックボックス）、findings.md（調査結果・発見）、progress.md（セッションログ・テスト結果）の3ファイルで管理する。",
+    "trigger_phrases": [
+      "3ステップ以上のタスク、複数セッションにまたがる作業、コンテキストリセット（/clear）後の再開時",
+      "3ファイルパターンでタスク状態を永続化する",
+      "npx skills（Agent Skills仕様のインストーラー）",
+      "Claude Code / Cursor / Gemini CLI / Codex / GitHub Copilot等（16+プラットフォーム対応）",
+      "hooks.json（Cursor / GitHub Copilot / Gemini CLI / Mastra Code等で自動読込）"
+    ],
+    "source_url": "https://github.com/OthmanAdi/planning-with-files",
+    "source_author": "OthmanAdi",
+    "added_at": "2026-03-20T00:07:38.308488+00:00"
+  },
+  {
+    "slug": "フックで判断前にプランを再読込させる",
+    "name": "フックで判断前にプランを再読込させる",
+    "category": "context-management",
+    "description": "PreToolUse（ツール実行直前）フックでAIにtask_plan.mdを再読込させ、現在のフェーズと目標を思い出させる。",
+    "trigger_phrases": [
+      "複数ツール呼び出しを伴うタスク（ファイル編集、コマンド実行、Web検索等）、目標を見失いやすい長期セッション",
+      "フックで判断前にプランを再読込させる",
+      "Cursor hooks.json",
+      "GitHub Copilot hooks",
+      "Gemini CLI settings.json",
+      "Mastra Code hooks",
+      "bash / PowerShell"
+    ],
+    "source_url": "https://github.com/OthmanAdi/planning-with-files",
+    "source_author": "OthmanAdi",
+    "added_at": "2026-03-20T00:07:38.308488+00:00"
+  },
+  {
+    "slug": "2アクション後に発見をfindingsmdへ保存する",
+    "name": "2アクション後に発見をfindings.mdへ保存する",
+    "category": "context-management",
+    "description": "ブラウザ操作やファイル閲覧を2回実行したら、その発見を必ずfindings.mdに書き出す（The 2-Action Rule）。",
+    "trigger_phrases": [
+      "調査タスク、APIドキュメント読解、複数ページのスクレイピング、設計ドキュメント作成",
+      "2アクション後に発見をfindings.mdへ保存する",
+      "Edit（ファイル編集ツール）",
+      "WebFetch / Read / Bash等（情報取得ツール）"
+    ],
+    "source_url": "https://github.com/OthmanAdi/planning-with-files",
+    "source_author": "OthmanAdi",
+    "added_at": "2026-03-20T00:07:38.308488+00:00"
+  },
+  {
+    "slug": "全てのエラーをtask-planmdに記録し反復を防ぐ",
+    "name": "全てのエラーをtask_plan.mdに記録し反復を防ぐ",
+    "category": "automation-pipeline",
+    "description": "テスト失敗、ビルドエラー、API呼び出し失敗等を全てtask_plan.mdの「## Errors」セクションに記録し、試行回数と対応策を追記する。",
+    "trigger_phrases": [
+      "テスト駆動開発、CI/CD実行、API統合、ビルドプロセス、認証フロー実装",
+      "全てのエラーをtask_plan.mdに記録し反復を防ぐ",
+      "Edit（task_plan.md更新）",
+      "Bash / Exec等（エラー発生源）"
+    ],
+    "source_url": "https://github.com/OthmanAdi/planning-with-files",
+    "source_author": "OthmanAdi",
+    "added_at": "2026-03-20T00:07:38.308488+00:00"
+  },
+  {
+    "slug": "stopフックで完了検証を強制する",
+    "name": "Stopフックで完了検証を強制する",
+    "category": "automation-pipeline",
+    "description": "セッション終了時（/stop, /exit）にStopフックがtask_plan.mdの全チェックボックスを確認し、未完了があれば警告する。",
+    "trigger_phrases": [
+      "複数フェーズのタスク、納品前の最終確認、CI/CDパイプライン完走確認",
+      "Stopフックで完了検証を強制する",
+      "bash / PowerShell",
+      "grep / Select-String（チェックボックス検索）"
+    ],
+    "source_url": "https://github.com/OthmanAdi/planning-with-files",
+    "source_author": "OthmanAdi",
+    "added_at": "2026-03-20T00:07:38.308488+00:00"
+  },
+  {
+    "slug": "セッションリカバリーでclear後も作業を継続する",
+    "name": "セッションリカバリーで/clear後も作業を継続する",
+    "category": "claude-code-workflow",
+    "description": "/clearでコンテキストをリセットした後、前回の.planning/ファイルと~/.claude/projects/セッションデータから会話履歴を復元する。",
+    "trigger_phrases": [
+      "長期タスク（数時間～数日）、コンテキスト上限到達時、複数セッションにまたがる開発",
+      "セッションリカバリーで/clear後も作業を継続する",
+      "Claude Code session storage",
+      "Read（ファイル読込）",
+      "Bash（ファイルタイムスタンプ取得）"
+    ],
+    "source_url": "https://github.com/OthmanAdi/planning-with-files",
+    "source_author": "OthmanAdi",
+    "added_at": "2026-03-20T00:07:38.308488+00:00"
   }
 ]

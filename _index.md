@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 410 スキル
+合計: 426 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -414,3 +414,19 @@
 | aiエージェントへのファイル送信機能の実装 | AIエージェントへのファイル送信機能の実装 | agent-orchestration | AIエージェントがローカルで生成したスクリーンショット・グラフ・PDF等を、チャットアプリに自動送信させる。 | chenhg5 |
 | 自然言語でのcronジョブ設定 | 自然言語でのcronジョブ設定 | agent-orchestration | チャットから自然言語でスケジュールタスクを登録し、定時実行させる。 | chenhg5 |
 | 公開ipなしでのメッセンジャーボット運用 | 公開IPなしでのメッセンジャーボット運用 | agent-orchestration | Webhook不要のWebSocket/Long Polling接続を使い、ローカル環境から直接メッセンジャーボットを動 | chenhg5 |
+| 機能別カテゴリによるリソース選定 | 機能別カテゴリによるリソース選定 | claude-code-workflow | 70以上のClaude Code拡張リソースを8カテゴリ（Agent Skills/Workflows/Tooling/ | hesreallyhim |
+| hooksによる品質ゲート自動化 | Hooksによる品質ゲート自動化 | claude-code-workflow | Claude Codeのライフサイクルイベント（ファイル書き込み前後、Bashコマンド実行前等）にスクリプトを挿入し、T | hesreallyhim |
+| agent-skillsによる専門知識の注入 | Agent Skillsによる専門知識の注入 | claude-code-workflow | Claude Codeに特定ドメイン（科学研究・セキュリティ監査・DevOps IaC・フルスタック開発等）の専門知識・ | hesreallyhim |
+| usage-monitorsによるコスト可視化 | Usage Monitorsによるコスト可視化 | claude-code-workflow | Claude Codeのトークン消費・API呼び出し・コストをリアルタイムまたは事後に可視化し、予算超過・非効率利用を検 | hesreallyhim |
+| orchestratorsによるマルチエージェント協調 | Orchestratorsによるマルチエージェント協調 | claude-code-workflow | 複数のClaude Codeインスタンスまたは異なるAIエージェントを並列・逐次実行し、大規模タスクを分割・統合する | hesreallyhim |
+| claudemdによるプロジェクト固有ルールの標準化 | CLAUDE.mdによるプロジェクト固有ルールの標準化 | claude-code-workflow | プロジェクトルート（または`.claude/`）に`CLAUDE.md`を配置し、コーディング規約・ビルドコマンド・アー | hesreallyhim |
+| activepiecesのtypescript-pieceフレームワークで統合コンポーネントを作成 | ActivepiecesのTypeScript pieceフレームワークで統合コンポーネントを作成 | automation-pipeline | TypeScriptでtype-safeな統合コンポーネント(piece)を作成し、npmパッケージとして公開すると、自 | activepieces |
+| activepiecesを280のmcpサーバーツールキットとして利用 | Activepiecesを280+のMCPサーバーツールキットとして利用 | agent-orchestration | Activepiecesに既に存在する280以上のpiece（Google Sheets, OpenAI, Discor | activepieces |
+| activepiecesのホットリロード機能でローカル開発効率化 | Activepiecesのホットリロード機能でローカル開発効率化 | automation-pipeline | Activepiecesのpiece開発時に、コード変更が即座にノーコードビルダーに反映されるホットリロード機能を活用す | activepieces |
+| human-in-the-loop機能でワークフローに承認フローを組み込む | Human-in-the-Loop機能でワークフローに承認フローを組み込む | automation-pipeline | Activepiecesの「遅延実行」「承認待ち」「チャットインターフェース」「フォームインターフェース」pieceを使 | activepieces |
+| 3ファイルパターンでタスク状態を永続化する | 3ファイルパターンでタスク状態を永続化する | claude-code-workflow | 全ての複雑タスクをtask_plan.md（フェーズとチェックボックス）、findings.md（調査結果・発見）、pr | OthmanAdi |
+| フックで判断前にプランを再読込させる | フックで判断前にプランを再読込させる | context-management | PreToolUse（ツール実行直前）フックでAIにtask_plan.mdを再読込させ、現在のフェーズと目標を思い出さ | OthmanAdi |
+| 2アクション後に発見をfindingsmdへ保存する | 2アクション後に発見をfindings.mdへ保存する | context-management | ブラウザ操作やファイル閲覧を2回実行したら、その発見を必ずfindings.mdに書き出す（The 2-Action R | OthmanAdi |
+| 全てのエラーをtask-planmdに記録し反復を防ぐ | 全てのエラーをtask_plan.mdに記録し反復を防ぐ | automation-pipeline | テスト失敗、ビルドエラー、API呼び出し失敗等を全てtask_plan.mdの「## Errors」セクションに記録し、 | OthmanAdi |
+| stopフックで完了検証を強制する | Stopフックで完了検証を強制する | automation-pipeline | セッション終了時（/stop, /exit）にStopフックがtask_plan.mdの全チェックボックスを確認し、未完 | OthmanAdi |
+| セッションリカバリーでclear後も作業を継続する | セッションリカバリーで/clear後も作業を継続する | claude-code-workflow | /clearでコンテキストをリセットした後、前回の.planning/ファイルと~/.claude/projects/セ | OthmanAdi |
