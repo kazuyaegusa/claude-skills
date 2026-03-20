@@ -5938,5 +5938,225 @@
     "source_url": "https://github.com/travisvn/awesome-claude-skills",
     "source_author": "travisvn",
     "added_at": "2026-03-20T00:13:58.442041+00:00"
+  },
+  {
+    "slug": "awesome-list形式でスキルをキュレーション",
+    "name": "awesome-list形式でスキルをキュレーション",
+    "category": "other",
+    "description": "GitHub上でClaude Skillsを機能カテゴリ（Document、Development、Data、Security等）別に分類・整理し、各スキルへのリンクと簡潔な説明を提供する",
+    "trigger_phrases": [
+      "Claude Skillsのエコシステムが一定規模を超え、個別発見が困難になった時点。コミュニティが形成され始めた初期段階で開始するのが理想",
+      "awesome-list形式でスキルをキュレーション",
+      "GitHub（リポジトリホスティング）",
+      "Markdown（ドキュメント記述）"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-03-20T00:15:38.462870+00:00"
+  },
+  {
+    "slug": "スキルに1行機能説明を付与",
+    "name": "スキルに1行機能説明を付与",
+    "category": "claude-code-workflow",
+    "description": "各スキルのリンクの後に、そのスキルが何をするのかを簡潔に記述する（例: \"Create, edit, analyze Word docs with tracked changes, comments, formatting.\"）",
+    "trigger_phrases": [
+      "スキルカタログを作成・更新する際、全てのエントリに対して実施",
+      "スキルに1行機能説明を付与"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-03-20T00:15:38.462870+00:00"
+  },
+  {
+    "slug": "セキュリティスキルを明示的に推奨",
+    "name": "セキュリティスキルを明示的に推奨",
+    "category": "ui-ux",
+    "description": "READMEの冒頭にTipセクションを配置し、Web開発者向けにセキュリティスキル（VibeSec-Skill）の利用を強く推奨する",
+    "trigger_phrases": [
+      "スキルカタログを公開する際、特にコード生成用途の場合は必須で実施",
+      "セキュリティスキルを明示的に推奨",
+      "Markdown blockquote記法"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-03-20T00:15:38.462870+00:00"
+  },
+  {
+    "slug": "スキルをドメイン別に階層化",
+    "name": "スキルをドメイン別に階層化",
+    "category": "other",
+    "description": "スキルを「Document Skills」「Development & Code Tools」「Data & Analysis」「Security & Web Testing」など、利用ドメインで大分類する",
+    "trigger_phrases": [
+      "スキル数が20を超えた時点でカテゴリ化を開始。50以上になったらサブカテゴリも検討",
+      "スキルをドメイン別に階層化",
+      "Markdown見出しとアンカーリンク"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-03-20T00:15:38.462870+00:00"
+  },
+  {
+    "slug": "スキルコレクションをメタスキルとして扱う",
+    "name": "スキルコレクションをメタスキルとして扱う",
+    "category": "claude-code-workflow",
+    "description": "個別スキルだけでなく、複数スキルをバンドルした「コレクション」（例: OpenPaw、claude-starter）も1エントリとして掲載する",
+    "trigger_phrases": [
+      "5つ以上のスキルを含むバンドルが登場した時点で専用セクションを作成",
+      "スキルコレクションをメタスキルとして扱う"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-03-20T00:15:38.462870+00:00"
+  },
+  {
+    "slug": "スキルマーケットプレイスへのリンク提供",
+    "name": "スキルマーケットプレイスへのリンク提供",
+    "category": "claude-code-workflow",
+    "description": "Collectionsセクションに、スキル検索・インストールを支援する外部サービス（agentskill.sh等）へのリンクを含める",
+    "trigger_phrases": [
+      "スキル総数が100を超え、GitHub READMEだけでは管理が困難になった時点",
+      "スキルマーケットプレイスへのリンク提供"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-03-20T00:15:38.462870+00:00"
+  },
+  {
+    "slug": "git-worktreeによるエージェント隔離実行",
+    "name": "Git worktreeによるエージェント隔離実行",
+    "category": "agent-orchestration",
+    "description": "各AIエージェントタスクに独立したgit worktree（ブランチ+作業ディレクトリ）を割り当て、並列実行時の干渉を完全に防ぐ",
+    "trigger_phrases": [
+      "2つ以上のタスクを並行して進めたい時、または1つのエージェントが長時間実行される間に別タスクに着手したい時",
+      "Git worktreeによるエージェント隔離実行",
+      "git worktree",
+      "Superset（macOS app）",
+      "任意のCLIコーディングエージェント"
+    ],
+    "source_url": "https://github.com/superset-sh/superset",
+    "source_author": "superset-sh",
+    "added_at": "2026-03-20T00:17:21.808539+00:00"
+  },
+  {
+    "slug": "エージェント監視と通知による待機時間削減",
+    "name": "エージェント監視と通知による待機時間削減",
+    "category": "agent-orchestration",
+    "description": "複数エージェントの実行状態を統合ダッシュボードで監視し、レビュー準備完了時に通知を受け取ることで、人間の待機時間をゼロにする",
+    "trigger_phrases": [
+      "3つ以上のエージェントを並列実行している時、またはエージェントの実行時間が5分を超える時",
+      "エージェント監視と通知による待機時間削減",
+      "Superset monitoring dashboard",
+      "Supersetのbuilt-in diff viewer"
+    ],
+    "source_url": "https://github.com/superset-sh/superset",
+    "source_author": "superset-sh",
+    "added_at": "2026-03-20T00:17:21.808539+00:00"
+  },
+  {
+    "slug": "workspace-presetsによる環境構築自動化",
+    "name": "Workspace Presetsによる環境構築自動化",
+    "category": "agent-orchestration",
+    "description": "各worktree作成時に実行されるsetup/teardownスクリプトをプリセット化し、依存関係インストール・環境変数コピー・DB初期化等を自動化する",
+    "trigger_phrases": [
+      "同じプロジェクトで頻繁にworktreeを作成する時、または環境構築に3ステップ以上かかる時",
+      "Workspace Presetsによる環境構築自動化",
+      "Bash/Zsh（スクリプト実行）",
+      "Bun/npm/pnpm（依存関係管理）",
+      "任意のDB migration tool"
+    ],
+    "source_url": "https://github.com/superset-sh/superset",
+    "source_author": "superset-sh",
+    "added_at": "2026-03-20T00:17:21.808539+00:00"
+  },
+  {
+    "slug": "ユニバーサルcliエージェント対応アーキテクチャ",
+    "name": "ユニバーサルCLIエージェント対応アーキテクチャ",
+    "category": "claude-code-workflow",
+    "description": "特定のエージェントに依存せず、任意のCLIベースエージェント（Claude Code、Codex、Cursor、Gemini CLI等）をプラグイン不要で実行できる",
+    "trigger_phrases": [
+      "新しいエージェントを試したい時、または複数のエージェントを同時に使い分けたい時",
+      "ユニバーサルCLIエージェント対応アーキテクチャ",
+      "任意のCLI coding agent（Claude Code、Codex、Cursor等）",
+      "pty（pseudo-terminal）"
+    ],
+    "source_url": "https://github.com/superset-sh/superset",
+    "source_author": "superset-sh",
+    "added_at": "2026-03-20T00:17:21.808539+00:00"
+  },
+  {
+    "slug": "hosted-mcp-serverをhttp経由で接続",
+    "name": "hosted MCP serverをHTTP経由で接続",
+    "category": "other",
+    "description": "Exa MCPサーバー（https://mcp.exa.ai/mcp）にHTTPトランスポートで接続し、AI assistantに検索機能を追加する",
+    "trigger_phrases": [
+      "MCPサーバーをローカルで管理したくない場合、複数環境で同じMCP機能を使いたい場合",
+      "hosted MCP serverをHTTP経由で接続",
+      "Exa MCP Server (https://mcp.exa.ai/mcp)",
+      "MCP protocol compatible AI environments"
+    ],
+    "source_url": "https://github.com/exa-labs/exa-mcp-server",
+    "source_author": "exa-labs",
+    "added_at": "2026-03-20T00:18:53.228630+00:00"
+  },
+  {
+    "slug": "カテゴリ別フィルタ制限を考慮したクエリ設計",
+    "name": "カテゴリ別フィルタ制限を考慮したクエリ設計",
+    "category": "data-processing",
+    "description": "Exa検索のcategoryパラメータに応じて、利用可能/不可能なフィルタを使い分ける",
+    "trigger_phrases": [
+      "Exa検索でエラーを回避し確実に結果を得たい場合、カテゴリ固有の検索最適化をしたい場合",
+      "カテゴリ別フィルタ制限を考慮したクエリ設計",
+      "web_search_advanced_exa tool",
+      "Exa検索のcategoryパラメータに応じて、利用可能/不可能なフィルタを使い分ける"
+    ],
+    "source_url": "https://github.com/exa-labs/exa-mcp-server",
+    "source_author": "exa-labs",
+    "added_at": "2026-03-20T00:18:53.228630+00:00"
+  },
+  {
+    "slug": "claude-skillでmcpツールの使用パターンを定型化",
+    "name": "Claude SkillでMCPツールの使用パターンを定型化",
+    "category": "claude-code-workflow",
+    "description": "Exa MCP用のClaude Skillを作成し、カテゴリ別の最適な検索パターン・フィルタ制限・トークン管理を文書化",
+    "trigger_phrases": [
+      "特定の検索カテゴリを頻繁に使う場合、チーム内で検索パターンを標準化したい場合",
+      "Claude SkillでMCPツールの使用パターンを定型化",
+      "Claude Code skill system",
+      "Exa MCP Server"
+    ],
+    "source_url": "https://github.com/exa-labs/exa-mcp-server",
+    "source_author": "exa-labs",
+    "added_at": "2026-03-20T00:18:53.228630+00:00"
+  },
+  {
+    "slug": "task-agentでトークン消費を分離",
+    "name": "Task agentでトークン消費を分離",
+    "category": "claude-code-workflow",
+    "description": "Exa検索を常にTask agent（fork context）で実行し、メインコンテキストに検索結果全体を流さない",
+    "trigger_phrases": [
+      "大量検索結果を扱う場合、トークン制限が厳しい環境で動作させる場合",
+      "Task agentでトークン消費を分離",
+      "Task agent（Claude Code）",
+      "Exa MCP Server"
+    ],
+    "source_url": "https://github.com/exa-labs/exa-mcp-server",
+    "source_author": "exa-labs",
+    "added_at": "2026-03-20T00:18:53.228630+00:00"
+  },
+  {
+    "slug": "クエリバリエーションで検索カバレッジ向上",
+    "name": "クエリバリエーションで検索カバレッジ向上",
+    "category": "other",
+    "description": "同一検索意図に対して複数のクエリ表現を生成し、並列実行後にマージ・重複排除",
+    "trigger_phrases": [
+      "網羅性が重要な調査（競合分析、文献レビュー等）を行う場合",
+      "クエリバリエーションで検索カバレッジ向上",
+      "web_search_advanced_exa",
+      "additionalQueries parameter",
+      "同一検索意図に対して複数のクエリ表現を生成し、並列実行後にマージ・重複排除"
+    ],
+    "source_url": "https://github.com/exa-labs/exa-mcp-server",
+    "source_author": "exa-labs",
+    "added_at": "2026-03-20T00:18:53.228630+00:00"
   }
 ]

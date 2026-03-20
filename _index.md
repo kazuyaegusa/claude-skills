@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 444 スキル
+合計: 459 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -448,3 +448,18 @@
 | frontend-designスキルでai臭のないui設計をさせる | frontend-designスキルでAI臭のないUI設計をさせる | ui-ux | 公式frontend-designスキルを使い、汎用的・AI特有の美学を避け、大胆なデザイン判断をClaudeに促す | travisvn |
 | obrasuperpowersで20の実践スキルライブラリを一括導入する | obra/superpowersで20+の実践スキルライブラリを一括導入する | claude-code-workflow | obra/superpowersコミュニティスキルパックをインストールし、TDD/デバッグ/コラボレーションパターン等2 | travisvn |
 | セキュリティスキャンでスキルの安全性を検証する | セキュリティスキャンでスキルの安全性を検証する | claude-code-workflow | スキルをインストール前にSKILL.mdと全スクリプトをレビューし、悪意あるコード・プロンプトインジェクション・データ流 | travisvn |
+| awesome-list形式でスキルをキュレーション | awesome-list形式でスキルをキュレーション | other | GitHub上でClaude Skillsを機能カテゴリ（Document、Development、Data、Secur | BehiSecc |
+| スキルに1行機能説明を付与 | スキルに1行機能説明を付与 | claude-code-workflow | 各スキルのリンクの後に、そのスキルが何をするのかを簡潔に記述する（例: "Create, edit, analyze W | BehiSecc |
+| セキュリティスキルを明示的に推奨 | セキュリティスキルを明示的に推奨 | ui-ux | READMEの冒頭にTipセクションを配置し、Web開発者向けにセキュリティスキル（VibeSec-Skill）の利用を | BehiSecc |
+| スキルをドメイン別に階層化 | スキルをドメイン別に階層化 | other | スキルを「Document Skills」「Development & Code Tools」「Data & Analy | BehiSecc |
+| スキルコレクションをメタスキルとして扱う | スキルコレクションをメタスキルとして扱う | claude-code-workflow | 個別スキルだけでなく、複数スキルをバンドルした「コレクション」（例: OpenPaw、claude-starter）も1 | BehiSecc |
+| スキルマーケットプレイスへのリンク提供 | スキルマーケットプレイスへのリンク提供 | claude-code-workflow | Collectionsセクションに、スキル検索・インストールを支援する外部サービス（agentskill.sh等）へのリ | BehiSecc |
+| git-worktreeによるエージェント隔離実行 | Git worktreeによるエージェント隔離実行 | agent-orchestration | 各AIエージェントタスクに独立したgit worktree（ブランチ+作業ディレクトリ）を割り当て、並列実行時の干渉を完 | superset-sh |
+| エージェント監視と通知による待機時間削減 | エージェント監視と通知による待機時間削減 | agent-orchestration | 複数エージェントの実行状態を統合ダッシュボードで監視し、レビュー準備完了時に通知を受け取ることで、人間の待機時間をゼロに | superset-sh |
+| workspace-presetsによる環境構築自動化 | Workspace Presetsによる環境構築自動化 | agent-orchestration | 各worktree作成時に実行されるsetup/teardownスクリプトをプリセット化し、依存関係インストール・環境変 | superset-sh |
+| ユニバーサルcliエージェント対応アーキテクチャ | ユニバーサルCLIエージェント対応アーキテクチャ | claude-code-workflow | 特定のエージェントに依存せず、任意のCLIベースエージェント（Claude Code、Codex、Cursor、Gemi | superset-sh |
+| hosted-mcp-serverをhttp経由で接続 | hosted MCP serverをHTTP経由で接続 | other | Exa MCPサーバー（https://mcp.exa.ai/mcp）にHTTPトランスポートで接続し、AI assis | exa-labs |
+| カテゴリ別フィルタ制限を考慮したクエリ設計 | カテゴリ別フィルタ制限を考慮したクエリ設計 | data-processing | Exa検索のcategoryパラメータに応じて、利用可能/不可能なフィルタを使い分ける | exa-labs |
+| claude-skillでmcpツールの使用パターンを定型化 | Claude SkillでMCPツールの使用パターンを定型化 | claude-code-workflow | Exa MCP用のClaude Skillを作成し、カテゴリ別の最適な検索パターン・フィルタ制限・トークン管理を文書化 | exa-labs |
+| task-agentでトークン消費を分離 | Task agentでトークン消費を分離 | claude-code-workflow | Exa検索を常にTask agent（fork context）で実行し、メインコンテキストに検索結果全体を流さない | exa-labs |
+| クエリバリエーションで検索カバレッジ向上 | クエリバリエーションで検索カバレッジ向上 | other | 同一検索意図に対して複数のクエリ表現を生成し、並列実行後にマージ・重複排除 | exa-labs |
