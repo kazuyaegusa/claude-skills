@@ -6158,5 +6158,82 @@
     "source_url": "https://github.com/exa-labs/exa-mcp-server",
     "source_author": "exa-labs",
     "added_at": "2026-03-20T00:18:53.228630+00:00"
+  },
+  {
+    "slug": "vs-code拡張機能としてmcpサーバーをワンクリックインストールする",
+    "name": "VS Code拡張機能としてMCPサーバーをワンクリックインストールする",
+    "category": "claude-code-workflow",
+    "description": "公式READMEのINSTALLバッジリンク（vscode:extension/...）をクリックし、MCPサーバーをVS Codeに直接追加する",
+    "trigger_phrases": [
+      "Azure MCP・GitHub MCP・Microsoft 365 MCP等、公式提供のサーバーを初めて導入する時",
+      "VS Code拡張機能としてMCPサーバーをワンクリックインストールする",
+      "VS Code",
+      "vscode:extensionプロトコルハンドラ"
+    ],
+    "source_url": "https://github.com/microsoft/mcp",
+    "source_author": "microsoft",
+    "added_at": "2026-03-20T00:20:34.286076+00:00"
+  },
+  {
+    "slug": "remoteタイプのmcpサーバーをhttpエンドポイント経由で接続する",
+    "name": "REMOTEタイプのMCPサーバーをHTTPエンドポイント経由で接続する",
+    "category": "claude-code-workflow",
+    "description": "サーバーレス実行されるMCPサーバー（例: Microsoft Foundry `https://mcp.ai.azure.com`）に、ローカルプロセスなしで接続する",
+    "trigger_phrases": [
+      "Azure Foundry・Microsoft 365 Calendar/Mail/Teams等、クラウドホストされたMCPサーバーを利用する時",
+      "REMOTEタイプのMCPサーバーをHTTPエンドポイント経由で接続する",
+      "MCPクライアント（VS Code/Claude Code等）",
+      "HTTPベースMCPトランスポート"
+    ],
+    "source_url": "https://github.com/microsoft/mcp",
+    "source_author": "microsoft",
+    "added_at": "2026-03-20T00:20:34.286076+00:00"
+  },
+  {
+    "slug": "複数のmicrosoft公式mcpサーバーを組み合わせて企業ワークフローを構築する",
+    "name": "複数のMicrosoft公式MCPサーバーを組み合わせて企業ワークフローを構築する",
+    "category": "claude-code-workflow",
+    "description": "Azure MCP + Microsoft 365 Mail MCP + GitHub MCP等、複数の公式サーバーを同時接続し、横断的なAIエージェントフローを実現する",
+    "trigger_phrases": [
+      "GitHub→Azure→Microsoft 365のような複数サービスを跨ぐ自動化をAIエージェントで実現したい時",
+      "複数のMicrosoft公式MCPサーバーを組み合わせて企業ワークフローを構築する",
+      "Azure MCP",
+      "Microsoft 365 Mail/Calendar/Teams MCP",
+      "GitHub MCP"
+    ],
+    "source_url": "https://github.com/microsoft/mcp",
+    "source_author": "microsoft",
+    "added_at": "2026-03-20T00:20:34.286076+00:00"
+  },
+  {
+    "slug": "microsoftmcpリポジトリから最新のmcpサーバーリリースを追跡する",
+    "name": "microsoft/mcpリポジトリから最新のMCPサーバーリリースを追跡する",
+    "category": "infrastructure",
+    "description": "microsoft/mcpリポジトリのReleasesページで、Azure MCP・Fabric MCP等の最新バージョンとCHANGELOGを確認する",
+    "trigger_phrases": [
+      "既存のMCPサーバーを運用中で、新機能やバグ修正を取り込みたい時",
+      "microsoft/mcpリポジトリから最新のMCPサーバーリリースを追跡する",
+      "GitHub Releases API",
+      "npm/uvx/NuGet（パッケージマネージャ）"
+    ],
+    "source_url": "https://github.com/microsoft/mcp",
+    "source_author": "microsoft",
+    "added_at": "2026-03-20T00:20:34.286076+00:00"
+  },
+  {
+    "slug": "azure-mcpサーバーをローカルで実行しazure-cliの資格情報を再利用する",
+    "name": "Azure MCPサーバーをローカルで実行しAzure CLIの資格情報を再利用する",
+    "category": "claude-code-workflow",
+    "description": "Azure MCPサーバーをnpx/uvx経由でローカル起動し、既存のAzure CLI認証（`az login`）を使ってAzureリソースを操作する",
+    "trigger_phrases": [
+      "Azure開発者が既存のCLI認証を使ってMCPをすぐに試したい時",
+      "Azure MCPサーバーをローカルで実行しAzure CLIの資格情報を再利用する",
+      "Azure CLI",
+      "npx",
+      "@azure/mcpパッケージ"
+    ],
+    "source_url": "https://github.com/microsoft/mcp",
+    "source_author": "microsoft",
+    "added_at": "2026-03-20T00:20:34.286076+00:00"
   }
 ]

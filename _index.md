@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 459 スキル
+合計: 464 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -463,3 +463,8 @@
 | claude-skillでmcpツールの使用パターンを定型化 | Claude SkillでMCPツールの使用パターンを定型化 | claude-code-workflow | Exa MCP用のClaude Skillを作成し、カテゴリ別の最適な検索パターン・フィルタ制限・トークン管理を文書化 | exa-labs |
 | task-agentでトークン消費を分離 | Task agentでトークン消費を分離 | claude-code-workflow | Exa検索を常にTask agent（fork context）で実行し、メインコンテキストに検索結果全体を流さない | exa-labs |
 | クエリバリエーションで検索カバレッジ向上 | クエリバリエーションで検索カバレッジ向上 | other | 同一検索意図に対して複数のクエリ表現を生成し、並列実行後にマージ・重複排除 | exa-labs |
+| vs-code拡張機能としてmcpサーバーをワンクリックインストールする | VS Code拡張機能としてMCPサーバーをワンクリックインストールする | claude-code-workflow | 公式READMEのINSTALLバッジリンク（vscode:extension/...）をクリックし、MCPサーバーをV | microsoft |
+| remoteタイプのmcpサーバーをhttpエンドポイント経由で接続する | REMOTEタイプのMCPサーバーをHTTPエンドポイント経由で接続する | claude-code-workflow | サーバーレス実行されるMCPサーバー（例: Microsoft Foundry `https://mcp.ai.azur | microsoft |
+| 複数のmicrosoft公式mcpサーバーを組み合わせて企業ワークフローを構築する | 複数のMicrosoft公式MCPサーバーを組み合わせて企業ワークフローを構築する | claude-code-workflow | Azure MCP + Microsoft 365 Mail MCP + GitHub MCP等、複数の公式サーバーを同 | microsoft |
+| microsoftmcpリポジトリから最新のmcpサーバーリリースを追跡する | microsoft/mcpリポジトリから最新のMCPサーバーリリースを追跡する | infrastructure | microsoft/mcpリポジトリのReleasesページで、Azure MCP・Fabric MCP等の最新バージョ | microsoft |
+| azure-mcpサーバーをローカルで実行しazure-cliの資格情報を再利用する | Azure MCPサーバーをローカルで実行しAzure CLIの資格情報を再利用する | claude-code-workflow | Azure MCPサーバーをnpx/uvx経由でローカル起動し、既存のAzure CLI認証（`az login`）を使 | microsoft |
