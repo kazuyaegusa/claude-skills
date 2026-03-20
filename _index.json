@@ -5657,5 +5657,286 @@
     "source_url": "https://github.com/OthmanAdi/planning-with-files",
     "source_author": "OthmanAdi",
     "added_at": "2026-03-20T00:07:38.308488+00:00"
+  },
+  {
+    "slug": "専門化サブエージェントの定義と配置",
+    "name": "専門化サブエージェントの定義と配置",
+    "category": "claude-code-workflow",
+    "description": "特定タスク（例: TypeScript開発、AWS構築、セキュリティ監査）に特化したサブエージェント定義（YAML frontmatter形式）を作成し、プロジェクトまたはグローバルディレクトリに配置する",
+    "trigger_phrases": [
+      "特定の言語・フレームワーク・インフラに関するタスクを反復的に実行する場合、またはチーム全体で統一されたAI支援パターンを導入したい場合",
+      "専門化サブエージェントの定義と配置",
+      "Claude Code CLI",
+      "Git（リポジトリクローン用）",
+      "curl（スタンドアロンインストーラー利用時）"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-03-20T00:09:39.233882+00:00"
+  },
+  {
+    "slug": "プラグインベースの一括インストール",
+    "name": "プラグインベースの一括インストール",
+    "category": "claude-code-workflow",
+    "description": "カテゴリ単位で複数のサブエージェントをClaude Codeプラグインとして一括インストールする",
+    "trigger_phrases": [
+      "複数の専門領域にまたがるエージェントを一度に導入したい場合、または公式メンテナンスされたエージェント定義を追跡したい場合",
+      "プラグインベースの一括インストール",
+      "Claude Code CLI",
+      "VoltAgent公式マーケットプレイス",
+      "カテゴリ単位で複数のサブエージェントをClaude Codeプラグインとして一括インストールする"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-03-20T00:09:39.233882+00:00"
+  },
+  {
+    "slug": "モデル自動ルーティングの活用",
+    "name": "モデル自動ルーティングの活用",
+    "category": "claude-code-workflow",
+    "description": "サブエージェント定義のYAML `model` フィールドで、タスクの複雑度に応じてOpus/Sonnet/Haikuを指定し、コスト最適化と品質のバランスをとる",
+    "trigger_phrases": [
+      "LLMコストを最適化しつつ、タスクごとに適切な推論能力を確保したい場合",
+      "モデル自動ルーティングの活用",
+      "Claude Code（モデルルーティング機能）"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-03-20T00:09:39.233882+00:00"
+  },
+  {
+    "slug": "ツール権限の最小化原則",
+    "name": "ツール権限の最小化原則",
+    "category": "claude-code-workflow",
+    "description": "サブエージェントごとに必要最小限のClaude Codeツール（Read, Write, Edit, Bash等）のみを許可し、不要な権限を与えない",
+    "trigger_phrases": [
+      "セキュリティリスクを低減しつつ、エージェントの役割を明確化したい場合",
+      "ツール権限の最小化原則",
+      "Claude Code（ツール権限管理機能）"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-03-20T00:09:39.233882+00:00"
+  },
+  {
+    "slug": "対話式インストーラーによる選択的導入",
+    "name": "対話式インストーラーによる選択的導入",
+    "category": "claude-code-workflow",
+    "description": "提供されているシェルスクリプト `install-agents.sh` を使い、カテゴリとエージェントを選択的にインストール/アンインストールする",
+    "trigger_phrases": [
+      "プラグイン一括導入ではなく、特定のエージェントだけを試したい場合や、カスタマイズしたエージェント定義を管理したい場合",
+      "対話式インストーラーによる選択的導入",
+      "Bash",
+      "Git",
+      "curl（スタンドアロン版利用時）"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-03-20T00:09:39.233882+00:00"
+  },
+  {
+    "slug": "agent-installerサブエージェントによるメタ管理",
+    "name": "Agent Installerサブエージェントによるメタ管理",
+    "category": "claude-code-workflow",
+    "description": "Claude Code内から `agent-installer` サブエージェント自身を使い、他のエージェントを検索・インストールする",
+    "trigger_phrases": [
+      "開発中にClaude Code内から即座に新しい専門エージェントを追加したい場合",
+      "Agent Installerサブエージェントによるメタ管理",
+      "Claude Code",
+      "GitHub API",
+      "curl"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-03-20T00:09:39.233882+00:00"
+  },
+  {
+    "slug": "yamlベースの宣言的ツール定義",
+    "name": "YAMLベースの宣言的ツール定義",
+    "category": "agent-orchestration",
+    "description": "データベースツールをYAML形式で定義し、複数フレームワーク・言語で再利用可能な形式で管理する",
+    "trigger_phrases": [
+      "複数のAIフレームワークや言語でデータベースツールを共有したい時、ツール定義を中央管理したい時",
+      "YAMLベースの宣言的ツール定義",
+      "MCP Toolbox server",
+      "tools.yaml",
+      "データベースツールをYAML形式で定義し、複数フレームワーク・言語で再利用可能な形式で管理する"
+    ],
+    "source_url": "https://github.com/googleapis/genai-toolbox",
+    "source_author": "googleapis",
+    "added_at": "2026-03-20T00:12:12.908159+00:00"
+  },
+  {
+    "slug": "マルチsdkによる統一インターフェース",
+    "name": "マルチSDKによる統一インターフェース",
+    "category": "agent-orchestration",
+    "description": "Python、JavaScript/TypeScript、Go向けの公式SDKを使い、同一のツール定義を各フレームワーク（LangChain、LlamaIndex、Genkit、ADK等）で読み込む",
+    "trigger_phrases": [
+      "既存のLangChain/LlamaIndex/Genkit等のアプリケーションにデータベースツールを追加したい時、複数言語でツールを利用したい時",
+      "マルチSDKによる統一インターフェース",
+      "toolbox-core (Python/JS/Go)",
+      "toolbox-langchain",
+      "toolbox-llamaindex",
+      "toolbox-adk",
+      "toolbox-genkit"
+    ],
+    "source_url": "https://github.com/googleapis/genai-toolbox",
+    "source_author": "googleapis",
+    "added_at": "2026-03-20T00:12:12.908159+00:00"
+  },
+  {
+    "slug": "動的リロード機能によるゼロダウンタイムツール更新",
+    "name": "動的リロード機能によるゼロダウンタイムツール更新",
+    "category": "other",
+    "description": "Toolboxサーバーの起動中に`tools.yaml`を編集すると、サーバー再起動なしで新しいツール定義が反映される",
+    "trigger_phrases": [
+      "ツールのSQL文やパラメータを頻繁に調整する開発フェーズ、本番環境での緊急修正、A/Bテストでツールバリエーションを試したい時",
+      "動的リロード機能によるゼロダウンタイムツール更新",
+      "MCP Toolbox server（デフォルトで有効）"
+    ],
+    "source_url": "https://github.com/googleapis/genai-toolbox",
+    "source_author": "googleapis",
+    "added_at": "2026-03-20T00:12:12.908159+00:00"
+  },
+  {
+    "slug": "mcpプロトコルによるide統合",
+    "name": "MCPプロトコルによるIDE統合",
+    "category": "claude-code-workflow",
+    "description": "Model Context Protocol (MCP)を介してClaude Code、Cursor、Gemini CLI等のIDEから、自然言語でデータベース操作を可能にする",
+    "trigger_phrases": [
+      "IDE内でデータベーススキーマを確認したい時、手作業でSQLを書かずにデータを取得したい時、スキーマに基づいたコード生成をAIに依頼したい時",
+      "MCPプロトコルによるIDE統合",
+      "MCP Toolbox server",
+      "Claude Code、Cursor、Gemini CLI等のMCP対応IDE"
+    ],
+    "source_url": "https://github.com/googleapis/genai-toolbox",
+    "source_author": "googleapis",
+    "added_at": "2026-03-20T00:12:12.908159+00:00"
+  },
+  {
+    "slug": "コントロールプレーンによるツールのライフサイクル管理",
+    "name": "コントロールプレーンによるツールのライフサイクル管理",
+    "category": "agent-orchestration",
+    "description": "Toolboxサーバーを中央コントロールプレーンとして、複数のアプリケーション・エージェントが同一のツールを参照し、ツール更新を一元管理する",
+    "trigger_phrases": [
+      "複数のマイクロサービスやエージェントが同じツールを使う場合、ツールのバージョン管理と監査が必要な場合、ツールの段階的ロールアウトをしたい場合",
+      "コントロールプレーンによるツールのライフサイクル管理",
+      "MCP Toolbox server",
+      "OpenTelemetry",
+      "Docker/Kubernetes/Cloud Run"
+    ],
+    "source_url": "https://github.com/googleapis/genai-toolbox",
+    "source_author": "googleapis",
+    "added_at": "2026-03-20T00:12:12.908159+00:00"
+  },
+  {
+    "slug": "progressive-disclosure-architectureでスキルを設計する",
+    "name": "Progressive Disclosure Architectureでスキルを設計する",
+    "category": "claude-code-workflow",
+    "description": "スキルのメタデータ（name/description）を軽量に保ち、詳細な指示とリソースは必要時のみ読み込む3段階構造でスキルを構成する",
+    "trigger_phrases": [
+      "再利用可能なワークフローや手順をスキルとして定義する全ての場面",
+      "Progressive Disclosure Architectureでスキルを設計する",
+      "YAML frontmatter",
+      "Markdown"
+    ],
+    "source_url": "https://github.com/travisvn/awesome-claude-skills",
+    "source_author": "travisvn",
+    "added_at": "2026-03-20T00:13:58.442041+00:00"
+  },
+  {
+    "slug": "skill-creatorで対話的にスキルを生成する",
+    "name": "skill-creatorで対話的にスキルを生成する",
+    "category": "claude-code-workflow",
+    "description": "公式のskill-creatorスキルを使い、Q&A形式でスキルを自動生成させる",
+    "trigger_phrases": [
+      "初めてスキルを作る時、またはフォーマットを覚えていない時",
+      "skill-creatorで対話的にスキルを生成する",
+      "skill-creator（公式スキル）",
+      "公式のskill-creatorスキルを使い、Q&A形式でスキルを自動生成させる"
+    ],
+    "source_url": "https://github.com/travisvn/awesome-claude-skills",
+    "source_author": "travisvn",
+    "added_at": "2026-03-20T00:13:58.442041+00:00"
+  },
+  {
+    "slug": "skillsmcppromptsprojectssubagentsを用途で使い分ける",
+    "name": "Skills/MCP/Prompts/Projects/Subagentsを用途で使い分ける",
+    "category": "agent-orchestration",
+    "description": "5つのアプローチ（Skills/MCP/Prompts/Projects/Subagents）の使い分け基準を理解し、適切な手法を選択する",
+    "trigger_phrases": [
+      "Claudeのカスタマイズ手法を選択する全ての場面",
+      "Skills/MCP/Prompts/Projects/Subagentsを用途で使い分ける",
+      "Skills",
+      "MCP",
+      "Prompts",
+      "Projects",
+      "Subagents"
+    ],
+    "source_url": "https://github.com/travisvn/awesome-claude-skills",
+    "source_author": "travisvn",
+    "added_at": "2026-03-20T00:13:58.442041+00:00"
+  },
+  {
+    "slug": "claude-code-cliでスキルをマーケットプレイスからインストールする",
+    "name": "Claude Code CLIでスキルをマーケットプレイスからインストールする",
+    "category": "claude-code-workflow",
+    "description": "Claude Code CLIの/pluginコマンドを使い、マーケットプレイスまたはローカルディレクトリからスキルをインストールする",
+    "trigger_phrases": [
+      "Claude Code CLIでスキルを利用開始する時",
+      "Claude Code CLIでスキルをマーケットプレイスからインストールする",
+      "Claude Code CLI",
+      "/pluginコマンド"
+    ],
+    "source_url": "https://github.com/travisvn/awesome-claude-skills",
+    "source_author": "travisvn",
+    "added_at": "2026-03-20T00:13:58.442041+00:00"
+  },
+  {
+    "slug": "frontend-designスキルでai臭のないui設計をさせる",
+    "name": "frontend-designスキルでAI臭のないUI設計をさせる",
+    "category": "ui-ux",
+    "description": "公式frontend-designスキルを使い、汎用的・AI特有の美学を避け、大胆なデザイン判断をClaudeに促す",
+    "trigger_phrases": [
+      "React/Tailwindでフロントエンドを実装する時、特にデザイン性を重視する場合",
+      "frontend-designスキルでAI臭のないUI設計をさせる",
+      "frontend-design（公式スキル）",
+      "React",
+      "Tailwind CSS"
+    ],
+    "source_url": "https://github.com/travisvn/awesome-claude-skills",
+    "source_author": "travisvn",
+    "added_at": "2026-03-20T00:13:58.442041+00:00"
+  },
+  {
+    "slug": "obrasuperpowersで20の実践スキルライブラリを一括導入する",
+    "name": "obra/superpowersで20+の実践スキルライブラリを一括導入する",
+    "category": "claude-code-workflow",
+    "description": "obra/superpowersコミュニティスキルパックをインストールし、TDD/デバッグ/コラボレーションパターン等20以上のスキルを利用可能にする",
+    "trigger_phrases": [
+      "Claude Codeで本格的な開発ワークフローを構築したい時",
+      "obra/superpowersで20+の実践スキルライブラリを一括導入する",
+      "obra/superpowers",
+      "obra/superpowers-marketplace",
+      "Claude Code CLI"
+    ],
+    "source_url": "https://github.com/travisvn/awesome-claude-skills",
+    "source_author": "travisvn",
+    "added_at": "2026-03-20T00:13:58.442041+00:00"
+  },
+  {
+    "slug": "セキュリティスキャンでスキルの安全性を検証する",
+    "name": "セキュリティスキャンでスキルの安全性を検証する",
+    "category": "claude-code-workflow",
+    "description": "スキルをインストール前にSKILL.mdと全スクリプトをレビューし、悪意あるコード・プロンプトインジェクション・データ流出リスクを確認する",
+    "trigger_phrases": [
+      "信頼できないソースからスキルをインストールする前、エンタープライズ環境で導入する前",
+      "セキュリティスキャンでスキルの安全性を検証する",
+      "コードレビュー",
+      "セキュリティ監査"
+    ],
+    "source_url": "https://github.com/travisvn/awesome-claude-skills",
+    "source_author": "travisvn",
+    "added_at": "2026-03-20T00:13:58.442041+00:00"
   }
 ]

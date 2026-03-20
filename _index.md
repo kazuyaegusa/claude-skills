@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 426 スキル
+合計: 444 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -430,3 +430,21 @@
 | 全てのエラーをtask-planmdに記録し反復を防ぐ | 全てのエラーをtask_plan.mdに記録し反復を防ぐ | automation-pipeline | テスト失敗、ビルドエラー、API呼び出し失敗等を全てtask_plan.mdの「## Errors」セクションに記録し、 | OthmanAdi |
 | stopフックで完了検証を強制する | Stopフックで完了検証を強制する | automation-pipeline | セッション終了時（/stop, /exit）にStopフックがtask_plan.mdの全チェックボックスを確認し、未完 | OthmanAdi |
 | セッションリカバリーでclear後も作業を継続する | セッションリカバリーで/clear後も作業を継続する | claude-code-workflow | /clearでコンテキストをリセットした後、前回の.planning/ファイルと~/.claude/projects/セ | OthmanAdi |
+| 専門化サブエージェントの定義と配置 | 専門化サブエージェントの定義と配置 | claude-code-workflow | 特定タスク（例: TypeScript開発、AWS構築、セキュリティ監査）に特化したサブエージェント定義（YAML fr | VoltAgent |
+| プラグインベースの一括インストール | プラグインベースの一括インストール | claude-code-workflow | カテゴリ単位で複数のサブエージェントをClaude Codeプラグインとして一括インストールする | VoltAgent |
+| モデル自動ルーティングの活用 | モデル自動ルーティングの活用 | claude-code-workflow | サブエージェント定義のYAML `model` フィールドで、タスクの複雑度に応じてOpus/Sonnet/Haikuを | VoltAgent |
+| ツール権限の最小化原則 | ツール権限の最小化原則 | claude-code-workflow | サブエージェントごとに必要最小限のClaude Codeツール（Read, Write, Edit, Bash等）のみを | VoltAgent |
+| 対話式インストーラーによる選択的導入 | 対話式インストーラーによる選択的導入 | claude-code-workflow | 提供されているシェルスクリプト `install-agents.sh` を使い、カテゴリとエージェントを選択的にインスト | VoltAgent |
+| agent-installerサブエージェントによるメタ管理 | Agent Installerサブエージェントによるメタ管理 | claude-code-workflow | Claude Code内から `agent-installer` サブエージェント自身を使い、他のエージェントを検索・イ | VoltAgent |
+| yamlベースの宣言的ツール定義 | YAMLベースの宣言的ツール定義 | agent-orchestration | データベースツールをYAML形式で定義し、複数フレームワーク・言語で再利用可能な形式で管理する | googleapis |
+| マルチsdkによる統一インターフェース | マルチSDKによる統一インターフェース | agent-orchestration | Python、JavaScript/TypeScript、Go向けの公式SDKを使い、同一のツール定義を各フレームワーク | googleapis |
+| 動的リロード機能によるゼロダウンタイムツール更新 | 動的リロード機能によるゼロダウンタイムツール更新 | other | Toolboxサーバーの起動中に`tools.yaml`を編集すると、サーバー再起動なしで新しいツール定義が反映される | googleapis |
+| mcpプロトコルによるide統合 | MCPプロトコルによるIDE統合 | claude-code-workflow | Model Context Protocol (MCP)を介してClaude Code、Cursor、Gemini CL | googleapis |
+| コントロールプレーンによるツールのライフサイクル管理 | コントロールプレーンによるツールのライフサイクル管理 | agent-orchestration | Toolboxサーバーを中央コントロールプレーンとして、複数のアプリケーション・エージェントが同一のツールを参照し、ツー | googleapis |
+| progressive-disclosure-architectureでスキルを設計する | Progressive Disclosure Architectureでスキルを設計する | claude-code-workflow | スキルのメタデータ（name/description）を軽量に保ち、詳細な指示とリソースは必要時のみ読み込む3段階構造で | travisvn |
+| skill-creatorで対話的にスキルを生成する | skill-creatorで対話的にスキルを生成する | claude-code-workflow | 公式のskill-creatorスキルを使い、Q&A形式でスキルを自動生成させる | travisvn |
+| skillsmcppromptsprojectssubagentsを用途で使い分ける | Skills/MCP/Prompts/Projects/Subagentsを用途で使い分ける | agent-orchestration | 5つのアプローチ（Skills/MCP/Prompts/Projects/Subagents）の使い分け基準を理解し、適 | travisvn |
+| claude-code-cliでスキルをマーケットプレイスからインストールする | Claude Code CLIでスキルをマーケットプレイスからインストールする | claude-code-workflow | Claude Code CLIの/pluginコマンドを使い、マーケットプレイスまたはローカルディレクトリからスキルをイ | travisvn |
+| frontend-designスキルでai臭のないui設計をさせる | frontend-designスキルでAI臭のないUI設計をさせる | ui-ux | 公式frontend-designスキルを使い、汎用的・AI特有の美学を避け、大胆なデザイン判断をClaudeに促す | travisvn |
+| obrasuperpowersで20の実践スキルライブラリを一括導入する | obra/superpowersで20+の実践スキルライブラリを一括導入する | claude-code-workflow | obra/superpowersコミュニティスキルパックをインストールし、TDD/デバッグ/コラボレーションパターン等2 | travisvn |
+| セキュリティスキャンでスキルの安全性を検証する | セキュリティスキャンでスキルの安全性を検証する | claude-code-workflow | スキルをインストール前にSKILL.mdと全スクリプトをレビューし、悪意あるコード・プロンプトインジェクション・データ流 | travisvn |
