@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 479 スキル
+合計: 496 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -483,3 +483,20 @@
 | sdkでツールをaiフレームワークに読み込む | SDKでツールをAIフレームワークに読み込む | agent-orchestration | Toolbox SDKを使い、起動したToolboxサーバーからツール定義を取得し、LangChain/LlamaInd | googleapis |
 | ideからmcp経由でtoolboxに接続する | IDEからMCP経由でToolboxに接続する | claude-code-workflow | Claude CodeやCursor等のMCP対応IDEにToolboxサーバーを接続し、AI assistantに自然 | googleapis |
 | toolsetsで複数エージェント用にツールをグループ化する | toolsetsで複数エージェント用にツールをグループ化する | agent-orchestration | tools.yamlのtoolsetsセクションで、ツールを名前付きグループに分け、エージェントやアプリケーションごとに | googleapis |
+| 段階的開示アーキテクチャでskillを設計する | 段階的開示アーキテクチャでSkillを設計する | claude-code-workflow | Skillをメタデータ・命令・リソースの3層に分け、関連性に応じて段階的にロードすることでトークン効率を最大化する | travisvn |
+| skills-vs-mcp-vs-プロンプトの使い分け判断 | Skills vs MCP vs プロンプトの使い分け判断 | agent-orchestration | タスクの性質に応じて、Skill・MCP・システムプロンプト・サブエージェントのどれを使うべきか判断する | travisvn |
+| gitリポジトリでチーム向けskillを配布する | Gitリポジトリでチーム向けSkillを配布する | other | カスタムSkillをGitリポジトリで管理し、バージョン管理とコードレビューを経てチームに配布する | travisvn |
+| skillのセキュリティレビューを実施する | Skillのセキュリティレビューを実施する | claude-code-workflow | Skillをインストールする前に、SKILL.mdと全スクリプトをレビューし、悪意あるコードや脆弱性がないか確認する | travisvn |
+| claude-skillsカタログから適切なスキルを発見導入する | Claude Skillsカタログから適切なスキルを発見・導入する | claude-code-workflow | awesome-claude-skillsリポジトリから目的に合ったスキルを検索し、自分のClaude Code環境にイ | BehiSecc |
+| カテゴリ別分類でスキルを効率的に検索する | カテゴリ別分類でスキルを効率的に検索する | other | 10の標準カテゴリ（Document Skills, Development & Code Tools, Data &  | BehiSecc |
+| セキュリティスキルvibesec等でコード生成時の脆弱性を防止する | セキュリティスキル（VibeSec等）でコード生成時の脆弱性を防止する | claude-code-workflow | VibeSec-SkillなどのセキュリティスキルをClaude Codeに統合し、生成されるコードが一般的な脆弱性（O | BehiSecc |
+| tddスキルで実装前にテストを自動生成する | TDDスキルで実装前にテストを自動生成する | claude-code-workflow | test-driven-developmentスキルを使い、機能実装の前に必ずテストケースを先に書くワークフローを強制す | BehiSecc |
+| コレクションスキルopenpaw等で複数スキルを一括導入する | コレクションスキル（OpenPaw等）で複数スキルを一括導入する | claude-code-workflow | OpenPaw、agentskill.sh等のコレクションから、関連する複数スキルをまとめて導入し、包括的な能力を獲得す | BehiSecc |
+| skill-creatorテンプレートで新規スキルを標準化して作成する | skill-creatorテンプレートで新規スキルを標準化して作成する | claude-code-workflow | Anthropic公式のskill-creatorテンプレートを使い、SKILL.md標準に準拠した新しいスキルを作成・ | BehiSecc |
+| ワークスペースプリセットによる環境自動セットアップ | ワークスペースプリセットによる環境自動セットアップ | agent-orchestration | .superset/config.jsonでsetup/teardownスクリプトを定義し、workspace作成時に環 | superset-sh |
+| マルチエージェント並列実行とモニタリング | マルチエージェント並列実行とモニタリング | claude-code-workflow | 複数のCLIエージェント（Claude Code、Codex等）を同時起動し、各エージェントの状態を一元監視する | superset-sh |
+| npxで即座にmcpjam-inspectorを起動する | npxで即座にMCPJam Inspectorを起動する | ui-ux | インストール不要でMCPJam Inspectorをローカルで起動し、MCP開発環境を立ち上げる | MCPJam |
+| apps-builderでウィジェットをローカルエミュレートする | Apps Builderでウィジェットをローカルエミュレートする | dev-tool | ChatGPT appsやMCP appsのウィジェットをローカル環境で表示・操作テストする | MCPJam |
+| oauth実装を段階的にデバッグする | OAuth実装を段階的にデバッグする | dev-tool | MCPサーバーのOAuth認証フローを各ステップごとに可視化・検証する | MCPJam |
+| llm-playgroundで複数モデルに対してテストする | LLM Playgroundで複数モデルに対してテストする | prompt-engineering | 開発中のMCPサーバーを複数のLLMモデル（GPT-5, Claude Sonnet, Gemini 2.5等）で動作検 | MCPJam |
+| json-rpcメッセージを詳細監視する | JSON-RPCメッセージを詳細監視する | prompt-engineering | MCPサーバーとクライアント間のすべてのJSON-RPC通信を記録・検査する | MCPJam |

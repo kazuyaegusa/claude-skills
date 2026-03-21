@@ -6470,5 +6470,266 @@
     "source_url": "https://github.com/googleapis/genai-toolbox",
     "source_author": "googleapis",
     "added_at": "2026-03-21T00:11:12.840316+00:00"
+  },
+  {
+    "slug": "段階的開示アーキテクチャでskillを設計する",
+    "name": "段階的開示アーキテクチャでSkillを設計する",
+    "category": "claude-code-workflow",
+    "description": "Skillをメタデータ・命令・リソースの3層に分け、関連性に応じて段階的にロードすることでトークン効率を最大化する",
+    "trigger_phrases": [
+      "複数のSkillを同時に利用可能にしたいが、トークン上限を気にする場合、または組織内で多数のSkillを配布する場合",
+      "段階的開示アーキテクチャでSkillを設計する"
+    ],
+    "source_url": "https://github.com/travisvn/awesome-claude-skills",
+    "source_author": "travisvn",
+    "added_at": "2026-03-21T00:13:02.050489+00:00"
+  },
+  {
+    "slug": "skills-vs-mcp-vs-プロンプトの使い分け判断",
+    "name": "Skills vs MCP vs プロンプトの使い分け判断",
+    "category": "agent-orchestration",
+    "description": "タスクの性質に応じて、Skill・MCP・システムプロンプト・サブエージェントのどれを使うべきか判断する",
+    "trigger_phrases": [
+      "新しい機能を追加する際、または既存のプロンプトやワークフローをリファクタリングする際",
+      "Skills vs MCP vs プロンプトの使い分け判断"
+    ],
+    "source_url": "https://github.com/travisvn/awesome-claude-skills",
+    "source_author": "travisvn",
+    "added_at": "2026-03-21T00:13:02.050489+00:00"
+  },
+  {
+    "slug": "gitリポジトリでチーム向けskillを配布する",
+    "name": "Gitリポジトリでチーム向けSkillを配布する",
+    "category": "other",
+    "description": "カスタムSkillをGitリポジトリで管理し、バージョン管理とコードレビューを経てチームに配布する",
+    "trigger_phrases": [
+      "チームや組織内でカスタムSkillを共有する場合、またはエンタープライズ環境でSkillのセキュリティとバージョン管理を厳密に行いたい場合",
+      "Gitリポジトリでチーム向けSkillを配布する",
+      "Git",
+      "GitHub/GitLab/Bitbucket等",
+      "カスタムSkillをGitリポジトリで管理し、バージョン管理とコードレビューを経てチームに配布する"
+    ],
+    "source_url": "https://github.com/travisvn/awesome-claude-skills",
+    "source_author": "travisvn",
+    "added_at": "2026-03-21T00:13:02.050489+00:00"
+  },
+  {
+    "slug": "skillのセキュリティレビューを実施する",
+    "name": "Skillのセキュリティレビューを実施する",
+    "category": "claude-code-workflow",
+    "description": "Skillをインストールする前に、SKILL.mdと全スクリプトをレビューし、悪意あるコードや脆弱性がないか確認する",
+    "trigger_phrases": [
+      "コミュニティSkillをインストールする前、またはエンタープライズ環境でSkillを承認する前",
+      "Skillのセキュリティレビューを実施する"
+    ],
+    "source_url": "https://github.com/travisvn/awesome-claude-skills",
+    "source_author": "travisvn",
+    "added_at": "2026-03-21T00:13:02.050489+00:00"
+  },
+  {
+    "slug": "claude-skillsカタログから適切なスキルを発見導入する",
+    "name": "Claude Skillsカタログから適切なスキルを発見・導入する",
+    "category": "claude-code-workflow",
+    "description": "awesome-claude-skillsリポジトリから目的に合ったスキルを検索し、自分のClaude Code環境にインストールして利用する",
+    "trigger_phrases": [
+      "新しいタスクに取り組む際、既存のスキルがないか最初に確認すべき。特に専門知識（セキュリティ、科学計算、特定フレームワーク）が必要な場合",
+      "Claude Skillsカタログから適切なスキルを発見・導入する",
+      "GitHub",
+      "Claude Code",
+      "~/.claude/skills/ディレクトリ"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-03-21T00:14:46.917766+00:00"
+  },
+  {
+    "slug": "カテゴリ別分類でスキルを効率的に検索する",
+    "name": "カテゴリ別分類でスキルを効率的に検索する",
+    "category": "other",
+    "description": "10の標準カテゴリ（Document Skills, Development & Code Tools, Data & Analysis等）を使ってスキルを素早く発見する",
+    "trigger_phrases": [
+      "タスクの種類（文書作成、データ分析、Web開発等）が明確な場合。カテゴリ名から目的のスキル群に素早く到達できる",
+      "カテゴリ別分類でスキルを効率的に検索する",
+      "GitHub README",
+      "Markdown目次"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-03-21T00:14:46.917766+00:00"
+  },
+  {
+    "slug": "セキュリティスキルvibesec等でコード生成時の脆弱性を防止する",
+    "name": "セキュリティスキル（VibeSec等）でコード生成時の脆弱性を防止する",
+    "category": "claude-code-workflow",
+    "description": "VibeSec-SkillなどのセキュリティスキルをClaude Codeに統合し、生成されるコードが一般的な脆弱性（OWASP Top 10等）を含まないようにする",
+    "trigger_phrases": [
+      "Webアプリケーション、API、認証システム等、セキュリティが重要なコードをClaude Codeで生成する際は必須",
+      "セキュリティスキル（VibeSec等）でコード生成時の脆弱性を防止する",
+      "VibeSec-Skill",
+      "owasp-security",
+      "Claude Code"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-03-21T00:14:46.917766+00:00"
+  },
+  {
+    "slug": "tddスキルで実装前にテストを自動生成する",
+    "name": "TDDスキルで実装前にテストを自動生成する",
+    "category": "claude-code-workflow",
+    "description": "test-driven-developmentスキルを使い、機能実装の前に必ずテストケースを先に書くワークフローを強制する",
+    "trigger_phrases": [
+      "新機能追加、バグ修正、リファクタリング等、コード変更を伴うすべてのタスクで使用すべき",
+      "TDDスキルで実装前にテストを自動生成する",
+      "test-driven-developmentスキル",
+      "pytest, jest等のテストフレームワーク",
+      "TodoWrite"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-03-21T00:14:46.917766+00:00"
+  },
+  {
+    "slug": "コレクションスキルopenpaw等で複数スキルを一括導入する",
+    "name": "コレクションスキル（OpenPaw等）で複数スキルを一括導入する",
+    "category": "claude-code-workflow",
+    "description": "OpenPaw、agentskill.sh等のコレクションから、関連する複数スキルをまとめて導入し、包括的な能力を獲得する",
+    "trigger_phrases": [
+      "特定の役割（プロダクトマネージャー、セキュリティエンジニア、個人アシスタント等）でClaude Codeを使う場合、最初にコレクションで環境を構築すべき",
+      "コレクションスキル（OpenPaw等）で複数スキルを一括導入する",
+      "OpenPaw (npx pawmode)",
+      "agentskill.sh",
+      "clawfu/mcp-skills",
+      "wondelai/skills"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-03-21T00:14:46.917766+00:00"
+  },
+  {
+    "slug": "skill-creatorテンプレートで新規スキルを標準化して作成する",
+    "name": "skill-creatorテンプレートで新規スキルを標準化して作成する",
+    "category": "claude-code-workflow",
+    "description": "Anthropic公式のskill-creatorテンプレートを使い、SKILL.md標準に準拠した新しいスキルを作成・公開する",
+    "trigger_phrases": [
+      "既存スキルにない新しいワークフロー・知識を発見し、コミュニティに共有したい場合",
+      "skill-creatorテンプレートで新規スキルを標準化して作成する",
+      "skill-creator",
+      "GitHub",
+      "Markdown"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-03-21T00:14:46.917766+00:00"
+  },
+  {
+    "slug": "ワークスペースプリセットによる環境自動セットアップ",
+    "name": "ワークスペースプリセットによる環境自動セットアップ",
+    "category": "agent-orchestration",
+    "description": ".superset/config.jsonでsetup/teardownスクリプトを定義し、workspace作成時に環境構築を自動化する",
+    "trigger_phrases": [
+      "複数のworktreeを頻繁に作成する場合、特に環境構築手順が複数ステップある場合",
+      "ワークスペースプリセットによる環境自動セットアップ",
+      "Superset",
+      "シェルスクリプト（bash等）"
+    ],
+    "source_url": "https://github.com/superset-sh/superset",
+    "source_author": "superset-sh",
+    "added_at": "2026-03-21T00:16:10.369550+00:00"
+  },
+  {
+    "slug": "マルチエージェント並列実行とモニタリング",
+    "name": "マルチエージェント並列実行とモニタリング",
+    "category": "claude-code-workflow",
+    "description": "複数のCLIエージェント（Claude Code、Codex等）を同時起動し、各エージェントの状態を一元監視する",
+    "trigger_phrases": [
+      "複数の独立したタスクがあり、待ち時間を最小化したい場合",
+      "マルチエージェント並列実行とモニタリング",
+      "Superset",
+      "Claude Code / Codex / Cursor / Gemini CLI等のCLIエージェント"
+    ],
+    "source_url": "https://github.com/superset-sh/superset",
+    "source_author": "superset-sh",
+    "added_at": "2026-03-21T00:16:10.369550+00:00"
+  },
+  {
+    "slug": "npxで即座にmcpjam-inspectorを起動する",
+    "name": "npxで即座にMCPJam Inspectorを起動する",
+    "category": "ui-ux",
+    "description": "インストール不要でMCPJam Inspectorをローカルで起動し、MCP開発環境を立ち上げる",
+    "trigger_phrases": [
+      "MCPサーバーやChatGPTアプリの開発を始める時、または最新機能を試したい時",
+      "npxで即座にMCPJam Inspectorを起動する",
+      "@mcpjam/inspector（npm package）",
+      "npx",
+      "インストール不要でMCPJam Inspectorをローカルで起動し、MCP開発環境を立ち上げる"
+    ],
+    "source_url": "https://github.com/MCPJam/inspector",
+    "source_author": "MCPJam",
+    "added_at": "2026-03-21T00:17:35.434592+00:00"
+  },
+  {
+    "slug": "apps-builderでウィジェットをローカルエミュレートする",
+    "name": "Apps Builderでウィジェットをローカルエミュレートする",
+    "category": "dev-tool",
+    "description": "ChatGPT appsやMCP appsのウィジェットをローカル環境で表示・操作テストする",
+    "trigger_phrases": [
+      "ChatGPT Apps SDKやMCP ext-appsのUI実装を開発・デバッグする時",
+      "Apps Builderでウィジェットをローカルエミュレートする",
+      "MCPJam Inspector Apps Builder",
+      "ChatGPT Apps SDK API（widgetState, callTool, structuredContent等）",
+      "MCP ext-apps API（tools/call, ui/initialize等）",
+      "ChatGPT appsやMCP appsのウィジェットをローカル環境で表示・操作テストする"
+    ],
+    "source_url": "https://github.com/MCPJam/inspector",
+    "source_author": "MCPJam",
+    "added_at": "2026-03-21T00:17:35.434592+00:00"
+  },
+  {
+    "slug": "oauth実装を段階的にデバッグする",
+    "name": "OAuth実装を段階的にデバッグする",
+    "category": "dev-tool",
+    "description": "MCPサーバーのOAuth認証フローを各ステップごとに可視化・検証する",
+    "trigger_phrases": [
+      "MCPサーバーにOAuth認証を実装・デバッグする時、または複数バージョンのサポートを確認する時",
+      "OAuth実装を段階的にデバッグする",
+      "MCPJam Inspector OAuth Debugger",
+      "Stytch（推奨OAuthプロバイダー）",
+      "MCPサーバーのOAuth認証フローを各ステップごとに可視化・検証する"
+    ],
+    "source_url": "https://github.com/MCPJam/inspector",
+    "source_author": "MCPJam",
+    "added_at": "2026-03-21T00:17:35.434592+00:00"
+  },
+  {
+    "slug": "llm-playgroundで複数モデルに対してテストする",
+    "name": "LLM Playgroundで複数モデルに対してテストする",
+    "category": "prompt-engineering",
+    "description": "開発中のMCPサーバーを複数のLLMモデル（GPT-5, Claude Sonnet, Gemini 2.5等）で動作検証する",
+    "trigger_phrases": [
+      "MCPサーバーが複数のLLMで正しく動作するか検証したい時、またはトークン効率を最適化したい時",
+      "LLM Playgroundで複数モデルに対してテストする",
+      "MCPJam Inspector LLM Playground",
+      "GPT-5, Claude Sonnet, Gemini 2.5等の各種LLM API"
+    ],
+    "source_url": "https://github.com/MCPJam/inspector",
+    "source_author": "MCPJam",
+    "added_at": "2026-03-21T00:17:35.434592+00:00"
+  },
+  {
+    "slug": "json-rpcメッセージを詳細監視する",
+    "name": "JSON-RPCメッセージを詳細監視する",
+    "category": "prompt-engineering",
+    "description": "MCPサーバーとクライアント間のすべてのJSON-RPC通信を記録・検査する",
+    "trigger_phrases": [
+      "MCPツールが期待通りに動作しない時、またはプロトコル実装を検証する時",
+      "JSON-RPCメッセージを詳細監視する",
+      "MCPJam Inspector",
+      "MCP JSON-RPC protocol",
+      "MCPサーバーとクライアント間のすべてのJSON-RPC通信を記録・検査する"
+    ],
+    "source_url": "https://github.com/MCPJam/inspector",
+    "source_author": "MCPJam",
+    "added_at": "2026-03-21T00:17:35.434592+00:00"
   }
 ]
