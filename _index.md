@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 464 スキル
+合計: 468 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -468,3 +468,7 @@
 | 複数のmicrosoft公式mcpサーバーを組み合わせて企業ワークフローを構築する | 複数のMicrosoft公式MCPサーバーを組み合わせて企業ワークフローを構築する | claude-code-workflow | Azure MCP + Microsoft 365 Mail MCP + GitHub MCP等、複数の公式サーバーを同 | microsoft |
 | microsoftmcpリポジトリから最新のmcpサーバーリリースを追跡する | microsoft/mcpリポジトリから最新のMCPサーバーリリースを追跡する | infrastructure | microsoft/mcpリポジトリのReleasesページで、Azure MCP・Fabric MCP等の最新バージョ | microsoft |
 | azure-mcpサーバーをローカルで実行しazure-cliの資格情報を再利用する | Azure MCPサーバーをローカルで実行しAzure CLIの資格情報を再利用する | claude-code-workflow | Azure MCPサーバーをnpx/uvx経由でローカル起動し、既存のAzure CLI認証（`az login`）を使 | microsoft |
+| mcp経由でシンボルレベルコード操作を提供する | MCP経由でシンボルレベルコード操作を提供する | claude-code-workflow | LSPまたはJetBrainsプラグインを使い、ファイルではなくシンボル（関数・クラス・変数等）単位でコードを検索・編集 | oraios |
+| lsp抽象化レイヤーで30言語以上に対応する | LSP抽象化レイヤーで30言語以上に対応する | agent-orchestration | Language Server Protocol（LSP）を抽象化し、30言語以上の言語サーバーを統一インターフェースで | oraios |
+| jetbrainsプラグインで最強のコード解析を提供する | JetBrainsプラグインで最強のコード解析を提供する | agent-orchestration | JetBrains IDE（IntelliJ、PyCharm等）のコード解析エンジンをプラグイン経由でSerenaに統合 | oraios |
+| mcpoでchatgpt等の非mcp対応クライアントに接続する | mcpoでChatGPT等の非MCP対応クライアントに接続する | agent-orchestration | MCPサーバーをOpenAPI経由で公開するmcpoツールを使い、MCP非対応だがツール呼び出し（Function Ca | oraios |

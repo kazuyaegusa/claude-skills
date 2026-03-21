@@ -6235,5 +6235,67 @@
     "source_url": "https://github.com/microsoft/mcp",
     "source_author": "microsoft",
     "added_at": "2026-03-20T00:20:34.286076+00:00"
+  },
+  {
+    "slug": "mcp経由でシンボルレベルコード操作を提供する",
+    "name": "MCP経由でシンボルレベルコード操作を提供する",
+    "category": "claude-code-workflow",
+    "description": "LSPまたはJetBrainsプラグインを使い、ファイルではなくシンボル（関数・クラス・変数等）単位でコードを検索・編集するツールをMCPサーバーとして公開する",
+    "trigger_phrases": [
+      "LLMエージェントがファイル全体を読んでトークン超過する、grepで関連コードを見逃す、文字列置換で誤編集する等の問題が発生した時",
+      "MCP経由でシンボルレベルコード操作を提供する",
+      "Serena（MCPサーバー）",
+      "uv（Pythonパッケージマネージャー）",
+      "LSP実装（各言語のlanguage server）",
+      "Serena JetBrainsプラグイン（オプション）",
+      "multilspy（LSPラッパー、Serenaの内部依存）"
+    ],
+    "source_url": "https://github.com/oraios/serena",
+    "source_author": "oraios",
+    "added_at": "2026-03-21T00:05:32.450457+00:00"
+  },
+  {
+    "slug": "lsp抽象化レイヤーで30言語以上に対応する",
+    "name": "LSP抽象化レイヤーで30言語以上に対応する",
+    "category": "agent-orchestration",
+    "description": "Language Server Protocol（LSP）を抽象化し、30言語以上の言語サーバーを統一インターフェースで利用できるようにする（Solid-LSPライブラリ）",
+    "trigger_phrases": [
+      "対応言語を増やしたい、または既存のLSP対応言語でシンボルレベル操作を実装したい時",
+      "LSP抽象化レイヤーで30言語以上に対応する",
+      "multilspy",
+      "LSP実装各種（rust-analyzer、pyright、clangd等）"
+    ],
+    "source_url": "https://github.com/oraios/serena",
+    "source_author": "oraios",
+    "added_at": "2026-03-21T00:05:32.450457+00:00"
+  },
+  {
+    "slug": "jetbrainsプラグインで最強のコード解析を提供する",
+    "name": "JetBrainsプラグインで最強のコード解析を提供する",
+    "category": "agent-orchestration",
+    "description": "JetBrains IDE（IntelliJ、PyCharm等）のコード解析エンジンをプラグイン経由でSerenaに統合し、LSPより高度な解析を可能にする",
+    "trigger_phrases": [
+      "JetBrains IDEユーザーで、LSPでは不十分な精度・機能が必要な場合（例: Spring Boot等のフレームワーク対応が必要）",
+      "JetBrainsプラグインで最強のコード解析を提供する",
+      "Serena JetBrainsプラグイン",
+      "JetBrains IDE（IntelliJ、PyCharm等）"
+    ],
+    "source_url": "https://github.com/oraios/serena",
+    "source_author": "oraios",
+    "added_at": "2026-03-21T00:05:32.450457+00:00"
+  },
+  {
+    "slug": "mcpoでchatgpt等の非mcp対応クライアントに接続する",
+    "name": "mcpoでChatGPT等の非MCP対応クライアントに接続する",
+    "category": "agent-orchestration",
+    "description": "MCPサーバーをOpenAPI経由で公開するmcpoツールを使い、MCP非対応だがツール呼び出し（Function Calling）対応のクライアントでSerenaを利用する",
+    "trigger_phrases": [
+      "ChatGPTやMCP非対応だがツール呼び出し対応のLLMクライアントでSerenaを使いたい時",
+      "mcpoでChatGPT等の非MCP対応クライアントに接続する",
+      "mcpo"
+    ],
+    "source_url": "https://github.com/oraios/serena",
+    "source_author": "oraios",
+    "added_at": "2026-03-21T00:05:32.450457+00:00"
   }
 ]
