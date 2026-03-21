@@ -6297,5 +6297,178 @@
     "source_url": "https://github.com/oraios/serena",
     "source_author": "oraios",
     "added_at": "2026-03-21T00:05:32.450457+00:00"
+  },
+  {
+    "slug": "カテゴリ別サブエージェントプラグインのインストール",
+    "name": "カテゴリ別サブエージェントプラグインのインストール",
+    "category": "claude-code-workflow",
+    "description": "127以上のサブエージェントを9つのカテゴリ（Core Development、Language Specialists、Infrastructure等）に分類し、必要なものだけをプラグインとして導入する",
+    "trigger_phrases": [
+      "特定のドメイン（例：言語専門家、インフラ、QA/セキュリティ）に集中的に取り組むプロジェクトで、関連エージェントをまとめて導入したい時",
+      "カテゴリ別サブエージェントプラグインのインストール",
+      "Claude Code CLI",
+      "VoltAgent/awesome-claude-code-subagents リポジトリ"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-03-21T00:09:30.827632+00:00"
+  },
+  {
+    "slug": "サブエージェント定義のyamlフロントマター構造化",
+    "name": "サブエージェント定義のYAMLフロントマター構造化",
+    "category": "claude-code-workflow",
+    "description": "各サブエージェントをYAMLフロントマター（name, description, tools, model）+ 詳細プロンプトの形式で定義し、役割・権限・モデル選択を明示する",
+    "trigger_phrases": [
+      "新しい専門分野のサブエージェントを作成したい時、既存エージェントをカスタマイズしたい時",
+      "サブエージェント定義のYAMLフロントマター構造化",
+      "YAML frontmatter",
+      "Markdown"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-03-21T00:09:30.827632+00:00"
+  },
+  {
+    "slug": "ツールベースの最小権限原則least-privilege",
+    "name": "ツールベースの最小権限原則（Least Privilege）",
+    "category": "claude-code-workflow",
+    "description": "各サブエージェントに必要最小限のツール権限のみを付与し、読み取り専用エージェント（レビュー、監査）とコード変更エージェント（開発、リファクタリング）を明確に分離する",
+    "trigger_phrases": [
+      "セキュアな開発環境を構築したい時、エージェントの役割を厳格に分離したい時",
+      "ツールベースの最小権限原則（Least Privilege）",
+      "Claude Code built-in tools (Read, Write, Edit, Bash, Grep, Glob, WebFetch, WebSearch)",
+      "MCP servers (オプション)"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-03-21T00:09:30.827632+00:00"
+  },
+  {
+    "slug": "モデルルーティングによるコスト最適化",
+    "name": "モデルルーティングによるコスト最適化",
+    "category": "claude-code-workflow",
+    "description": "タスクの複雑度に応じて、opus（高度推論）、sonnet（日常コーディング）、haiku（軽量タスク）を自動選択する",
+    "trigger_phrases": [
+      "大規模チームで多数のサブエージェントを運用する時、コストと品質のバランスを最適化したい時",
+      "モデルルーティングによるコスト最適化",
+      "Claude Opus",
+      "Claude Sonnet",
+      "Claude Haiku"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-03-21T00:09:30.827632+00:00"
+  },
+  {
+    "slug": "4種類のインストール手法の使い分け",
+    "name": "4種類のインストール手法の使い分け",
+    "category": "claude-code-workflow",
+    "description": "プラグイン、手動コピー、対話式インストーラ、AI経由インストールの4つの方法を用途に応じて選択する",
+    "trigger_phrases": [
+      "プラグイン: 定期更新を受けたい時、手動: カスタマイズ前提の時、対話式: 初回導入時、AI経由: 非技術者や探索的な導入時",
+      "4種類のインストール手法の使い分け",
+      "Claude Code CLI",
+      "Bash",
+      "curl",
+      "agent-installer.md",
+      "プラグイン、手動コピー、対話式インストーラ、AI経由インストールの4つの方法を用途に応じて選択する"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-03-21T00:09:30.827632+00:00"
+  },
+  {
+    "slug": "プロジェクトグローバルの優先順位設計",
+    "name": "プロジェクト/グローバルの優先順位設計",
+    "category": "claude-code-workflow",
+    "description": "プロジェクト固有のサブエージェント（`.claude/agents/`）とグローバルエージェント（`~/.claude/agents/`）の2層構造を採用し、同名の場合はプロジェクト優先とする",
+    "trigger_phrases": [
+      "複数プロジェクトで異なるコーディング規約やテストパターンを適用したい時、グローバルエージェントをプロジェクトごとに上書きしたい時",
+      "プロジェクト/グローバルの優先順位設計",
+      "Claude Code agent discovery mechanism",
+      "Git（プロジェクトエージェントの共有用）"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-03-21T00:09:30.827632+00:00"
+  },
+  {
+    "slug": "メタオーケストレーションエージェントの活用",
+    "name": "メタオーケストレーションエージェントの活用",
+    "category": "claude-code-workflow",
+    "description": "multi-agent-coordinator等のメタエージェントを使い、複数の専門エージェントを動的に起動・調整して複雑なタスクを分散処理する",
+    "trigger_phrases": [
+      "複数ドメインにまたがる大規模機能開発、エンドツーエンドのワークフロー自動化、複数専門家の意見を統合したい時",
+      "メタオーケストレーションエージェントの活用",
+      "multi-agent-coordinator",
+      "workflow-orchestrator",
+      "task-distributor"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-03-21T00:09:30.827632+00:00"
+  },
+  {
+    "slug": "mcp-toolboxサーバーを起動してツールを提供する",
+    "name": "MCP Toolboxサーバーを起動してツールを提供する",
+    "category": "agent-orchestration",
+    "description": "tools.yamlでツール定義を記述し、toolboxバイナリまたはnpxでMCPサーバーを起動する",
+    "trigger_phrases": [
+      "AIエージェントにデータベースアクセス機能を追加したい時、複数フレームワークでツールを共有したい時",
+      "MCP Toolboxサーバーを起動してツールを提供する",
+      "toolboxバイナリ（Linux/macOS/Windows用）",
+      "@toolbox-sdk/server（npm）",
+      "Docker（オプション）"
+    ],
+    "source_url": "https://github.com/googleapis/genai-toolbox",
+    "source_author": "googleapis",
+    "added_at": "2026-03-21T00:11:12.840316+00:00"
+  },
+  {
+    "slug": "sdkでツールをaiフレームワークに読み込む",
+    "name": "SDKでツールをAIフレームワークに読み込む",
+    "category": "agent-orchestration",
+    "description": "Toolbox SDKを使い、起動したToolboxサーバーからツール定義を取得し、LangChain/LlamaIndex/Genkit等のフレームワークで利用可能な形式に変換する",
+    "trigger_phrases": [
+      "PythonやJavaScript/TypeScriptでAIエージェントを実装している時、複数のエージェントで同じツールセットを共有したい時",
+      "SDKでツールをAIフレームワークに読み込む",
+      "toolbox-langchain（Python）",
+      "toolbox-llamaindex（Python）",
+      "toolbox-core（Python/JS）",
+      "@toolbox-sdk/core（JS/TS）",
+      "@toolbox-sdk/adk（JS/TS）"
+    ],
+    "source_url": "https://github.com/googleapis/genai-toolbox",
+    "source_author": "googleapis",
+    "added_at": "2026-03-21T00:11:12.840316+00:00"
+  },
+  {
+    "slug": "ideからmcp経由でtoolboxに接続する",
+    "name": "IDEからMCP経由でToolboxに接続する",
+    "category": "claude-code-workflow",
+    "description": "Claude CodeやCursor等のMCP対応IDEにToolboxサーバーを接続し、AI assistantに自然言語でデータベース操作をさせる",
+    "trigger_phrases": [
+      "IDE内でデータベーススキーマを参照しながらコード生成したい時、SQLを書かずにデータ分析したい時、データベース管理タスクをAIに委譲したい時",
+      "IDEからMCP経由でToolboxに接続する",
+      "MCP対応IDE（Claude Code, Cursor等）",
+      "Toolbox MCP server"
+    ],
+    "source_url": "https://github.com/googleapis/genai-toolbox",
+    "source_author": "googleapis",
+    "added_at": "2026-03-21T00:11:12.840316+00:00"
+  },
+  {
+    "slug": "toolsetsで複数エージェント用にツールをグループ化する",
+    "name": "toolsetsで複数エージェント用にツールをグループ化する",
+    "category": "agent-orchestration",
+    "description": "tools.yamlのtoolsetsセクションで、ツールを名前付きグループに分け、エージェントやアプリケーションごとに必要なツールだけを読み込む",
+    "trigger_phrases": [
+      "複数のエージェントが異なる役割を持つ時、セキュリティ上特定ツールへのアクセスを制限したい時、コンテキストサイズを最適化したい時",
+      "toolsetsで複数エージェント用にツールをグループ化する",
+      "Toolbox SDK（全言語共通機能）"
+    ],
+    "source_url": "https://github.com/googleapis/genai-toolbox",
+    "source_author": "googleapis",
+    "added_at": "2026-03-21T00:11:12.840316+00:00"
   }
 ]

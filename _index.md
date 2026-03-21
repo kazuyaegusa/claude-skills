@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 468 スキル
+合計: 479 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -472,3 +472,14 @@
 | lsp抽象化レイヤーで30言語以上に対応する | LSP抽象化レイヤーで30言語以上に対応する | agent-orchestration | Language Server Protocol（LSP）を抽象化し、30言語以上の言語サーバーを統一インターフェースで | oraios |
 | jetbrainsプラグインで最強のコード解析を提供する | JetBrainsプラグインで最強のコード解析を提供する | agent-orchestration | JetBrains IDE（IntelliJ、PyCharm等）のコード解析エンジンをプラグイン経由でSerenaに統合 | oraios |
 | mcpoでchatgpt等の非mcp対応クライアントに接続する | mcpoでChatGPT等の非MCP対応クライアントに接続する | agent-orchestration | MCPサーバーをOpenAPI経由で公開するmcpoツールを使い、MCP非対応だがツール呼び出し（Function Ca | oraios |
+| カテゴリ別サブエージェントプラグインのインストール | カテゴリ別サブエージェントプラグインのインストール | claude-code-workflow | 127以上のサブエージェントを9つのカテゴリ（Core Development、Language Specialists | VoltAgent |
+| サブエージェント定義のyamlフロントマター構造化 | サブエージェント定義のYAMLフロントマター構造化 | claude-code-workflow | 各サブエージェントをYAMLフロントマター（name, description, tools, model）+ 詳細プロ | VoltAgent |
+| ツールベースの最小権限原則least-privilege | ツールベースの最小権限原則（Least Privilege） | claude-code-workflow | 各サブエージェントに必要最小限のツール権限のみを付与し、読み取り専用エージェント（レビュー、監査）とコード変更エージェン | VoltAgent |
+| モデルルーティングによるコスト最適化 | モデルルーティングによるコスト最適化 | claude-code-workflow | タスクの複雑度に応じて、opus（高度推論）、sonnet（日常コーディング）、haiku（軽量タスク）を自動選択する | VoltAgent |
+| 4種類のインストール手法の使い分け | 4種類のインストール手法の使い分け | claude-code-workflow | プラグイン、手動コピー、対話式インストーラ、AI経由インストールの4つの方法を用途に応じて選択する | VoltAgent |
+| プロジェクトグローバルの優先順位設計 | プロジェクト/グローバルの優先順位設計 | claude-code-workflow | プロジェクト固有のサブエージェント（`.claude/agents/`）とグローバルエージェント（`~/.claude/ | VoltAgent |
+| メタオーケストレーションエージェントの活用 | メタオーケストレーションエージェントの活用 | claude-code-workflow | multi-agent-coordinator等のメタエージェントを使い、複数の専門エージェントを動的に起動・調整して複 | VoltAgent |
+| mcp-toolboxサーバーを起動してツールを提供する | MCP Toolboxサーバーを起動してツールを提供する | agent-orchestration | tools.yamlでツール定義を記述し、toolboxバイナリまたはnpxでMCPサーバーを起動する | googleapis |
+| sdkでツールをaiフレームワークに読み込む | SDKでツールをAIフレームワークに読み込む | agent-orchestration | Toolbox SDKを使い、起動したToolboxサーバーからツール定義を取得し、LangChain/LlamaInd | googleapis |
+| ideからmcp経由でtoolboxに接続する | IDEからMCP経由でToolboxに接続する | claude-code-workflow | Claude CodeやCursor等のMCP対応IDEにToolboxサーバーを接続し、AI assistantに自然 | googleapis |
+| toolsetsで複数エージェント用にツールをグループ化する | toolsetsで複数エージェント用にツールをグループ化する | agent-orchestration | tools.yamlのtoolsetsセクションで、ツールを名前付きグループに分け、エージェントやアプリケーションごとに | googleapis |
