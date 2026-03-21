@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 496 スキル
+合計: 504 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -500,3 +500,11 @@
 | oauth実装を段階的にデバッグする | OAuth実装を段階的にデバッグする | dev-tool | MCPサーバーのOAuth認証フローを各ステップごとに可視化・検証する | MCPJam |
 | llm-playgroundで複数モデルに対してテストする | LLM Playgroundで複数モデルに対してテストする | prompt-engineering | 開発中のMCPサーバーを複数のLLMモデル（GPT-5, Claude Sonnet, Gemini 2.5等）で動作検 | MCPJam |
 | json-rpcメッセージを詳細監視する | JSON-RPCメッセージを詳細監視する | prompt-engineering | MCPサーバーとクライアント間のすべてのJSON-RPC通信を記録・検査する | MCPJam |
+| 言語別接尾辞による自動skill発見 | 言語別接尾辞による自動Skill発見 | claude-code-workflow | Skillファイル名に `-py`, `-dotnet`, `-ts`, `-java`, `-rust` 等の接尾辞を | microsoft |
+| acceptance-criteria-test-harness-による品質保証 | Acceptance Criteria + Test Harness による品質保証 | agent-orchestration | 各SkillにAcceptance Criteria(正しい/誤ったコードパターン)を定義し、Copilot SDKベー | microsoft |
+| ralph-loop-による反復改善 | Ralph Loop による反復改善 | agent-orchestration | 生成→評価→フィードバック→再生成を繰り返し、品質閾値(例: 85点)に達するまでコードを改善し続ける | microsoft |
+| sensei-style-frontmatter-scoring | Sensei-style Frontmatter Scoring | claude-code-workflow | SkillのYAMLフロントマターに `triggers` (使うべき場面), `anti_triggers` (使って | microsoft |
+| symlink-による-multi-agent-共有 | symlink による Multi-Agent 共有 | claude-code-workflow | `.github/skills/` を正とし、`.claude/skills`, `.opencode/skills`  | microsoft |
+| npx-skills-add-によるウィザード式インストール | npx skills add によるウィザード式インストール | claude-code-workflow | `npx skills add microsoft/skills` を実行すると、対話式ウィザードで必要なSkillだけ | microsoft |
+| mcp-server-skill-の連携 | MCP server + Skill の連携 | claude-code-workflow | Model Context Protocol(MCP) serverでドキュメント検索・GitHub操作等のツールを提供 | microsoft |
+| context-driven-development-アーキテクチャ | Context-Driven Development アーキテクチャ | claude-code-workflow | Skills(知識) + MCP servers(ツール) + Custom Agents(役割) + AGENTS.m | microsoft |

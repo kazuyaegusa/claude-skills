@@ -6731,5 +6731,127 @@
     "source_url": "https://github.com/MCPJam/inspector",
     "source_author": "MCPJam",
     "added_at": "2026-03-21T00:17:35.434592+00:00"
+  },
+  {
+    "slug": "言語別接尾辞による自動skill発見",
+    "name": "言語別接尾辞による自動Skill発見",
+    "category": "claude-code-workflow",
+    "description": "Skillファイル名に `-py`, `-dotnet`, `-ts`, `-java`, `-rust` 等の接尾辞を付けることで、Agent側が言語を自動判定して読み込む",
+    "trigger_phrases": [
+      "複数言語のSDKスキルを同一リポジトリで管理し、Agentに自動選択させたい時。特にAzure SDKのようにPython/C#/TS/Java全対応のライブラリ群を扱う時",
+      "言語別接尾辞による自動Skill発見",
+      "ln (シンボリックリンク)",
+      "YAMLフロントマター"
+    ],
+    "source_url": "https://github.com/microsoft/skills",
+    "source_author": "microsoft",
+    "added_at": "2026-03-21T00:20:25.623912+00:00"
+  },
+  {
+    "slug": "acceptance-criteria-test-harness-による品質保証",
+    "name": "Acceptance Criteria + Test Harness による品質保証",
+    "category": "agent-orchestration",
+    "description": "各SkillにAcceptance Criteria(正しい/誤ったコードパターン)を定義し、Copilot SDKベースのテストハーネスで生成コードを自動検証する",
+    "trigger_phrases": [
+      "Skillを追加・更新した時、生成コードの品質を機械的に保証したい時。特にimport文や認証パターンが複数ある場合(例: azure.identity の DefaultAzureCredential vs ManagedIdentityCredential)",
+      "Acceptance Criteria + Test Harness による品質保証",
+      "GitHub Copilot SDK",
+      "pnpm",
+      "test harness (カスタムスクリプト)"
+    ],
+    "source_url": "https://github.com/microsoft/skills",
+    "source_author": "microsoft",
+    "added_at": "2026-03-21T00:20:25.623912+00:00"
+  },
+  {
+    "slug": "ralph-loop-による反復改善",
+    "name": "Ralph Loop による反復改善",
+    "category": "agent-orchestration",
+    "description": "生成→評価→フィードバック→再生成を繰り返し、品質閾値(例: 85点)に達するまでコードを改善し続ける",
+    "trigger_phrases": [
+      "新しいSkillを作成した時、既存Skillを大幅更新した時。特にAcceptance Criteriaが複雑で、1回の生成では満たせない時",
+      "Ralph Loop による反復改善",
+      "Copilot SDK (生成)",
+      "カスタム評価ロジック (スコアリング)",
+      "フィードバック生成ロジック"
+    ],
+    "source_url": "https://github.com/microsoft/skills",
+    "source_author": "microsoft",
+    "added_at": "2026-03-21T00:20:25.623912+00:00"
+  },
+  {
+    "slug": "sensei-style-frontmatter-scoring",
+    "name": "Sensei-style Frontmatter Scoring",
+    "category": "claude-code-workflow",
+    "description": "SkillのYAMLフロントマターに `triggers` (使うべき場面), `anti_triggers` (使ってはいけない場面), `compatibility` (対応Agent)を定義し、スコアリングする",
+    "trigger_phrases": [
+      "Skillを公開前に品質チェックしたい時、複数Skillが似た用途で競合する時(triggerで自動選択させる)",
+      "Sensei-style Frontmatter Scoring",
+      "YAML parser",
+      "Sensei scoring logic"
+    ],
+    "source_url": "https://github.com/microsoft/skills",
+    "source_author": "microsoft",
+    "added_at": "2026-03-21T00:20:25.623912+00:00"
+  },
+  {
+    "slug": "symlink-による-multi-agent-共有",
+    "name": "symlink による Multi-Agent 共有",
+    "category": "claude-code-workflow",
+    "description": "`.github/skills/` を正とし、`.claude/skills`, `.opencode/skills` 等へsymlinkを張ることで、複数Agent設定間でSkillを共有する",
+    "trigger_phrases": [
+      "Copilot/Claude/Gemini等を1つのリポジトリで併用する時、Skillを重複管理したくない時",
+      "symlink による Multi-Agent 共有",
+      "ln -s"
+    ],
+    "source_url": "https://github.com/microsoft/skills",
+    "source_author": "microsoft",
+    "added_at": "2026-03-21T00:20:25.623912+00:00"
+  },
+  {
+    "slug": "npx-skills-add-によるウィザード式インストール",
+    "name": "npx skills add によるウィザード式インストール",
+    "category": "claude-code-workflow",
+    "description": "`npx skills add microsoft/skills` を実行すると、対話式ウィザードで必要なSkillだけを選択してインストールできる",
+    "trigger_phrases": [
+      "新規プロジェクトでSkillを導入する時、既存プロジェクトに必要なSkillだけ追加したい時",
+      "npx skills add によるウィザード式インストール",
+      "npx",
+      "skills CLI(推測)"
+    ],
+    "source_url": "https://github.com/microsoft/skills",
+    "source_author": "microsoft",
+    "added_at": "2026-03-21T00:20:25.623912+00:00"
+  },
+  {
+    "slug": "mcp-server-skill-の連携",
+    "name": "MCP server + Skill の連携",
+    "category": "claude-code-workflow",
+    "description": "Model Context Protocol(MCP) serverでドキュメント検索・GitHub操作等のツールを提供し、Skillでそれらツールの使い方をAgentに教える",
+    "trigger_phrases": [
+      "外部API/ドキュメント/GitHub/ブラウザ操作をAgentに組み込みたい時。特にAzure SDK等のドキュメント参照が頻繁な開発",
+      "MCP server + Skill の連携",
+      "MCP servers (microsoft-docs, github, playwright, context7等)",
+      "Copilot SDK / Claude MCP client"
+    ],
+    "source_url": "https://github.com/microsoft/skills",
+    "source_author": "microsoft",
+    "added_at": "2026-03-21T00:20:25.623912+00:00"
+  },
+  {
+    "slug": "context-driven-development-アーキテクチャ",
+    "name": "Context-Driven Development アーキテクチャ",
+    "category": "claude-code-workflow",
+    "description": "Skills(知識) + MCP servers(ツール) + Custom Agents(役割) + AGENTS.md(振る舞い設定)を組み合わせ、AI Agentが自律的にコード生成・ドキュメント参照・デプロイを行う開発スタイル",
+    "trigger_phrases": [
+      "Azure/Foundry等のエコシステムを使う大規模プロジェクトで、複数開発者が異なるAgent(Copilot/Claude等)を使う時。チーム全体で「Agentにどう振る舞ってほしいか」を統一したい時",
+      "Context-Driven Development アーキテクチャ",
+      "GitHub Copilot / Claude / Gemini",
+      "MCP protocol",
+      "Skills repository"
+    ],
+    "source_url": "https://github.com/microsoft/skills",
+    "source_author": "microsoft",
+    "added_at": "2026-03-21T00:20:25.623912+00:00"
   }
 ]
