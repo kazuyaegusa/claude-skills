@@ -7391,5 +7391,226 @@
     "source_url": "https://github.com/travisvn/awesome-claude-skills",
     "source_author": "travisvn",
     "added_at": "2026-03-22T00:16:18.703486+00:00"
+  },
+  {
+    "slug": "npx経由でmcpサーバーを即座に検証する",
+    "name": "npx経由でMCPサーバーを即座に検証する",
+    "category": "prompt-engineering",
+    "description": "開発中のMCPサーバーをクローン不要・設定不要でInspector UIに接続し、tools/resources/promptsを対話的にテストする",
+    "trigger_phrases": [
+      "MCPサーバーの初期開発時、機能追加後の動作確認時、クライアント統合前の事前検証時",
+      "npx経由でMCPサーバーを即座に検証する",
+      "npx",
+      "@modelcontextprotocol/inspector"
+    ],
+    "source_url": "https://github.com/modelcontextprotocol/inspector",
+    "source_author": "modelcontextprotocol",
+    "added_at": "2026-03-22T00:18:12.966495+00:00"
+  },
+  {
+    "slug": "cliモードでmcpサーバーをスクリプト可能にテストする",
+    "name": "CLIモードでMCPサーバーをスクリプト可能にテストする",
+    "category": "prompt-engineering",
+    "description": "MCP Inspectorをコマンドラインから実行し、tools/resources/promptsの操作を標準出力に出力することで、CI/CDやAIアシスタントと統合する",
+    "trigger_phrases": [
+      "CI/CDパイプラインでのMCPサーバー自動テスト、AIコーディングアシスタントとの統合、バッチ処理でのリソース一括取得時",
+      "CLIモードでMCPサーバーをスクリプト可能にテストする",
+      "npx",
+      "@modelcontextprotocol/inspector --cli"
+    ],
+    "source_url": "https://github.com/modelcontextprotocol/inspector",
+    "source_author": "modelcontextprotocol",
+    "added_at": "2026-03-22T00:18:12.966495+00:00"
+  },
+  {
+    "slug": "ui-exportボタンでmcpjson設定を自動生成する",
+    "name": "UI Exportボタンでmcp.json設定を自動生成する",
+    "category": "claude-code-workflow",
+    "description": "Inspector UIで動作確認したサーバー設定を「Server Entry」「Servers File」ボタンでクリップボードにコピーし、Cursor/Claude Code等のクライアントに即座に適用可能なmcp.json形式で取得する",
+    "trigger_phrases": [
+      "MCPサーバーの動作確認後、Cursor/Claude Codeに統合する直前。複数サーバーを管理する設定ファイルを整備する際",
+      "UI Exportボタンでmcp.json設定を自動生成する",
+      "MCP Inspector UI"
+    ],
+    "source_url": "https://github.com/modelcontextprotocol/inspector",
+    "source_author": "modelcontextprotocol",
+    "added_at": "2026-03-22T00:18:12.966495+00:00"
+  },
+  {
+    "slug": "設定ファイル-configで複数サーバーを管理する",
+    "name": "設定ファイル（--config）で複数サーバーを管理する",
+    "category": "other",
+    "description": "mcp.json形式の設定ファイルを用意し、`--config`と`--server`オプションで特定サーバーをInspectorに読み込む。単一サーバーまたは\"default-server\"なら--server省略可能",
+    "trigger_phrases": [
+      "複数のMCPサーバーを開発している、チームで統一された設定ファイルを共有したい、環境ごとに異なるサーバーを切り替えたい場合",
+      "設定ファイル（--config）で複数サーバーを管理する",
+      "npx",
+      "@modelcontextprotocol/inspector"
+    ],
+    "source_url": "https://github.com/modelcontextprotocol/inspector",
+    "source_author": "modelcontextprotocol",
+    "added_at": "2026-03-22T00:18:12.966495+00:00"
+  },
+  {
+    "slug": "認証トークンでinspector-proxyを保護する",
+    "name": "認証トークンでInspector Proxyを保護する",
+    "category": "ui-ux",
+    "description": "Inspector起動時に自動生成されるセッショントークンをブラウザに入力またはURL経由で渡し、プロキシサーバーへの不正アクセスを防ぐ",
+    "trigger_phrases": [
+      "Inspectorをデフォルト設定で起動する全ての場合（認証はデフォルト有効）。特に信頼できないネットワークやリモートアクセスが可能な環境では必須",
+      "認証トークンでInspector Proxyを保護する",
+      "MCP Inspector",
+      "Bearer token認証"
+    ],
+    "source_url": "https://github.com/modelcontextprotocol/inspector",
+    "source_author": "modelcontextprotocol",
+    "added_at": "2026-03-22T00:18:12.966495+00:00"
+  },
+  {
+    "slug": "分野別スキルカタログから必要なスキルを発見してインストールする",
+    "name": "分野別スキルカタログから必要なスキルを発見してインストールする",
+    "category": "claude-code-workflow",
+    "description": "awesome-claude-skillsのような分野別整理されたカタログから、プロジェクトのニーズに合致するスキルを検索し、リポジトリをクローン/ダウンロードして ~/.claude/skills/ 配下にインストールする",
+    "trigger_phrases": [
+      "新規プロジェクト開始時、既存環境に機能追加が必要になったとき、特定分野でAIの能力不足を感じたとき",
+      "分野別スキルカタログから必要なスキルを発見してインストールする",
+      "awesome-claude-skills (GitHub)",
+      "git",
+      "Claude Code"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-03-22T00:20:21.461493+00:00"
+  },
+  {
+    "slug": "skillmd-標準形式で独自スキルを作成共有する",
+    "name": "SKILL.md 標準形式で独自スキルを作成・共有する",
+    "category": "claude-code-workflow",
+    "description": "skill-creator テンプレートを使い、name/description/使用タイミング/具体的手順を記述した SKILL.md を作成し、GitHubで公開してコミュニティに貢献する",
+    "trigger_phrases": [
+      "チーム独自のワークフロー・ツール・コーディング規約をAIに学習させたいとき、汎用的な知識を発見して他者と共有したいとき",
+      "SKILL.md 標準形式で独自スキルを作成・共有する",
+      "skill-creator template",
+      "GitHub",
+      "markdown"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-03-22T00:20:21.461493+00:00"
+  },
+  {
+    "slug": "複数スキルを組み合わせてワークフロー全体を最適化する",
+    "name": "複数スキルを組み合わせてワークフロー全体を最適化する",
+    "category": "claude-code-workflow",
+    "description": "TDD（test-driven-development） + セキュリティ（VibeSec） + デバッグ（systematic-debugging）のように、複数の独立したスキルを同時に有効化し、開発の各フェーズで適切なスキルが自動適用されるようにする",
+    "trigger_phrases": [
+      "エンタープライズレベルの品質基準が求められるプロジェクト、複数の専門領域（開発・QA・セキュリティ等）が関与する開発フロー",
+      "複数スキルを組み合わせてワークフロー全体を最適化する",
+      "test-driven-development skill",
+      "VibeSec-Skill",
+      "systematic-debugging skill",
+      "defense-in-depth skill",
+      "CLAUDE.md"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-03-22T00:20:21.461493+00:00"
+  },
+  {
+    "slug": "ドメイン特化型スキルコレクションを一括導入する",
+    "name": "ドメイン特化型スキルコレクションを一括導入する",
+    "category": "agent-orchestration",
+    "description": "claude-starter（40スキル）、Agent Almanac（317スキル）、agentskills.sh（69,000+スキル）のような大規模コレクションから、プロジェクトに最適なスキルセットを一括インストールする",
+    "trigger_phrases": [
+      "新規プロジェクトの初期セットアップ時、特定分野（科学計算、AWS開発、プロダクトマネジメント等）で体系的なスキルセットが必要なとき",
+      "ドメイン特化型スキルコレクションを一括導入する",
+      "claude-starter",
+      "Agent Almanac",
+      "agentskills.sh",
+      "K-Dense-AI/claude-scientific-skills",
+      "aws-skills"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-03-22T00:20:21.461493+00:00"
+  },
+  {
+    "slug": "mcpmodel-context-protocol対応スキルでツール連携を拡張する",
+    "name": "MCP（Model Context Protocol）対応スキルでツール連携を拡張する",
+    "category": "claude-code-workflow",
+    "description": "Linear、Google Workspace、PostgreSQL、NotebookLM等の外部サービスと連携するMCP対応スキルをインストールし、Claude Code から直接データ操作・クエリ実行を可能にする",
+    "trigger_phrases": [
+      "外部サービス（Linear、Jira、Google Workspace、データベース等）との統合が必要なとき、AIに「読み取り専用」ではなく「書き込み・実行」能力を持たせたいとき",
+      "MCP（Model Context Protocol）対応スキルでツール連携を拡張する",
+      "linear-claude-skill + MCP server",
+      "postgres skill + MCP server",
+      "google-workspace-skills + OAuth",
+      "notebooklm skill + Google API"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-03-22T00:20:21.461493+00:00"
+  },
+  {
+    "slug": "git-worktreeベースのエージェント分離実行",
+    "name": "git worktreeベースのエージェント分離実行",
+    "category": "claude-code-workflow",
+    "description": "各タスクを独立したgit worktree（別ディレクトリ＋ブランチ）に配置し、複数のCLIエージェントを同時並行で動かす",
+    "trigger_phrases": [
+      "複数のタスクが独立しており、並行実行してもコンフリクトしない場合。または、タスク間に依存があっても順次マージで解消できる場合",
+      "git worktreeベースのエージェント分離実行",
+      "Superset（Electron製デスクトップアプリ）",
+      "git worktree",
+      "任意のCLIエージェント（Claude Code、Codex、Cursor Agent、Gemini CLI等）"
+    ],
+    "source_url": "https://github.com/superset-sh/superset",
+    "source_author": "superset-sh",
+    "added_at": "2026-03-22T00:21:51.477511+00:00"
+  },
+  {
+    "slug": "workspace-setupteardownスクリプトによる環境自動化",
+    "name": "workspace setup/teardownスクリプトによる環境自動化",
+    "category": "agent-orchestration",
+    "description": "workspaceごとに.envコピー、依存インストール、DB初期化等を自動実行する",
+    "trigger_phrases": [
+      "worktreeごとに.envや依存パッケージが必要な場合。DB接続、APIキー等のシークレットをworktree間で共有したい時",
+      "workspace setup/teardownスクリプトによる環境自動化",
+      "シェルスクリプト（bash等）",
+      ".superset/config.json",
+      "workspaceごとに.envコピー、依存インストール、DB初期化等を自動実行する"
+    ],
+    "source_url": "https://github.com/superset-sh/superset",
+    "source_author": "superset-sh",
+    "added_at": "2026-03-22T00:21:51.477511+00:00"
+  },
+  {
+    "slug": "ワンクリックエディタターミナル遷移による高速レビュー",
+    "name": "ワンクリックエディタ/ターミナル遷移による高速レビュー",
+    "category": "agent-orchestration",
+    "description": "diff viewerで変更確認後、⌘Oでエディタまたはターミナルを開いて即座に編集できる",
+    "trigger_phrases": [
+      "エージェント生成コードを最終調整したい時。または、コミット前にコードレビューしたい時",
+      "ワンクリックエディタ/ターミナル遷移による高速レビュー",
+      "Superset built-in diff viewer",
+      "外部エディタ（VSCode、Cursor等）",
+      "diff viewerで変更確認後、⌘Oでエディタまたはターミナルを開いて即座に編集できる"
+    ],
+    "source_url": "https://github.com/superset-sh/superset",
+    "source_author": "superset-sh",
+    "added_at": "2026-03-22T00:21:51.477511+00:00"
+  },
+  {
+    "slug": "プリセットベースのターミナル分割レイアウト",
+    "name": "プリセットベースのターミナル分割レイアウト",
+    "category": "agent-orchestration",
+    "description": "よく使うコマンド組み合わせ（dev server + log watch等）をプリセット保存し、Ctrl+1-9で即起動する",
+    "trigger_phrases": [
+      "複数のプロセス（dev server、DB、watch、log監視等）を同時起動したい時",
+      "プリセットベースのターミナル分割レイアウト",
+      "Superset terminal presets"
+    ],
+    "source_url": "https://github.com/superset-sh/superset",
+    "source_author": "superset-sh",
+    "added_at": "2026-03-22T00:21:51.477511+00:00"
   }
 ]

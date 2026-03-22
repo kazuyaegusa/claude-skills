@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 538 スキル
+合計: 552 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -542,3 +542,17 @@
 | 公式skillライブラリから用途別skillを選択する | 公式Skillライブラリから用途別Skillを選択する | claude-code-workflow | Anthropic公式の20+Skillsから、ドキュメント操作（docx/pdf/pptx/xlsx）、デザイン（ca | travisvn |
 | obrasuperpowersコレクションでtddデバッグコラボパターンを適用する | obra/superpowersコレクションでTDD/デバッグ/コラボパターンを適用する | claude-code-workflow | obra氏のsuperpowersライブラリ（20+の実戦検証済みSkill）を導入し、`/brainstorm`、`/ | travisvn |
 | skillのセキュリティ監査を実施してから有効化する | Skillのセキュリティ監査を実施してから有効化する | claude-code-workflow | コミュニティSkillや自作Skillを有効化する前に、SKILL.md・scripts/の全コードをレビューし、データ | travisvn |
+| npx経由でmcpサーバーを即座に検証する | npx経由でMCPサーバーを即座に検証する | prompt-engineering | 開発中のMCPサーバーをクローン不要・設定不要でInspector UIに接続し、tools/resources/pro | modelcontextprotocol |
+| cliモードでmcpサーバーをスクリプト可能にテストする | CLIモードでMCPサーバーをスクリプト可能にテストする | prompt-engineering | MCP Inspectorをコマンドラインから実行し、tools/resources/promptsの操作を標準出力に出 | modelcontextprotocol |
+| ui-exportボタンでmcpjson設定を自動生成する | UI Exportボタンでmcp.json設定を自動生成する | claude-code-workflow | Inspector UIで動作確認したサーバー設定を「Server Entry」「Servers File」ボタンでクリ | modelcontextprotocol |
+| 設定ファイル-configで複数サーバーを管理する | 設定ファイル（--config）で複数サーバーを管理する | other | mcp.json形式の設定ファイルを用意し、`--config`と`--server`オプションで特定サーバーをInsp | modelcontextprotocol |
+| 認証トークンでinspector-proxyを保護する | 認証トークンでInspector Proxyを保護する | ui-ux | Inspector起動時に自動生成されるセッショントークンをブラウザに入力またはURL経由で渡し、プロキシサーバーへの不 | modelcontextprotocol |
+| 分野別スキルカタログから必要なスキルを発見してインストールする | 分野別スキルカタログから必要なスキルを発見してインストールする | claude-code-workflow | awesome-claude-skillsのような分野別整理されたカタログから、プロジェクトのニーズに合致するスキルを検 | BehiSecc |
+| skillmd-標準形式で独自スキルを作成共有する | SKILL.md 標準形式で独自スキルを作成・共有する | claude-code-workflow | skill-creator テンプレートを使い、name/description/使用タイミング/具体的手順を記述した  | BehiSecc |
+| 複数スキルを組み合わせてワークフロー全体を最適化する | 複数スキルを組み合わせてワークフロー全体を最適化する | claude-code-workflow | TDD（test-driven-development） + セキュリティ（VibeSec） + デバッグ（system | BehiSecc |
+| ドメイン特化型スキルコレクションを一括導入する | ドメイン特化型スキルコレクションを一括導入する | agent-orchestration | claude-starter（40スキル）、Agent Almanac（317スキル）、agentskills.sh（6 | BehiSecc |
+| mcpmodel-context-protocol対応スキルでツール連携を拡張する | MCP（Model Context Protocol）対応スキルでツール連携を拡張する | claude-code-workflow | Linear、Google Workspace、PostgreSQL、NotebookLM等の外部サービスと連携するMC | BehiSecc |
+| git-worktreeベースのエージェント分離実行 | git worktreeベースのエージェント分離実行 | claude-code-workflow | 各タスクを独立したgit worktree（別ディレクトリ＋ブランチ）に配置し、複数のCLIエージェントを同時並行で動か | superset-sh |
+| workspace-setupteardownスクリプトによる環境自動化 | workspace setup/teardownスクリプトによる環境自動化 | agent-orchestration | workspaceごとに.envコピー、依存インストール、DB初期化等を自動実行する | superset-sh |
+| ワンクリックエディタターミナル遷移による高速レビュー | ワンクリックエディタ/ターミナル遷移による高速レビュー | agent-orchestration | diff viewerで変更確認後、⌘Oでエディタまたはターミナルを開いて即座に編集できる | superset-sh |
+| プリセットベースのターミナル分割レイアウト | プリセットベースのターミナル分割レイアウト | agent-orchestration | よく使うコマンド組み合わせ（dev server + log watch等）をプリセット保存し、Ctrl+1-9で即起動 | superset-sh |
