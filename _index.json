@@ -7104,5 +7104,97 @@
     "source_url": "https://github.com/steveyegge/beads",
     "source_author": "steveyegge",
     "added_at": "2026-03-22T00:07:11.854851+00:00"
+  },
+  {
+    "slug": "oh-my-claudecodeのプラグインセットアップ",
+    "name": "oh-my-claudecodeのプラグインセットアップ",
+    "category": "claude-code-workflow",
+    "description": "Claude Codeにマルチエージェントオーケストレーション機能を追加する初期設定",
+    "trigger_phrases": [
+      "Claude Codeを初めて使う時、または複雑な開発タスクを自動化したい時の最初のステップ",
+      "oh-my-claudecodeのプラグインセットアップ",
+      "Claude Code CLI",
+      "oh-my-claudecode plugin",
+      "Claude Codeにマルチエージェントオーケストレーション機能を追加する初期設定"
+    ],
+    "source_url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
+    "source_author": "Yeachan-Heo",
+    "added_at": "2026-03-22T00:11:49.897106+00:00"
+  },
+  {
+    "slug": "teamモードでのステージ型パイプライン実行",
+    "name": "Teamモードでのステージ型パイプライン実行",
+    "category": "claude-code-workflow",
+    "description": "複数Claude エージェントを plan→PRD→exec→verify→fix の段階的パイプラインで協調動作させる",
+    "trigger_phrases": [
+      "TypeScriptエラー一括修正、リファクタリング、複数ファイルの同期変更など、確実な完遂が必要な時",
+      "Teamモードでのステージ型パイプライン実行",
+      "Claude Code experimental teams feature",
+      "oh-my-claudecode"
+    ],
+    "source_url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
+    "source_author": "Yeachan-Heo",
+    "added_at": "2026-03-22T00:11:49.897106+00:00"
+  },
+  {
+    "slug": "tmux-cli-workersでcodexgeminiを並列起動",
+    "name": "tmux CLI workersでCodex/Geminiを並列起動",
+    "category": "claude-code-workflow",
+    "description": "tmuxペイン内に実際のcodex/gemini CLIプロセスをオンデマンド起動し、タスク完了時に自動終了させる",
+    "trigger_phrases": [
+      "セキュリティレビュー（Codex得意）とUI改善（Gemini得意）を同時進行させたい、または大規模コンテキスト（1M token）が必要な時",
+      "tmux CLI workersでCodex/Geminiを並列起動",
+      "tmux",
+      "@openai/codex CLI",
+      "@google/gemini-cli",
+      "oh-my-claudecode"
+    ],
+    "source_url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
+    "source_author": "Yeachan-Heo",
+    "added_at": "2026-03-22T00:11:49.897106+00:00"
+  },
+  {
+    "slug": "skillシステムで過去の知見を自動再利用",
+    "name": "Skillシステムで過去の知見を自動再利用",
+    "category": "claude-code-workflow",
+    "description": "プロジェクト固有（.omc/skills/）またはユーザー全体（~/.omc/skills/）のデバッグ知識をYAML形式で保存し、関連タスク時に自動注入する",
+    "trigger_phrases": [
+      "繰り返し発生するバグ、プロジェクト固有の設定トラブル、チーム内で共有すべき解決策がある時",
+      "Skillシステムで過去の知見を自動再利用",
+      "oh-my-claudecode",
+      "YAML frontmatter"
+    ],
+    "source_url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
+    "source_author": "Yeachan-Heo",
+    "added_at": "2026-03-22T00:11:49.897106+00:00"
+  },
+  {
+    "slug": "magic-keywordsで即座にモード切替",
+    "name": "Magic keywordsで即座にモード切替",
+    "category": "claude-code-workflow",
+    "description": "autopilot/ralph/ulw/ralplan等の予約語をプロンプトに含めるだけで、対応する実行モードを起動する",
+    "trigger_phrases": [
+      "特定の実行戦略（並列化・永続実行・計画重視等）を明示的に指定したい時、またはショートカットで効率化したい時",
+      "Magic keywordsで即座にモード切替",
+      "oh-my-claudecode"
+    ],
+    "source_url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
+    "source_author": "Yeachan-Heo",
+    "added_at": "2026-03-22T00:11:49.897106+00:00"
+  },
+  {
+    "slug": "deep-interviewで要件を事前明確化",
+    "name": "Deep Interviewで要件を事前明確化",
+    "category": "claude-code-workflow",
+    "description": "曖昧な要求に対してソクラテス式質問で段階的に要件を掘り下げ、実装前に明確性を測定する",
+    "trigger_phrases": [
+      "要件が曖昧、または設計を細かく管理したい時、チーム内で認識齟齬を防ぎたい時",
+      "Deep Interviewで要件を事前明確化",
+      "oh-my-claudecode deep-interview skill",
+      "曖昧な要求に対してソクラテス式質問で段階的に要件を掘り下げ、実装前に明確性を測定する"
+    ],
+    "source_url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
+    "source_author": "Yeachan-Heo",
+    "added_at": "2026-03-22T00:11:49.897106+00:00"
   }
 ]

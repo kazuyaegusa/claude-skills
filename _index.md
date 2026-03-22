@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 520 スキル
+合計: 526 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -524,3 +524,9 @@
 | 階層idでエピックタスクサブタスクを管理する | 階層IDでエピック・タスク・サブタスクを管理する | agent-orchestration | Beadsはハッシュベースの階層ID（`bd-a3f8`, `bd-a3f8.1`, `bd-a3f8.1.1`）を使い | steveyegge |
 | コントリビューターモードで個人計画を分離する | コントリビューターモードで個人計画を分離する | agent-orchestration | `bd init --contributor` でBeadsを初期化すると、計画用タスクを別リポジトリ（例: `~/.b | steveyegge |
 | stealthモードでローカル専用タスク管理 | Stealthモードでローカル専用タスク管理 | agent-orchestration | `bd init --stealth` で初期化すると、Beadsの `.beads/` ディレクトリやGitフックをコ | steveyegge |
+| oh-my-claudecodeのプラグインセットアップ | oh-my-claudecodeのプラグインセットアップ | claude-code-workflow | Claude Codeにマルチエージェントオーケストレーション機能を追加する初期設定 | Yeachan-Heo |
+| teamモードでのステージ型パイプライン実行 | Teamモードでのステージ型パイプライン実行 | claude-code-workflow | 複数Claude エージェントを plan→PRD→exec→verify→fix の段階的パイプラインで協調動作させる | Yeachan-Heo |
+| tmux-cli-workersでcodexgeminiを並列起動 | tmux CLI workersでCodex/Geminiを並列起動 | claude-code-workflow | tmuxペイン内に実際のcodex/gemini CLIプロセスをオンデマンド起動し、タスク完了時に自動終了させる | Yeachan-Heo |
+| skillシステムで過去の知見を自動再利用 | Skillシステムで過去の知見を自動再利用 | claude-code-workflow | プロジェクト固有（.omc/skills/）またはユーザー全体（~/.omc/skills/）のデバッグ知識をYAML形 | Yeachan-Heo |
+| magic-keywordsで即座にモード切替 | Magic keywordsで即座にモード切替 | claude-code-workflow | autopilot/ralph/ulw/ralplan等の予約語をプロンプトに含めるだけで、対応する実行モードを起動する | Yeachan-Heo |
+| deep-interviewで要件を事前明確化 | Deep Interviewで要件を事前明確化 | claude-code-workflow | 曖昧な要求に対してソクラテス式質問で段階的に要件を掘り下げ、実装前に明確性を測定する | Yeachan-Heo |
