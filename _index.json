@@ -7196,5 +7196,200 @@
     "source_url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
     "source_author": "Yeachan-Heo",
     "added_at": "2026-03-22T00:11:49.897106+00:00"
+  },
+  {
+    "slug": "閉じた学習ループによる自律的スキル改善",
+    "name": "閉じた学習ループによる自律的スキル改善",
+    "category": "agent-orchestration",
+    "description": "エージェントが複雑なタスク完了後に自動でスキルを生成し、使用中に改善し、定期的に記憶を永続化する仕組み",
+    "trigger_phrases": [
+      "エージェントを数週間〜数ヶ月単位で継続利用し、ユーザー固有の作業パターンに適応させたい場合",
+      "閉じた学習ループによる自律的スキル改善",
+      "agentskills.io（オープン標準）",
+      "Honcho（dialectic user modeling）",
+      "FTS5（SQLite全文検索）"
+    ],
+    "source_url": "https://github.com/NousResearch/hermes-agent",
+    "source_author": "NousResearch",
+    "added_at": "2026-03-22T00:14:06.767362+00:00"
+  },
+  {
+    "slug": "マルチバックエンドサーバーレス対応ターミナル",
+    "name": "マルチバックエンド・サーバーレス対応ターミナル",
+    "category": "agent-orchestration",
+    "description": "local/Docker/SSH/Daytona/Singularity/Modalの6種類のターミナルバックエンドを切り替え可能にし、アイドル時休止・オンデマンド起動を実現",
+    "trigger_phrases": [
+      "個人開発で$5/月以下に抑えたいが24/7稼働エージェントが欲しい場合、またはGPUクラスタとVPSを状況で切り替えたい場合",
+      "マルチバックエンド・サーバーレス対応ターミナル",
+      "Daytona",
+      "Modal",
+      "Docker",
+      "SSH",
+      "Singularity"
+    ],
+    "source_url": "https://github.com/NousResearch/hermes-agent",
+    "source_author": "NousResearch",
+    "added_at": "2026-03-22T00:14:06.767362+00:00"
+  },
+  {
+    "slug": "統一メッセージングゲートウェイ",
+    "name": "統一メッセージングゲートウェイ",
+    "category": "agent-orchestration",
+    "description": "Telegram/Discord/Slack/WhatsApp/Signal/CLI/Emailを単一ゲートウェイプロセスで処理し、音声メモ文字起こし・会話継続性を提供",
+    "trigger_phrases": [
+      "モバイル/デスクトップ/チーム用チャット等、複数環境から同一エージェントにアクセスしたい場合",
+      "統一メッセージングゲートウェイ",
+      "Telegram Bot API",
+      "Discord.py",
+      "Slack SDK",
+      "Twilio（WhatsApp/Signal）",
+      "音声文字起こしライブラリ（未明記、おそらくWhisper等）"
+    ],
+    "source_url": "https://github.com/NousResearch/hermes-agent",
+    "source_author": "NousResearch",
+    "added_at": "2026-03-22T00:14:06.767362+00:00"
+  },
+  {
+    "slug": "llmプロバイダ非依存設計",
+    "name": "LLMプロバイダ非依存設計",
+    "category": "agent-orchestration",
+    "description": "Nous Portal/OpenRouter/z.ai/Kimi/MiniMax/OpenAI等のプロバイダを hermes model で切り替え、コード変更なしで200+モデルを利用可能",
+    "trigger_phrases": [
+      "コスト削減・最新モデル試用・プロバイダ障害時のフォールバックが必要な場合",
+      "LLMプロバイダ非依存設計",
+      "OpenRouter API",
+      "LiteLLM（推測）",
+      "各プロバイダSDK"
+    ],
+    "source_url": "https://github.com/NousResearch/hermes-agent",
+    "source_author": "NousResearch",
+    "added_at": "2026-03-22T00:14:06.767362+00:00"
+  },
+  {
+    "slug": "cron自然言語スケジューリング",
+    "name": "cron自然言語スケジューリング",
+    "category": "agent-orchestration",
+    "description": "自然言語でタスクをスケジュール登録し、cron的に定期実行→結果を任意プラットフォームに配信",
+    "trigger_phrases": [
+      "日次レポート、夜間バックアップ、週次監査等、定期的に無人実行したいタスクがある場合",
+      "cron自然言語スケジューリング",
+      "cronライブラリ（Python schedule or APScheduler推測）",
+      "ゲートウェイ配信機能",
+      "自然言語でタスクをスケジュール登録し、cron的に定期実行→結果を任意プラットフォームに配信"
+    ],
+    "source_url": "https://github.com/NousResearch/hermes-agent",
+    "source_author": "NousResearch",
+    "added_at": "2026-03-22T00:14:06.767362+00:00"
+  },
+  {
+    "slug": "サブエージェント並列実行",
+    "name": "サブエージェント並列実行",
+    "category": "agent-orchestration",
+    "description": "親エージェントから独立したサブエージェントを並列起動し、Pythonスクリプト経由でツールRPC呼び出し",
+    "trigger_phrases": [
+      "データ収集と分析を並列実行したい、または複雑なツール連鎖をLLMコンテキスト外で自動化したい場合",
+      "サブエージェント並列実行",
+      "asyncio（並列実行）",
+      "RPC機構（詳細未明記）"
+    ],
+    "source_url": "https://github.com/NousResearch/hermes-agent",
+    "source_author": "NousResearch",
+    "added_at": "2026-03-22T00:14:06.767362+00:00"
+  },
+  {
+    "slug": "ワンライナーインストールマイグレーション",
+    "name": "ワンライナーインストール+マイグレーション",
+    "category": "agent-orchestration",
+    "description": "curl | bash で全依存（Python/Node.js/hermes CLI）を自動インストールし、OpenClawからの設定・メモリ・スキル移行も自動",
+    "trigger_phrases": [
+      "新規導入時、またはOpenClawから移行したい場合",
+      "ワンライナーインストール+マイグレーション",
+      "Bashインストールスクリプト",
+      "Python/Node.jsインストーラー"
+    ],
+    "source_url": "https://github.com/NousResearch/hermes-agent",
+    "source_author": "NousResearch",
+    "added_at": "2026-03-22T00:14:06.767362+00:00"
+  },
+  {
+    "slug": "progressive-disclosure設計でskillを構造化する",
+    "name": "Progressive Disclosure設計でSkillを構造化する",
+    "category": "claude-code-workflow",
+    "description": "Claude Skillsを「メタデータ（~100トークン）→本体指示（<5kトークン）→リソースファイル（必要時のみ）」の3層に分離して、関連性判定を軽量に保ちながら詳細を段階的にロードする設計。",
+    "trigger_phrases": [
+      "複数の専門Skillを同時に利用可能にしたいが、コンテキストウィンドウを節約したい時。特に10個以上のSkillをチームで運用する場合。",
+      "Progressive Disclosure設計でSkillを構造化する",
+      "YAML frontmatter",
+      "Markdown",
+      "Claude Skills API"
+    ],
+    "source_url": "https://github.com/travisvn/awesome-claude-skills",
+    "source_author": "travisvn",
+    "added_at": "2026-03-22T00:16:18.703486+00:00"
+  },
+  {
+    "slug": "skills-vs-mcp-vs-promptsの判断基準を適用する",
+    "name": "Skills vs MCP vs Promptsの判断基準を適用する",
+    "category": "agent-orchestration",
+    "description": "「同じ指示を複数会話で繰り返す→Skill」「外部データ統合→MCP」「1回限りの指示→Prompt」「独立タスク実行→Subagent」の使い分けルールで最適なツールを選択する。",
+    "trigger_phrases": [
+      "新しいワークフローを自動化する前に、どの仕組みで実装すべきか迷った時。",
+      "Skills vs MCP vs Promptsの判断基準を適用する",
+      "Claude Skills",
+      "MCP",
+      "Subagent",
+      "System Prompt"
+    ],
+    "source_url": "https://github.com/travisvn/awesome-claude-skills",
+    "source_author": "travisvn",
+    "added_at": "2026-03-22T00:16:18.703486+00:00"
+  },
+  {
+    "slug": "公式skillライブラリから用途別skillを選択する",
+    "name": "公式Skillライブラリから用途別Skillを選択する",
+    "category": "claude-code-workflow",
+    "description": "Anthropic公式の20+Skillsから、ドキュメント操作（docx/pdf/pptx/xlsx）、デザイン（canvas-design/algorithmic-art）、開発（frontend-design/mcp-builder）、コミュニケーション（brand-guidelines/internal-comms）等、タスクに応じたSkillを有効化する。",
+    "trigger_phrases": [
+      "ドキュメント生成・編集、デザイン制作、MCP開発、ブランドガイドライン適用など、公式Skillがカバーする領域のタスクを行う時。",
+      "公式Skillライブラリから用途別Skillを選択する",
+      "anthropics/skills（公式リポジトリ）",
+      "Claude.ai Settings",
+      "Claude Code CLI"
+    ],
+    "source_url": "https://github.com/travisvn/awesome-claude-skills",
+    "source_author": "travisvn",
+    "added_at": "2026-03-22T00:16:18.703486+00:00"
+  },
+  {
+    "slug": "obrasuperpowersコレクションでtddデバッグコラボパターンを適用する",
+    "name": "obra/superpowersコレクションでTDD/デバッグ/コラボパターンを適用する",
+    "category": "claude-code-workflow",
+    "description": "obra氏のsuperpowersライブラリ（20+の実戦検証済みSkill）を導入し、`/brainstorm`、`/write-plan`、`/execute-plan`コマンドでタスク分解・計画・実行を体系化する。",
+    "trigger_phrases": [
+      "複雑な開発タスクをTDD・計画駆動で進めたい時、チーム全体で統一したデバッグ手順を適用したい時。",
+      "obra/superpowersコレクションでTDD/デバッグ/コラボパターンを適用する",
+      "obra/superpowers",
+      "obra/superpowers-skills",
+      "Claude Code CLI"
+    ],
+    "source_url": "https://github.com/travisvn/awesome-claude-skills",
+    "source_author": "travisvn",
+    "added_at": "2026-03-22T00:16:18.703486+00:00"
+  },
+  {
+    "slug": "skillのセキュリティ監査を実施してから有効化する",
+    "name": "Skillのセキュリティ監査を実施してから有効化する",
+    "category": "claude-code-workflow",
+    "description": "コミュニティSkillや自作Skillを有効化する前に、SKILL.md・scripts/の全コードをレビューし、データ窃取・プロンプトインジェクション・権限昇格リスクがないか確認する。",
+    "trigger_phrases": [
+      "コミュニティSkillを初めて導入する時、自作Skillをチーム配布する前、Enterprise環境でSkillを運用する時。",
+      "Skillのセキュリティ監査を実施してから有効化する",
+      "コードレビューツール",
+      "gitバージョン管理",
+      "内部リポジトリ"
+    ],
+    "source_url": "https://github.com/travisvn/awesome-claude-skills",
+    "source_author": "travisvn",
+    "added_at": "2026-03-22T00:16:18.703486+00:00"
   }
 ]

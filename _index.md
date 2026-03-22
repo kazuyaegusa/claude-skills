@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 526 スキル
+合計: 538 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -530,3 +530,15 @@
 | skillシステムで過去の知見を自動再利用 | Skillシステムで過去の知見を自動再利用 | claude-code-workflow | プロジェクト固有（.omc/skills/）またはユーザー全体（~/.omc/skills/）のデバッグ知識をYAML形 | Yeachan-Heo |
 | magic-keywordsで即座にモード切替 | Magic keywordsで即座にモード切替 | claude-code-workflow | autopilot/ralph/ulw/ralplan等の予約語をプロンプトに含めるだけで、対応する実行モードを起動する | Yeachan-Heo |
 | deep-interviewで要件を事前明確化 | Deep Interviewで要件を事前明確化 | claude-code-workflow | 曖昧な要求に対してソクラテス式質問で段階的に要件を掘り下げ、実装前に明確性を測定する | Yeachan-Heo |
+| 閉じた学習ループによる自律的スキル改善 | 閉じた学習ループによる自律的スキル改善 | agent-orchestration | エージェントが複雑なタスク完了後に自動でスキルを生成し、使用中に改善し、定期的に記憶を永続化する仕組み | NousResearch |
+| マルチバックエンドサーバーレス対応ターミナル | マルチバックエンド・サーバーレス対応ターミナル | agent-orchestration | local/Docker/SSH/Daytona/Singularity/Modalの6種類のターミナルバックエンドを切 | NousResearch |
+| 統一メッセージングゲートウェイ | 統一メッセージングゲートウェイ | agent-orchestration | Telegram/Discord/Slack/WhatsApp/Signal/CLI/Emailを単一ゲートウェイプロセ | NousResearch |
+| llmプロバイダ非依存設計 | LLMプロバイダ非依存設計 | agent-orchestration | Nous Portal/OpenRouter/z.ai/Kimi/MiniMax/OpenAI等のプロバイダを herm | NousResearch |
+| cron自然言語スケジューリング | cron自然言語スケジューリング | agent-orchestration | 自然言語でタスクをスケジュール登録し、cron的に定期実行→結果を任意プラットフォームに配信 | NousResearch |
+| サブエージェント並列実行 | サブエージェント並列実行 | agent-orchestration | 親エージェントから独立したサブエージェントを並列起動し、Pythonスクリプト経由でツールRPC呼び出し | NousResearch |
+| ワンライナーインストールマイグレーション | ワンライナーインストール+マイグレーション | agent-orchestration | curl \| bash で全依存（Python/Node.js/hermes CLI）を自動インストールし、OpenCl | NousResearch |
+| progressive-disclosure設計でskillを構造化する | Progressive Disclosure設計でSkillを構造化する | claude-code-workflow | Claude Skillsを「メタデータ（~100トークン）→本体指示（<5kトークン）→リソースファイル（必要時のみ） | travisvn |
+| skills-vs-mcp-vs-promptsの判断基準を適用する | Skills vs MCP vs Promptsの判断基準を適用する | agent-orchestration | 「同じ指示を複数会話で繰り返す→Skill」「外部データ統合→MCP」「1回限りの指示→Prompt」「独立タスク実行→ | travisvn |
+| 公式skillライブラリから用途別skillを選択する | 公式Skillライブラリから用途別Skillを選択する | claude-code-workflow | Anthropic公式の20+Skillsから、ドキュメント操作（docx/pdf/pptx/xlsx）、デザイン（ca | travisvn |
+| obrasuperpowersコレクションでtddデバッグコラボパターンを適用する | obra/superpowersコレクションでTDD/デバッグ/コラボパターンを適用する | claude-code-workflow | obra氏のsuperpowersライブラリ（20+の実戦検証済みSkill）を導入し、`/brainstorm`、`/ | travisvn |
+| skillのセキュリティ監査を実施してから有効化する | Skillのセキュリティ監査を実施してから有効化する | claude-code-workflow | コミュニティSkillや自作Skillを有効化する前に、SKILL.md・scripts/の全コードをレビューし、データ | travisvn |
