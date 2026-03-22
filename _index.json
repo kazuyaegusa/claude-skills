@@ -6853,5 +6853,256 @@
     "source_url": "https://github.com/microsoft/skills",
     "source_author": "microsoft",
     "added_at": "2026-03-21T00:20:25.623912+00:00"
+  },
+  {
+    "slug": "hooksによるライフサイクル介入",
+    "name": "Hooksによるライフサイクル介入",
+    "category": "claude-code-workflow",
+    "description": "Claude Codeの特定のライフサイクルイベント（ファイル書き込み前後、コマンド実行前後など）で任意のスクリプトを実行し、AIの動作を制御または拡張する",
+    "trigger_phrases": [
+      "コード品質チェック、セキュリティスキャン、通知送信、マルチエージェント通信、TDD規律の強制など、「特定タイミングで必ず実行したい処理」がある場合",
+      "Hooksによるライフサイクル介入",
+      "TDD Guard",
+      "parry（prompt injection scanner）",
+      "Dippy（安全なbashコマンドの自動承認）",
+      "CC Notify（デスクトップ通知）",
+      "Claude Code Hook Comms（マルチエージェント通信）"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-22T00:04:07.699957+00:00"
+  },
+  {
+    "slug": "slash-commandsによる専門タスクの定型化",
+    "name": "Slash Commandsによる専門タスクの定型化",
+    "category": "claude-code-workflow",
+    "description": "複雑なプロンプトや手順を単一のコマンド（例：`/commit`、`/tdd`、`/create-pr`）にカプセル化し、再利用可能にする",
+    "trigger_phrases": [
+      "頻繁に繰り返すタスク（コミット、PR作成、Issue分析、ドキュメント更新など）があり、手順を標準化したい場合",
+      "Slash Commandsによる専門タスクの定型化",
+      "/commit（conventional commit形式）",
+      "/create-pr（PR作成自動化）",
+      "/tdd（TDD workflow）",
+      "/analyze-issue（GitHub issue分析）",
+      "/create-hook（hook生成支援）"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-22T00:04:07.699957+00:00"
+  },
+  {
+    "slug": "claudemdによるプロジェクト文脈の注入",
+    "name": "CLAUDE.mdによるプロジェクト文脈の注入",
+    "category": "claude-code-workflow",
+    "description": "プロジェクトルートまたは`.claude/`ディレクトリに`CLAUDE.md`ファイルを配置し、コーディング規約・アーキテクチャ・ビルドコマンド等の文脈情報をClaude Codeに自動的に伝える",
+    "trigger_phrases": [
+      "複数人でClaude Codeを使う場合、プロジェクト固有の規約が多い場合、新メンバーのオンボーディングを効率化したい場合",
+      "CLAUDE.mdによるプロジェクト文脈の注入",
+      "Metabase CLAUDE.md（Clojure/ClojureScript、REPL駆動開発）",
+      "Giselle CLAUDE.md（pnpm、Vitest、厳格なフォーマット）",
+      "LangGraphJS CLAUDE.md（TypeScript、monorepo、yarn workspaces）"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-22T00:04:07.699957+00:00"
+  },
+  {
+    "slug": "skillsによる専門知識の外部化",
+    "name": "Skillsによる専門知識の外部化",
+    "category": "claude-code-workflow",
+    "description": "特定ドメイン（セキュリティ監査、科学計算、DevOps等）の専門知識を独立したモジュール（Skill）として定義し、Claude Codeに動的にロードさせる",
+    "trigger_phrases": [
+      "特定ドメインの深い専門知識が必要だが、常にロードする必要はない場合（セキュリティ監査、科学計算、特定フレームワークのベストプラクティスなど）",
+      "Skillsによる専門知識の外部化",
+      "Trail of Bits Security Skills（セキュリティ監査）",
+      "Claude Scientific Skills（研究・科学・工学・分析）",
+      "Superpowers（SDLC全般のベストプラクティス）",
+      "cc-devops-skills（DevOps/IaC）"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-22T00:04:07.699957+00:00"
+  },
+  {
+    "slug": "orchestratorsによる並列マルチエージェント実行",
+    "name": "Orchestratorsによる並列マルチエージェント実行",
+    "category": "claude-code-workflow",
+    "description": "複数のClaude Codeインスタンスを並列実行し、タスクを分散処理してから結果を統合する",
+    "trigger_phrases": [
+      "複数の独立したタスクがあり、並列実行で時間を短縮したい場合（例：複数モジュールの同時開発、大量のテストケース生成、複数APIエンドポイントの実装）",
+      "Orchestratorsによる並列マルチエージェント実行",
+      "Auto-Claude（SDLCフルサイクル、kanban UI）",
+      "Claude Squad（複数ワークスペース管理）",
+      "TSK（Dockerサンドボックス、git branch返却）",
+      "Happy Coder（モバイル通知、並列実行）",
+      "複数のClaude Codeインスタンスを並列実行し、タスクを分散処理してから結果を統合する"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-22T00:04:07.699957+00:00"
+  },
+  {
+    "slug": "usage-monitorsによるコスト管理",
+    "name": "Usage Monitorsによるコスト管理",
+    "category": "claude-code-workflow",
+    "description": "Claude Codeのトークン消費量・コスト・セッション履歴を可視化し、使用状況を監視・分析する",
+    "trigger_phrases": [
+      "複数プロジェクトでClaude Codeを使っており、コストを管理したい場合。チームで使用量を共有・分析したい場合",
+      "Usage Monitorsによるコスト管理",
+      "ccflare（Web UI、詳細メトリクス）",
+      "better-ccflare（ccflareの改良版、複数プロバイダ対応）",
+      "CC Usage（CLI、ローカルログ解析）",
+      "Claudex（会話履歴ブラウザ、全文検索）",
+      "Claude Codeのトークン消費量・コスト・セッション履歴を可視化し、使用状況を監視・分析する"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-22T00:04:07.699957+00:00"
+  },
+  {
+    "slug": "デコレータでmcpツールを宣言",
+    "name": "デコレータでMCPツールを宣言",
+    "category": "other",
+    "description": "Python関数に`@mcp.tool`デコレータを付けるだけでMCPツールとして公開する",
+    "trigger_phrases": [
+      "既存のPython関数をLLMから呼び出せるようにしたい時、または新規にMCPツールを実装する時",
+      "デコレータでMCPツールを宣言",
+      "fastmcp",
+      "uv（推奨パッケージマネージャ）",
+      "Python関数に`@mcp.tool`デコレータを付けるだけでMCPツールとして公開する"
+    ],
+    "source_url": "https://github.com/PrefectHQ/fastmcp",
+    "source_author": "PrefectHQ",
+    "added_at": "2026-03-22T00:05:36.113799+00:00"
+  },
+  {
+    "slug": "fastmcpで3層アーキテクチャ構築",
+    "name": "FastMCPで3層アーキテクチャ構築",
+    "category": "prompt-engineering",
+    "description": "Servers（ツール公開）・Apps（UI統合）・Clients（サーバー接続）の3つのコンポーネントを組み合わせてMCPアプリを構築する",
+    "trigger_phrases": [
+      "ツールだけでなくリソース（データ）やプロンプトテンプレートも提供したい時、または既存MCPサーバーを統合したクライアントを作りたい時",
+      "FastMCPで3層アーキテクチャ構築",
+      "fastmcp（Servers/Apps/Clients全て含む）"
+    ],
+    "source_url": "https://github.com/PrefectHQ/fastmcp",
+    "source_author": "PrefectHQ",
+    "added_at": "2026-03-22T00:05:36.113799+00:00"
+  },
+  {
+    "slug": "uvでfastmcpをインストール",
+    "name": "uvでFastMCPをインストール",
+    "category": "other",
+    "description": "Astral社のuvパッケージマネージャでfastmcpをインストールする",
+    "trigger_phrases": [
+      "FastMCPを新規導入する時、または最新版にアップグレードする時",
+      "uvでFastMCPをインストール",
+      "uv",
+      "Astral社のuvパッケージマネージャでfastmcpをインストールする"
+    ],
+    "source_url": "https://github.com/PrefectHQ/fastmcp",
+    "source_author": "PrefectHQ",
+    "added_at": "2026-03-22T00:05:36.113799+00:00"
+  },
+  {
+    "slug": "既存sdkからfastmcpへ移行",
+    "name": "既存SDKからFastMCPへ移行",
+    "category": "dev-tool",
+    "description": "FastMCP v2、MCP Python SDK、または低レベルSDKからFastMCP v3以降へアップグレードする",
+    "trigger_phrases": [
+      "古いMCP SDK/FastMCPバージョンを使っている既存プロジェクトを最新版に移行したい時",
+      "既存SDKからFastMCPへ移行",
+      "fastmcp v3+"
+    ],
+    "source_url": "https://github.com/PrefectHQ/fastmcp",
+    "source_author": "PrefectHQ",
+    "added_at": "2026-03-22T00:05:36.113799+00:00"
+  },
+  {
+    "slug": "llmstxt形式でドキュメント提供",
+    "name": "llms.txt形式でドキュメント提供",
+    "category": "context-management",
+    "description": "FastMCPのドキュメントをllms.txt標準に従ってLLM可読形式で公開する",
+    "trigger_phrases": [
+      "LLMにFastMCP APIやパターンを質問させたい時、または開発中にAI補完でドキュメント参照させたい時",
+      "llms.txt形式でドキュメント提供",
+      "llmstxt.org標準",
+      "FastMCPのドキュメントをllms.txt標準に従ってLLM可読形式で公開する"
+    ],
+    "source_url": "https://github.com/PrefectHQ/fastmcp",
+    "source_author": "PrefectHQ",
+    "added_at": "2026-03-22T00:05:36.113799+00:00"
+  },
+  {
+    "slug": "beadsをプロジェクトに導入してエージェントに永続メモリを与える",
+    "name": "Beadsをプロジェクトに導入してエージェントに永続メモリを与える",
+    "category": "claude-code-workflow",
+    "description": "BeadsというCLIツールをインストールし、プロジェクトルートで初期化することで、Doltベースのタスク管理DBを作成し、エージェントがJSONでタスクをCRUDできるようにする",
+    "trigger_phrases": [
+      "エージェントが複数セッションにまたがる長期タスクを扱う場合、または複数エージェント・ブランチで並行作業する場合",
+      "Beadsをプロジェクトに導入してエージェントに永続メモリを与える",
+      "Beads CLI (npm, Homebrew, Go install可能)",
+      "Dolt（バージョン管理可能なSQL DB）"
+    ],
+    "source_url": "https://github.com/steveyegge/beads",
+    "source_author": "steveyegge",
+    "added_at": "2026-03-22T00:07:11.854851+00:00"
+  },
+  {
+    "slug": "git不要モードでbeadsを使う",
+    "name": "Git不要モードでBeadsを使う",
+    "category": "agent-orchestration",
+    "description": "環境変数 `BEADS_DIR` を設定し `bd init --quiet --stealth` で初期化することで、Gitリポジトリがなくても任意のディレクトリでBeadsを動作させる",
+    "trigger_phrases": [
+      "Gitを使わないプロジェクト、モノレポの特定サブディレクトリ、CI/CDパイプライン、一時的な評価環境でBeadsを使いたい場合",
+      "Git不要モードでBeadsを使う",
+      "Beads CLI",
+      "Dolt"
+    ],
+    "source_url": "https://github.com/steveyegge/beads",
+    "source_author": "steveyegge",
+    "added_at": "2026-03-22T00:07:11.854851+00:00"
+  },
+  {
+    "slug": "階層idでエピックタスクサブタスクを管理する",
+    "name": "階層IDでエピック・タスク・サブタスクを管理する",
+    "category": "agent-orchestration",
+    "description": "Beadsはハッシュベースの階層ID（`bd-a3f8`, `bd-a3f8.1`, `bd-a3f8.1.1`）を使い、エピック配下のタスク・サブタスクを構造化して管理する",
+    "trigger_phrases": [
+      "大規模な機能開発やリファクタリングをエージェントに段階的に実行させたい場合",
+      "階層IDでエピック・タスク・サブタスクを管理する",
+      "Beads CLI"
+    ],
+    "source_url": "https://github.com/steveyegge/beads",
+    "source_author": "steveyegge",
+    "added_at": "2026-03-22T00:07:11.854851+00:00"
+  },
+  {
+    "slug": "コントリビューターモードで個人計画を分離する",
+    "name": "コントリビューターモードで個人計画を分離する",
+    "category": "agent-orchestration",
+    "description": "`bd init --contributor` でBeadsを初期化すると、計画用タスクを別リポジトリ（例: `~/.beads-planning`）に保存し、PR時に実験的なタスクが混入しないようにする",
+    "trigger_phrases": [
+      "OSSプロジェクトのフォークで作業し、個人メモをPRから除外したい場合",
+      "コントリビューターモードで個人計画を分離する",
+      "Beads CLI"
+    ],
+    "source_url": "https://github.com/steveyegge/beads",
+    "source_author": "steveyegge",
+    "added_at": "2026-03-22T00:07:11.854851+00:00"
+  },
+  {
+    "slug": "stealthモードでローカル専用タスク管理",
+    "name": "Stealthモードでローカル専用タスク管理",
+    "category": "agent-orchestration",
+    "description": "`bd init --stealth` で初期化すると、Beadsの `.beads/` ディレクトリやGitフックをコミットせず、ローカル専用でタスク管理できる",
+    "trigger_phrases": [
+      "チーム全体がBeadsを導入していないプロジェクトで、個人的に使いたい場合",
+      "Stealthモードでローカル専用タスク管理",
+      "Beads CLI"
+    ],
+    "source_url": "https://github.com/steveyegge/beads",
+    "source_author": "steveyegge",
+    "added_at": "2026-03-22T00:07:11.854851+00:00"
   }
 ]

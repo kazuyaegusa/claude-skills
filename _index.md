@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 504 スキル
+合計: 520 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -508,3 +508,19 @@
 | npx-skills-add-によるウィザード式インストール | npx skills add によるウィザード式インストール | claude-code-workflow | `npx skills add microsoft/skills` を実行すると、対話式ウィザードで必要なSkillだけ | microsoft |
 | mcp-server-skill-の連携 | MCP server + Skill の連携 | claude-code-workflow | Model Context Protocol(MCP) serverでドキュメント検索・GitHub操作等のツールを提供 | microsoft |
 | context-driven-development-アーキテクチャ | Context-Driven Development アーキテクチャ | claude-code-workflow | Skills(知識) + MCP servers(ツール) + Custom Agents(役割) + AGENTS.m | microsoft |
+| hooksによるライフサイクル介入 | Hooksによるライフサイクル介入 | claude-code-workflow | Claude Codeの特定のライフサイクルイベント（ファイル書き込み前後、コマンド実行前後など）で任意のスクリプトを実 | hesreallyhim |
+| slash-commandsによる専門タスクの定型化 | Slash Commandsによる専門タスクの定型化 | claude-code-workflow | 複雑なプロンプトや手順を単一のコマンド（例：`/commit`、`/tdd`、`/create-pr`）にカプセル化し、 | hesreallyhim |
+| claudemdによるプロジェクト文脈の注入 | CLAUDE.mdによるプロジェクト文脈の注入 | claude-code-workflow | プロジェクトルートまたは`.claude/`ディレクトリに`CLAUDE.md`ファイルを配置し、コーディング規約・アー | hesreallyhim |
+| skillsによる専門知識の外部化 | Skillsによる専門知識の外部化 | claude-code-workflow | 特定ドメイン（セキュリティ監査、科学計算、DevOps等）の専門知識を独立したモジュール（Skill）として定義し、Cl | hesreallyhim |
+| orchestratorsによる並列マルチエージェント実行 | Orchestratorsによる並列マルチエージェント実行 | claude-code-workflow | 複数のClaude Codeインスタンスを並列実行し、タスクを分散処理してから結果を統合する | hesreallyhim |
+| usage-monitorsによるコスト管理 | Usage Monitorsによるコスト管理 | claude-code-workflow | Claude Codeのトークン消費量・コスト・セッション履歴を可視化し、使用状況を監視・分析する | hesreallyhim |
+| デコレータでmcpツールを宣言 | デコレータでMCPツールを宣言 | other | Python関数に`@mcp.tool`デコレータを付けるだけでMCPツールとして公開する | PrefectHQ |
+| fastmcpで3層アーキテクチャ構築 | FastMCPで3層アーキテクチャ構築 | prompt-engineering | Servers（ツール公開）・Apps（UI統合）・Clients（サーバー接続）の3つのコンポーネントを組み合わせてM | PrefectHQ |
+| uvでfastmcpをインストール | uvでFastMCPをインストール | other | Astral社のuvパッケージマネージャでfastmcpをインストールする | PrefectHQ |
+| 既存sdkからfastmcpへ移行 | 既存SDKからFastMCPへ移行 | dev-tool | FastMCP v2、MCP Python SDK、または低レベルSDKからFastMCP v3以降へアップグレードする | PrefectHQ |
+| llmstxt形式でドキュメント提供 | llms.txt形式でドキュメント提供 | context-management | FastMCPのドキュメントをllms.txt標準に従ってLLM可読形式で公開する | PrefectHQ |
+| beadsをプロジェクトに導入してエージェントに永続メモリを与える | Beadsをプロジェクトに導入してエージェントに永続メモリを与える | claude-code-workflow | BeadsというCLIツールをインストールし、プロジェクトルートで初期化することで、Doltベースのタスク管理DBを作成 | steveyegge |
+| git不要モードでbeadsを使う | Git不要モードでBeadsを使う | agent-orchestration | 環境変数 `BEADS_DIR` を設定し `bd init --quiet --stealth` で初期化することで、 | steveyegge |
+| 階層idでエピックタスクサブタスクを管理する | 階層IDでエピック・タスク・サブタスクを管理する | agent-orchestration | Beadsはハッシュベースの階層ID（`bd-a3f8`, `bd-a3f8.1`, `bd-a3f8.1.1`）を使い | steveyegge |
+| コントリビューターモードで個人計画を分離する | コントリビューターモードで個人計画を分離する | agent-orchestration | `bd init --contributor` でBeadsを初期化すると、計画用タスクを別リポジトリ（例: `~/.b | steveyegge |
+| stealthモードでローカル専用タスク管理 | Stealthモードでローカル専用タスク管理 | agent-orchestration | `bd init --stealth` で初期化すると、Beadsの `.beads/` ディレクトリやGitフックをコ | steveyegge |
