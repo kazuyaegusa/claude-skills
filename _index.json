@@ -8257,5 +8257,151 @@
     "source_url": "https://github.com/superset-sh/superset",
     "source_author": "superset-sh",
     "added_at": "2026-03-23T00:15:36.809876+00:00"
+  },
+  {
+    "slug": "oauth-debuggerで認証フロー全体を可視化する",
+    "name": "OAuth Debuggerで認証フロー全体を可視化する",
+    "category": "dev-tool",
+    "description": "MCPサーバーのOAuth実装を各ステップごとに詳細表示し、ネットワークメッセージを検査する",
+    "trigger_phrases": [
+      "MCPサーバーにOAuth認証を実装・デバッグする時、特に異なるプロトコルバージョン間の挙動差異を確認したい時",
+      "OAuth Debuggerで認証フロー全体を可視化する",
+      "MCPJam Inspector OAuth Debugger",
+      "OAuth 2.0仕様（03-26, 06-18, 11-25対応）",
+      "DCR (Dynamic Client Registration)",
+      "CIMD (Client ID Metadata Documents)",
+      "MCPサーバーのOAuth実装を各ステップごとに詳細表示し、ネットワークメッセージを検査する"
+    ],
+    "source_url": "https://github.com/MCPJam/inspector",
+    "source_author": "MCPJam",
+    "added_at": "2026-03-23T00:19:25.603266+00:00"
+  },
+  {
+    "slug": "llm-playgroundで複数モデルに対してサーバーをテストする",
+    "name": "LLM Playgroundで複数モデルに対してサーバーをテストする",
+    "category": "prompt-engineering",
+    "description": "GPT-5、Claude Sonnet、Gemini 2.5等のフロンティアモデルを使い、MCPサーバーの応答を無料でテストする",
+    "trigger_phrases": [
+      "MCPサーバーを複数LLMプロバイダーに対応させたい時、またはモデル間の挙動差異を比較検証したい時",
+      "LLM Playgroundで複数モデルに対してサーバーをテストする",
+      "MCPJam Inspector LLM Playground",
+      "GPT-5",
+      "Claude Sonnet",
+      "Gemini 2.5"
+    ],
+    "source_url": "https://github.com/MCPJam/inspector",
+    "source_author": "MCPJam",
+    "added_at": "2026-03-23T00:19:25.603266+00:00"
+  },
+  {
+    "slug": "dockerでポータブルなテスト環境を構築する",
+    "name": "Dockerでポータブルなテスト環境を構築する",
+    "category": "automation-pipeline",
+    "description": "MCPJam InspectorをDockerコンテナで起動し、チーム全体で統一されたテスト環境を提供する",
+    "trigger_phrases": [
+      "CI/CD環境でMCPサーバーのE2Eテストを自動化したい時、またはチーム全員が同一バージョンのInspectorを使いたい時",
+      "Dockerでポータブルなテスト環境を構築する",
+      "Docker",
+      "mcpjam/mcp-inspector イメージ"
+    ],
+    "source_url": "https://github.com/MCPJam/inspector",
+    "source_author": "MCPJam",
+    "added_at": "2026-03-23T00:19:25.603266+00:00"
+  },
+  {
+    "slug": "手動ツール実行でウィジェットを即座にプレビューする",
+    "name": "手動ツール実行でウィジェットを即座にプレビューする",
+    "category": "prompt-engineering",
+    "description": "LLMを介さず、MCPツールを直接実行してウィジェット/リソース/プロンプトの表示を確認する",
+    "trigger_phrases": [
+      "ツール単体の動作確認時、ウィジェットUIの見た目を素早く調整したい時",
+      "手動ツール実行でウィジェットを即座にプレビューする",
+      "MCPJam Inspector MCP Tools/Resources/Prompts UI",
+      "LLMを介さず、MCPツールを直接実行してウィジェット/リソース/プロンプトの表示を確認する"
+    ],
+    "source_url": "https://github.com/MCPJam/inspector",
+    "source_author": "MCPJam",
+    "added_at": "2026-03-23T00:19:25.603266+00:00"
+  },
+  {
+    "slug": "段階的文脈注入progressive-disclosureでエージェントを専門化する",
+    "name": "段階的文脈注入（Progressive Disclosure）でエージェントを専門化する",
+    "category": "claude-code-workflow",
+    "description": "CLAUDE.mdをエントリポイントとし、関連性に応じてTier1（思考フレームワーク）、Tier2（エキスパートペルソナ）を段階的にロードして、汎用LLMを専門家に変える",
+    "trigger_phrases": [
+      "汎用LLMエージェントを特定ドメインの専門家に変えたい時、または大規模プロンプトのコスト最適化が必要な時",
+      "段階的文脈注入（Progressive Disclosure）でエージェントを専門化する",
+      "Claude Code",
+      "CLAUDE.md",
+      ".claude/skills/",
+      ".claude/agents/"
+    ],
+    "source_url": "https://github.com/gadievron/raptor",
+    "source_author": "gadievron",
+    "added_at": "2026-03-23T00:21:31.621080+00:00"
+  },
+  {
+    "slug": "litellm統合でマルチllmプロバイダをオーケストレーションする",
+    "name": "LiteLLM統合でマルチLLMプロバイダをオーケストレーションする",
+    "category": "claude-code-workflow",
+    "description": "LiteLLMを使ってAnthropic、OpenAI、Gemini、Ollama等を統一インターフェースで扱い、自動フォールバック・コスト追跡・予算強制を実現",
+    "trigger_phrases": [
+      "複数LLMプロバイダを使い分けたい時、コスト上限を厳守したい時、ローカルとクラウドAPIをフォールバック構成にしたい時",
+      "LiteLLM統合でマルチLLMプロバイダをオーケストレーションする",
+      "LiteLLM",
+      "Pydantic（YAML検証）"
+    ],
+    "source_url": "https://github.com/gadievron/raptor",
+    "source_author": "gadievron",
+    "added_at": "2026-03-23T00:21:31.621080+00:00"
+  },
+  {
+    "slug": "セキュリティツールチェーンをllmで自律オーケストレーションする",
+    "name": "セキュリティツールチェーンをLLMで自律オーケストレーションする",
+    "category": "claude-code-workflow",
+    "description": "Semgrep（静的解析）→CodeQL（データフロー検証）→AFL（ファジング）→LLM分析→PoC生成→パッチ提案を一貫してエージェントが自動実行",
+    "trigger_phrases": [
+      "セキュリティスキャンから修正までを自動化したい時、既存ツールチェーンをLLMで統合したい時",
+      "セキュリティツールチェーンをLLMで自律オーケストレーションする",
+      "Semgrep",
+      "CodeQL",
+      "AFL++",
+      "LiteLLM"
+    ],
+    "source_url": "https://github.com/gadievron/raptor",
+    "source_author": "gadievron",
+    "added_at": "2026-03-23T00:21:31.621080+00:00"
+  },
+  {
+    "slug": "secopsagentkitでオフェンシブセキュリティタスクを専門サブエージェントに委譲する",
+    "name": "SecOpsAgentKitでオフェンシブセキュリティタスクを専門サブエージェントに委譲する",
+    "category": "claude-code-workflow",
+    "description": ".claude/agents/offsec-specialist.mdで定義された自律的なペネトレーションテスト専門エージェントに、SQLi/XSS/バイナリ解析等のタスクを委譲",
+    "trigger_phrases": [
+      "ペネトレーションテストを自動化したい時、多段階の攻撃シナリオを探索させたい時",
+      "SecOpsAgentKitでオフェンシブセキュリティタスクを専門サブエージェントに委譲する",
+      "SecOpsAgentKit（gitサブモジュール）",
+      ".claude/agents/offsec-specialist.md"
+    ],
+    "source_url": "https://github.com/gadievron/raptor",
+    "source_author": "gadievron",
+    "added_at": "2026-03-23T00:21:31.621080+00:00"
+  },
+  {
+    "slug": "oss-forensicsで削除されたgithub履歴をbigquerywayback-machineで復元する",
+    "name": "OSS Forensicsで削除されたGitHub履歴をBigQuery+Wayback Machineで復元する",
+    "category": "claude-code-workflow",
+    "description": "/oss-forensicsコマンドでGitHub Archive（BigQuery）、Wayback Machine、ローカルgit履歴から証拠を収集し、削除されたコミット・イシュー・リポジトリを復元",
+    "trigger_phrases": [
+      "GitHubリポジトリのセキュリティインシデント調査、削除された履歴の復元、証拠ベースの帰属分析が必要な時",
+      "OSS Forensicsで削除されたGitHub履歴をBigQuery+Wayback Machineで復元する",
+      "GH Archive（BigQuery）",
+      "GitHub API",
+      "Wayback Machine",
+      "git"
+    ],
+    "source_url": "https://github.com/gadievron/raptor",
+    "source_author": "gadievron",
+    "added_at": "2026-03-23T00:21:31.621080+00:00"
   }
 ]

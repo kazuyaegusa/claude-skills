@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 594 スキル
+合計: 603 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -598,3 +598,12 @@
 | 統合監視uiでエージェント状態を一元管理 | 統合監視UIでエージェント状態を一元管理 | agent-orchestration | Electron製デスクトップアプリ（Superset）で複数worktree/エージェントのステータス、変更内容、通知 | superset-sh |
 | workspace-presetで環境セットアップ自動化 | Workspace Presetで環境セットアップ自動化 | agent-orchestration | .superset/config.json にセットアップ・ティアダウンスクリプトを定義し、worktree作成時に自動 | superset-sh |
 | キーボードショートカットで高速切り替え | キーボードショートカットで高速切り替え | agent-orchestration | Superset UIに組み込まれたカスタマイズ可能なショートカット（⌘1-9でワークスペース切替、⌘Tで新規タブ、⌘D | superset-sh |
+| oauth-debuggerで認証フロー全体を可視化する | OAuth Debuggerで認証フロー全体を可視化する | dev-tool | MCPサーバーのOAuth実装を各ステップごとに詳細表示し、ネットワークメッセージを検査する | MCPJam |
+| llm-playgroundで複数モデルに対してサーバーをテストする | LLM Playgroundで複数モデルに対してサーバーをテストする | prompt-engineering | GPT-5、Claude Sonnet、Gemini 2.5等のフロンティアモデルを使い、MCPサーバーの応答を無料でテ | MCPJam |
+| dockerでポータブルなテスト環境を構築する | Dockerでポータブルなテスト環境を構築する | automation-pipeline | MCPJam InspectorをDockerコンテナで起動し、チーム全体で統一されたテスト環境を提供する | MCPJam |
+| 手動ツール実行でウィジェットを即座にプレビューする | 手動ツール実行でウィジェットを即座にプレビューする | prompt-engineering | LLMを介さず、MCPツールを直接実行してウィジェット/リソース/プロンプトの表示を確認する | MCPJam |
+| 段階的文脈注入progressive-disclosureでエージェントを専門化する | 段階的文脈注入（Progressive Disclosure）でエージェントを専門化する | claude-code-workflow | CLAUDE.mdをエントリポイントとし、関連性に応じてTier1（思考フレームワーク）、Tier2（エキスパートペルソ | gadievron |
+| litellm統合でマルチllmプロバイダをオーケストレーションする | LiteLLM統合でマルチLLMプロバイダをオーケストレーションする | claude-code-workflow | LiteLLMを使ってAnthropic、OpenAI、Gemini、Ollama等を統一インターフェースで扱い、自動フ | gadievron |
+| セキュリティツールチェーンをllmで自律オーケストレーションする | セキュリティツールチェーンをLLMで自律オーケストレーションする | claude-code-workflow | Semgrep（静的解析）→CodeQL（データフロー検証）→AFL（ファジング）→LLM分析→PoC生成→パッチ提案を | gadievron |
+| secopsagentkitでオフェンシブセキュリティタスクを専門サブエージェントに委譲する | SecOpsAgentKitでオフェンシブセキュリティタスクを専門サブエージェントに委譲する | claude-code-workflow | .claude/agents/offsec-specialist.mdで定義された自律的なペネトレーションテスト専門エー | gadievron |
+| oss-forensicsで削除されたgithub履歴をbigquerywayback-machineで復元する | OSS Forensicsで削除されたGitHub履歴をBigQuery+Wayback Machineで復元する | claude-code-workflow | /oss-forensicsコマンドでGitHub Archive（BigQuery）、Wayback Machine、 | gadievron |
