@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 566 スキル
+合計: 578 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -570,3 +570,15 @@
 | agent-skills-による専門知識のモジュール化 | Agent Skills による専門知識のモジュール化 | claude-code-workflow | 特定ドメイン（セキュリティ監査、科学計算、デザインレビューなど）の専門知識をスキルファイルとしてパッケージ化し、Clau | hesreallyhim |
 | 使用状況監視ツールによるトークン消費の可視化 | 使用状況監視ツールによるトークン消費の可視化 | claude-code-workflow | Claude Code のログファイルを解析し、トークン消費量・コスト・セッション履歴などをダッシュボードで可視化する | hesreallyhim |
 | オーケストレーターによる複数-claude-code-セッションの並列制御 | オーケストレーターによる複数 Claude Code セッションの並列制御 | claude-code-workflow | 複数の Claude Code インスタンスを並列起動し、異なるタスク（フロントエンド開発、バックエンド開発、テストなど | hesreallyhim |
+| デコレータベースのツール定義でmcpスキーマ自動生成 | デコレータベースのツール定義でMCPスキーマ自動生成 | other | Python関数に`@mcp.tool`デコレータを付けるだけで、MCP準拠のツールスキーマ・バリデーション・ドキュメン | PrefectHQ |
+| fastmcpの3本柱アーキテクチャで役割分離 | FastMCPの3本柱アーキテクチャで役割分離 | prompt-engineering | Servers（ツール公開）、Apps（UI提供）、Clients（サーバー接続）の3コンポーネントを使い分けてMCPア | PrefectHQ |
+| url接続でトランスポート層を抽象化 | URL接続でトランスポート層を抽象化 | dev-tool | Clientsを使う際、MCPサーバーへの接続をURLで指定するだけで、トランスポート（stdio/SSE/WebSoc | PrefectHQ |
+| uv経由でのインストールで依存解決を高速化 | uv経由でのインストールで依存解決を高速化 | automation-pipeline | FastMCPのインストールを`uv pip install fastmcp`で行い、従来のpipより高速な依存解決を利 | PrefectHQ |
+| prefect-horizon無料ホスティングで本番デプロイ | Prefect Horizon無料ホスティングで本番デプロイ | automation-pipeline | 開発したFastMCPサーバーをPrefect Horizonにデプロイし、無料で本番環境として公開する | PrefectHQ |
+| カテゴリ別サブエージェントのプラグインインストール | カテゴリ別サブエージェントのプラグインインストール | claude-code-workflow | 10カテゴリ（Core Development、Language Specialists、Infrastructure、 | VoltAgent |
+| サブエージェントのマニュアルインストールとカスタマイズ | サブエージェントのマニュアルインストールとカスタマイズ | claude-code-workflow | GitHubリポジトリから特定のサブエージェントファイル（Markdown形式）をダウンロードし、`~/.claude/ | VoltAgent |
+| モデル選択による品質とコスト最適化 | モデル選択による品質とコスト最適化 | claude-code-workflow | 各サブエージェントのYAMLフロントマターに記載された`model`フィールド（opus, sonnet, haiku） | VoltAgent |
+| ツール権限の最小化によるセキュリティ確保 | ツール権限の最小化によるセキュリティ確保 | claude-code-workflow | 各サブエージェントの`tools`フィールドに、そのエージェントが実行可能なClaude Code組み込みツール（Rea | VoltAgent |
+| グローバルとプロジェクト固有のエージェント使い分け | グローバルとプロジェクト固有のエージェント使い分け | claude-code-workflow | `~/.claude/agents/`（グローバル）にチーム共通のエージェントを配置し、`.claude/agents/ | VoltAgent |
+| 独立コンテキストウィンドウによるタスク分離 | 独立コンテキストウィンドウによるタスク分離 | claude-code-workflow | 各サブエージェントは独立したコンテキストウィンドウ内で動作するため、メインの会話履歴と混ざらず、タスク固有の詳細情報が隔 | VoltAgent |
+| メタオーケストレーションエージェントによる複雑ワークフローの自動化 | メタオーケストレーションエージェントによる複雑ワークフローの自動化 | claude-code-workflow | Meta & Orchestrationカテゴリのエージェント（multi-agent-coordinator, wor | VoltAgent |

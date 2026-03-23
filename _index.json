@@ -7836,5 +7836,182 @@
     "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
     "source_author": "hesreallyhim",
     "added_at": "2026-03-23T00:05:58.321120+00:00"
+  },
+  {
+    "slug": "デコレータベースのツール定義でmcpスキーマ自動生成",
+    "name": "デコレータベースのツール定義でMCPスキーマ自動生成",
+    "category": "other",
+    "description": "Python関数に`@mcp.tool`デコレータを付けるだけで、MCP準拠のツールスキーマ・バリデーション・ドキュメントが自動生成される",
+    "trigger_phrases": [
+      "Pythonで書かれた既存ロジックをMCPツールとして公開したいとき。型ヒントとdocstringだけでスキーマが自動生成されるため、追加の定義ファイルが不要",
+      "デコレータベースのツール定義でMCPスキーマ自動生成",
+      "fastmcp (PyPI: uv pip install fastmcp)"
+    ],
+    "source_url": "https://github.com/PrefectHQ/fastmcp",
+    "source_author": "PrefectHQ",
+    "added_at": "2026-03-23T00:07:37.492153+00:00"
+  },
+  {
+    "slug": "fastmcpの3本柱アーキテクチャで役割分離",
+    "name": "FastMCPの3本柱アーキテクチャで役割分離",
+    "category": "prompt-engineering",
+    "description": "Servers（ツール公開）、Apps（UI提供）、Clients（サーバー接続）の3コンポーネントを使い分けてMCPアプリケーションを構築する",
+    "trigger_phrases": [
+      "MCPサーバー開発時は最初からこの構造を意識する。特に、外部MCPサーバーと連携する場合はClientsを使い、会話UIが必要ならAppsを追加する",
+      "FastMCPの3本柱アーキテクチャで役割分離",
+      "fastmcp"
+    ],
+    "source_url": "https://github.com/PrefectHQ/fastmcp",
+    "source_author": "PrefectHQ",
+    "added_at": "2026-03-23T00:07:37.492153+00:00"
+  },
+  {
+    "slug": "url接続でトランスポート層を抽象化",
+    "name": "URL接続でトランスポート層を抽象化",
+    "category": "dev-tool",
+    "description": "Clientsを使う際、MCPサーバーへの接続をURLで指定するだけで、トランスポート（stdio/SSE/WebSocket）・認証・プロトコルライフサイクルが自動処理される",
+    "trigger_phrases": [
+      "他のMCPサーバーをプログラムから利用したいとき。ローカル開発ではstdio、本番ではHTTP/SSEに切り替える場合でも、URLを変えるだけでコード変更不要",
+      "URL接続でトランスポート層を抽象化",
+      "fastmcp"
+    ],
+    "source_url": "https://github.com/PrefectHQ/fastmcp",
+    "source_author": "PrefectHQ",
+    "added_at": "2026-03-23T00:07:37.492153+00:00"
+  },
+  {
+    "slug": "uv経由でのインストールで依存解決を高速化",
+    "name": "uv経由でのインストールで依存解決を高速化",
+    "category": "automation-pipeline",
+    "description": "FastMCPのインストールを`uv pip install fastmcp`で行い、従来のpipより高速な依存解決を利用する",
+    "trigger_phrases": [
+      "FastMCPを新規プロジェクトに導入するとき。特にCI/CDパイプラインで依存インストール時間を短縮したい場合",
+      "uv経由でのインストールで依存解決を高速化",
+      "uv (https://docs.astral.sh/uv/)",
+      "fastmcp"
+    ],
+    "source_url": "https://github.com/PrefectHQ/fastmcp",
+    "source_author": "PrefectHQ",
+    "added_at": "2026-03-23T00:07:37.492153+00:00"
+  },
+  {
+    "slug": "prefect-horizon無料ホスティングで本番デプロイ",
+    "name": "Prefect Horizon無料ホスティングで本番デプロイ",
+    "category": "automation-pipeline",
+    "description": "開発したFastMCPサーバーをPrefect Horizonにデプロイし、無料で本番環境として公開する",
+    "trigger_phrases": [
+      "プロトタイプを他者と共有したい、または本番環境で継続運用したいとき。インフラ管理を避けたい個人開発者やスタートアップに最適",
+      "Prefect Horizon無料ホスティングで本番デプロイ",
+      "Prefect Horizon (https://www.prefect.io/horizon)",
+      "fastmcp"
+    ],
+    "source_url": "https://github.com/PrefectHQ/fastmcp",
+    "source_author": "PrefectHQ",
+    "added_at": "2026-03-23T00:07:37.492153+00:00"
+  },
+  {
+    "slug": "カテゴリ別サブエージェントのプラグインインストール",
+    "name": "カテゴリ別サブエージェントのプラグインインストール",
+    "category": "claude-code-workflow",
+    "description": "10カテゴリ（Core Development、Language Specialists、Infrastructure、Quality & Security、Data & AI、Developer Experience、Specialized Domains、Business & Product、Meta & Orchestration、Research & Analysis）に分類された127以上のサブエージェントを、Claude Code プラグインマーケットプレイス経由で一括または個別にインストールする",
+    "trigger_phrases": [
+      "新規プロジェクト開始時、チーム標準ツールセットを構築する時、特定技術スタック（React、Kubernetes、Terraform等）に特化した開発環境を整える時",
+      "カテゴリ別サブエージェントのプラグインインストール",
+      "Claude Code CLI",
+      "VoltAgent/awesome-claude-code-subagents プラグインマーケットプレイス"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-03-23T00:10:13.358875+00:00"
+  },
+  {
+    "slug": "サブエージェントのマニュアルインストールとカスタマイズ",
+    "name": "サブエージェントのマニュアルインストールとカスタマイズ",
+    "category": "claude-code-workflow",
+    "description": "GitHubリポジトリから特定のサブエージェントファイル（Markdown形式）をダウンロードし、`~/.claude/agents/`（グローバル）または`.claude/agents/`（プロジェクト固有）に配置してカスタマイズする",
+    "trigger_phrases": [
+      "特定のエージェントだけが必要な場合、社内独自のコーディング規約やツールチェーンに合わせてエージェントをカスタマイズしたい場合、プラグインインストールが制限されている環境",
+      "サブエージェントのマニュアルインストールとカスタマイズ",
+      "git clone または curl/wget",
+      "テキストエディタ（エージェント定義編集用）"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-03-23T00:10:13.358875+00:00"
+  },
+  {
+    "slug": "モデル選択による品質とコスト最適化",
+    "name": "モデル選択による品質とコスト最適化",
+    "category": "claude-code-workflow",
+    "description": "各サブエージェントのYAMLフロントマターに記載された`model`フィールド（opus, sonnet, haiku）に基づき、タスクの複雑度に応じて最適なClaudeモデルを自動選択する",
+    "trigger_phrases": [
+      "コスト削減が重要なプロジェクト、タスクごとに品質要求が明確に異なる場合、セキュリティやアーキテクチャなど高精度が求められる一部のタスクだけOpusを使いたい場合",
+      "モデル選択による品質とコスト最適化",
+      "Claude Code CLI（モデル自動選択機能）"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-03-23T00:10:13.358875+00:00"
+  },
+  {
+    "slug": "ツール権限の最小化によるセキュリティ確保",
+    "name": "ツール権限の最小化によるセキュリティ確保",
+    "category": "claude-code-workflow",
+    "description": "各サブエージェントの`tools`フィールドに、そのエージェントが実行可能なClaude Code組み込みツール（Read, Write, Edit, Bash, Glob, Grep, WebFetch, WebSearch等）を明示的に列挙し、不要な権限を与えない",
+    "trigger_phrases": [
+      "セキュリティが重要なプロジェクト、複数の外部協力者が同じエージェントを使う場合、監査やレビュー専用エージェントで意図しない変更を防ぎたい場合",
+      "ツール権限の最小化によるセキュリティ確保",
+      "Claude Code組み込みツール（Read, Write, Edit, Bash, Glob, Grep, WebFetch, WebSearch）",
+      "MCP（Model Context Protocol）サーバー（オプション）"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-03-23T00:10:13.358875+00:00"
+  },
+  {
+    "slug": "グローバルとプロジェクト固有のエージェント使い分け",
+    "name": "グローバルとプロジェクト固有のエージェント使い分け",
+    "category": "claude-code-workflow",
+    "description": "`~/.claude/agents/`（グローバル）にチーム共通のエージェントを配置し、`.claude/agents/`（プロジェクト固有）にプロジェクト独自のカスタマイズ版や追加エージェントを配置することで、汎用性と特殊性を両立させる",
+    "trigger_phrases": [
+      "複数プロジェクトを並行運用している場合、チーム全体で統一されたベストプラクティスを維持しつつプロジェクトごとの特殊要件にも対応したい場合",
+      "グローバルとプロジェクト固有のエージェント使い分け",
+      "Claude Code CLI",
+      "git（チーム間でのエージェント共有用）"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-03-23T00:10:13.358875+00:00"
+  },
+  {
+    "slug": "独立コンテキストウィンドウによるタスク分離",
+    "name": "独立コンテキストウィンドウによるタスク分離",
+    "category": "claude-code-workflow",
+    "description": "各サブエージェントは独立したコンテキストウィンドウ内で動作するため、メインの会話履歴と混ざらず、タスク固有の詳細情報が隔離される",
+    "trigger_phrases": [
+      "複数の専門領域にまたがる大規模開発、並行して複数のレビューやテストを実施する場合、メインの会話をクリーンに保ちたい場合",
+      "独立コンテキストウィンドウによるタスク分離",
+      "Claude Code（サブエージェントコンテキスト管理機能）"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-03-23T00:10:13.358875+00:00"
+  },
+  {
+    "slug": "メタオーケストレーションエージェントによる複雑ワークフローの自動化",
+    "name": "メタオーケストレーションエージェントによる複雑ワークフローの自動化",
+    "category": "claude-code-workflow",
+    "description": "Meta & Orchestrationカテゴリのエージェント（multi-agent-coordinator, workflow-orchestrator, task-distributor等）を使い、複数のサブエージェントを組み合わせた複雑なワークフローを自動化する",
+    "trigger_phrases": [
+      "反復的なSDLCワークフローを自動化したい場合、複数の専門家エージェントの知見を統合して意思決定したい場合、大規模リファクタリングやマイクレーション等の長期プロジェクトを段階的に進める場合",
+      "メタオーケストレーションエージェントによる複雑ワークフローの自動化",
+      "voltagent-meta プラグイン",
+      "multi-agent-coordinator, workflow-orchestrator, task-distributor等のエージェント",
+      "Pied Piper（SDLC反復ワークフロー専用）",
+      "Taskade MCP（リアルタイムコラボレーション対応）"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-03-23T00:10:13.358875+00:00"
   }
 ]
