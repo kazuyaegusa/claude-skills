@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 552 スキル
+合計: 566 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -556,3 +556,17 @@
 | workspace-setupteardownスクリプトによる環境自動化 | workspace setup/teardownスクリプトによる環境自動化 | agent-orchestration | workspaceごとに.envコピー、依存インストール、DB初期化等を自動実行する | superset-sh |
 | ワンクリックエディタターミナル遷移による高速レビュー | ワンクリックエディタ/ターミナル遷移による高速レビュー | agent-orchestration | diff viewerで変更確認後、⌘Oでエディタまたはターミナルを開いて即座に編集できる | superset-sh |
 | プリセットベースのターミナル分割レイアウト | プリセットベースのターミナル分割レイアウト | agent-orchestration | よく使うコマンド組み合わせ（dev server + log watch等）をプリセット保存し、Ctrl+1-9で即起動 | superset-sh |
+| トークン最適化設定による-60-70-コスト削減 | トークン最適化設定による 60-70% コスト削減 | claude-code-workflow | model, MAX_THINKING_TOKENS, CLAUDE_AUTOCOMPACT_PCT_OVERRIDE  | affaan-m |
+| フック駆動の自動品質ゲート | フック駆動の自動品質ゲート | claude-code-workflow | ツール実行の前後で自動的にチェック（console.log 検出、シークレット検出、フォーマット実行）を挟み込む | affaan-m |
+| 継続学習-v2instinct-ベース | 継続学習 v2（Instinct ベース） | claude-code-workflow | セッションから自動的にパターンを抽出し、信頼度スコア付きで蓄積。関連するパターンをクラスタリングして再利用可能なスキルに | affaan-m |
+| 検証ループeval-harness | 検証ループ（Eval Harness） | claude-code-workflow | ビルド・テスト・リント・型チェック・セキュリティスキャンを自動実行し、結果を評価。pass@k メトリクスで品質を定量化 | affaan-m |
+| クロスプラットフォームインストール | クロスプラットフォームインストール | claude-code-workflow | 単一のインストーラーで、Claude Code/Cursor/Codex/OpenCode に対応した設定を自動配置 | affaan-m |
+| agentshield-セキュリティスキャン | AgentShield セキュリティスキャン | claude-code-workflow | CLAUDE.md, settings.json, MCP configs, hooks, agents, skills | affaan-m |
+| マニフェスト駆動の選択的インストール | マニフェスト駆動の選択的インストール | agent-orchestration | ユーザーが必要なコンポーネント（agents/commands/skills/rules）だけをインタラクティブに選択し | affaan-m |
+| カテゴリ別リソース分類によるエコシステム整理 | カテゴリ別リソース分類によるエコシステム整理 | claude-code-workflow | Claude Code の拡張機能を「Agent Skills」「Workflows」「Tooling」「Status  | hesreallyhim |
+| フックhooksを活用した-claude-code-のライフサイクル制御 | フック（Hooks）を活用した Claude Code のライフサイクル制御 | claude-code-workflow | Claude Code の動作ライフサイクルの特定ポイント（ファイル書き込み前、コマンド実行前など）でスクリプトを自動実 | hesreallyhim |
+| スラッシュコマンドによるカスタムプロンプトのテンプレート化 | スラッシュコマンドによるカスタムプロンプトのテンプレート化 | claude-code-workflow | 頻繁に使う複雑なプロンプトを `/commit`、`/tdd`、`/create-pr` などのスラッシュコマンドとして | hesreallyhim |
+| claudemd-によるプロジェクト固有ルールの注入 | CLAUDE.md によるプロジェクト固有ルールの注入 | claude-code-workflow | プロジェクトルートに `CLAUDE.md` ファイルを配置し、コーディング規約・アーキテクチャ・禁止事項などを Cla | hesreallyhim |
+| agent-skills-による専門知識のモジュール化 | Agent Skills による専門知識のモジュール化 | claude-code-workflow | 特定ドメイン（セキュリティ監査、科学計算、デザインレビューなど）の専門知識をスキルファイルとしてパッケージ化し、Clau | hesreallyhim |
+| 使用状況監視ツールによるトークン消費の可視化 | 使用状況監視ツールによるトークン消費の可視化 | claude-code-workflow | Claude Code のログファイルを解析し、トークン消費量・コスト・セッション履歴などをダッシュボードで可視化する | hesreallyhim |
+| オーケストレーターによる複数-claude-code-セッションの並列制御 | オーケストレーターによる複数 Claude Code セッションの並列制御 | claude-code-workflow | 複数の Claude Code インスタンスを並列起動し、異なるタスク（フロントエンド開発、バックエンド開発、テストなど | hesreallyhim |

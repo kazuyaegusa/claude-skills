@@ -7612,5 +7612,229 @@
     "source_url": "https://github.com/superset-sh/superset",
     "source_author": "superset-sh",
     "added_at": "2026-03-22T00:21:51.477511+00:00"
+  },
+  {
+    "slug": "トークン最適化設定による-60-70-コスト削減",
+    "name": "トークン最適化設定による 60-70% コスト削減",
+    "category": "claude-code-workflow",
+    "description": "model, MAX_THINKING_TOKENS, CLAUDE_AUTOCOMPACT_PCT_OVERRIDE の 3 つを調整して、品質を維持しながらコストを大幅削減",
+    "trigger_phrases": [
+      "日次の利用限度に達しやすい、長時間セッションで品質が下がる、コスト管理が必要な場合",
+      "トークン最適化設定による 60-70% コスト削減",
+      "Claude Code CLI",
+      "settings.json"
+    ],
+    "source_url": "https://github.com/affaan-m/everything-claude-code",
+    "source_author": "affaan-m",
+    "added_at": "2026-03-23T00:03:56.465113+00:00"
+  },
+  {
+    "slug": "フック駆動の自動品質ゲート",
+    "name": "フック駆動の自動品質ゲート",
+    "category": "claude-code-workflow",
+    "description": "ツール実行の前後で自動的にチェック（console.log 検出、シークレット検出、フォーマット実行）を挟み込む",
+    "trigger_phrases": [
+      "コードレビューを自動化したい、シークレット漏洩を防ぎたい、フォーマットを強制したい",
+      "フック駆動の自動品質ゲート",
+      "Claude Code hook system",
+      "Node.js (scripts/hooks/)",
+      "grep, Biome/Prettier"
+    ],
+    "source_url": "https://github.com/affaan-m/everything-claude-code",
+    "source_author": "affaan-m",
+    "added_at": "2026-03-23T00:03:56.465113+00:00"
+  },
+  {
+    "slug": "継続学習-v2instinct-ベース",
+    "name": "継続学習 v2（Instinct ベース）",
+    "category": "claude-code-workflow",
+    "description": "セッションから自動的にパターンを抽出し、信頼度スコア付きで蓄積。関連するパターンをクラスタリングして再利用可能なスキルに昇華",
+    "trigger_phrases": [
+      "同じタイプのタスクを繰り返す、チーム知識を蓄積したい、プロジェクト固有のベストプラクティスを定着させたい",
+      "継続学習 v2（Instinct ベース）",
+      "Claude Code continuous-learning-v2 skill",
+      "YAML parser"
+    ],
+    "source_url": "https://github.com/affaan-m/everything-claude-code",
+    "source_author": "affaan-m",
+    "added_at": "2026-03-23T00:03:56.465113+00:00"
+  },
+  {
+    "slug": "検証ループeval-harness",
+    "name": "検証ループ（Eval Harness）",
+    "category": "claude-code-workflow",
+    "description": "ビルド・テスト・リント・型チェック・セキュリティスキャンを自動実行し、結果を評価。pass@k メトリクスで品質を定量化",
+    "trigger_phrases": [
+      "本番デプロイ前、PR 作成前、大規模リファクタリング後",
+      "検証ループ（Eval Harness）",
+      "Claude Code verification-loop skill",
+      "npm/pnpm/yarn/bun scripts",
+      "Jest/Vitest, ESLint, TypeScript, AgentShield"
+    ],
+    "source_url": "https://github.com/affaan-m/everything-claude-code",
+    "source_author": "affaan-m",
+    "added_at": "2026-03-23T00:03:56.465113+00:00"
+  },
+  {
+    "slug": "クロスプラットフォームインストール",
+    "name": "クロスプラットフォームインストール",
+    "category": "claude-code-workflow",
+    "description": "単一のインストーラーで、Claude Code/Cursor/Codex/OpenCode に対応した設定を自動配置",
+    "trigger_phrases": [
+      "新しいマシンのセットアップ、チームメンバーへの標準設定配布、複数ツールを併用している",
+      "クロスプラットフォームインストール",
+      "Bash script (install.sh)",
+      "PowerShell script (install.ps1)",
+      "Node.js (scripts/sync-ecc-to-codex.sh for Codex)"
+    ],
+    "source_url": "https://github.com/affaan-m/everything-claude-code",
+    "source_author": "affaan-m",
+    "added_at": "2026-03-23T00:03:56.465113+00:00"
+  },
+  {
+    "slug": "agentshield-セキュリティスキャン",
+    "name": "AgentShield セキュリティスキャン",
+    "category": "claude-code-workflow",
+    "description": "CLAUDE.md, settings.json, MCP configs, hooks, agents, skills を静的解析し、シークレット・権限・インジェクションリスクを検出",
+    "trigger_phrases": [
+      "設定変更後、本番デプロイ前、CI/CD パイプライン、定期監査",
+      "AgentShield セキュリティスキャン",
+      "ecc-agentshield (npm package)",
+      "Claude Opus 4.6（--opus フラグ時）"
+    ],
+    "source_url": "https://github.com/affaan-m/everything-claude-code",
+    "source_author": "affaan-m",
+    "added_at": "2026-03-23T00:03:56.465113+00:00"
+  },
+  {
+    "slug": "マニフェスト駆動の選択的インストール",
+    "name": "マニフェスト駆動の選択的インストール",
+    "category": "agent-orchestration",
+    "description": "ユーザーが必要なコンポーネント（agents/commands/skills/rules）だけをインタラクティブに選択してインストール",
+    "trigger_phrases": [
+      "初回セットアップ、プロジェクト切り替え、不要なスキルを削除したい",
+      "マニフェスト駆動の選択的インストール",
+      "Node.js (scripts/install-plan.js, scripts/install-apply.js)",
+      "SQLite (state store)"
+    ],
+    "source_url": "https://github.com/affaan-m/everything-claude-code",
+    "source_author": "affaan-m",
+    "added_at": "2026-03-23T00:03:56.465113+00:00"
+  },
+  {
+    "slug": "カテゴリ別リソース分類によるエコシステム整理",
+    "name": "カテゴリ別リソース分類によるエコシステム整理",
+    "category": "claude-code-workflow",
+    "description": "Claude Code の拡張機能を「Agent Skills」「Workflows」「Tooling」「Status Lines」「Hooks」「Slash-Commands」「CLAUDE.md Files」などのカテゴリに分類して整理する",
+    "trigger_phrases": [
+      "Claude Code エコシステムの全体像を把握したい時、特定のユースケースに適した拡張を探したい時",
+      "カテゴリ別リソース分類によるエコシステム整理",
+      "GitHub",
+      "Markdown",
+      "awesome.re バッジ"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-23T00:05:58.321120+00:00"
+  },
+  {
+    "slug": "フックhooksを活用した-claude-code-のライフサイクル制御",
+    "name": "フック（Hooks）を活用した Claude Code のライフサイクル制御",
+    "category": "claude-code-workflow",
+    "description": "Claude Code の動作ライフサイクルの特定ポイント（ファイル書き込み前、コマンド実行前など）でスクリプトを自動実行し、コード品質チェック・セキュリティスキャン・通知などを行う",
+    "trigger_phrases": [
+      "TDD を強制したい時、セキュリティスキャンを自動化したい時、コード整形を自動適用したい時、通知を送りたい時",
+      "フック（Hooks）を活用した Claude Code のライフサイクル制御",
+      "TDD Guard",
+      "parry（プロンプトインジェクション検出）",
+      "Dippy（安全なコマンド自動承認）",
+      "TypeScript Quality Hooks"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-23T00:05:58.321120+00:00"
+  },
+  {
+    "slug": "スラッシュコマンドによるカスタムプロンプトのテンプレート化",
+    "name": "スラッシュコマンドによるカスタムプロンプトのテンプレート化",
+    "category": "claude-code-workflow",
+    "description": "頻繁に使う複雑なプロンプトを `/commit`、`/tdd`、`/create-pr` などのスラッシュコマンドとして登録し、再利用可能にする",
+    "trigger_phrases": [
+      "Git コミットメッセージを自動生成したい時、GitHub Issue を自動解決したい時、TDD ワークフローを強制したい時、PR 作成を自動化したい時",
+      "スラッシュコマンドによるカスタムプロンプトのテンプレート化",
+      "/commit（conventional commit 形式）",
+      "/tdd（TDD ワークフロー）",
+      "/create-pr（PR 自動作成）",
+      "/analyze-issue（Issue 分析）"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-23T00:05:58.321120+00:00"
+  },
+  {
+    "slug": "claudemd-によるプロジェクト固有ルールの注入",
+    "name": "CLAUDE.md によるプロジェクト固有ルールの注入",
+    "category": "claude-code-workflow",
+    "description": "プロジェクトルートに `CLAUDE.md` ファイルを配置し、コーディング規約・アーキテクチャ・禁止事項などを Claude に自動読み込ませる",
+    "trigger_phrases": [
+      "新規プロジェクト立ち上げ時、チーム開発で規約を統一したい時、特定のフレームワーク（Next.js、Laravel など）に特化した指示が必要な時",
+      "CLAUDE.md によるプロジェクト固有ルールの注入",
+      "Metabase CLAUDE.md（Clojure TDD）",
+      "Giselle CLAUDE.md（TypeScript + pnpm）",
+      "HASH CLAUDE.md（Rust ドキュメント規約）"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-23T00:05:58.321120+00:00"
+  },
+  {
+    "slug": "agent-skills-による専門知識のモジュール化",
+    "name": "Agent Skills による専門知識のモジュール化",
+    "category": "claude-code-workflow",
+    "description": "特定ドメイン（セキュリティ監査、科学計算、デザインレビューなど）の専門知識をスキルファイルとしてパッケージ化し、Claude Code に追加する",
+    "trigger_phrases": [
+      "セキュリティ監査を自動化したい時、科学論文執筆を支援したい時、UI/UX レビューを体系的に行いたい時",
+      "Agent Skills による専門知識のモジュール化",
+      "Trail of Bits Security Skills（脆弱性検出）",
+      "Claude Scientific Skills（研究・科学計算）",
+      "Design Review Workflow（UI/UX 評価）"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-23T00:05:58.321120+00:00"
+  },
+  {
+    "slug": "使用状況監視ツールによるトークン消費の可視化",
+    "name": "使用状況監視ツールによるトークン消費の可視化",
+    "category": "claude-code-workflow",
+    "description": "Claude Code のログファイルを解析し、トークン消費量・コスト・セッション履歴などをダッシュボードで可視化する",
+    "trigger_phrases": [
+      "コスト管理が必要な時、チーム全体の使用状況を把握したい時、レート制限を回避したい時",
+      "使用状況監視ツールによるトークン消費の可視化",
+      "ccflare（Web UI、Tableau 級の UI）",
+      "better-ccflare（ccflare の拡張版）",
+      "ccusage（CLI ダッシュボード）",
+      "Claude Code Usage Monitor（リアルタイム監視）"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-23T00:05:58.321120+00:00"
+  },
+  {
+    "slug": "オーケストレーターによる複数-claude-code-セッションの並列制御",
+    "name": "オーケストレーターによる複数 Claude Code セッションの並列制御",
+    "category": "claude-code-workflow",
+    "description": "複数の Claude Code インスタンスを並列起動し、異なるタスク（フロントエンド開発、バックエンド開発、テストなど）を同時進行させる",
+    "trigger_phrases": [
+      "大規模プロジェクトで複数の独立したタスクを同時進行させたい時、チーム開発で役割分担したい時",
+      "オーケストレーターによる複数 Claude Code セッションの並列制御",
+      "Auto-Claude（マルチエージェント SDLC）",
+      "Claude Squad（複数エージェント管理）",
+      "TSK（Docker サンドボックス並列実行）",
+      "sudocode（軽量オーケストレーター）"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-23T00:05:58.321120+00:00"
   }
 ]
