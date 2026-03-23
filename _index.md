@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 578 スキル
+合計: 594 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -582,3 +582,19 @@
 | グローバルとプロジェクト固有のエージェント使い分け | グローバルとプロジェクト固有のエージェント使い分け | claude-code-workflow | `~/.claude/agents/`（グローバル）にチーム共通のエージェントを配置し、`.claude/agents/ | VoltAgent |
 | 独立コンテキストウィンドウによるタスク分離 | 独立コンテキストウィンドウによるタスク分離 | claude-code-workflow | 各サブエージェントは独立したコンテキストウィンドウ内で動作するため、メインの会話履歴と混ざらず、タスク固有の詳細情報が隔 | VoltAgent |
 | メタオーケストレーションエージェントによる複雑ワークフローの自動化 | メタオーケストレーションエージェントによる複雑ワークフローの自動化 | claude-code-workflow | Meta & Orchestrationカテゴリのエージェント（multi-agent-coordinator, wor | VoltAgent |
+| progressive-disclosure-architectureによる効率的なskill読み込み | Progressive Disclosure Architectureによる効率的なSkill読み込み | claude-code-workflow | Skillsを段階的に読み込むことで、コンテキストウィンドウを圧迫せずに多数のSkillsを利用可能にする | travisvn |
+| skill-vs-他手法の使い分け判断マトリクス適用 | Skill vs 他手法の使い分け判断マトリクス適用 | agent-orchestration | Skills、Prompts、Projects、Subagents、MCPそれぞれの特性を理解し、タスクに最適な手法を選 | travisvn |
+| yamlフロントマター-skillmd構造でのskill作成 | YAMLフロントマター + SKILL.md構造でのSkill作成 | claude-code-workflow | 再利用可能なSkillを標準フォーマットで作成し、バージョン管理・共有可能にする | travisvn |
+| skill-creatorによる対話的skill生成 | skill-creatorによる対話的Skill生成 | claude-code-workflow | 公式のskill-creatorスキルを使い、Q&A形式で新しいSkillを自動生成する | travisvn |
+| セキュリティ監査ベストプラクティスの適用 | セキュリティ監査ベストプラクティスの適用 | claude-code-workflow | Skillsが任意コード実行可能であることを踏まえ、信頼できるソースのみから導入し、コードレビューを徹底する | travisvn |
+| claude-code-cliでのskillインストール | Claude Code CLIでのSkillインストール | claude-code-workflow | Claude Code CLI環境でマーケットプレイスまたはローカルディレクトリからSkillsをインストールする | travisvn |
+| 公式コミュニティskillsカタログからの選択と活用 | 公式・コミュニティSkillsカタログからの選択と活用 | automation-pipeline | ドキュメント処理、デザイン、開発、コミュニケーション等の分野別に整理された既存Skillsから、タスクに適したものを選ん | travisvn |
+| awesome-listsパターンでスキルをカタログ化する | Awesome Listsパターンでスキルをカタログ化する | other | GitHub上でClaude Skillsを分野別（Document、Development、Security等）に分類 | BehiSecc |
+| skillmdフォーマットでスキルを定義する | SKILL.mdフォーマットでスキルを定義する | claude-code-workflow | Claude Codeが読み込める標準フォーマット（SKILL.md）でスキルの動作・トリガー条件・ツール呼び出しを記述 | BehiSecc |
+| mcpサーバーとスキルを組み合わせる | MCPサーバーとスキルを組み合わせる | claude-code-workflow | Model Context Protocol (MCP)サーバーが提供するツールをSKILL.mdから呼び出し、複雑な外 | BehiSecc |
+| スキルをコレクション形式で配布する | スキルをコレクション形式で配布する | claude-code-workflow | 複数のスキルを1つのリポジトリにまとめ、`npx`やインストールスクリプト経由で一括導入できるようにする | BehiSecc |
+| セキュリティスキルで脆弱性を自動検出する | セキュリティスキルで脆弱性を自動検出する | claude-code-workflow | OWASP Top 10、ASVS、Agentic AI Securityの知識をSKILL.mdに埋め込み、Claud | BehiSecc |
+| git-worktreeでエージェント隔離実行 | git worktreeでエージェント隔離実行 | claude-code-workflow | 1つのリポジトリから複数のworktree（独立した作業ディレクトリ）を作成し、それぞれに異なるブランチを割り当てること | superset-sh |
+| 統合監視uiでエージェント状態を一元管理 | 統合監視UIでエージェント状態を一元管理 | agent-orchestration | Electron製デスクトップアプリ（Superset）で複数worktree/エージェントのステータス、変更内容、通知 | superset-sh |
+| workspace-presetで環境セットアップ自動化 | Workspace Presetで環境セットアップ自動化 | agent-orchestration | .superset/config.json にセットアップ・ティアダウンスクリプトを定義し、worktree作成時に自動 | superset-sh |
+| キーボードショートカットで高速切り替え | キーボードショートカットで高速切り替え | agent-orchestration | Superset UIに組み込まれたカスタマイズ可能なショートカット（⌘1-9でワークスペース切替、⌘Tで新規タブ、⌘D | superset-sh |
