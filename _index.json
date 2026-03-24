@@ -8956,5 +8956,191 @@
     "source_url": "https://github.com/travisvn/awesome-claude-skills",
     "source_author": "travisvn",
     "added_at": "2026-03-24T00:18:51.844913+00:00"
+  },
+  {
+    "slug": "awesome-list形式でai-agentスキルをキュレーションする",
+    "name": "Awesome List形式でAI agentスキルをキュレーションする",
+    "category": "claude-code-workflow",
+    "description": "GitHubのAwesome List形式（カテゴリ分類+1行説明+リンク）でClaude Skillsを整理したリポジトリを作成・公開する",
+    "trigger_phrases": [
+      "AI agentのエコシステム（Claude Code、Cursor等）で再利用可能なツールやワークフローが増えてきた時、またはコミュニティが作成したスキルを一元的に管理・共有したい時",
+      "Awesome List形式でAI agentスキルをキュレーションする",
+      "GitHub（リポジトリホスティング）",
+      "Markdown（README記述）"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-03-24T00:20:27.571535+00:00"
+  },
+  {
+    "slug": "claude-skillをgithubリポジトリとして公開する",
+    "name": "Claude SkillをGitHubリポジトリとして公開する",
+    "category": "claude-code-workflow",
+    "description": "SKILL.mdファイルを含むGitHubリポジトリを作成し、特定のタスク（例: PDFからテキスト抽出、テスト駆動開発、セキュリティレビュー）を自動化するための手順・ツール呼び出し方法を記述する",
+    "trigger_phrases": [
+      "Claude Codeで繰り返し実行するタスク（例: PRレビュー、テスト実行、ドキュメント生成）があり、それをチーム内または公開で共有したい時",
+      "Claude SkillをGitHubリポジトリとして公開する",
+      "GitHub",
+      "Markdown",
+      "Claude Code（スキル読み込み）"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-03-24T00:20:27.571535+00:00"
+  },
+  {
+    "slug": "カテゴリ別にスキルを分類し発見性を高める",
+    "name": "カテゴリ別にスキルを分類し発見性を高める",
+    "category": "dev-tool",
+    "description": "スキルを機能別カテゴリ（Document Skills, Development & Code Tools, Data & Analysis等）に分類し、ユーザーが目的に応じてスキルを発見しやすくする",
+    "trigger_phrases": [
+      "多数のスキルを管理・公開する時、または既存のAwesome Listが肥大化してナビゲーションが困難になった時",
+      "カテゴリ別にスキルを分類し発見性を高める",
+      "Markdown"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-03-24T00:20:27.571535+00:00"
+  },
+  {
+    "slug": "特定ドメインセキュリティ開発等のスキルをtipとして強調する",
+    "name": "特定ドメイン（セキュリティ、開発等）のスキルをTipとして強調する",
+    "category": "agent-orchestration",
+    "description": "README冒頭にTipセクションを設け、特に重要なスキル（例: セキュリティ対策）を強調表示し、ユーザーの注意を引く",
+    "trigger_phrases": [
+      "特定のスキルが多くのユーザーに関係し、かつ見落とされると重大な問題（セキュリティ脆弱性、データ損失等）が発生する可能性がある時",
+      "特定ドメイン（セキュリティ、開発等）のスキルをTipとして強調する",
+      "Markdown（GitHubのアラートブロック記法）"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-03-24T00:20:27.571535+00:00"
+  },
+  {
+    "slug": "contributionガイドとcontactセクションでコミュニティ参加を促進する",
+    "name": "ContributionガイドとContactセクションでコミュニティ参加を促進する",
+    "category": "other",
+    "description": "README末尾にContributionガイドとContactセクションを設け、ユーザーがスキルを追加・修正したり、問題を報告したりできる仕組みを提供する",
+    "trigger_phrases": [
+      "Awesome List等のキュレーションリポジトリを公開し、コミュニティからの貢献を受け入れたい時",
+      "ContributionガイドとContactセクションでコミュニティ参加を促進する",
+      "GitHub（Fork、Pull Request機能）"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-03-24T00:20:27.571535+00:00"
+  },
+  {
+    "slug": "claude-code-marketplaceからスキルプラグインをインストール",
+    "name": "Claude Code Marketplaceからスキルプラグインをインストール",
+    "category": "claude-code-workflow",
+    "description": "Trail of BitsのセキュリティスキルリポジトリをClaude Codeのプラグインマーケットプレイスとして追加し、必要なスキルを選択的にインストールする",
+    "trigger_phrases": [
+      "セキュリティ監査・脆弱性分析・コードレビューなどの専門的なタスクを開始する前に、関連するスキルセットを環境にセットアップしたい時",
+      "Claude Code Marketplaceからスキルプラグインをインストール",
+      "Claude Code",
+      "trailofbits/skills リポジトリ"
+    ],
+    "source_url": "https://github.com/trailofbits/skills",
+    "source_author": "trailofbits",
+    "added_at": "2026-03-24T00:22:05.453208+00:00"
+  },
+  {
+    "slug": "codex環境向けにスキルをローカルインストール",
+    "name": "Codex環境向けにスキルをローカルインストール",
+    "category": "claude-code-workflow",
+    "description": "Codex（Google製CLI AI環境）でTrail of Bitsスキルを利用できるようにする",
+    "trigger_phrases": [
+      "Codex環境でTrail of Bitsのセキュリティスキルを使いたい時、または複数のAI環境で同じスキルセットを統一的に管理したい時",
+      "Codex環境向けにスキルをローカルインストール",
+      "Codex",
+      "git",
+      "install-for-codex.sh スクリプト",
+      "Codex（Google製CLI AI環境）でTrail of Bitsスキルを利用できるようにする"
+    ],
+    "source_url": "https://github.com/trailofbits/skills",
+    "source_author": "trailofbits",
+    "added_at": "2026-03-24T00:22:05.453208+00:00"
+  },
+  {
+    "slug": "variant-analysisスキルで類似脆弱性を横断検索",
+    "name": "variant-analysisスキルで類似脆弱性を横断検索",
+    "category": "claude-code-workflow",
+    "description": "1つの脆弱性パターンを見つけたら、コードベース全体から同様のパターンを検出する",
+    "trigger_phrases": [
+      "1つのセキュリティバグを発見した後、同じ種類の問題が他にも存在しないか確認したい時",
+      "variant-analysisスキルで類似脆弱性を横断検索",
+      "variant-analysis スキル",
+      "Semgrep/CodeQL（バックエンド）",
+      "1つの脆弱性パターンを見つけたら、コードベース全体から同様のパターンを検出する"
+    ],
+    "source_url": "https://github.com/trailofbits/skills",
+    "source_author": "trailofbits",
+    "added_at": "2026-03-24T00:22:05.453208+00:00"
+  },
+  {
+    "slug": "semgrep-rule-creatorで脆弱性検出ルールを作成",
+    "name": "semgrep-rule-creatorで脆弱性検出ルールを作成",
+    "category": "claude-code-workflow",
+    "description": "特定の脆弱性パターンを検出するSemgrepルールをAI支援で作成・改善する",
+    "trigger_phrases": [
+      "プロジェクト固有の脆弱性パターンを自動検出したい時、または既存のSemgrepルールを改善したい時",
+      "semgrep-rule-creatorで脆弱性検出ルールを作成",
+      "semgrep-rule-creator スキル",
+      "Semgrep",
+      "特定の脆弱性パターンを検出するSemgrepルールをAI支援で作成・改善する"
+    ],
+    "source_url": "https://github.com/trailofbits/skills",
+    "source_author": "trailofbits",
+    "added_at": "2026-03-24T00:22:05.453208+00:00"
+  },
+  {
+    "slug": "fp-checkスキルで偽陽性を体系的に検証",
+    "name": "fp-checkスキルで偽陽性を体系的に検証",
+    "category": "claude-code-workflow",
+    "description": "静的解析ツールが報告したセキュリティ問題が本物の脆弱性か偽陽性かを段階的にレビューする",
+    "trigger_phrases": [
+      "静的解析ツールが大量の警告を出した時、またはセキュリティバグ報告のトリアージを効率化したい時",
+      "fp-checkスキルで偽陽性を体系的に検証",
+      "fp-check スキル",
+      "SARIF parser",
+      "静的解析ツールが報告したセキュリティ問題が本物の脆弱性か偽陽性かを段階的にレビューする"
+    ],
+    "source_url": "https://github.com/trailofbits/skills",
+    "source_author": "trailofbits",
+    "added_at": "2026-03-24T00:22:05.453208+00:00"
+  },
+  {
+    "slug": "constant-time-analysisでタイミングサイドチャネルを検出",
+    "name": "constant-time-analysisでタイミングサイドチャネルを検出",
+    "category": "claude-code-workflow",
+    "description": "暗号化コードがコンパイラ最適化によって定数時間性を失っていないか検証する",
+    "trigger_phrases": [
+      "暗号ライブラリを開発・監査する時、またはタイミング攻撃耐性を要求されるコードをレビューする時",
+      "constant-time-analysisでタイミングサイドチャネルを検出",
+      "constant-time-analysis スキル",
+      "コンパイラ（gcc/clang/rustc）",
+      "逆アセンブラ",
+      "暗号化コードがコンパイラ最適化によって定数時間性を失っていないか検証する"
+    ],
+    "source_url": "https://github.com/trailofbits/skills",
+    "source_author": "trailofbits",
+    "added_at": "2026-03-24T00:22:05.453208+00:00"
+  },
+  {
+    "slug": "ローカル開発環境でマーケットプレイスをテスト",
+    "name": "ローカル開発環境でマーケットプレイスをテスト",
+    "category": "claude-code-workflow",
+    "description": "自作スキルをマーケットプレイスに公開する前にローカルで動作確認する",
+    "trigger_phrases": [
+      "新しいスキルを開発している時、または既存スキルを改善してプルリクエストを出す前",
+      "ローカル開発環境でマーケットプレイスをテスト",
+      "Claude Code",
+      "git",
+      "自作スキルをマーケットプレイスに公開する前にローカルで動作確認する"
+    ],
+    "source_url": "https://github.com/trailofbits/skills",
+    "source_author": "trailofbits",
+    "added_at": "2026-03-24T00:22:05.453208+00:00"
   }
 ]

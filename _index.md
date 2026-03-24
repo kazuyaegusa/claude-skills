@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 639 スキル
+合計: 651 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -643,3 +643,15 @@
 | 公式コミュニティスキルをマーケットプレイスから導入する | 公式/コミュニティスキルをマーケットプレイスから導入する | claude-code-workflow | Anthropic公式スキル（docx, pdf, pptx, xlsx, frontend-design, mcp-b | travisvn |
 | スキルのセキュリティ監査とベッティングを実施する | スキルのセキュリティ監査とベッティングを実施する | claude-code-workflow | スキルは任意コード実行可能なため、導入前にSKILL.mdと全スクリプトをレビューし、信頼できるソース・バージョン管理・ | travisvn |
 | gitリポジトリでスキルをバージョン管理チーム配布する | Gitリポジトリでスキルをバージョン管理・チーム配布する | claude-code-workflow | カスタムスキルをGitリポジトリで管理し、バージョンタグ付け・ドキュメント化・チーム配布を行う | travisvn |
+| awesome-list形式でai-agentスキルをキュレーションする | Awesome List形式でAI agentスキルをキュレーションする | claude-code-workflow | GitHubのAwesome List形式（カテゴリ分類+1行説明+リンク）でClaude Skillsを整理したリポジ | BehiSecc |
+| claude-skillをgithubリポジトリとして公開する | Claude SkillをGitHubリポジトリとして公開する | claude-code-workflow | SKILL.mdファイルを含むGitHubリポジトリを作成し、特定のタスク（例: PDFからテキスト抽出、テスト駆動開発 | BehiSecc |
+| カテゴリ別にスキルを分類し発見性を高める | カテゴリ別にスキルを分類し発見性を高める | dev-tool | スキルを機能別カテゴリ（Document Skills, Development & Code Tools, Data  | BehiSecc |
+| 特定ドメインセキュリティ開発等のスキルをtipとして強調する | 特定ドメイン（セキュリティ、開発等）のスキルをTipとして強調する | agent-orchestration | README冒頭にTipセクションを設け、特に重要なスキル（例: セキュリティ対策）を強調表示し、ユーザーの注意を引く | BehiSecc |
+| contributionガイドとcontactセクションでコミュニティ参加を促進する | ContributionガイドとContactセクションでコミュニティ参加を促進する | other | README末尾にContributionガイドとContactセクションを設け、ユーザーがスキルを追加・修正したり、問 | BehiSecc |
+| claude-code-marketplaceからスキルプラグインをインストール | Claude Code Marketplaceからスキルプラグインをインストール | claude-code-workflow | Trail of BitsのセキュリティスキルリポジトリをClaude Codeのプラグインマーケットプレイスとして追加 | trailofbits |
+| codex環境向けにスキルをローカルインストール | Codex環境向けにスキルをローカルインストール | claude-code-workflow | Codex（Google製CLI AI環境）でTrail of Bitsスキルを利用できるようにする | trailofbits |
+| variant-analysisスキルで類似脆弱性を横断検索 | variant-analysisスキルで類似脆弱性を横断検索 | claude-code-workflow | 1つの脆弱性パターンを見つけたら、コードベース全体から同様のパターンを検出する | trailofbits |
+| semgrep-rule-creatorで脆弱性検出ルールを作成 | semgrep-rule-creatorで脆弱性検出ルールを作成 | claude-code-workflow | 特定の脆弱性パターンを検出するSemgrepルールをAI支援で作成・改善する | trailofbits |
+| fp-checkスキルで偽陽性を体系的に検証 | fp-checkスキルで偽陽性を体系的に検証 | claude-code-workflow | 静的解析ツールが報告したセキュリティ問題が本物の脆弱性か偽陽性かを段階的にレビューする | trailofbits |
+| constant-time-analysisでタイミングサイドチャネルを検出 | constant-time-analysisでタイミングサイドチャネルを検出 | claude-code-workflow | 暗号化コードがコンパイラ最適化によって定数時間性を失っていないか検証する | trailofbits |
+| ローカル開発環境でマーケットプレイスをテスト | ローカル開発環境でマーケットプレイスをテスト | claude-code-workflow | 自作スキルをマーケットプレイスに公開する前にローカルで動作確認する | trailofbits |
