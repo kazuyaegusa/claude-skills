@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 616 スキル
+合計: 628 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -620,3 +620,15 @@
 | cicdパイプラインへのpromptfoo評価統合 | CI/CDパイプラインへのpromptfoo評価統合 | prompt-engineering | promptfoo evalをCI/CDスクリプトに組み込み、プロンプト変更が品質基準を満たさない場合にビルドを失敗させ | promptfoo |
 | promptfoo-code-scanによるpull-requestセキュリティレビュー | promptfoo code scanによるPull Requestセキュリティレビュー | prompt-engineering | Pull Request差分内のLLM関連コード（プロンプト、パラメータ変更等）を静的解析し、セキュリティ・コンプライア | promptfoo |
 | promptfooでの複数モデル並列比較 | promptfooでの複数モデル並列比較 | prompt-engineering | 同一プロンプトを複数のLLMプロバイダー（OpenAI、Anthropic、Gemini、Ollama等）に並列送信し、 | promptfoo |
+| カテゴリ別サブエージェント分類 | カテゴリ別サブエージェント分類 | claude-code-workflow | 127個のサブエージェントを10カテゴリ(Core Development、Language Specialists、I | VoltAgent |
+| 4段階インストール手段の提供 | 4段階インストール手段の提供 | claude-code-workflow | プラグイン方式、手動コピー、対話型スクリプト、スタンドアロンインストーラの4種類を用意し、ユーザーの環境と好みに応じて選 | VoltAgent |
+| モデル自動ルーティング設定 | モデル自動ルーティング設定 | claude-code-workflow | 各サブエージェントのfrontmatterに `model: opus/sonnet/haiku` を記述し、タスクの複 | VoltAgent |
+| ツール権限の最小化設定 | ツール権限の最小化設定 | claude-code-workflow | 各サブエージェントの役割に応じて、アクセスできるClaude Code組み込みツール(Read, Write, Edit | VoltAgent |
+| グローバルプロジェクト固有の配置戦略 | グローバル/プロジェクト固有の配置戦略 | claude-code-workflow | `~/.claude/agents/` に配置したエージェントは全プロジェクトで利用可能(グローバル)、`.claude | VoltAgent |
+| サブエージェント構造の標準化 | サブエージェント構造の標準化 | claude-code-workflow | 全エージェント定義ファイルを `name, description, tools, model` のYAML front | VoltAgent |
+| yamlベースのツール定義でmcpサーバー化 | YAMLベースのツール定義でMCPサーバー化 | agent-orchestration | データベース接続情報とSQL操作をtools.yamlに宣言的に定義し、toolboxコマンドでMCPサーバーとして起動 | googleapis |
+| npxでの即座起動によるプロトタイピング | NPXでの即座起動によるプロトタイピング | dev-tool | バイナリのダウンロード・インストールなしに、npxコマンド1行でMCP Toolboxサーバーを起動する | googleapis |
+| toolsetによるツールのグループ化 | Toolsetによるツールのグループ化 | agent-orchestration | 複数のツールをtoolsetとして名前付きグループ化し、エージェントごとに必要なツールセットだけをロードする | googleapis |
+| ideとの統合によるdb自然言語操作 | IDEとの統合によるDB自然言語操作 | claude-code-workflow | Claude Code/Cursor等のAI IDEにMCP ToolboxをMCPサーバーとして接続し、コーディング中 | googleapis |
+| マルチフレームワーク対応sdkによる統一ロード | マルチフレームワーク対応SDKによる統一ロード | agent-orchestration | Python/JS/Go各言語で、LangChain/LlamaIndex/Genkit/ADK等のフレームワーク別SD | googleapis |
+| 動的リロードによるノーダウンタイム更新 | 動的リロードによるノーダウンタイム更新 | agent-orchestration | toolboxサーバー起動時にデフォルトで有効化される設定変更の自動検出・リロード機能 | googleapis |

@@ -8601,5 +8601,186 @@
     "source_url": "https://github.com/promptfoo/promptfoo",
     "source_author": "promptfoo",
     "added_at": "2026-03-24T00:07:48.198041+00:00"
+  },
+  {
+    "slug": "カテゴリ別サブエージェント分類",
+    "name": "カテゴリ別サブエージェント分類",
+    "category": "claude-code-workflow",
+    "description": "127個のサブエージェントを10カテゴリ(Core Development、Language Specialists、Infrastructure、Quality & Security、Data & AI、Developer Experience、Specialized Domains、Business & Product、Meta & Orchestration、Research & Analysis)に整理する",
+    "trigger_phrases": [
+      "サブエージェントが10個を超えて管理が煩雑になった時、またはチームメンバーが目的のエージェントを探しづらくなった時",
+      "カテゴリ別サブエージェント分類",
+      "Markdown",
+      "Claude Code plugin system"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-03-24T00:11:52.810217+00:00"
+  },
+  {
+    "slug": "4段階インストール手段の提供",
+    "name": "4段階インストール手段の提供",
+    "category": "claude-code-workflow",
+    "description": "プラグイン方式、手動コピー、対話型スクリプト、スタンドアロンインストーラの4種類を用意し、ユーザーの環境と好みに応じて選択可能にする",
+    "trigger_phrases": [
+      "プラグイン: チーム標準化時、手動: カスタマイズが必要な時、対話型/スタンドアロン: 初回セットアップ時、エージェントインストーラ: Claude Code内で完結させたい時",
+      "4段階インストール手段の提供",
+      "curl",
+      "bash",
+      "Claude Code plugin CLI"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-03-24T00:11:52.810217+00:00"
+  },
+  {
+    "slug": "モデル自動ルーティング設定",
+    "name": "モデル自動ルーティング設定",
+    "category": "claude-code-workflow",
+    "description": "各サブエージェントのfrontmatterに `model: opus/sonnet/haiku` を記述し、タスクの複雑度に応じてClaudeモデルを自動選択させる",
+    "trigger_phrases": [
+      "新規サブエージェントを作成する時、または既存エージェントのコスト効率を最適化したい時",
+      "モデル自動ルーティング設定",
+      "Claude Code model routing"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-03-24T00:11:52.810217+00:00"
+  },
+  {
+    "slug": "ツール権限の最小化設定",
+    "name": "ツール権限の最小化設定",
+    "category": "claude-code-workflow",
+    "description": "各サブエージェントの役割に応じて、アクセスできるClaude Code組み込みツール(Read, Write, Edit, Bash, Grep, Glob, WebFetch, WebSearch等)を制限する",
+    "trigger_phrases": [
+      "新規サブエージェントを作成する時、または既存エージェントのセキュリティポリシーを強化したい時",
+      "ツール権限の最小化設定",
+      "Claude Code tool permission system"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-03-24T00:11:52.810217+00:00"
+  },
+  {
+    "slug": "グローバルプロジェクト固有の配置戦略",
+    "name": "グローバル/プロジェクト固有の配置戦略",
+    "category": "claude-code-workflow",
+    "description": "`~/.claude/agents/` に配置したエージェントは全プロジェクトで利用可能(グローバル)、`.claude/agents/` に配置したエージェントは当該プロジェクトのみで有効(ローカル)とし、同名の場合はローカルが優先される",
+    "trigger_phrases": [
+      "チーム全体で標準化したいエージェントはグローバルに、プロジェクト固有のルール(例: 特定のlinter設定、独自フレームワーク)を持つ場合はローカルに配置",
+      "グローバル/プロジェクト固有の配置戦略",
+      "ファイルシステム",
+      "Git(.gitignore)"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-03-24T00:11:52.810217+00:00"
+  },
+  {
+    "slug": "サブエージェント構造の標準化",
+    "name": "サブエージェント構造の標準化",
+    "category": "claude-code-workflow",
+    "description": "全エージェント定義ファイルを `name, description, tools, model` のYAML frontmatterと、役割説明、チェックリスト、通信プロトコル、開発ワークフローの本文で構成する",
+    "trigger_phrases": [
+      "新規サブエージェントを作成する時、または既存エージェントを標準フォーマットに移行したい時",
+      "サブエージェント構造の標準化",
+      "YAML",
+      "Markdown"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-03-24T00:11:52.810217+00:00"
+  },
+  {
+    "slug": "yamlベースのツール定義でmcpサーバー化",
+    "name": "YAMLベースのツール定義でMCPサーバー化",
+    "category": "agent-orchestration",
+    "description": "データベース接続情報とSQL操作をtools.yamlに宣言的に定義し、toolboxコマンドでMCPサーバーとして起動する",
+    "trigger_phrases": [
+      "複数のエージェントやフレームワークで同じDBツールを使い回したい時、ツールの更新頻度が高くエージェント再デプロイを避けたい時",
+      "YAMLベースのツール定義でMCPサーバー化",
+      "toolbox CLI（バイナリ/Docker/Homebrew/NPX）",
+      "tools.yaml設定ファイル"
+    ],
+    "source_url": "https://github.com/googleapis/genai-toolbox",
+    "source_author": "googleapis",
+    "added_at": "2026-03-24T00:13:36.824892+00:00"
+  },
+  {
+    "slug": "npxでの即座起動によるプロトタイピング",
+    "name": "NPXでの即座起動によるプロトタイピング",
+    "category": "dev-tool",
+    "description": "バイナリのダウンロード・インストールなしに、npxコマンド1行でMCP Toolboxサーバーを起動する",
+    "trigger_phrases": [
+      "初回試行時、CIでの一時的な起動、複数バージョンを切り替えながら検証したい時（本番環境では非推奨）",
+      "NPXでの即座起動によるプロトタイピング",
+      "npx",
+      "@toolbox-sdk/server"
+    ],
+    "source_url": "https://github.com/googleapis/genai-toolbox",
+    "source_author": "googleapis",
+    "added_at": "2026-03-24T00:13:36.824892+00:00"
+  },
+  {
+    "slug": "toolsetによるツールのグループ化",
+    "name": "Toolsetによるツールのグループ化",
+    "category": "agent-orchestration",
+    "description": "複数のツールをtoolsetとして名前付きグループ化し、エージェントごとに必要なツールセットだけをロードする",
+    "trigger_phrases": [
+      "複数の専門エージェント（検索専用・更新専用など）を運用する時、エージェントごとに権限を分けたい時",
+      "Toolsetによるツールのグループ化",
+      "tools.yaml",
+      "ToolboxClient SDK"
+    ],
+    "source_url": "https://github.com/googleapis/genai-toolbox",
+    "source_author": "googleapis",
+    "added_at": "2026-03-24T00:13:36.824892+00:00"
+  },
+  {
+    "slug": "ideとの統合によるdb自然言語操作",
+    "name": "IDEとの統合によるDB自然言語操作",
+    "category": "claude-code-workflow",
+    "description": "Claude Code/Cursor等のAI IDEにMCP ToolboxをMCPサーバーとして接続し、コーディング中にDBへ自然言語でクエリできるようにする",
+    "trigger_phrases": [
+      "開発中にDBスキーマ確認やデータ検証を頻繁に行う時、SQLを書かずに素早くデータを確認したい時",
+      "IDEとの統合によるDB自然言語操作",
+      "Claude Code/Cursor等MCP対応IDE",
+      "MCP Toolbox"
+    ],
+    "source_url": "https://github.com/googleapis/genai-toolbox",
+    "source_author": "googleapis",
+    "added_at": "2026-03-24T00:13:36.824892+00:00"
+  },
+  {
+    "slug": "マルチフレームワーク対応sdkによる統一ロード",
+    "name": "マルチフレームワーク対応SDKによる統一ロード",
+    "category": "agent-orchestration",
+    "description": "Python/JS/Go各言語で、LangChain/LlamaIndex/Genkit/ADK等のフレームワーク別SDKを用いて、同一ツールをフレームワーク固有形式に変換する",
+    "trigger_phrases": [
+      "複数フレームワークでプロトタイプを比較検証する時、フレームワーク移行時にツール定義を再利用したい時",
+      "マルチフレームワーク対応SDKによる統一ロード",
+      "toolbox-langchain",
+      "toolbox-llamaindex",
+      "@toolbox-sdk/core（JS）",
+      "mcp-toolbox-sdk-go"
+    ],
+    "source_url": "https://github.com/googleapis/genai-toolbox",
+    "source_author": "googleapis",
+    "added_at": "2026-03-24T00:13:36.824892+00:00"
+  },
+  {
+    "slug": "動的リロードによるノーダウンタイム更新",
+    "name": "動的リロードによるノーダウンタイム更新",
+    "category": "agent-orchestration",
+    "description": "toolboxサーバー起動時にデフォルトで有効化される設定変更の自動検出・リロード機能",
+    "trigger_phrases": [
+      "開発中にツール定義を頻繁に調整する時、本番環境でツールを無停止更新したい時",
+      "動的リロードによるノーダウンタイム更新",
+      "toolbox CLI（デフォルト機能）",
+      "toolboxサーバー起動時にデフォルトで有効化される設定変更の自動検出・リロード機能"
+    ],
+    "source_url": "https://github.com/googleapis/genai-toolbox",
+    "source_author": "googleapis",
+    "added_at": "2026-03-24T00:13:36.824892+00:00"
   }
 ]
