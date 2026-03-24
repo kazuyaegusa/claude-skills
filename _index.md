@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 628 スキル
+合計: 639 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -632,3 +632,14 @@
 | ideとの統合によるdb自然言語操作 | IDEとの統合によるDB自然言語操作 | claude-code-workflow | Claude Code/Cursor等のAI IDEにMCP ToolboxをMCPサーバーとして接続し、コーディング中 | googleapis |
 | マルチフレームワーク対応sdkによる統一ロード | マルチフレームワーク対応SDKによる統一ロード | agent-orchestration | Python/JS/Go各言語で、LangChain/LlamaIndex/Genkit/ADK等のフレームワーク別SD | googleapis |
 | 動的リロードによるノーダウンタイム更新 | 動的リロードによるノーダウンタイム更新 | agent-orchestration | toolboxサーバー起動時にデフォルトで有効化される設定変更の自動検出・リロード機能 | googleapis |
+| oh-my-claudecodeプラグインインストールでteam機能有効化 | oh-my-claudecodeプラグインインストールでTeam機能有効化 | claude-code-workflow | Claude Codeに/plugin marketplace経由でoh-my-claudecodeをインストールし、T | Yeachan-Heo |
+| team-modeで複数claudeエージェントをステージドパイプライン実行 | Team Modeで複数Claudeエージェントをステージドパイプライン実行 | claude-code-workflow | 1つのタスクを plan → prd → exec → verify → fix の5段階に分割し、各段階で専門化された | Yeachan-Heo |
+| tmux-cliワーカーでcodexgeminiclaudeを並列実行 | tmux CLIワーカーでCodex/Gemini/Claudeを並列実行 | claude-code-workflow | `omc team N:codex\|gemini\|claude "タスク"` で tmux pane内に実際のCLIプロ | Yeachan-Heo |
+| スキル学習システムで問題解決パターンを自動抽出再利用 | スキル学習システムで問題解決パターンを自動抽出・再利用 | claude-code-workflow | セッション中の対話から「再利用可能な問題解決パターン」を自動抽出してYAML形式のスキルファイル化し、次回以降同じtri | Yeachan-Heo |
+| deep-interview-でsocratic質問により要件を深掘り | /deep-interview でSocratic質問により要件を深掘り | claude-code-workflow | 曖昧なアイデアをSocratic法（問答法）で段階的に掘り下げ、隠れた前提・制約・ゴールを言語化してから実装に入る | Yeachan-Heo |
+| openclaw統合でセッションイベントを外部ゲートウェイに転送 | OpenClaw統合でセッションイベントを外部ゲートウェイに転送 | claude-code-workflow | Claude Codeセッションの開始・停止・ツール実行などのイベントを、OpenClawゲートウェイ（Discord/ | Yeachan-Heo |
+| ccg-で-codex-gemini-claude-三者統合アドバイザリー | /ccg で Codex + Gemini + Claude 三者統合アドバイザリー | claude-code-workflow | 1つのタスクに対し、`/ask codex` と `/ask gemini` を並列実行し、両者の回答をClaudeが統 | Yeachan-Heo |
+| skills-vs-mcp-vs-prompts-vs-subagentsの使い分けルールを適用する | Skills vs MCP vs Prompts vs Subagentsの使い分けルールを適用する | agent-orchestration | タスクの性質に応じて、Skills（再利用可能な手順）、MCP（外部データ統合）、Prompts（即時指示）、Subag | travisvn |
+| 公式コミュニティスキルをマーケットプレイスから導入する | 公式/コミュニティスキルをマーケットプレイスから導入する | claude-code-workflow | Anthropic公式スキル（docx, pdf, pptx, xlsx, frontend-design, mcp-b | travisvn |
+| スキルのセキュリティ監査とベッティングを実施する | スキルのセキュリティ監査とベッティングを実施する | claude-code-workflow | スキルは任意コード実行可能なため、導入前にSKILL.mdと全スクリプトをレビューし、信頼できるソース・バージョン管理・ | travisvn |
+| gitリポジトリでスキルをバージョン管理チーム配布する | Gitリポジトリでスキルをバージョン管理・チーム配布する | claude-code-workflow | カスタムスキルをGitリポジトリで管理し、バージョンタグ付け・ドキュメント化・チーム配布を行う | travisvn |

@@ -8782,5 +8782,179 @@
     "source_url": "https://github.com/googleapis/genai-toolbox",
     "source_author": "googleapis",
     "added_at": "2026-03-24T00:13:36.824892+00:00"
+  },
+  {
+    "slug": "oh-my-claudecodeプラグインインストールでteam機能有効化",
+    "name": "oh-my-claudecodeプラグインインストールでTeam機能有効化",
+    "category": "claude-code-workflow",
+    "description": "Claude Codeに/plugin marketplace経由でoh-my-claudecodeをインストールし、Team・Autopilot・スキル学習などの拡張機能を利用可能にする",
+    "trigger_phrases": [
+      "Claude Codeを初めて使う時、または既存環境にマルチエージェント機能を追加したい時",
+      "oh-my-claudecodeプラグインインストールでTeam機能有効化",
+      "Claude Code CLI",
+      "oh-my-claudecode plugin"
+    ],
+    "source_url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
+    "source_author": "Yeachan-Heo",
+    "added_at": "2026-03-24T00:16:49.983994+00:00"
+  },
+  {
+    "slug": "team-modeで複数claudeエージェントをステージドパイプライン実行",
+    "name": "Team Modeで複数Claudeエージェントをステージドパイプライン実行",
+    "category": "claude-code-workflow",
+    "description": "1つのタスクを plan → prd → exec → verify → fix の5段階に分割し、各段階で専門化されたClaudeエージェントを並列または順次実行させる",
+    "trigger_phrases": [
+      "TypeScript全エラー修正・大規模リファクタリング・複数ファイルにまたがる機能追加など、単一エージェントでは途中で止まるタスク",
+      "Team Modeで複数Claudeエージェントをステージドパイプライン実行",
+      "oh-my-claudecode Team Mode",
+      "Claude Code Teams API"
+    ],
+    "source_url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
+    "source_author": "Yeachan-Heo",
+    "added_at": "2026-03-24T00:16:49.983994+00:00"
+  },
+  {
+    "slug": "tmux-cliワーカーでcodexgeminiclaudeを並列実行",
+    "name": "tmux CLIワーカーでCodex/Gemini/Claudeを並列実行",
+    "category": "claude-code-workflow",
+    "description": "`omc team N:codex|gemini|claude \"タスク\"` で tmux pane内に実際のCLIプロセスを起動し、タスク完了後に自動終了させる",
+    "trigger_phrases": [
+      "Codexにコードレビューさせながら、Geminiに同時にUI設計を依頼したい場合や、Claude単体では対応できない専門領域のタスク",
+      "tmux CLIワーカーでCodex/Gemini/Claudeを並列実行",
+      "tmux",
+      "codex CLI (npm i -g @openai/codex)",
+      "gemini CLI (npm i -g @google/gemini-cli)",
+      "omc team コマンド"
+    ],
+    "source_url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
+    "source_author": "Yeachan-Heo",
+    "added_at": "2026-03-24T00:16:49.983994+00:00"
+  },
+  {
+    "slug": "スキル学習システムで問題解決パターンを自動抽出再利用",
+    "name": "スキル学習システムで問題解決パターンを自動抽出・再利用",
+    "category": "claude-code-workflow",
+    "description": "セッション中の対話から「再利用可能な問題解決パターン」を自動抽出してYAML形式のスキルファイル化し、次回以降同じtriggerに遭遇したら自動でコンテキストに注入する",
+    "trigger_phrases": [
+      "難解なバグを解決した直後、特定ライブラリのハマりどころを克服した時、チーム共通の設定手順を標準化したい時",
+      "スキル学習システムで問題解決パターンを自動抽出・再利用",
+      "oh-my-claudecode Learner機能",
+      "/learner, /skill コマンド"
+    ],
+    "source_url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
+    "source_author": "Yeachan-Heo",
+    "added_at": "2026-03-24T00:16:49.983994+00:00"
+  },
+  {
+    "slug": "deep-interview-でsocratic質問により要件を深掘り",
+    "name": "/deep-interview でSocratic質問により要件を深掘り",
+    "category": "claude-code-workflow",
+    "description": "曖昧なアイデアをSocratic法（問答法）で段階的に掘り下げ、隠れた前提・制約・ゴールを言語化してから実装に入る",
+    "trigger_phrases": [
+      "プロジェクト開始時に「何を作るか」が曖昧な場合、ステークホルダーが複数いて要件がブレやすい場合、過去に手戻りが多発した経験がある場合",
+      "/deep-interview でSocratic質問により要件を深掘り",
+      "oh-my-claudecode deep-interview skill"
+    ],
+    "source_url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
+    "source_author": "Yeachan-Heo",
+    "added_at": "2026-03-24T00:16:49.983994+00:00"
+  },
+  {
+    "slug": "openclaw統合でセッションイベントを外部ゲートウェイに転送",
+    "name": "OpenClaw統合でセッションイベントを外部ゲートウェイに転送",
+    "category": "claude-code-workflow",
+    "description": "Claude Codeセッションの開始・停止・ツール実行などのイベントを、OpenClawゲートウェイ（Discord/Slackボット等）にHTTP POSTして外部ワークフローをトリガーする",
+    "trigger_phrases": [
+      "チーム開発でセッション完了を通知したい、外部CIをトリガーしたい、Discord/SlackボットにClaude作業状況を自動報告させたい場合",
+      "OpenClaw統合でセッションイベントを外部ゲートウェイに転送",
+      "OpenClaw Gateway",
+      "oh-my-claudecode OpenClaw bridge (scripts/openclaw-gateway-demo.mjs)"
+    ],
+    "source_url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
+    "source_author": "Yeachan-Heo",
+    "added_at": "2026-03-24T00:16:49.983994+00:00"
+  },
+  {
+    "slug": "ccg-で-codex-gemini-claude-三者統合アドバイザリー",
+    "name": "/ccg で Codex + Gemini + Claude 三者統合アドバイザリー",
+    "category": "claude-code-workflow",
+    "description": "1つのタスクに対し、`/ask codex` と `/ask gemini` を並列実行し、両者の回答をClaudeが統合して最終レコメンデーションを返す",
+    "trigger_phrases": [
+      "PR全体レビュー（アーキテクチャ + UI両面）、フルスタック機能設計、技術選定で複数LLMの意見を聞きたい場合",
+      "/ccg で Codex + Gemini + Claude 三者統合アドバイザリー",
+      "codex CLI",
+      "gemini CLI",
+      "oh-my-claudecode /ccg skill"
+    ],
+    "source_url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
+    "source_author": "Yeachan-Heo",
+    "added_at": "2026-03-24T00:16:49.983994+00:00"
+  },
+  {
+    "slug": "skills-vs-mcp-vs-prompts-vs-subagentsの使い分けルールを適用する",
+    "name": "Skills vs MCP vs Prompts vs Subagentsの使い分けルールを適用する",
+    "category": "agent-orchestration",
+    "description": "タスクの性質に応じて、Skills（再利用可能な手順）、MCP（外部データ統合）、Prompts（即時指示）、Subagents（独立タスク実行）、Projects（永続的背景知識）を使い分ける",
+    "trigger_phrases": [
+      "どのツールを使うべきか迷ったとき、複数ツールの組み合わせを検討するとき",
+      "Skills vs MCP vs Prompts vs Subagentsの使い分けルールを適用する",
+      "Claude Skills",
+      "MCP",
+      "Prompts",
+      "Subagents",
+      "Projects"
+    ],
+    "source_url": "https://github.com/travisvn/awesome-claude-skills",
+    "source_author": "travisvn",
+    "added_at": "2026-03-24T00:18:51.844913+00:00"
+  },
+  {
+    "slug": "公式コミュニティスキルをマーケットプレイスから導入する",
+    "name": "公式/コミュニティスキルをマーケットプレイスから導入する",
+    "category": "claude-code-workflow",
+    "description": "Anthropic公式スキル（docx, pdf, pptx, xlsx, frontend-design, mcp-builder等）やコミュニティスキル（superpowers, ios-simulator, playwright等）をマーケットプレイスまたはGitHubから導入する",
+    "trigger_phrases": [
+      "docx/pdf/pptx/xlsx操作、Web Artifacts作成、MCP構築、TDD/デバッグ、iOS/Playwright自動化など既存スキルがカバーするタスクを行うとき",
+      "公式/コミュニティスキルをマーケットプレイスから導入する",
+      "Claude Code CLI",
+      "Claude.ai",
+      "Claude API",
+      "GitHub"
+    ],
+    "source_url": "https://github.com/travisvn/awesome-claude-skills",
+    "source_author": "travisvn",
+    "added_at": "2026-03-24T00:18:51.844913+00:00"
+  },
+  {
+    "slug": "スキルのセキュリティ監査とベッティングを実施する",
+    "name": "スキルのセキュリティ監査とベッティングを実施する",
+    "category": "claude-code-workflow",
+    "description": "スキルは任意コード実行可能なため、導入前にSKILL.mdと全スクリプトをレビューし、信頼できるソース・バージョン管理・最小権限原則・定期監査を適用する",
+    "trigger_phrases": [
+      "新規スキル導入時、エンタープライズ環境への展開前、定期監査実施時",
+      "スキルのセキュリティ監査とベッティングを実施する",
+      "Git",
+      "コードレビューツール",
+      "内部承認フロー"
+    ],
+    "source_url": "https://github.com/travisvn/awesome-claude-skills",
+    "source_author": "travisvn",
+    "added_at": "2026-03-24T00:18:51.844913+00:00"
+  },
+  {
+    "slug": "gitリポジトリでスキルをバージョン管理チーム配布する",
+    "name": "Gitリポジトリでスキルをバージョン管理・チーム配布する",
+    "category": "claude-code-workflow",
+    "description": "カスタムスキルをGitリポジトリで管理し、バージョンタグ付け・ドキュメント化・チーム配布を行う",
+    "trigger_phrases": [
+      "チーム・組織でカスタムスキルを共有したい、バージョン管理・ロールバックが必要、一元管理機能がない環境でのとき",
+      "Gitリポジトリでスキルをバージョン管理・チーム配布する",
+      "Git",
+      "GitHub/GitLab/内部Gitサーバー",
+      "カスタムスキルをGitリポジトリで管理し、バージョンタグ付け・ドキュメント化・チーム配布を行う"
+    ],
+    "source_url": "https://github.com/travisvn/awesome-claude-skills",
+    "source_author": "travisvn",
+    "added_at": "2026-03-24T00:18:51.844913+00:00"
   }
 ]
