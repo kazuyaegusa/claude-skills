@@ -8403,5 +8403,125 @@
     "source_url": "https://github.com/gadievron/raptor",
     "source_author": "gadievron",
     "added_at": "2026-03-23T00:21:31.621080+00:00"
+  },
+  {
+    "slug": "npxで即座にgemini-cliを起動",
+    "name": "npxで即座にGemini CLIを起動",
+    "category": "prompt-engineering",
+    "description": "インストール不要で、npxコマンドを使ってGemini CLIをその場で実行する",
+    "trigger_phrases": [
+      "初回試用時、または複数バージョンを切り替えたい場合",
+      "npxで即座にGemini CLIを起動",
+      "npx",
+      "@google/gemini-cli",
+      "インストール不要で、npxコマンドを使ってGemini CLIをその場で実行する"
+    ],
+    "source_url": "https://github.com/google-gemini/gemini-cli",
+    "source_author": "google-gemini",
+    "added_at": "2026-03-24T00:03:28.937549+00:00"
+  },
+  {
+    "slug": "google-oauth認証で無料枠を利用",
+    "name": "Google OAuth認証で無料枠を利用",
+    "category": "context-management",
+    "description": "API Keyを使わず、個人のGoogleアカウントでOAuthログインし、無料枠（60req/min, 1000req/day）でGemini 3にアクセスする",
+    "trigger_phrases": [
+      "個人開発者、またはGemini Code Assist Licenseを持つ組織ユーザーの場合",
+      "Google OAuth認証で無料枠を利用",
+      "gemini CLI",
+      "Google OAuth"
+    ],
+    "source_url": "https://github.com/google-gemini/gemini-cli",
+    "source_author": "google-gemini",
+    "added_at": "2026-03-24T00:03:28.937549+00:00"
+  },
+  {
+    "slug": "非対話モードheadlessでスクリプト実行",
+    "name": "非対話モード（headless）でスクリプト実行",
+    "category": "prompt-engineering",
+    "description": "対話セッションを開かず、`-p`フラグで直接プロンプトを渡して結果を取得する",
+    "trigger_phrases": [
+      "自動化スクリプト、GitHub Actions、デプロイパイプラインでAI判断を組み込みたい場合",
+      "非対話モード（headless）でスクリプト実行",
+      "gemini CLI",
+      "jqなどのJSONパーサー（スクリプト連携時）",
+      "対話セッションを開かず、`-p`フラグで直接プロンプトを渡して結果を取得する"
+    ],
+    "source_url": "https://github.com/google-gemini/gemini-cli",
+    "source_author": "google-gemini",
+    "added_at": "2026-03-24T00:03:28.937549+00:00"
+  },
+  {
+    "slug": "geminimdでプロジェクト固有コンテキストを永続化",
+    "name": "GEMINI.mdでプロジェクト固有コンテキストを永続化",
+    "category": "context-management",
+    "description": "プロジェクトルートに`GEMINI.md`を配置し、Gemini CLIにコーディング規約・アーキテクチャ情報を常に読み込ませる",
+    "trigger_phrases": [
+      "複数人でプロジェクトを開発し、AI生成コードに一貫性を持たせたい場合",
+      "GEMINI.mdでプロジェクト固有コンテキストを永続化",
+      "GEMINI.md（プレーンテキスト）"
+    ],
+    "source_url": "https://github.com/google-gemini/gemini-cli",
+    "source_author": "google-gemini",
+    "added_at": "2026-03-24T00:03:28.937549+00:00"
+  },
+  {
+    "slug": "mcpサーバー統合でツール拡張",
+    "name": "MCPサーバー統合でツール拡張",
+    "category": "dev-tool",
+    "description": "`~/.gemini/settings.json`でMCPサーバーを設定し、Slack、DB、メディア生成などの外部ツールをGemini CLIから呼び出す",
+    "trigger_phrases": [
+      "GitHub、Slack、DBなど複数サービスをAIで統合操作したい場合",
+      "MCPサーバー統合でツール拡張",
+      "Model Context Protocol（MCP）",
+      "各種MCPサーバー実装"
+    ],
+    "source_url": "https://github.com/google-gemini/gemini-cli",
+    "source_author": "google-gemini",
+    "added_at": "2026-03-24T00:03:28.937549+00:00"
+  },
+  {
+    "slug": "github-action統合でpr自動レビュー",
+    "name": "GitHub Action統合でPR自動レビュー",
+    "category": "prompt-engineering",
+    "description": "Gemini CLI GitHub Actionを使い、PRが作成されたときに自動でコードレビューコメントを投稿する",
+    "trigger_phrases": [
+      "GitHub上でのPR/Issue管理を自動化したい場合",
+      "GitHub Action統合でPR自動レビュー",
+      "google-github-actions/run-gemini-cli",
+      "GitHub Actions"
+    ],
+    "source_url": "https://github.com/google-gemini/gemini-cli",
+    "source_author": "google-gemini",
+    "added_at": "2026-03-24T00:03:28.937549+00:00"
+  },
+  {
+    "slug": "リリースタグで安定版previewnightlyを使い分け",
+    "name": "リリースタグで安定版・preview・nightlyを使い分け",
+    "category": "dev-tool",
+    "description": "npmインストール時に`@latest`、`@preview`、`@nightly`タグを指定し、安定版・週次プレビュー・日次最新を選択する",
+    "trigger_phrases": [
+      "安定性とfeedbackサイクルをコントロールしたい場合",
+      "リリースタグで安定版・preview・nightlyを使い分け",
+      "npm",
+      "@google/gemini-cli"
+    ],
+    "source_url": "https://github.com/google-gemini/gemini-cli",
+    "source_author": "google-gemini",
+    "added_at": "2026-03-24T00:03:28.937549+00:00"
+  },
+  {
+    "slug": "google-search-groundingでリアルタイム情報取得",
+    "name": "Google Search groundingでリアルタイム情報取得",
+    "category": "prompt-engineering",
+    "description": "Gemini CLIの標準機能でGoogle Searchをgrounding sourceとして使い、最新情報を含む回答を得る",
+    "trigger_phrases": [
+      "最新のAPIドキュメント、ニュース、技術動向を参照したい場合",
+      "Google Search groundingでリアルタイム情報取得",
+      "Gemini API（Google Search grounding機能）"
+    ],
+    "source_url": "https://github.com/google-gemini/gemini-cli",
+    "source_author": "google-gemini",
+    "added_at": "2026-03-24T00:03:28.937549+00:00"
   }
 ]

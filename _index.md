@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 603 スキル
+合計: 611 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -607,3 +607,11 @@
 | セキュリティツールチェーンをllmで自律オーケストレーションする | セキュリティツールチェーンをLLMで自律オーケストレーションする | claude-code-workflow | Semgrep（静的解析）→CodeQL（データフロー検証）→AFL（ファジング）→LLM分析→PoC生成→パッチ提案を | gadievron |
 | secopsagentkitでオフェンシブセキュリティタスクを専門サブエージェントに委譲する | SecOpsAgentKitでオフェンシブセキュリティタスクを専門サブエージェントに委譲する | claude-code-workflow | .claude/agents/offsec-specialist.mdで定義された自律的なペネトレーションテスト専門エー | gadievron |
 | oss-forensicsで削除されたgithub履歴をbigquerywayback-machineで復元する | OSS Forensicsで削除されたGitHub履歴をBigQuery+Wayback Machineで復元する | claude-code-workflow | /oss-forensicsコマンドでGitHub Archive（BigQuery）、Wayback Machine、 | gadievron |
+| npxで即座にgemini-cliを起動 | npxで即座にGemini CLIを起動 | prompt-engineering | インストール不要で、npxコマンドを使ってGemini CLIをその場で実行する | google-gemini |
+| google-oauth認証で無料枠を利用 | Google OAuth認証で無料枠を利用 | context-management | API Keyを使わず、個人のGoogleアカウントでOAuthログインし、無料枠（60req/min, 1000req | google-gemini |
+| 非対話モードheadlessでスクリプト実行 | 非対話モード（headless）でスクリプト実行 | prompt-engineering | 対話セッションを開かず、`-p`フラグで直接プロンプトを渡して結果を取得する | google-gemini |
+| geminimdでプロジェクト固有コンテキストを永続化 | GEMINI.mdでプロジェクト固有コンテキストを永続化 | context-management | プロジェクトルートに`GEMINI.md`を配置し、Gemini CLIにコーディング規約・アーキテクチャ情報を常に読み | google-gemini |
+| mcpサーバー統合でツール拡張 | MCPサーバー統合でツール拡張 | dev-tool | `~/.gemini/settings.json`でMCPサーバーを設定し、Slack、DB、メディア生成などの外部ツー | google-gemini |
+| github-action統合でpr自動レビュー | GitHub Action統合でPR自動レビュー | prompt-engineering | Gemini CLI GitHub Actionを使い、PRが作成されたときに自動でコードレビューコメントを投稿する | google-gemini |
+| リリースタグで安定版previewnightlyを使い分け | リリースタグで安定版・preview・nightlyを使い分け | dev-tool | npmインストール時に`@latest`、`@preview`、`@nightly`タグを指定し、安定版・週次プレビュー | google-gemini |
+| google-search-groundingでリアルタイム情報取得 | Google Search groundingでリアルタイム情報取得 | prompt-engineering | Gemini CLIの標準機能でGoogle Searchをgrounding sourceとして使い、最新情報を含む回 | google-gemini |
