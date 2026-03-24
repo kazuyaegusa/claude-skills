@@ -8523,5 +8523,83 @@
     "source_url": "https://github.com/google-gemini/gemini-cli",
     "source_author": "google-gemini",
     "added_at": "2026-03-24T00:03:28.937549+00:00"
+  },
+  {
+    "slug": "promptfooによるプロンプト自動評価の実行",
+    "name": "promptfooによるプロンプト自動評価の実行",
+    "category": "prompt-engineering",
+    "description": "YAML設定ファイルに評価対象のプロンプト、テストケース、使用モデル、評価基準（アサーション）を記述し、promptfoo evalコマンドで一括実行して結果を可視化する",
+    "trigger_phrases": [
+      "プロンプトを新規作成・修正した時、モデルをアップグレードした時、品質要件を定義してベースラインを作りたい時、複数候補から最適プロンプトを選定したい時",
+      "promptfooによるプロンプト自動評価の実行",
+      "promptfoo CLI",
+      "Node.js（CLIインストール時）",
+      "対応LLMプロバイダーAPI（OpenAI、Anthropic、Azure OpenAI、AWS Bedrock、Ollama等）"
+    ],
+    "source_url": "https://github.com/promptfoo/promptfoo",
+    "source_author": "promptfoo",
+    "added_at": "2026-03-24T00:07:48.198041+00:00"
+  },
+  {
+    "slug": "promptfooによるレッドチーム脆弱性スキャン実施",
+    "name": "promptfooによるレッドチーム（脆弱性スキャン）実施",
+    "category": "prompt-engineering",
+    "description": "promptfoo red teamコマンドで、プロンプトインジェクション、PII漏洩、有害コンテンツ生成など、LLMアプリ特有のセキュリティ脆弱性を自動検出し、ダッシュボードでレポートする",
+    "trigger_phrases": [
+      "LLMアプリを本番リリース前にセキュリティ監査したい時、新しいプロンプトやモデルのリスクを評価したい時、規制対応でセキュリティ証跡が必要な時、定期的な脆弱性再評価をCI/CDに組み込みたい時",
+      "promptfooによるレッドチーム（脆弱性スキャン）実施",
+      "promptfoo CLI（redteamサブコマンド）",
+      "対応LLMプロバイダーAPI"
+    ],
+    "source_url": "https://github.com/promptfoo/promptfoo",
+    "source_author": "promptfoo",
+    "added_at": "2026-03-24T00:07:48.198041+00:00"
+  },
+  {
+    "slug": "cicdパイプラインへのpromptfoo評価統合",
+    "name": "CI/CDパイプラインへのpromptfoo評価統合",
+    "category": "prompt-engineering",
+    "description": "promptfoo evalをCI/CDスクリプトに組み込み、プロンプト変更が品質基準を満たさない場合にビルドを失敗させる自動ゲート制御を実現する",
+    "trigger_phrases": [
+      "複数人でプロンプトを編集するプロジェクトで品質を担保したい時、モデル切り替えやプロンプト修正時の影響を自動検証したい時、レッドチームスキャンを定期実行してセキュリティ監視したい時",
+      "CI/CDパイプラインへのpromptfoo評価統合",
+      "promptfoo CLI",
+      "GitHub Actions / GitLab CI / Jenkins等のCI/CDツール",
+      "promptfoo code scanコマンド（PR用）"
+    ],
+    "source_url": "https://github.com/promptfoo/promptfoo",
+    "source_author": "promptfoo",
+    "added_at": "2026-03-24T00:07:48.198041+00:00"
+  },
+  {
+    "slug": "promptfoo-code-scanによるpull-requestセキュリティレビュー",
+    "name": "promptfoo code scanによるPull Requestセキュリティレビュー",
+    "category": "prompt-engineering",
+    "description": "Pull Request差分内のLLM関連コード（プロンプト、パラメータ変更等）を静的解析し、セキュリティ・コンプライアンス違反を自動検出してコメント追加する",
+    "trigger_phrases": [
+      "複数人でLLMアプリを開発しコードレビュー負荷が高い時、セキュリティ専門家がチーム内にいない時、コンプライアンス基準を自動チェックしたい時、レビュー品質を標準化したい時",
+      "promptfoo code scanによるPull Requestセキュリティレビュー",
+      "promptfoo code scan",
+      "GitHub API（コメント投稿用）",
+      "CI/CD環境"
+    ],
+    "source_url": "https://github.com/promptfoo/promptfoo",
+    "source_author": "promptfoo",
+    "added_at": "2026-03-24T00:07:48.198041+00:00"
+  },
+  {
+    "slug": "promptfooでの複数モデル並列比較",
+    "name": "promptfooでの複数モデル並列比較",
+    "category": "prompt-engineering",
+    "description": "同一プロンプトを複数のLLMプロバイダー（OpenAI、Anthropic、Gemini、Ollama等）に並列送信し、出力品質・コスト・レイテンシを横並びで定量比較する",
+    "trigger_phrases": [
+      "新規LLMアプリ開発時にモデル選定したい時、既存モデルのコスト削減を検討する時、モデルアップグレード前に性能差を確認したい時、マルチモデル戦略（タスクごとに最適モデル切り替え）を設計したい時",
+      "promptfooでの複数モデル並列比較",
+      "promptfoo CLI",
+      "対応プロバイダー（OpenAI、Anthropic、Google AI、Azure OpenAI、AWS Bedrock、Ollama、Replicate、Hugging Face等）"
+    ],
+    "source_url": "https://github.com/promptfoo/promptfoo",
+    "source_author": "promptfoo",
+    "added_at": "2026-03-24T00:07:48.198041+00:00"
   }
 ]

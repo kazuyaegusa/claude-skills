@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 611 スキル
+合計: 616 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -615,3 +615,8 @@
 | github-action統合でpr自動レビュー | GitHub Action統合でPR自動レビュー | prompt-engineering | Gemini CLI GitHub Actionを使い、PRが作成されたときに自動でコードレビューコメントを投稿する | google-gemini |
 | リリースタグで安定版previewnightlyを使い分け | リリースタグで安定版・preview・nightlyを使い分け | dev-tool | npmインストール時に`@latest`、`@preview`、`@nightly`タグを指定し、安定版・週次プレビュー | google-gemini |
 | google-search-groundingでリアルタイム情報取得 | Google Search groundingでリアルタイム情報取得 | prompt-engineering | Gemini CLIの標準機能でGoogle Searchをgrounding sourceとして使い、最新情報を含む回 | google-gemini |
+| promptfooによるプロンプト自動評価の実行 | promptfooによるプロンプト自動評価の実行 | prompt-engineering | YAML設定ファイルに評価対象のプロンプト、テストケース、使用モデル、評価基準（アサーション）を記述し、promptfo | promptfoo |
+| promptfooによるレッドチーム脆弱性スキャン実施 | promptfooによるレッドチーム（脆弱性スキャン）実施 | prompt-engineering | promptfoo red teamコマンドで、プロンプトインジェクション、PII漏洩、有害コンテンツ生成など、LLMア | promptfoo |
+| cicdパイプラインへのpromptfoo評価統合 | CI/CDパイプラインへのpromptfoo評価統合 | prompt-engineering | promptfoo evalをCI/CDスクリプトに組み込み、プロンプト変更が品質基準を満たさない場合にビルドを失敗させ | promptfoo |
+| promptfoo-code-scanによるpull-requestセキュリティレビュー | promptfoo code scanによるPull Requestセキュリティレビュー | prompt-engineering | Pull Request差分内のLLM関連コード（プロンプト、パラメータ変更等）を静的解析し、セキュリティ・コンプライア | promptfoo |
+| promptfooでの複数モデル並列比較 | promptfooでの複数モデル並列比較 | prompt-engineering | 同一プロンプトを複数のLLMプロバイダー（OpenAI、Anthropic、Gemini、Ollama等）に並列送信し、 | promptfoo |
