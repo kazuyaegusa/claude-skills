@@ -28,6 +28,13 @@
 - 「Chromeで○○を開いて操作します。いいですか？」のように聞く
 - 許可なく勝手に操作しない。ユーザーが作業中のアプリを中断させない
 
+### 他人のリポジトリには絶対にpushしない
+- `git push` を実行する前に、必ず `git remote -v` でリモートURLを確認する
+- push先URLに `kazuyaegusa` が含まれない場合、**pushを中止する。例外なし。**
+- originが他人のリポを指している場合でも、そのまま `git push origin` してはならない
+- サブエージェントにpushを委任する場合も、push先リモート名を明示的に指定する
+- force push (`--force`) は他人のリポに対して絶対禁止
+
 ## 認証方針
 
 - `claude -p` / `claude --resume` を子プロセスから実行するときは、`ANTHROPIC_API_KEY` / `ANTHROPIC_AUTH_TOKEN` / `ANTHROPIC_BASE_URL` を環境から外す
