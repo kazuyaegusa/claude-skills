@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 651 スキル
+合計: 655 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -655,3 +655,7 @@
 | fp-checkスキルで偽陽性を体系的に検証 | fp-checkスキルで偽陽性を体系的に検証 | claude-code-workflow | 静的解析ツールが報告したセキュリティ問題が本物の脆弱性か偽陽性かを段階的にレビューする | trailofbits |
 | constant-time-analysisでタイミングサイドチャネルを検出 | constant-time-analysisでタイミングサイドチャネルを検出 | claude-code-workflow | 暗号化コードがコンパイラ最適化によって定数時間性を失っていないか検証する | trailofbits |
 | ローカル開発環境でマーケットプレイスをテスト | ローカル開発環境でマーケットプレイスをテスト | claude-code-workflow | 自作スキルをマーケットプレイスに公開する前にローカルで動作確認する | trailofbits |
+| claude-codeをインストールして起動する | Claude Codeをインストールして起動する | claude-code-workflow | ターミナルからClaude Codeをインストールし、プロジェクトディレクトリで起動する | anthropics |
+| 自然言語コマンドでコードベース操作を実行する | 自然言語コマンドでコードベース操作を実行する | claude-code-workflow | Claude Codeセッション内で自然言語の指示を与え、コード理解・編集・Git操作などを実行させる | anthropics |
+| プラグインで機能を拡張する | プラグインで機能を拡張する | claude-code-workflow | Claude Code公式リポジトリのpluginsディレクトリを参照し、カスタムコマンドやエージェントを追加する | anthropics |
+| bugコマンドでフィードバックを送る | /bugコマンドでフィードバックを送る | claude-code-workflow | Claude Code内で `/bug` コマンドを実行し、問題報告を直接送信する | anthropics |

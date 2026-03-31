@@ -9142,5 +9142,66 @@
     "source_url": "https://github.com/trailofbits/skills",
     "source_author": "trailofbits",
     "added_at": "2026-03-24T00:22:05.453208+00:00"
+  },
+  {
+    "slug": "claude-codeをインストールして起動する",
+    "name": "Claude Codeをインストールして起動する",
+    "category": "claude-code-workflow",
+    "description": "ターミナルからClaude Codeをインストールし、プロジェクトディレクトリで起動する",
+    "trigger_phrases": [
+      "Claude Codeを初めて導入する時、または新しいマシンで環境構築する時",
+      "Claude Codeをインストールして起動する",
+      "curl/irm（インストールスクリプト実行）",
+      "Homebrew（MacOS/Linux）",
+      "WinGet（Windows）",
+      "npm（非推奨だが利用可能）",
+      "ターミナルからClaude Codeをインストールし、プロジェクトディレクトリで起動する"
+    ],
+    "source_url": "https://github.com/anthropics/claude-code",
+    "source_author": "anthropics",
+    "added_at": "2026-03-31T00:04:13.803407+00:00"
+  },
+  {
+    "slug": "自然言語コマンドでコードベース操作を実行する",
+    "name": "自然言語コマンドでコードベース操作を実行する",
+    "category": "claude-code-workflow",
+    "description": "Claude Codeセッション内で自然言語の指示を与え、コード理解・編集・Git操作などを実行させる",
+    "trigger_phrases": [
+      "定型的なコード変更、複数ファイルに跨がるリファクタリング、Git操作の自動化が必要な時",
+      "自然言語コマンドでコードベース操作を実行する",
+      "Claude Code CLI"
+    ],
+    "source_url": "https://github.com/anthropics/claude-code",
+    "source_author": "anthropics",
+    "added_at": "2026-03-31T00:04:13.803407+00:00"
+  },
+  {
+    "slug": "プラグインで機能を拡張する",
+    "name": "プラグインで機能を拡張する",
+    "category": "claude-code-workflow",
+    "description": "Claude Code公式リポジトリのpluginsディレクトリを参照し、カスタムコマンドやエージェントを追加する",
+    "trigger_phrases": [
+      "標準機能では足りない、プロジェクト固有の自動化やワークフローがある場合",
+      "プラグインで機能を拡張する",
+      "Claude Code plugins（公式リポジトリ）"
+    ],
+    "source_url": "https://github.com/anthropics/claude-code",
+    "source_author": "anthropics",
+    "added_at": "2026-03-31T00:04:13.803407+00:00"
+  },
+  {
+    "slug": "bugコマンドでフィードバックを送る",
+    "name": "/bugコマンドでフィードバックを送る",
+    "category": "claude-code-workflow",
+    "description": "Claude Code内で `/bug` コマンドを実行し、問題報告を直接送信する",
+    "trigger_phrases": [
+      "Claude Code使用中にバグや不具合を発見した時、機能要望がある時",
+      "/bugコマンドでフィードバックを送る",
+      "Claude Code内蔵コマンド",
+      "Claude Code内で `/bug` コマンドを実行し、問題報告を直接送信する"
+    ],
+    "source_url": "https://github.com/anthropics/claude-code",
+    "source_author": "anthropics",
+    "added_at": "2026-03-31T00:04:13.803407+00:00"
   }
 ]
