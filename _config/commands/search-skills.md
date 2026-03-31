@@ -5,12 +5,7 @@ description: AIスキルカタログからキーワードで検索する
 
 以下の SQLite データベースからスキルを検索してください。
 
-**データベース**: 以下のパスを順に探し、最初に見つかったものを使用してください:
-1. `~/KEWORK/claude_research/data/skills.db`
-2. `~/Documents/01_Global/claude_research/data/skills.db`
-3. `~/KEWORK/core/claude_research/data/skills.db`
-
-見つからない場合は「skills.db が見つかりません。claude_research リポをクローンしてください」と表示してください。
+**データベース**: /Users/kazuyaegusa/KEWORK/claude_research/data/skills.db
 
 **検索キーワード**: $ARGUMENTS
 

@@ -6,12 +6,8 @@ description: カタログからスキルを ~/.claude/skills/ にインストー
 指定されたスキルをインストールしてください。
 
 **スラッグ**: $ARGUMENTS
-**データベース**: 以下のパスを順に探し、最初に見つかったものを使用してください:
-1. `~/KEWORK/claude_research/data/skills.db`
-2. `~/Documents/01_Global/claude_research/data/skills.db`
-3. `~/KEWORK/core/claude_research/data/skills.db`
-
-**カタログ**: データベースと同じ親ディレクトリの `../catalog/raw/`
+**データベース**: /Users/kazuyaegusa/KEWORK/claude_research/data/skills.db
+**カタログ**: /Users/kazuyaegusa/KEWORK/claude_research/catalog/raw/
 
 ## 手順
 
