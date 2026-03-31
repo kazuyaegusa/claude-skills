@@ -9469,5 +9469,200 @@
     "source_url": "https://github.com/oraios/serena",
     "source_author": "oraios",
     "added_at": "2026-03-31T00:10:51.997098+00:00"
+  },
+  {
+    "slug": "activepiecesのpieceをtypescriptで開発してmcpサーバー化する",
+    "name": "ActivepiecesのpieceをTypeScriptで開発してMCPサーバー化する",
+    "category": "agent-orchestration",
+    "description": "TypeScriptでActivepieces用のpiece（統合コンポーネント）を作成し、npmに公開することで、自動的にMCPサーバーとしてClaude Desktop等から利用可能にする",
+    "trigger_phrases": [
+      "既存のMCPサーバーに欲しい統合が無い場合、またはワークフロー自動化とLLM統合を同時に実現したい場合",
+      "ActivepiecesのpieceをTypeScriptで開発してMCPサーバー化する",
+      "Activepieces framework",
+      "TypeScript",
+      "npmjs.com"
+    ],
+    "source_url": "https://github.com/activepieces/activepieces",
+    "source_author": "activepieces",
+    "added_at": "2026-03-31T00:12:13.414436+00:00"
+  },
+  {
+    "slug": "activepiecesをセルフホストしてエンタープライズ環境で運用する",
+    "name": "Activepiecesをセルフホストしてエンタープライズ環境で運用する",
+    "category": "automation-pipeline",
+    "description": "Activepiecesをオンプレミスまたはプライベートクラウドにデプロイし、ネットワークギャップ環境でも安全にワークフロー自動化を実現する",
+    "trigger_phrases": [
+      "セキュリティ要件が厳しい、データを外部に出せない、カスタマイズ要件が多い場合",
+      "Activepiecesをセルフホストしてエンタープライズ環境で運用する",
+      "Docker",
+      "Kubernetes",
+      "Activepieces (Community Edition: MIT / Enterprise Edition: Commercial License)"
+    ],
+    "source_url": "https://github.com/activepieces/activepieces",
+    "source_author": "activepieces",
+    "added_at": "2026-03-31T00:12:13.414436+00:00"
+  },
+  {
+    "slug": "activepiecesのビルダーでノーコードワークフローを構築する",
+    "name": "Activepiecesのビルダーでノーコードワークフローを構築する",
+    "category": "automation-pipeline",
+    "description": "Activepiecesのビルダー（ノーコードUI）を使い、Loops、Branches、Auto Retries、HTTP、Code with NPMなどの機能を組み合わせてワークフローを作成する",
+    "trigger_phrases": [
+      "非技術者がワークフロー自動化を行いたい、または技術者が迅速にプロトタイプを作りたい場合",
+      "Activepiecesのビルダーでノーコードワークフローを構築する",
+      "Activepiecesビルダー",
+      "200+ pieces（Google Sheets、OpenAI、Discord、RSS等）"
+    ],
+    "source_url": "https://github.com/activepieces/activepieces",
+    "source_author": "activepieces",
+    "added_at": "2026-03-31T00:12:13.414436+00:00"
+  },
+  {
+    "slug": "宣言的なevals設定でプロンプトを自動評価する",
+    "name": "宣言的なevals設定でプロンプトを自動評価する",
+    "category": "prompt-engineering",
+    "description": "YAML設定ファイルにプロンプト・モデル・テストケース・評価基準を記述し、promptfoo CLIで一括評価を実行する",
+    "trigger_phrases": [
+      "プロンプト改善のPDCAを回す、複数のプロンプトバリエーションを体系的に比較する、プロンプトの性能退行（regression）を防ぎたい場合",
+      "宣言的なevals設定でプロンプトを自動評価する",
+      "promptfoo CLI（npm/brew/pip）",
+      "promptfooconfig.yaml（設定ファイル）"
+    ],
+    "source_url": "https://github.com/promptfoo/promptfoo",
+    "source_author": "promptfoo",
+    "added_at": "2026-03-31T00:13:44.059350+00:00"
+  },
+  {
+    "slug": "レッドチーム攻撃で脆弱性を自動検出する",
+    "name": "レッドチーム攻撃で脆弱性を自動検出する",
+    "category": "prompt-engineering",
+    "description": "promptfooのred teamingモードで、prompt injection・jailbreak・PII漏洩・バイアス等の攻撃パターンを自動生成し、LLMアプリの脆弱性レポートを出力する",
+    "trigger_phrases": [
+      "LLMアプリを本番リリースする前にセキュリティ監査を行う、プロンプトインジェクション対策の有効性を検証する、PII漏洩リスクをチェックする場合",
+      "レッドチーム攻撃で脆弱性を自動検出する",
+      "promptfoo CLI（redteamモード）",
+      "promptfooのred teaming engine"
+    ],
+    "source_url": "https://github.com/promptfoo/promptfoo",
+    "source_author": "promptfoo",
+    "added_at": "2026-03-31T00:13:44.059350+00:00"
+  },
+  {
+    "slug": "複数モデルを横断比較して最適な選択をする",
+    "name": "複数モデルを横断比較して最適な選択をする",
+    "category": "prompt-engineering",
+    "description": "promptfooconfig.yamlのproviders配列に複数のLLMプロバイダーを列挙し、同一テストケースで性能・コスト・レイテンシを比較する",
+    "trigger_phrases": [
+      "新規プロジェクトでどのLLMを採用すべきか判断する、既存モデルから別モデルへの移行を検討する、マルチモデル戦略（タスクごとに最適モデルを使い分け）を設計する場合",
+      "複数モデルを横断比較して最適な選択をする",
+      "promptfoo CLI",
+      "promptfooがサポートするプロバイダー（OpenAI, Anthropic, Azure, Bedrock, Ollama等）"
+    ],
+    "source_url": "https://github.com/promptfoo/promptfoo",
+    "source_author": "promptfoo",
+    "added_at": "2026-03-31T00:13:44.059350+00:00"
+  },
+  {
+    "slug": "cicdパイプラインにevalsred-teamingを組み込む",
+    "name": "CI/CDパイプラインにevals/red teamingを組み込む",
+    "category": "prompt-engineering",
+    "description": "promptfoo CLIをCI/CDスクリプトに統合し、Pull Request時やデプロイ前に自動評価を実行、品質ゲートとして機能させる",
+    "trigger_phrases": [
+      "プロンプト変更のPull Requestを自動検証したい、デプロイ前にレッドチーム攻撃を必須チェックとして実行したい、継続的なLLM品質モニタリングを構築する場合",
+      "CI/CDパイプラインにevals/red teamingを組み込む",
+      "promptfoo CLI",
+      "GitHub Actions / GitLab CI / CircleCI等",
+      "promptfoo code-scan（Pull Requestレビュー機能）"
+    ],
+    "source_url": "https://github.com/promptfoo/promptfoo",
+    "source_author": "promptfoo",
+    "added_at": "2026-03-31T00:13:44.059350+00:00"
+  },
+  {
+    "slug": "ローカル実行でプライバシーを保護する",
+    "name": "ローカル実行でプライバシーを保護する",
+    "category": "prompt-engineering",
+    "description": "promptfooはすべての評価処理をローカル環境で実行し、プロンプトや評価データを外部サーバーに送信しない",
+    "trigger_phrases": [
+      "機密性の高いプロンプトやデータを扱う、社内規定で評価データの外部送信が禁止されている、オフライン環境で評価を実行したい場合",
+      "ローカル実行でプライバシーを保護する",
+      "promptfoo CLI（ローカルインストール）"
+    ],
+    "source_url": "https://github.com/promptfoo/promptfoo",
+    "source_author": "promptfoo",
+    "added_at": "2026-03-31T00:13:44.059350+00:00"
+  },
+  {
+    "slug": "agent-skills標準でドメイン特化スキルを定義",
+    "name": "Agent Skills標準でドメイン特化スキルを定義",
+    "category": "claude-code-workflow",
+    "description": "科学計算ライブラリ・データベース・ツールをAgent Skills仕様のSKILL.mdファイルとして構造化し、AIエージェントが自動検出・利用可能にする",
+    "trigger_phrases": [
+      "科学計算・研究タスクをAIエージェントに任せる際、毎回APIドキュメントから説明するのではなく即座に実行させたい時",
+      "Agent Skills標準でドメイン特化スキルを定義",
+      "Agent Skills標準 (https://agentskills.io/)",
+      "Cursor / Claude Code / Codex / Gemini CLI"
+    ],
+    "source_url": "https://github.com/K-Dense-AI/claude-scientific-skills",
+    "source_author": "K-Dense-AI",
+    "added_at": "2026-03-31T00:15:45.453363+00:00"
+  },
+  {
+    "slug": "100データベースを統一database-lookupスキルで検索",
+    "name": "100+データベースを統一database-lookupスキルで検索",
+    "category": "agent-orchestration",
+    "description": "PubChem, ChEMBL, UniProt, COSMIC, ClinicalTrials.gov等78データベースへのREST API呼び出しを1つのスキルに集約し、エージェントが横断検索可能にする",
+    "trigger_phrases": [
+      "複数の科学データベースを横断して情報収集する必要がある時（創薬、バリアント解釈、文献調査等）",
+      "100+データベースを統一database-lookupスキルで検索",
+      "database-lookup skill",
+      "78+ REST API (PubChem, ChEMBL, UniProt, COSMIC, ClinicalTrials.gov, FDA, KEGG, Reactome, STRING, ClinVar等)"
+    ],
+    "source_url": "https://github.com/K-Dense-AI/claude-scientific-skills",
+    "source_author": "K-Dense-AI",
+    "added_at": "2026-03-31T00:15:45.453363+00:00"
+  },
+  {
+    "slug": "複雑な科学ワークフローを1プロンプトで実行",
+    "name": "複雑な科学ワークフローを1プロンプトで実行",
+    "category": "agent-orchestration",
+    "description": "「データ取得→前処理→解析→可視化→レポート生成」といった多段階ワークフローを、複数スキルを組み合わせて1プロンプトで完結させる",
+    "trigger_phrases": [
+      "論文再現、探索的データ解析、仮説検証など、複数ツールを組み合わせた複雑な解析が必要な時",
+      "複雑な科学ワークフローを1プロンプトで実行",
+      "Scanpy, PyDESeq2, Arboreto, KEGG, Reactome, Open Targets, matplotlib, seaborn等の組み合わせ"
+    ],
+    "source_url": "https://github.com/K-Dense-AI/claude-scientific-skills",
+    "source_author": "K-Dense-AI",
+    "added_at": "2026-03-31T00:15:45.453363+00:00"
+  },
+  {
+    "slug": "uvパッケージマネージャでスキル依存関係管理",
+    "name": "uvパッケージマネージャでスキル依存関係管理",
+    "category": "claude-code-workflow",
+    "description": "各スキルのPython依存関係をuvで高速インストール・管理し、環境構築を自動化する",
+    "trigger_phrases": [
+      "新しいスキルを使い始める時、または依存パッケージのバージョン管理が必要な時",
+      "uvパッケージマネージャでスキル依存関係管理",
+      "uv (https://docs.astral.sh/uv/)",
+      "各スキルのPython依存関係をuvで高速インストール・管理し、環境構築を自動化する"
+    ],
+    "source_url": "https://github.com/K-Dense-AI/claude-scientific-skills",
+    "source_author": "K-Dense-AI",
+    "added_at": "2026-03-31T00:15:45.453363+00:00"
+  },
+  {
+    "slug": "セキュリティスキャンで悪意あるスキルを検出",
+    "name": "セキュリティスキャンで悪意あるスキルを検出",
+    "category": "claude-code-workflow",
+    "description": "Cisco AI Defense Skill Scannerを使い、スキルがプロンプトインジェクション・データ流出・悪意あるコードを含まないか検証する",
+    "trigger_phrases": [
+      "コミュニティ提供のスキルや未検証のスキルをインストールする前",
+      "セキュリティスキャンで悪意あるスキルを検出",
+      "cisco-ai-skill-scanner (https://github.com/cisco-ai-defense/skill-scanner)"
+    ],
+    "source_url": "https://github.com/K-Dense-AI/claude-scientific-skills",
+    "source_author": "K-Dense-AI",
+    "added_at": "2026-03-31T00:15:45.453363+00:00"
   }
 ]

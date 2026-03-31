@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 672 スキル
+合計: 685 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -676,3 +676,16 @@
 | mcpサーバーでlsp機能をllmに公開する | MCPサーバーでLSP機能をLLMに公開する | claude-code-workflow | LSP（Language Server Protocol）やJetBrains IDE解析をMCPサーバーとしてラップし | oraios |
 | シンボルレベルツールでコードを検索編集する | シンボルレベルツールでコードを検索・編集する | other | find_symbol でシンボル名から定義箇所を特定し、find_referencing_symbols で使用箇所を | oraios |
 | lspとjetbrains-pluginから選択する | LSPとJetBrains Pluginから選択する | other | バックエンドとしてLSP（無償・オープンソース、40+言語対応）またはJetBrains Plugin（IDE解析、最強 | oraios |
+| activepiecesのpieceをtypescriptで開発してmcpサーバー化する | ActivepiecesのpieceをTypeScriptで開発してMCPサーバー化する | agent-orchestration | TypeScriptでActivepieces用のpiece（統合コンポーネント）を作成し、npmに公開することで、自動 | activepieces |
+| activepiecesをセルフホストしてエンタープライズ環境で運用する | Activepiecesをセルフホストしてエンタープライズ環境で運用する | automation-pipeline | Activepiecesをオンプレミスまたはプライベートクラウドにデプロイし、ネットワークギャップ環境でも安全にワークフ | activepieces |
+| activepiecesのビルダーでノーコードワークフローを構築する | Activepiecesのビルダーでノーコードワークフローを構築する | automation-pipeline | Activepiecesのビルダー（ノーコードUI）を使い、Loops、Branches、Auto Retries、HT | activepieces |
+| 宣言的なevals設定でプロンプトを自動評価する | 宣言的なevals設定でプロンプトを自動評価する | prompt-engineering | YAML設定ファイルにプロンプト・モデル・テストケース・評価基準を記述し、promptfoo CLIで一括評価を実行する | promptfoo |
+| レッドチーム攻撃で脆弱性を自動検出する | レッドチーム攻撃で脆弱性を自動検出する | prompt-engineering | promptfooのred teamingモードで、prompt injection・jailbreak・PII漏洩・バ | promptfoo |
+| 複数モデルを横断比較して最適な選択をする | 複数モデルを横断比較して最適な選択をする | prompt-engineering | promptfooconfig.yamlのproviders配列に複数のLLMプロバイダーを列挙し、同一テストケースで性 | promptfoo |
+| cicdパイプラインにevalsred-teamingを組み込む | CI/CDパイプラインにevals/red teamingを組み込む | prompt-engineering | promptfoo CLIをCI/CDスクリプトに統合し、Pull Request時やデプロイ前に自動評価を実行、品質ゲ | promptfoo |
+| ローカル実行でプライバシーを保護する | ローカル実行でプライバシーを保護する | prompt-engineering | promptfooはすべての評価処理をローカル環境で実行し、プロンプトや評価データを外部サーバーに送信しない | promptfoo |
+| agent-skills標準でドメイン特化スキルを定義 | Agent Skills標準でドメイン特化スキルを定義 | claude-code-workflow | 科学計算ライブラリ・データベース・ツールをAgent Skills仕様のSKILL.mdファイルとして構造化し、AIエー | K-Dense-AI |
+| 100データベースを統一database-lookupスキルで検索 | 100+データベースを統一database-lookupスキルで検索 | agent-orchestration | PubChem, ChEMBL, UniProt, COSMIC, ClinicalTrials.gov等78データベー | K-Dense-AI |
+| 複雑な科学ワークフローを1プロンプトで実行 | 複雑な科学ワークフローを1プロンプトで実行 | agent-orchestration | 「データ取得→前処理→解析→可視化→レポート生成」といった多段階ワークフローを、複数スキルを組み合わせて1プロンプトで完 | K-Dense-AI |
+| uvパッケージマネージャでスキル依存関係管理 | uvパッケージマネージャでスキル依存関係管理 | claude-code-workflow | 各スキルのPython依存関係をuvで高速インストール・管理し、環境構築を自動化する | K-Dense-AI |
+| セキュリティスキャンで悪意あるスキルを検出 | セキュリティスキャンで悪意あるスキルを検出 | claude-code-workflow | Cisco AI Defense Skill Scannerを使い、スキルがプロンプトインジェクション・データ流出・悪意 | K-Dense-AI |
