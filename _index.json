@@ -9203,5 +9203,271 @@
     "source_url": "https://github.com/anthropics/claude-code",
     "source_author": "anthropics",
     "added_at": "2026-03-31T00:04:13.803407+00:00"
+  },
+  {
+    "slug": "slash-commandsによる再利用可能プロンプト",
+    "name": "Slash-Commandsによる再利用可能プロンプト",
+    "category": "claude-code-workflow",
+    "description": "頻繁に使う複雑なプロンプトを `/commit`, `/tdd` 等の短縮コマンドとして登録し、即座に呼び出す",
+    "trigger_phrases": [
+      "複数人がClaude Codeを使うプロジェクトで、Git操作・テスト・ドキュメント生成の手順を標準化したい時",
+      "Slash-Commandsによる再利用可能プロンプト",
+      ".claude/commands/ 配置",
+      "/create-command（コマンド生成支援）"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-31T00:06:17.424632+00:00"
+  },
+  {
+    "slug": "claudemdによるプロジェクト固有知識注入",
+    "name": "CLAUDE.mdによるプロジェクト固有知識注入",
+    "category": "claude-code-workflow",
+    "description": "リポジトリルートまたは `.claude/` に `CLAUDE.md` を配置し、ビルドコマンド、コーディング規約、アーキテクチャ等を記述する",
+    "trigger_phrases": [
+      "新規メンバーやエージェントが頻繁にジョインするプロジェクト、または特殊な開発フローを採用している場合",
+      "CLAUDE.mdによるプロジェクト固有知識注入",
+      "CLAUDE.md 配置（リポジトリルートまたは .claude/）"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-31T00:06:17.424632+00:00"
+  },
+  {
+    "slug": "オーケストレータによるマルチエージェント協調",
+    "name": "オーケストレータによるマルチエージェント協調",
+    "category": "claude-code-workflow",
+    "description": "複数のClaude Codeインスタンスを並列起動し、タスクを分散実行・結果を統合する",
+    "trigger_phrases": [
+      "モノレポで複数パッケージを同時変更、大量ファイルの一括リファクタリング、並列テスト実行が必要な時",
+      "オーケストレータによるマルチエージェント協調",
+      "Claude Squad（マルチワークスペース管理）",
+      "Auto-Claude（SDLC統合）",
+      "Ruflo（マルチエージェントswarm）",
+      "viwo-cli（Docker + git worktree）",
+      "複数のClaude Codeインスタンスを並列起動し、タスクを分散実行・結果を統合する"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-31T00:06:17.424632+00:00"
+  },
+  {
+    "slug": "セッション履歴の検索復元",
+    "name": "セッション履歴の検索・復元",
+    "category": "claude-code-workflow",
+    "description": "過去のClaude Codeセッションログ（.jsonl）を全文検索し、関連する会話・コード変更を復元する",
+    "trigger_phrases": [
+      "過去に似た問題を解決した記憶があるが、いつのセッションか思い出せない時、または長期プロジェクトで数ヶ月前の設計判断を参照したい時",
+      "セッション履歴の検索・復元",
+      "recall（シンプルCLI）",
+      "claude-code-tools（Rust製高速検索）",
+      "Claudex（Webブラウザ + 全文検索）"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-31T00:06:17.424632+00:00"
+  },
+  {
+    "slug": "使用量コスト可視化ダッシュボード",
+    "name": "使用量・コスト可視化ダッシュボード",
+    "category": "claude-code-workflow",
+    "description": "Claude Codeのトークン消費量、APIコスト、モデル使用率をリアルタイム集計・グラフ表示する",
+    "trigger_phrases": [
+      "従量課金APIを使用している、またはチームで予算管理が必要な場合",
+      "使用量・コスト可視化ダッシュボード",
+      "ccflare（Web UI）",
+      "better-ccflare（拡張版）",
+      "CC Usage（CLI）",
+      "Claude Code Usage Monitor（TUI）",
+      "Claude Codeのトークン消費量、APIコスト、モデル使用率をリアルタイム集計・グラフ表示する"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-03-31T00:06:17.424632+00:00"
+  },
+  {
+    "slug": "cliskillsによるトークン効率化",
+    "name": "CLI+SKILLSによるトークン効率化",
+    "category": "agent-orchestration",
+    "description": "MCPサーバーの代わりにPlaywright CLIとSKILLSを使ってブラウザ自動化を実行し、コンテキストウィンドウの消費を削減する",
+    "trigger_phrases": [
+      "コーディングエージェントが大規模コードベース、テスト、推論を限られたコンテキストウィンドウ内でバランスよく扱う必要がある場合。トークンコストが制約となる高スループット環境。",
+      "CLI+SKILLSによるトークン効率化",
+      "Playwright CLI",
+      "SKILLS機構（エージェントフレームワーク依存）"
+    ],
+    "source_url": "https://github.com/microsoft/playwright-mcp",
+    "source_author": "microsoft",
+    "added_at": "2026-03-31T00:07:46.979112+00:00"
+  },
+  {
+    "slug": "mcpによる永続的ブラウザコンテキスト管理",
+    "name": "MCPによる永続的ブラウザコンテキスト管理",
+    "category": "claude-code-workflow",
+    "description": "Model Context Protocol (MCP)サーバーを使ってブラウザ自動化を行い、永続的な状態と豊富なイントロスペクションを活用する",
+    "trigger_phrases": [
+      "探索的な自動化、ページ構造の反復的分析が必要な場合、セルフヒーリングテスト、長時間実行される自律ワークフローなど、継続的なブラウザコンテキストの維持が重要な場合。",
+      "MCPによる永続的ブラウザコンテキスト管理",
+      "@playwright/mcp",
+      "Node.js",
+      "MCP対応クライアント"
+    ],
+    "source_url": "https://github.com/microsoft/playwright-mcp",
+    "source_author": "microsoft",
+    "added_at": "2026-03-31T00:07:46.979112+00:00"
+  },
+  {
+    "slug": "アクセシビリティツリーベースの自動化",
+    "name": "アクセシビリティツリーベースの自動化",
+    "category": "agent-orchestration",
+    "description": "スクリーンショットやビジョンモデルの代わりに、Playwrightのアクセシビリティツリーを使ってブラウザ操作を行う",
+    "trigger_phrases": [
+      "ブラウザ自動化が必要なあらゆる場面で、特にトークン効率と決定論的動作が重要な場合。ビジョンモデルを避けたい場合。",
+      "アクセシビリティツリーベースの自動化",
+      "Playwright",
+      "@playwright/mcp"
+    ],
+    "source_url": "https://github.com/microsoft/playwright-mcp",
+    "source_author": "microsoft",
+    "added_at": "2026-03-31T00:07:46.979112+00:00"
+  },
+  {
+    "slug": "mcpサーバーのマルチクライアント対応設定",
+    "name": "MCPサーバーのマルチクライアント対応設定",
+    "category": "claude-code-workflow",
+    "description": "Playwright MCPサーバーを複数のMCPクライアント（VS Code, Claude Desktop, Cursor, Windsurf等）で共通の設定方法で導入する",
+    "trigger_phrases": [
+      "複数のMCPクライアントでPlaywright自動化を利用したい場合、チーム内で統一的な設定を共有したい場合。",
+      "MCPサーバーのマルチクライアント対応設定",
+      "npx",
+      "@playwright/mcp"
+    ],
+    "source_url": "https://github.com/microsoft/playwright-mcp",
+    "source_author": "microsoft",
+    "added_at": "2026-03-31T00:07:46.979112+00:00"
+  },
+  {
+    "slug": "コンテナ単位でのagent分離実行",
+    "name": "コンテナ単位でのAgent分離実行",
+    "category": "claude-code-workflow",
+    "description": "各グループのAI AgentをLinuxコンテナ（macOSならApple Container、Linux/WindowsならDocker）で独立実行し、明示的にマウントしたディレクトリのみアクセス可能にする",
+    "trigger_phrases": [
+      "複数のAI Agentを同一ホストで安全に実行したい時、Agentにファイルアクセスやコマンド実行権限を与えつつホスト環境を保護したい時",
+      "コンテナ単位でのAgent分離実行",
+      "Docker / Apple Container",
+      "Claude Agent SDK",
+      "OneCLI Agent Vault（クレデンシャル管理）"
+    ],
+    "source_url": "https://github.com/qwibitai/nanoclaw",
+    "source_author": "qwibitai",
+    "added_at": "2026-03-31T00:09:17.979104+00:00"
+  },
+  {
+    "slug": "スキルベースの機能拡張アーキテクチャ",
+    "name": "スキルベースの機能拡張アーキテクチャ",
+    "category": "claude-code-workflow",
+    "description": "新機能をコアコードベースにマージせず、Claude Codeスキル（`/add-whatsapp`等のコマンド）として配布し、ユーザーが各自のフォークに適用する",
+    "trigger_phrases": [
+      "フレームワークの汎用性を高めたいが、全ユーザーに全機能を押し付けたくない時。コードベースのサイズを小さく保ちたい時",
+      "スキルベースの機能拡張アーキテクチャ",
+      "Claude Code CLI",
+      "Claude Code Skills"
+    ],
+    "source_url": "https://github.com/qwibitai/nanoclaw",
+    "source_author": "qwibitai",
+    "added_at": "2026-03-31T00:09:17.979104+00:00"
+  },
+  {
+    "slug": "設定ファイルなしのコード直接カスタマイズ",
+    "name": "設定ファイルなしのコード直接カスタマイズ",
+    "category": "claude-code-workflow",
+    "description": "設定ファイルを用意せず、ユーザーがコードを直接変更することでカスタマイズする",
+    "trigger_phrases": [
+      "フレームワークの挙動をカスタマイズしたいが、設定ファイルの複雑さを避けたい時。コードレビューが可能な規模のプロジェクトで",
+      "設定ファイルなしのコード直接カスタマイズ",
+      "Claude Code CLI",
+      "設定ファイルを用意せず、ユーザーがコードを直接変更することでカスタマイズする"
+    ],
+    "source_url": "https://github.com/qwibitai/nanoclaw",
+    "source_author": "qwibitai",
+    "added_at": "2026-03-31T00:09:17.979104+00:00"
+  },
+  {
+    "slug": "ai-nativeなセットアップデバッグ",
+    "name": "AI-nativeなセットアップ・デバッグ",
+    "category": "claude-code-workflow",
+    "description": "インストールウィザードやダッシュボードの代わりに、Claude Code CLIがセットアップ・監視・デバッグを対話的に実行する",
+    "trigger_phrases": [
+      "セットアップスクリプトのメンテナンスコストを削減したい時。ユーザー環境が多様でエッジケースが多い時",
+      "AI-nativeなセットアップ・デバッグ",
+      "Claude Code CLI",
+      "Claude Code Skills"
+    ],
+    "source_url": "https://github.com/qwibitai/nanoclaw",
+    "source_author": "qwibitai",
+    "added_at": "2026-03-31T00:09:17.979104+00:00"
+  },
+  {
+    "slug": "onecli-agent-vaultによるクレデンシャル保護",
+    "name": "OneCLI Agent Vaultによるクレデンシャル保護",
+    "category": "agent-orchestration",
+    "description": "API keyをコンテナに渡さず、外向きリクエスト時にプロキシ層（OneCLI Agent Vault）がクレデンシャルを注入する",
+    "trigger_phrases": [
+      "AI Agentに外部API（GitHub, AWS等）へのアクセスを許可したいが、クレデンシャル漏洩リスクを最小化したい時",
+      "OneCLI Agent Vaultによるクレデンシャル保護",
+      "OneCLI Agent Vault"
+    ],
+    "source_url": "https://github.com/qwibitai/nanoclaw",
+    "source_author": "qwibitai",
+    "added_at": "2026-03-31T00:09:17.979104+00:00"
+  },
+  {
+    "slug": "mcpサーバーでlsp機能をllmに公開する",
+    "name": "MCPサーバーでLSP機能をLLMに公開する",
+    "category": "claude-code-workflow",
+    "description": "LSP（Language Server Protocol）やJetBrains IDE解析をMCPサーバーとしてラップし、LLMが find_symbol/find_referencing_symbols 等のツールを呼び出せるようにする",
+    "trigger_phrases": [
+      "コーディングエージェントがファイル全体を読んだり文字列検索に頼っている時、大規模プロジェクトで効率が落ちている時、40+言語のどれかをLLMで扱う時",
+      "MCPサーバーでLSP機能をLLMに公開する",
+      "uv",
+      "Serena（https://github.com/oraios/serena）",
+      "各言語のLSP実装（pyright/typescript-language-server等）",
+      "Serena JetBrains Plugin（オプション）"
+    ],
+    "source_url": "https://github.com/oraios/serena",
+    "source_author": "oraios",
+    "added_at": "2026-03-31T00:10:51.997098+00:00"
+  },
+  {
+    "slug": "シンボルレベルツールでコードを検索編集する",
+    "name": "シンボルレベルツールでコードを検索・編集する",
+    "category": "other",
+    "description": "find_symbol でシンボル名から定義箇所を特定し、find_referencing_symbols で使用箇所を列挙し、insert_after_symbol で既存のシンボルの後に新コードを挿入する",
+    "trigger_phrases": [
+      "特定の関数・クラス・変数を探す時、リファクタリングで参照関係を把握したい時、ファイルが長すぎてトークン制限に引っかかる時",
+      "シンボルレベルツールでコードを検索・編集する",
+      "find_symbol",
+      "find_referencing_symbols",
+      "insert_after_symbol（Serenaの提供ツール）"
+    ],
+    "source_url": "https://github.com/oraios/serena",
+    "source_author": "oraios",
+    "added_at": "2026-03-31T00:10:51.997098+00:00"
+  },
+  {
+    "slug": "lspとjetbrains-pluginから選択する",
+    "name": "LSPとJetBrains Pluginから選択する",
+    "category": "other",
+    "description": "バックエンドとしてLSP（無償・オープンソース、40+言語対応）またはJetBrains Plugin（IDE解析、最強だが有償IDE必要）のどちらかを選ぶ",
+    "trigger_phrases": [
+      "無償で広範囲の言語を扱いたいならLSP、最高精度でフレームワーク対応が欲しいならJetBrains Plugin",
+      "LSPとJetBrains Pluginから選択する",
+      "multilspy（LSPラッパー）",
+      "Solid-LSP（Serenaの同期LSPレイヤー）",
+      "Serena JetBrains Plugin"
+    ],
+    "source_url": "https://github.com/oraios/serena",
+    "source_author": "oraios",
+    "added_at": "2026-03-31T00:10:51.997098+00:00"
   }
 ]

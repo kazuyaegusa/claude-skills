@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 655 スキル
+合計: 672 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -659,3 +659,20 @@
 | 自然言語コマンドでコードベース操作を実行する | 自然言語コマンドでコードベース操作を実行する | claude-code-workflow | Claude Codeセッション内で自然言語の指示を与え、コード理解・編集・Git操作などを実行させる | anthropics |
 | プラグインで機能を拡張する | プラグインで機能を拡張する | claude-code-workflow | Claude Code公式リポジトリのpluginsディレクトリを参照し、カスタムコマンドやエージェントを追加する | anthropics |
 | bugコマンドでフィードバックを送る | /bugコマンドでフィードバックを送る | claude-code-workflow | Claude Code内で `/bug` コマンドを実行し、問題報告を直接送信する | anthropics |
+| slash-commandsによる再利用可能プロンプト | Slash-Commandsによる再利用可能プロンプト | claude-code-workflow | 頻繁に使う複雑なプロンプトを `/commit`, `/tdd` 等の短縮コマンドとして登録し、即座に呼び出す | hesreallyhim |
+| claudemdによるプロジェクト固有知識注入 | CLAUDE.mdによるプロジェクト固有知識注入 | claude-code-workflow | リポジトリルートまたは `.claude/` に `CLAUDE.md` を配置し、ビルドコマンド、コーディング規約、ア | hesreallyhim |
+| オーケストレータによるマルチエージェント協調 | オーケストレータによるマルチエージェント協調 | claude-code-workflow | 複数のClaude Codeインスタンスを並列起動し、タスクを分散実行・結果を統合する | hesreallyhim |
+| セッション履歴の検索復元 | セッション履歴の検索・復元 | claude-code-workflow | 過去のClaude Codeセッションログ（.jsonl）を全文検索し、関連する会話・コード変更を復元する | hesreallyhim |
+| 使用量コスト可視化ダッシュボード | 使用量・コスト可視化ダッシュボード | claude-code-workflow | Claude Codeのトークン消費量、APIコスト、モデル使用率をリアルタイム集計・グラフ表示する | hesreallyhim |
+| cliskillsによるトークン効率化 | CLI+SKILLSによるトークン効率化 | agent-orchestration | MCPサーバーの代わりにPlaywright CLIとSKILLSを使ってブラウザ自動化を実行し、コンテキストウィンドウ | microsoft |
+| mcpによる永続的ブラウザコンテキスト管理 | MCPによる永続的ブラウザコンテキスト管理 | claude-code-workflow | Model Context Protocol (MCP)サーバーを使ってブラウザ自動化を行い、永続的な状態と豊富なイント | microsoft |
+| アクセシビリティツリーベースの自動化 | アクセシビリティツリーベースの自動化 | agent-orchestration | スクリーンショットやビジョンモデルの代わりに、Playwrightのアクセシビリティツリーを使ってブラウザ操作を行う | microsoft |
+| mcpサーバーのマルチクライアント対応設定 | MCPサーバーのマルチクライアント対応設定 | claude-code-workflow | Playwright MCPサーバーを複数のMCPクライアント（VS Code, Claude Desktop, Cur | microsoft |
+| コンテナ単位でのagent分離実行 | コンテナ単位でのAgent分離実行 | claude-code-workflow | 各グループのAI AgentをLinuxコンテナ（macOSならApple Container、Linux/Window | qwibitai |
+| スキルベースの機能拡張アーキテクチャ | スキルベースの機能拡張アーキテクチャ | claude-code-workflow | 新機能をコアコードベースにマージせず、Claude Codeスキル（`/add-whatsapp`等のコマンド）として配 | qwibitai |
+| 設定ファイルなしのコード直接カスタマイズ | 設定ファイルなしのコード直接カスタマイズ | claude-code-workflow | 設定ファイルを用意せず、ユーザーがコードを直接変更することでカスタマイズする | qwibitai |
+| ai-nativeなセットアップデバッグ | AI-nativeなセットアップ・デバッグ | claude-code-workflow | インストールウィザードやダッシュボードの代わりに、Claude Code CLIがセットアップ・監視・デバッグを対話的に | qwibitai |
+| onecli-agent-vaultによるクレデンシャル保護 | OneCLI Agent Vaultによるクレデンシャル保護 | agent-orchestration | API keyをコンテナに渡さず、外向きリクエスト時にプロキシ層（OneCLI Agent Vault）がクレデンシャル | qwibitai |
+| mcpサーバーでlsp機能をllmに公開する | MCPサーバーでLSP機能をLLMに公開する | claude-code-workflow | LSP（Language Server Protocol）やJetBrains IDE解析をMCPサーバーとしてラップし | oraios |
+| シンボルレベルツールでコードを検索編集する | シンボルレベルツールでコードを検索・編集する | other | find_symbol でシンボル名から定義箇所を特定し、find_referencing_symbols で使用箇所を | oraios |
+| lspとjetbrains-pluginから選択する | LSPとJetBrains Pluginから選択する | other | バックエンドとしてLSP（無償・オープンソース、40+言語対応）またはJetBrains Plugin（IDE解析、最強 | oraios |
