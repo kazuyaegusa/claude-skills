@@ -19,22 +19,6 @@
     "OTEL_METRICS_EXPORTER": "console",
     "OTEL_RESOURCE_ATTRIBUTES": "user.email=kazuya.egusa@aixeed.co.jp"
   },
-<<<<<<< Updated upstream
-  "model": "opus[1m]",
-  "statusLine": {
-    "type": "command",
-    "command": "~/.claude/statusline.sh"
-  },
-  "enabledPlugins": {
-    "github@claude-plugins-official": true,
-    "slack@claude-plugins-official": true
-  },
-  "language": "japanese",
-  "autoUpdatesChannel": "latest",
-  "skipDangerousModePermissionPrompt": true,
-  "effortLevel": "high"
-}
-=======
   "hooks": {
     "SessionStart": [
       {
@@ -98,4 +82,3 @@
     "type": "command"
   }
 }
->>>>>>> Stashed changes
