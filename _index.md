@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 708 スキル
+合計: 726 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -712,3 +712,21 @@
 | コメント削減戦略comment-checker | コメント削減戦略（Comment Checker） | agent-orchestration | AI生成コードから過剰なコメントを自動削減し、人間が書いたコードと区別がつかないレベルに保つ | code-yeongyu |
 | lspast統合リファクタリング | LSP/AST統合リファクタリング | agent-orchestration | Language Server Protocol（LSP）とAST-Grepを活用し、テキスト検索・置換ではなく、意味論 | code-yeongyu |
 | 専門エージェント分業パターン | 専門エージェント分業パターン | agent-orchestration | タスクの性質に応じて、事前定義された専門エージェント（Oracle: 設計・デバッグ、Librarian: ドキュメント | code-yeongyu |
+| カテゴリー別リソース分類によるエコシステム整理 | カテゴリー別リソース分類によるエコシステム整理 | claude-code-workflow | Claude Code拡張を8つの明確なカテゴリー（Agent Skills、Workflows、Tooling、Sta | hesreallyhim |
+| 複数表示スタイル提供による閲覧体験最適化 | 複数表示スタイル提供による閲覧体験最適化 | claude-code-workflow | 同一コンテンツを4つの異なるスタイル（Awesome/Extra/Classic/Flat）でレンダリングし、ユーザーが | hesreallyhim |
+| latest-additionsセクションによる鮮度維持 | "Latest Additions"セクションによる鮮度維持 | claude-code-workflow | README冒頭に最新追加リソースを3-4個ハイライト表示し、各リソースに詳細な説明を付ける | hesreallyhim |
+| 各リソースに価値提案を明記する説明スタイル | 各リソースに"価値提案"を明記する説明スタイル | claude-code-workflow | 単なる機能説明ではなく、そのリソースが解決する問題や提供する価値を明確に記述する | hesreallyhim |
+| カテゴリー定義の明示による理解促進 | カテゴリー定義の明示による理解促進 | claude-code-workflow | 各カテゴリーセクションの冒頭に、そのカテゴリーの定義を引用形式（>）で記載する | hesreallyhim |
+| サブカテゴリー分割による詳細ナビゲーション | サブカテゴリー分割による詳細ナビゲーション | claude-code-workflow | 大きなカテゴリー（例：Slash-Commands）をサブカテゴリー（Version Control & Git、Cod | hesreallyhim |
+| contributing-ガイドラインによるコミュニティ品質管理 | Contributing ガイドラインによるコミュニティ品質管理 | claude-code-workflow | リソース推薦のプロセスを自動化し、PRではなくIssueテンプレート経由での投稿を強制することで、品質基準を維持する | hesreallyhim |
+| デコレータベースのmcpツール定義 | デコレータベースのMCPツール定義 | other | Python関数に`@mcp.tool`デコレータを付けることで、MCPツールとして自動的にスキーマ生成・公開される | PrefectHQ |
+| fastmcpの3本柱アーキテクチャ活用 | FastMCPの3本柱アーキテクチャ活用 | prompt-engineering | Servers（ツール公開）、Apps（対話的UI）、Clients（サーバー接続）の3つのコンポーネントを組み合わせて | PrefectHQ |
+| uvを使った高速インストール | uvを使った高速インストール | other | uvパッケージマネージャーを使ってFastMCPをインストールする | PrefectHQ |
+| activepiecesのpieceをmcpサーバーとして自動公開する | ActivepiecesのpieceをMCPサーバーとして自動公開する | agent-orchestration | Activepiecesにcontributeしたpiece（統合モジュール）が、自動的にMCPサーバーとしてClaud | activepieces |
+| typescriptでtype-safeなワークフロー統合を開発する | TypeScriptでtype-safeなワークフロー統合を開発する | ui-ux | Activepiecesのpieces frameworkを用いてTypeScriptで型安全なワークフロー統合を作成し | activepieces |
+| 280以上のmcpサーバーを一括導入する | 280以上のMCPサーバーを一括導入する | agent-orchestration | Activepiecesが提供する280以上のpiece（Google Sheets、OpenAI、Discord、RS | activepieces |
+| セルフホスト環境でワークフロー自動化をセキュアに構築する | セルフホスト環境でワークフロー自動化をセキュアに構築する | automation-pipeline | Activepiecesをセルフホスト（network-gapped）環境にデプロイし、企業内のセキュリティ要件を満たし | activepieces |
+| promptfooでllmプロンプトを自動評価する | promptfooでLLMプロンプトを自動評価する | prompt-engineering | 宣言的YAMLファイルでプロンプト・モデル・テストケース・評価基準を定義し、promptfoo CLIで一括実行・Web | promptfoo |
+| llmアプリの脆弱性をレッドチーミング手法でスキャンする | LLMアプリの脆弱性をレッドチーミング手法でスキャンする | prompt-engineering | promptfooのred teamingモードで、プロンプトインジェクション・PII漏洩・ハルシネーション等の脆弱性を | promptfoo |
+| promptfooをcicdに統合して自動テストを実行する | promptfooをCI/CDに統合して自動テストを実行する | prompt-engineering | GitHub Actions等のCI環境でpromptfoo evalを実行し、評価基準を満たさない場合にビルドを失敗さ | promptfoo |
+| promptfooでモデル比較を並列実行する | promptfooでモデル比較を並列実行する | prompt-engineering | 複数のLLMプロバイダー（OpenAI/Anthropic/Bedrock/Ollama等）を同一テストケースで並列評価 | promptfoo |

@@ -10023,5 +10023,278 @@
     "source_url": "https://github.com/code-yeongyu/oh-my-openagent",
     "source_author": "code-yeongyu",
     "added_at": "2026-04-01T00:09:03.505460+00:00"
+  },
+  {
+    "slug": "カテゴリー別リソース分類によるエコシステム整理",
+    "name": "カテゴリー別リソース分類によるエコシステム整理",
+    "category": "claude-code-workflow",
+    "description": "Claude Code拡張を8つの明確なカテゴリー（Agent Skills、Workflows、Tooling、Status Lines、Hooks、Slash-Commands、CLAUDE.md Files、Alternative Clients）に分類し、各リソースに説明と作者情報を付与する",
+    "trigger_phrases": [
+      "大規模なツールエコシステムを整理し、ユーザーが目的に応じてリソースを発見できるようにしたい場合",
+      "カテゴリー別リソース分類によるエコシステム整理",
+      "GitHub",
+      "Markdown",
+      "awesome.re badge"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-04-01T00:11:02.055810+00:00"
+  },
+  {
+    "slug": "複数表示スタイル提供による閲覧体験最適化",
+    "name": "複数表示スタイル提供による閲覧体験最適化",
+    "category": "claude-code-workflow",
+    "description": "同一コンテンツを4つの異なるスタイル（Awesome/Extra/Classic/Flat）でレンダリングし、ユーザーが好みに応じて切り替えられるようにする",
+    "trigger_phrases": [
+      "多様なユーザー層を持つドキュメントやリソース集で、閲覧体験をパーソナライズしたい場合",
+      "複数表示スタイル提供による閲覧体験最適化",
+      "Markdown",
+      "スタイル切り替えバッジ（SVG）",
+      "自動生成スクリプト（推測）"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-04-01T00:11:02.055810+00:00"
+  },
+  {
+    "slug": "latest-additionsセクションによる鮮度維持",
+    "name": "\"Latest Additions\"セクションによる鮮度維持",
+    "category": "claude-code-workflow",
+    "description": "README冒頭に最新追加リソースを3-4個ハイライト表示し、各リソースに詳細な説明を付ける",
+    "trigger_phrases": [
+      "継続的に更新されるリソース集で、新規追加を強調したい場合",
+      "\"Latest Additions\"セクションによる鮮度維持",
+      "Markdown",
+      "README冒頭に最新追加リソースを3-4個ハイライト表示し、各リソースに詳細な説明を付ける"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-04-01T00:11:02.055810+00:00"
+  },
+  {
+    "slug": "各リソースに価値提案を明記する説明スタイル",
+    "name": "各リソースに\"価値提案\"を明記する説明スタイル",
+    "category": "claude-code-workflow",
+    "description": "単なる機能説明ではなく、そのリソースが解決する問題や提供する価値を明確に記述する",
+    "trigger_phrases": [
+      "ツールやリソースのキュレーションで、読者の導入判断を支援したい場合",
+      "各リソースに\"価値提案\"を明記する説明スタイル",
+      "単なる機能説明ではなく、そのリソースが解決する問題や提供する価値を明確に記述する"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-04-01T00:11:02.055810+00:00"
+  },
+  {
+    "slug": "カテゴリー定義の明示による理解促進",
+    "name": "カテゴリー定義の明示による理解促進",
+    "category": "claude-code-workflow",
+    "description": "各カテゴリーセクションの冒頭に、そのカテゴリーの定義を引用形式（>）で記載する",
+    "trigger_phrases": [
+      "専門用語や概念が多いドキュメントで、読者の理解を助けたい場合",
+      "カテゴリー定義の明示による理解促進",
+      "Markdown（引用記法）",
+      "各カテゴリーセクションの冒頭に、そのカテゴリーの定義を引用形式（>）で記載する"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-04-01T00:11:02.055810+00:00"
+  },
+  {
+    "slug": "サブカテゴリー分割による詳細ナビゲーション",
+    "name": "サブカテゴリー分割による詳細ナビゲーション",
+    "category": "claude-code-workflow",
+    "description": "大きなカテゴリー（例：Slash-Commands）をサブカテゴリー（Version Control & Git、Code Analysis & Testing等）に分割する",
+    "trigger_phrases": [
+      "1つのカテゴリーに10個以上のリソースがあり、さらに細分化できる場合",
+      "サブカテゴリー分割による詳細ナビゲーション",
+      "Markdown"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-04-01T00:11:02.055810+00:00"
+  },
+  {
+    "slug": "contributing-ガイドラインによるコミュニティ品質管理",
+    "name": "Contributing ガイドラインによるコミュニティ品質管理",
+    "category": "claude-code-workflow",
+    "description": "リソース推薦のプロセスを自動化し、PRではなくIssueテンプレート経由での投稿を強制することで、品質基準を維持する",
+    "trigger_phrases": [
+      "コミュニティ主導のキュレーションプロジェクトで、品質管理とスケーラビリティを両立したい場合",
+      "Contributing ガイドラインによるコミュニティ品質管理",
+      "GitHub Issues",
+      "Issue Templates",
+      "GitHub Actions（推測）"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-04-01T00:11:02.055810+00:00"
+  },
+  {
+    "slug": "デコレータベースのmcpツール定義",
+    "name": "デコレータベースのMCPツール定義",
+    "category": "other",
+    "description": "Python関数に`@mcp.tool`デコレータを付けることで、MCPツールとして自動的にスキーマ生成・公開される",
+    "trigger_phrases": [
+      "LLMから呼び出し可能なツールを最小限のコードで実装したい時、型ヒントとdocstringから自動的にスキーマを生成したい時",
+      "デコレータベースのMCPツール定義",
+      "fastmcp（uv pip install fastmcp）"
+    ],
+    "source_url": "https://github.com/PrefectHQ/fastmcp",
+    "source_author": "PrefectHQ",
+    "added_at": "2026-04-01T00:12:04.843940+00:00"
+  },
+  {
+    "slug": "fastmcpの3本柱アーキテクチャ活用",
+    "name": "FastMCPの3本柱アーキテクチャ活用",
+    "category": "prompt-engineering",
+    "description": "Servers（ツール公開）、Apps（対話的UI）、Clients（サーバー接続）の3つのコンポーネントを組み合わせて使う",
+    "trigger_phrases": [
+      "ツール公開だけでなく、クライアント実装や対話的UIが必要な時、フルスタックのMCPアプリケーションを構築する時",
+      "FastMCPの3本柱アーキテクチャ活用",
+      "fastmcp"
+    ],
+    "source_url": "https://github.com/PrefectHQ/fastmcp",
+    "source_author": "PrefectHQ",
+    "added_at": "2026-04-01T00:12:04.843940+00:00"
+  },
+  {
+    "slug": "uvを使った高速インストール",
+    "name": "uvを使った高速インストール",
+    "category": "other",
+    "description": "uvパッケージマネージャーを使ってFastMCPをインストールする",
+    "trigger_phrases": [
+      "FastMCPを新規インストールする時、高速なセットアップを望む時",
+      "uvを使った高速インストール",
+      "uv",
+      "fastmcp",
+      "uvパッケージマネージャーを使ってFastMCPをインストールする"
+    ],
+    "source_url": "https://github.com/PrefectHQ/fastmcp",
+    "source_author": "PrefectHQ",
+    "added_at": "2026-04-01T00:12:04.843940+00:00"
+  },
+  {
+    "slug": "activepiecesのpieceをmcpサーバーとして自動公開する",
+    "name": "ActivepiecesのpieceをMCPサーバーとして自動公開する",
+    "category": "agent-orchestration",
+    "description": "Activepiecesにcontributeしたpiece（統合モジュール）が、自動的にMCPサーバーとしてClaude Desktop、Cursor、Windsurf等のLLMツールで利用可能になる仕組みを活用する",
+    "trigger_phrases": [
+      "既存のMCPサーバーでカバーできないサービスと統合したい、かつそのサービスをワークフロー自動化でも使いたい場合。コミュニティ主導で拡張したい場合",
+      "ActivepiecesのpieceをMCPサーバーとして自動公開する",
+      "Activepieces framework (TypeScript)",
+      "npmjs.com",
+      "Claude Desktop / Cursor / Windsurf (MCP client)"
+    ],
+    "source_url": "https://github.com/activepieces/activepieces",
+    "source_author": "activepieces",
+    "added_at": "2026-04-01T00:13:31.375425+00:00"
+  },
+  {
+    "slug": "typescriptでtype-safeなワークフロー統合を開発する",
+    "name": "TypeScriptでtype-safeなワークフロー統合を開発する",
+    "category": "ui-ux",
+    "description": "Activepiecesのpieces frameworkを用いてTypeScriptで型安全なワークフロー統合を作成し、ローカル開発時にhot reloadingで即座に動作確認する",
+    "trigger_phrases": [
+      "複雑なAPI連携やカスタムロジックをワークフローに組み込みたい場合。開発者が高速に統合モジュールをプロトタイピングしたい場合",
+      "TypeScriptでtype-safeなワークフロー統合を開発する",
+      "@activepieces/pieces-framework",
+      "TypeScript",
+      "npm"
+    ],
+    "source_url": "https://github.com/activepieces/activepieces",
+    "source_author": "activepieces",
+    "added_at": "2026-04-01T00:13:31.375425+00:00"
+  },
+  {
+    "slug": "280以上のmcpサーバーを一括導入する",
+    "name": "280以上のMCPサーバーを一括導入する",
+    "category": "agent-orchestration",
+    "description": "Activepiecesが提供する280以上のpiece（Google Sheets、OpenAI、Discord、RSS等）をMCPサーバーとしてClaude Desktop等に一括導入する",
+    "trigger_phrases": [
+      "LLMエージェントで多様な外部サービスと連携したい場合。MCPサーバーを個別に構築・管理するリソースがない場合",
+      "280以上のMCPサーバーを一括導入する",
+      "Activepieces",
+      "Claude Desktop",
+      "Cursor",
+      "Windsurf"
+    ],
+    "source_url": "https://github.com/activepieces/activepieces",
+    "source_author": "activepieces",
+    "added_at": "2026-04-01T00:13:31.375425+00:00"
+  },
+  {
+    "slug": "セルフホスト環境でワークフロー自動化をセキュアに構築する",
+    "name": "セルフホスト環境でワークフロー自動化をセキュアに構築する",
+    "category": "automation-pipeline",
+    "description": "Activepiecesをセルフホスト（network-gapped）環境にデプロイし、企業内のセキュリティ要件を満たしながらワークフロー自動化を実現する",
+    "trigger_phrases": [
+      "機密データを扱うワークフロー自動化が必要な場合。コンプライアンス要件でクラウドサービス利用が制限されている場合",
+      "セルフホスト環境でワークフロー自動化をセキュアに構築する",
+      "Activepieces",
+      "Docker",
+      "Kubernetes"
+    ],
+    "source_url": "https://github.com/activepieces/activepieces",
+    "source_author": "activepieces",
+    "added_at": "2026-04-01T00:13:31.375425+00:00"
+  },
+  {
+    "slug": "promptfooでllmプロンプトを自動評価する",
+    "name": "promptfooでLLMプロンプトを自動評価する",
+    "category": "prompt-engineering",
+    "description": "宣言的YAMLファイルでプロンプト・モデル・テストケース・評価基準を定義し、promptfoo CLIで一括実行・Web UIで結果を可視化する",
+    "trigger_phrases": [
+      "プロンプトを変更する前、新しいLLMプロバイダーへの移行を検討する時、本番デプロイ前の品質ゲートとして",
+      "promptfooでLLMプロンプトを自動評価する",
+      "promptfoo（npm/brew/pipで提供）",
+      "Node.js（CLI実行時）"
+    ],
+    "source_url": "https://github.com/promptfoo/promptfoo",
+    "source_author": "promptfoo",
+    "added_at": "2026-04-01T00:14:55.799077+00:00"
+  },
+  {
+    "slug": "llmアプリの脆弱性をレッドチーミング手法でスキャンする",
+    "name": "LLMアプリの脆弱性をレッドチーミング手法でスキャンする",
+    "category": "prompt-engineering",
+    "description": "promptfooのred teamingモードで、プロンプトインジェクション・PII漏洩・ハルシネーション等の脆弱性を自動検出し、レポートを生成する",
+    "trigger_phrases": [
+      "LLMアプリの本番リリース前、プロンプトやシステム設定を変更した後、定期的なセキュリティ監査として",
+      "LLMアプリの脆弱性をレッドチーミング手法でスキャンする",
+      "promptfoo（red teaming機能内蔵）"
+    ],
+    "source_url": "https://github.com/promptfoo/promptfoo",
+    "source_author": "promptfoo",
+    "added_at": "2026-04-01T00:14:55.799077+00:00"
+  },
+  {
+    "slug": "promptfooをcicdに統合して自動テストを実行する",
+    "name": "promptfooをCI/CDに統合して自動テストを実行する",
+    "category": "prompt-engineering",
+    "description": "GitHub Actions等のCI環境でpromptfoo evalを実行し、評価基準を満たさない場合にビルドを失敗させる",
+    "trigger_phrases": [
+      "プロンプト変更を含むPRをマージする前、定期的な品質モニタリングとして",
+      "promptfooをCI/CDに統合して自動テストを実行する",
+      "promptfoo",
+      "GitHub Actions / GitLab CI / CircleCI等"
+    ],
+    "source_url": "https://github.com/promptfoo/promptfoo",
+    "source_author": "promptfoo",
+    "added_at": "2026-04-01T00:14:55.799077+00:00"
+  },
+  {
+    "slug": "promptfooでモデル比較を並列実行する",
+    "name": "promptfooでモデル比較を並列実行する",
+    "category": "prompt-engineering",
+    "description": "複数のLLMプロバイダー（OpenAI/Anthropic/Bedrock/Ollama等）を同一テストケースで並列評価し、コスト・レイテンシ・品質を一覧比較する",
+    "trigger_phrases": [
+      "モデル選定時、コスト削減のためのプロバイダー移行検討時、新モデルのベンチマーク時",
+      "promptfooでモデル比較を並列実行する",
+      "promptfoo"
+    ],
+    "source_url": "https://github.com/promptfoo/promptfoo",
+    "source_author": "promptfoo",
+    "added_at": "2026-04-01T00:14:55.799077+00:00"
   }
 ]
