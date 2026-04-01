@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 726 スキル
+合計: 747 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -730,3 +730,24 @@
 | llmアプリの脆弱性をレッドチーミング手法でスキャンする | LLMアプリの脆弱性をレッドチーミング手法でスキャンする | prompt-engineering | promptfooのred teamingモードで、プロンプトインジェクション・PII漏洩・ハルシネーション等の脆弱性を | promptfoo |
 | promptfooをcicdに統合して自動テストを実行する | promptfooをCI/CDに統合して自動テストを実行する | prompt-engineering | GitHub Actions等のCI環境でpromptfoo evalを実行し、評価基準を満たさない場合にビルドを失敗さ | promptfoo |
 | promptfooでモデル比較を並列実行する | promptfooでモデル比較を並列実行する | prompt-engineering | 複数のLLMプロバイダー（OpenAI/Anthropic/Bedrock/Ollama等）を同一テストケースで並列評価 | promptfoo |
+| claude-codeプラグイン経由でカテゴリ別サブエージェント一括インストール | Claude Codeプラグイン経由でカテゴリ別サブエージェント一括インストール | claude-code-workflow | 127個以上のサブエージェントをカテゴリ別プラグイン（voltagent-lang, voltagent-infra等） | VoltAgent |
+| インタラクティブインストーラーで選択的サブエージェント導入 | インタラクティブインストーラーで選択的サブエージェント導入 | claude-code-workflow | 対話型シェルスクリプトでカテゴリをブラウズし、必要なサブエージェントだけを選択してインストール/アンインストールする | VoltAgent |
+| スタンドアロンインストーラーでリポジトリクローン不要インストール | スタンドアロンインストーラーでリポジトリクローン不要インストール | claude-code-workflow | GitHubから直接スクリプトをダウンロードし、リポジトリクローンなしでサブエージェントをインストールする | VoltAgent |
+| agent-installerサブエージェントで自然言語クエリによるインストール | agent-installerサブエージェントで自然言語クエリによるインストール | claude-code-workflow | Claude Code内で自然言語（「PHPエージェントを見つけてグローバルにインストール」）でサブエージェントを検索・ | VoltAgent |
+| サブエージェントのツール権限カスタマイズ | サブエージェントのツール権限カスタマイズ | claude-code-workflow | 各サブエージェントのfrontmatter `tools:` フィールドを編集し、アクセス可能なClaude Code組 | VoltAgent |
+| モデル自動ルーティングでコスト品質バランス最適化 | モデル自動ルーティングでコスト・品質バランス最適化 | claude-code-workflow | サブエージェントのfrontmatter `model:` フィールドでopus/sonnet/haikuを指定し、タス | VoltAgent |
+| グローバルプロジェクトスコープでサブエージェント共有上書き | グローバル/プロジェクトスコープでサブエージェント共有・上書き | claude-code-workflow | グローバル（~/.claude/agents/）とプロジェクト固有（.claude/agents/）の2階層でサブエージ | VoltAgent |
+| マルチエージェントオーケストレーションで複雑ワークフロー自動化 | マルチエージェントオーケストレーションで複雑ワークフロー自動化 | claude-code-workflow | voltagent-metaカテゴリのオーケストレーションエージェント（multi-agent-coordinator, | VoltAgent |
+| subagent-catalogスキルで会話形式のエージェント検索取得 | subagent-catalogスキルで会話形式のエージェント検索・取得 | claude-code-workflow | Claude Codeスキルとしてsubagent-catalogを導入し、`/subagent-catalog:sea | VoltAgent |
+| wasp-cliでsaasテンプレート初期化 | Wasp CLIでSaaSテンプレート初期化 | claude-code-workflow | Open SaaSテンプレート一式（認証・決済・UI・AI設定含む）を新規ディレクトリに展開する | wasp-lang |
+| waspの宣言的認証設定 | Waspの宣言的認証設定 | ui-ux | main.wasp設定ファイルに認証プロバイダーを列挙するだけで、複数SNS認証+メール認証を実装 | wasp-lang |
+| wasp-jobsでバックグラウンドタスク定義 | Wasp Jobsでバックグラウンドタスク定義 | automation-pipeline | main.waspで関数を宣言するだけでcronジョブやキューワーカーを実装 | wasp-lang |
+| end-to-end型安全性の自動推論 | End-to-End型安全性の自動推論 | dev-tool | サーバー側の関数に型を付けると、クライアント側で自動的に型が推論され、tRPC等の追加設定不要で型安全なRPCが可能 | wasp-lang |
+| 1コマンドデプロイ | 1コマンドデプロイ | infrastructure | Wasp CLIで `wasp deploy` 実行するだけでDB・サーバー・クライアントを一括デプロイ | wasp-lang |
+| ai対応設定の同梱agentsmdskills | AI対応設定の同梱（AGENTS.md/Skills） | claude-code-workflow | プロジェクト生成時にAGENTS.md、Claude Code Skills、プラグインが自動配置され、AI支援開発が即 | wasp-lang |
+| 単一リポジトリマルチスキル構成の採用 | 単一リポジトリ・マルチスキル構成の採用 | claude-code-workflow | 1つのGitHubリポジトリに複数のスキルを `skills/` ディレクトリ配下に格納し、それぞれ独立したSKILL. | JimLiu |
+| plugin-marketplace登録による公式ui配布 | Plugin Marketplace登録による公式UI配布 | claude-code-workflow | Claude Codeの `/plugin marketplace add` コマンドでリポジトリを登録し、Browse | JimLiu |
+| clawhub個別スキル公開スクリプト | ClawHub個別スキル公開スクリプト | claude-code-workflow | `scripts/sync-clawhub.sh` を使い、`skills/baoyu-*` 各ディレクトリをClawH | JimLiu |
+| npx-skills-add-によるクイックインストール | npx skills add によるクイックインストール | claude-code-workflow | `npx skills add jimliu/baoyu-skills` コマンドで、npm経由でスキルを直接インストー | JimLiu |
+| 環境変数の優先度階層設計 | 環境変数の優先度階層設計 | claude-code-workflow | .envファイルを複数レベル(CLI > process.env > プロジェクト > ユーザー)で読み込み、優先度順に | JimLiu |
+| extendmdによるスキルカスタマイズ | EXTEND.mdによるスキルカスタマイズ | claude-code-workflow | 各スキルの動作を `EXTEND.md` ファイルで上書き・拡張し、デフォルト設定を変更せずにカスタマイズする | JimLiu |

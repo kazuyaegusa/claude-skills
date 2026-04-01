@@ -10296,5 +10296,319 @@
     "source_url": "https://github.com/promptfoo/promptfoo",
     "source_author": "promptfoo",
     "added_at": "2026-04-01T00:14:55.799077+00:00"
+  },
+  {
+    "slug": "claude-codeプラグイン経由でカテゴリ別サブエージェント一括インストール",
+    "name": "Claude Codeプラグイン経由でカテゴリ別サブエージェント一括インストール",
+    "category": "claude-code-workflow",
+    "description": "127個以上のサブエージェントをカテゴリ別プラグイン（voltagent-lang, voltagent-infra等）として一括インストールする",
+    "trigger_phrases": [
+      "複数の専門領域をカバーするサブエージェントを短時間で導入したい時、チーム全体で同じエージェントセットを標準化したい時",
+      "Claude Codeプラグイン経由でカテゴリ別サブエージェント一括インストール",
+      "Claude Code CLI",
+      "VoltAgent/awesome-claude-code-subagents plugin"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-04-01T00:17:19.011099+00:00"
+  },
+  {
+    "slug": "インタラクティブインストーラーで選択的サブエージェント導入",
+    "name": "インタラクティブインストーラーで選択的サブエージェント導入",
+    "category": "claude-code-workflow",
+    "description": "対話型シェルスクリプトでカテゴリをブラウズし、必要なサブエージェントだけを選択してインストール/アンインストールする",
+    "trigger_phrases": [
+      "特定のプロジェクトで必要なエージェントだけをピンポイントで導入したい時、エージェント一覧を視覚的に確認しながら選びたい時",
+      "インタラクティブインストーラーで選択的サブエージェント導入",
+      "Bash",
+      "install-agents.sh"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-04-01T00:17:19.011099+00:00"
+  },
+  {
+    "slug": "スタンドアロンインストーラーでリポジトリクローン不要インストール",
+    "name": "スタンドアロンインストーラーでリポジトリクローン不要インストール",
+    "category": "claude-code-workflow",
+    "description": "GitHubから直接スクリプトをダウンロードし、リポジトリクローンなしでサブエージェントをインストールする",
+    "trigger_phrases": [
+      "CI/CD環境や一時的な環境で、リポジトリ全体をクローンせずにエージェントだけ導入したい時",
+      "スタンドアロンインストーラーでリポジトリクローン不要インストール",
+      "curl",
+      "Bash"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-04-01T00:17:19.011099+00:00"
+  },
+  {
+    "slug": "agent-installerサブエージェントで自然言語クエリによるインストール",
+    "name": "agent-installerサブエージェントで自然言語クエリによるインストール",
+    "category": "claude-code-workflow",
+    "description": "Claude Code内で自然言語（「PHPエージェントを見つけてグローバルにインストール」）でサブエージェントを検索・インストールする",
+    "trigger_phrases": [
+      "エージェントカタログを探索しながら、試行錯誤的に必要なものを見つけたい時。CLIに不慣れなユーザーがGUI的に操作したい時",
+      "agent-installerサブエージェントで自然言語クエリによるインストール",
+      "agent-installer.md",
+      "GitHub API"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-04-01T00:17:19.011099+00:00"
+  },
+  {
+    "slug": "サブエージェントのツール権限カスタマイズ",
+    "name": "サブエージェントのツール権限カスタマイズ",
+    "category": "claude-code-workflow",
+    "description": "各サブエージェントのfrontmatter `tools:` フィールドを編集し、アクセス可能なClaude Code組み込みツールを制限または拡張する",
+    "trigger_phrases": [
+      "監査・レビュー専用エージェント（読み取り専用）、リサーチエージェント（検索+読み取り）、開発エージェント（全権限）のように役割別に権限を分離したい時",
+      "サブエージェントのツール権限カスタマイズ",
+      "テキストエディタ",
+      "Claude Code"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-04-01T00:17:19.011099+00:00"
+  },
+  {
+    "slug": "モデル自動ルーティングでコスト品質バランス最適化",
+    "name": "モデル自動ルーティングでコスト・品質バランス最適化",
+    "category": "claude-code-workflow",
+    "description": "サブエージェントのfrontmatter `model:` フィールドでopus/sonnet/haikuを指定し、タスク複雑度に応じた最適モデルを自動選択する",
+    "trigger_phrases": [
+      "セキュリティ監査・アーキテクチャレビュー（opus）、通常の機能開発・デバッグ（sonnet）、ドキュメント生成・依存関係チェック（haiku）のように、タスクの重要度・複雑度でモデルを使い分けたい時",
+      "モデル自動ルーティングでコスト・品質バランス最適化",
+      "Claude opus/sonnet/haiku"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-04-01T00:17:19.011099+00:00"
+  },
+  {
+    "slug": "グローバルプロジェクトスコープでサブエージェント共有上書き",
+    "name": "グローバル/プロジェクトスコープでサブエージェント共有・上書き",
+    "category": "claude-code-workflow",
+    "description": "グローバル（~/.claude/agents/）とプロジェクト固有（.claude/agents/）の2階層でサブエージェントを管理し、同名エージェントはプロジェクト側が優先される",
+    "trigger_phrases": [
+      "チーム標準のエージェントセットを全プロジェクトで共有しつつ、特定プロジェクトのニーズ（レガシーコードベース、特殊な言語バージョン等）に応じてカスタマイズしたい時",
+      "グローバル/プロジェクトスコープでサブエージェント共有・上書き",
+      "Claude Code",
+      "ファイルシステム"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-04-01T00:17:19.011099+00:00"
+  },
+  {
+    "slug": "マルチエージェントオーケストレーションで複雑ワークフロー自動化",
+    "name": "マルチエージェントオーケストレーションで複雑ワークフロー自動化",
+    "category": "claude-code-workflow",
+    "description": "voltagent-metaカテゴリのオーケストレーションエージェント（multi-agent-coordinator, workflow-orchestrator, pied-piper等）を使い、複数のサブエージェントを連携させてSDLCワークフロー全体を自動化する",
+    "trigger_phrases": [
+      "新機能開発・バグ修正・リファクタリングなど、複数フェーズにまたがるタスクを一貫したワークフローで自動化したい時。繰り返し発生するSDLCパターンをテンプレート化したい時",
+      "マルチエージェントオーケストレーションで複雑ワークフロー自動化",
+      "multi-agent-coordinator",
+      "workflow-orchestrator",
+      "pied-piper",
+      "taskade"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-04-01T00:17:19.011099+00:00"
+  },
+  {
+    "slug": "subagent-catalogスキルで会話形式のエージェント検索取得",
+    "name": "subagent-catalogスキルで会話形式のエージェント検索・取得",
+    "category": "claude-code-workflow",
+    "description": "Claude Codeスキルとしてsubagent-catalogを導入し、`/subagent-catalog:search <query>`でエージェントを検索、`/subagent-catalog:fetch <name>`で定義を取得する",
+    "trigger_phrases": [
+      "開発中にリアルタイムでエージェントを探したい時、エージェントの詳細（ツール権限、モデル、プロンプト内容）を確認してから使いたい時",
+      "subagent-catalogスキルで会話形式のエージェント検索・取得",
+      "subagent-catalog skill"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-04-01T00:17:19.011099+00:00"
+  },
+  {
+    "slug": "wasp-cliでsaasテンプレート初期化",
+    "name": "Wasp CLIでSaaSテンプレート初期化",
+    "category": "claude-code-workflow",
+    "description": "Open SaaSテンプレート一式（認証・決済・UI・AI設定含む）を新規ディレクトリに展開する",
+    "trigger_phrases": [
+      "SaaSプロジェクト新規作成時、または既存プロジェクトのリファレンス実装が必要な時",
+      "Wasp CLIでSaaSテンプレート初期化",
+      "Wasp CLI",
+      "npm",
+      "Open SaaSテンプレート一式（認証・決済・UI・AI設定含む）を新規ディレクトリに展開する"
+    ],
+    "source_url": "https://github.com/wasp-lang/open-saas",
+    "source_author": "wasp-lang",
+    "added_at": "2026-04-01T00:18:51.305921+00:00"
+  },
+  {
+    "slug": "waspの宣言的認証設定",
+    "name": "Waspの宣言的認証設定",
+    "category": "ui-ux",
+    "description": "main.wasp設定ファイルに認証プロバイダーを列挙するだけで、複数SNS認証+メール認証を実装",
+    "trigger_phrases": [
+      "SaaSアプリに認証機能を追加する時、複数のソーシャルログインを同時に有効化したい時",
+      "Waspの宣言的認証設定",
+      "Wasp framework",
+      "main.wasp設定ファイルに認証プロバイダーを列挙するだけで、複数SNS認証+メール認証を実装"
+    ],
+    "source_url": "https://github.com/wasp-lang/open-saas",
+    "source_author": "wasp-lang",
+    "added_at": "2026-04-01T00:18:51.305921+00:00"
+  },
+  {
+    "slug": "wasp-jobsでバックグラウンドタスク定義",
+    "name": "Wasp Jobsでバックグラウンドタスク定義",
+    "category": "automation-pipeline",
+    "description": "main.waspで関数を宣言するだけでcronジョブやキューワーカーを実装",
+    "trigger_phrases": [
+      "定期的なメール送信、データ集計、APIポーリング等のバックグラウンド処理が必要な時",
+      "Wasp Jobsでバックグラウンドタスク定義",
+      "Wasp Jobs",
+      "PgBoss（デフォルトexecutor）",
+      "main.waspで関数を宣言するだけでcronジョブやキューワーカーを実装"
+    ],
+    "source_url": "https://github.com/wasp-lang/open-saas",
+    "source_author": "wasp-lang",
+    "added_at": "2026-04-01T00:18:51.305921+00:00"
+  },
+  {
+    "slug": "end-to-end型安全性の自動推論",
+    "name": "End-to-End型安全性の自動推論",
+    "category": "dev-tool",
+    "description": "サーバー側の関数に型を付けると、クライアント側で自動的に型が推論され、tRPC等の追加設定不要で型安全なRPCが可能",
+    "trigger_phrases": [
+      "フルスタックTypeScriptプロジェクトで型安全性を保ちながらAPI呼び出しをしたい時",
+      "End-to-End型安全性の自動推論",
+      "Wasp framework",
+      "TypeScript"
+    ],
+    "source_url": "https://github.com/wasp-lang/open-saas",
+    "source_author": "wasp-lang",
+    "added_at": "2026-04-01T00:18:51.305921+00:00"
+  },
+  {
+    "slug": "1コマンドデプロイ",
+    "name": "1コマンドデプロイ",
+    "category": "infrastructure",
+    "description": "Wasp CLIで `wasp deploy` 実行するだけでDB・サーバー・クライアントを一括デプロイ",
+    "trigger_phrases": [
+      "ローカル開発完了後、ステージング・本番環境へデプロイする時",
+      "1コマンドデプロイ",
+      "Wasp CLI",
+      "Fly.io / Railway"
+    ],
+    "source_url": "https://github.com/wasp-lang/open-saas",
+    "source_author": "wasp-lang",
+    "added_at": "2026-04-01T00:18:51.305921+00:00"
+  },
+  {
+    "slug": "ai対応設定の同梱agentsmdskills",
+    "name": "AI対応設定の同梱（AGENTS.md/Skills）",
+    "category": "claude-code-workflow",
+    "description": "プロジェクト生成時にAGENTS.md、Claude Code Skills、プラグインが自動配置され、AI支援開発が即座に可能",
+    "trigger_phrases": [
+      "Claude Code/Cursor等のAI支援開発ツールで効率的にSaaSを構築したい時",
+      "AI対応設定の同梱（AGENTS.md/Skills）",
+      "Claude Code",
+      "Cursor",
+      "その他AIコーディングツール"
+    ],
+    "source_url": "https://github.com/wasp-lang/open-saas",
+    "source_author": "wasp-lang",
+    "added_at": "2026-04-01T00:18:51.305921+00:00"
+  },
+  {
+    "slug": "単一リポジトリマルチスキル構成の採用",
+    "name": "単一リポジトリ・マルチスキル構成の採用",
+    "category": "claude-code-workflow",
+    "description": "1つのGitHubリポジトリに複数のスキルを `skills/` ディレクトリ配下に格納し、それぞれ独立したSKILL.mdを持たせる",
+    "trigger_phrases": [
+      "3つ以上のスキルを開発・公開する場合、または関連スキル群をパッケージとして配布したい場合",
+      "単一リポジトリ・マルチスキル構成の採用",
+      "Git",
+      "GitHub"
+    ],
+    "source_url": "https://github.com/JimLiu/baoyu-skills",
+    "source_author": "JimLiu",
+    "added_at": "2026-04-01T00:20:21.919296+00:00"
+  },
+  {
+    "slug": "plugin-marketplace登録による公式ui配布",
+    "name": "Plugin Marketplace登録による公式UI配布",
+    "category": "claude-code-workflow",
+    "description": "Claude Codeの `/plugin marketplace add` コマンドでリポジトリを登録し、Browse UIからスキルをインストール可能にする",
+    "trigger_phrases": [
+      "ユーザーがCLIに不慣れで、GUIでのインストールを好む場合。定期的な更新を自動化したい場合",
+      "Plugin Marketplace登録による公式UI配布",
+      "Claude Code Plugin Marketplace API"
+    ],
+    "source_url": "https://github.com/JimLiu/baoyu-skills",
+    "source_author": "JimLiu",
+    "added_at": "2026-04-01T00:20:21.919296+00:00"
+  },
+  {
+    "slug": "clawhub個別スキル公開スクリプト",
+    "name": "ClawHub個別スキル公開スクリプト",
+    "category": "claude-code-workflow",
+    "description": "`scripts/sync-clawhub.sh` を使い、`skills/baoyu-*` 各ディレクトリをClawHubレジストリに個別スキルとして公開する",
+    "trigger_phrases": [
+      "ClawHubエコシステムのユーザーにもスキルを提供したい場合。スキルごとの個別インストールをサポートしたい場合",
+      "ClawHub個別スキル公開スクリプト",
+      "ClawHub CLI",
+      "Bashスクリプト"
+    ],
+    "source_url": "https://github.com/JimLiu/baoyu-skills",
+    "source_author": "JimLiu",
+    "added_at": "2026-04-01T00:20:21.919296+00:00"
+  },
+  {
+    "slug": "npx-skills-add-によるクイックインストール",
+    "name": "npx skills add によるクイックインストール",
+    "category": "claude-code-workflow",
+    "description": "`npx skills add jimliu/baoyu-skills` コマンドで、npm経由でスキルを直接インストールする",
+    "trigger_phrases": [
+      "初回インストール時、またはMarketplace未登録の段階で素早くスキルを試したい場合",
+      "npx skills add によるクイックインストール",
+      "npx",
+      "skills CLI"
+    ],
+    "source_url": "https://github.com/JimLiu/baoyu-skills",
+    "source_author": "JimLiu",
+    "added_at": "2026-04-01T00:20:21.919296+00:00"
+  },
+  {
+    "slug": "環境変数の優先度階層設計",
+    "name": "環境変数の優先度階層設計",
+    "category": "claude-code-workflow",
+    "description": ".envファイルを複数レベル(CLI > process.env > プロジェクト > ユーザー)で読み込み、優先度順に上書き適用する",
+    "trigger_phrases": [
+      "複数のAPI提供者を使い分ける場合、チームと個人で異なる認証情報を使う場合",
+      "環境変数の優先度階層設計",
+      "dotenv等の環境変数ローダー"
+    ],
+    "source_url": "https://github.com/JimLiu/baoyu-skills",
+    "source_author": "JimLiu",
+    "added_at": "2026-04-01T00:20:21.919296+00:00"
+  },
+  {
+    "slug": "extendmdによるスキルカスタマイズ",
+    "name": "EXTEND.mdによるスキルカスタマイズ",
+    "category": "claude-code-workflow",
+    "description": "各スキルの動作を `EXTEND.md` ファイルで上書き・拡張し、デフォルト設定を変更せずにカスタマイズする",
+    "trigger_phrases": [
+      "ブランドカラーや独自用語集を使いたい場合、チーム固有のスタイルプリセットを定義したい場合",
+      "EXTEND.mdによるスキルカスタマイズ"
+    ],
+    "source_url": "https://github.com/JimLiu/baoyu-skills",
+    "source_author": "JimLiu",
+    "added_at": "2026-04-01T00:20:21.919296+00:00"
   }
 ]
