@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 691 スキル
+合計: 708 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -695,3 +695,20 @@
 | スキルベースのワークフロー再利用 | スキルベースのワークフロー再利用 | claude-code-workflow | TDD/セキュリティレビュー/E2Eテスト/継続学習などのワークフローをSKILL.mdファイルとして定義し、コマンドや | affaan-m |
 | 継続学習v2インスティンクトベース | 継続学習v2（インスティンクトベース） | claude-code-workflow | セッションから抽出したパターンを「インスティンクト」として保存し、信頼度スコアリング・クラスタリング・スキル昇格を自動実 | affaan-m |
 | agentshield統合セキュリティスキャン | AgentShield統合セキュリティスキャン | claude-code-workflow | CLAUDE.md/settings.json/hooks/MCP設定を1282テスト・102ルールで静的解析し、秘密情 | affaan-m |
+| npxで即時実行してインストール不要でgemini-cliを試用 | npxで即時実行してインストール不要でGemini CLIを試用 | agent-orchestration | npmパッケージをローカルインストールせず、npxコマンドで一時的にGemini CLIを起動する | google-gemini |
+| oauth認証で無料枠60reqmin-1000reqdayを利用 | OAuth認証で無料枠（60req/min, 1000req/day）を利用 | agent-orchestration | 個人GoogleアカウントでSign in with Googleを選択し、APIキー不要で認証する | google-gemini |
+| 非対話モードでスクリプトから呼び出しjson出力を取得 | 非対話モードでスクリプトから呼び出し、JSON出力を取得 | agent-orchestration | `-p` フラグでプロンプトを指定し、`--output-format json` で構造化された応答を取得する | google-gemini |
+| mcpサーバー統合で独自ツールをaiエージェントに追加 | MCPサーバー統合で独自ツールをAIエージェントに追加 | agent-orchestration | `~/.gemini/settings.json` にMCP設定を追加し、@プレフィックスでツールを呼び出す | google-gemini |
+| geminimdで全セッション共通のコンテキストを注入 | GEMINI.mdで全セッション共通のコンテキストを注入 | agent-orchestration | プロジェクトルートまたは `~/.gemini/` に `GEMINI.md` を配置し、プロンプトに自動追加される指示 | google-gemini |
+| checkpointingで長時間セッションを保存再開 | Checkpointingで長時間セッションを保存・再開 | agent-orchestration | 複雑なタスク中にセッションを保存し、後で同じ状態から再開する | google-gemini |
+| github-actionsでgemini-cliを使いprレビューを自動化 | GitHub Actionsでgemini-cliを使いPRレビューを自動化 | agent-orchestration | google-github-actions/run-gemini-cliアクションを使い、PR作成時に自動レビューコメン | google-gemini |
+| anaconda環境でnodejsをインストールしてgemini-cliを導入 | Anaconda環境でNode.jsをインストールしてgemini-cliを導入 | agent-orchestration | conda-forgeからNode.jsをインストールし、隔離されたconda環境内でnpm install -gを実行 | google-gemini |
+| リリースタグで安定性を選択previewstablenightly | リリースタグで安定性を選択（preview/stable/nightly） | agent-orchestration | npm installで `@preview`, `@latest`, `@nightly` タグを指定して、リリースの | google-gemini |
+| google-search-groundingで最新情報を含むコード生成 | Google Search groundingで最新情報を含むコード生成 | agent-orchestration | Gemini APIのGoogle Search grounding機能を有効にし、プロンプトに最新のWeb情報を反映さ | google-gemini |
+| 目的別マルチllmオーケストレーション | 目的別マルチLLMオーケストレーション | agent-orchestration | 異なるLLMモデル（Opus 4.5、GPT 5.2 Medium、Gemini 3 Pro等）をタスクの性質に応じて自 | code-yeongyu |
+| ultraworkキーワード起動パターン | ultraworkキーワード起動パターン | agent-orchestration | プロンプトに「ultrawork」（または「ulw」）という1ワードを含めるだけで、全ての高度機能（並列エージェント、バ | code-yeongyu |
+| todo継続強制メカニズム | TODO継続強制メカニズム | agent-orchestration | エージェントがTODOリストを完了せずに停止した場合、システムが自動的に「bouldering mode」（boulde | code-yeongyu |
+| バックグラウンド並列エージェント実行 | バックグラウンド並列エージェント実行 | agent-orchestration | メインエージェントのコンテキストを節約するため、ファイル探索やドキュメント検索等の補助タスクをバックグラウンドで並列実行 | code-yeongyu |
+| コメント削減戦略comment-checker | コメント削減戦略（Comment Checker） | agent-orchestration | AI生成コードから過剰なコメントを自動削減し、人間が書いたコードと区別がつかないレベルに保つ | code-yeongyu |
+| lspast統合リファクタリング | LSP/AST統合リファクタリング | agent-orchestration | Language Server Protocol（LSP）とAST-Grepを活用し、テキスト検索・置換ではなく、意味論 | code-yeongyu |
+| 専門エージェント分業パターン | 専門エージェント分業パターン | agent-orchestration | タスクの性質に応じて、事前定義された専門エージェント（Oracle: 設計・デバッグ、Librarian: ドキュメント | code-yeongyu |

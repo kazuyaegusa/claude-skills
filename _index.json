@@ -9759,5 +9759,269 @@
     "source_url": "https://github.com/affaan-m/everything-claude-code",
     "source_author": "affaan-m",
     "added_at": "2026-04-01T00:04:36.529323+00:00"
+  },
+  {
+    "slug": "npxで即時実行してインストール不要でgemini-cliを試用",
+    "name": "npxで即時実行してインストール不要でGemini CLIを試用",
+    "category": "agent-orchestration",
+    "description": "npmパッケージをローカルインストールせず、npxコマンドで一時的にGemini CLIを起動する",
+    "trigger_phrases": [
+      "初めてGemini CLIを試す時、CI環境で一時的に実行する時、複数バージョンを切り替えたい時",
+      "npxで即時実行してインストール不要でGemini CLIを試用",
+      "npx (npm 5.2.0+に同梱)",
+      "@google/gemini-cli",
+      "npmパッケージをローカルインストールせず、npxコマンドで一時的にGemini CLIを起動する"
+    ],
+    "source_url": "https://github.com/google-gemini/gemini-cli",
+    "source_author": "google-gemini",
+    "added_at": "2026-04-01T00:06:42.273653+00:00"
+  },
+  {
+    "slug": "oauth認証で無料枠60reqmin-1000reqdayを利用",
+    "name": "OAuth認証で無料枠（60req/min, 1000req/day）を利用",
+    "category": "agent-orchestration",
+    "description": "個人GoogleアカウントでSign in with Googleを選択し、APIキー不要で認証する",
+    "trigger_phrases": [
+      "個人開発でAPIキーを発行したくない場合、Gemini 3の無料枠を最大限活用したい場合",
+      "OAuth認証で無料枠（60req/min, 1000req/day）を利用",
+      "Gemini CLI",
+      "Google OAuth 2.0",
+      "個人GoogleアカウントでSign in with Googleを選択し、APIキー不要で認証する"
+    ],
+    "source_url": "https://github.com/google-gemini/gemini-cli",
+    "source_author": "google-gemini",
+    "added_at": "2026-04-01T00:06:42.273653+00:00"
+  },
+  {
+    "slug": "非対話モードでスクリプトから呼び出しjson出力を取得",
+    "name": "非対話モードでスクリプトから呼び出し、JSON出力を取得",
+    "category": "agent-orchestration",
+    "description": "`-p` フラグでプロンプトを指定し、`--output-format json` で構造化された応答を取得する",
+    "trigger_phrases": [
+      "CI/CDでコードレビューやテスト結果の要約を自動生成する時、cron等でLLMに定期タスクを実行させる時",
+      "非対話モードでスクリプトから呼び出し、JSON出力を取得",
+      "Gemini CLI",
+      "jq（JSON処理）",
+      "Bash/Python等のスクリプト言語"
+    ],
+    "source_url": "https://github.com/google-gemini/gemini-cli",
+    "source_author": "google-gemini",
+    "added_at": "2026-04-01T00:06:42.273653+00:00"
+  },
+  {
+    "slug": "mcpサーバー統合で独自ツールをaiエージェントに追加",
+    "name": "MCPサーバー統合で独自ツールをAIエージェントに追加",
+    "category": "agent-orchestration",
+    "description": "`~/.gemini/settings.json` にMCP設定を追加し、@プレフィックスでツールを呼び出す",
+    "trigger_phrases": [
+      "Slackへの通知、GitHubのPR操作、DBクエリ実行等をLLMに委譲したい時",
+      "MCPサーバー統合で独自ツールをAIエージェントに追加",
+      "Model Context Protocol (MCP)",
+      "@modelcontextprotocol/server-*",
+      "settings.json"
+    ],
+    "source_url": "https://github.com/google-gemini/gemini-cli",
+    "source_author": "google-gemini",
+    "added_at": "2026-04-01T00:06:42.273653+00:00"
+  },
+  {
+    "slug": "geminimdで全セッション共通のコンテキストを注入",
+    "name": "GEMINI.mdで全セッション共通のコンテキストを注入",
+    "category": "agent-orchestration",
+    "description": "プロジェクトルートまたは `~/.gemini/` に `GEMINI.md` を配置し、プロンプトに自動追加される指示を記述する",
+    "trigger_phrases": [
+      "複数セッションで同じコンテキストを共有したい場合、チーム全体で統一した指示を共有したい場合",
+      "GEMINI.mdで全セッション共通のコンテキストを注入",
+      "Gemini CLI",
+      "Markdown"
+    ],
+    "source_url": "https://github.com/google-gemini/gemini-cli",
+    "source_author": "google-gemini",
+    "added_at": "2026-04-01T00:06:42.273653+00:00"
+  },
+  {
+    "slug": "checkpointingで長時間セッションを保存再開",
+    "name": "Checkpointingで長時間セッションを保存・再開",
+    "category": "agent-orchestration",
+    "description": "複雑なタスク中にセッションを保存し、後で同じ状態から再開する",
+    "trigger_phrases": [
+      "複雑なリファクタリングやマルチステップの実装で中断が必要な時",
+      "Checkpointingで長時間セッションを保存・再開",
+      "Gemini CLI",
+      "~/.gemini/checkpoints/",
+      "複雑なタスク中にセッションを保存し、後で同じ状態から再開する"
+    ],
+    "source_url": "https://github.com/google-gemini/gemini-cli",
+    "source_author": "google-gemini",
+    "added_at": "2026-04-01T00:06:42.273653+00:00"
+  },
+  {
+    "slug": "github-actionsでgemini-cliを使いprレビューを自動化",
+    "name": "GitHub Actionsでgemini-cliを使いPRレビューを自動化",
+    "category": "agent-orchestration",
+    "description": "google-github-actions/run-gemini-cliアクションを使い、PR作成時に自動レビューコメントを投稿する",
+    "trigger_phrases": [
+      "PRレビューを自動化したい、Issue triageを自動化したい、@gemini-cliメンション時にLLMを呼び出したい場合",
+      "GitHub Actionsでgemini-cliを使いPRレビューを自動化",
+      "google-github-actions/run-gemini-cli",
+      "GitHub Actions",
+      "GITHUB_TOKEN"
+    ],
+    "source_url": "https://github.com/google-gemini/gemini-cli",
+    "source_author": "google-gemini",
+    "added_at": "2026-04-01T00:06:42.273653+00:00"
+  },
+  {
+    "slug": "anaconda環境でnodejsをインストールしてgemini-cliを導入",
+    "name": "Anaconda環境でNode.jsをインストールしてgemini-cliを導入",
+    "category": "agent-orchestration",
+    "description": "conda-forgeからNode.jsをインストールし、隔離されたconda環境内でnpm install -gを実行する",
+    "trigger_phrases": [
+      "企業プロキシ下でnpmが使えない、システムにNode.jsを入れられない、複数バージョンのNode.jsを切り替えたい場合",
+      "Anaconda環境でNode.jsをインストールしてgemini-cliを導入",
+      "Anaconda/Miniconda",
+      "conda-forge",
+      "npm"
+    ],
+    "source_url": "https://github.com/google-gemini/gemini-cli",
+    "source_author": "google-gemini",
+    "added_at": "2026-04-01T00:06:42.273653+00:00"
+  },
+  {
+    "slug": "リリースタグで安定性を選択previewstablenightly",
+    "name": "リリースタグで安定性を選択（preview/stable/nightly）",
+    "category": "agent-orchestration",
+    "description": "npm installで `@preview`, `@latest`, `@nightly` タグを指定して、リリースの安定性を制御する",
+    "trigger_phrases": [
+      "新機能をいち早く試したい場合（nightly/preview）、本番環境で使う場合（stable）",
+      "リリースタグで安定性を選択（preview/stable/nightly）",
+      "npm",
+      "@google/gemini-cli"
+    ],
+    "source_url": "https://github.com/google-gemini/gemini-cli",
+    "source_author": "google-gemini",
+    "added_at": "2026-04-01T00:06:42.273653+00:00"
+  },
+  {
+    "slug": "google-search-groundingで最新情報を含むコード生成",
+    "name": "Google Search groundingで最新情報を含むコード生成",
+    "category": "agent-orchestration",
+    "description": "Gemini APIのGoogle Search grounding機能を有効にし、プロンプトに最新のWeb情報を反映させる",
+    "trigger_phrases": [
+      "最新ライブラリのコード例を生成したい、時事問題に関するコードを書きたい、APIドキュメントの最新版を参照したい場合",
+      "Google Search groundingで最新情報を含むコード生成",
+      "Gemini API",
+      "Google Search grounding"
+    ],
+    "source_url": "https://github.com/google-gemini/gemini-cli",
+    "source_author": "google-gemini",
+    "added_at": "2026-04-01T00:06:42.273653+00:00"
+  },
+  {
+    "slug": "目的別マルチllmオーケストレーション",
+    "name": "目的別マルチLLMオーケストレーション",
+    "category": "agent-orchestration",
+    "description": "異なるLLMモデル（Opus 4.5、GPT 5.2 Medium、Gemini 3 Pro等）をタスクの性質に応じて自動的に使い分ける",
+    "trigger_phrases": [
+      "複数の専門領域にまたがるタスク、または特定領域で最高品質が求められるとき",
+      "目的別マルチLLMオーケストレーション",
+      "OpenCode",
+      "oh-my-opencode plugin",
+      "複数のLLM API（Anthropic、OpenAI、Google）"
+    ],
+    "source_url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "source_author": "code-yeongyu",
+    "added_at": "2026-04-01T00:09:03.505460+00:00"
+  },
+  {
+    "slug": "ultraworkキーワード起動パターン",
+    "name": "ultraworkキーワード起動パターン",
+    "category": "agent-orchestration",
+    "description": "プロンプトに「ultrawork」（または「ulw」）という1ワードを含めるだけで、全ての高度機能（並列エージェント、バックグラウンドタスク、深掘り探索、完遂強制）を自動起動する",
+    "trigger_phrases": [
+      "複雑なタスクで、設定を考える時間を節約したいとき。または、エージェントに最大限の自律性を与えたいとき",
+      "ultraworkキーワード起動パターン",
+      "oh-my-opencode plugin",
+      "OpenCode"
+    ],
+    "source_url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "source_author": "code-yeongyu",
+    "added_at": "2026-04-01T00:09:03.505460+00:00"
+  },
+  {
+    "slug": "todo継続強制メカニズム",
+    "name": "TODO継続強制メカニズム",
+    "category": "agent-orchestration",
+    "description": "エージェントがTODOリストを完了せずに停止した場合、システムが自動的に「bouldering mode」（boulder = 巨石を転がし続ける）に強制復帰させ、タスク完遂まで駆動し続ける",
+    "trigger_phrases": [
+      "多段階タスク、または過去にエージェントが途中で止まった経験があるとき",
+      "TODO継続強制メカニズム",
+      "oh-my-opencode plugin（Todo Continuation Enforcer）"
+    ],
+    "source_url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "source_author": "code-yeongyu",
+    "added_at": "2026-04-01T00:09:03.505460+00:00"
+  },
+  {
+    "slug": "バックグラウンド並列エージェント実行",
+    "name": "バックグラウンド並列エージェント実行",
+    "category": "agent-orchestration",
+    "description": "メインエージェントのコンテキストを節約するため、ファイル探索やドキュメント検索等の補助タスクをバックグラウンドで並列実行する高速・低コストなエージェントに委譲する",
+    "trigger_phrases": [
+      "大規模コードベースの探索、複数ファイルの横断検索、外部ドキュメント参照が必要なとき",
+      "バックグラウンド並列エージェント実行",
+      "oh-my-opencode plugin（Background Tasks）",
+      "Explore agent（Grok Code）",
+      "Librarian agent（Sonnet 4.5）"
+    ],
+    "source_url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "source_author": "code-yeongyu",
+    "added_at": "2026-04-01T00:09:03.505460+00:00"
+  },
+  {
+    "slug": "コメント削減戦略comment-checker",
+    "name": "コメント削減戦略（Comment Checker）",
+    "category": "agent-orchestration",
+    "description": "AI生成コードから過剰なコメントを自動削減し、人間が書いたコードと区別がつかないレベルに保つ",
+    "trigger_phrases": [
+      "AI生成コードをプロダクションに投入する前、またはコードレビュー基準が厳しいとき",
+      "コメント削減戦略（Comment Checker）",
+      "oh-my-opencode plugin（Comment Checker hook）",
+      "AI生成コードから過剰なコメントを自動削減し、人間が書いたコードと区別がつかないレベルに保つ"
+    ],
+    "source_url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "source_author": "code-yeongyu",
+    "added_at": "2026-04-01T00:09:03.505460+00:00"
+  },
+  {
+    "slug": "lspast統合リファクタリング",
+    "name": "LSP/AST統合リファクタリング",
+    "category": "agent-orchestration",
+    "description": "Language Server Protocol（LSP）とAST-Grepを活用し、テキスト検索・置換ではなく、意味論的に正確なコード変更を実行する",
+    "trigger_phrases": [
+      "関数・変数・クラス名の変更、コード構造の再編成、型定義の変更等、安全性が重要なリファクタリング",
+      "LSP/AST統合リファクタリング",
+      "oh-my-opencode plugin（LSP integration）",
+      "AST-Grep",
+      "各言語のLanguage Server（typescript-language-server、rust-analyzer等）"
+    ],
+    "source_url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "source_author": "code-yeongyu",
+    "added_at": "2026-04-01T00:09:03.505460+00:00"
+  },
+  {
+    "slug": "専門エージェント分業パターン",
+    "name": "専門エージェント分業パターン",
+    "category": "agent-orchestration",
+    "description": "タスクの性質に応じて、事前定義された専門エージェント（Oracle: 設計・デバッグ、Librarian: ドキュメント検索、Frontend Engineer: UI実装等）に自動委譲する",
+    "trigger_phrases": [
+      "フロントエンド・バックエンド・デバッグ等、異なる専門性が必要なタスク",
+      "専門エージェント分業パターン",
+      "oh-my-opencode plugin（Categories設定）",
+      "各専門エージェント（Oracle, Librarian, Frontend Engineer等）"
+    ],
+    "source_url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "source_author": "code-yeongyu",
+    "added_at": "2026-04-01T00:09:03.505460+00:00"
   }
 ]
