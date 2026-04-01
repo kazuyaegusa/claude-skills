@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 685 スキル
+合計: 691 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -689,3 +689,9 @@
 | 複雑な科学ワークフローを1プロンプトで実行 | 複雑な科学ワークフローを1プロンプトで実行 | agent-orchestration | 「データ取得→前処理→解析→可視化→レポート生成」といった多段階ワークフローを、複数スキルを組み合わせて1プロンプトで完 | K-Dense-AI |
 | uvパッケージマネージャでスキル依存関係管理 | uvパッケージマネージャでスキル依存関係管理 | claude-code-workflow | 各スキルのPython依存関係をuvで高速インストール・管理し、環境構築を自動化する | K-Dense-AI |
 | セキュリティスキャンで悪意あるスキルを検出 | セキュリティスキャンで悪意あるスキルを検出 | claude-code-workflow | Cisco AI Defense Skill Scannerを使い、スキルがプロンプトインジェクション・データ流出・悪意 | K-Dense-AI |
+| プラグインベースのマルチツール構成管理 | プラグインベースのマルチツール構成管理 | claude-code-workflow | Claude Code/Cursor/OpenCode/Codexで共通動作するエージェント・スキル・コマンド・フック・ | affaan-m |
+| フック駆動の自動品質保証 | フック駆動の自動品質保証 | claude-code-workflow | ツール実行（Edit/Bash/Submit等）の前後でフックスクリプトを発火させ、フォーマット・型チェック・conso | affaan-m |
+| トークン最適化3点セット | トークン最適化3点セット | claude-code-workflow | model=sonnet、MAX_THINKING_TOKENS=10000、CLAUDE_AUTOCOMPACT_PC | affaan-m |
+| スキルベースのワークフロー再利用 | スキルベースのワークフロー再利用 | claude-code-workflow | TDD/セキュリティレビュー/E2Eテスト/継続学習などのワークフローをSKILL.mdファイルとして定義し、コマンドや | affaan-m |
+| 継続学習v2インスティンクトベース | 継続学習v2（インスティンクトベース） | claude-code-workflow | セッションから抽出したパターンを「インスティンクト」として保存し、信頼度スコアリング・クラスタリング・スキル昇格を自動実 | affaan-m |
+| agentshield統合セキュリティスキャン | AgentShield統合セキュリティスキャン | claude-code-workflow | CLAUDE.md/settings.json/hooks/MCP設定を1282テスト・102ルールで静的解析し、秘密情 | affaan-m |

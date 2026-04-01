@@ -9664,5 +9664,100 @@
     "source_url": "https://github.com/K-Dense-AI/claude-scientific-skills",
     "source_author": "K-Dense-AI",
     "added_at": "2026-03-31T00:15:45.453363+00:00"
+  },
+  {
+    "slug": "プラグインベースのマルチツール構成管理",
+    "name": "プラグインベースのマルチツール構成管理",
+    "category": "claude-code-workflow",
+    "description": "Claude Code/Cursor/OpenCode/Codexで共通動作するエージェント・スキル・コマンド・フック・ルールをプラグイン形式で一元管理する",
+    "trigger_phrases": [
+      "複数のAIコーディングツールを併用している、またはツール移行を検討しているとき",
+      "プラグインベースのマルチツール構成管理",
+      "Claude Code CLI v2.1.0+",
+      "Cursor IDE",
+      "OpenCode",
+      "Codex macOS app/CLI",
+      "Node.js（フックスクリプト実行用）"
+    ],
+    "source_url": "https://github.com/affaan-m/everything-claude-code",
+    "source_author": "affaan-m",
+    "added_at": "2026-04-01T00:04:36.529323+00:00"
+  },
+  {
+    "slug": "フック駆動の自動品質保証",
+    "name": "フック駆動の自動品質保証",
+    "category": "claude-code-workflow",
+    "description": "ツール実行（Edit/Bash/Submit等）の前後でフックスクリプトを発火させ、フォーマット・型チェック・console.log警告・秘密情報検出を自動実行する",
+    "trigger_phrases": [
+      "コード編集後の手動チェックを減らしたい、秘密情報の誤コミットを防ぎたい、一貫した品質基準を自動適用したいとき",
+      "フック駆動の自動品質保証",
+      "Node.js",
+      "Prettier/Biome（フォーマッタ）",
+      "TypeScript（tsc --noEmit）",
+      "grep（パターンマッチ）"
+    ],
+    "source_url": "https://github.com/affaan-m/everything-claude-code",
+    "source_author": "affaan-m",
+    "added_at": "2026-04-01T00:04:36.529323+00:00"
+  },
+  {
+    "slug": "トークン最適化3点セット",
+    "name": "トークン最適化3点セット",
+    "category": "claude-code-workflow",
+    "description": "model=sonnet、MAX_THINKING_TOKENS=10000、CLAUDE_AUTOCOMPACT_PCT_OVERRIDE=50 の設定でトークン消費を60-70%削減しつつ品質を維持する",
+    "trigger_phrases": [
+      "Claude Codeの月額コストが高騰している、長時間セッションで応答品質が低下している、コンテキストウィンドウが枯渇しているとき",
+      "トークン最適化3点セット",
+      "Claude Code CLI"
+    ],
+    "source_url": "https://github.com/affaan-m/everything-claude-code",
+    "source_author": "affaan-m",
+    "added_at": "2026-04-01T00:04:36.529323+00:00"
+  },
+  {
+    "slug": "スキルベースのワークフロー再利用",
+    "name": "スキルベースのワークフロー再利用",
+    "category": "claude-code-workflow",
+    "description": "TDD/セキュリティレビュー/E2Eテスト/継続学習などのワークフローをSKILL.mdファイルとして定義し、コマンドやエージェントから呼び出し可能にする",
+    "trigger_phrases": [
+      "繰り返し実行する開発プロセス（TDD/レビュー/デプロイ）を標準化したい、チーム全体で同じワークフローを共有したいとき",
+      "スキルベースのワークフロー再利用",
+      "Claude Code Skill tool",
+      "マークダウン + YAMLフロントマター"
+    ],
+    "source_url": "https://github.com/affaan-m/everything-claude-code",
+    "source_author": "affaan-m",
+    "added_at": "2026-04-01T00:04:36.529323+00:00"
+  },
+  {
+    "slug": "継続学習v2インスティンクトベース",
+    "name": "継続学習v2（インスティンクトベース）",
+    "category": "claude-code-workflow",
+    "description": "セッションから抽出したパターンを「インスティンクト」として保存し、信頼度スコアリング・クラスタリング・スキル昇格を自動実行する",
+    "trigger_phrases": [
+      "プロジェクト固有のパターンを自動蓄積したい、チーム知見を形式知化したい、長期プロジェクトで学習ループを回したいとき",
+      "継続学習v2（インスティンクトベース）",
+      "Node.js",
+      "claude -p",
+      "JSON"
+    ],
+    "source_url": "https://github.com/affaan-m/everything-claude-code",
+    "source_author": "affaan-m",
+    "added_at": "2026-04-01T00:04:36.529323+00:00"
+  },
+  {
+    "slug": "agentshield統合セキュリティスキャン",
+    "name": "AgentShield統合セキュリティスキャン",
+    "category": "claude-code-workflow",
+    "description": "CLAUDE.md/settings.json/hooks/MCP設定を1282テスト・102ルールで静的解析し、秘密情報・権限過剰・インジェクションリスクを検出する",
+    "trigger_phrases": [
+      "AIエージェント設定を本番環境にデプロイする前、秘密情報の誤混入を防ぎたい、MCP権限を最小化したいとき",
+      "AgentShield統合セキュリティスキャン",
+      "ecc-agentshield（npm）",
+      "Claude Opus 4.6（--opusモード）"
+    ],
+    "source_url": "https://github.com/affaan-m/everything-claude-code",
+    "source_author": "affaan-m",
+    "added_at": "2026-04-01T00:04:36.529323+00:00"
   }
 ]
