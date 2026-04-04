@@ -10610,5 +10610,258 @@
     "source_url": "https://github.com/JimLiu/baoyu-skills",
     "source_author": "JimLiu",
     "added_at": "2026-04-01T00:20:21.919296+00:00"
+  },
+  {
+    "slug": "プラグインベースのハーネス構成管理",
+    "name": "プラグインベースのハーネス構成管理",
+    "category": "claude-code-workflow",
+    "description": "エージェント・スキル・フック・ルール・MCP設定をプラグインとして一括インストールし、Claude Code等のハーネスに統合する",
+    "trigger_phrases": [
+      "新規プロジェクト立ち上げ時、または既存プロジェクトにECCを導入する初回セットアップ時",
+      "プラグインベースのハーネス構成管理",
+      "Claude Code CLI v2.1.0+",
+      "install.sh（macOS/Linux）/ install.ps1（Windows）",
+      "npm/pnpm/yarn/bun（依存インストール用）"
+    ],
+    "source_url": "https://github.com/affaan-m/everything-claude-code",
+    "source_author": "affaan-m",
+    "added_at": "2026-04-04T00:03:29.573987+00:00"
+  },
+  {
+    "slug": "トークン消費の60-70削減設定",
+    "name": "トークン消費の60-70%削減設定",
+    "category": "claude-code-workflow",
+    "description": "model, MAX_THINKING_TOKENS, CLAUDE_AUTOCOMPACT_PCT_OVERRIDE の3設定を調整し、品質を維持しながらコストを大幅削減する",
+    "trigger_phrases": [
+      "Claude Code利用料金が予算を圧迫している、または長時間セッションでコンテキスト圧縮が頻発する場合",
+      "トークン消費の60-70%削減設定",
+      "Claude Code CLI",
+      "settings.json編集"
+    ],
+    "source_url": "https://github.com/affaan-m/everything-claude-code",
+    "source_author": "affaan-m",
+    "added_at": "2026-04-04T00:03:29.573987+00:00"
+  },
+  {
+    "slug": "フックベースの自動化セッション永続化フォーマットセキュリティ",
+    "name": "フックベースの自動化（セッション永続化・フォーマット・セキュリティ）",
+    "category": "claude-code-workflow",
+    "description": "PreToolUse/PostToolUse/Stop/SessionStart等のフックイベントに、メモリ永続化・自動フォーマット・セキュリティ警告・戦略的圧縮提案を紐付け、手動オペレーションを削減する",
+    "trigger_phrases": [
+      "セッション間で文脈が失われる、手動チェック（lint/format/型チェック）を毎回忘れる、セキュリティリスク（シークレット混入）を検出したい場合",
+      "フックベースの自動化（セッション永続化・フォーマット・セキュリティ）",
+      "hooks/hooks.json",
+      "Node.js（scripts/hooks/*.js）",
+      "Claude Code hook system"
+    ],
+    "source_url": "https://github.com/affaan-m/everything-claude-code",
+    "source_author": "affaan-m",
+    "added_at": "2026-04-04T00:03:29.573987+00:00"
+  },
+  {
+    "slug": "選択的インストールアーキテクチャ",
+    "name": "選択的インストールアーキテクチャ",
+    "category": "claude-code-workflow",
+    "description": "マニフェスト駆動のインストールパイプライン（install-plan.js + install-apply.js）により、必要なコンポーネントのみをターゲット別に選択インストールし、状態ストアで追跡・増分更新を可能にする",
+    "trigger_phrases": [
+      "特定言語スタックのみ使用するプロジェクト、ディスク容量が限られている環境、段階的にECCを導入したい場合",
+      "選択的インストールアーキテクチャ",
+      "install.sh（macOS/Linux）/ install.ps1（Windows）",
+      "install-plan.js, install-apply.js",
+      "状態ストア（SQLite/JSON）"
+    ],
+    "source_url": "https://github.com/affaan-m/everything-claude-code",
+    "source_author": "affaan-m",
+    "added_at": "2026-04-04T00:03:29.573987+00:00"
+  },
+  {
+    "slug": "クロスプラットフォーム対応dryアダプターパターン",
+    "name": "クロスプラットフォーム対応（DRYアダプターパターン）",
+    "category": "claude-code-workflow",
+    "description": "Claude Code/Cursor/Codex/OpenCodeの異なるフックイベントシステムを、共通のscripts/hooks/*.jsで処理し、各ハーネス用のアダプター層（.cursor/hooks/adapter.js等）で差分を吸収する",
+    "trigger_phrases": [
+      "複数のAIハーネスを併用している、ハーネス間でワークフローを統一したい、メンテナンスコストを最小化したい場合",
+      "クロスプラットフォーム対応（DRYアダプターパターン）",
+      "scripts/hooks/*.js（共通ロジック）",
+      ".cursor/hooks/adapter.js（Cursor用変換）",
+      "hooks/hooks.json（Claude Code）",
+      ".opencode/plugins/（OpenCode）"
+    ],
+    "source_url": "https://github.com/affaan-m/everything-claude-code",
+    "source_author": "affaan-m",
+    "added_at": "2026-04-04T00:03:29.573987+00:00"
+  },
+  {
+    "slug": "skillsによる専門知識のパッケージ化",
+    "name": "Skillsによる専門知識のパッケージ化",
+    "category": "claude-code-workflow",
+    "description": "特定タスク（TDD、セキュリティ監査、ドキュメント生成等）に必要な知識・手順をSKILL.mdファイルとしてパッケージ化し、Claude Codeに読み込ませる",
+    "trigger_phrases": [
+      "繰り返し行うタスク（コードレビュー、テスト生成、リリース作業等）がある時、チームで開発標準を共有したい時",
+      "Skillsによる専門知識のパッケージ化",
+      "~/.claude/skills/ディレクトリ",
+      "既存スキルリポジトリ（Superpowers、AgentSys等）"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-04-04T00:05:29.844220+00:00"
+  },
+  {
+    "slug": "hooksによるライフサイクル制御",
+    "name": "Hooksによるライフサイクル制御",
+    "category": "claude-code-workflow",
+    "description": "Claude Codeの特定タイミング（ファイル書き込み前、Bash実行前等）で自動的にスクリプトを実行し、検証・変換・通知を行う",
+    "trigger_phrases": [
+      "TDD違反をブロックしたい時、危険なコマンドを防ぎたい時、タスク完了を通知したい時、コードフォーマットを自動適用したい時",
+      "Hooksによるライフサイクル制御",
+      "TDD Guard",
+      "Dippy",
+      "TypeScript Quality Hooks",
+      "Claudio"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-04-04T00:05:29.844220+00:00"
+  },
+  {
+    "slug": "slash-commandsでワークフローの標準化",
+    "name": "Slash Commandsでワークフローの標準化",
+    "category": "claude-code-workflow",
+    "description": "頻繁に使うプロンプトを /command-name 形式でショートカット化し、チーム全体で同じ手順を共有する",
+    "trigger_phrases": [
+      "Git操作を標準化したい時、PR/ドキュメント生成の品質を統一したい時、チームで同じワークフローを使いたい時",
+      "Slash Commandsでワークフローの標準化",
+      ".claude/commands/ディレクトリ",
+      "既存コマンドリポジトリ"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-04-04T00:05:29.844220+00:00"
+  },
+  {
+    "slug": "orchestratorsでマルチエージェント協調",
+    "name": "Orchestratorsでマルチエージェント協調",
+    "category": "claude-code-workflow",
+    "description": "複数のClaude Codeインスタンスを並列実行し、タスクを分散・協調させるツールを使う",
+    "trigger_phrases": [
+      "大規模リファクタリング、複数機能の並行開発、コードベース全体の分析など、単一エージェントでは時間がかかりすぎるタスク",
+      "Orchestratorsでマルチエージェント協調",
+      "Ruflo",
+      "Auto-Claude",
+      "Claude Squad",
+      "TSK",
+      "複数のClaude Codeインスタンスを並列実行し、タスクを分散・協調させるツールを使う"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-04-04T00:05:29.844220+00:00"
+  },
+  {
+    "slug": "claudemdでプロジェクト固有ルール定義",
+    "name": "CLAUDE.mdでプロジェクト固有ルール定義",
+    "category": "claude-code-workflow",
+    "description": "プロジェクトルートに CLAUDE.md を配置し、コーディング規約・アーキテクチャ・ビルドコマンド・用語集等を定義する",
+    "trigger_phrases": [
+      "チーム開発で規約を統一したい時、特定フレームワークのベストプラクティスを強制したい時、プロジェクト用語を定義したい時",
+      "CLAUDE.mdでプロジェクト固有ルール定義",
+      "既存CLAUDE.mdテンプレート（Metabase、HASH、Giselle等）"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-04-04T00:05:29.844220+00:00"
+  },
+  {
+    "slug": "status-linesでリアルタイム可視化",
+    "name": "Status Linesでリアルタイム可視化",
+    "category": "claude-code-workflow",
+    "description": "Claude Codeのステータスバーをカスタマイズし、トークン使用量・コスト・Gitブランチ・進捗状況等を表示する",
+    "trigger_phrases": [
+      "トークン使用量を管理したい時、複数プロジェクト間で作業している時、コスト意識を持ちながら開発したい時",
+      "Status Linesでリアルタイム可視化",
+      "claude-powerline",
+      "CCometixLine",
+      "ccstatusline"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-04-04T00:05:29.844220+00:00"
+  },
+  {
+    "slug": "usage-monitorsで使用状況分析",
+    "name": "Usage Monitorsで使用状況分析",
+    "category": "claude-code-workflow",
+    "description": "Claude Codeのローカルログを解析し、トークン消費・コスト・セッション履歴をダッシュボード形式で可視化する",
+    "trigger_phrases": [
+      "月次コストを把握したい時、トークン効率を改善したい時、チーム全体の使用状況を可視化したい時",
+      "Usage Monitorsで使用状況分析",
+      "ccflare",
+      "better-ccflare",
+      "CC Usage",
+      "Claudex"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-04-04T00:05:29.844220+00:00"
+  },
+  {
+    "slug": "alternative-clientsでモバイルリモート操作",
+    "name": "Alternative Clientsでモバイル/リモート操作",
+    "category": "claude-code-workflow",
+    "description": "Claude CodeをモバイルアプリやWeb UIから操作・監視できるクライアントを使う",
+    "trigger_phrases": [
+      "外出中に進捗確認したい時、リモートで承認作業を行いたい時、チームメンバーとセッションを共有したい時",
+      "Alternative Clientsでモバイル/リモート操作",
+      "Omnara",
+      "Happy Coder",
+      "crystal",
+      "Claude CodeをモバイルアプリやWeb UIから操作・監視できるクライアントを使う"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-04-04T00:05:29.844220+00:00"
+  },
+  {
+    "slug": "cliベースskills統合でトークン効率化",
+    "name": "CLIベースSKILLS統合でトークン効率化",
+    "category": "agent-orchestration",
+    "description": "MCPサーバーではなくPlaywright CLIをSKILLSとして公開し、エージェントが簡潔なコマンド実行でブラウザ操作する",
+    "trigger_phrases": [
+      "コーディングエージェントが大規模コードベース・テスト・推論をブラウザ自動化と並行実行する場合",
+      "CLIベースSKILLS統合でトークン効率化",
+      "Playwright CLI",
+      "SKILLS機能を持つコーディングエージェント"
+    ],
+    "source_url": "https://github.com/microsoft/playwright-mcp",
+    "source_author": "microsoft",
+    "added_at": "2026-04-04T00:06:41.549215+00:00"
+  },
+  {
+    "slug": "mcp利用の判断基準明確化",
+    "name": "MCP利用の判断基準明確化",
+    "category": "context-management",
+    "description": "持続的ブラウザコンテキスト・豊富な内省・反復推論が必要なユースケースでのみMCPを選択",
+    "trigger_phrases": [
+      "ブラウザ自動化の統合方式を選択する設計段階",
+      "MCP利用の判断基準明確化",
+      "持続的ブラウザコンテキスト・豊富な内省・反復推論が必要なユースケースでのみMCPを選択"
+    ],
+    "source_url": "https://github.com/microsoft/playwright-mcp",
+    "source_author": "microsoft",
+    "added_at": "2026-04-04T00:06:41.549215+00:00"
+  },
+  {
+    "slug": "アクセシビリティツリーベースの操作設計",
+    "name": "アクセシビリティツリーベースの操作設計",
+    "category": "dev-tool",
+    "description": "スクリーンショットではなく構造化アクセシビリティスナップショットでブラウザ操作",
+    "trigger_phrases": [
+      "LLMがブラウザ操作する全ケース（CLI/MCP共通）",
+      "アクセシビリティツリーベースの操作設計",
+      "Playwright",
+      "スクリーンショットではなく構造化アクセシビリティスナップショットでブラウザ操作"
+    ],
+    "source_url": "https://github.com/microsoft/playwright-mcp",
+    "source_author": "microsoft",
+    "added_at": "2026-04-04T00:06:41.549215+00:00"
   }
 ]

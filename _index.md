@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 747 スキル
+合計: 763 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -751,3 +751,19 @@
 | npx-skills-add-によるクイックインストール | npx skills add によるクイックインストール | claude-code-workflow | `npx skills add jimliu/baoyu-skills` コマンドで、npm経由でスキルを直接インストー | JimLiu |
 | 環境変数の優先度階層設計 | 環境変数の優先度階層設計 | claude-code-workflow | .envファイルを複数レベル(CLI > process.env > プロジェクト > ユーザー)で読み込み、優先度順に | JimLiu |
 | extendmdによるスキルカスタマイズ | EXTEND.mdによるスキルカスタマイズ | claude-code-workflow | 各スキルの動作を `EXTEND.md` ファイルで上書き・拡張し、デフォルト設定を変更せずにカスタマイズする | JimLiu |
+| プラグインベースのハーネス構成管理 | プラグインベースのハーネス構成管理 | claude-code-workflow | エージェント・スキル・フック・ルール・MCP設定をプラグインとして一括インストールし、Claude Code等のハーネス | affaan-m |
+| トークン消費の60-70削減設定 | トークン消費の60-70%削減設定 | claude-code-workflow | model, MAX_THINKING_TOKENS, CLAUDE_AUTOCOMPACT_PCT_OVERRIDE  | affaan-m |
+| フックベースの自動化セッション永続化フォーマットセキュリティ | フックベースの自動化（セッション永続化・フォーマット・セキュリティ） | claude-code-workflow | PreToolUse/PostToolUse/Stop/SessionStart等のフックイベントに、メモリ永続化・自動 | affaan-m |
+| 選択的インストールアーキテクチャ | 選択的インストールアーキテクチャ | claude-code-workflow | マニフェスト駆動のインストールパイプライン（install-plan.js + install-apply.js）により | affaan-m |
+| クロスプラットフォーム対応dryアダプターパターン | クロスプラットフォーム対応（DRYアダプターパターン） | claude-code-workflow | Claude Code/Cursor/Codex/OpenCodeの異なるフックイベントシステムを、共通のscripts | affaan-m |
+| skillsによる専門知識のパッケージ化 | Skillsによる専門知識のパッケージ化 | claude-code-workflow | 特定タスク（TDD、セキュリティ監査、ドキュメント生成等）に必要な知識・手順をSKILL.mdファイルとしてパッケージ化 | hesreallyhim |
+| hooksによるライフサイクル制御 | Hooksによるライフサイクル制御 | claude-code-workflow | Claude Codeの特定タイミング（ファイル書き込み前、Bash実行前等）で自動的にスクリプトを実行し、検証・変換・ | hesreallyhim |
+| slash-commandsでワークフローの標準化 | Slash Commandsでワークフローの標準化 | claude-code-workflow | 頻繁に使うプロンプトを /command-name 形式でショートカット化し、チーム全体で同じ手順を共有する | hesreallyhim |
+| orchestratorsでマルチエージェント協調 | Orchestratorsでマルチエージェント協調 | claude-code-workflow | 複数のClaude Codeインスタンスを並列実行し、タスクを分散・協調させるツールを使う | hesreallyhim |
+| claudemdでプロジェクト固有ルール定義 | CLAUDE.mdでプロジェクト固有ルール定義 | claude-code-workflow | プロジェクトルートに CLAUDE.md を配置し、コーディング規約・アーキテクチャ・ビルドコマンド・用語集等を定義する | hesreallyhim |
+| status-linesでリアルタイム可視化 | Status Linesでリアルタイム可視化 | claude-code-workflow | Claude Codeのステータスバーをカスタマイズし、トークン使用量・コスト・Gitブランチ・進捗状況等を表示する | hesreallyhim |
+| usage-monitorsで使用状況分析 | Usage Monitorsで使用状況分析 | claude-code-workflow | Claude Codeのローカルログを解析し、トークン消費・コスト・セッション履歴をダッシュボード形式で可視化する | hesreallyhim |
+| alternative-clientsでモバイルリモート操作 | Alternative Clientsでモバイル/リモート操作 | claude-code-workflow | Claude CodeをモバイルアプリやWeb UIから操作・監視できるクライアントを使う | hesreallyhim |
+| cliベースskills統合でトークン効率化 | CLIベースSKILLS統合でトークン効率化 | agent-orchestration | MCPサーバーではなくPlaywright CLIをSKILLSとして公開し、エージェントが簡潔なコマンド実行でブラウザ | microsoft |
+| mcp利用の判断基準明確化 | MCP利用の判断基準明確化 | context-management | 持続的ブラウザコンテキスト・豊富な内省・反復推論が必要なユースケースでのみMCPを選択 | microsoft |
+| アクセシビリティツリーベースの操作設計 | アクセシビリティツリーベースの操作設計 | dev-tool | スクリーンショットではなく構造化アクセシビリティスナップショットでブラウザ操作 | microsoft |
