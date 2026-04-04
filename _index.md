@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 779 スキル
+合計: 790 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -783,3 +783,14 @@
 | personaエージェントアイデンティティで複数スキルを統合 | Persona（エージェントアイデンティティ）で複数スキルを統合 | claude-code-workflow | Startup CTO、Growth Marketer、Solo Founderなど、特定の役割に必要なスキルセット・優 | alirezarezvani |
 | orchestration-protocolで複数personaを連携 | Orchestration Protocolで複数Personaを連携 | claude-code-workflow | Solo Sprint（フェーズごとにPersona切替）、Domain Deep-Dive（1 Persona + 複 | alirezarezvani |
 | skill-security-auditorでスキル自体をスキャン | skill-security-auditorでスキル自体をスキャン | claude-code-workflow | 任意のSKILL.mdファイルおよび付随スクリプトを、コマンドインジェクション・コード実行・データ流出・プロンプトインジ | alirezarezvani |
+| スキルカタログの分野別分類で検索性を向上 | スキルカタログの分野別分類で検索性を向上 | other | Claude Skillsを Document/Development/Data/Security/Utility等10 | BehiSecc |
+| githubベースのコミュニティ主導型キュレーション | GitHubベースのコミュニティ主導型キュレーション | other | awesome-*形式のGitHubリポジトリを作成し、Pull Request経由で誰でもスキルを追加できる仕組みを構 | BehiSecc |
+| スキル導入前のクイック評価リンク説明用途 | スキル導入前のクイック評価（リンク・説明・用途） | claude-code-workflow | 各スキルにGitHubリンク・1行説明・主要機能を記載し、詳細を見る前に導入判断ができるようにする | BehiSecc |
+| 関連記事コレクションセクションで周辺知識を提供 | 関連記事・コレクションセクションで周辺知識を提供 | agent-orchestration | スキルカタログに加えて、関連する論文・ブログ記事・スキルコレクションへのリンクを別セクションで提供 | BehiSecc |
+| websocketlong-polling方式による公開ip不要のブリッジ実装 | WebSocket/Long Polling方式による公開IP不要のブリッジ実装 | agent-orchestration | チャットプラットフォームのWebSocketまたはLong Polling APIを使い、ローカルマシンからプラットフォ | chenhg5 |
+| マルチエージェント統合アーキテクチャ | マルチエージェント統合アーキテクチャ | claude-code-workflow | 1つのブリッジプロセスで複数のAIエージェント（Claude Code、Gemini CLI、Cursor等）を並列管理 | chenhg5 |
+| スラッシュコマンドによるランタイム制御 | スラッシュコマンドによるランタイム制御 | claude-code-workflow | チャット内で `/model`、`/mode`、`/dir`、`/cron` 等のスラッシュコマンドを実行し、エージェン | chenhg5 |
+| マルチモーダル対応の音声画像転送 | マルチモーダル対応の音声・画像転送 | agent-orchestration | チャットアプリから送信された音声メッセージや画像を、AIエージェントが処理できる形式（テキスト化、画像データ）に変換して | chenhg5 |
+| エージェント生成ファイルのチャット送り返し機能 | エージェント生成ファイルのチャット送り返し機能 | agent-orchestration | AIエージェントがローカルで生成したスクリーンショット、PDF、グラフ等のファイルを、チャットアプリに自動的に送信する | chenhg5 |
+| 個人版wechatweixin対応のilink長時間ポーリング実装 | 個人版WeChat（Weixin）対応のilink長時間ポーリング実装 | agent-orchestration | 公式API未公開の個人版WeChatに対し、ilink非公式APIを使った長時間ポーリング方式でメッセージ受信を実現する | chenhg5 |
+| npmバイナリソースビルドのマルチ配布戦略 | npm/バイナリ/ソースビルドのマルチ配布戦略 | agent-orchestration | npmパッケージ、GitHub Releases バイナリ、Goソースビルドの3方式で配布し、ユーザーの環境に応じて選択 | chenhg5 |

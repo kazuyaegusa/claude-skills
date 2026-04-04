@@ -11104,5 +11104,175 @@
     "source_url": "https://github.com/alirezarezvani/claude-skills",
     "source_author": "alirezarezvani",
     "added_at": "2026-04-04T00:12:12.875132+00:00"
+  },
+  {
+    "slug": "スキルカタログの分野別分類で検索性を向上",
+    "name": "スキルカタログの分野別分類で検索性を向上",
+    "category": "other",
+    "description": "Claude Skillsを Document/Development/Data/Security/Utility等10+カテゴリに分類し、各スキルにGitHubリンク・1行説明を付与してREADMEに一覧化",
+    "trigger_phrases": [
+      "開発者が「PDFを扱いたい」「セキュリティテストをしたい」等の明確なニーズを持つ時",
+      "スキルカタログの分野別分類で検索性を向上",
+      "GitHub",
+      "Markdown"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-04-04T00:13:45.015108+00:00"
+  },
+  {
+    "slug": "githubベースのコミュニティ主導型キュレーション",
+    "name": "GitHubベースのコミュニティ主導型キュレーション",
+    "category": "other",
+    "description": "awesome-*形式のGitHubリポジトリを作成し、Pull Request経由で誰でもスキルを追加できる仕組みを構築",
+    "trigger_phrases": [
+      "専門知識が分散しており、1人では全領域をカバーできない時",
+      "GitHubベースのコミュニティ主導型キュレーション",
+      "GitHub",
+      "Pull Request workflow"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-04-04T00:13:45.015108+00:00"
+  },
+  {
+    "slug": "スキル導入前のクイック評価リンク説明用途",
+    "name": "スキル導入前のクイック評価（リンク・説明・用途）",
+    "category": "claude-code-workflow",
+    "description": "各スキルにGitHubリンク・1行説明・主要機能を記載し、詳細を見る前に導入判断ができるようにする",
+    "trigger_phrases": [
+      "多数のスキルから自分のニーズに合うものを短時間で絞り込みたい時",
+      "スキル導入前のクイック評価（リンク・説明・用途）",
+      "各スキルにGitHubリンク・1行説明・主要機能を記載し、詳細を見る前に導入判断ができるようにする"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-04-04T00:13:45.015108+00:00"
+  },
+  {
+    "slug": "関連記事コレクションセクションで周辺知識を提供",
+    "name": "関連記事・コレクションセクションで周辺知識を提供",
+    "category": "agent-orchestration",
+    "description": "スキルカタログに加えて、関連する論文・ブログ記事・スキルコレクションへのリンクを別セクションで提供",
+    "trigger_phrases": [
+      "スキルの背景理論・エコシステム全体を理解したい時、複数スキルをまとめて導入したい時",
+      "関連記事・コレクションセクションで周辺知識を提供",
+      "スキルカタログに加えて、関連する論文・ブログ記事・スキルコレクションへのリンクを別セクションで提供"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-04-04T00:13:45.015108+00:00"
+  },
+  {
+    "slug": "websocketlong-polling方式による公開ip不要のブリッジ実装",
+    "name": "WebSocket/Long Polling方式による公開IP不要のブリッジ実装",
+    "category": "agent-orchestration",
+    "description": "チャットプラットフォームのWebSocketまたはLong Polling APIを使い、ローカルマシンからプラットフォームへ能動的に接続することで、公開IPやポート開放なしでメッセージを受信する",
+    "trigger_phrases": [
+      "公開サーバーを立てたくない、ローカルマシンのAIエージェントを外部から操作したい場合",
+      "WebSocket/Long Polling方式による公開IP不要のブリッジ実装",
+      "Go標準のWebSocketライブラリ",
+      "Telegram Bot API (Long Polling)",
+      "Feishu WebSocket API",
+      "DingTalk Stream API",
+      "Discord Gateway API"
+    ],
+    "source_url": "https://github.com/chenhg5/cc-connect",
+    "source_author": "chenhg5",
+    "added_at": "2026-04-04T00:15:42.409514+00:00"
+  },
+  {
+    "slug": "マルチエージェント統合アーキテクチャ",
+    "name": "マルチエージェント統合アーキテクチャ",
+    "category": "claude-code-workflow",
+    "description": "1つのブリッジプロセスで複数のAIエージェント（Claude Code、Gemini CLI、Cursor等）を並列管理し、チャットから切り替え可能にする",
+    "trigger_phrases": [
+      "複数AIエージェントを使い分けたい、チーム内で異なるエージェントを試したい場合",
+      "マルチエージェント統合アーキテクチャ",
+      "Go子プロセス管理（os/exec）",
+      "TOML設定パーサー"
+    ],
+    "source_url": "https://github.com/chenhg5/cc-connect",
+    "source_author": "chenhg5",
+    "added_at": "2026-04-04T00:15:42.409514+00:00"
+  },
+  {
+    "slug": "スラッシュコマンドによるランタイム制御",
+    "name": "スラッシュコマンドによるランタイム制御",
+    "category": "claude-code-workflow",
+    "description": "チャット内で `/model`、`/mode`、`/dir`、`/cron` 等のスラッシュコマンドを実行し、エージェントの動作パラメータをリアルタイムで変更する",
+    "trigger_phrases": [
+      "エージェントの設定をチャットから動的に変更したい、定期タスクをセットアップしたい場合",
+      "スラッシュコマンドによるランタイム制御",
+      "コマンドパーサー",
+      "cron式パーサー（robfig/cron等）"
+    ],
+    "source_url": "https://github.com/chenhg5/cc-connect",
+    "source_author": "chenhg5",
+    "added_at": "2026-04-04T00:15:42.409514+00:00"
+  },
+  {
+    "slug": "マルチモーダル対応の音声画像転送",
+    "name": "マルチモーダル対応の音声・画像転送",
+    "category": "agent-orchestration",
+    "description": "チャットアプリから送信された音声メッセージや画像を、AIエージェントが処理できる形式（テキスト化、画像データ）に変換して転送する",
+    "trigger_phrases": [
+      "スマホから音声やスクリーンショットでAIエージェントに指示したい場合",
+      "マルチモーダル対応の音声・画像転送",
+      "STT API（OpenAI Whisper、Google STT等）",
+      "TTS API",
+      "画像処理ライブラリ"
+    ],
+    "source_url": "https://github.com/chenhg5/cc-connect",
+    "source_author": "chenhg5",
+    "added_at": "2026-04-04T00:15:42.409514+00:00"
+  },
+  {
+    "slug": "エージェント生成ファイルのチャット送り返し機能",
+    "name": "エージェント生成ファイルのチャット送り返し機能",
+    "category": "agent-orchestration",
+    "description": "AIエージェントがローカルで生成したスクリーンショット、PDF、グラフ等のファイルを、チャットアプリに自動的に送信する",
+    "trigger_phrases": [
+      "エージェントが生成したチャートやレポートをチャットで即座に確認したい場合",
+      "エージェント生成ファイルのチャット送り返し機能",
+      "チャットプラットフォームのFile Upload API",
+      "Feishu Image Upload API",
+      "Telegram sendPhoto API"
+    ],
+    "source_url": "https://github.com/chenhg5/cc-connect",
+    "source_author": "chenhg5",
+    "added_at": "2026-04-04T00:15:42.409514+00:00"
+  },
+  {
+    "slug": "個人版wechatweixin対応のilink長時間ポーリング実装",
+    "name": "個人版WeChat（Weixin）対応のilink長時間ポーリング実装",
+    "category": "agent-orchestration",
+    "description": "公式API未公開の個人版WeChatに対し、ilink非公式APIを使った長時間ポーリング方式でメッセージ受信を実現する",
+    "trigger_phrases": [
+      "個人版WeChatでAIエージェントを使いたいが公式APIがない場合",
+      "個人版WeChat（Weixin）対応のilink長時間ポーリング実装",
+      "ilink非公式API",
+      "HTTP long polling実装"
+    ],
+    "source_url": "https://github.com/chenhg5/cc-connect",
+    "source_author": "chenhg5",
+    "added_at": "2026-04-04T00:15:42.409514+00:00"
+  },
+  {
+    "slug": "npmバイナリソースビルドのマルチ配布戦略",
+    "name": "npm/バイナリ/ソースビルドのマルチ配布戦略",
+    "category": "agent-orchestration",
+    "description": "npmパッケージ、GitHub Releases バイナリ、Goソースビルドの3方式で配布し、ユーザーの環境に応じて選択可能にする",
+    "trigger_phrases": [
+      "CLIツールを幅広い環境で使えるようにしたい場合",
+      "npm/バイナリ/ソースビルドのマルチ配布戦略",
+      "Go 1.22+",
+      "GitHub Actions",
+      "npm",
+      "Makefile"
+    ],
+    "source_url": "https://github.com/chenhg5/cc-connect",
+    "source_author": "chenhg5",
+    "added_at": "2026-04-04T00:15:42.409514+00:00"
   }
 ]
