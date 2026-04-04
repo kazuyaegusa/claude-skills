@@ -10863,5 +10863,246 @@
     "source_url": "https://github.com/microsoft/playwright-mcp",
     "source_author": "microsoft",
     "added_at": "2026-04-04T00:06:41.549215+00:00"
+  },
+  {
+    "slug": "宣言的設定でllm評価を自動化する",
+    "name": "宣言的設定でLLM評価を自動化する",
+    "category": "prompt-engineering",
+    "description": "YAMLファイルにプロンプト・モデル・テストケース・評価指標を定義し、promptfoo evalコマンドで一括実行する",
+    "trigger_phrases": [
+      "複数のプロンプトやモデルを体系的に比較評価したい時、eval結果をチームで共有したい時",
+      "宣言的設定でLLM評価を自動化する",
+      "promptfoo CLI（npm/brew/pip）",
+      "promptfoo Node.jsライブラリ"
+    ],
+    "source_url": "https://github.com/promptfoo/promptfoo",
+    "source_author": "promptfoo",
+    "added_at": "2026-04-04T00:08:11.003468+00:00"
+  },
+  {
+    "slug": "レッドチーム攻撃でllmアプリの脆弱性を自動検査する",
+    "name": "レッドチーム攻撃でLLMアプリの脆弱性を自動検査する",
+    "category": "prompt-engineering",
+    "description": "promptfoo redteam機能を使い、prompt injection、PII漏洩、有害コンテンツ生成等の攻撃パターンを自動生成・実行してセキュリティ脆弱性を検出する",
+    "trigger_phrases": [
+      "LLMアプリを本番リリース前にセキュリティチェックしたい時、定期的な脆弱性スキャンを自動化したい時",
+      "レッドチーム攻撃でLLMアプリの脆弱性を自動検査する",
+      "promptfoo redteam機能"
+    ],
+    "source_url": "https://github.com/promptfoo/promptfoo",
+    "source_author": "promptfoo",
+    "added_at": "2026-04-04T00:08:11.003468+00:00"
+  },
+  {
+    "slug": "cicdにllm評価を統合して品質を継続的に保証する",
+    "name": "CI/CDにLLM評価を統合して品質を継続的に保証する",
+    "category": "prompt-engineering",
+    "description": "GitHub Actions等のCI/CDパイプラインでprompfoo evalを実行し、プロンプト変更のPull Requestに対して自動テスト・品質チェックを行う",
+    "trigger_phrases": [
+      "チーム開発でプロンプトをバージョン管理している時、本番品質を保ちながら反復開発したい時",
+      "CI/CDにLLM評価を統合して品質を継続的に保証する",
+      "promptfoo CLI",
+      "GitHub Actions / GitLab CI / その他CI/CDツール"
+    ],
+    "source_url": "https://github.com/promptfoo/promptfoo",
+    "source_author": "promptfoo",
+    "added_at": "2026-04-04T00:08:11.003468+00:00"
+  },
+  {
+    "slug": "複数llmプロバイダーを横断比較して最適モデルを選定する",
+    "name": "複数LLMプロバイダーを横断比較して最適モデルを選定する",
+    "category": "prompt-engineering",
+    "description": "promptfooConfig.yamlに複数のプロバイダー（openai:gpt-4, anthropic:claude-3-opus, bedrock:*, ollama:*等）を列挙し、同一テストケースで一括評価する",
+    "trigger_phrases": [
+      "新規プロジェクトでモデル選定する時、既存モデルからの乗り換えを検討する時、コスト削減のため代替モデルを探す時",
+      "複数LLMプロバイダーを横断比較して最適モデルを選定する",
+      "promptfoo CLI",
+      "対応プロバイダー: OpenAI, Anthropic, Azure, AWS Bedrock, Google Gemini, Ollama, HuggingFace等"
+    ],
+    "source_url": "https://github.com/promptfoo/promptfoo",
+    "source_author": "promptfoo",
+    "added_at": "2026-04-04T00:08:11.003468+00:00"
+  },
+  {
+    "slug": "ローカル実行でプロンプトの機密性を保護する",
+    "name": "ローカル実行でプロンプトの機密性を保護する",
+    "category": "prompt-engineering",
+    "description": "promptfooは100%ローカルで動作し、プロンプトやテストデータを外部サービスに送信しない",
+    "trigger_phrases": [
+      "プロンプトに機密情報が含まれる場合、データガバナンス要件が厳しい企業環境で利用する場合",
+      "ローカル実行でプロンプトの機密性を保護する",
+      "promptfoo CLI（ローカル実行）",
+      "promptfooは100%ローカルで動作し、プロンプトやテストデータを外部サービスに送信しない"
+    ],
+    "source_url": "https://github.com/promptfoo/promptfoo",
+    "source_author": "promptfoo",
+    "added_at": "2026-04-04T00:08:11.003468+00:00"
+  },
+  {
+    "slug": "subagentのカテゴリ別プラグイン化",
+    "name": "Subagentのカテゴリ別プラグイン化",
+    "category": "claude-code-workflow",
+    "description": "130種以上のSubagentを10カテゴリに分類し、それぞれをClaude Code Pluginとして配布する",
+    "trigger_phrases": [
+      "プロジェクトで必要な専門領域が明確で、全Subagentをインストールするとコンテキストが肥大化する場合",
+      "Subagentのカテゴリ別プラグイン化",
+      "Claude Code Plugin system",
+      "GitHub repository"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-04-04T00:09:38.003093+00:00"
+  },
+  {
+    "slug": "タスク特性に応じたモデルルーティング",
+    "name": "タスク特性に応じたモデルルーティング",
+    "category": "claude-code-workflow",
+    "description": "Subagent定義のmodelフィールドでopus/sonnet/haikuを指定し、タスクの複雑度に応じて適切なモデルを自動選択させる",
+    "trigger_phrases": [
+      "タスクの複雑度が明確で、コスト効率を重視する場合",
+      "タスク特性に応じたモデルルーティング",
+      "Claude Code Subagent system"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-04-04T00:09:38.003093+00:00"
+  },
+  {
+    "slug": "役割別ツール権限の最小化",
+    "name": "役割別ツール権限の最小化",
+    "category": "claude-code-workflow",
+    "description": "Subagentごとに必要最小限のClaude Code Built-inツールのみを許可する",
+    "trigger_phrases": [
+      "Subagentの誤操作を防ぎ、意図しない変更やコマンド実行を制限したい場合",
+      "役割別ツール権限の最小化",
+      "Claude Code Built-in tools (Read, Write, Edit, Bash, Glob, Grep, WebFetch, WebSearch)",
+      "Subagentごとに必要最小限のClaude Code Built-inツールのみを許可する"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-04-04T00:09:38.003093+00:00"
+  },
+  {
+    "slug": "4種のインストール方法の提供",
+    "name": "4種のインストール方法の提供",
+    "category": "claude-code-workflow",
+    "description": "Manual, Interactive Script, Standalone Installer, Agent Installerの4通りでSubagentをインストール可能にする",
+    "trigger_phrases": [
+      "1. Manual: 特定のSubagentだけ導入したい / 2. Interactive: 複数カテゴリを対話的に選択したい / 3. Standalone: CI/CDで自動化したい / 4. Agent Installer: Claude Codeから検索・インストールまで完結させたい",
+      "4種のインストール方法の提供",
+      "git",
+      "curl",
+      "bash",
+      "Claude Code"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-04-04T00:09:38.003093+00:00"
+  },
+  {
+    "slug": "subagent定義の標準テンプレート化",
+    "name": "Subagent定義の標準テンプレート化",
+    "category": "claude-code-workflow",
+    "description": "全Subagentをname, description, tools, model, role, checklist, communication protocolの統一フォーマットで記述する",
+    "trigger_phrases": [
+      "新規Subagentを作成する場合、または既存Subagentをチーム標準に合わせる場合",
+      "Subagent定義の標準テンプレート化",
+      "Markdown",
+      "YAML frontmatter"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-04-04T00:09:38.003093+00:00"
+  },
+  {
+    "slug": "skillmd形式でドメイン知識を構造化",
+    "name": "SKILL.md形式でドメイン知識を構造化",
+    "category": "claude-code-workflow",
+    "description": "Frontmatter（name/description）＋Instructions（ワークフロー・判断基準）＋References（テンプレート・チェックリスト）からなる単一Markdownファイルでエージェントの専門知識を定義する",
+    "trigger_phrases": [
+      "AIエージェントに特定領域（セキュリティ、PM、マーケティング等）の作業を反復させたいとき。手順が明確で、汎用的なLLMの知識だけでは不十分な場合",
+      "SKILL.md形式でドメイン知識を構造化",
+      "テキストエディタ（VSCode等）",
+      "Python 3.x（スクリプト作成時）",
+      "Git（スキル管理・配布用）"
+    ],
+    "source_url": "https://github.com/alirezarezvani/claude-skills",
+    "source_author": "alirezarezvani",
+    "added_at": "2026-04-04T00:12:12.875132+00:00"
+  },
+  {
+    "slug": "convertshで11ツールへ自動変換",
+    "name": "convert.shで11ツールへ自動変換",
+    "category": "claude-code-workflow",
+    "description": "単一のSKILL.md形式から、Cursor（.mdc）、Aider（CONVENTIONS.md）、Windsurf（.windsurf/skills/）など11種のAIツール固有フォーマットへ一括変換する",
+    "trigger_phrases": [
+      "複数のAIコーディングツールを併用している、またはツール移行を検討しているとき。スキルを一度書いて複数プラットフォームで使い回したい場合",
+      "convert.shで11ツールへ自動変換",
+      "Bash",
+      "sed/awk（変換スクリプト内部で使用）",
+      "Git（リポジトリ取得）"
+    ],
+    "source_url": "https://github.com/alirezarezvani/claude-skills",
+    "source_author": "alirezarezvani",
+    "added_at": "2026-04-04T00:12:12.875132+00:00"
+  },
+  {
+    "slug": "stdlib-only-pythonツールで依存地獄を回避",
+    "name": "stdlib-only Pythonツールで依存地獄を回避",
+    "category": "claude-code-workflow",
+    "description": "332個のCLIツール全てをPython標準ライブラリのみで実装し、pip install不要・即実行可能にする",
+    "trigger_phrases": [
+      "長期保守が必要なツール、複数環境（CI/CD、ユーザーマシン、コンテナ）で確実に動作させたいツールを書くとき",
+      "stdlib-only Pythonツールで依存地獄を回避",
+      "Python標準ライブラリ（json, argparse, csv, pathlib, re, urllib等）"
+    ],
+    "source_url": "https://github.com/alirezarezvani/claude-skills",
+    "source_author": "alirezarezvani",
+    "added_at": "2026-04-04T00:12:12.875132+00:00"
+  },
+  {
+    "slug": "personaエージェントアイデンティティで複数スキルを統合",
+    "name": "Persona（エージェントアイデンティティ）で複数スキルを統合",
+    "category": "claude-code-workflow",
+    "description": "Startup CTO、Growth Marketer、Solo Founderなど、特定の役割に必要なスキルセット・優先順位・コミュニケーションスタイルを1つのPersona定義ファイルにまとめる",
+    "trigger_phrases": [
+      "複数のスキルを組み合わせた大規模タスク（6週間の製品ローンチなど）を実行するとき。役割ベースの意思決定が必要な場面",
+      "Persona（エージェントアイデンティティ）で複数スキルを統合",
+      "テキストエディタ",
+      "既存のSKILL.mdファイル群（参照用）"
+    ],
+    "source_url": "https://github.com/alirezarezvani/claude-skills",
+    "source_author": "alirezarezvani",
+    "added_at": "2026-04-04T00:12:12.875132+00:00"
+  },
+  {
+    "slug": "orchestration-protocolで複数personaを連携",
+    "name": "Orchestration Protocolで複数Personaを連携",
+    "category": "claude-code-workflow",
+    "description": "Solo Sprint（フェーズごとにPersona切替）、Domain Deep-Dive（1 Persona + 複数スキル）、Multi-Agent Handoff（Persona間レビュー）、Skill Chain（Personaなし・スキルのみ連鎖）の4パターンでタスクを分解・割り当てる",
+    "trigger_phrases": [
+      "6週間の製品ローンチ、コンプライアンス監査＋実装、マルチチャネルマーケティングキャンペーンなど、複数領域にまたがる大規模タスク",
+      "Orchestration Protocolで複数Personaを連携",
+      "orchestration/ORCHESTRATION.md テンプレート",
+      "Personaファイル群",
+      "SKILL.mdファイル群"
+    ],
+    "source_url": "https://github.com/alirezarezvani/claude-skills",
+    "source_author": "alirezarezvani",
+    "added_at": "2026-04-04T00:12:12.875132+00:00"
+  },
+  {
+    "slug": "skill-security-auditorでスキル自体をスキャン",
+    "name": "skill-security-auditorでスキル自体をスキャン",
+    "category": "claude-code-workflow",
+    "description": "任意のSKILL.mdファイルおよび付随スクリプトを、コマンドインジェクション・コード実行・データ流出・プロンプトインジェクション・依存関係リスク・権限昇格の6項目で自動検査し、PASS/WARN/FAILを判定する",
+    "trigger_phrases": [
+      "GitHubやマーケットプレイスから取得したスキルを初めてインストールする前。社内スキルを本番環境に展開する前の最終チェック",
+      "skill-security-auditorでスキル自体をスキャン",
+      "Python 3.x標準ライブラリ（re, ast, pathlib）"
+    ],
+    "source_url": "https://github.com/alirezarezvani/claude-skills",
+    "source_author": "alirezarezvani",
+    "added_at": "2026-04-04T00:12:12.875132+00:00"
   }
 ]

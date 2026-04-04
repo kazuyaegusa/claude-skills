@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 763 スキル
+合計: 779 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -767,3 +767,19 @@
 | cliベースskills統合でトークン効率化 | CLIベースSKILLS統合でトークン効率化 | agent-orchestration | MCPサーバーではなくPlaywright CLIをSKILLSとして公開し、エージェントが簡潔なコマンド実行でブラウザ | microsoft |
 | mcp利用の判断基準明確化 | MCP利用の判断基準明確化 | context-management | 持続的ブラウザコンテキスト・豊富な内省・反復推論が必要なユースケースでのみMCPを選択 | microsoft |
 | アクセシビリティツリーベースの操作設計 | アクセシビリティツリーベースの操作設計 | dev-tool | スクリーンショットではなく構造化アクセシビリティスナップショットでブラウザ操作 | microsoft |
+| 宣言的設定でllm評価を自動化する | 宣言的設定でLLM評価を自動化する | prompt-engineering | YAMLファイルにプロンプト・モデル・テストケース・評価指標を定義し、promptfoo evalコマンドで一括実行する | promptfoo |
+| レッドチーム攻撃でllmアプリの脆弱性を自動検査する | レッドチーム攻撃でLLMアプリの脆弱性を自動検査する | prompt-engineering | promptfoo redteam機能を使い、prompt injection、PII漏洩、有害コンテンツ生成等の攻撃パ | promptfoo |
+| cicdにllm評価を統合して品質を継続的に保証する | CI/CDにLLM評価を統合して品質を継続的に保証する | prompt-engineering | GitHub Actions等のCI/CDパイプラインでprompfoo evalを実行し、プロンプト変更のPull R | promptfoo |
+| 複数llmプロバイダーを横断比較して最適モデルを選定する | 複数LLMプロバイダーを横断比較して最適モデルを選定する | prompt-engineering | promptfooConfig.yamlに複数のプロバイダー（openai:gpt-4, anthropic:claud | promptfoo |
+| ローカル実行でプロンプトの機密性を保護する | ローカル実行でプロンプトの機密性を保護する | prompt-engineering | promptfooは100%ローカルで動作し、プロンプトやテストデータを外部サービスに送信しない | promptfoo |
+| subagentのカテゴリ別プラグイン化 | Subagentのカテゴリ別プラグイン化 | claude-code-workflow | 130種以上のSubagentを10カテゴリに分類し、それぞれをClaude Code Pluginとして配布する | VoltAgent |
+| タスク特性に応じたモデルルーティング | タスク特性に応じたモデルルーティング | claude-code-workflow | Subagent定義のmodelフィールドでopus/sonnet/haikuを指定し、タスクの複雑度に応じて適切なモデ | VoltAgent |
+| 役割別ツール権限の最小化 | 役割別ツール権限の最小化 | claude-code-workflow | Subagentごとに必要最小限のClaude Code Built-inツールのみを許可する | VoltAgent |
+| 4種のインストール方法の提供 | 4種のインストール方法の提供 | claude-code-workflow | Manual, Interactive Script, Standalone Installer, Agent Inst | VoltAgent |
+| subagent定義の標準テンプレート化 | Subagent定義の標準テンプレート化 | claude-code-workflow | 全Subagentをname, description, tools, model, role, checklist,  | VoltAgent |
+| skillmd形式でドメイン知識を構造化 | SKILL.md形式でドメイン知識を構造化 | claude-code-workflow | Frontmatter（name/description）＋Instructions（ワークフロー・判断基準）＋Refe | alirezarezvani |
+| convertshで11ツールへ自動変換 | convert.shで11ツールへ自動変換 | claude-code-workflow | 単一のSKILL.md形式から、Cursor（.mdc）、Aider（CONVENTIONS.md）、Windsurf（ | alirezarezvani |
+| stdlib-only-pythonツールで依存地獄を回避 | stdlib-only Pythonツールで依存地獄を回避 | claude-code-workflow | 332個のCLIツール全てをPython標準ライブラリのみで実装し、pip install不要・即実行可能にする | alirezarezvani |
+| personaエージェントアイデンティティで複数スキルを統合 | Persona（エージェントアイデンティティ）で複数スキルを統合 | claude-code-workflow | Startup CTO、Growth Marketer、Solo Founderなど、特定の役割に必要なスキルセット・優 | alirezarezvani |
+| orchestration-protocolで複数personaを連携 | Orchestration Protocolで複数Personaを連携 | claude-code-workflow | Solo Sprint（フェーズごとにPersona切替）、Domain Deep-Dive（1 Persona + 複 | alirezarezvani |
+| skill-security-auditorでスキル自体をスキャン | skill-security-auditorでスキル自体をスキャン | claude-code-workflow | 任意のSKILL.mdファイルおよび付随スクリプトを、コマンドインジェクション・コード実行・データ流出・プロンプトインジ | alirezarezvani |
