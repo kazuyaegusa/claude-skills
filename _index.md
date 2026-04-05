@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 790 スキル
+合計: 803 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -794,3 +794,16 @@
 | エージェント生成ファイルのチャット送り返し機能 | エージェント生成ファイルのチャット送り返し機能 | agent-orchestration | AIエージェントがローカルで生成したスクリーンショット、PDF、グラフ等のファイルを、チャットアプリに自動的に送信する | chenhg5 |
 | 個人版wechatweixin対応のilink長時間ポーリング実装 | 個人版WeChat（Weixin）対応のilink長時間ポーリング実装 | agent-orchestration | 公式API未公開の個人版WeChatに対し、ilink非公式APIを使った長時間ポーリング方式でメッセージ受信を実現する | chenhg5 |
 | npmバイナリソースビルドのマルチ配布戦略 | npm/バイナリ/ソースビルドのマルチ配布戦略 | agent-orchestration | npmパッケージ、GitHub Releases バイナリ、Goソースビルドの3方式で配布し、ユーザーの環境に応じて選択 | chenhg5 |
+| 専門特化エージェントチームの編成 | 専門特化エージェントチームの編成 | agent-orchestration | メインエージェント(Sisyphus)の下に、Oracle(デザイン/デバッグ)、Frontend Engineer(U | code-yeongyu |
+| todoエンフォーサーによるタスク継続強制 | Todoエンフォーサーによるタスク継続強制 | agent-orchestration | エージェントがタスクを途中で止めようとした際、TODOリストに未完了項目があれば自動的に継続を強制する仕組み | code-yeongyu |
+| バックグラウンド並列探索による軽量コンテキスト維持 | バックグラウンド並列探索による軽量コンテキスト維持 | agent-orchestration | メインエージェントのコンテキストを軽量に保つため、ファイル探索やコードベース調査を安価で高速なモデルにバックグラウンドで | code-yeongyu |
+| lspによる決定論的リファクタリング | LSPによる決定論的リファクタリング | agent-orchestration | コード変更をLSP(Language Server Protocol)経由で実行し、リネームやリファクタリングを安全かつ | code-yeongyu |
+| マジックワードによる機能自動適用 | マジックワードによる機能自動適用 | agent-orchestration | プロンプトに`ultrawork`または`ulw`を含めるだけで、全ての最適化機能(並列エージェント、バックグラウンドタ | code-yeongyu |
+| コメントポリシーの強制によるコード品質維持 | コメントポリシーの強制によるコード品質維持 | agent-orchestration | AI生成コードが過剰なコメントを追加しないようチェックし、人間が書いたコードと区別がつかない品質を維持 | code-yeongyu |
+| 複数モデルの目的別オーケストレーション | 複数モデルの目的別オーケストレーション | agent-orchestration | タスクの性質に応じて最適なLLMモデルを自動選択・実行し、コスト・速度・品質を最適化 | code-yeongyu |
+| ライフサイクルフックによる自動観測 | ライフサイクルフックによる自動観測 | claude-code-workflow | Claude Codeの7つのライフサイクルイベント（SessionStart, UserPromptSubmit, P | thedotmack |
+| progressive-disclosure段階的開示 | Progressive Disclosure（段階的開示） | claude-code-workflow | 文脈を「インデックス（軽量）→タイムライン（中程度）→詳細（重量）」の3層で取得し、必要最小限のトークンで関連情報を引き | thedotmack |
+| ハイブリッド検索fts5-chroma | ハイブリッド検索（FTS5 + Chroma） | claude-code-workflow | SQLite FTS5によるキーワード検索とChroma vectorDBによるセマンティック検索を組み合わせ、文脈的に | thedotmack |
+| 1コマンドプラグインインストール | 1コマンドプラグインインストール | claude-code-workflow | 依存関係チェック・フックスクリプト配置・Worker起動を単一コマンドで完了させる | thedotmack |
+| web-viewer-uiリアルタイム観測フィード | Web Viewer UI（リアルタイム観測フィード） | claude-code-workflow | http://localhost:37777 でメモリストリームをWebブラウザで可視化・検索・設定管理 | thedotmack |
+| プライバシー制御privateタグ | プライバシー制御（<private>タグ） | claude-code-workflow | センシティブな情報を `<private>...</private>` で囲むことで、観測ストレージから除外する | thedotmack |

@@ -11274,5 +11274,204 @@
     "source_url": "https://github.com/chenhg5/cc-connect",
     "source_author": "chenhg5",
     "added_at": "2026-04-04T00:15:42.409514+00:00"
+  },
+  {
+    "slug": "専門特化エージェントチームの編成",
+    "name": "専門特化エージェントチームの編成",
+    "category": "agent-orchestration",
+    "description": "メインエージェント(Sisyphus)の下に、Oracle(デザイン/デバッグ)、Frontend Engineer(UI実装)、Librarian(ドキュメント検索)、Explore(コードベース探索)など役割別サブエージェントを配置",
+    "trigger_phrases": [
+      "複数領域にまたがるタスク、または単一エージェントでコンテキスト超過が予想される場合",
+      "専門特化エージェントチームの編成",
+      "OpenCode",
+      "oh-my-opencode plugin",
+      "複数LLM API(Claude/GPT/Gemini)"
+    ],
+    "source_url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "source_author": "code-yeongyu",
+    "added_at": "2026-04-05T00:04:06.232133+00:00"
+  },
+  {
+    "slug": "todoエンフォーサーによるタスク継続強制",
+    "name": "Todoエンフォーサーによるタスク継続強制",
+    "category": "agent-orchestration",
+    "description": "エージェントがタスクを途中で止めようとした際、TODOリストに未完了項目があれば自動的に継続を強制する仕組み",
+    "trigger_phrases": [
+      "長時間かかる実装タスクや、複数ステップの自動化タスク",
+      "Todoエンフォーサーによるタスク継続強制",
+      "oh-my-opencode の Todo Enforcer hook"
+    ],
+    "source_url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "source_author": "code-yeongyu",
+    "added_at": "2026-04-05T00:04:06.232133+00:00"
+  },
+  {
+    "slug": "バックグラウンド並列探索による軽量コンテキスト維持",
+    "name": "バックグラウンド並列探索による軽量コンテキスト維持",
+    "category": "agent-orchestration",
+    "description": "メインエージェントのコンテキストを軽量に保つため、ファイル探索やコードベース調査を安価で高速なモデルにバックグラウンドで並列実行させる",
+    "trigger_phrases": [
+      "大規模コードベースでのファイル探索、複数箇所の同時調査が必要な場合",
+      "バックグラウンド並列探索による軽量コンテキスト維持",
+      "oh-my-opencode の Background Tasks",
+      "Explore agent (Grok Code)",
+      "Contextual Grep"
+    ],
+    "source_url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "source_author": "code-yeongyu",
+    "added_at": "2026-04-05T00:04:06.232133+00:00"
+  },
+  {
+    "slug": "lspによる決定論的リファクタリング",
+    "name": "LSPによる決定論的リファクタリング",
+    "category": "agent-orchestration",
+    "description": "コード変更をLSP(Language Server Protocol)経由で実行し、リネームやリファクタリングを安全かつ決定論的に行う",
+    "trigger_phrases": [
+      "変数/関数/クラスのリネーム、コード抽出、インライン化など構造変更が必要な場合",
+      "LSPによる決定論的リファクタリング",
+      "LSP",
+      "oh-my-opencode LSP integration",
+      "AST-Grep"
+    ],
+    "source_url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "source_author": "code-yeongyu",
+    "added_at": "2026-04-05T00:04:06.232133+00:00"
+  },
+  {
+    "slug": "マジックワードによる機能自動適用",
+    "name": "マジックワードによる機能自動適用",
+    "category": "agent-orchestration",
+    "description": "プロンプトに`ultrawork`または`ulw`を含めるだけで、全ての最適化機能(並列エージェント、バックグラウンドタスク、継続強制等)を自動有効化",
+    "trigger_phrases": [
+      "複雑なタスクを簡潔に依頼したい場合、または設定を考えたくない場合",
+      "マジックワードによる機能自動適用",
+      "oh-my-opencode の ultrawork feature"
+    ],
+    "source_url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "source_author": "code-yeongyu",
+    "added_at": "2026-04-05T00:04:06.232133+00:00"
+  },
+  {
+    "slug": "コメントポリシーの強制によるコード品質維持",
+    "name": "コメントポリシーの強制によるコード品質維持",
+    "category": "agent-orchestration",
+    "description": "AI生成コードが過剰なコメントを追加しないようチェックし、人間が書いたコードと区別がつかない品質を維持",
+    "trigger_phrases": [
+      "AI生成コードをプロダクション品質に保ちたい場合",
+      "コメントポリシーの強制によるコード品質維持",
+      "oh-my-opencode の Comment Checker hook"
+    ],
+    "source_url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "source_author": "code-yeongyu",
+    "added_at": "2026-04-05T00:04:06.232133+00:00"
+  },
+  {
+    "slug": "複数モデルの目的別オーケストレーション",
+    "name": "複数モデルの目的別オーケストレーション",
+    "category": "agent-orchestration",
+    "description": "タスクの性質に応じて最適なLLMモデルを自動選択・実行し、コスト・速度・品質を最適化",
+    "trigger_phrases": [
+      "複数LLMサブスクリプションを持ち、コストと品質を最適化したい場合",
+      "複数モデルの目的別オーケストレーション",
+      "oh-my-opencode の Categories feature",
+      "複数LLM API",
+      "タスクの性質に応じて最適なLLMモデルを自動選択・実行し、コスト・速度・品質を最適化"
+    ],
+    "source_url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "source_author": "code-yeongyu",
+    "added_at": "2026-04-05T00:04:06.232133+00:00"
+  },
+  {
+    "slug": "ライフサイクルフックによる自動観測",
+    "name": "ライフサイクルフックによる自動観測",
+    "category": "claude-code-workflow",
+    "description": "Claude Codeの7つのライフサイクルイベント（SessionStart, UserPromptSubmit, PostToolUse, Stop, SessionEnd等）をフックし、ツール実行・ユーザー入力を自動記録する",
+    "trigger_phrases": [
+      "Claude Codeでプロジェクトを長期運用し、セッション間の文脈継続性が必要な時",
+      "ライフサイクルフックによる自動観測",
+      "Claude Agent SDK（フック機構）",
+      "TypeScript/Bun（Worker実装）"
+    ],
+    "source_url": "https://github.com/thedotmack/claude-mem",
+    "source_author": "thedotmack",
+    "added_at": "2026-04-05T00:05:55.678682+00:00"
+  },
+  {
+    "slug": "progressive-disclosure段階的開示",
+    "name": "Progressive Disclosure（段階的開示）",
+    "category": "claude-code-workflow",
+    "description": "文脈を「インデックス（軽量）→タイムライン（中程度）→詳細（重量）」の3層で取得し、必要最小限のトークンで関連情報を引き出す",
+    "trigger_phrases": [
+      "過去の膨大なセッション履歴から特定の情報だけを効率的に引き出したい時",
+      "Progressive Disclosure（段階的開示）",
+      "MCP (Model Context Protocol)",
+      "SQLite FTS5（全文検索）",
+      "Chroma vectorDB（セマンティック検索）"
+    ],
+    "source_url": "https://github.com/thedotmack/claude-mem",
+    "source_author": "thedotmack",
+    "added_at": "2026-04-05T00:05:55.678682+00:00"
+  },
+  {
+    "slug": "ハイブリッド検索fts5-chroma",
+    "name": "ハイブリッド検索（FTS5 + Chroma）",
+    "category": "claude-code-workflow",
+    "description": "SQLite FTS5によるキーワード検索とChroma vectorDBによるセマンティック検索を組み合わせ、文脈的に関連する過去履歴を高精度で発見する",
+    "trigger_phrases": [
+      "「認証周りの過去の失敗」等、キーワードと意味の両方で検索したい時",
+      "ハイブリッド検索（FTS5 + Chroma）",
+      "SQLite FTS5（全文検索エンジン）",
+      "Chroma（ベクトルDB、Pythonバックエンド）",
+      "uv（Python環境管理、自動インストール）"
+    ],
+    "source_url": "https://github.com/thedotmack/claude-mem",
+    "source_author": "thedotmack",
+    "added_at": "2026-04-05T00:05:55.678682+00:00"
+  },
+  {
+    "slug": "1コマンドプラグインインストール",
+    "name": "1コマンドプラグインインストール",
+    "category": "claude-code-workflow",
+    "description": "依存関係チェック・フックスクリプト配置・Worker起動を単一コマンドで完了させる",
+    "trigger_phrases": [
+      "Claude Codeに永続メモリを導入したい時（初回セットアップ）",
+      "1コマンドプラグインインストール",
+      "npx（npm package runner）",
+      "Bun（JavaScriptランタイム）",
+      "uv（Python環境管理）",
+      "依存関係チェック・フックスクリプト配置・Worker起動を単一コマンドで完了させる"
+    ],
+    "source_url": "https://github.com/thedotmack/claude-mem",
+    "source_author": "thedotmack",
+    "added_at": "2026-04-05T00:05:55.678682+00:00"
+  },
+  {
+    "slug": "web-viewer-uiリアルタイム観測フィード",
+    "name": "Web Viewer UI（リアルタイム観測フィード）",
+    "category": "claude-code-workflow",
+    "description": "http://localhost:37777 でメモリストリームをWebブラウザで可視化・検索・設定管理",
+    "trigger_phrases": [
+      "メモリの蓄積状況を可視化したい時、設定を変更したい時",
+      "Web Viewer UI（リアルタイム観測フィード）",
+      "Bun（HTTPサーバー）",
+      "TypeScript（フロントエンド）"
+    ],
+    "source_url": "https://github.com/thedotmack/claude-mem",
+    "source_author": "thedotmack",
+    "added_at": "2026-04-05T00:05:55.678682+00:00"
+  },
+  {
+    "slug": "プライバシー制御privateタグ",
+    "name": "プライバシー制御（<private>タグ）",
+    "category": "claude-code-workflow",
+    "description": "センシティブな情報を `<private>...</private>` で囲むことで、観測ストレージから除外する",
+    "trigger_phrases": [
+      "機密情報を含むセッションで、特定の内容だけメモリから除外したい時",
+      "プライバシー制御（<private>タグ）",
+      "PostToolUseフック（タグパーサー）"
+    ],
+    "source_url": "https://github.com/thedotmack/claude-mem",
+    "source_author": "thedotmack",
+    "added_at": "2026-04-05T00:05:55.678682+00:00"
   }
 ]
