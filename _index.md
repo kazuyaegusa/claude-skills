@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 829 スキル
+合計: 841 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -833,3 +833,15 @@
 | feature-flagによる内部機能の実行時ゲーティング | feature flagによる内部機能の実行時ゲーティング | ui-ux | コンパイル時feature flagを使い、内部専用機能を外部ビルドから完全に除去する | Kuberwastaken |
 | 公開パッケージ内容の事前検証 | 公開パッケージ内容の事前検証 | other | npm公開前に`npm pack`でパッケージをローカル生成し、意図しないファイルが含まれていないか検証する | Kuberwastaken |
 | クリーンルーム再実装によるライセンスリスク回避 | クリーンルーム再実装によるライセンスリスク回避 | agent-orchestration | 漏洩したソースコードから2段階プロセスで仕様を抽出し、オリジナルコードを参照せずに再実装することで著作権侵害を回避する | Kuberwastaken |
+| ローカルaiエージェントとチャットプラットフォームのブリッジ構築 | ローカルAIエージェントとチャットプラットフォームのブリッジ構築 | claude-code-workflow | ローカルで動作するAIエージェント（Claude Code, Cursor, Gemini CLI等）と、Telegra | chenhg5 |
+| 公開ip不要な接続方式の選択 | 公開IP不要な接続方式の選択 | agent-orchestration | WebSocket、Long Polling、Stream等の接続方式を使い、公開IPやポート開放なしでチャットプラット | chenhg5 |
+| マルチエージェント連携multi-bot-relay | マルチエージェント連携（Multi-Bot Relay） | agent-orchestration | 1つのグループチャットに複数のAIエージェント（Claude, Gemini等）を参加させ、相互に会話・情報交換させる | chenhg5 |
+| チャット経由でのセッション設定管理 | チャット経由でのセッション・設定管理 | claude-code-workflow | チャットからスラッシュコマンド（/model, /mode, /dir, /new等）でエージェントのモデル切り替え、権 | chenhg5 |
+| エージェント生成物のチャット送信attachment-send-back | エージェント生成物のチャット送信（Attachment Send-Back） | agent-orchestration | エージェントがローカルで生成したスクリーンショット、グラフ、PDF、バンドル等のファイルを、チャットに自動送信する | chenhg5 |
+| ベータ機能個人wechat対応自動コンテキスト圧縮cron境界設定の活用 | ベータ機能（個人WeChat対応、自動コンテキスト圧縮、Cron境界設定）の活用 | agent-orchestration | cc-connect@beta（プレリリース版）限定機能として、個人WeChatへの接続、長いスレッドの自動コンテキスト | chenhg5 |
+| 単一コンテキスト窓でのフルパイプライン実行 | 単一コンテキスト窓でのフルパイプライン実行 | claude-code-workflow | 計画・ビルド・デバッグを1つの1Mトークンコンテキスト窓で実行し、タスク間の状態共有とコンテキスト保持を最大化 | htdt |
+| 視覚的フィードバックループによるqa自動化 | 視覚的フィードバックループによるQA自動化 | claude-code-workflow | 実行中ゲームのスクリーンショットをキャプチャし、Vision LLMで解析して不具合（z-fighting、テクスチャ欠 | htdt |
+| 複数llmの適材適所活用によるコスト最適化 | 複数LLMの適材適所活用によるコスト最適化 | claude-code-workflow | アセット生成でGemini（精密作業）、Grok（テクスチャ・簡易オブジェクト）、Tripo3D（画像→3Dモデル変換） | htdt |
+| カスタムgdscript-api参照システムによるllm知識補完 | カスタムGDScript API参照システムによるLLM知識補完 | claude-code-workflow | GDScriptの850+クラスAPI仕様をカスタムビルドした言語リファレンスとしてlazy-loadし、LLMのGDS | htdt |
+| publishshによるスキル配布とプロジェクト初期化 | publish.shによるスキル配布とプロジェクト初期化 | claude-code-workflow | スキル開発リポジトリから新規ゲームプロジェクトフォルダへスキル一式をコピーし、git初期化まで自動実行 | htdt |
+| クラウドvmでの長時間生成実行 | クラウドVMでの長時間生成実行 | claude-code-workflow | 数時間かかるゲーム生成をGCE等のGPU搭載VMで実行し、ローカルマシンを占有せず、チャンネル/リモート制御で進捗確認 | htdt |
