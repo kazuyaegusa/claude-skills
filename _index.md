@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 803 スキル
+合計: 815 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -807,3 +807,15 @@
 | 1コマンドプラグインインストール | 1コマンドプラグインインストール | claude-code-workflow | 依存関係チェック・フックスクリプト配置・Worker起動を単一コマンドで完了させる | thedotmack |
 | web-viewer-uiリアルタイム観測フィード | Web Viewer UI（リアルタイム観測フィード） | claude-code-workflow | http://localhost:37777 でメモリストリームをWebブラウザで可視化・検索・設定管理 | thedotmack |
 | プライバシー制御privateタグ | プライバシー制御（<private>タグ） | claude-code-workflow | センシティブな情報を `<private>...</private>` で囲むことで、観測ストレージから除外する | thedotmack |
+| agent-skillによる専門知識の注入 | Agent Skillによる専門知識の注入 | claude-code-workflow | Claude Codeに特定タスク用の知識・手順・ツールをパッケージ化して提供する | hesreallyhim |
+| hooksによるガードレール実装 | Hooksによるガードレール実装 | claude-code-workflow | Claude Codeの操作（ファイル書き込み・コマンド実行等）をフックして自動検証・承認制御を追加する | hesreallyhim |
+| slash-commandsによるワークフロー標準化 | Slash Commandsによるワークフロー標準化 | claude-code-workflow | 頻出タスクを再利用可能なコマンドとしてパッケージ化し、チーム全体で統一された手順を実行する | hesreallyhim |
+| ralph-wiggum-loopによる自律タスク実行 | Ralph Wiggum Loopによる自律タスク実行 | claude-code-workflow | タスク完了まで無人でClaude Codeを繰り返し実行し、仕様充足を自動検証する | hesreallyhim |
+| agent-teamsによる並列タスク分解 | Agent Teamsによる並列タスク分解 | claude-code-workflow | 複雑なタスクを複数のサブエージェントに分割し、並列実行で高速化する | hesreallyhim |
+| 閉じた学習ループの実装 | 閉じた学習ループの実装 | agent-orchestration | エージェントが経験から自律的にスキルを生成・改善し、記憶を整理・検索し、ユーザーモデルを深化させる仕組みを構築する | NousResearch |
+| マルチバックエンドターミナルの実装 | マルチバックエンドターミナルの実装 | agent-orchestration | エージェントの実行環境を6種類（local, Docker, SSH, Daytona, Singularity, Mo | NousResearch |
+| マルチプラットフォームゲートウェイの構築 | マルチプラットフォームゲートウェイの構築 | agent-orchestration | 単一のゲートウェイプロセスでTelegram/Discord/Slack/WhatsApp/Signal/Email/C | NousResearch |
+| モデルプロバイダー非依存設計 | モデルプロバイダー非依存設計 | agent-orchestration | LLMプロバイダーを `hermes model` コマンドで切り替え可能にし、コード変更なしで200+モデルを利用可能 | NousResearch |
+| 並列サブエージェントrpc統合によるコンテキストコスト削減 | 並列サブエージェント＋RPC統合によるコンテキストコスト削減 | agent-orchestration | 独立したサブエージェントを並列生成し、PythonスクリプトからツールをRPC呼び出しすることで、マルチステップパイプラ | NousResearch |
+| cron的な定期自動化の組み込み | cron的な定期自動化の組み込み | agent-orchestration | 自然言語でスケジュール可能なcron機能を内蔵し、任意のプラットフォームに配信できるようにする | NousResearch |
+| ワンライナーインストールスクリプトの提供 | ワンライナーインストールスクリプトの提供 | agent-orchestration | curl \| bash 形式のインストールスクリプトで、前提条件なしでエージェントをセットアップする | NousResearch |

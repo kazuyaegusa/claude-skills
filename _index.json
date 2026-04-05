@@ -11473,5 +11473,202 @@
     "source_url": "https://github.com/thedotmack/claude-mem",
     "source_author": "thedotmack",
     "added_at": "2026-04-05T00:05:55.678682+00:00"
+  },
+  {
+    "slug": "agent-skillによる専門知識の注入",
+    "name": "Agent Skillによる専門知識の注入",
+    "category": "claude-code-workflow",
+    "description": "Claude Codeに特定タスク用の知識・手順・ツールをパッケージ化して提供する",
+    "trigger_phrases": [
+      "特定ドメインの専門知識が必要で、プロンプトだけでは品質・再現性が不足するとき",
+      "Agent Skillによる専門知識の注入",
+      "SKILL.mdフォーマット",
+      "Claude Code CLI",
+      "Claude Codeに特定タスク用の知識・手順・ツールをパッケージ化して提供する"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-04-05T00:07:48.989671+00:00"
+  },
+  {
+    "slug": "hooksによるガードレール実装",
+    "name": "Hooksによるガードレール実装",
+    "category": "claude-code-workflow",
+    "description": "Claude Codeの操作（ファイル書き込み・コマンド実行等）をフックして自動検証・承認制御を追加する",
+    "trigger_phrases": [
+      "リアルタイムで品質チェック・セキュリティ検証を強制したいとき",
+      "Hooksによるガードレール実装",
+      "Bashスクリプト",
+      "TypeScript/Python（パース用）",
+      "AST解析ライブラリ"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-04-05T00:07:48.989671+00:00"
+  },
+  {
+    "slug": "slash-commandsによるワークフロー標準化",
+    "name": "Slash Commandsによるワークフロー標準化",
+    "category": "claude-code-workflow",
+    "description": "頻出タスクを再利用可能なコマンドとしてパッケージ化し、チーム全体で統一された手順を実行する",
+    "trigger_phrases": [
+      "チーム全体で手順を統一したいタスク（コミット・PR作成・ドキュメント生成等）があるとき",
+      "Slash Commandsによるワークフロー標準化",
+      "Markdownフォーマット",
+      "Claude Code CLI",
+      "頻出タスクを再利用可能なコマンドとしてパッケージ化し、チーム全体で統一された手順を実行する"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-04-05T00:07:48.989671+00:00"
+  },
+  {
+    "slug": "ralph-wiggum-loopによる自律タスク実行",
+    "name": "Ralph Wiggum Loopによる自律タスク実行",
+    "category": "claude-code-workflow",
+    "description": "タスク完了まで無人でClaude Codeを繰り返し実行し、仕様充足を自動検証する",
+    "trigger_phrases": [
+      "明確な仕様があり、完了条件を自動判定できるタスクを無人実行したいとき",
+      "Ralph Wiggum Loopによる自律タスク実行",
+      "Bashスクリプト",
+      "Claude Code CLI",
+      "tmux（監視用）",
+      "タスク完了まで無人でClaude Codeを繰り返し実行し、仕様充足を自動検証する"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-04-05T00:07:48.989671+00:00"
+  },
+  {
+    "slug": "agent-teamsによる並列タスク分解",
+    "name": "Agent Teamsによる並列タスク分解",
+    "category": "claude-code-workflow",
+    "description": "複雑なタスクを複数のサブエージェントに分割し、並列実行で高速化する",
+    "trigger_phrases": [
+      "並列化可能なサブタスクが複数あり、高速化が必要なとき",
+      "Agent Teamsによる並列タスク分解",
+      "AGENTS.mdフォーマット",
+      "Claude Code Agent SDK",
+      "複雑なタスクを複数のサブエージェントに分割し、並列実行で高速化する"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-04-05T00:07:48.989671+00:00"
+  },
+  {
+    "slug": "閉じた学習ループの実装",
+    "name": "閉じた学習ループの実装",
+    "category": "agent-orchestration",
+    "description": "エージェントが経験から自律的にスキルを生成・改善し、記憶を整理・検索し、ユーザーモデルを深化させる仕組みを構築する",
+    "trigger_phrases": [
+      "エージェントに単発タスクではなく、継続的に学習・進化してほしい場合",
+      "閉じた学習ループの実装",
+      "FTS5（SQLiteの全文検索拡張）",
+      "Honcho（dialectic user modeling）",
+      "agentskills.io（スキル標準）"
+    ],
+    "source_url": "https://github.com/NousResearch/hermes-agent",
+    "source_author": "NousResearch",
+    "added_at": "2026-04-05T00:10:04.334398+00:00"
+  },
+  {
+    "slug": "マルチバックエンドターミナルの実装",
+    "name": "マルチバックエンドターミナルの実装",
+    "category": "agent-orchestration",
+    "description": "エージェントの実行環境を6種類（local, Docker, SSH, Daytona, Singularity, Modal）から選択可能にし、ラップトップ以外で動作させる",
+    "trigger_phrases": [
+      "ラップトップを閉じてもエージェントを動かし続けたい、コストを最小化したい、GPUリソースが必要、複数環境で使いたい場合",
+      "マルチバックエンドターミナルの実装",
+      "Daytona（サーバーレス開発環境）",
+      "Modal（サーバーレスコンピューティング）",
+      "Docker",
+      "SSH",
+      "Singularity（HPC向けコンテナ）"
+    ],
+    "source_url": "https://github.com/NousResearch/hermes-agent",
+    "source_author": "NousResearch",
+    "added_at": "2026-04-05T00:10:04.334398+00:00"
+  },
+  {
+    "slug": "マルチプラットフォームゲートウェイの構築",
+    "name": "マルチプラットフォームゲートウェイの構築",
+    "category": "agent-orchestration",
+    "description": "単一のゲートウェイプロセスでTelegram/Discord/Slack/WhatsApp/Signal/Email/CLIから同一エージェントと会話できるようにする",
+    "trigger_phrases": [
+      "複数のメッセージングアプリからエージェントにアクセスしたい、音声入力を使いたい、会話を途切れさせたくない場合",
+      "マルチプラットフォームゲートウェイの構築",
+      "Telegram Bot API",
+      "Discord API",
+      "Slack API",
+      "WhatsApp API",
+      "Signal API"
+    ],
+    "source_url": "https://github.com/NousResearch/hermes-agent",
+    "source_author": "NousResearch",
+    "added_at": "2026-04-05T00:10:04.334398+00:00"
+  },
+  {
+    "slug": "モデルプロバイダー非依存設計",
+    "name": "モデルプロバイダー非依存設計",
+    "category": "agent-orchestration",
+    "description": "LLMプロバイダーを `hermes model` コマンドで切り替え可能にし、コード変更なしで200+モデルを利用可能にする",
+    "trigger_phrases": [
+      "プロバイダー依存を避けたい、複数モデルを試したい、コスト最適化したい、特定地域のモデル（中国のGLM/Kimi等）を使いたい場合",
+      "モデルプロバイダー非依存設計",
+      "OpenRouter（200+モデル統合API）",
+      "Nous Portal",
+      "OpenAI API",
+      "Anthropic API",
+      "z.ai/GLM"
+    ],
+    "source_url": "https://github.com/NousResearch/hermes-agent",
+    "source_author": "NousResearch",
+    "added_at": "2026-04-05T00:10:04.334398+00:00"
+  },
+  {
+    "slug": "並列サブエージェントrpc統合によるコンテキストコスト削減",
+    "name": "並列サブエージェント＋RPC統合によるコンテキストコスト削減",
+    "category": "agent-orchestration",
+    "description": "独立したサブエージェントを並列生成し、PythonスクリプトからツールをRPC呼び出しすることで、マルチステップパイプラインをゼロコンテキストコストで実行する",
+    "trigger_phrases": [
+      "並列処理可能なタスクがある、コンテキストウィンドウを節約したい、複雑なパイプラインを効率化したい場合",
+      "並列サブエージェント＋RPC統合によるコンテキストコスト削減",
+      "RPC（詳細不明だが、おそらくgRPC/JSON-RPC等）",
+      "Python"
+    ],
+    "source_url": "https://github.com/NousResearch/hermes-agent",
+    "source_author": "NousResearch",
+    "added_at": "2026-04-05T00:10:04.334398+00:00"
+  },
+  {
+    "slug": "cron的な定期自動化の組み込み",
+    "name": "cron的な定期自動化の組み込み",
+    "category": "agent-orchestration",
+    "description": "自然言語でスケジュール可能なcron機能を内蔵し、任意のプラットフォームに配信できるようにする",
+    "trigger_phrases": [
+      "日次レポート、夜間バックアップ、週次監査など、無人定期実行が必要な場合",
+      "cron的な定期自動化の組み込み",
+      "cronライブラリ（詳細不明）",
+      "自然言語でスケジュール可能なcron機能を内蔵し、任意のプラットフォームに配信できるようにする"
+    ],
+    "source_url": "https://github.com/NousResearch/hermes-agent",
+    "source_author": "NousResearch",
+    "added_at": "2026-04-05T00:10:04.334398+00:00"
+  },
+  {
+    "slug": "ワンライナーインストールスクリプトの提供",
+    "name": "ワンライナーインストールスクリプトの提供",
+    "category": "agent-orchestration",
+    "description": "curl | bash 形式のインストールスクリプトで、前提条件なしでエージェントをセットアップする",
+    "trigger_phrases": [
+      "新規ユーザーが最速でセットアップしたい、CI/CDで自動インストールしたい場合",
+      "ワンライナーインストールスクリプトの提供",
+      "bash",
+      "curl",
+      "curl | bash 形式のインストールスクリプトで、前提条件なしでエージェントをセットアップする"
+    ],
+    "source_url": "https://github.com/NousResearch/hermes-agent",
+    "source_author": "NousResearch",
+    "added_at": "2026-04-05T00:10:04.334398+00:00"
   }
 ]
