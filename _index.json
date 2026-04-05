@@ -11670,5 +11670,223 @@
     "source_url": "https://github.com/NousResearch/hermes-agent",
     "source_author": "NousResearch",
     "added_at": "2026-04-05T00:10:04.334398+00:00"
+  },
+  {
+    "slug": "カテゴリ別プラグイン一括導入",
+    "name": "カテゴリ別プラグイン一括導入",
+    "category": "claude-code-workflow",
+    "description": "130+のサブエージェントを9つのカテゴリ（言語/インフラ/QA/AI/DevExp等）に分類し、`claude plugin install <カテゴリ名>`で必要なエージェント群をまとめて導入する",
+    "trigger_phrases": [
+      "新規プロジェクト立ち上げ時、または既存プロジェクトに専門エージェントを導入したい時",
+      "カテゴリ別プラグイン一括導入",
+      "Claude Code CLI",
+      "claude plugin marketplace"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-04-05T00:11:47.683853+00:00"
+  },
+  {
+    "slug": "サブエージェントの構造化定義",
+    "name": "サブエージェントの構造化定義",
+    "category": "claude-code-workflow",
+    "description": "各サブエージェントをYAML frontmatter + Markdown形式で定義し、name/description/tools/model/system promptを標準化する",
+    "trigger_phrases": [
+      "新しいサブエージェントを作成する時、または既存エージェントをカスタマイズする時",
+      "サブエージェントの構造化定義",
+      "Markdown",
+      "YAML frontmatter"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-04-05T00:11:47.683853+00:00"
+  },
+  {
+    "slug": "スマートモデルルーティング",
+    "name": "スマートモデルルーティング",
+    "category": "claude-code-workflow",
+    "description": "タスクの複雑さに応じてopus/sonnet/haikuを自動選択し、品質とコストを最適化する",
+    "trigger_phrases": [
+      "エージェントのコスト対効果を最適化したい時、または特定タスクで高精度が必要な時",
+      "スマートモデルルーティング",
+      "Claude opus/sonnet/haiku",
+      "タスクの複雑さに応じてopus/sonnet/haikuを自動選択し、品質とコストを最適化する"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-04-05T00:11:47.683853+00:00"
+  },
+  {
+    "slug": "ツール権限の最小化",
+    "name": "ツール権限の最小化",
+    "category": "claude-code-workflow",
+    "description": "各エージェントに必要最小限のClaude Code組み込みツールのみを許可し、不要な権限を与えない",
+    "trigger_phrases": [
+      "エージェントの役割に応じた適切な権限設計をする時",
+      "ツール権限の最小化",
+      "Claude Code built-in tools (Read, Write, Edit, Bash, Glob, Grep, WebFetch, WebSearch)",
+      "各エージェントに必要最小限のClaude Code組み込みツールのみを許可し、不要な権限を与えない"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-04-05T00:11:47.683853+00:00"
+  },
+  {
+    "slug": "メタオーケストレーションエージェント",
+    "name": "メタオーケストレーションエージェント",
+    "category": "claude-code-workflow",
+    "description": "agent-installerなどのメタエージェントがGitHubから他のエージェントを検索・インストールし、マルチエージェント協調を自動化する",
+    "trigger_phrases": [
+      "大量のエージェントを管理したい時、または複雑なマルチエージェントワークフローを構築したい時",
+      "メタオーケストレーションエージェント",
+      "agent-installer",
+      "multi-agent-coordinator",
+      "workflow-orchestrator",
+      "GitHub API"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-04-05T00:11:47.683853+00:00"
+  },
+  {
+    "slug": "インタラクティブインストーラー",
+    "name": "インタラクティブインストーラー",
+    "category": "claude-code-workflow",
+    "description": "シェルスクリプトベースの対話的UIでカテゴリ・エージェントを選択し、インストール/アンインストールを実行する",
+    "trigger_phrases": [
+      "GUIツールなしでエージェントを管理したい時、または自動化スクリプトに組み込みたい時",
+      "インタラクティブインストーラー",
+      "Bash",
+      "curl",
+      "GitHub Raw Content API"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-04-05T00:11:47.683853+00:00"
+  },
+  {
+    "slug": "awesomeリスト形式でスキルをキュレーションする",
+    "name": "Awesomeリスト形式でスキルをキュレーションする",
+    "category": "other",
+    "description": "GitHubリポジトリとしてMarkdown形式のキュレーションリストを作成し、カテゴリ別にスキル・ツールのリンクと説明を整理する",
+    "trigger_phrases": [
+      "スキル・プラグイン・ツールが10個以上に増え、分散して管理が困難になったタイミング",
+      "Awesomeリスト形式でスキルをキュレーションする",
+      "GitHub",
+      "Markdown"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-04-05T00:13:01.979126+00:00"
+  },
+  {
+    "slug": "スキル説明を機能ベースで記述する",
+    "name": "スキル説明を機能ベースで記述する",
+    "category": "claude-code-workflow",
+    "description": "各スキルの説明文を「何ができるか」を中心に、動詞+対象+付加情報の形式で簡潔に記述する",
+    "trigger_phrases": [
+      "新しいスキルをAwesomeリストに追加する時、または既存エントリーの説明が不明瞭な時",
+      "スキル説明を機能ベースで記述する",
+      "各スキルの説明文を「何ができるか」を中心に、動詞+対象+付加情報の形式で簡潔に記述する"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-04-05T00:13:01.979126+00:00"
+  },
+  {
+    "slug": "カテゴリを機能軸とドメイン軸で分類する",
+    "name": "カテゴリを機能軸とドメイン軸で分類する",
+    "category": "other",
+    "description": "スキルを「技術的機能」（Document, Development, Data）と「適用領域」（Health, Security, Media）の2軸で分類し、階層化する",
+    "trigger_phrases": [
+      "スキル数が30個を超え、単純なリスト表示では見つけにくくなった時",
+      "カテゴリを機能軸とドメイン軸で分類する",
+      "Markdown"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-04-05T00:13:01.979126+00:00"
+  },
+  {
+    "slug": "prベースでコミュニティ貢献を受け付ける",
+    "name": "PRベースでコミュニティ貢献を受け付ける",
+    "category": "other",
+    "description": "Contribution セクションを設け、Fork→変更→PR の標準的なGitHubワークフローを明示してコミュニティからの追加を促す",
+    "trigger_phrases": [
+      "リストが公開され、外部からの追加依頼が来るようになった時",
+      "PRベースでコミュニティ貢献を受け付ける",
+      "GitHub PR",
+      "GitHub Issues"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-04-05T00:13:01.979126+00:00"
+  },
+  {
+    "slug": "npmパッケージ公開前のsourcemap除外設定",
+    "name": "npmパッケージ公開前のsourcemap除外設定",
+    "category": "other",
+    "description": "npm公開時に`.map`ファイルをパッケージから除外し、ソースコードの意図しない漏洩を防ぐ",
+    "trigger_phrases": [
+      "TypeScript/JavaScriptプロジェクトをnpmレジストリに公開する全てのケース、特にプロプライエタリなコードを含む場合",
+      "npmパッケージ公開前のsourcemap除外設定",
+      "npm",
+      "Bun",
+      "webpack",
+      "Rollup",
+      "tar",
+      "npm公開時に`.map`ファイルをパッケージから除外し、ソースコードの意図しない漏洩を防ぐ"
+    ],
+    "source_url": "https://github.com/Kuberwastaken/claurst",
+    "source_author": "Kuberwastaken",
+    "added_at": "2026-04-05T00:14:38.082324+00:00"
+  },
+  {
+    "slug": "feature-flagによる内部機能の実行時ゲーティング",
+    "name": "feature flagによる内部機能の実行時ゲーティング",
+    "category": "ui-ux",
+    "description": "コンパイル時feature flagを使い、内部専用機能を外部ビルドから完全に除去する",
+    "trigger_phrases": [
+      "内部専用機能と外部公開機能が同一コードベースに混在し、ビルド成果物を分離したい場合",
+      "feature flagによる内部機能の実行時ゲーティング",
+      "Bun (feature())",
+      "webpack (DefinePlugin)",
+      "Rollup (@rollup/plugin-replace)",
+      "esbuild (define)",
+      "コンパイル時feature flagを使い、内部専用機能を外部ビルドから完全に除去する"
+    ],
+    "source_url": "https://github.com/Kuberwastaken/claurst",
+    "source_author": "Kuberwastaken",
+    "added_at": "2026-04-05T00:14:38.082324+00:00"
+  },
+  {
+    "slug": "公開パッケージ内容の事前検証",
+    "name": "公開パッケージ内容の事前検証",
+    "category": "other",
+    "description": "npm公開前に`npm pack`でパッケージをローカル生成し、意図しないファイルが含まれていないか検証する",
+    "trigger_phrases": [
+      "npmパッケージを公開する直前、特に初回公開時や`.npmignore`を変更した後",
+      "公開パッケージ内容の事前検証",
+      "npm",
+      "tar"
+    ],
+    "source_url": "https://github.com/Kuberwastaken/claurst",
+    "source_author": "Kuberwastaken",
+    "added_at": "2026-04-05T00:14:38.082324+00:00"
+  },
+  {
+    "slug": "クリーンルーム再実装によるライセンスリスク回避",
+    "name": "クリーンルーム再実装によるライセンスリスク回避",
+    "category": "agent-orchestration",
+    "description": "漏洩したソースコードから2段階プロセスで仕様を抽出し、オリジナルコードを参照せずに再実装することで著作権侵害を回避する",
+    "trigger_phrases": [
+      "漏洩または公開されたプロプライエタリコードの機能を合法的に再現したい場合",
+      "クリーンルーム再実装によるライセンスリスク回避",
+      "AI（仕様抽出・実装支援）",
+      "異なるプログラミング言語（TypeScript→Rust等）"
+    ],
+    "source_url": "https://github.com/Kuberwastaken/claurst",
+    "source_author": "Kuberwastaken",
+    "added_at": "2026-04-05T00:14:38.082324+00:00"
   }
 ]

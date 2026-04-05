@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 815 スキル
+合計: 829 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -819,3 +819,17 @@
 | 並列サブエージェントrpc統合によるコンテキストコスト削減 | 並列サブエージェント＋RPC統合によるコンテキストコスト削減 | agent-orchestration | 独立したサブエージェントを並列生成し、PythonスクリプトからツールをRPC呼び出しすることで、マルチステップパイプラ | NousResearch |
 | cron的な定期自動化の組み込み | cron的な定期自動化の組み込み | agent-orchestration | 自然言語でスケジュール可能なcron機能を内蔵し、任意のプラットフォームに配信できるようにする | NousResearch |
 | ワンライナーインストールスクリプトの提供 | ワンライナーインストールスクリプトの提供 | agent-orchestration | curl \| bash 形式のインストールスクリプトで、前提条件なしでエージェントをセットアップする | NousResearch |
+| カテゴリ別プラグイン一括導入 | カテゴリ別プラグイン一括導入 | claude-code-workflow | 130+のサブエージェントを9つのカテゴリ（言語/インフラ/QA/AI/DevExp等）に分類し、`claude plu | VoltAgent |
+| サブエージェントの構造化定義 | サブエージェントの構造化定義 | claude-code-workflow | 各サブエージェントをYAML frontmatter + Markdown形式で定義し、name/description | VoltAgent |
+| スマートモデルルーティング | スマートモデルルーティング | claude-code-workflow | タスクの複雑さに応じてopus/sonnet/haikuを自動選択し、品質とコストを最適化する | VoltAgent |
+| ツール権限の最小化 | ツール権限の最小化 | claude-code-workflow | 各エージェントに必要最小限のClaude Code組み込みツールのみを許可し、不要な権限を与えない | VoltAgent |
+| メタオーケストレーションエージェント | メタオーケストレーションエージェント | claude-code-workflow | agent-installerなどのメタエージェントがGitHubから他のエージェントを検索・インストールし、マルチエー | VoltAgent |
+| インタラクティブインストーラー | インタラクティブインストーラー | claude-code-workflow | シェルスクリプトベースの対話的UIでカテゴリ・エージェントを選択し、インストール/アンインストールを実行する | VoltAgent |
+| awesomeリスト形式でスキルをキュレーションする | Awesomeリスト形式でスキルをキュレーションする | other | GitHubリポジトリとしてMarkdown形式のキュレーションリストを作成し、カテゴリ別にスキル・ツールのリンクと説明 | BehiSecc |
+| スキル説明を機能ベースで記述する | スキル説明を機能ベースで記述する | claude-code-workflow | 各スキルの説明文を「何ができるか」を中心に、動詞+対象+付加情報の形式で簡潔に記述する | BehiSecc |
+| カテゴリを機能軸とドメイン軸で分類する | カテゴリを機能軸とドメイン軸で分類する | other | スキルを「技術的機能」（Document, Development, Data）と「適用領域」（Health, Secu | BehiSecc |
+| prベースでコミュニティ貢献を受け付ける | PRベースでコミュニティ貢献を受け付ける | other | Contribution セクションを設け、Fork→変更→PR の標準的なGitHubワークフローを明示してコミュニテ | BehiSecc |
+| npmパッケージ公開前のsourcemap除外設定 | npmパッケージ公開前のsourcemap除外設定 | other | npm公開時に`.map`ファイルをパッケージから除外し、ソースコードの意図しない漏洩を防ぐ | Kuberwastaken |
+| feature-flagによる内部機能の実行時ゲーティング | feature flagによる内部機能の実行時ゲーティング | ui-ux | コンパイル時feature flagを使い、内部専用機能を外部ビルドから完全に除去する | Kuberwastaken |
+| 公開パッケージ内容の事前検証 | 公開パッケージ内容の事前検証 | other | npm公開前に`npm pack`でパッケージをローカル生成し、意図しないファイルが含まれていないか検証する | Kuberwastaken |
+| クリーンルーム再実装によるライセンスリスク回避 | クリーンルーム再実装によるライセンスリスク回避 | agent-orchestration | 漏洩したソースコードから2段階プロセスで仕様を抽出し、オリジナルコードを参照せずに再実装することで著作権侵害を回避する | Kuberwastaken |
