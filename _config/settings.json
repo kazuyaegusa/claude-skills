@@ -73,7 +73,13 @@
       }
     ]
   },
-  "mcpServers": {},
+  "mcpServers": {
+    "ghost-os": {
+      "command": "/Users/kazuyaegusa/KEWORK/ghost-os/.build/release/ghost",
+      "args": ["mcp"],
+      "env": {}
+    }
+  },
   "language": "japanese",
   "model": "opus[1m]",
   "skipDangerousModePermissionPrompt": true,
