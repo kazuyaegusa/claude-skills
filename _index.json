@@ -12432,5 +12432,232 @@
     "source_url": "https://github.com/superset-sh/superset",
     "source_author": "superset-sh",
     "added_at": "2026-04-06T00:10:39.989454+00:00"
+  },
+  {
+    "slug": "分野別カテゴリ分類によるスキル整理",
+    "name": "分野別カテゴリ分類によるスキル整理",
+    "category": "other",
+    "description": "Claude Skills を機能分野ごと（Document Skills, Development & Code Tools, Data & Analysis など）に分類し、Markdown の Table of Contents で構造化する",
+    "trigger_phrases": [
+      "スキルカタログが20件を超えて検索性が低下した時、または複数の機能領域にまたがるスキルが混在している時",
+      "分野別カテゴリ分類によるスキル整理",
+      "Markdown",
+      "GitHub リポジトリ"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-04-06T00:11:59.659551+00:00"
+  },
+  {
+    "slug": "awesome-形式によるコミュニティキュレーション",
+    "name": "awesome-* 形式によるコミュニティキュレーション",
+    "category": "other",
+    "description": "GitHub の awesome-* リスト形式（awesome-python, awesome-go など）を Claude Skills に適用し、PR ベースでコミュニティがスキルを追加・更新できる仕組みを構築",
+    "trigger_phrases": [
+      "スキルエコシステムが成長期に入り、新規スキルが頻繁に追加される時、または品質のばらつきが問題になった時",
+      "awesome-* 形式によるコミュニティキュレーション",
+      "GitHub",
+      "Pull Request ワークフロー"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-04-06T00:11:59.659551+00:00"
+  },
+  {
+    "slug": "スキル説明の1行標準化",
+    "name": "スキル説明の1行標準化",
+    "category": "claude-code-workflow",
+    "description": "各スキルの説明を「何をするか」を端的に示す1行（~80文字）に統一し、ユーザーが一覧から瞬時に判断できるようにする",
+    "trigger_phrases": [
+      "新規スキルをカタログに追加する時、または既存スキルの説明が長すぎて可読性が低下している時",
+      "スキル説明の1行標準化"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-04-06T00:11:59.659551+00:00"
+  },
+  {
+    "slug": "絵文字による視覚的カテゴリ識別",
+    "name": "絵文字による視覚的カテゴリ識別",
+    "category": "other",
+    "description": "各カテゴリの見出しに絵文字（📄 Document, 🛠 Development, 📊 Data など）を付与し、視覚的にセクションを識別しやすくする",
+    "trigger_phrases": [
+      "カテゴリ数が5つを超えてスクロールが必要になった時、またはユーザーが特定セクションを繰り返し探す時",
+      "絵文字による視覚的カテゴリ識別",
+      "Unicode 絵文字"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-04-06T00:11:59.659551+00:00"
+  },
+  {
+    "slug": "collections-セクションによるメタカタログ整理",
+    "name": "Collections セクションによるメタカタログ整理",
+    "category": "claude-code-workflow",
+    "description": "複数のスキルをバンドルしたコレクション（例: OpenPaw, Agent Almanac）を別セクションにまとめ、エコシステム全体を俯瞰できるようにする",
+    "trigger_phrases": [
+      "エコシステム内にスキルバンドルやマーケットプレイスが登場した時",
+      "Collections セクションによるメタカタログ整理"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-04-06T00:11:59.659551+00:00"
+  },
+  {
+    "slug": "微信内蔵ブラウザ経由の自動認証キー取得",
+    "name": "微信内蔵ブラウザ経由の自動認証キー取得",
+    "category": "other",
+    "description": "ユーザーが微信で記事を開くだけで、ツールが自動的にAPIアクセスに必要な認証キーを傍受・取得する",
+    "trigger_phrases": [
+      "証明書インストールが不可能な環境、または公式API未提供のプラットフォームからデータを取得したい時",
+      "微信内蔵ブラウザ経由の自動認証キー取得",
+      "ネットワーク通信監視機構（詳細未公開）",
+      "クリップボード監視API",
+      "ユーザーが微信で記事を開くだけで、ツールが自動的にAPIアクセスに必要な認証キーを傍受・取得する"
+    ],
+    "source_url": "https://github.com/qiye45/wechatDownload",
+    "source_author": "qiye45",
+    "added_at": "2026-04-06T00:13:15.583757+00:00"
+  },
+  {
+    "slug": "複数フォーマット一括出力パイプライン",
+    "name": "複数フォーマット一括出力パイプライン",
+    "category": "automation-pipeline",
+    "description": "同一記事をHTML/MHTML/Markdown/PDF/DOCX/CSV形式で同時に保存し、画像・動画・音声も抽出する",
+    "trigger_phrases": [
+      "コンテンツを複数の用途で再利用する予定がある時、または後で形式変換する手間を省きたい時",
+      "複数フォーマット一括出力パイプライン",
+      "HTML→PDF/DOCX変換ライブラリ",
+      "Markdown生成エンジン",
+      "メディアファイルダウンローダー"
+    ],
+    "source_url": "https://github.com/qiye45/wechatDownload",
+    "source_author": "qiye45",
+    "added_at": "2026-04-06T00:13:15.583757+00:00"
+  },
+  {
+    "slug": "mcpskill統合による外部呼び出し",
+    "name": "MCP/Skill統合による外部呼び出し",
+    "category": "claude-code-workflow",
+    "description": "Claude Code等のLLMエージェントから直接このツールを呼び出し、記事ダウンロード・データ抽出を自動化する",
+    "trigger_phrases": [
+      "LLMエージェントに中国語のドメイン知識を与えたい時、定期的な情報収集を自動化したい時",
+      "MCP/Skill統合による外部呼び出し",
+      "MCP Server実装",
+      "Claude Code Skill定義"
+    ],
+    "source_url": "https://github.com/qiye45/wechatDownload",
+    "source_author": "qiye45",
+    "added_at": "2026-04-06T00:13:15.583757+00:00"
+  },
+  {
+    "slug": "既存ダウンロードのスキップとレジューム",
+    "name": "既存ダウンロードのスキップとレジューム",
+    "category": "other",
+    "description": "過去にダウンロード済みの記事を検出し、自動的にスキップする機能",
+    "trigger_phrases": [
+      "定期的な差分更新、ネットワーク不安定な環境での大量ダウンロード",
+      "既存ダウンロードのスキップとレジューム",
+      "ファイルシステムチェック機構",
+      "過去にダウンロード済みの記事を検出し、自動的にスキップする機能"
+    ],
+    "source_url": "https://github.com/qiye45/wechatDownload",
+    "source_author": "qiye45",
+    "added_at": "2026-04-06T00:13:15.583757+00:00"
+  },
+  {
+    "slug": "hook登録によるイベント駆動型通知実装",
+    "name": "Hook登録によるイベント駆動型通知実装",
+    "category": "claude-code-workflow",
+    "description": "AIエージェントのライフサイクルイベント（SessionStart/Stop/PermissionRequest等）に音声再生・通知スクリプトをフックとして登録し、イベント発火時に自動実行する",
+    "trigger_phrases": [
+      "Claude Code、Cursor、Windsurf、Gemini CLI等のフック機能を持つAI開発環境で、エージェント状態変化をリアルタイムに知りたい時",
+      "Hook登録によるイベント駆動型通知実装",
+      "afplay（macOS内蔵）",
+      "pw-play/paplay/ffplay/mpv/aplay（Linux）",
+      "PowerShell MediaPlayer（Windows）",
+      "Python 3（イベントマッピング・設定読み込み）",
+      "JXA Cocoa（macOS大型オーバーレイ）"
+    ],
+    "source_url": "https://github.com/PeonPing/peon-ping",
+    "source_author": "PeonPing",
+    "added_at": "2026-04-06T00:15:34.408545+00:00"
+  },
+  {
+    "slug": "cesp準拠の音声パック構造設計",
+    "name": "CESP準拠の音声パック構造設計",
+    "category": "ui-ux",
+    "description": "Coding Event Sound Pack Specification（CESP）に従い、各イベントカテゴリ（session.start/task.complete/input.required等）ごとにサウンドファイルと音量・ラベルをopenpeon.jsonマニフェストで定義する",
+    "trigger_phrases": [
+      "オリジナルの音声パックを作成・配布したい時、複数プロジェクトで異なるキャラクター音声を使い分けたい時、チームで統一パックを共有したい時",
+      "CESP準拠の音声パック構造設計",
+      "CESP v1.0仕様（https://github.com/PeonPing/openpeon）",
+      "JSON（マニフェスト記述）"
+    ],
+    "source_url": "https://github.com/PeonPing/peon-ping",
+    "source_author": "PeonPing",
+    "added_at": "2026-04-06T00:15:34.408545+00:00"
+  },
+  {
+    "slug": "sshリレーサーバーによるリモート通知転送",
+    "name": "SSHリレーサーバーによるリモート通知転送",
+    "category": "agent-orchestration",
+    "description": "SSH/devcontainer/Codespaces環境で音声・通知リクエストをHTTP経由でローカルマシンのリレーサーバーに転送し、ローカルスピーカー・通知で再生する",
+    "trigger_phrases": [
+      "SSH経由でリモートサーバー開発、devcontainer、GitHub Codespaces等でAIエージェントを使う時、ローカルマシンで音声・通知を受け取りたい場合",
+      "SSHリレーサーバーによるリモート通知転送",
+      "Python http.server（リレーサーバー実装）",
+      "curl（リモート→リレーのHTTPリクエスト）",
+      "SSH -R（リバースポートフォワーディング）"
+    ],
+    "source_url": "https://github.com/PeonPing/peon-ping",
+    "source_author": "PeonPing",
+    "added_at": "2026-04-06T00:15:34.408545+00:00"
+  },
+  {
+    "slug": "path-rulesによるプロジェクト別パック自動切り替え",
+    "name": "path_rulesによるプロジェクト別パック自動切り替え",
+    "category": "context-management",
+    "description": "作業ディレクトリのパスをGlobパターンでマッチングし、プロジェクトごとに異なる音声パックを自動適用する",
+    "trigger_phrases": [
+      "複数クライアント案件や個人/仕事プロジェクトを並行作業し、音声でプロジェクトを区別したい時、チームメンバー全員が同じパスルールを共有したい時",
+      "path_rulesによるプロジェクト別パック自動切り替え",
+      "Python fnmatch（Globマッチング）",
+      "JSON（設定ファイル）"
+    ],
+    "source_url": "https://github.com/PeonPing/peon-ping",
+    "source_author": "PeonPing",
+    "added_at": "2026-04-06T00:15:34.408545+00:00"
+  },
+  {
+    "slug": "mcpサーバー経由のエージェント主導型音声選択",
+    "name": "MCPサーバー経由のエージェント主導型音声選択",
+    "category": "agent-orchestration",
+    "description": "Model Context Protocol（MCP）サーバーを起動し、AIエージェントが`play_sound`ツールで任意の音声を直接指定・再生できるようにする",
+    "trigger_phrases": [
+      "エージェントが状況に応じて最適な音声を選びたい時、カスタムスキルやワークフロー内で明示的に音声を鳴らしたい時、Claude Desktop/Cursor等MCP対応環境で使用",
+      "MCPサーバー経由のエージェント主導型音声選択",
+      "Node.js",
+      "Model Context Protocol SDK",
+      "peon-mcp.js（提供スクリプト）"
+    ],
+    "source_url": "https://github.com/PeonPing/peon-ping",
+    "source_author": "PeonPing",
+    "added_at": "2026-04-06T00:15:34.408545+00:00"
+  },
+  {
+    "slug": "独立制御レイヤーによる通知モード切り替え",
+    "name": "独立制御レイヤーによる通知モード切り替え",
+    "category": "dev-tool",
+    "description": "音声（enabled）・デスクトップ通知（desktop_notifications）・モバイル通知（mobile_notify.enabled）を独立したフラグで制御し、用途に応じて組み合わせる",
+    "trigger_phrases": [
+      "会議・ペアプロ・集中作業等で一部通知のみ抑制したい時、外出中にモバイルのみ通知を受け取りたい時",
+      "独立制御レイヤーによる通知モード切り替え",
+      "config.json",
+      "CLIコマンド（peon pause/notifications/mobile）"
+    ],
+    "source_url": "https://github.com/PeonPing/peon-ping",
+    "source_author": "PeonPing",
+    "added_at": "2026-04-06T00:15:34.408545+00:00"
   }
 ]
