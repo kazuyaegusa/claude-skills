@@ -12078,5 +12078,111 @@
     "source_url": "https://github.com/htdt/godogen",
     "source_author": "htdt",
     "added_at": "2026-04-05T00:18:42.771269+00:00"
+  },
+  {
+    "slug": "プラグインベース統合インストール",
+    "name": "プラグインベース統合インストール",
+    "category": "claude-code-workflow",
+    "description": "Everything Claude Code（ECC）をClaude Codeプラグインとして一括インストールし、39エージェント・178スキル・72コマンドを即座に利用可能にする",
+    "trigger_phrases": [
+      "初回セットアップ時、または最新版への更新時",
+      "プラグインベース統合インストール",
+      "Claude Code CLI",
+      "npm/pnpm/yarn/bun",
+      "ecc-universal（npmパッケージ）"
+    ],
+    "source_url": "https://github.com/affaan-m/everything-claude-code",
+    "source_author": "affaan-m",
+    "added_at": "2026-04-06T00:04:12.346115+00:00"
+  },
+  {
+    "slug": "トークン消費最適化設定",
+    "name": "トークン消費最適化設定",
+    "category": "claude-code-workflow",
+    "description": "model選択・思考トークン制限・早期コンパクションにより、品質を保ちつつコストを60-70%削減する",
+    "trigger_phrases": [
+      "Claude Code利用開始時に初期設定として導入し、日常的に運用",
+      "トークン消費最適化設定",
+      "Claude Code settings.json"
+    ],
+    "source_url": "https://github.com/affaan-m/everything-claude-code",
+    "source_author": "affaan-m",
+    "added_at": "2026-04-06T00:04:12.346115+00:00"
+  },
+  {
+    "slug": "フックによるメモリ永続化",
+    "name": "フックによるメモリ永続化",
+    "category": "claude-code-workflow",
+    "description": "SessionStartフックで前回の文脈を自動ロード、SessionEndフックで現在の状態を自動保存し、セッション間での文脈保持を実現",
+    "trigger_phrases": [
+      "複数日にまたがるプロジェクト、またはセッションをまたいで同じタスクを継続する場合",
+      "フックによるメモリ永続化",
+      "Node.js",
+      "Claude Code hooks.json"
+    ],
+    "source_url": "https://github.com/affaan-m/everything-claude-code",
+    "source_author": "affaan-m",
+    "added_at": "2026-04-06T00:04:12.346115+00:00"
+  },
+  {
+    "slug": "継続学習によるスキル自動生成",
+    "name": "継続学習によるスキル自動生成",
+    "category": "claude-code-workflow",
+    "description": "セッション終了時にLLMがパターンを抽出し、instinct（学習済みパターン）として保存。関連するinstinctをクラスタリングしてスキルに昇格",
+    "trigger_phrases": [
+      "新しいフレームワーク・ライブラリを学習中、またはチーム固有のパターンを標準化したい時",
+      "継続学習によるスキル自動生成",
+      "claude -p（サブスクリプション認証優先）",
+      "scripts/hooks/evaluate-session.js"
+    ],
+    "source_url": "https://github.com/affaan-m/everything-claude-code",
+    "source_author": "affaan-m",
+    "added_at": "2026-04-06T00:04:12.346115+00:00"
+  },
+  {
+    "slug": "agentshieldによるセキュリティスキャン",
+    "name": "AgentShieldによるセキュリティスキャン",
+    "category": "claude-code-workflow",
+    "description": "CLAUDE.md、settings.json、hooks、MCP設定を静的解析し、シークレット漏洩・権限過剰・インジェクションリスクを検出",
+    "trigger_phrases": [
+      "本番環境デプロイ前、新しいMCP server追加時、定期的なセキュリティ監査",
+      "AgentShieldによるセキュリティスキャン",
+      "ecc-agentshield（npm）",
+      "Claude Opus 4.6（--opusモード）"
+    ],
+    "source_url": "https://github.com/affaan-m/everything-claude-code",
+    "source_author": "affaan-m",
+    "added_at": "2026-04-06T00:04:12.346115+00:00"
+  },
+  {
+    "slug": "クロスプラットフォーム対応cursoropencodecodex",
+    "name": "クロスプラットフォーム対応（Cursor/OpenCode/Codex）",
+    "category": "claude-code-workflow",
+    "description": "Claude Code向けに書かれたエージェント・スキル・フックをCursor IDE、OpenCode、Codex macOS app/CLIに移植し、同一の設定基盤を複数ツールで共有",
+    "trigger_phrases": [
+      "複数のAIコーディングツールを併用しており、統一された設定・ワークフローを維持したい場合",
+      "クロスプラットフォーム対応（Cursor/OpenCode/Codex）",
+      "install.sh（Cursor対応）",
+      "scripts/sync-ecc-to-codex.sh（Codex対応）",
+      "ecc-universal（OpenCode npmプラグイン）"
+    ],
+    "source_url": "https://github.com/affaan-m/everything-claude-code",
+    "source_author": "affaan-m",
+    "added_at": "2026-04-06T00:04:12.346115+00:00"
+  },
+  {
+    "slug": "評価ループeval-harnessによる品質保証",
+    "name": "評価ループ（Eval Harness）による品質保証",
+    "category": "claude-code-workflow",
+    "description": "checkpoint評価（マイルストーン毎）とcontinuous評価（コミット毎）を組み合わせ、grader（ExactMatch/Contains/KeyExists/Schema）で自動判定",
+    "trigger_phrases": [
+      "プロダクション品質を求めるプロジェクト、リファクタリング時の退行防止、CI/CD統合",
+      "評価ループ（Eval Harness）による品質保証",
+      "pytest/jest/go test等のテストランナー",
+      "graderスクリプト（skills/quality-harness/に同梱）"
+    ],
+    "source_url": "https://github.com/affaan-m/everything-claude-code",
+    "source_author": "affaan-m",
+    "added_at": "2026-04-06T00:04:12.346115+00:00"
   }
 ]

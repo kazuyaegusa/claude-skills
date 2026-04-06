@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 841 スキル
+合計: 848 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -845,3 +845,10 @@
 | カスタムgdscript-api参照システムによるllm知識補完 | カスタムGDScript API参照システムによるLLM知識補完 | claude-code-workflow | GDScriptの850+クラスAPI仕様をカスタムビルドした言語リファレンスとしてlazy-loadし、LLMのGDS | htdt |
 | publishshによるスキル配布とプロジェクト初期化 | publish.shによるスキル配布とプロジェクト初期化 | claude-code-workflow | スキル開発リポジトリから新規ゲームプロジェクトフォルダへスキル一式をコピーし、git初期化まで自動実行 | htdt |
 | クラウドvmでの長時間生成実行 | クラウドVMでの長時間生成実行 | claude-code-workflow | 数時間かかるゲーム生成をGCE等のGPU搭載VMで実行し、ローカルマシンを占有せず、チャンネル/リモート制御で進捗確認 | htdt |
+| プラグインベース統合インストール | プラグインベース統合インストール | claude-code-workflow | Everything Claude Code（ECC）をClaude Codeプラグインとして一括インストールし、39エ | affaan-m |
+| トークン消費最適化設定 | トークン消費最適化設定 | claude-code-workflow | model選択・思考トークン制限・早期コンパクションにより、品質を保ちつつコストを60-70%削減する | affaan-m |
+| フックによるメモリ永続化 | フックによるメモリ永続化 | claude-code-workflow | SessionStartフックで前回の文脈を自動ロード、SessionEndフックで現在の状態を自動保存し、セッション間 | affaan-m |
+| 継続学習によるスキル自動生成 | 継続学習によるスキル自動生成 | claude-code-workflow | セッション終了時にLLMがパターンを抽出し、instinct（学習済みパターン）として保存。関連するinstinctをク | affaan-m |
+| agentshieldによるセキュリティスキャン | AgentShieldによるセキュリティスキャン | claude-code-workflow | CLAUDE.md、settings.json、hooks、MCP設定を静的解析し、シークレット漏洩・権限過剰・インジェ | affaan-m |
+| クロスプラットフォーム対応cursoropencodecodex | クロスプラットフォーム対応（Cursor/OpenCode/Codex） | claude-code-workflow | Claude Code向けに書かれたエージェント・スキル・フックをCursor IDE、OpenCode、Codex m | affaan-m |
+| 評価ループeval-harnessによる品質保証 | 評価ループ（Eval Harness）による品質保証 | claude-code-workflow | checkpoint評価（マイルストーン毎）とcontinuous評価（コミット毎）を組み合わせ、grader（Exac | affaan-m |
