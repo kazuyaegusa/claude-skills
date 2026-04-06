@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 879 スキル
+合計: 887 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -883,3 +883,11 @@
 | path-rulesによるプロジェクト別パック自動切り替え | path_rulesによるプロジェクト別パック自動切り替え | context-management | 作業ディレクトリのパスをGlobパターンでマッチングし、プロジェクトごとに異なる音声パックを自動適用する | PeonPing |
 | mcpサーバー経由のエージェント主導型音声選択 | MCPサーバー経由のエージェント主導型音声選択 | agent-orchestration | Model Context Protocol（MCP）サーバーを起動し、AIエージェントが`play_sound`ツール | PeonPing |
 | 独立制御レイヤーによる通知モード切り替え | 独立制御レイヤーによる通知モード切り替え | dev-tool | 音声（enabled）・デスクトップ通知（desktop_notifications）・モバイル通知（mobile_no | PeonPing |
+| 言語suffix付きflat構造でのスキル命名 | 言語suffix付きFlat構造でのスキル命名 | claude-code-workflow | スキル名を `azure-<service>-<language>` 形式（例: `azure-ai-projects- | microsoft |
+| acceptance-criteriaによるスキル品質定義 | Acceptance Criteriaによるスキル品質定義 | agent-orchestration | 各スキルに `references/acceptance-criteria.md` を作成し、正しいimportパターン | microsoft |
+| ralph-loopによる反復的品質改善 | Ralph Loopによる反復的品質改善 | agent-orchestration | Generate → Evaluate → Analyze → Re-generate のサイクルを閾値到達まで繰り返し | microsoft |
+| pluginによるスキルバンドル配布 | Pluginによるスキルバンドル配布 | agent-orchestration | 関連スキル・エージェント・コマンドを `.github/plugins/<plugin-name>/` にまとめ、`np | microsoft |
+| mcp-server統合による外部ツールドキュメント連携 | MCP server統合による外部ツール・ドキュメント連携 | claude-code-workflow | `.vscode/mcp.json` でMCPサーバー（microsoft-docs、GitHub、Playwright | microsoft |
+| selective-loading原則の強制 | Selective loading原則の強制 | agent-orchestration | README.mdで「Use skills selectively. Loading all skills causes | microsoft |
+| github-actionsによる日次ドキュメント自動更新 | GitHub Actionsによる日次ドキュメント自動更新 | agent-orchestration | `.github/workflows/` でスクレイピングスクリプトを毎日実行し、`docs/llms.txt` と ` | microsoft |
+| agentsmdによるエージェント行動設定のテンプレート化 | AGENTS.mdによるエージェント行動設定のテンプレート化 | claude-code-workflow | ルートに `AGENTS.md` を配置し、エージェントのペルソナ・ワークフロー・使用スキルを宣言的に定義する | microsoft |

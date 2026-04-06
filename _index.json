@@ -12659,5 +12659,128 @@
     "source_url": "https://github.com/PeonPing/peon-ping",
     "source_author": "PeonPing",
     "added_at": "2026-04-06T00:15:34.408545+00:00"
+  },
+  {
+    "slug": "言語suffix付きflat構造でのスキル命名",
+    "name": "言語suffix付きFlat構造でのスキル命名",
+    "category": "claude-code-workflow",
+    "description": "スキル名を `azure-<service>-<language>` 形式（例: `azure-ai-projects-py`）で統一し、`.github/skills/` 直下にフラット配置する",
+    "trigger_phrases": [
+      "多言語対応のスキルカタログを構築し、エージェントが言語を自動判別して適切なスキルをロードする必要がある場合",
+      "言語suffix付きFlat構造でのスキル命名",
+      "ln -s（Symlink作成）",
+      "npx skills add（CLI installer）"
+    ],
+    "source_url": "https://github.com/microsoft/skills",
+    "source_author": "microsoft",
+    "added_at": "2026-04-06T00:19:05.447251+00:00"
+  },
+  {
+    "slug": "acceptance-criteriaによるスキル品質定義",
+    "name": "Acceptance Criteriaによるスキル品質定義",
+    "category": "agent-orchestration",
+    "description": "各スキルに `references/acceptance-criteria.md` を作成し、正しいimportパターン・認証パターン・async variantを明文化する",
+    "trigger_phrases": [
+      "スキルを追加・更新した際に、LLM生成コードの品質を担保したい場合。CI/CDで自動的に品質を検証したい場合",
+      "Acceptance Criteriaによるスキル品質定義",
+      "GitHub Copilot SDK",
+      "test harness（pnpm harness）"
+    ],
+    "source_url": "https://github.com/microsoft/skills",
+    "source_author": "microsoft",
+    "added_at": "2026-04-06T00:19:05.447251+00:00"
+  },
+  {
+    "slug": "ralph-loopによる反復的品質改善",
+    "name": "Ralph Loopによる反復的品質改善",
+    "category": "agent-orchestration",
+    "description": "Generate → Evaluate → Analyze → Re-generate のサイクルを閾値到達まで繰り返し、LLM生成コードの品質を段階的に向上させる",
+    "trigger_phrases": [
+      "スキルの品質が低い場合や、新規スキル追加時に段階的に改善したい場合。CI/CDでの自動品質向上",
+      "Ralph Loopによる反復的品質改善",
+      "GitHub Copilot SDK",
+      "test harness"
+    ],
+    "source_url": "https://github.com/microsoft/skills",
+    "source_author": "microsoft",
+    "added_at": "2026-04-06T00:19:05.447251+00:00"
+  },
+  {
+    "slug": "pluginによるスキルバンドル配布",
+    "name": "Pluginによるスキルバンドル配布",
+    "category": "agent-orchestration",
+    "description": "関連スキル・エージェント・コマンドを `.github/plugins/<plugin-name>/` にまとめ、`npx skills add` または `/plugin install` で一括インストール可能にする",
+    "trigger_phrases": [
+      "特定ドメイン（Azure、M365、Deep Wiki等）向けにスキルをパッケージ化して配布したい場合。社内カタログを構築する場合",
+      "Pluginによるスキルバンドル配布",
+      "npx skills",
+      "Copilot CLI /plugin コマンド"
+    ],
+    "source_url": "https://github.com/microsoft/skills",
+    "source_author": "microsoft",
+    "added_at": "2026-04-06T00:19:05.447251+00:00"
+  },
+  {
+    "slug": "mcp-server統合による外部ツールドキュメント連携",
+    "name": "MCP server統合による外部ツール・ドキュメント連携",
+    "category": "claude-code-workflow",
+    "description": "`.vscode/mcp.json` でMCPサーバー（microsoft-docs、GitHub、Playwright等）を定義し、スキル内から `microsoft-docs` MCP経由でドキュメントを参照させる",
+    "trigger_phrases": [
+      "公式ドキュメント・GitHub・ブラウザ操作をエージェントに実行させたい場合。スキルのトークンを削減したい場合",
+      "MCP server統合による外部ツール・ドキュメント連携",
+      "MCP protocol",
+      "microsoft-docs MCP",
+      "github MCP",
+      "playwright MCP"
+    ],
+    "source_url": "https://github.com/microsoft/skills",
+    "source_author": "microsoft",
+    "added_at": "2026-04-06T00:19:05.447251+00:00"
+  },
+  {
+    "slug": "selective-loading原則の強制",
+    "name": "Selective loading原則の強制",
+    "category": "agent-orchestration",
+    "description": "README.mdで「Use skills selectively. Loading all skills causes context rot」と明示し、必要なスキルのみをコピー/Symlinkする運用を推奨する",
+    "trigger_phrases": [
+      "新規プロジェクトでスキルカタログを導入する際、または既存プロジェクトでスキルを整理する際",
+      "Selective loading原則の強制",
+      "npx skills add",
+      "cp/ln -s"
+    ],
+    "source_url": "https://github.com/microsoft/skills",
+    "source_author": "microsoft",
+    "added_at": "2026-04-06T00:19:05.447251+00:00"
+  },
+  {
+    "slug": "github-actionsによる日次ドキュメント自動更新",
+    "name": "GitHub Actionsによる日次ドキュメント自動更新",
+    "category": "agent-orchestration",
+    "description": "`.github/workflows/` でスクレイピングスクリプトを毎日実行し、`docs/llms.txt` と `docs/llms-full.txt` を最新のMicrosoft Learnドキュメントから自動生成する",
+    "trigger_phrases": [
+      "スキルカタログが参照する外部ドキュメントを常に最新に保ちたい場合。llms.txt形式でLLM向けドキュメントを配布したい場合",
+      "GitHub Actionsによる日次ドキュメント自動更新",
+      "GitHub Actions",
+      "Puppeteer/Playwright等（スクレイピング）"
+    ],
+    "source_url": "https://github.com/microsoft/skills",
+    "source_author": "microsoft",
+    "added_at": "2026-04-06T00:19:05.447251+00:00"
+  },
+  {
+    "slug": "agentsmdによるエージェント行動設定のテンプレート化",
+    "name": "AGENTS.mdによるエージェント行動設定のテンプレート化",
+    "category": "claude-code-workflow",
+    "description": "ルートに `AGENTS.md` を配置し、エージェントのペルソナ・ワークフロー・使用スキルを宣言的に定義する",
+    "trigger_phrases": [
+      "複数のエージェントペルソナを使い分けたい場合。プロジェクト固有のワークフローをエージェントに教えたい場合",
+      "AGENTS.mdによるエージェント行動設定のテンプレート化",
+      "GitHub Copilot",
+      "Claude Code",
+      "Copilot CLI"
+    ],
+    "source_url": "https://github.com/microsoft/skills",
+    "source_author": "microsoft",
+    "added_at": "2026-04-06T00:19:05.447251+00:00"
   }
 ]
