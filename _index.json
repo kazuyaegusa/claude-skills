@@ -12184,5 +12184,253 @@
     "source_url": "https://github.com/affaan-m/everything-claude-code",
     "source_author": "affaan-m",
     "added_at": "2026-04-06T00:04:12.346115+00:00"
+  },
+  {
+    "slug": "agent-skillsで専門知識を注入する",
+    "name": "Agent Skillsで専門知識を注入する",
+    "category": "claude-code-workflow",
+    "description": "SKILL.mdファイルに特定タスクの手順・知識・ツールを記述し、Claude Codeが専門エージェントとして振る舞えるようにする",
+    "trigger_phrases": [
+      "TDD、セキュリティ監査、デプロイ、ドキュメント生成など、繰り返し実行する専門タスクがある時",
+      "Agent Skillsで専門知識を注入する",
+      "Claude Code Skill tool",
+      "markdown"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-04-06T00:06:05.449948+00:00"
+  },
+  {
+    "slug": "hooksでライフサイクルを制御する",
+    "name": "Hooksでライフサイクルを制御する",
+    "category": "claude-code-workflow",
+    "description": "Claude Codeのツール実行前後に自動でスクリプトを実行し、品質チェック・通知・承認フローを挿入する",
+    "trigger_phrases": [
+      "TDD強制、破壊的コマンドのブロック、シークレットスキャン、デスクトップ通知など、特定タイミングで自動介入したい時",
+      "Hooksでライフサイクルを制御する",
+      "hooks.json",
+      "各種linter（ESLint, Prettier, etc.）",
+      "AST解析ツール（Dippy等）"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-04-06T00:06:05.449948+00:00"
+  },
+  {
+    "slug": "slash-commandsで再利用プロンプトを定義する",
+    "name": "Slash Commandsで再利用プロンプトを定義する",
+    "category": "claude-code-workflow",
+    "description": ".claude/commands/{name}.md にプロンプトを記述し、/name で呼び出せるショートカットを作る",
+    "trigger_phrases": [
+      "git操作（commit, PR作成）、ドキュメント生成、コンテキスト読み込みなど、定型プロンプトがある時",
+      "Slash Commandsで再利用プロンプトを定義する",
+      "markdown",
+      "Claude Code SlashCommand tool"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-04-06T00:06:05.449948+00:00"
+  },
+  {
+    "slug": "claudemdでプロジェクト文脈を永続化する",
+    "name": "CLAUDE.mdでプロジェクト文脈を永続化する",
+    "category": "claude-code-workflow",
+    "description": "プロジェクトルートに CLAUDE.md を配置し、コーディング規約・ビルドコマンド・アーキテクチャ情報を記述する",
+    "trigger_phrases": [
+      "チーム開発でコーディング規約を統一したい時、特定フレームワーク・言語のルールを明示したい時",
+      "CLAUDE.mdでプロジェクト文脈を永続化する",
+      "markdown"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-04-06T00:06:05.449948+00:00"
+  },
+  {
+    "slug": "agent-teamsで並列処理を自動化する",
+    "name": "Agent Teamsで並列処理を自動化する",
+    "category": "claude-code-workflow",
+    "description": "複数の独立したサブタスクをClaude Code subagentに分割し、並列実行させる",
+    "trigger_phrases": [
+      "並列化可能な独立サブタスクが2つ以上ある、複数ファイルにまたがる実装、調査+実装が必要な時",
+      "Agent Teamsで並列処理を自動化する",
+      "Claude Code Task tool",
+      "AGENTS.md",
+      "複数の独立したサブタスクをClaude Code subagentに分割し、並列実行させる"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-04-06T00:06:05.449948+00:00"
+  },
+  {
+    "slug": "ralph-wiggum手法で自律ループ実行する",
+    "name": "Ralph Wiggum手法で自律ループ実行する",
+    "category": "claude-code-workflow",
+    "description": "仕様ファイルを参照しながらClaude Codeを自動で繰り返し実行し、タスク完了まで自律的に動かす",
+    "trigger_phrases": [
+      "明確な仕様があり、試行錯誤が必要だが人間の監視コストを下げたい時",
+      "Ralph Wiggum手法で自律ループ実行する",
+      "ralph-orchestrator",
+      "tmux（ライブモニタリング）",
+      "Bash",
+      "仕様ファイルを参照しながらClaude Codeを自動で繰り返し実行し、タスク完了まで自律的に動かす"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-04-06T00:06:05.449948+00:00"
+  },
+  {
+    "slug": "使用状況ダッシュボードで分析する",
+    "name": "使用状況ダッシュボードで分析する",
+    "category": "claude-code-workflow",
+    "description": "Claude Codeのセッションログ（.jsonl）を解析し、トークン使用量・コスト・モデル分布などをWebUIで可視化する",
+    "trigger_phrases": [
+      "チームでClaude Codeを運用し、コスト管理・最適化が必要な時",
+      "使用状況ダッシュボードで分析する",
+      "ccflare",
+      "better-ccflare",
+      "claude-devtools",
+      "Claudex"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-04-06T00:06:05.449948+00:00"
+  },
+  {
+    "slug": "subagentをyaml-frontmatterで定義する",
+    "name": "subagentをYAML frontmatterで定義する",
+    "category": "claude-code-workflow",
+    "description": "マークダウンファイルの先頭にname/description/tools/modelをYAMLブロックで記述し、本文に役割・チェックリスト・通信プロトコルを書く",
+    "trigger_phrases": [
+      "新しい専門タスク用のsubagentを作成・共有する時、既存エージェントの権限やモデルを調整する時",
+      "subagentをYAML frontmatterで定義する",
+      "Claude Code subagent機能",
+      "YAML frontmatter"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-04-06T00:07:54.150174+00:00"
+  },
+  {
+    "slug": "プラグイン形式でカテゴリ別にsubagentを一括導入する",
+    "name": "プラグイン形式でカテゴリ別にsubagentを一括導入する",
+    "category": "claude-code-workflow",
+    "description": "GitHubリポジトリをClaude Codeのプラグインマーケットプレイスに追加し、カテゴリ単位（voltagent-lang, voltagent-infra等）でsubagent群をインストールする",
+    "trigger_phrases": [
+      "新規プロジェクト開始時に必要な専門家を一括セットアップしたい時、チーム全体で標準的なsubagent構成を共有したい時",
+      "プラグイン形式でカテゴリ別にsubagentを一括導入する",
+      "Claude Code CLI",
+      "GitHub"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-04-06T00:07:54.150174+00:00"
+  },
+  {
+    "slug": "モデル自動ルーティングでコストと品質を最適化する",
+    "name": "モデル自動ルーティングでコストと品質を最適化する",
+    "category": "claude-code-workflow",
+    "description": "subagentのYAML frontmatterに`model: opus/sonnet/haiku`を指定し、タスクの複雑度に応じて自動的に適切なClaudeモデルを割り当てる",
+    "trigger_phrases": [
+      "subagentの新規作成時、既存エージェントのコスト最適化時、タスクの複雑度に応じたモデル選択を自動化したい時",
+      "モデル自動ルーティングでコストと品質を最適化する",
+      "Claude Code subagent機能",
+      "Claude API (opus, sonnet, haiku)"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-04-06T00:07:54.150174+00:00"
+  },
+  {
+    "slug": "ツール権限をsubagent役割に応じて制限する",
+    "name": "ツール権限をsubagent役割に応じて制限する",
+    "category": "claude-code-workflow",
+    "description": "YAML frontmatterの`tools`フィールドで、各subagentが使用できるClaude Code組み込みツールを明示的に指定する",
+    "trigger_phrases": [
+      "subagentの新規作成時、セキュリティ要件が厳しいタスク時、読み取り専用の分析エージェントを作成する時",
+      "ツール権限をsubagent役割に応じて制限する",
+      "Claude Code built-in tools (Read, Write, Edit, Bash, Glob, Grep, WebFetch, WebSearch)"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-04-06T00:07:54.150174+00:00"
+  },
+  {
+    "slug": "メタオーケストレーションエージェントで複数subagentを連携させる",
+    "name": "メタオーケストレーションエージェントで複数subagentを連携させる",
+    "category": "claude-code-workflow",
+    "description": "voltagent-metaカテゴリのエージェント（multi-agent-coordinator, workflow-orchestrator等）を使い、複数の専門subagentを協調動作させる",
+    "trigger_phrases": [
+      "アーキテクチャ設計→実装→テスト→デプロイのような複数フェーズのタスク時、複数の専門領域にまたがる大規模リファクタリング時",
+      "メタオーケストレーションエージェントで複数subagentを連携させる",
+      "voltagent-meta plugin",
+      "multi-agent-coordinator",
+      "workflow-orchestrator",
+      "task-distributor"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-04-06T00:07:54.150174+00:00"
+  },
+  {
+    "slug": "git-worktreeでagentタスクを隔離実行する",
+    "name": "Git worktreeでAgentタスクを隔離実行する",
+    "category": "claude-code-workflow",
+    "description": "各AI Agentを独立したgit worktree（別ディレクトリ）で起動し、同一リポジトリ内で複数タスクを並行実行する",
+    "trigger_phrases": [
+      "複数の独立タスクを同時進行させたい、かつ各タスクが同じリポジトリ内の異なる箇所を触る場合",
+      "Git worktreeでAgentタスクを隔離実行する",
+      "git worktree",
+      "Superset（Electron製デスクトップアプリ）",
+      "任意のCLI Agent"
+    ],
+    "source_url": "https://github.com/superset-sh/superset",
+    "source_author": "superset-sh",
+    "added_at": "2026-04-06T00:10:39.989454+00:00"
+  },
+  {
+    "slug": "workspace-presetで環境セットアップを自動化する",
+    "name": "Workspace Presetで環境セットアップを自動化する",
+    "category": "agent-orchestration",
+    "description": ".superset/config.jsonにsetup/teardownスクリプトを定義し、worktree作成時に自動実行する",
+    "trigger_phrases": [
+      "複数worktreeで同じ環境セットアップが必要、またはdependencyインストール・DBマイグレーション等の定型作業がある場合",
+      "Workspace Presetで環境セットアップを自動化する",
+      "bash/zsh等のシェル",
+      "Superset"
+    ],
+    "source_url": "https://github.com/superset-sh/superset",
+    "source_author": "superset-sh",
+    "added_at": "2026-04-06T00:10:39.989454+00:00"
+  },
+  {
+    "slug": "agent監視uiで変更レディ通知を受け取る",
+    "name": "Agent監視UIで変更レディ通知を受け取る",
+    "category": "agent-orchestration",
+    "description": "Superset UIで全Agentのステータスを一元表示し、変更完了時に通知を受け取る",
+    "trigger_phrases": [
+      "10+のAgentを同時実行し、完了順にレビュー・マージしていきたい場合",
+      "Agent監視UIで変更レディ通知を受け取る",
+      "Superset内蔵UIコンポーネント（React + Electron）",
+      "git status/diff",
+      "Superset UIで全Agentのステータスを一元表示し、変更完了時に通知を受け取る"
+    ],
+    "source_url": "https://github.com/superset-sh/superset",
+    "source_author": "superset-sh",
+    "added_at": "2026-04-06T00:10:39.989454+00:00"
+  },
+  {
+    "slug": "キーボードショートカットで高速workspace切り替えをする",
+    "name": "キーボードショートカットで高速workspace切り替えをする",
+    "category": "agent-orchestration",
+    "description": "⌘1-9で即座に目的のworkspaceに移動し、コンテキストスイッチを最小化する",
+    "trigger_phrases": [
+      "複数タスクを頻繁に行き来する、レビュー待ち中に別タスクに即移りたい場合",
+      "キーボードショートカットで高速workspace切り替えをする",
+      "Superset内蔵キーバインド機能",
+      "⌘1-9で即座に目的のworkspaceに移動し、コンテキストスイッチを最小化する"
+    ],
+    "source_url": "https://github.com/superset-sh/superset",
+    "source_author": "superset-sh",
+    "added_at": "2026-04-06T00:10:39.989454+00:00"
   }
 ]

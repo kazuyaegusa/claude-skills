@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 848 スキル
+合計: 864 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -852,3 +852,19 @@
 | agentshieldによるセキュリティスキャン | AgentShieldによるセキュリティスキャン | claude-code-workflow | CLAUDE.md、settings.json、hooks、MCP設定を静的解析し、シークレット漏洩・権限過剰・インジェ | affaan-m |
 | クロスプラットフォーム対応cursoropencodecodex | クロスプラットフォーム対応（Cursor/OpenCode/Codex） | claude-code-workflow | Claude Code向けに書かれたエージェント・スキル・フックをCursor IDE、OpenCode、Codex m | affaan-m |
 | 評価ループeval-harnessによる品質保証 | 評価ループ（Eval Harness）による品質保証 | claude-code-workflow | checkpoint評価（マイルストーン毎）とcontinuous評価（コミット毎）を組み合わせ、grader（Exac | affaan-m |
+| agent-skillsで専門知識を注入する | Agent Skillsで専門知識を注入する | claude-code-workflow | SKILL.mdファイルに特定タスクの手順・知識・ツールを記述し、Claude Codeが専門エージェントとして振る舞え | hesreallyhim |
+| hooksでライフサイクルを制御する | Hooksでライフサイクルを制御する | claude-code-workflow | Claude Codeのツール実行前後に自動でスクリプトを実行し、品質チェック・通知・承認フローを挿入する | hesreallyhim |
+| slash-commandsで再利用プロンプトを定義する | Slash Commandsで再利用プロンプトを定義する | claude-code-workflow | .claude/commands/{name}.md にプロンプトを記述し、/name で呼び出せるショートカットを作る | hesreallyhim |
+| claudemdでプロジェクト文脈を永続化する | CLAUDE.mdでプロジェクト文脈を永続化する | claude-code-workflow | プロジェクトルートに CLAUDE.md を配置し、コーディング規約・ビルドコマンド・アーキテクチャ情報を記述する | hesreallyhim |
+| agent-teamsで並列処理を自動化する | Agent Teamsで並列処理を自動化する | claude-code-workflow | 複数の独立したサブタスクをClaude Code subagentに分割し、並列実行させる | hesreallyhim |
+| ralph-wiggum手法で自律ループ実行する | Ralph Wiggum手法で自律ループ実行する | claude-code-workflow | 仕様ファイルを参照しながらClaude Codeを自動で繰り返し実行し、タスク完了まで自律的に動かす | hesreallyhim |
+| 使用状況ダッシュボードで分析する | 使用状況ダッシュボードで分析する | claude-code-workflow | Claude Codeのセッションログ（.jsonl）を解析し、トークン使用量・コスト・モデル分布などをWebUIで可視 | hesreallyhim |
+| subagentをyaml-frontmatterで定義する | subagentをYAML frontmatterで定義する | claude-code-workflow | マークダウンファイルの先頭にname/description/tools/modelをYAMLブロックで記述し、本文に役 | VoltAgent |
+| プラグイン形式でカテゴリ別にsubagentを一括導入する | プラグイン形式でカテゴリ別にsubagentを一括導入する | claude-code-workflow | GitHubリポジトリをClaude Codeのプラグインマーケットプレイスに追加し、カテゴリ単位（voltagent- | VoltAgent |
+| モデル自動ルーティングでコストと品質を最適化する | モデル自動ルーティングでコストと品質を最適化する | claude-code-workflow | subagentのYAML frontmatterに`model: opus/sonnet/haiku`を指定し、タスク | VoltAgent |
+| ツール権限をsubagent役割に応じて制限する | ツール権限をsubagent役割に応じて制限する | claude-code-workflow | YAML frontmatterの`tools`フィールドで、各subagentが使用できるClaude Code組み込 | VoltAgent |
+| メタオーケストレーションエージェントで複数subagentを連携させる | メタオーケストレーションエージェントで複数subagentを連携させる | claude-code-workflow | voltagent-metaカテゴリのエージェント（multi-agent-coordinator, workflow- | VoltAgent |
+| git-worktreeでagentタスクを隔離実行する | Git worktreeでAgentタスクを隔離実行する | claude-code-workflow | 各AI Agentを独立したgit worktree（別ディレクトリ）で起動し、同一リポジトリ内で複数タスクを並行実行す | superset-sh |
+| workspace-presetで環境セットアップを自動化する | Workspace Presetで環境セットアップを自動化する | agent-orchestration | .superset/config.jsonにsetup/teardownスクリプトを定義し、worktree作成時に自動 | superset-sh |
+| agent監視uiで変更レディ通知を受け取る | Agent監視UIで変更レディ通知を受け取る | agent-orchestration | Superset UIで全Agentのステータスを一元表示し、変更完了時に通知を受け取る | superset-sh |
+| キーボードショートカットで高速workspace切り替えをする | キーボードショートカットで高速workspace切り替えをする | agent-orchestration | ⌘1-9で即座に目的のworkspaceに移動し、コンテキストスイッチを最小化する | superset-sh |
