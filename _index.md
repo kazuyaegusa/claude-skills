@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 894 スキル
+合計: 915 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -898,3 +898,24 @@
 | status-lineによるリアルタイム監視 | Status Lineによるリアルタイム監視 | claude-code-workflow | Claude Codeのステータスバーに、使用中モデル、トークン消費量、コスト、gitブランチ、MCP接続状態などをリア | hesreallyhim |
 | usage-monitoringによるコスト最適化 | Usage Monitoringによるコスト最適化 | claude-code-workflow | ローカルのClaude Codeログを解析し、プロジェクト別・モデル別のトークン消費量、コスト、使用パターンをダッシュボ | hesreallyhim |
 | alternative-clientsによるモバイルリモート管理 | Alternative Clientsによるモバイル・リモート管理 | claude-code-workflow | モバイルやWebブラウザから複数のClaude Codeセッションをリモート監視・操作できるクライアントアプリを使用 | hesreallyhim |
+| コーディングエージェントにcliskillsを優先選択する | コーディングエージェントにCLI+SKILLsを優先選択する | claude-code-workflow | Playwright MCPサーバーではなくPlaywright CLIをSKILLsとして公開し、エージェントにはCL | microsoft |
+| mcpを永続状態管理探索的自動化に使う | MCPを永続状態管理・探索的自動化に使う | agent-orchestration | ページ構造への反復的推論、セルフヒーリングテスト、長時間実行の自律ワークフロー等にはMCPサーバーを選択する | microsoft |
+| アクセシビリティツリーベースの自動化を実装する | アクセシビリティツリーベースの自動化を実装する | automation-pipeline | スクリーンショットや視覚モデルではなく、構造化されたアクセシビリティスナップショットでブラウザ操作を行う | microsoft |
+| 複数mcpクライアントに標準設定で配布する | 複数MCPクライアントに標準設定で配布する | claude-code-workflow | VS Code, Cursor, Claude Desktop, Goose等、10種類以上のMCPクライアントに対して | microsoft |
+| useagentフックでエージェント状態を双方向同期 | useAgentフックでエージェント状態を双方向同期 | agent-orchestration | React Hooksを使ってエージェントの内部状態を読み取り・更新し、UI再レンダリングとエージェント実行を同期する | CopilotKit |
+| backend-tool-renderingでツール実行結果をui化 | Backend Tool Renderingでツール実行結果をUI化 | agent-orchestration | バックエンドのエージェントツールがReact/AngularコンポーネントをレスポンスとしてクライアントUIにレンダリン | CopilotKit |
+| human-in-the-loopでエージェント実行を一時停止 | Human-in-the-Loopでエージェント実行を一時停止 | agent-orchestration | エージェントがワークフロー途中でユーザーの入力・確認・編集を待機し、承認後に再開する | CopilotKit |
+| npx-copilotkit-initで既存プロジェクトに統合 | npx copilotkit initで既存プロジェクトに統合 | agent-orchestration | 既存のReact/Angularアプリに対してCopilotKitの依存インストール・Provider設定・エージェント | CopilotKit |
+| generative-uiで動的ui生成 | Generative UIで動的UI生成 | agent-orchestration | エージェントがユーザーの意図・実行状態に応じてUIコンポーネントを実行時に生成・更新する | CopilotKit |
+| 閉ループ学習サイクルの実装 | 閉ループ学習サイクルの実装 | agent-orchestration | エージェントが会話・タスク実行から自律的にスキルを生成し、実行中に改善し、メモリとユーザーモデルを更新し続ける仕組み | NousResearch |
+| マルチプラットフォーム単一ゲートウェイ設計 | マルチプラットフォーム単一ゲートウェイ設計 | agent-orchestration | CLI/Telegram/Discord/Slack/WhatsApp/Signalを単一プロセスで統合し、どのプラット | NousResearch |
+| サーバーレス永続化バックエンド | サーバーレス永続化バックエンド | agent-orchestration | Daytona/Modalを使い、アイドル時は休止、必要時のみ起動してコストをほぼゼロに抑える永続環境 | NousResearch |
+| モデル切り替え抽象化レイヤー | モデル切り替え抽象化レイヤー | agent-orchestration | `hermes model`で200+のLLMプロバイダを自由に切り替え、コード変更なしで動作 | NousResearch |
+| 並列サブエージェント生成 | 並列サブエージェント生成 | agent-orchestration | 独立したサブエージェントを並列起動し、マルチストリーム処理を実現。PythonスクリプトからRPC経由でツール呼び出し可 | NousResearch |
+| cron自動化とプラットフォーム配信 | cron自動化とプラットフォーム配信 | agent-orchestration | 自然言語でcronスケジュールを設定し、結果を任意のメッセージングプラットフォームに配信 | NousResearch |
+| ワンライナーインストーラー | ワンライナーインストーラー | agent-orchestration | curlで実行する単一スクリプトで、Python/Node.js/依存関係を全自動セットアップ | NousResearch |
+| openclaw自動マイグレーション | OpenClaw自動マイグレーション | agent-orchestration | OpenClawの設定・メモリ・スキル・APIキーを自動インポート | NousResearch |
+| デコレータベースのツール定義でスキーマ自動生成 | デコレータベースのツール定義でスキーマ自動生成 | automation-pipeline | Pythonの関数に@mcp.toolデコレータを付けるだけでMCPツールとして公開し、型ヒントとdocstringから | PrefectHQ |
+| uvでの高速インストール | uvでの高速インストール | automation-pipeline | uvパッケージマネージャーを使ってFastMCPを高速にインストールする | PrefectHQ |
+| 3つの柱serverappclientで役割分離 | 3つの柱（Server/App/Client）で役割分離 | dev-tool | FastMCPをServer（ツール提供）、App（対話UI）、Client（サーバー接続）の3つのモードで使い分ける | PrefectHQ |
+| prefect-horizonで無料ホスティング | Prefect Horizonで無料ホスティング | other | FastMCPサーバーをPrefect Horizonプラットフォームに無料でデプロイし、リモートから利用可能にする | PrefectHQ |
