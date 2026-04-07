@@ -12782,5 +12782,116 @@
     "source_url": "https://github.com/microsoft/skills",
     "source_author": "microsoft",
     "added_at": "2026-04-06T00:19:05.447251+00:00"
+  },
+  {
+    "slug": "agent-skillsによる専門能力の注入",
+    "name": "Agent Skillsによる専門能力の注入",
+    "category": "claude-code-workflow",
+    "description": "Claude Codeに特定タスク（セキュリティ監査、ドキュメント生成、コード最適化等）を実行する専門知識とプロンプトをSKILL.mdファイルとして追加する",
+    "trigger_phrases": [
+      "特定の技術スタック（Rust、Go、TypeScript等）やタスク（セキュリティ監査、TDD、PRレビュー）に特化した処理を繰り返し実行する必要がある時",
+      "Agent Skillsによる専門能力の注入",
+      "Trail of Bits Security Skills（セキュリティ監査）",
+      "Superpowers（TDD、デバッグ、レビュー）",
+      "AgentSys（ワークフロー自動化）"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-04-07T00:04:59.734609+00:00"
+  },
+  {
+    "slug": "slash-commandsによる定型プロンプトの再利用",
+    "name": "Slash-Commandsによる定型プロンプトの再利用",
+    "category": "claude-code-workflow",
+    "description": "頻繁に使うプロンプト（コミットメッセージ生成、PR作成、ドキュメント更新等）を `.claude/commands/<name>.md` に保存し、`/name` で即座に呼び出す",
+    "trigger_phrases": [
+      "コミット、PR作成、ドキュメント生成、Issue分析、コンテキスト読み込みなど、繰り返し実行する定型タスクがある時",
+      "Slash-Commandsによる定型プロンプトの再利用",
+      "/commit（conventional commit形式でコミット）",
+      "/create-pr（GitHub CLI連携でPR作成）",
+      "/tdd（TDDワークフロー強制）"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-04-07T00:04:59.734609+00:00"
+  },
+  {
+    "slug": "claudemdによるプロジェクト固有ルールの注入",
+    "name": "CLAUDE.mdによるプロジェクト固有ルールの注入",
+    "category": "claude-code-workflow",
+    "description": "プロジェクトルートに `CLAUDE.md` を配置し、コーディング規約、ビルドコマンド、テスト方法、アーキテクチャ情報をClaude Codeに自動読み込ませる",
+    "trigger_phrases": [
+      "新規メンバーがプロジェクトに参加、レガシーコードベースのモダナイゼーション、複数プロジェクト間でClaude Codeの動作を切り替えたい時",
+      "CLAUDE.mdによるプロジェクト固有ルールの注入",
+      "Metabase CLAUDE.md（Clojure REPL-driven開発）",
+      "Giselle CLAUDE.md（TypeScript/Vue3 Composition API規約）"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-04-07T00:04:59.734609+00:00"
+  },
+  {
+    "slug": "multi-agent-orchestrationによる並列タスク実行",
+    "name": "Multi-agent Orchestrationによる並列タスク実行",
+    "category": "claude-code-workflow",
+    "description": "複数のClaude Codeインスタンスを並列起動し、Task Masterが各エージェントにサブタスクを割り当て、結果を統合する",
+    "trigger_phrases": [
+      "複数の独立した機能を同時開発、大規模リファクタリング、並列テスト実行、複数ブランチでの実験が必要な時",
+      "Multi-agent Orchestrationによる並列タスク実行",
+      "Claude Squad（複数Claude Code/Codexを同時管理）",
+      "Ruflo（自律マルチエージェントスウォーム）",
+      "TSK（Docker隔離環境でタスク並列実行）"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-04-07T00:04:59.734609+00:00"
+  },
+  {
+    "slug": "status-lineによるリアルタイム監視",
+    "name": "Status Lineによるリアルタイム監視",
+    "category": "claude-code-workflow",
+    "description": "Claude Codeのステータスバーに、使用中モデル、トークン消費量、コスト、gitブランチ、MCP接続状態などをリアルタイム表示",
+    "trigger_phrases": [
+      "トークン消費を厳密に管理したい、複数プロジェクトでコストを比較したい、Burn Rate（消費速度）を監視したい時",
+      "Status Lineによるリアルタイム監視",
+      "CCometixLine（Rust製、高性能）",
+      "claudia-statusline（永続化統計）",
+      "claude-powerline（vim風デザイン）"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-04-07T00:04:59.734609+00:00"
+  },
+  {
+    "slug": "usage-monitoringによるコスト最適化",
+    "name": "Usage Monitoringによるコスト最適化",
+    "category": "claude-code-workflow",
+    "description": "ローカルのClaude Codeログを解析し、プロジェクト別・モデル別のトークン消費量、コスト、使用パターンをダッシュボードで可視化",
+    "trigger_phrases": [
+      "複数プロジェクトでClaude Codeを使用、予算管理が必要、チームでコスト配分を追跡したい時",
+      "Usage Monitoringによるコスト最適化",
+      "ccflare（美しいWebダッシュボード）",
+      "CC Usage（CLIベース統計）",
+      "Claudex（フルテキスト検索付きブラウザ）"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-04-07T00:04:59.734609+00:00"
+  },
+  {
+    "slug": "alternative-clientsによるモバイルリモート管理",
+    "name": "Alternative Clientsによるモバイル・リモート管理",
+    "category": "claude-code-workflow",
+    "description": "モバイルやWebブラウザから複数のClaude Codeセッションをリモート監視・操作できるクライアントアプリを使用",
+    "trigger_phrases": [
+      "外出中にClaude Codeのタスク完了を確認したい、複数セッションを並行監視したい、チームで進捗を共有したい時",
+      "Alternative Clientsによるモバイル・リモート管理",
+      "Omnara（Web/モバイル統合管理）",
+      "Happy Coder（プッシュ通知対応）",
+      "crystal（デスクトップアプリ）"
+    ],
+    "source_url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "source_author": "hesreallyhim",
+    "added_at": "2026-04-07T00:04:59.734609+00:00"
   }
 ]

@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 887 スキル
+合計: 894 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -891,3 +891,10 @@
 | selective-loading原則の強制 | Selective loading原則の強制 | agent-orchestration | README.mdで「Use skills selectively. Loading all skills causes | microsoft |
 | github-actionsによる日次ドキュメント自動更新 | GitHub Actionsによる日次ドキュメント自動更新 | agent-orchestration | `.github/workflows/` でスクレイピングスクリプトを毎日実行し、`docs/llms.txt` と ` | microsoft |
 | agentsmdによるエージェント行動設定のテンプレート化 | AGENTS.mdによるエージェント行動設定のテンプレート化 | claude-code-workflow | ルートに `AGENTS.md` を配置し、エージェントのペルソナ・ワークフロー・使用スキルを宣言的に定義する | microsoft |
+| agent-skillsによる専門能力の注入 | Agent Skillsによる専門能力の注入 | claude-code-workflow | Claude Codeに特定タスク（セキュリティ監査、ドキュメント生成、コード最適化等）を実行する専門知識とプロンプトを | hesreallyhim |
+| slash-commandsによる定型プロンプトの再利用 | Slash-Commandsによる定型プロンプトの再利用 | claude-code-workflow | 頻繁に使うプロンプト（コミットメッセージ生成、PR作成、ドキュメント更新等）を `.claude/commands/<n | hesreallyhim |
+| claudemdによるプロジェクト固有ルールの注入 | CLAUDE.mdによるプロジェクト固有ルールの注入 | claude-code-workflow | プロジェクトルートに `CLAUDE.md` を配置し、コーディング規約、ビルドコマンド、テスト方法、アーキテクチャ情報 | hesreallyhim |
+| multi-agent-orchestrationによる並列タスク実行 | Multi-agent Orchestrationによる並列タスク実行 | claude-code-workflow | 複数のClaude Codeインスタンスを並列起動し、Task Masterが各エージェントにサブタスクを割り当て、結果 | hesreallyhim |
+| status-lineによるリアルタイム監視 | Status Lineによるリアルタイム監視 | claude-code-workflow | Claude Codeのステータスバーに、使用中モデル、トークン消費量、コスト、gitブランチ、MCP接続状態などをリア | hesreallyhim |
+| usage-monitoringによるコスト最適化 | Usage Monitoringによるコスト最適化 | claude-code-workflow | ローカルのClaude Codeログを解析し、プロジェクト別・モデル別のトークン消費量、コスト、使用パターンをダッシュボ | hesreallyhim |
+| alternative-clientsによるモバイルリモート管理 | Alternative Clientsによるモバイル・リモート管理 | claude-code-workflow | モバイルやWebブラウザから複数のClaude Codeセッションをリモート監視・操作できるクライアントアプリを使用 | hesreallyhim |
