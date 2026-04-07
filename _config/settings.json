@@ -1,15 +1,4 @@
 {
-  "allowedTools": [
-    "mcp__ghost-os__*"
-  ],
-  "autoUpdatesChannel": "latest",
-  "effortLevel": "high",
-  "enabledPlugins": {
-    "github@claude-plugins-official": true,
-    "slack@claude-plugins-official": true,
-    "swift-lsp@claude-plugins-official": true,
-    "superpowers@superpowers-marketplace": true
-  },
   "env": {
     "CLAUDE_CODE_AUTOCOMPACT_PCT_OVERRIDE": "50",
     "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1",
@@ -19,6 +8,7 @@
     "OTEL_METRICS_EXPORTER": "console",
     "OTEL_RESOURCE_ATTRIBUTES": "user.email=kazuya.egusa@aixeed.co.jp"
   },
+  "model": "opus[1m]",
   "hooks": {
     "SessionStart": [
       {
@@ -73,18 +63,30 @@
       }
     ]
   },
+  "statusLine": {
+    "type": "command",
+    "command": "~/.claude/statusline.sh"
+  },
+  "enabledPlugins": {
+    "github@claude-plugins-official": true,
+    "slack@claude-plugins-official": true,
+    "swift-lsp@claude-plugins-official": true,
+    "superpowers@superpowers-marketplace": true
+  },
+  "language": "japanese",
+  "effortLevel": "high",
+  "autoUpdatesChannel": "latest",
+  "skipDangerousModePermissionPrompt": true,
+  "allowedTools": [
+    "mcp__ghost-os__*"
+  ],
   "mcpServers": {
     "ghost-os": {
       "command": "/Users/kazuyaegusa/KEWORK/ghost-os/.build/release/ghost",
-      "args": ["mcp"],
+      "args": [
+        "mcp"
+      ],
       "env": {}
     }
-  },
-  "language": "japanese",
-  "model": "opus[1m]",
-  "skipDangerousModePermissionPrompt": true,
-  "statusLine": {
-    "command": "~/.claude/statusline.sh",
-    "type": "command"
   }
 }
