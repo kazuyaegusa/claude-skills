@@ -13214,5 +13214,154 @@
     "source_url": "https://github.com/PrefectHQ/fastmcp",
     "source_author": "PrefectHQ",
     "added_at": "2026-04-07T00:10:45.068530+00:00"
+  },
+  {
+    "slug": "lspベースのシンボルレベル抽出をmcpツール化",
+    "name": "LSPベースのシンボルレベル抽出をMCPツール化",
+    "category": "claude-code-workflow",
+    "description": "Language Server Protocol (LSP)を抽象化レイヤーで統合し、シンボル検索・参照検索・型階層などをMCPツールとして提供する",
+    "trigger_phrases": [
+      "オープンソース・無料で多言語対応のコーディングエージェント基盤を作りたい時",
+      "LSPベースのシンボルレベル抽出をMCPツール化",
+      "Language Server Protocol (LSP)",
+      "MCP (Model Context Protocol)",
+      "uv (Pythonパッケージマネージャ)"
+    ],
+    "source_url": "https://github.com/oraios/serena",
+    "source_author": "oraios",
+    "added_at": "2026-04-07T00:12:21.294845+00:00"
+  },
+  {
+    "slug": "jetbrainsプラグイン統合でide機能をエージェントに委譲",
+    "name": "JetBrainsプラグイン統合でIDE機能をエージェントに委譲",
+    "category": "agent-orchestration",
+    "description": "JetBrains IDEのコード解析機能をプラグイン経由でMCPツール化し、高精度なリファクタリング・参照検索・型階層をエージェントから利用可能にする",
+    "trigger_phrases": [
+      "Java/Kotlin/Python/JavaScript等のJetBrains対応言語で、高精度なリファクタリングや依存関係検索が必要な時",
+      "JetBrainsプラグイン統合でIDE機能をエージェントに委譲",
+      "JetBrains Plugin API",
+      "MCP"
+    ],
+    "source_url": "https://github.com/oraios/serena",
+    "source_author": "oraios",
+    "added_at": "2026-04-07T00:12:21.294845+00:00"
+  },
+  {
+    "slug": "シンボル単位の編集ツールでトークン効率を最大化",
+    "name": "シンボル単位の編集ツールでトークン効率を最大化",
+    "category": "agent-orchestration",
+    "description": "replace_symbol_body, insert_after_symbol, insert_before_symbol, safe_deleteなどのシンボル単位編集ツールを提供",
+    "trigger_phrases": [
+      "大規模ファイルで特定シンボルのみを編集したい時、または既存コードを壊さず安全に変更したい時",
+      "シンボル単位の編集ツールでトークン効率を最大化",
+      "Serena MCP server"
+    ],
+    "source_url": "https://github.com/oraios/serena",
+    "source_author": "oraios",
+    "added_at": "2026-04-07T00:12:21.294845+00:00"
+  },
+  {
+    "slug": "多層yaml設定でクライアントプロジェクト別に振る舞いをカスタマイズ",
+    "name": "多層YAML設定でクライアント・プロジェクト別に振る舞いをカスタマイズ",
+    "category": "claude-code-workflow",
+    "description": "グローバル設定、CLI設定、プロジェクト設定、実行コンテキスト設定、動的モード設定の5層で構成可能な設定システム",
+    "trigger_phrases": [
+      "複数クライアント対応、プロジェクト固有のツール有効化、特定言語バックエンドの切り替えが必要な時",
+      "多層YAML設定でクライアント・プロジェクト別に振る舞いをカスタマイズ",
+      "YAML",
+      "Serena設定システム"
+    ],
+    "source_url": "https://github.com/oraios/serena",
+    "source_author": "oraios",
+    "added_at": "2026-04-07T00:12:21.294845+00:00"
+  },
+  {
+    "slug": "基本ツール検索ファイル操作シェルを選択的に無効化",
+    "name": "基本ツール（検索・ファイル操作・シェル）を選択的に無効化",
+    "category": "claude-code-workflow",
+    "description": "search_for_pattern, replace_content, list_dir, find_file, read_file, execute_shell_commandを設定で無効化可能",
+    "trigger_phrases": [
+      "Serenaをエージェントハーネス（Claude Code/Codex）と併用する時",
+      "基本ツール（検索・ファイル操作・シェル）を選択的に無効化",
+      "Serena設定システム"
+    ],
+    "source_url": "https://github.com/oraios/serena",
+    "source_author": "oraios",
+    "added_at": "2026-04-07T00:12:21.294845+00:00"
+  },
+  {
+    "slug": "カテゴリ別サブエージェント体系の構築",
+    "name": "カテゴリ別サブエージェント体系の構築",
+    "category": "claude-code-workflow",
+    "description": "130種以上のサブエージェントを10カテゴリ（コア開発/言語専門家/インフラ/品質・セキュリティ/データAI/DX/特化ドメイン/ビジネス/メタ編成/リサーチ）に分類・定義する",
+    "trigger_phrases": [
+      "プロジェクトで複数の技術領域・ロールが混在し、汎用AIでは精度が落ちる場合",
+      "カテゴリ別サブエージェント体系の構築",
+      "Claude Code プラグインシステム",
+      "Markdown frontmatter（YAML）",
+      "Bash インストールスクリプト"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-04-07T00:14:11.537898+00:00"
+  },
+  {
+    "slug": "ツール権限最小化設計",
+    "name": "ツール権限最小化設計",
+    "category": "claude-code-workflow",
+    "description": "各エージェントの `tools` フィールドで必要最小限のClaude Code組み込みツールのみ許可し、不要な操作を防ぐ",
+    "trigger_phrases": [
+      "セキュリティ監査やコードレビューなど、読み取り専用保証が必要な時、権限分離でミスを防ぎたい時",
+      "ツール権限最小化設計",
+      "Claude Code built-in tools (Read, Write, Edit, Bash, Glob, Grep, WebFetch, WebSearch)"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-04-07T00:14:11.537898+00:00"
+  },
+  {
+    "slug": "4種類のインストール方法提供",
+    "name": "4種類のインストール方法提供",
+    "category": "claude-code-workflow",
+    "description": "プラグイン/手動コピー/対話型インストーラー/curlスタンドアロンの4通りでエージェントを導入可能にする",
+    "trigger_phrases": [
+      "チーム全体に標準エージェントセットを配布したい時、個別プロジェクトで必要なエージェントのみ選択したい時",
+      "4種類のインストール方法提供",
+      "claude CLI",
+      "Bash",
+      "curl"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-04-07T00:14:11.537898+00:00"
+  },
+  {
+    "slug": "独立コンテキストウィンドウ活用",
+    "name": "独立コンテキストウィンドウ活用",
+    "category": "claude-code-workflow",
+    "description": "各サブエージェントが独立したコンテキスト空間で動作し、メイン会話とタスク詳細を分離する",
+    "trigger_phrases": [
+      "複雑なタスクを分割して並列処理したい時、メイン会話を散らかさずに専門作業を行いたい時",
+      "独立コンテキストウィンドウ活用",
+      "Claude Code /agents コマンド",
+      "各サブエージェントが独立したコンテキスト空間で動作し、メイン会話とタスク詳細を分離する"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-04-07T00:14:11.537898+00:00"
+  },
+  {
+    "slug": "プロジェクトグローバル階層管理",
+    "name": "プロジェクト/グローバル階層管理",
+    "category": "claude-code-workflow",
+    "description": "プロジェクト固有（.claude/agents/）とグローバル（~/.claude/agents/）の2階層でエージェントを管理し、優先順位をプロジェクト優先にする",
+    "trigger_phrases": [
+      "チーム標準とプロジェクト特性のバランスを取りたい時、グローバル設定を部分的に上書きしたい時",
+      "プロジェクト/グローバル階層管理",
+      "ファイルシステム（.claude/ と ~/.claude/）"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-04-07T00:14:11.537898+00:00"
   }
 ]

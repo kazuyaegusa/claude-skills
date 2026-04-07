@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 915 スキル
+合計: 925 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -919,3 +919,13 @@
 | uvでの高速インストール | uvでの高速インストール | automation-pipeline | uvパッケージマネージャーを使ってFastMCPを高速にインストールする | PrefectHQ |
 | 3つの柱serverappclientで役割分離 | 3つの柱（Server/App/Client）で役割分離 | dev-tool | FastMCPをServer（ツール提供）、App（対話UI）、Client（サーバー接続）の3つのモードで使い分ける | PrefectHQ |
 | prefect-horizonで無料ホスティング | Prefect Horizonで無料ホスティング | other | FastMCPサーバーをPrefect Horizonプラットフォームに無料でデプロイし、リモートから利用可能にする | PrefectHQ |
+| lspベースのシンボルレベル抽出をmcpツール化 | LSPベースのシンボルレベル抽出をMCPツール化 | claude-code-workflow | Language Server Protocol (LSP)を抽象化レイヤーで統合し、シンボル検索・参照検索・型階層など | oraios |
+| jetbrainsプラグイン統合でide機能をエージェントに委譲 | JetBrainsプラグイン統合でIDE機能をエージェントに委譲 | agent-orchestration | JetBrains IDEのコード解析機能をプラグイン経由でMCPツール化し、高精度なリファクタリング・参照検索・型階層 | oraios |
+| シンボル単位の編集ツールでトークン効率を最大化 | シンボル単位の編集ツールでトークン効率を最大化 | agent-orchestration | replace_symbol_body, insert_after_symbol, insert_before_symb | oraios |
+| 多層yaml設定でクライアントプロジェクト別に振る舞いをカスタマイズ | 多層YAML設定でクライアント・プロジェクト別に振る舞いをカスタマイズ | claude-code-workflow | グローバル設定、CLI設定、プロジェクト設定、実行コンテキスト設定、動的モード設定の5層で構成可能な設定システム | oraios |
+| 基本ツール検索ファイル操作シェルを選択的に無効化 | 基本ツール（検索・ファイル操作・シェル）を選択的に無効化 | claude-code-workflow | search_for_pattern, replace_content, list_dir, find_file, re | oraios |
+| カテゴリ別サブエージェント体系の構築 | カテゴリ別サブエージェント体系の構築 | claude-code-workflow | 130種以上のサブエージェントを10カテゴリ（コア開発/言語専門家/インフラ/品質・セキュリティ/データAI/DX/特化 | VoltAgent |
+| ツール権限最小化設計 | ツール権限最小化設計 | claude-code-workflow | 各エージェントの `tools` フィールドで必要最小限のClaude Code組み込みツールのみ許可し、不要な操作を防 | VoltAgent |
+| 4種類のインストール方法提供 | 4種類のインストール方法提供 | claude-code-workflow | プラグイン/手動コピー/対話型インストーラー/curlスタンドアロンの4通りでエージェントを導入可能にする | VoltAgent |
+| 独立コンテキストウィンドウ活用 | 独立コンテキストウィンドウ活用 | claude-code-workflow | 各サブエージェントが独立したコンテキスト空間で動作し、メイン会話とタスク詳細を分離する | VoltAgent |
+| プロジェクトグローバル階層管理 | プロジェクト/グローバル階層管理 | claude-code-workflow | プロジェクト固有（.claude/agents/）とグローバル（~/.claude/agents/）の2階層でエージェン | VoltAgent |
