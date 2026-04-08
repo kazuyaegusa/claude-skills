@@ -13581,5 +13581,127 @@
     "source_url": "https://github.com/thedotmack/claude-mem",
     "source_author": "thedotmack",
     "added_at": "2026-04-08T00:04:15.761435+00:00"
+  },
+  {
+    "slug": "useagent-hookでエージェント状態を双方向制御",
+    "name": "useAgent Hookでエージェント状態を双方向制御",
+    "category": "agent-orchestration",
+    "description": "React Hook経由でエージェントの状態を読み書きし、UI更新をトリガーする",
+    "trigger_phrases": [
+      "ユーザーがUIで設定を変更したら即座にエージェントの推論をリセット・再開したい場合",
+      "useAgent Hookでエージェント状態を双方向制御",
+      "@copilotkit/react-core",
+      "React Hook経由でエージェントの状態を読み書きし、UI更新をトリガーする"
+    ],
+    "source_url": "https://github.com/CopilotKit/CopilotKit",
+    "source_author": "CopilotKit",
+    "added_at": "2026-04-08T00:07:24.265401+00:00"
+  },
+  {
+    "slug": "backend-tool-renderingでツール結果をuiコンポーネント化",
+    "name": "Backend Tool Renderingでツール結果をUIコンポーネント化",
+    "category": "agent-orchestration",
+    "description": "エージェントがバックエンドツールを呼び出した際、返り値をReactコンポーネントとしてクライアントでレンダリング",
+    "trigger_phrases": [
+      "APIから取得したデータをそのままUIに埋め込みたい、またはツール実行結果をユーザーに確認・編集させたい場合",
+      "Backend Tool Renderingでツール結果をUIコンポーネント化",
+      "@copilotkit/react-core",
+      "AG-UI Protocol"
+    ],
+    "source_url": "https://github.com/CopilotKit/CopilotKit",
+    "source_author": "CopilotKit",
+    "added_at": "2026-04-08T00:07:24.265401+00:00"
+  },
+  {
+    "slug": "generative-uiで動的にコンポーネント生成",
+    "name": "Generative UIで動的にコンポーネント生成",
+    "category": "agent-orchestration",
+    "description": "エージェントがユーザーの意図に基づき、実行時に新しいUIコンポーネントを生成・更新",
+    "trigger_phrases": [
+      "ユーザーのリクエストが多様でUI構造を事前に固定できない場合（例: 「売上推移を可視化して」→棒グラフか折れ線グラフか動的に決定）",
+      "Generative UIで動的にコンポーネント生成",
+      "@copilotkit/react-core",
+      "AG-UI Protocol",
+      "A2UI",
+      "MCP Apps",
+      "エージェントがユーザーの意図に基づき、実行時に新しいUIコンポーネントを生成・更新"
+    ],
+    "source_url": "https://github.com/CopilotKit/CopilotKit",
+    "source_author": "CopilotKit",
+    "added_at": "2026-04-08T00:07:24.265401+00:00"
+  },
+  {
+    "slug": "npx-copilotkit-init-で既存プロジェクトに統合",
+    "name": "npx copilotkit init で既存プロジェクトに統合",
+    "category": "agent-orchestration",
+    "description": "既存のReactプロジェクトにCopilotKitを自動セットアップ",
+    "trigger_phrases": [
+      "既存のReactアプリにAIエージェント機能を後付けしたい場合",
+      "npx copilotkit init で既存プロジェクトに統合",
+      "npx",
+      "@copilotkit/react-core",
+      "既存のReactプロジェクトにCopilotKitを自動セットアップ"
+    ],
+    "source_url": "https://github.com/CopilotKit/CopilotKit",
+    "source_author": "CopilotKit",
+    "added_at": "2026-04-08T00:07:24.265401+00:00"
+  },
+  {
+    "slug": "fastmcpデコレータでmcpツールを自動生成する",
+    "name": "FastMCPデコレータでMCPツールを自動生成する",
+    "category": "other",
+    "description": "Pythonの通常関数に@mcp.toolデコレータを付けるだけで、MCPプロトコル準拠のツールとして公開できる",
+    "trigger_phrases": [
+      "PythonでMCPサーバーを実装する全てのケース（特に既存関数の再利用時）",
+      "FastMCPデコレータでMCPツールを自動生成する",
+      "fastmcp（uv pip install fastmcp推奨）"
+    ],
+    "source_url": "https://github.com/PrefectHQ/fastmcp",
+    "source_author": "PrefectHQ",
+    "added_at": "2026-04-08T00:08:34.272918+00:00"
+  },
+  {
+    "slug": "uvパッケージマネージャーでfastmcpを高速インストールする",
+    "name": "uvパッケージマネージャーでFastMCPを高速インストールする",
+    "category": "dev-tool",
+    "description": "Rust製の高速Pythonパッケージマネージャーuvを使ってFastMCPをインストールする",
+    "trigger_phrases": [
+      "FastMCPを初めてインストールする時、または最新版にアップグレードする時",
+      "uvパッケージマネージャーでFastMCPを高速インストールする",
+      "uv（Astral製）",
+      "Rust製の高速Pythonパッケージマネージャーuvを使ってFastMCPをインストールする"
+    ],
+    "source_url": "https://github.com/PrefectHQ/fastmcp",
+    "source_author": "PrefectHQ",
+    "added_at": "2026-04-08T00:08:34.272918+00:00"
+  },
+  {
+    "slug": "fastmcpの3本柱アーキテクチャを活用する",
+    "name": "FastMCPの3本柱アーキテクチャを活用する",
+    "category": "dev-tool",
+    "description": "Server（ツール提供）、Client（MCP接続）、App（対話UI）の3機能を統合的に使う",
+    "trigger_phrases": [
+      "単なるツール提供を超えて、複数MCPサーバーを統合したり、ユーザー操作UIを提供したい時",
+      "FastMCPの3本柱アーキテクチャを活用する",
+      "fastmcp",
+      "Server（ツール提供）、Client（MCP接続）、App（対話UI）の3機能を統合的に使う"
+    ],
+    "source_url": "https://github.com/PrefectHQ/fastmcp",
+    "source_author": "PrefectHQ",
+    "added_at": "2026-04-08T00:08:34.272918+00:00"
+  },
+  {
+    "slug": "prefect-horizonで無料ホスティングを利用する",
+    "name": "Prefect Horizonで無料ホスティングを利用する",
+    "category": "other",
+    "description": "FastMCPで作ったサーバーをPrefect Horizon（Prefect社の提供するホスティング）に無料デプロイする",
+    "trigger_phrases": [
+      "プロトタイプを本番化したい時、チームで共有可能なMCPサーバーを立てたい時",
+      "Prefect Horizonで無料ホスティングを利用する",
+      "Prefect Horizon（無料プラン）"
+    ],
+    "source_url": "https://github.com/PrefectHQ/fastmcp",
+    "source_author": "PrefectHQ",
+    "added_at": "2026-04-08T00:08:34.272918+00:00"
   }
 ]

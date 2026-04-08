@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 939 スキル
+合計: 947 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -943,3 +943,11 @@
 | hybrid-searchfts5-chroma統合 | Hybrid Search（FTS5 + Chroma統合） | claude-code-workflow | SQLite FTS5のキーワード検索とChromaベクトルDBのセマンティック検索を組み合わせ、ハイブリッド検索を実現 | thedotmack |
 | worker-serviceによるhttp-api化 | Worker ServiceによるHTTP API化 | claude-code-workflow | Bunで常駐HTTPサーバー（port 37777）を起動し、フックスクリプトからHTTP経由でメモリ操作する | thedotmack |
 | beta-channelendless-mode | Beta Channel（Endless Mode） | claude-code-workflow | 生体模倣メモリアーキテクチャで超長期セッション（数時間〜数日）を実現する実験機能 | thedotmack |
+| useagent-hookでエージェント状態を双方向制御 | useAgent Hookでエージェント状態を双方向制御 | agent-orchestration | React Hook経由でエージェントの状態を読み書きし、UI更新をトリガーする | CopilotKit |
+| backend-tool-renderingでツール結果をuiコンポーネント化 | Backend Tool Renderingでツール結果をUIコンポーネント化 | agent-orchestration | エージェントがバックエンドツールを呼び出した際、返り値をReactコンポーネントとしてクライアントでレンダリング | CopilotKit |
+| generative-uiで動的にコンポーネント生成 | Generative UIで動的にコンポーネント生成 | agent-orchestration | エージェントがユーザーの意図に基づき、実行時に新しいUIコンポーネントを生成・更新 | CopilotKit |
+| npx-copilotkit-init-で既存プロジェクトに統合 | npx copilotkit init で既存プロジェクトに統合 | agent-orchestration | 既存のReactプロジェクトにCopilotKitを自動セットアップ | CopilotKit |
+| fastmcpデコレータでmcpツールを自動生成する | FastMCPデコレータでMCPツールを自動生成する | other | Pythonの通常関数に@mcp.toolデコレータを付けるだけで、MCPプロトコル準拠のツールとして公開できる | PrefectHQ |
+| uvパッケージマネージャーでfastmcpを高速インストールする | uvパッケージマネージャーでFastMCPを高速インストールする | dev-tool | Rust製の高速Pythonパッケージマネージャーuvを使ってFastMCPをインストールする | PrefectHQ |
+| fastmcpの3本柱アーキテクチャを活用する | FastMCPの3本柱アーキテクチャを活用する | dev-tool | Server（ツール提供）、Client（MCP接続）、App（対話UI）の3機能を統合的に使う | PrefectHQ |
+| prefect-horizonで無料ホスティングを利用する | Prefect Horizonで無料ホスティングを利用する | other | FastMCPで作ったサーバーをPrefect Horizon（Prefect社の提供するホスティング）に無料デプロイす | PrefectHQ |
