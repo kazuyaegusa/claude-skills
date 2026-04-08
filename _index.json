@@ -13363,5 +13363,223 @@
     "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
     "source_author": "VoltAgent",
     "added_at": "2026-04-07T00:14:11.537898+00:00"
+  },
+  {
+    "slug": "npxによるゼロインストール実行",
+    "name": "npxによるゼロインストール実行",
+    "category": "agent-orchestration",
+    "description": "npmグローバルインストール不要で、npx経由で即座にGemini CLIを起動する",
+    "trigger_phrases": [
+      "初回試用時、複数バージョン併用時、CI環境での一時実行時",
+      "npxによるゼロインストール実行",
+      "npx",
+      "@google/gemini-cli",
+      "npmグローバルインストール不要で、npx経由で即座にGemini CLIを起動する"
+    ],
+    "source_url": "https://github.com/google-gemini/gemini-cli",
+    "source_author": "google-gemini",
+    "added_at": "2026-04-08T00:02:27.914473+00:00"
+  },
+  {
+    "slug": "google-oauth認証による無料枠活用",
+    "name": "Google OAuth認証による無料枠活用",
+    "category": "agent-orchestration",
+    "description": "Gemini API Keyの代わりにGoogle アカウントでOAuth認証し、無料枠（60req/min, 1000req/day）を利用する",
+    "trigger_phrases": [
+      "個人開発、Gemini Code Assist License保有組織、API鍵管理を避けたい場合",
+      "Google OAuth認証による無料枠活用",
+      "Google OAuth",
+      "Gemini API"
+    ],
+    "source_url": "https://github.com/google-gemini/gemini-cli",
+    "source_author": "google-gemini",
+    "added_at": "2026-04-08T00:02:27.914473+00:00"
+  },
+  {
+    "slug": "google検索グラウンディングによるリアルタイム情報統合",
+    "name": "Google検索グラウンディングによるリアルタイム情報統合",
+    "category": "agent-orchestration",
+    "description": "クエリ実行時にGoogle検索結果を自動参照し、最新情報を組み込んだ回答を生成する",
+    "trigger_phrases": [
+      "最新ライブラリのAPI仕様確認、トレンド技術の調査、公式ドキュメント参照が必要な場合",
+      "Google検索グラウンディングによるリアルタイム情報統合",
+      "Google Search API",
+      "Gemini API grounding機能",
+      "クエリ実行時にGoogle検索結果を自動参照し、最新情報を組み込んだ回答を生成する"
+    ],
+    "source_url": "https://github.com/google-gemini/gemini-cli",
+    "source_author": "google-gemini",
+    "added_at": "2026-04-08T00:02:27.914473+00:00"
+  },
+  {
+    "slug": "非インタラクティブモードheadlessでのスクリプト実行",
+    "name": "非インタラクティブモード（headless）でのスクリプト実行",
+    "category": "agent-orchestration",
+    "description": "`-p` フラグでプロンプトを渡し、Gemini CLIを非対話モードで実行し、JSON出力を得る",
+    "trigger_phrases": [
+      "自動テスト生成、定期レポート生成、CI/CDパイプライン組み込み時",
+      "非インタラクティブモード（headless）でのスクリプト実行",
+      "gemini CLI",
+      "jq（JSON処理）",
+      "`-p` フラグでプロンプトを渡し、Gemini CLIを非対話モードで実行し、JSON出力を得る"
+    ],
+    "source_url": "https://github.com/google-gemini/gemini-cli",
+    "source_author": "google-gemini",
+    "added_at": "2026-04-08T00:02:27.914473+00:00"
+  },
+  {
+    "slug": "mcp-server統合によるカスタムツール追加",
+    "name": "MCP Server統合によるカスタムツール追加",
+    "category": "agent-orchestration",
+    "description": "~/.gemini/settings.json でMCPサーバーを設定し、Slack/GitHub/DB等の外部サービスをGemini CLIから操作可能にする",
+    "trigger_phrases": [
+      "Slack通知自動化、GitHub操作、DB クエリ、メディア生成（Imagen/Veo/Lyria）統合時",
+      "MCP Server統合によるカスタムツール追加",
+      "MCP (Model Context Protocol)",
+      "各種MCPサーバー実装"
+    ],
+    "source_url": "https://github.com/google-gemini/gemini-cli",
+    "source_author": "google-gemini",
+    "added_at": "2026-04-08T00:02:27.914473+00:00"
+  },
+  {
+    "slug": "github-action統合による自動prレビュー",
+    "name": "GitHub Action統合による自動PRレビュー",
+    "category": "agent-orchestration",
+    "description": "Gemini CLI GitHub Actionを使い、PR作成時に自動でコードレビュー・Issue分類を実行する",
+    "trigger_phrases": [
+      "チーム開発でのPRレビュー自動化、Issue自動ラベリング、定期的なコード品質チェック時",
+      "GitHub Action統合による自動PRレビュー",
+      "GitHub Actions",
+      "google-github-actions/run-gemini-cli"
+    ],
+    "source_url": "https://github.com/google-gemini/gemini-cli",
+    "source_author": "google-gemini",
+    "added_at": "2026-04-08T00:02:27.914473+00:00"
+  },
+  {
+    "slug": "geminimdによるプロジェクト固有文脈の永続化",
+    "name": "GEMINI.mdによるプロジェクト固有文脈の永続化",
+    "category": "agent-orchestration",
+    "description": "プロジェクトルートに `GEMINI.md` を配置し、常に参照される文脈・ルール・ガイドラインを記述する",
+    "trigger_phrases": [
+      "チーム開発、複数人での一貫性確保、プロジェクト固有ルールの強制時",
+      "GEMINI.mdによるプロジェクト固有文脈の永続化",
+      "Gemini CLI"
+    ],
+    "source_url": "https://github.com/google-gemini/gemini-cli",
+    "source_author": "google-gemini",
+    "added_at": "2026-04-08T00:02:27.914473+00:00"
+  },
+  {
+    "slug": "チェックポイント機能による長期セッションの保存再開",
+    "name": "チェックポイント機能による長期セッションの保存・再開",
+    "category": "agent-orchestration",
+    "description": "対話セッションを途中保存し、後から同じ文脈で再開する",
+    "trigger_phrases": [
+      "長期リファクタリング、大規模設計議論、段階的実装時",
+      "チェックポイント機能による長期セッションの保存・再開",
+      "Gemini CLI",
+      "対話セッションを途中保存し、後から同じ文脈で再開する"
+    ],
+    "source_url": "https://github.com/google-gemini/gemini-cli",
+    "source_author": "google-gemini",
+    "added_at": "2026-04-08T00:02:27.914473+00:00"
+  },
+  {
+    "slug": "リリースチャンネルnightlypreviewstableの使い分け",
+    "name": "リリースチャンネル（nightly/preview/stable）の使い分け",
+    "category": "agent-orchestration",
+    "description": "npm タグを指定して、nightly/preview/stable版を選択的にインストール・テストする",
+    "trigger_phrases": [
+      "新機能テスト時はnightly、本番環境はstable、早期採用者はpreview",
+      "リリースチャンネル（nightly/preview/stable）の使い分け",
+      "npm"
+    ],
+    "source_url": "https://github.com/google-gemini/gemini-cli",
+    "source_author": "google-gemini",
+    "added_at": "2026-04-08T00:02:27.914473+00:00"
+  },
+  {
+    "slug": "ライフサイクルフック駆動のobservation記録",
+    "name": "ライフサイクルフック駆動のObservation記録",
+    "category": "claude-code-workflow",
+    "description": "Claude CodeのSessionStart/UserPromptSubmit/PostToolUse/Stop/SessionEndの5つのフックで、全ツール使用を自動記録する",
+    "trigger_phrases": [
+      "Claude Codeでプロジェクト開発を継続的に行う全ての場合（デフォルトで有効化すべき）",
+      "ライフサイクルフック駆動のObservation記録",
+      "Claude Agent SDK（フック機構）",
+      "Bun（Worker Service管理）",
+      "SQLite 3（永続化）"
+    ],
+    "source_url": "https://github.com/thedotmack/claude-mem",
+    "source_author": "thedotmack",
+    "added_at": "2026-04-08T00:04:15.761435+00:00"
+  },
+  {
+    "slug": "progressive-disclosure3層検索ワークフロー",
+    "name": "Progressive Disclosure（3層検索ワークフロー）",
+    "category": "claude-code-workflow",
+    "description": "検索を3段階に分け、トークンコストを10分の1に削減しながら必要な情報のみ取得する",
+    "trigger_phrases": [
+      "過去のプロジェクト履歴から特定の情報を検索する際（mem-searchスキル使用時）",
+      "Progressive Disclosure（3層検索ワークフロー）",
+      "SQLite FTS5（全文検索）",
+      "Chroma Vector Database（セマンティック検索）",
+      "MCP Tools（search/timeline/get_observations）",
+      "検索を3段階に分け、トークンコストを10分の1に削減しながら必要な情報のみ取得する"
+    ],
+    "source_url": "https://github.com/thedotmack/claude-mem",
+    "source_author": "thedotmack",
+    "added_at": "2026-04-08T00:04:15.761435+00:00"
+  },
+  {
+    "slug": "hybrid-searchfts5-chroma統合",
+    "name": "Hybrid Search（FTS5 + Chroma統合）",
+    "category": "claude-code-workflow",
+    "description": "SQLite FTS5のキーワード検索とChromaベクトルDBのセマンティック検索を組み合わせ、ハイブリッド検索を実現する",
+    "trigger_phrases": [
+      "「認証周りのバグ修正」のような自然言語クエリで、過去の関連コードや議論を広く拾いたい場合",
+      "Hybrid Search（FTS5 + Chroma統合）",
+      "Chroma",
+      "uv（Python package manager）",
+      "SQLite FTS5"
+    ],
+    "source_url": "https://github.com/thedotmack/claude-mem",
+    "source_author": "thedotmack",
+    "added_at": "2026-04-08T00:04:15.761435+00:00"
+  },
+  {
+    "slug": "worker-serviceによるhttp-api化",
+    "name": "Worker ServiceによるHTTP API化",
+    "category": "claude-code-workflow",
+    "description": "Bunで常駐HTTPサーバー（port 37777）を起動し、フックスクリプトからHTTP経由でメモリ操作する",
+    "trigger_phrases": [
+      "Claude Codeインストール時（自動セットアップ）。再起動時やWorkerクラッシュ時は手動再起動が必要",
+      "Worker ServiceによるHTTP API化",
+      "Bun",
+      "SQLite",
+      "Chroma",
+      "Claude Agent SDK"
+    ],
+    "source_url": "https://github.com/thedotmack/claude-mem",
+    "source_author": "thedotmack",
+    "added_at": "2026-04-08T00:04:15.761435+00:00"
+  },
+  {
+    "slug": "beta-channelendless-mode",
+    "name": "Beta Channel（Endless Mode）",
+    "category": "claude-code-workflow",
+    "description": "生体模倣メモリアーキテクチャで超長期セッション（数時間〜数日）を実現する実験機能",
+    "trigger_phrases": [
+      "1つのタスクが数時間〜数日続く大規模リファクタリングや調査タスクで、セッションを切らずに継続したい場合",
+      "Beta Channel（Endless Mode）",
+      "Beta版Worker",
+      "短期メモリバッファ（実装詳細は非公開）",
+      "生体模倣メモリアーキテクチャで超長期セッション（数時間〜数日）を実現する実験機能"
+    ],
+    "source_url": "https://github.com/thedotmack/claude-mem",
+    "source_author": "thedotmack",
+    "added_at": "2026-04-08T00:04:15.761435+00:00"
   }
 ]

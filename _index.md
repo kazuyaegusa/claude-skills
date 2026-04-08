@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 925 スキル
+合計: 939 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -929,3 +929,17 @@
 | 4種類のインストール方法提供 | 4種類のインストール方法提供 | claude-code-workflow | プラグイン/手動コピー/対話型インストーラー/curlスタンドアロンの4通りでエージェントを導入可能にする | VoltAgent |
 | 独立コンテキストウィンドウ活用 | 独立コンテキストウィンドウ活用 | claude-code-workflow | 各サブエージェントが独立したコンテキスト空間で動作し、メイン会話とタスク詳細を分離する | VoltAgent |
 | プロジェクトグローバル階層管理 | プロジェクト/グローバル階層管理 | claude-code-workflow | プロジェクト固有（.claude/agents/）とグローバル（~/.claude/agents/）の2階層でエージェン | VoltAgent |
+| npxによるゼロインストール実行 | npxによるゼロインストール実行 | agent-orchestration | npmグローバルインストール不要で、npx経由で即座にGemini CLIを起動する | google-gemini |
+| google-oauth認証による無料枠活用 | Google OAuth認証による無料枠活用 | agent-orchestration | Gemini API Keyの代わりにGoogle アカウントでOAuth認証し、無料枠（60req/min, 1000 | google-gemini |
+| google検索グラウンディングによるリアルタイム情報統合 | Google検索グラウンディングによるリアルタイム情報統合 | agent-orchestration | クエリ実行時にGoogle検索結果を自動参照し、最新情報を組み込んだ回答を生成する | google-gemini |
+| 非インタラクティブモードheadlessでのスクリプト実行 | 非インタラクティブモード（headless）でのスクリプト実行 | agent-orchestration | `-p` フラグでプロンプトを渡し、Gemini CLIを非対話モードで実行し、JSON出力を得る | google-gemini |
+| mcp-server統合によるカスタムツール追加 | MCP Server統合によるカスタムツール追加 | agent-orchestration | ~/.gemini/settings.json でMCPサーバーを設定し、Slack/GitHub/DB等の外部サービス | google-gemini |
+| github-action統合による自動prレビュー | GitHub Action統合による自動PRレビュー | agent-orchestration | Gemini CLI GitHub Actionを使い、PR作成時に自動でコードレビュー・Issue分類を実行する | google-gemini |
+| geminimdによるプロジェクト固有文脈の永続化 | GEMINI.mdによるプロジェクト固有文脈の永続化 | agent-orchestration | プロジェクトルートに `GEMINI.md` を配置し、常に参照される文脈・ルール・ガイドラインを記述する | google-gemini |
+| チェックポイント機能による長期セッションの保存再開 | チェックポイント機能による長期セッションの保存・再開 | agent-orchestration | 対話セッションを途中保存し、後から同じ文脈で再開する | google-gemini |
+| リリースチャンネルnightlypreviewstableの使い分け | リリースチャンネル（nightly/preview/stable）の使い分け | agent-orchestration | npm タグを指定して、nightly/preview/stable版を選択的にインストール・テストする | google-gemini |
+| ライフサイクルフック駆動のobservation記録 | ライフサイクルフック駆動のObservation記録 | claude-code-workflow | Claude CodeのSessionStart/UserPromptSubmit/PostToolUse/Stop/S | thedotmack |
+| progressive-disclosure3層検索ワークフロー | Progressive Disclosure（3層検索ワークフロー） | claude-code-workflow | 検索を3段階に分け、トークンコストを10分の1に削減しながら必要な情報のみ取得する | thedotmack |
+| hybrid-searchfts5-chroma統合 | Hybrid Search（FTS5 + Chroma統合） | claude-code-workflow | SQLite FTS5のキーワード検索とChromaベクトルDBのセマンティック検索を組み合わせ、ハイブリッド検索を実現 | thedotmack |
+| worker-serviceによるhttp-api化 | Worker ServiceによるHTTP API化 | claude-code-workflow | Bunで常駐HTTPサーバー（port 37777）を起動し、フックスクリプトからHTTP経由でメモリ操作する | thedotmack |
+| beta-channelendless-mode | Beta Channel（Endless Mode） | claude-code-workflow | 生体模倣メモリアーキテクチャで超長期セッション（数時間〜数日）を実現する実験機能 | thedotmack |
