@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 947 スキル
+合計: 966 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -951,3 +951,22 @@
 | uvパッケージマネージャーでfastmcpを高速インストールする | uvパッケージマネージャーでFastMCPを高速インストールする | dev-tool | Rust製の高速Pythonパッケージマネージャーuvを使ってFastMCPをインストールする | PrefectHQ |
 | fastmcpの3本柱アーキテクチャを活用する | FastMCPの3本柱アーキテクチャを活用する | dev-tool | Server（ツール提供）、Client（MCP接続）、App（対話UI）の3機能を統合的に使う | PrefectHQ |
 | prefect-horizonで無料ホスティングを利用する | Prefect Horizonで無料ホスティングを利用する | other | FastMCPで作ったサーバーをPrefect Horizon（Prefect社の提供するホスティング）に無料デプロイす | PrefectHQ |
+| subagentカタログの9カテゴリ分類設計 | subagentカタログの9カテゴリ分類設計 | claude-code-workflow | 130以上のsubagentを機能軸で9つのカテゴリ（Core Development, Language Specia | VoltAgent |
+| 4種のインストール方法提供 | 4種のインストール方法提供 | claude-code-workflow | plugin/manual/interactive installer/agent installerの4通りの導入経路 | VoltAgent |
+| subagent標準テンプレート定義 | subagent標準テンプレート定義 | claude-code-workflow | 全agentに共通のYAML frontmatter（name/description/tools/model）を強制し | VoltAgent |
+| smart-model-routingタスク複雑度別モデル割り当て | Smart Model Routing（タスク複雑度別モデル割り当て） | claude-code-workflow | agentのタスク特性に応じてopus（深い推論）/sonnet（通常コーディング）/haiku（軽量タスク）を使い分け | VoltAgent |
+| tool権限の最小化原則 | Tool権限の最小化原則 | claude-code-workflow | 各agentに必要最小限のClaude Code toolsのみを割り当て、不要な変更・実行を防ぐ | VoltAgent |
+| subagent-catalogスキルの提供 | subagent-catalogスキルの提供 | claude-code-workflow | Claude Code内から `/subagent-catalog:search <query>` でagentを検索・ | VoltAgent |
+| git-worktreeによるエージェント分離実行 | git worktreeによるエージェント分離実行 | claude-code-workflow | 1つのリポジトリから複数のworktreeを作成し、各エージェントを独立した作業ディレクトリで実行する | superset-sh |
+| workspace-preset自動セットアップ | workspace preset自動セットアップ | agent-orchestration | .superset/config.json でworktree作成時の環境構築スクリプトを定義し、依存関係インストールや | superset-sh |
+| エージェント状態一元モニタリング | エージェント状態一元モニタリング | agent-orchestration | 複数エージェントの実行状態（稼働中/待機中/レビュー待ち）を1画面で監視し、通知でレビュータイミングを把握する | superset-sh |
+| cli-agent抽象化レイヤー | CLI agent抽象化レイヤー | claude-code-workflow | 任意のCLIベースエージェント（Claude Code, Codex, Cursor等）を統一インターフェースで実行でき | superset-sh |
+| 既存スキルをカタログから検索導入する | 既存スキルをカタログから検索・導入する | claude-code-workflow | awesome-claude-skillsリポジトリから目的に合うスキルを見つけ、自プロジェクトにインストールする | BehiSecc |
+| スキルをカテゴリ別に体系化する | スキルをカテゴリ別に体系化する | claude-code-workflow | スキルをDocument Skills、Development、Data & Analysis、Security等の機能 | BehiSecc |
+| スキル定義をskillmd形式で記述する | スキル定義をSKILL.md形式で記述する | claude-code-workflow | Claude Codeが読み込める標準フォーマット（SKILL.md）で、タスクの手順・ツール・制約を構造化記述する | BehiSecc |
+| 複数スキルをプラグインコレクションとして配布する | 複数スキルをプラグイン・コレクションとして配布する | claude-code-workflow | 関連するスキルをまとめて1つのリポジトリ・npm パッケージとして提供し、ワンコマンドでインストール可能にする | BehiSecc |
+| スキルマーケットプレイスを検索エンジン化する | スキルマーケットプレイスを検索エンジン化する | claude-code-workflow | 69,000以上のスキルをインデックス化し、キーワード検索・フィルタリング・インストールを一元化したWebサイトを提供す | BehiSecc |
+| 内蔵ブラウザ通信傍受による認証トークン自動取得 | 内蔵ブラウザ通信傍受による認証トークン自動取得 | dev-tool | WeChat内蔵ブラウザで記事を開いた際の通信を傍受し、APIリクエストに含まれる認証トークン（秘钥）を自動抽出する | qiye45 |
+| 複数出力形式への変換パイプライン実装 | 複数出力形式への変換パイプライン実装 | automation-pipeline | 取得したWeChat記事を HTML/MHTML/Markdown/PDF/DOCX/CSV の6形式に変換可能にする | qiye45 |
+| mcpmodel-context-protocolサーバー実装 | MCP（Model Context Protocol）サーバー実装 | claude-code-workflow | ダウンローダーをMCPサーバーとして公開し、Claude等のAIエージェントからツールとして呼び出し可能にする | qiye45 |
+| 段階的ダウンロード制御と既存ファイルスキップ | 段階的ダウンロード制御と既存ファイルスキップ | other | ページ単位での一時停止・再開、ダウンロード済み記事の自動スキップ、日付範囲指定による部分取得を実装 | qiye45 |

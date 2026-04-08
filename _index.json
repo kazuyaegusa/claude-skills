@@ -13703,5 +13703,294 @@
     "source_url": "https://github.com/PrefectHQ/fastmcp",
     "source_author": "PrefectHQ",
     "added_at": "2026-04-08T00:08:34.272918+00:00"
+  },
+  {
+    "slug": "subagentカタログの9カテゴリ分類設計",
+    "name": "subagentカタログの9カテゴリ分類設計",
+    "category": "claude-code-workflow",
+    "description": "130以上のsubagentを機能軸で9つのカテゴリ（Core Development, Language Specialists, Infrastructure, Quality & Security, Data & AI, Developer Experience, Specialized Domains, Business & Product, Meta & Orchestration）に分類し、それぞれをプラグインパッケージとして配布する",
+    "trigger_phrases": [
+      "大量のsubagentを管理・配布する必要があるとき",
+      "subagentカタログの9カテゴリ分類設計",
+      "Claude Code plugin marketplace",
+      "GitHub repository"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-04-08T00:10:18.833130+00:00"
+  },
+  {
+    "slug": "4種のインストール方法提供",
+    "name": "4種のインストール方法提供",
+    "category": "claude-code-workflow",
+    "description": "plugin/manual/interactive installer/agent installerの4通りの導入経路を用意し、ユーザーの習熟度・環境に応じて選択可能にする",
+    "trigger_phrases": [
+      "多様なユーザー層に対してsubagentを配布するとき",
+      "4種のインストール方法提供",
+      "claude CLI",
+      "curl",
+      "bash script"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-04-08T00:10:18.833130+00:00"
+  },
+  {
+    "slug": "subagent標準テンプレート定義",
+    "name": "subagent標準テンプレート定義",
+    "category": "claude-code-workflow",
+    "description": "全agentに共通のYAML frontmatter（name/description/tools/model）を強制し、役割・起動条件・ツール権限・モデル選択を明示する",
+    "trigger_phrases": [
+      "新しいsubagentを作成するとき、または既存agentを標準化するとき",
+      "subagent標準テンプレート定義"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-04-08T00:10:18.833130+00:00"
+  },
+  {
+    "slug": "smart-model-routingタスク複雑度別モデル割り当て",
+    "name": "Smart Model Routing（タスク複雑度別モデル割り当て）",
+    "category": "claude-code-workflow",
+    "description": "agentのタスク特性に応じてopus（深い推論）/sonnet（通常コーディング）/haiku（軽量タスク）を使い分ける",
+    "trigger_phrases": [
+      "コスト最適化しつつ品質を担保したいとき",
+      "Smart Model Routing（タスク複雑度別モデル割り当て）",
+      "Claude API（opus/sonnet/haiku）"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-04-08T00:10:18.833130+00:00"
+  },
+  {
+    "slug": "tool権限の最小化原則",
+    "name": "Tool権限の最小化原則",
+    "category": "claude-code-workflow",
+    "description": "各agentに必要最小限のClaude Code toolsのみを割り当て、不要な変更・実行を防ぐ",
+    "trigger_phrases": [
+      "agentの責務を明確にし、誤操作を防ぎたいとき",
+      "Tool権限の最小化原則",
+      "Claude Code tools (Read, Write, Edit, Bash, Glob, Grep, WebFetch, WebSearch)",
+      "各agentに必要最小限のClaude Code toolsのみを割り当て、不要な変更・実行を防ぐ"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-04-08T00:10:18.833130+00:00"
+  },
+  {
+    "slug": "subagent-catalogスキルの提供",
+    "name": "subagent-catalogスキルの提供",
+    "category": "claude-code-workflow",
+    "description": "Claude Code内から `/subagent-catalog:search <query>` でagentを検索・取得できるスキルを提供",
+    "trigger_phrases": [
+      "Claude Code内で効率的にagentを探したいとき",
+      "subagent-catalogスキルの提供",
+      "Claude Code slash commands"
+    ],
+    "source_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "source_author": "VoltAgent",
+    "added_at": "2026-04-08T00:10:18.833130+00:00"
+  },
+  {
+    "slug": "git-worktreeによるエージェント分離実行",
+    "name": "git worktreeによるエージェント分離実行",
+    "category": "claude-code-workflow",
+    "description": "1つのリポジトリから複数のworktreeを作成し、各エージェントを独立した作業ディレクトリで実行する",
+    "trigger_phrases": [
+      "2つ以上のタスクを並列実行したい時、エージェントの待ち時間中に別作業をしたい時",
+      "git worktreeによるエージェント分離実行",
+      "git worktree",
+      "Superset (オーケストレーター)",
+      "Claude Code / Codex / Cursor Agent等"
+    ],
+    "source_url": "https://github.com/superset-sh/superset",
+    "source_author": "superset-sh",
+    "added_at": "2026-04-08T00:11:38.846724+00:00"
+  },
+  {
+    "slug": "workspace-preset自動セットアップ",
+    "name": "workspace preset自動セットアップ",
+    "category": "agent-orchestration",
+    "description": ".superset/config.json でworktree作成時の環境構築スクリプトを定義し、依存関係インストールや環境変数コピーを自動化する",
+    "trigger_phrases": [
+      "複数worktreeで同じ環境構築手順を繰り返す場合、チームで標準化したい場合",
+      "workspace preset自動セットアップ",
+      "bash/sh",
+      "bun / npm / yarn等のパッケージマネージャ"
+    ],
+    "source_url": "https://github.com/superset-sh/superset",
+    "source_author": "superset-sh",
+    "added_at": "2026-04-08T00:11:38.846724+00:00"
+  },
+  {
+    "slug": "エージェント状態一元モニタリング",
+    "name": "エージェント状態一元モニタリング",
+    "category": "agent-orchestration",
+    "description": "複数エージェントの実行状態（稼働中/待機中/レビュー待ち）を1画面で監視し、通知でレビュータイミングを把握する",
+    "trigger_phrases": [
+      "3つ以上のエージェントを同時稼働させる場合、複数プロジェクトを横断管理する場合",
+      "エージェント状態一元モニタリング",
+      "Superset UI",
+      "Electron (デスクトップアプリ基盤)",
+      "tRPC (フロントエンド・バックエンド通信)"
+    ],
+    "source_url": "https://github.com/superset-sh/superset",
+    "source_author": "superset-sh",
+    "added_at": "2026-04-08T00:11:38.846724+00:00"
+  },
+  {
+    "slug": "cli-agent抽象化レイヤー",
+    "name": "CLI agent抽象化レイヤー",
+    "category": "claude-code-workflow",
+    "description": "任意のCLIベースエージェント（Claude Code, Codex, Cursor等）を統一インターフェースで実行できるようにする",
+    "trigger_phrases": [
+      "複数のエージェントを使い分けたい場合、エージェントの乗り換えを検討する場合",
+      "CLI agent抽象化レイヤー",
+      "node-pty / xterm.js (ターミナルエミュレーション)",
+      "各エージェントのCLI"
+    ],
+    "source_url": "https://github.com/superset-sh/superset",
+    "source_author": "superset-sh",
+    "added_at": "2026-04-08T00:11:38.846724+00:00"
+  },
+  {
+    "slug": "既存スキルをカタログから検索導入する",
+    "name": "既存スキルをカタログから検索・導入する",
+    "category": "claude-code-workflow",
+    "description": "awesome-claude-skillsリポジトリから目的に合うスキルを見つけ、自プロジェクトにインストールする",
+    "trigger_phrases": [
+      "新しいタスク領域に取り組む前、または既知の問題に対するベストプラクティスを探す時",
+      "既存スキルをカタログから検索・導入する",
+      "GitHub",
+      "git",
+      "Claude Code /install-skill コマンド"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-04-08T00:13:00.108699+00:00"
+  },
+  {
+    "slug": "スキルをカテゴリ別に体系化する",
+    "name": "スキルをカテゴリ別に体系化する",
+    "category": "claude-code-workflow",
+    "description": "スキルをDocument Skills、Development、Data & Analysis、Security等の機能カテゴリに分類し、README上で一覧化する",
+    "trigger_phrases": [
+      "新しいスキルをカタログに追加する時、または既存カタログを整理する時",
+      "スキルをカテゴリ別に体系化する",
+      "Markdown",
+      "GitHub"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-04-08T00:13:00.108699+00:00"
+  },
+  {
+    "slug": "スキル定義をskillmd形式で記述する",
+    "name": "スキル定義をSKILL.md形式で記述する",
+    "category": "claude-code-workflow",
+    "description": "Claude Codeが読み込める標準フォーマット（SKILL.md）で、タスクの手順・ツール・制約を構造化記述する",
+    "trigger_phrases": [
+      "チーム内で繰り返し行う作業をスキルとして標準化したい時",
+      "スキル定義をSKILL.md形式で記述する",
+      "Markdown",
+      "YAML frontmatter",
+      "Claude Code Skill仕様"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-04-08T00:13:00.108699+00:00"
+  },
+  {
+    "slug": "複数スキルをプラグインコレクションとして配布する",
+    "name": "複数スキルをプラグイン・コレクションとして配布する",
+    "category": "claude-code-workflow",
+    "description": "関連するスキルをまとめて1つのリポジトリ・npm パッケージとして提供し、ワンコマンドでインストール可能にする",
+    "trigger_phrases": [
+      "特定領域（例: セキュリティ、プロダクトマネジメント）の一連のスキルを提供したい時",
+      "複数スキルをプラグイン・コレクションとして配布する",
+      "npm",
+      "pip",
+      "GitHub",
+      "Claude Code plugin spec"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-04-08T00:13:00.108699+00:00"
+  },
+  {
+    "slug": "スキルマーケットプレイスを検索エンジン化する",
+    "name": "スキルマーケットプレイスを検索エンジン化する",
+    "category": "claude-code-workflow",
+    "description": "69,000以上のスキルをインデックス化し、キーワード検索・フィルタリング・インストールを一元化したWebサイトを提供する",
+    "trigger_phrases": [
+      "大規模なスキルカタログを構築・運営する時",
+      "スキルマーケットプレイスを検索エンジン化する",
+      "GitHub API",
+      "全文検索エンジン（Algolia, Elasticsearchなど）",
+      "Webフレームワーク"
+    ],
+    "source_url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "source_author": "BehiSecc",
+    "added_at": "2026-04-08T00:13:00.108699+00:00"
+  },
+  {
+    "slug": "内蔵ブラウザ通信傍受による認証トークン自動取得",
+    "name": "内蔵ブラウザ通信傍受による認証トークン自動取得",
+    "category": "dev-tool",
+    "description": "WeChat内蔵ブラウザで記事を開いた際の通信を傍受し、APIリクエストに含まれる認証トークン（秘钥）を自動抽出する",
+    "trigger_phrases": [
+      "証明書インストールやAPI認証情報が公開されていないプラットフォームから自動的にコンテンツを取得したい場合",
+      "内蔵ブラウザ通信傍受による認証トークン自動取得",
+      "HTTP通信傍受ライブラリ（実装詳細は不明だが、mitmproxy/Wireshark系統の可能性）",
+      "クリップボード監視（自動監听剪切板）"
+    ],
+    "source_url": "https://github.com/qiye45/wechatDownload",
+    "source_author": "qiye45",
+    "added_at": "2026-04-08T00:14:22.124910+00:00"
+  },
+  {
+    "slug": "複数出力形式への変換パイプライン実装",
+    "name": "複数出力形式への変換パイプライン実装",
+    "category": "automation-pipeline",
+    "description": "取得したWeChat記事を HTML/MHTML/Markdown/PDF/DOCX/CSV の6形式に変換可能にする",
+    "trigger_phrases": [
+      "ダウンロードしたコンテンツを後続処理（検索・分析・アーカイブ・AI学習データ化）で利用する場合",
+      "複数出力形式への変換パイプライン実装",
+      "HTML→Markdown変換ライブラリ",
+      "HTML→PDF変換（おそらくwkhtmltopdf/Playwright PDF等）",
+      "HTML→DOCX変換（python-docx/pypandoc等）"
+    ],
+    "source_url": "https://github.com/qiye45/wechatDownload",
+    "source_author": "qiye45",
+    "added_at": "2026-04-08T00:14:22.124910+00:00"
+  },
+  {
+    "slug": "mcpmodel-context-protocolサーバー実装",
+    "name": "MCP（Model Context Protocol）サーバー実装",
+    "category": "claude-code-workflow",
+    "description": "ダウンローダーをMCPサーバーとして公開し、Claude等のAIエージェントからツールとして呼び出し可能にする",
+    "trigger_phrases": [
+      "AIエージェントワークフロー内でWeChat記事の自動収集・分析を組み込みたい場合",
+      "MCP（Model Context Protocol）サーバー実装",
+      "MCP SDK",
+      "Skill定義（Claude Code）"
+    ],
+    "source_url": "https://github.com/qiye45/wechatDownload",
+    "source_author": "qiye45",
+    "added_at": "2026-04-08T00:14:22.124910+00:00"
+  },
+  {
+    "slug": "段階的ダウンロード制御と既存ファイルスキップ",
+    "name": "段階的ダウンロード制御と既存ファイルスキップ",
+    "category": "other",
+    "description": "ページ単位での一時停止・再開、ダウンロード済み記事の自動スキップ、日付範囲指定による部分取得を実装",
+    "trigger_phrases": [
+      "数百〜数千件の記事を段階的にアーカイブする場合",
+      "段階的ダウンロード制御と既存ファイルスキップ",
+      "ページ単位での一時停止・再開、ダウンロード済み記事の自動スキップ、日付範囲指定による部分取得を実装"
+    ],
+    "source_url": "https://github.com/qiye45/wechatDownload",
+    "source_author": "qiye45",
+    "added_at": "2026-04-08T00:14:22.124910+00:00"
   }
 ]
