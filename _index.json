@@ -13992,5 +13992,86 @@
     "source_url": "https://github.com/qiye45/wechatDownload",
     "source_author": "qiye45",
     "added_at": "2026-04-08T00:14:22.124910+00:00"
+  },
+  {
+    "slug": "mcpクライアントサーバーアーキテクチャでaiとサービスを接続する",
+    "name": "MCPクライアント・サーバーアーキテクチャでAIとサービスを接続する",
+    "category": "claude-code-workflow",
+    "description": "MCP Host（AI assistant/IDE）、MCP Client（Host内のコネクタ）、MCP Server（データソース・ツール提供サービス）の3層構造を構築し、標準化されたプロトコルでLLMにコンテキストと実行能力を提供する",
+    "trigger_phrases": [
+      "AIエージェントに外部サービスへのアクセス権限を与える必要がある場合。特に複数サービスを横断利用したい場合に有効",
+      "MCPクライアント・サーバーアーキテクチャでAIとサービスを接続する",
+      "MCP SDK",
+      "VS Code拡張（例: ms-azuretools.vscode-azure-mcp-server）",
+      "claude-desktop設定ファイル",
+      "GitHub Copilot CLI / Claude Code"
+    ],
+    "source_url": "https://github.com/microsoft/mcp",
+    "source_author": "microsoft",
+    "added_at": "2026-04-08T00:16:29.593977+00:00"
+  },
+  {
+    "slug": "local-stdio-とremote-https-mcpサーバーを使い分ける",
+    "name": "Local (stdio) とRemote (https) MCPサーバーを使い分ける",
+    "category": "prompt-engineering",
+    "description": "MCPサーバーの実行形態を Local (stdioでプロセス起動) と Remote (https endpoint) の2種類から選択し、セキュリティ要件・認証フロー・実行環境に応じて適切な方式を採用する",
+    "trigger_phrases": [
+      "機密情報を扱う場合はLocal型（認証情報がローカルに閉じる）、複数環境で共有したい場合やサーバーサイドでデータ処理が必要な場合はRemote型",
+      "Local (stdio) とRemote (https) MCPサーバーを使い分ける",
+      "npx (Node.js パッケージ実行)",
+      "uvx (Python パッケージ実行)",
+      "dotnet run (.NET アプリ実行)",
+      "OAuth 2.0 / Microsoft Entra ID (Remote型認証)"
+    ],
+    "source_url": "https://github.com/microsoft/mcp",
+    "source_author": "microsoft",
+    "added_at": "2026-04-08T00:16:29.593977+00:00"
+  },
+  {
+    "slug": "モノレポ構成でmcpサーバー群を統合管理する",
+    "name": "モノレポ構成でMCPサーバー群を統合管理する",
+    "category": "automation-pipeline",
+    "description": "microsoft/mcp リポジトリのように、複数のMCPサーバー実装を1つのリポジトリで管理し、共通のライブラリ・テストフレームワーク・パイプライン・エンジニアリングシステムを統一する",
+    "trigger_phrases": [
+      "組織内で複数のMCPサーバーを開発・保守する場合。特にサーバー間で共通のロジック（認証、ログ、エラーハンドリング等）がある場合に有効",
+      "モノレポ構成でMCPサーバー群を統合管理する",
+      "monorepo管理ツール（Nx / Turborepo / Lerna等、リポジトリ固有）",
+      "共通CI/CDパイプライン（GitHub Actions等）",
+      "共通テストフレームワーク"
+    ],
+    "source_url": "https://github.com/microsoft/mcp",
+    "source_author": "microsoft",
+    "added_at": "2026-04-08T00:16:29.593977+00:00"
+  },
+  {
+    "slug": "vs-code拡張の一括インストールリンクを提供する",
+    "name": "VS Code拡張の一括インストールリンクを提供する",
+    "category": "infrastructure",
+    "description": "MCPサーバーのインストールをワンクリック化するため、vscode://mcp/install スキーマを使ったディープリンクをREADME/ドキュメントに埋め込む",
+    "trigger_phrases": [
+      "MCPサーバーの利用者にセットアップ手順を簡略化したい場合。特にOSS公開時やドキュメント作成時",
+      "VS Code拡張の一括インストールリンクを提供する",
+      "URLエンコーダー",
+      "shields.io（バッジ画像生成）",
+      "VS Code Deep Link API"
+    ],
+    "source_url": "https://github.com/microsoft/mcp",
+    "source_author": "microsoft",
+    "added_at": "2026-04-08T00:16:29.593977+00:00"
+  },
+  {
+    "slug": "mcpサーバーをカテゴリ別型別に整理してカタログ化する",
+    "name": "MCPサーバーをカテゴリ別・型別に整理してカタログ化する",
+    "category": "infrastructure",
+    "description": "提供するMCPサーバー群を「CATEGORY（CLOUD AND INFRASTRUCTURE / DEVELOPER TOOLS / PRODUCTIVITY / DATA AND ANALYTICS / SECURITY）」と「TYPE（Local / Remote）」で分類し、表形式またはセクション形式でドキュメント化する",
+    "trigger_phrases": [
+      "複数のMCPサーバーを提供する場合。特にエコシステム全体を俯瞰可能なカタログページを作成したい場合",
+      "MCPサーバーをカテゴリ別・型別に整理してカタログ化する",
+      "Markdown",
+      "GitHub README badges（shields.io）"
+    ],
+    "source_url": "https://github.com/microsoft/mcp",
+    "source_author": "microsoft",
+    "added_at": "2026-04-08T00:16:29.593977+00:00"
   }
 ]

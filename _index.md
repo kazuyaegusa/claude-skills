@@ -1,6 +1,6 @@
 # スキルインデックス
 
-合計: 966 スキル
+合計: 971 スキル
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
@@ -970,3 +970,8 @@
 | 複数出力形式への変換パイプライン実装 | 複数出力形式への変換パイプライン実装 | automation-pipeline | 取得したWeChat記事を HTML/MHTML/Markdown/PDF/DOCX/CSV の6形式に変換可能にする | qiye45 |
 | mcpmodel-context-protocolサーバー実装 | MCP（Model Context Protocol）サーバー実装 | claude-code-workflow | ダウンローダーをMCPサーバーとして公開し、Claude等のAIエージェントからツールとして呼び出し可能にする | qiye45 |
 | 段階的ダウンロード制御と既存ファイルスキップ | 段階的ダウンロード制御と既存ファイルスキップ | other | ページ単位での一時停止・再開、ダウンロード済み記事の自動スキップ、日付範囲指定による部分取得を実装 | qiye45 |
+| mcpクライアントサーバーアーキテクチャでaiとサービスを接続する | MCPクライアント・サーバーアーキテクチャでAIとサービスを接続する | claude-code-workflow | MCP Host（AI assistant/IDE）、MCP Client（Host内のコネクタ）、MCP Server | microsoft |
+| local-stdio-とremote-https-mcpサーバーを使い分ける | Local (stdio) とRemote (https) MCPサーバーを使い分ける | prompt-engineering | MCPサーバーの実行形態を Local (stdioでプロセス起動) と Remote (https endpoint) | microsoft |
+| モノレポ構成でmcpサーバー群を統合管理する | モノレポ構成でMCPサーバー群を統合管理する | automation-pipeline | microsoft/mcp リポジトリのように、複数のMCPサーバー実装を1つのリポジトリで管理し、共通のライブラリ・テ | microsoft |
+| vs-code拡張の一括インストールリンクを提供する | VS Code拡張の一括インストールリンクを提供する | infrastructure | MCPサーバーのインストールをワンクリック化するため、vscode://mcp/install スキーマを使ったディープ | microsoft |
+| mcpサーバーをカテゴリ別型別に整理してカタログ化する | MCPサーバーをカテゴリ別・型別に整理してカタログ化する | infrastructure | 提供するMCPサーバー群を「CATEGORY（CLOUD AND INFRASTRUCTURE / DEVELOPER  | microsoft |
