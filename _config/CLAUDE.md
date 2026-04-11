@@ -252,3 +252,5 @@ GitHub リポジトリの変更を定期監視し、差分レポート生成 + D
 - 作業ディレクトリ: `~/.repo-tracker/{repo-name}/`
 - 複数リポジトリ対応、完全読み取り専用（push 一切なし）
 - 定期実行: macOS launchd（`install-schedule` サブコマンド）
+
+@RTK.md
