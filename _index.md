@@ -177,6 +177,7 @@
 | severity1--claude-code-prompt-improver | --- |  |  |  |
 | shadcn-ui--ui | --- |  |  |  |
 | shap--shap | --- |  |  |  |
+| shopify-admin-skills | Shopify Admin Skills Collection | ecommerce | Master skill collection (62 sub-skills) for Shopify store operations: merchandising, inventory, marketing, customer support, fulfillment, and analytics | Shopify |
 | significant-gravitas--autogpt | --- |  |  |  |
 | silverov--yandex-direct-skill | --- |  |  |  |
 | sinzin91--search-sessions | --- |  |  |  |
