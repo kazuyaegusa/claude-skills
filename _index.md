@@ -4,6 +4,7 @@
 
 | slug | 名前 | カテゴリ | 説明 | 出典 |
 |------|------|----------|------|------|
+| andrej-karpathy-skills | Andrej Karpathy LLMコーディング規律 | coding-guidelines | コーディングタスク全般で自動適用。過剰実装・推測実装・不必要な変更を防ぐ4原則（Think Before Coding / Simplicity First / Surgical Changes / Goal-Driven Execution） | forrestchang/andrej-karpathy-skills |
 | managed-settings経由でotel設定を強制配布 | Managed Settings経由でOTel設定を強制配布 | claude-code-workflow | Claude CodeのManaged Settings JSONファイルをMDMツール（Intune等）で全社員の端末 | ホリエ |
 | otel-collectorでresource-attributeをlog-attributeにコピー | OTel CollectorでResource AttributeをLog Attributeにコピー | claude-code-workflow | OTel CollectorのTransform Processorを使い、Resource Attributeの情報を | ホリエ |
 | cloud-loggingにlinked-datasetを作成してbigqueryから直接クエリ | Cloud LoggingにLinked Datasetを作成してBigQueryから直接クエリ | claude-code-workflow | Cloud LoggingのログバケットにLinked Datasetを作成し、BigQueryから直接SQL クエリで | ホリエ |
