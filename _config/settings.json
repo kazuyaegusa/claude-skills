@@ -1,4 +1,7 @@
 {
+  "env": {
+    "CLAUDE_CODE_DISABLE_ADAPTIVE_THINKING": "1"
+  },
   "hooks": {
     "PreToolUse": [
       {
@@ -12,6 +15,10 @@
       }
     ]
   },
+  "enabledPlugins": {
+    "claude-mem@thedotmack": true,
+    "superpowers@claude-plugins-official": true
+  },
   "extraKnownMarketplaces": {
     "thedotmack": {
       "source": {
@@ -20,11 +27,5 @@
       }
     }
   },
-  "env": {
-    "CLAUDE_CODE_DISABLE_ADAPTIVE_THINKING": "1"
-  },
-  "skipDangerousModePermissionPrompt": true,
-  "enabledPlugins": {
-    "claude-mem@thedotmack": true
-  }
+  "skipDangerousModePermissionPrompt": true
 }
